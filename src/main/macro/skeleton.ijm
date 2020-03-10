@@ -9,7 +9,7 @@
 
 
 // Get test data
-open("https://github.com/clij/clij-advanced-filters/raw/master/src/test/resources/skeleton_test.tif");
+open("https://github.com/clij/clij2-tests/raw/master/src/test/resources/skeleton_test.tif");
 input = getTitle();
 
 skeleton = "skeleton";
