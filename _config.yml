@@ -1,0 +1,8 @@
+title: clij-advanced-filters
+logo: /images/clij2_logo.png
+description: CLIJ2 (experimental)
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-redirect-from
