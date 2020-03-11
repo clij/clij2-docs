@@ -41,12 +41,6 @@ clij2.release(destination);
 ```
 
 
-
-
-### Example scripts
-<a href="https://github.com/clij/clij-docs/blob/master/src/main/java/net/haesleinhuepf/clij/examples/"><img src="images/language_java.png" height="20"/></a> [ApplyVectorFieldDemo.java](https://github.com/clij/clij-docs/blob/master/src/main/java/net/haesleinhuepf/clij/examples/ApplyVectorFieldDemo.java)  
-
-
 [Back to CLIJ documentation](https://clij.github.io/)
 
 [Imprint](https://clij.github.io/imprint)

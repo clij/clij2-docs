@@ -40,8 +40,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [medianZProjectionComparion.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/medianZProjectionComparion.ijm)  
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/projections.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [medianZProjectionComparion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/medianZProjectionComparion.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

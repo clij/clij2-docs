@@ -43,8 +43,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/create_object_outlines.ijm)  
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mean2d.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/mean2d.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mean2d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean2d.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)
