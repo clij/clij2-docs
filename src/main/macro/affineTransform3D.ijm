@@ -26,11 +26,11 @@ Ext.CLIJ2_push("original");
 // cleanup imagej
 run("Close All");
 
-transform = "center ";
+transform = "-center ";
 transform = transform + " rotateZ=45"; // degrees
 transform = transform + " scaleX=2"; // relative zoom factor
 transform = transform + " translateY=25"; // pixels
-transform = transform + " -center";
+transform = transform + " center";
 
 Ext.CLIJ2_affineTransform3D("original", "target", transform);
 

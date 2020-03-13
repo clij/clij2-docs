@@ -9,7 +9,7 @@
 
 
 // Get test data
-open("https://github.com/clij/clij-advanced-filters/raw/master/src/main/resources/skeleton_test.tif");
+open("https://github.com/clij/clij2-tests/raw/master/src/test/resources/skeleton_test.tif");
 run("Scale...", "x=10 y=10 width=2560 height=2560 interpolation=Bilinear average create");
 input = getTitle();
 
@@ -42,7 +42,7 @@ run("Close All");
 // fill holes in the binary image
 for (i = 0; i < 10; i++) {
 	time = getTime();
-	Ext.CLIJ2_skeletonize(input, skeleton);
+	Ext.CLIJx_skeletonize(input, skeleton);
 	print("Skeletonize on GPU took " + (getTime() - time) + " msec");
 }
 

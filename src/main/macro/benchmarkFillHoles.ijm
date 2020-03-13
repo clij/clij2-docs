@@ -9,7 +9,7 @@
 
 
 // Get test data
-open("https://github.com/clij/clij-advanced-filters/raw/master/src/main/resources/skeleton_test.tif");
+open("https://github.com/clij/clij2-tests/raw/master/src/test/resources/skeleton_test.tif");
 run("Scale...", "x=10 y=10 width=2560 height=2560 interpolation=Bilinear average create");
 input = getTitle();
 
