@@ -46,7 +46,9 @@ for (x = 0; x < numTilesX; x++) {
 			Ext.CLIJ2_mean3DBox(original, result, 3, 3, 3);
 
 			Ext.CLIJx_pullTile(result, x, y, z, tileWidth, tileHeight, tileDepth, margin, margin, margin);
+			updateDisplay();
 			run("Enhance Contrast", "saturated=0.35");
+			wait(50);
 		}
 	}
 }
