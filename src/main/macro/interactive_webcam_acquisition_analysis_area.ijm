@@ -19,6 +19,8 @@ Ext.CLIJx_listWebcams();
 camera_index = getResult("Camera_Index", nResults() - 1);
 image_width = getResult("Image_Width", nResults() - 1);
 image_height = getResult("Image_Height", nResults() - 1);
+
+// open an image which serves as cancel-button
 cancelText = "Close this window to cancel acquisition";
 newImage(cancelText, "8-bit", 400, 10, 1);
 
@@ -62,6 +64,7 @@ for (i = 0; i >= 0 ; i++) { // yes, this is an endless loop
 	labelling = "labelling";
 	Ext.CLIJ2_connectedComponentsLabelingBox(thresholded, labelling);
 
+	// measure object properties
 	run("Clear Results");
 	Ext.CLIJ2_statisticsOfLabelledPixels(inverted, labelling);
 	
@@ -71,12 +74,10 @@ for (i = 0; i >= 0 ; i++) { // yes, this is an endless loop
 	// view the image
 	Ext.CLIJx_showRGB(input_r, input_g, input_b, "viewer");
 
-	//selectWindow(texts);
+	// annotate objects in the image
 	for (j = 0; j < numberOfObjects; j++) {
-
 		x1 = getResult("CENTROID_X", j);
 		y1 = getResult("CENTROID_Y", j);
-
 		area = getResult("PIXEL_COUNT", j);
 		
 		setColor(255, 0, 0);
@@ -85,17 +86,13 @@ for (i = 0; i >= 0 ; i++) { // yes, this is an endless loop
 	}	
 	Ext.CLIJ2_pullAsROI(thresholded);
 	
-
+	// cancel acquisition in case the cancel-window was closed
 	if (!isOpen(cancelText)) {
 		print("Exiting");
 		break;
 	}
 
-	//Ext.CLIJx_organiseWindows(0, 150, 1, 3, 400, 300);
-
-	if (i > 0) {
-		//break;
-	}
+	//break;
 	//wait(200);
 }
 Ext.CLIJx_stopContinuousWebcamAcquisition(camera_index);
