@@ -1,6 +1,6 @@
 // CLIJ example macro: interactive_webcam_acquisition_analysis_area.ijm
 //
-// This macro shows how analyse images streaming 
+// This macro shows how to analyse images streaming 
 // from a webcam to the GPU
 //
 // Author: Robert Haase
@@ -8,7 +8,8 @@
 // ---------------------------------------------
 
 run("Close All");
-
+
+
 // init GPU
 run("CLIJ Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
