@@ -15,7 +15,7 @@ Ext.CLIJ2_median3DBox(Image source, Image destination, Number radiusX, Number ra
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 

@@ -12,7 +12,7 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 

@@ -12,7 +12,7 @@ Ext.CLIJ2_paste3D(Image source, Image destination, Number destinationX, Number d
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 

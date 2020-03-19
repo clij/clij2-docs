@@ -12,7 +12,7 @@ Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, Image label_map_destinatio
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 

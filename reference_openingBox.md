@@ -12,7 +12,7 @@ Ext.CLIJ2_openingBox(Image input, Image destination, Number number_of_erotions_a
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
