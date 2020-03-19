@@ -5,7 +5,7 @@ Translate an image stack in X, Y and Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_translate3D(Image source, Image destination, Number translateX, Number translateY, Number translateZ);
+Ext.CLIJ2_translate3D(Image source, Image destination, Number translateX, Number translateY, Number translateZ);
 ```
 
 

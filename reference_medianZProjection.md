@@ -5,7 +5,7 @@ Determines the median projection of an image stack along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_medianZProjection(Image source, Image destination);
+Ext.CLIJ2_medianZProjection(Image source, Image destination);
 ```
 
 

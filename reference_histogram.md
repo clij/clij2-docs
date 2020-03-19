@@ -5,7 +5,7 @@ Determines the histogram of a given image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_histogram(Image source, Image destination, Number numberOfBins, Number minimumGreyValue, Number maximumGreyValue, Boolean determineMinAndMax);
+Ext.CLIJ2_histogram(Image source, Image destination, Number numberOfBins, Number minimumGreyValue, Number maximumGreyValue, Boolean determineMinAndMax);
 ```
 
 

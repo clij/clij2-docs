@@ -5,7 +5,7 @@ Multiplies two matrices with each other.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_multiplyMatrix(Image matrix1, Image matrix2, Image matrix_destination);
+Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, Image matrix_destination);
 ```
 
 

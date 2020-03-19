@@ -5,7 +5,7 @@ Takes two images containing coordinates and builds up a matrix containing distan
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2, Image distance_matrix_destination);
+Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2, Image distance_matrix_destination);
 ```
 
 
@@ -42,6 +42,7 @@ clij2.release(distance_matrix_destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
 <a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/"><img src="images/language_matlab.png" height="20"/></a> [meshClosestPoints.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/meshClosestPoints.m)  

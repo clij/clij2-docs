@@ -6,7 +6,7 @@ Results table in the column 'Sum'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_sumPixels(Image source);
+Ext.CLIJ2_sumPixels(Image source);
 ```
 
 

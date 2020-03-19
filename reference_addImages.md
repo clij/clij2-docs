@@ -7,7 +7,7 @@ Calculates the sum of pairs of pixels x and y of two images X and Y.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_addImages(Image summand1, Image summand2, Image destination);
+Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);
 ```
 
 

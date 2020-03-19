@@ -5,7 +5,7 @@ Pastes an image into another image at a given position.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_paste2D(Image source, Image destination, Number destinationX, Number destinationY);
+Ext.CLIJ2_paste2D(Image source, Image destination, Number destinationX, Number destinationY);
 ```
 
 

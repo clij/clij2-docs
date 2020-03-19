@@ -7,7 +7,7 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_erodeSphere(Image source, Image destination);
+Ext.CLIJ2_erodeSphere(Image source, Image destination);
 ```
 
 

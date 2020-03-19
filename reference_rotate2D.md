@@ -8,7 +8,7 @@ It is recommended to apply the rotation to an isotropic image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_rotate2D(Image source, Image destination, Number angle, Boolean rotateAroundCenter);
+Ext.CLIJ2_rotate2D(Image source, Image destination, Number angle, Boolean rotateAroundCenter);
 ```
 
 

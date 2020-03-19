@@ -5,7 +5,7 @@ Visualises an image on standard out (console).
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_print(Image input);
+Ext.CLIJ2_print(Image input);
 ```
 
 

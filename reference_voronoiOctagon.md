@@ -5,7 +5,7 @@ Takes a binary image and dilates the regions using a octagon shape until the tou
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_voronoiOctagon(Image input, Image destination);
+Ext.CLIJ2_voronoiOctagon(Image input, Image destination);
 ```
 
 

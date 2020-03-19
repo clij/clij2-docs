@@ -7,7 +7,7 @@ Divides two images X and Y by each other pixel wise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_divideImages(Image divident, Image divisor, Image destination);
+Ext.CLIJ2_divideImages(Image divident, Image divisor, Image destination);
 ```
 
 

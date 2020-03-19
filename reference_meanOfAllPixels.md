@@ -6,7 +6,7 @@ Results table in the column 'Mean'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanOfAllPixels(Image source);
+Ext.CLIJ2_meanOfAllPixels(Image source);
 ```
 
 

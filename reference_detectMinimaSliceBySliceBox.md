@@ -7,7 +7,7 @@ given radius which has a lower intensity, and to 0 otherwise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_detectMinimaSliceBySliceBox(Image source, Image destination, Number radius);
+Ext.CLIJ2_detectMinimaSliceBySliceBox(Image source, Image destination, Number radius);
 ```
 
 

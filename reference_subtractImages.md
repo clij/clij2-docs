@@ -7,7 +7,7 @@ Subtracts one image X from another image Y pixel wise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_subtractImages(Image subtrahend, Image minuend, Image destination);
+Ext.CLIJ2_subtractImages(Image subtrahend, Image minuend, Image destination);
 ```
 
 

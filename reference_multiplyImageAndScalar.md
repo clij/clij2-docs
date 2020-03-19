@@ -7,7 +7,7 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_multiplyImageAndScalar(Image source, Image destination, Number scalar);
+Ext.CLIJ2_multiplyImageAndScalar(Image source, Image destination, Number scalar);
 ```
 
 
@@ -44,6 +44,7 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [bitdepthConversion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/bitdepthConversion.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rgb_invert_black_white.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rgb_invert_black_white.ijm)  
 
 

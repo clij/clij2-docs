@@ -5,7 +5,7 @@ Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixe
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_generateTouchMatrix(Image label_map, Image touch_matrix_destination);
+Ext.CLIJ2_generateTouchMatrix(Image label_map, Image touch_matrix_destination);
 ```
 
 

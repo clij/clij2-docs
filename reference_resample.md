@@ -5,7 +5,7 @@ Resamples an image with given size factors using an affine transform.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_resample(Image source, Image destination, Number factorX, Number factorY, Number factorZ, Boolean linearInterpolation);
+Ext.CLIJ2_resample(Image source, Image destination, Number factorX, Number factorY, Number factorZ, Boolean linearInterpolation);
 ```
 
 

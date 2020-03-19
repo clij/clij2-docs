@@ -5,7 +5,7 @@ Apply a binary closing to the input image by calling n dilations and n erosions 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_closingDiamond(Image input, Image destination, Number number_of_dilations_and_erotions);
+Ext.CLIJ2_closingDiamond(Image input, Image destination, Number number_of_dilations_and_erotions);
 ```
 
 

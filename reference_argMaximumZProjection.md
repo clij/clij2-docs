@@ -6,7 +6,7 @@ Furthermore, another 2D image is generated with pixels containing the z-index wh
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_argMaximumZProjection(Image source, Image destination_max, Image destination_arg_max);
+Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image destination_arg_max);
 ```
 
 

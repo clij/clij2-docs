@@ -6,7 +6,7 @@ there is no other pixel in a given radius which has a higher intensity, and to 0
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_detectMaximaBox(Image source, Image destination, Number radius);
+Ext.CLIJ2_detectMaximaBox(Image source, Image destination, Number radius);
 ```
 
 

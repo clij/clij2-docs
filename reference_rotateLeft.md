@@ -7,7 +7,7 @@ such as interpolation.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_rotateLeft(Image source, Image destination);
+Ext.CLIJ2_rotateLeft(Image source, Image destination);
 ```
 
 

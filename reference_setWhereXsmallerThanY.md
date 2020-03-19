@@ -8,7 +8,7 @@ If you want to initialize an identity transfrom matrix, set all pixels to 0 firs
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setWhereXsmallerThanY(Image source, Number value);
+Ext.CLIJ2_setWhereXsmallerThanY(Image source, Number value);
 ```
 
 

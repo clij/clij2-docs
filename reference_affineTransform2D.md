@@ -19,7 +19,7 @@ transform = "center scale=2 rotate=45 -center";
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_affineTransform2D(Image source, Image destination, String transform);
+Ext.CLIJ2_affineTransform2D(Image source, Image destination, String transform);
 ```
 
 

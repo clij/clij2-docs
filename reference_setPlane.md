@@ -7,7 +7,7 @@ Sets all pixel values x of a given plane in X to a constant value v.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setPlane(Image source, Number rowIndex, Number value);
+Ext.CLIJ2_setPlane(Image source, Number rowIndex, Number value);
 ```
 
 

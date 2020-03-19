@@ -8,7 +8,7 @@ For technical reasons, the area of the rectangle must have less than 1000 pixels
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_median2DBox(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_median2DBox(Image source, Image destination, Number radiusX, Number radiusY);
 ```
 
 
@@ -40,6 +40,12 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_stripe_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

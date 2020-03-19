@@ -7,7 +7,7 @@ Calculates the sum of pairs of pixels x and y from images X and Y weighted with 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_addImagesWeighted(Image summand1, Image summand2, Image destination, Number factor1, Number factor2);
+Ext.CLIJ2_addImagesWeighted(Image summand1, Image summand2, Image destination, Number factor1, Number factor2);
 ```
 
 

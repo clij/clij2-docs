@@ -5,7 +5,7 @@ Determine the shortest distance from a distance matrix. This corresponds to the 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_shortestDistances(Image distance_matrix, Image destination_minimum_distances);
+Ext.CLIJ2_shortestDistances(Image distance_matrix, Image destination_minimum_distances);
 ```
 
 

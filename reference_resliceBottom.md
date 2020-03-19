@@ -6,7 +6,7 @@ offers less flexibility such as interpolation.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_resliceBottom(Image source, Image destination);
+Ext.CLIJ2_resliceBottom(Image source, Image destination);
 ```
 
 

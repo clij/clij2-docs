@@ -8,7 +8,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_thresholdHuang(Image input, Image destination);
+Ext.CLIJ2_thresholdHuang(Image input, Image destination);
 ```
 
 
@@ -38,6 +38,12 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_stripe_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm)  
 
 
 

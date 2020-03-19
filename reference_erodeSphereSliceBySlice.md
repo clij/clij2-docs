@@ -9,7 +9,7 @@ This filter is applied slice by slice in 2D.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_erodeSphereSliceBySlice(Image source, Image destination);
+Ext.CLIJ2_erodeSphereSliceBySlice(Image source, Image destination);
 ```
 
 

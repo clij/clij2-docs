@@ -10,7 +10,7 @@ difference is that the output image contains values 0 and 1 instead of 0 and 255
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_dilateBox(Image source, Image destination);
+Ext.CLIJ2_dilateBox(Image source, Image destination);
 ```
 
 

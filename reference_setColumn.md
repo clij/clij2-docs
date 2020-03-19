@@ -7,7 +7,7 @@ Sets all pixel values x of a given column in X to a constant value v.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setColumn(Image source, Number columnIndex, Number value);
+Ext.CLIJ2_setColumn(Image source, Number columnIndex, Number value);
 ```
 
 
@@ -40,6 +40,7 @@ clij2.release(source);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 
 

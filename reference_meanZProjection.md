@@ -5,7 +5,7 @@ Determines the mean average projection of an image along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanZProjection(Image source, Image destination);
+Ext.CLIJ2_meanZProjection(Image source, Image destination);
 ```
 
 

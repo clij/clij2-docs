@@ -5,7 +5,7 @@ Determines the variance in an image, but only in pixels which have non-zero valu
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_varianceOfMaskedPixels(Image source, Image mask);
+Ext.CLIJ2_varianceOfMaskedPixels(Image source, Image mask);
 ```
 
 

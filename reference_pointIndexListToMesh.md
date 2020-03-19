@@ -5,7 +5,7 @@ Meshes all points in a given point list which are indiced in a corresponding ind
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_pointIndexListToMesh(Image pointlist, Image indexList, Image Mesh);
+Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, Image Mesh);
 ```
 
 

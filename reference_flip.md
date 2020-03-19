@@ -5,7 +5,7 @@ Flips an image in X and/or Y direction depending on boolean flags.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_flip(Image source, Image destination, Boolean flipX, Boolean flipY);
+Ext.CLIJ2_flip(Image source, Image destination, Boolean flipX, Boolean flipY);
 ```
 
 

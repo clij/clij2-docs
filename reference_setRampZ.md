@@ -5,7 +5,7 @@ Sets all pixel values to their Z coordinate
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setRampZ(Image source);
+Ext.CLIJ2_setRampZ(Image source);
 ```
 
 

@@ -8,7 +8,7 @@ For technical reasons, the volume of the sphere must contain less than 1000 voxe
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_median3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_median3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 

@@ -6,7 +6,7 @@ This corresponds to the n row indices with minimum values for each column of the
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_averageDistanceOfNClosestPoints(Image distance_matrix, Image indexlist_destination, Number nClosestPointsTofind);
+Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, Image indexlist_destination, Number nClosestPointsTofind);
 ```
 
 

@@ -8,7 +8,7 @@ It is recommended to apply the rotation to an isotropic image stack.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_rotate3D(Image source, Image destination, Number angleX, Number angleY, Number angleZ, Boolean rotateAroundCenter);
+Ext.CLIJ2_rotate3D(Image source, Image destination, Number angleX, Number angleY, Number angleZ, Boolean rotateAroundCenter);
 ```
 
 

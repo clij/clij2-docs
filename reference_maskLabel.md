@@ -8,7 +8,7 @@ f(x,m,i) = (x if (m == i); (0 otherwise))
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maskLabel(Image source, Image label_map, Image destination, Number label_index);
+Ext.CLIJ2_maskLabel(Image source, Image label_map, Image destination, Number label_index);
 ```
 
 

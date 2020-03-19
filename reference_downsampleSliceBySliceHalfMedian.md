@@ -7,7 +7,7 @@ four corresponding pixels in the source image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_downsampleSliceBySliceHalfMedian(Image source, Image destination);
+Ext.CLIJ2_downsampleSliceBySliceHalfMedian(Image source, Image destination);
 ```
 
 

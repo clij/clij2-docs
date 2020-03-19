@@ -5,7 +5,7 @@ Counts non-zero pixels in a sphere around every pixel slice by slice in a stack 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_countNonZeroPixelsSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_countNonZeroPixelsSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
 ```
 
 

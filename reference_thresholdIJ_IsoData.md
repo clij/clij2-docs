@@ -8,7 +8,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_thresholdIJ_IsoData(Image input, Image destination);
+Ext.CLIJ2_thresholdIJ_IsoData(Image input, Image destination);
 ```
 
 

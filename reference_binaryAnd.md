@@ -9,7 +9,7 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_binaryAnd(Image operand1, Image operand2, Image destination);
+Ext.CLIJ2_binaryAnd(Image operand1, Image operand2, Image destination);
 ```
 
 

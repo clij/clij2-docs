@@ -5,7 +5,7 @@ Determines pixels/voxels which are on the surface of a binary objects and sets o
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_binaryEdgeDetection(Image source, Image destination);
+Ext.CLIJ2_binaryEdgeDetection(Image source, Image destination);
 ```
 
 

@@ -6,7 +6,7 @@ its half-width, half-height and half-depth (radius).
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximum3DBox(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_maximum3DBox(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 

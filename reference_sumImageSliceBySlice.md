@@ -5,7 +5,7 @@ Sums all pixels slice by slice and returns them in an array.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_sumImageSliceBySlice(Image source, Image destination);
+Ext.CLIJ2_sumImageSliceBySlice(Image source, Image destination);
 ```
 
 

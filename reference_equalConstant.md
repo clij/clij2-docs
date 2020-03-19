@@ -7,7 +7,7 @@ f(a, b) = 1 if a == b; 0 otherwise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_equalConstant(Image source, Image destination, Number constant);
+Ext.CLIJ2_equalConstant(Image source, Image destination, Number constant);
 ```
 
 

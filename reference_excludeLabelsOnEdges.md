@@ -5,7 +5,7 @@ Removes all labels from a label map which touch the edges of the image (in X, Y 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_excludeLabelsOnEdges(Image label_map_input, Image label_map_destination);
+Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, Image label_map_destination);
 ```
 
 

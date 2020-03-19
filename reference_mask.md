@@ -9,7 +9,7 @@ zero.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_mask(Image source, Image mask, Image destination);
+Ext.CLIJ2_mask(Image source, Image mask, Image destination);
 ```
 
 

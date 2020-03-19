@@ -5,7 +5,7 @@ Replaces a specific intensity in an image with a given new value.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_replaceIntensity(Image input, Image destination, Number oldValue, Number newValue);
+Ext.CLIJ2_replaceIntensity(Image input, Image destination, Number oldValue, Number newValue);
 ```
 
 

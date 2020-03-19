@@ -6,7 +6,7 @@ Results table in the column 'Variance'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_varianceOfAllPixels(Image source);
+Ext.CLIJ2_varianceOfAllPixels(Image source);
 ```
 
 

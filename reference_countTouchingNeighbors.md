@@ -5,7 +5,7 @@ Takes a touching-neighbors-matrix as input and delivers a vector with number of 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_countTouchingNeighbors(Image touch_matrix, Image touching_neighbors_count_destination);
+Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, Image touching_neighbors_count_destination);
 ```
 
 

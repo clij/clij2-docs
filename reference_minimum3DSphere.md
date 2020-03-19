@@ -6,7 +6,7 @@ its half-width, half-height and half-depth (radius).
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimum3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_minimum3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 

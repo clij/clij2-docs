@@ -5,7 +5,7 @@ Determines the sum intensity projection of an image along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_sumXProjection(Image source, Image destination);
+Ext.CLIJ2_sumXProjection(Image source, Image destination);
 ```
 
 

@@ -5,7 +5,7 @@ Sets all pixels in an image which are not zero to the index of the pixel. This c
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setNonZeroPixelsToPixelIndex(Image source, Image destination);
+Ext.CLIJ2_setNonZeroPixelsToPixelIndex(Image source, Image destination);
 ```
 
 

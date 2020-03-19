@@ -5,7 +5,7 @@ This operation follows a ray from a given position towards a label (or opposite 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_excludeLabelsSubSurface(Image pointlist, Image label_map_input, Image label_map_destination, Number centerX, Number centerY, Number centerZ);
+Ext.CLIJ2_excludeLabelsSubSurface(Image pointlist, Image label_map_input, Image label_map_destination, Number centerX, Number centerY, Number centerZ);
 ```
 
 

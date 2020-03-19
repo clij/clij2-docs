@@ -8,7 +8,7 @@ the same spatial position within a plane.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image destination);
+Ext.CLIJ2_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image destination);
 ```
 
 

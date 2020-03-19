@@ -6,7 +6,7 @@ Results table in the column 'CountNonZero'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_countNonZeroPixels(Image source);
+Ext.CLIJ2_countNonZeroPixels(Image source);
 ```
 
 

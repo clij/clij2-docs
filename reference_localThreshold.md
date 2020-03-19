@@ -8,7 +8,7 @@ was above of equal to the pixel value m in mask image M.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_localThreshold(Image source, Image localThreshold, Image destination);
+Ext.CLIJ2_localThreshold(Image source, Image localThreshold, Image destination);
 ```
 
 

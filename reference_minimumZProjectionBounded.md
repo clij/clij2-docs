@@ -5,7 +5,7 @@ Determines the minimum projection of an image along Z within a given z range.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimumZProjectionBounded(Image source, Image destination_min, Number min_z, Number max_z);
+Ext.CLIJ2_minimumZProjectionBounded(Image source, Image destination_min, Number min_z, Number max_z);
 ```
 
 

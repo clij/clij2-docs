@@ -5,7 +5,7 @@ Determines the mean intensity in an image, but only in pixels which are above a 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanOfPixelsAboveThreshold(Image source, Number threshold);
+Ext.CLIJ2_meanOfPixelsAboveThreshold(Image source, Number threshold);
 ```
 
 

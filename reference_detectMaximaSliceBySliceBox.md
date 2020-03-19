@@ -7,7 +7,7 @@ given radius which has a higher intensity, and to 0 otherwise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_detectMaximaSliceBySliceBox(Image source, Image destination, Number radius);
+Ext.CLIJ2_detectMaximaSliceBySliceBox(Image source, Image destination, Number radius);
 ```
 
 

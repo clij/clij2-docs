@@ -5,7 +5,7 @@ Deforms an image according to distances provided in the given vector images. It 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_applyVectorField2D(Image source, Image vectorX, Image vectorY, Image destination);
+Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, Image destination);
 ```
 
 

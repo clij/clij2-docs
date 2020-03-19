@@ -6,7 +6,7 @@ The result will be put in the results table in column "MatrixEqual" as 1 if yes 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_matrixEqual(Image input1, Image input2, Number tolerance);
+Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 ```
 
 

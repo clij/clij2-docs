@@ -10,7 +10,7 @@ Replaces integer intensities specified in a vector image. The vector image must 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_replaceIntensities(Image input, Image new_values_vector, Image destination);
+Ext.CLIJ2_replaceIntensities(Image input, Image new_values_vector, Image destination);
 ```
 
 

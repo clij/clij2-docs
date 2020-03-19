@@ -5,7 +5,7 @@ Determines the maximum intensity in an image, but only in pixels which have non-
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximumOfMaskedPixels(Image source, Image mask);
+Ext.CLIJ2_maximumOfMaskedPixels(Image source, Image mask);
 ```
 
 

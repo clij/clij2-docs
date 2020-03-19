@@ -10,7 +10,7 @@ For binary images, use binaryNot.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_invert(Image source, Image destination);
+Ext.CLIJ2_invert(Image source, Image destination);
 ```
 
 

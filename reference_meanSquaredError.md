@@ -6,7 +6,7 @@ Results table in the column 'MSE'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanSquaredError(Image source1, Image source2);
+Ext.CLIJ2_meanSquaredError(Image source1, Image source2);
 ```
 
 

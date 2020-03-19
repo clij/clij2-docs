@@ -5,7 +5,7 @@ Determines the minimum intensity in an image, but only in pixels which have non-
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimumOfMaskedPixels(Image source, Image mask);
+Ext.CLIJ2_minimumOfMaskedPixels(Image source, Image mask);
 ```
 
 

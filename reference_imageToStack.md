@@ -5,7 +5,7 @@ Copies a single slice into a stack a given number of times.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_imageToStack(Image source, Image destination, Number num_slices);
+Ext.CLIJ2_imageToStack(Image source, Image destination, Number num_slices);
 ```
 
 

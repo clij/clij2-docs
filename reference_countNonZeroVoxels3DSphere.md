@@ -5,7 +5,7 @@ Counts non-zero voxels in a sphere around every voxel.Put the number in the resu
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_countNonZeroVoxels3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_countNonZeroVoxels3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 

@@ -6,7 +6,7 @@ This functionality is similar to the 'Simple Ratio Bleaching Correction' in Fiji
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_equalizeMeanIntensitiesOfSlices(Image input, Image destination, Number referenceSlice);
+Ext.CLIJ2_equalizeMeanIntensitiesOfSlices(Image input, Image destination, Number referenceSlice);
 ```
 
 

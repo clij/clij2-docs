@@ -5,7 +5,7 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelSpots(Image input_spots, Image labelled_spots_destination);
+Ext.CLIJ2_labelSpots(Image input_spots, Image labelled_spots_destination);
 ```
 
 

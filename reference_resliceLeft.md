@@ -6,7 +6,7 @@ Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_resliceLeft(Image source, Image destination);
+Ext.CLIJ2_resliceLeft(Image source, Image destination);
 ```
 
 

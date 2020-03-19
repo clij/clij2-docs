@@ -7,7 +7,7 @@ Computes all pixels value x to the power of a given exponent a.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_power(Image source, Image destination, Number exponent);
+Ext.CLIJ2_power(Image source, Image destination, Number exponent);
 ```
 
 

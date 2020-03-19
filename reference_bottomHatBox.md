@@ -5,7 +5,7 @@ Apply a bottom-hat filter for background subtraction to the input image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_bottomHatBox(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_bottomHatBox(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 

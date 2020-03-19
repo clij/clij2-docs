@@ -8,7 +8,7 @@ of these methods in the method text field:
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_automaticThreshold(Image input, Image destination, String method);
+Ext.CLIJ2_automaticThreshold(Image input, Image destination, String method);
 ```
 
 

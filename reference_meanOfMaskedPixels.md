@@ -5,7 +5,7 @@ Determines the mean intensity in an image, but only in pixels which have non-zer
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanOfMaskedPixels(Image source, Image mask);
+Ext.CLIJ2_meanOfMaskedPixels(Image source, Image mask);
 ```
 
 

@@ -6,7 +6,7 @@ Recommendation: For the seed, use getTime().
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setRandom(Image source, Number minimumValue, Number maximumValue, Number seed);
+Ext.CLIJ2_setRandom(Image source, Number minimumValue, Number maximumValue, Number seed);
 ```
 
 

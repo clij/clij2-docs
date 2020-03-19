@@ -6,7 +6,7 @@ in the columns MassX, MassY and MassZ.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_centerOfMass(Image source);
+Ext.CLIJ2_centerOfMass(Image source);
 ```
 
 

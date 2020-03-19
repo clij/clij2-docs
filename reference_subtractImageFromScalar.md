@@ -7,7 +7,7 @@ Subtracts one image X from a scalar s pixel wise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_subtractImageFromScalar(Image input, Image destination, Number scalar);
+Ext.CLIJ2_subtractImageFromScalar(Image input, Image destination, Number scalar);
 ```
 
 
@@ -38,6 +38,14 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis_area.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis_area.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_stripe_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

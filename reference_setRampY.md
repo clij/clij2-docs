@@ -5,7 +5,7 @@ Sets all pixel values to their Y coordinate
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setRampY(Image source);
+Ext.CLIJ2_setRampY(Image source);
 ```
 
 

@@ -7,7 +7,7 @@ Multiplies all pairs of pixel values x and y from two image X and Y.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_multiplyImages(Image factor1, Image factor2, Image destination);
+Ext.CLIJ2_multiplyImages(Image factor1, Image factor2, Image destination);
 ```
 
 

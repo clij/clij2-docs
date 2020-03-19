@@ -5,7 +5,7 @@ Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z]
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_writeValuesToPositions(Image positionsAndValues, Image destination);
+Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, Image destination);
 ```
 
 

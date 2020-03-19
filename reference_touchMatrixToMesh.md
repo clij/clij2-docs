@@ -5,7 +5,7 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_touchMatrixToMesh(Image pointlist, Image touch_matrix, Image mesh_destination);
+Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, Image mesh_destination);
 ```
 
 
@@ -42,6 +42,7 @@ clij2.release(mesh_destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 
 

@@ -6,7 +6,7 @@ there is no other pixel in a given radius which has a lower intensity, and to 0 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_detectMinimaBox(Image source, Image destination, Number radius);
+Ext.CLIJ2_detectMinimaBox(Image source, Image destination, Number radius);
 ```
 
 

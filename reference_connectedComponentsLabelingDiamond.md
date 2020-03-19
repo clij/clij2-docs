@@ -5,7 +5,7 @@ Performs connected components analysis to a binary image and generates a label m
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_connectedComponentsLabelingDiamond(Image binary_input, Image labeling_destination);
+Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, Image labeling_destination);
 ```
 
 

@@ -6,7 +6,7 @@ Results table in the column 'Standard_deviation'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_standardDeviationOfAllPixels(Image source);
+Ext.CLIJ2_standardDeviationOfAllPixels(Image source);
 ```
 
 

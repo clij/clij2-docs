@@ -6,7 +6,7 @@ its half-width and half-height (radius).
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximum2DBox(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_maximum2DBox(Image source, Image destination, Number radiusX, Number radiusY);
 ```
 
 

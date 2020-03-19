@@ -5,7 +5,7 @@ Deforms an image stack according to distances provided in the given vector image
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_applyVectorField3D(Image source, Image vectorX, Image vectorY, Image vectorZ, Image destination);
+Ext.CLIJ2_applyVectorField3D(Image source, Image vectorX, Image vectorY, Image vectorZ, Image destination);
 ```
 
 

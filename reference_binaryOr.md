@@ -7,7 +7,7 @@ All pixel values except 0 in the input images are interpreted as 1.<pre>f(x, y) 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_binaryOr(Image operand1, Image operand2, Image destination);
+Ext.CLIJ2_binaryOr(Image operand1, Image operand2, Image destination);
 ```
 
 

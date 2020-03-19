@@ -8,7 +8,7 @@ For technical reasons, the area of the ellipse must have less than 1000 pixels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_median3DSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_median3DSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
 ```
 
 

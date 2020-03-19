@@ -7,7 +7,7 @@ f(a, b) = 1 if a > b; 0 otherwise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_greater(Image source1, Image source2, Image destination);
+Ext.CLIJ2_greater(Image source1, Image source2, Image destination);
 ```
 
 

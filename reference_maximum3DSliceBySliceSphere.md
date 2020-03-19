@@ -8,7 +8,7 @@ This filter is applied slice by slice in 2D.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximum3DSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_maximum3DSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
 ```
 
 

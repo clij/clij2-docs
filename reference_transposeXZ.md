@@ -5,7 +5,7 @@ Transpose X and Z axes of an image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_transposeXZ(Image input, Image destination);
+Ext.CLIJ2_transposeXZ(Image input, Image destination);
 ```
 
 

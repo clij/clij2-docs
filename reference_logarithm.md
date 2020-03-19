@@ -9,7 +9,7 @@ f(x) = log(x)
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_logarithm(Image source, Image destination);
+Ext.CLIJ2_logarithm(Image source, Image destination);
 ```
 
 

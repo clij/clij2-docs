@@ -5,7 +5,7 @@ Draws a box at a given start point with given size. All pixels other than in the
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_drawBox(Image destination, Number x, Number y, Number z, Number width, Number height, Number depth, Number value);
+Ext.CLIJ2_drawBox(Image destination, Number x, Number y, Number z, Number width, Number height, Number depth, Number value);
 ```
 
 

@@ -5,7 +5,7 @@ Draws a line between two points with a given thickness. All pixels other than on
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_drawLine(Image destination, Number x1, Number y1, Number z1, Number x2, Number y2, Number z2, Number thickness, Number value);
+Ext.CLIJ2_drawLine(Image destination, Number x1, Number y1, Number z1, Number x2, Number y2, Number z2, Number thickness, Number value);
 ```
 
 

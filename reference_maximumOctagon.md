@@ -5,7 +5,7 @@ Applies a maximum filter with kernel size 3x3 n times to an image iteratively. O
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximumOctagon(Image input, Image destination, Number iterations);
+Ext.CLIJ2_maximumOctagon(Image input, Image destination, Number iterations);
 ```
 
 

@@ -6,7 +6,7 @@ Computes the gradient of gray values along Z. Assuming a, b and c are three adja
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_gradientZ(Image source, Image destination);
+Ext.CLIJ2_gradientZ(Image source, Image destination);
 ```
 
 

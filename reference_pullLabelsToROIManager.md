@@ -5,7 +5,7 @@ Pulls all labels in a label map as ROIs to the ROI manager.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_pullLabelsToROIManager(Image binary_input);
+Ext.CLIJ2_pullLabelsToROIManager(Image binary_input);
 ```
 
 

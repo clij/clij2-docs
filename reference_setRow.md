@@ -7,7 +7,7 @@ Sets all pixel values x of a given row in X to a constant value v.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setRow(Image source, Number rowIndex, Number value);
+Ext.CLIJ2_setRow(Image source, Number rowIndex, Number value);
 ```
 
 
@@ -35,6 +35,12 @@ clij2.setRow(clij, source, rowIndex, value);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

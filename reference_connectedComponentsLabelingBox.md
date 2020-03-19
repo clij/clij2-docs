@@ -5,7 +5,7 @@ Performs connected components analysis to a binary image and generates a label m
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_connectedComponentsLabelingBox(Image binary_input, Image labeling_destination);
+Ext.CLIJ2_connectedComponentsLabelingBox(Image binary_input, Image labeling_destination);
 ```
 
 
@@ -35,6 +35,14 @@ labeling_destinationImagePlus.show();
 clij2.release(binary_input);
 clij2.release(labeling_destination);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis_area.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis_area.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_stripe_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

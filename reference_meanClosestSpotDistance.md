@@ -5,7 +5,7 @@ Takes two binary images A and B with marked spots and determines for each spot i
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanClosestSpotDistance(Image spotsA, Image spotsB, Boolean bidirectional);
+Ext.CLIJ2_meanClosestSpotDistance(Image spotsA, Image spotsB, Boolean bidirectional);
 ```
 
 

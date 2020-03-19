@@ -6,7 +6,7 @@ Results table in the column 'Max'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximumOfAllPixels(Image source);
+Ext.CLIJ2_maximumOfAllPixels(Image source);
 ```
 
 

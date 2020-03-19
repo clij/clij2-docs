@@ -7,7 +7,7 @@ Computes the minimum of a pair of pixel values x, y from two given images X and 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimumImages(Image source1, Image source2, Image destination);
+Ext.CLIJ2_minimumImages(Image source1, Image source2, Image destination);
 ```
 
 

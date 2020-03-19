@@ -5,7 +5,7 @@ Sets all pixel values at the image border to a given value.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_setImageBorders(Image destination, Number value);
+Ext.CLIJ2_setImageBorders(Image destination, Number value);
 ```
 
 

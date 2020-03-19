@@ -6,7 +6,7 @@ is applied. In ImageJ the method which is similar is called 'Interpolation metho
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_downsample3D(Image source, Image destination, Number factorX, Number factorY, Number factorZ);
+Ext.CLIJ2_downsample3D(Image source, Image destination, Number factorX, Number factorY, Number factorZ);
 ```
 
 

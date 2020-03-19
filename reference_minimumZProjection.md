@@ -5,7 +5,7 @@ Determines the minimum projection of an image along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimumZProjection(Image source, Image destination_sum);
+Ext.CLIJ2_minimumZProjection(Image source, Image destination_sum);
 ```
 
 

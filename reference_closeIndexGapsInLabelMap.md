@@ -7,7 +7,7 @@ subsequent labels will be relabelled. Thus, afterwards number of labels and maxi
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_closeIndexGapsInLabelMap(Image binary_input, Image labeling_destination);
+Ext.CLIJ2_closeIndexGapsInLabelMap(Image binary_input, Image labeling_destination);
 ```
 
 

@@ -7,7 +7,7 @@ The implementation is done separable. In case a sigma equals zero, the direction
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_blur3D(Image source, Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
+Ext.CLIJ2_blur3D(Image source, Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
 ```
 
 

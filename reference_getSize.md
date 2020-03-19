@@ -5,7 +5,7 @@ Reads out the size of an image [stack] and writes it to the results table in the
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_getSize(Image source);
+Ext.CLIJ2_getSize(Image source);
 ```
 
 

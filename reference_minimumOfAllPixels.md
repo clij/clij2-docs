@@ -6,7 +6,7 @@ Results table in the column 'Min'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimumOfAllPixels(Image source);
+Ext.CLIJ2_minimumOfAllPixels(Image source);
 ```
 
 

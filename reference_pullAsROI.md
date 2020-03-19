@@ -5,7 +5,7 @@ Pulls a binary image from the GPU memory and puts it on the currently active Ima
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_pullAsROI(Image binary_input);
+Ext.CLIJ2_pullAsROI(Image binary_input);
 ```
 
 
@@ -37,6 +37,8 @@ clij2.release(binary_input);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis_area.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis_area.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [pullAsROI.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullAsROI.ijm)  
 
 

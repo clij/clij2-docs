@@ -7,7 +7,7 @@ Computes the maximum of a constant scalar s and each pixel value x in a given im
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_minimumImageAndScalar(Image source, Image destination, Number scalar);
+Ext.CLIJ2_minimumImageAndScalar(Image source, Image destination, Number scalar);
 ```
 
 

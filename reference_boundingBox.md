@@ -6,7 +6,7 @@ Results table in the column 'BoundingBoxX', 'BoundingBoxY', 'BoundingBoxZ', 'Bou
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_boundingBox(Image source);
+Ext.CLIJ2_boundingBox(Image source);
 ```
 
 

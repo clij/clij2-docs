@@ -5,7 +5,7 @@ Applies the Laplace operator (Box neighborhood) to an image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_laplaceBox(Image input, Image destination);
+Ext.CLIJ2_laplaceBox(Image input, Image destination);
 ```
 
 

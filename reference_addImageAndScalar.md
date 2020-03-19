@@ -7,7 +7,7 @@ Adds a scalar value s to all pixels x of a given image X.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_addImageAndScalar(Image source, Image destination, Number scalar);
+Ext.CLIJ2_addImageAndScalar(Image source, Image destination, Number scalar);
 ```
 
 

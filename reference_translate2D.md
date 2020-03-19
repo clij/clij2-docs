@@ -5,7 +5,7 @@ Translate an image stack in X and Y.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_translate2D(Image source, Image destination, Number translateX, Number translateY);
+Ext.CLIJ2_translate2D(Image source, Image destination, Number translateX, Number translateY);
 ```
 
 

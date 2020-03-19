@@ -7,7 +7,7 @@ Replaces recursively all pixels of value a with value b if the pixels have a nei
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_floodFillDiamond(Image source, Image destination, Number value_to_replace, Number value_replacement);
+Ext.CLIJ2_floodFillDiamond(Image source, Image destination, Number value_to_replace, Number value_replacement);
 ```
 
 

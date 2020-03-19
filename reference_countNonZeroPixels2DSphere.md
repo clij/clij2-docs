@@ -5,7 +5,7 @@ Counts non-zero pixels in a sphere around every pixel.Put the number in the resu
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_countNonZeroPixels2DSphere(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_countNonZeroPixels2DSphere(Image source, Image destination, Number radiusX, Number radiusY);
 ```
 
 

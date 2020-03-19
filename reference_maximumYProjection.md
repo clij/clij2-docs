@@ -5,7 +5,7 @@ Determines the maximum projection of an image along X.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximumYProjection(Image source, Image destination_max);
+Ext.CLIJ2_maximumYProjection(Image source, Image destination_max);
 ```
 
 

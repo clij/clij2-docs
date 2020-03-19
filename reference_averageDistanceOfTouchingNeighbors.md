@@ -5,7 +5,7 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image average_distancelist_destination);
+Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image average_distancelist_destination);
 ```
 
 

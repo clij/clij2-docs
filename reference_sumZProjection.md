@@ -5,7 +5,7 @@ Determines the sum projection of an image along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_sumZProjection(Image source, Image destination_sum);
+Ext.CLIJ2_sumZProjection(Image source, Image destination_sum);
 ```
 
 

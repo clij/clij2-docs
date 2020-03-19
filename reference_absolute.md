@@ -7,7 +7,7 @@ Computes the absolute value of every individual pixel x in a given image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_absolute(Image source, Image destination);
+Ext.CLIJ2_absolute(Image source, Image destination);
 ```
 
 

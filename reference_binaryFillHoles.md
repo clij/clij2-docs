@@ -5,7 +5,7 @@ Fills holes in a binary image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_binaryFillHoles(Image source, Image destination);
+Ext.CLIJ2_binaryFillHoles(Image source, Image destination);
 ```
 
 

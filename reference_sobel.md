@@ -7,7 +7,7 @@ Convolve the image with the Sobel kernel.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_sobel(Image source, Image destination);
+Ext.CLIJ2_sobel(Image source, Image destination);
 ```
 
 

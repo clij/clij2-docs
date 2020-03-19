@@ -5,7 +5,7 @@ Generates a distance map from a binary image. Pixels with non-zero value in the 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_distanceMap(Image source, Image destination);
+Ext.CLIJ2_distanceMap(Image source, Image destination);
 ```
 
 

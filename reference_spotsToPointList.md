@@ -6,7 +6,7 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_spotsToPointList(Image input_spots, Image destination_pointlist);
+Ext.CLIJ2_spotsToPointList(Image input_spots, Image destination_pointlist);
 ```
 
 

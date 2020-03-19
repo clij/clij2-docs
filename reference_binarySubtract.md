@@ -5,7 +5,7 @@ Subtracts one binary image from another.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_binarySubtract(Image minuend, Image subtrahend, Image destination);
+Ext.CLIJ2_binarySubtract(Image minuend, Image subtrahend, Image destination);
 ```
 
 

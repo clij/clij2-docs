@@ -6,7 +6,7 @@ Results table in the column 'Masked_standard_deviation'.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_standardDeviationOfMaskedPixels(Image source, Image mask);
+Ext.CLIJ2_standardDeviationOfMaskedPixels(Image source, Image mask);
 ```
 
 

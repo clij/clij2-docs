@@ -5,7 +5,7 @@ Determines the standard deviation projection of an image stack along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_standardDeviationZProjection(Image source, Image destination);
+Ext.CLIJ2_standardDeviationZProjection(Image source, Image destination);
 ```
 
 
