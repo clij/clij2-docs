@@ -1,5 +1,5 @@
 ## absoluteInplace
-![Image](images/mini_clij2_logo.png)![Image](images/mini_clijx_logo.png)![Image](images/mini_clijx_logo.png)
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
 Computes the absolute value of every individual pixel x in a given image.
 
@@ -7,31 +7,33 @@ Computes the absolute value of every individual pixel x in a given image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_absoluteInplace(Image source, Image destination);
+Ext.CLIJx_absoluteInplace(Image source_destination);
 ```
 
 
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer arg1 = clij2.push(arg1ImagePlus);
+source_destination = clij.create();
 ```
 
 ```
 // Execute operation on GPU
-clij2.absoluteInplace(clij, arg1);
+clij2.absoluteInplace(clij, source_destination);
 ```
 
 ```
 //show result
+source_destinationImagePlus = clij2.pull(source_destination);
+source_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(arg1);
+clij2.release(source_destination);
 ```
 
 
