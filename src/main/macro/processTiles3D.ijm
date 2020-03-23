@@ -1,9 +1,9 @@
-// CLIJ example macro: addImages3D.ijm
+// CLIJ example macro: processTiles3D.ijm
 //
-// This macro shows how add images of different bit-type
+// This macro shows how to process images in tiles
 //
 // Author: Robert Haase
-// January 2019
+//         March 2019
 // ---------------------------------------------
 
 run("Close All");
