@@ -7,3 +7,6 @@ mean2DSphere, mean3DSphere, MeanSliceBySliceSphere3D,... have radii as parameter
 for macro users everythin stays the same
 
 meanIJ was removed. Use meanSphere2D or meanSphere3D instead
+
+
+resample/scale factor is inverted use 2 instead of 0.5
