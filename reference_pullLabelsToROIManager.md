@@ -5,7 +5,7 @@ Pulls all labels in a label map as ROIs to the ROI manager.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pullLabelsToROIManager(Image binary_input);
+Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 ```
 
 
@@ -17,19 +17,19 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer binary_input = clij2.push(binary_inputImagePlus);
+ClearCLBuffer labelmap_input = clij2.push(labelmap_inputImagePlus);
 ```
 
 ```
 // Execute operation on GPU
-clij2.pullLabelsToROIManager(clij, binary_input);
+clij2.pullLabelsToROIManager(clij, labelmap_input);
 ```
 
 ```
 //show result
 
 // cleanup memory on GPU
-clij2.release(binary_input);
+clij2.release(labelmap_input);
 ```
 
 

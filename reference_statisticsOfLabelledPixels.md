@@ -1,7 +1,7 @@
 ## statisticsOfLabelledPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines bounding box, area (in pixels/voxels), min, max and mean intensity  of a labelled object in a label map and corresponding pixels in the original image.Instead of a label map, you can also use a binary image as a binary image is a label map with just one label.
+Determines bounding box, area (in pixels/voxels), min, max and mean intensity  of labelled objects in a label map and corresponding pixels in the original image.Instead of a label map, you can also use a binary image as a binary image is a label map with just one label.
 
 ### Usage in ImageJ macro
 ```
