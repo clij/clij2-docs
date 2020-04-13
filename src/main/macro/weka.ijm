@@ -100,11 +100,6 @@ run("glasbey on dark");
 
 result1 = "result1";
 
-time = getTime();
-Ext.CLIJx_applyOCLWekaModel(feature_stack, result1, "test4.model");
-print("Apply ocl weka model took " + (getTime() - time) + " msec");
-
-
 Ext.CLIJ_pull(result1);
 run("glasbey on dark");
 
