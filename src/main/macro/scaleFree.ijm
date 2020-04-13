@@ -35,7 +35,7 @@ run("Close All");
 	
 count = 0;
 for (zoom = 1; zoom > 0; zoom -= zoom_step) {
-	Ext.CLIJ2_scale2D("original", "zoomed", zoom, true);
+	Ext.CLIJ2_scale2D("original", "zoomed", zoom, zoom, true);
 
 	// put the zoomed image in the right place in the result stack
 	Ext.CLIJ2_copySlice("zoomed", "target", count);
