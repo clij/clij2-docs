@@ -9,7 +9,7 @@
 
 
 // Get test data
-//run("Blobs (25K)");
+run("Blobs (25K)");
 //open("C:/structure/data/blobs.gif");
 getDimensions(width, height, channels, slices, frames);
 input = getTitle();
