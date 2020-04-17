@@ -17,6 +17,8 @@ height = 1000;
 gridspacing = 50;
 thickness = 1.1;
 
+value = 1;
+
 // define the image name
 image = "image";
 
@@ -38,7 +40,7 @@ for(x = 0; x < width; x += gridspacing) {
 		y2 = height;
 		z1 = 0;
 		z2 = 0;
-		Ext.CLIJ2_drawLine(image, x1, y1, z1, x2, y2, z2, thickness);
+		Ext.CLIJ2_drawLine(image, x1, y1, z1, x2, y2, z2, thickness, value);
 
 		// horizontal line
 		x1 = 0;
@@ -47,7 +49,7 @@ for(x = 0; x < width; x += gridspacing) {
 		y2 = y;
 		z1 = 0;
 		z2 = 0;
-		Ext.CLIJ2_drawLine(image, x1, y1, z1, x2, y2, z2, thickness);
+		Ext.CLIJ2_drawLine(image, x1, y1, z1, x2, y2, z2, thickness, value);
 	}
 }
 Ext.CLIJ2_pull(image);
