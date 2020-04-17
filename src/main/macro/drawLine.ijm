@@ -21,7 +21,7 @@ Ext.CLIJx_create2D("image", width, height, 8);
 Ext.CLIJx_set("image", 0);
 
 // draw a line
-Ext.CLIJx_drawLine("image", 10, 10, 0, 50, 50, 0, 5);
+Ext.CLIJx_drawLine("image", 10, 10, 0, 50, 50, 0, 5, 1);
 
 // show result
 Ext.CLIJx_pull("image");
