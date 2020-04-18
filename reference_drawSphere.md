@@ -11,39 +11,6 @@ Ext.CLIJ2_drawSphere(ByRef Image destination, Number x, Number y, Number z, Numb
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-destination = clij.create();
-float x = 1.0;
-float y = 2.0;
-float z = 3.0;
-float radius_x = 4.0;
-float radius_y = 5.0;
-float radius_z = 6.0;
-float value = 7.0;
-```
-
-```
-// Execute operation on GPU
-clij2.drawSphere(clij, destination, x, y, z, radius_x, radius_y, radius_z, value);
-```
-
-```
-//show result
-destinationImagePlus = clij2.pull(destination);
-destinationImagePlus.show();
-
-// cleanup memory on GPU
-clij2.release(destination);
-```
-
-
 
 
 ### Example scripts

@@ -1,43 +1,17 @@
 ## nonzeroMinimumDiamond
-![Image](images/mini_clij2_logo.png)![Image](images/mini_clijx_logo.png)
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Apply a minimum filter (diamond shape) to the input image. The radius is fixed to 1 and pixels with value 0 are ignored.
+Apply a minimum filter (diamond shape) to the input image. 
+
+The radius is fixed to 1 and pixels with value 0 are ignored.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_nonzeroMinimumDiamond(Image input, Image destination);
+Ext.CLIJ2_nonzeroMinimumDiamond(Image input, ByRef Image destination);
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer arg1 = clij2.push(arg1ImagePlus);
-ClearCLBuffer arg2 = clij2.push(arg2ImagePlus);
-ClearCLBuffer arg3 = clij2.push(arg3ImagePlus);
-```
-
-```
-// Execute operation on GPU
-ClearCLKernel resultNonzeroMinimumDiamond = clij2.nonzeroMinimumDiamond(clij, arg1, arg2, arg3, arg4);
-```
-
-```
-//show result
-System.out.println(resultNonzeroMinimumDiamond);
-
-// cleanup memory on GPU
-clij2.release(arg1);
-clij2.release(arg2);
-clij2.release(arg3);
-```
-
-
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

@@ -11,34 +11,6 @@ Ext.CLIJ2_meanClosestSpotDistance(Image spotsA, Image spotsB, Boolean bidirectio
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer spotsA = clij2.push(spotsAImagePlus);
-ClearCLBuffer spotsB = clij2.push(spotsBImagePlus);
-boolean bidirectional = true;
-```
-
-```
-// Execute operation on GPU
-double[] resultMeanClosestSpotDistance = clij2.meanClosestSpotDistance(clij, spotsA, spotsB, bidirectional);
-```
-
-```
-//show result
-System.out.println(resultMeanClosestSpotDistance);
-
-// cleanup memory on GPU
-clij2.release(spotsA);
-clij2.release(spotsB);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

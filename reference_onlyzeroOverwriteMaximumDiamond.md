@@ -1,48 +1,29 @@
 ## onlyzeroOverwriteMaximumDiamond
-![Image](images/mini_clij2_logo.png)![Image](images/mini_clijx_logo.png)
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-TODO
+Apply a local maximum filter to an image which only overwrites pixels with value 0.
+
+### onlyzeroOverwriteMaximumDiamond often follows after
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
+
+
+### onlyzeroOverwriteMaximumDiamond is often followed by
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_onlyzeroOverwriteMaximumDiamond(Image input, Image destination);
-```
-
-
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer arg1 = clij2.push(arg1ImagePlus);
-ClearCLBuffer arg2 = clij2.push(arg2ImagePlus);
-ClearCLBuffer arg3 = clij2.push(arg3ImagePlus);
-```
-
-```
-// Execute operation on GPU
-clij2.onlyzeroOverwriteMaximumDiamond(clij, arg1, arg2, arg3);
-```
-
-```
-//show result
-
-// cleanup memory on GPU
-clij2.release(arg1);
-clij2.release(arg2);
-clij2.release(arg3);
+Ext.CLIJ2_onlyzeroOverwriteMaximumDiamond(Image input, ByRef Image destination);
 ```
 
 
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

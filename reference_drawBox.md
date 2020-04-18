@@ -14,39 +14,6 @@ Ext.CLIJ2_drawBox(ByRef Image destination, Number x, Number y, Number z, Number 
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-destination = clij.create();
-float x = 1.0;
-float y = 2.0;
-float z = 3.0;
-float width = 4.0;
-float height = 5.0;
-float depth = 6.0;
-float value = 7.0;
-```
-
-```
-// Execute operation on GPU
-clij2.drawBox(clij, destination, x, y, z, width, height, depth, value);
-```
-
-```
-//show result
-destinationImagePlus = clij2.pull(destination);
-destinationImagePlus.show();
-
-// cleanup memory on GPU
-clij2.release(destination);
-```
-
-
 
 
 ### Example scripts

@@ -11,33 +11,6 @@ Ext.CLIJ2_setRandom(Image source, Number minimumValue, Number maximumValue, Numb
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
-float minimumValue = 1.0;
-float maximumValue = 2.0;
-float seed = 3.0;
-```
-
-```
-// Execute operation on GPU
-clij2.setRandom(clij, source, minimumValue, maximumValue, seed);
-```
-
-```
-//show result
-
-// cleanup memory on GPU
-clij2.release(source);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

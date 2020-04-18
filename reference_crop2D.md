@@ -1,51 +1,34 @@
 ## crop2D
-![Image](images/mini_clij1_logo.png)![Image](images/mini_clij2_logo.png)![Image](images/mini_clijx_logo.png)
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
 Crops a given rectangle out of a given image.
 
 Note: If the destination image pre-exists already, it will be overwritten and keep it's dimensions.
 
+### crop2D often follows after
+* <a href="reference_resultsTableToImage2D">resultsTableToImage2D</a> (2)
+* <a href="reference_paste2D">paste2D</a> (2)
+
+
+### crop2D is often followed by
+* <a href="reference_transposeXY">transposeXY</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_crop2D(Image source, Image destination, Number startX, Number startY, Number width, Number height);
-```
-
-
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer arg1 = clij2.push(arg1ImagePlus);
-ClearCLBuffer arg2 = clij2.push(arg2ImagePlus);
-int arg3 = 10;
-int arg4 = 20;
-```
-
-```
-// Execute operation on GPU
-clij2.crop2D(clij, arg1, arg2, arg3, arg4);
-```
-
-```
-//show result
-
-// cleanup memory on GPU
-clij2.release(arg1);
-clij2.release(arg2);
+Ext.CLIJ2_crop2D(Image source, Image destination, Number startX, Number startY, Number width, Number height);
 ```
 
 
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [allocateBig2DImages.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/allocateBig2DImages.ijm)  
-<a href="https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [crop.ijm](https://github.com/clij/clij-advanced-filters/blob/master/src/main/macro/crop.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm"><img src="images/language_macro.png" height="20"/></a> [allocateBig2DImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop.ijm"><img src="images/language_macro.png" height="20"/></a> [crop.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

@@ -18,33 +18,6 @@ Ext.CLIJ2_statisticsOfLabelledPixels(Image input, Image labelmap);
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
-ClearCLBuffer labelmap = clij2.push(labelmapImagePlus);
-```
-
-```
-// Execute operation on GPU
-double[][] resultStatisticsOfLabelledPixels = clij2.statisticsOfLabelledPixels(clij, input, labelmap);
-```
-
-```
-//show result
-System.out.println(resultStatisticsOfLabelledPixels);
-
-// cleanup memory on GPU
-clij2.release(input);
-clij2.release(labelmap);
-```
-
-
 
 
 ### Example notebooks
