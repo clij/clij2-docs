@@ -20,22 +20,22 @@ watersheded = "watersheded";
 
 // Init GPU
 run("CLIJ Macro Extensions", "cl_device=");
-Ext.CLIJx_clear();
+Ext.CLIJ2_clear();
 
 // push data to GPU
-Ext.CLIJx_push(input);
+Ext.CLIJ2_push(input);
 
 // cleanup ImageJ
 run("Close All");
 
 // create a mask using a fixed threshold
-Ext.CLIJx_automaticThreshold(input, mask, "Otsu");
+Ext.CLIJ2_automaticThreshold(input, mask, "Otsu");
 
 // apply watershed
 Ext.CLIJx_watershed(mask, watersheded);
 
 // show result
-Ext.CLIJx_pull(watersheded);
+Ext.CLIJ2_pull(watersheded);
 
 
 

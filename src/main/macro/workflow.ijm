@@ -16,8 +16,8 @@ input = getTitle();
 mask = "Mask";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
-Ext.CLIJx_clear();
+run("CLIJ2 Macro Extensions", "cl_device=");
+Ext.CLIJ2_clear();
 
 for (i = 0; i < 10000; i++) {
 	IJ.log(i);
@@ -27,29 +27,29 @@ for (i = 0; i < 10000; i++) {
 	rename(input);
 	
 	// push data to GPU
-	Ext.CLIJx_push(input);
+	Ext.CLIJ2_push(input);
 	
 	// cleanup ImageJ
 	//run("Close All");
 	
 	// create a mask using a fixed threshold
-	Ext.CLIJx_automaticThreshold(input, mask, "Otsu");
+	Ext.CLIJ2_automaticThreshold(input, mask, "Otsu");
 	
 	eroded = "eroded" + i;
-	Ext.CLIJx_erodeBox(mask, eroded);
+	Ext.CLIJ2_erodeBox(mask, eroded);
 	
 	dilated = "dilated" + i;
-	Ext.CLIJx_dilateBox(eroded, dilated);
+	Ext.CLIJ2_dilateBox(eroded, dilated);
 	
 	subtracted = "subtracted" + i;
-	Ext.CLIJx_subtractImages(mask, dilated, subtracted);
+	Ext.CLIJ2_subtractImages(mask, dilated, subtracted);
 	
 	downsampled = "downsampled" + i;
-	Ext.CLIJx_downsample2D(subtracted, downsampled, 0.5, 0.5);
+	Ext.CLIJ2_downsample2D(subtracted, downsampled, 0.5, 0.5);
 	
 	// show result
-	Ext.CLIJx_pullBinary(downsampled);
-	Ext.CLIJx_reportMemory();
+	Ext.CLIJ2_pullBinary(downsampled);
+	Ext.CLIJ2_reportMemory();
 	//Ext.CLIJ_clear();
 	
 	close();
