@@ -1,7 +1,9 @@
 ## generateFeatureStack
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Generates a feature stack for Trainable Weka Segmentation. Use this terminology to specifiy which stacks should be generated:
+Generates a feature stack for Trainable Weka Segmentation. 
+
+Use this terminology to specifiy which stacks should be generated:
 * "original" original slice
 * "GaussianBlur=s" Gaussian blurred image with sigma s
 * "LaplacianOfGaussian=s" Laplacian of Gaussian blurred image with sigma s

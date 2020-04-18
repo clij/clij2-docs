@@ -44,7 +44,7 @@ Deforms an image stack according to distances provided in the given vector image
 Deforms an image according to distances provided in the given vector images. It is recommended to use 32-bit images for input, output and vector images. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyWekaModel">applyWekaModel (Experimental)</a>  
-Applies a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. It takes a 3D feature stack (e.g. first plane original image, second plane blurred, third plane edge image)and applies a pre-trained a Weka model. Take care that the feature stack has been generated in the sameway as for training the model!
+Applies a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_argMaximumZProjection">argMaximumZProjection</a>  
 Determines the maximum projection of an image stack along Z. Furthermore, another 2D image is generated with pixels containing the z-index where the maximum was found (zero based).
@@ -311,7 +311,7 @@ Computes the Gaussian blurred image of an image given two sigma values in X, Y a
 Takes two images containing coordinates and builds up a matrix containing distance between the points. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateFeatureStack">generateFeatureStack (Experimental)</a>  
-Generates a feature stack for Trainable Weka Segmentation. Use this terminology to specifiy which stacks should be generated: * "original" original slice * "GaussianBlur=s" Gaussian blurred image with sigma s * "LaplacianOfGaussian=s" Laplacian of Gaussian blurred image with sigma s * "SobelOfGaussian=s" Sobel filter applied to Gaussian blurred image with sigma s * "minimum=r" local minimum with radius r * "maximum=r" local maximum with radius r * "mean=r" local mean with radius r * "entropy=r" local entropy with radius r * "gradientX" local gradient in X direction * "gradientY" local gradient in Y direction
+Generates a feature stack for Trainable Weka Segmentation. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">generateTouchMatrix</a>  
 Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixels are set to 0 exept those where labels are touching. 
@@ -872,10 +872,10 @@ Applies a top-hat filter for background subtraction to the input image.
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of  size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_trainWekaModelWithOptions">trainWekaModelWithOptions (Experimental)</a>  
-Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. It takes a 3D feature stack (e.g. first plane original image, second plane blurred, third plane edge image)and trains a Weka model. This model will be saved to disc. The given groundTruth image is supposed to be a label map where pixels with value 1 represent class 1, pixels with value 2 represent class 2 and so on. Pixels with value 0 will be ignored for training.
+Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_trainWekaModel">trainWekaModel (Experimental)</a>  
-Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. It takes a 3D feature stack (e.g. first plane original image, second plane blurred, third plane edge image)and trains a Weka model. This model will be saved to disc. The given groundTruth image is supposed to be a label map where pixels with value 1 represent class 1, pixels with value 2 represent class 2 and so on. Pixels with value 0 will be ignored for training.
+Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_translate2D">translate2D</a>  
 Translate an image stack in X and Y.
