@@ -53,7 +53,7 @@ clij2.release(destination);
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/blur"><img src="images/language_macro.png" height="20"/></a> [blur](https://github.com/clij/clij2-docs/md/blur)  
+<a href="https://clij.github.io/clij2-docs/md/blur"><img src="images/language_macro.png" height="20"/></a> [blur](https://clij.github.io/clij2-docs/md/blur)  
 
 
 

@@ -21,7 +21,7 @@ Ext.CLIJ2_statisticsOfLabelledPixels(Image input, Image labelmap);
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/measure_statistics"><img src="images/language_macro.png" height="20"/></a> [measure_statistics](https://github.com/clij/clij2-docs/md/measure_statistics)  
+<a href="https://clij.github.io/clij2-docs/md/measure_statistics"><img src="images/language_macro.png" height="20"/></a> [measure_statistics](https://clij.github.io/clij2-docs/md/measure_statistics)  
 
 
 

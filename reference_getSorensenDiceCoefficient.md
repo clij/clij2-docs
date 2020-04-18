@@ -21,7 +21,7 @@ Ext.CLIJ2_getSorensenDiceCoefficient(Image source1, Image source2, ByRef Number 
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/measure_overlap"><img src="images/language_macro.png" height="20"/></a> [measure_overlap](https://github.com/clij/clij2-docs/md/measure_overlap)  
+<a href="https://clij.github.io/clij2-docs/md/measure_overlap"><img src="images/language_macro.png" height="20"/></a> [measure_overlap](https://clij.github.io/clij2-docs/md/measure_overlap)  
 
 
 

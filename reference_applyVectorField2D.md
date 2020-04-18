@@ -53,7 +53,7 @@ clij2.release(destination);
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/applyVectorFieldMD"><img src="images/language_macro.png" height="20"/></a> [applyVectorFieldMD](https://github.com/clij/clij2-docs/md/applyVectorFieldMD)  
+<a href="https://clij.github.io/clij2-docs/md/applyVectorFieldMD"><img src="images/language_macro.png" height="20"/></a> [applyVectorFieldMD](https://clij.github.io/clij2-docs/md/applyVectorFieldMD)  
 
 
 

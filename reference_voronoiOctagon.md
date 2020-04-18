@@ -46,8 +46,8 @@ clij2.release(destination);
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://github.com/clij/clij2-docs/md/mean_of_touching_neighbors)  
-<a href="https://github.com/clij/clij2-docs/md/voronoi"><img src="images/language_macro.png" height="20"/></a> [voronoi](https://github.com/clij/clij2-docs/md/voronoi)  
+<a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
+<a href="https://clij.github.io/clij2-docs/md/voronoi"><img src="images/language_macro.png" height="20"/></a> [voronoi](https://clij.github.io/clij2-docs/md/voronoi)  
 
 
 

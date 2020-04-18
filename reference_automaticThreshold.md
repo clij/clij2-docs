@@ -55,8 +55,8 @@ clij2.release(destination);
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/labeling"><img src="images/language_macro.png" height="20"/></a> [labeling](https://github.com/clij/clij2-docs/md/labeling)  
-<a href="https://github.com/clij/clij2-docs/md/measure_overlap"><img src="images/language_macro.png" height="20"/></a> [measure_overlap](https://github.com/clij/clij2-docs/md/measure_overlap)  
+<a href="https://clij.github.io/clij2-docs/md/labeling"><img src="images/language_macro.png" height="20"/></a> [labeling](https://clij.github.io/clij2-docs/md/labeling)  
+<a href="https://clij.github.io/clij2-docs/md/measure_overlap"><img src="images/language_macro.png" height="20"/></a> [measure_overlap](https://clij.github.io/clij2-docs/md/measure_overlap)  
 
 
 

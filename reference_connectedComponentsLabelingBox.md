@@ -48,8 +48,8 @@ clij2.release(labeling_destination);
 
 
 ### Example notebooks
-<a href="https://github.com/clij/clij2-docs/md/labeling"><img src="images/language_macro.png" height="20"/></a> [labeling](https://github.com/clij/clij2-docs/md/labeling)  
-<a href="https://github.com/clij/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://github.com/clij/clij2-docs/md/mean_of_touching_neighbors)  
+<a href="https://clij.github.io/clij2-docs/md/labeling"><img src="images/language_macro.png" height="20"/></a> [labeling](https://clij.github.io/clij2-docs/md/labeling)  
+<a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
 
 
 
