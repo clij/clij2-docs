@@ -12,9 +12,9 @@ run("Close All");
 
 run("T1 Head (2.4M, 16-bits)");
 //open("C:/structure/data/t1-head.tif");
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_push("t1-head.tif");
-Ext.CLIJ2_resliceLeft("t1-head.tif", "CLIJ_resliceLeft_destination_t1-head.tif");
-Ext.CLIJ2_rotateRight("CLIJ_resliceLeft_destination_t1-head.tif", "CLIJ_rotateRight_destination_CLIJ_resliceLeft_destination_t1-head.tif");
-Ext.CLIJ2_pull("CLIJ_rotateRight_destination_CLIJ_resliceLeft_destination_t1-head.tif");
+Ext.CLIJ2_resliceLeft("t1-head.tif", resliced);
+Ext.CLIJ2_rotateRight(resliced, rotated);
+Ext.CLIJ2_pull(rotated);
 Ext.CLIJ2_reportMemory();
