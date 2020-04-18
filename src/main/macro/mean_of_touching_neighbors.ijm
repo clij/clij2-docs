@@ -1,28 +1,27 @@
-// CLIJ example macro: voronoi.ijm
-//
-// This macro shows how to apply an get a
-// voronoi image of a binary image in the GPU.
-//
-// Author: Robert Haase
-//         March 2020
-// ---------------------------------------------
+/* 
+# CLIJ example macro: mean_of_touching_neighbors.ijm
+
+This macro shows how to apply an get a
+voronoi image of a binary image in the GPU.
+
+Author: Robert Haase 
+        March 2020
+
+---
+
+Clean up first and get test data
+*/
+run("Close All");
 
 
-// Get test data
 run("Blobs (25K)");
 //open("C:/structure/data/blobs.gif");
-getDimensions(width, height, channels, slices, frames);
 input = getTitle();
 
-mask = "Mask";
-voronoi_diagram = "voronoi_diagram";
-inverted_voronoi = "inverted_voronoi";
-labelled = "labelled";
-labelled_extended = "labelled_extended";
-touch_matrix = "touch_matrix";
-
-// Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+/* 
+Init GPU and data
+*/
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
@@ -31,56 +30,81 @@ Ext.CLIJ2_push(input);
 // cleanup ImageJ
 run("Close All");
 
-// create a mask using a fixed threshold
+/*
+Create a mask using the Otsu threshold algorithm
+*/
 Ext.CLIJ2_thresholdOtsu(input, mask);
+Ext.CLIJ2_pull(mask);
 
-// voronoi
+/*
+Draw a Voronoi diagram and invert it
+*/
+
 Ext.CLIJ2_voronoiOctagon(mask, voronoi_diagram);
-
 // invert
 Ext.CLIJ2_binaryNot(voronoi_diagram, inverted_voronoi);
 
-// label
+Ext.CLIJ2_pullBinary(voronoi_diagram);
+Ext.CLIJ2_pullBinary(inverted_voronoi);
+
+/* 
+Generate a label map and extend it to make labels touch
+*/
 Ext.CLIJ2_connectedComponentsLabelingBox(inverted_voronoi, labelled);
 
-// extend labels so that they touch
+// Extend labels so that they touch
 Ext.CLIJ2_maximum2DBox(labelled, labelled_extended, 2, 2);
 
-// determine touch matrix
-Ext.CLIJ2_generateTouchMatrix(labelled_extended, touch_matrix);
-Ext.CLIJ2_pull(touch_matrix);
+Ext.CLIJ2_pull(labelled);
+Ext.CLIJ2_pull(labelled_extended);
 
-// get a statistics table
+/* 
+Determine touch matrix
+*/
+Ext.CLIJ2_generateTouchMatrix(labelled_extended, touch_matrix);
+Ext.CLIJ2_pullBinary(touch_matrix);
+
+/*
+Do statistics on the label map and push the mean intensity column back to the GPU
+*/
+run("Clear Results");
 Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(input, labelled_extended);
 
-intensity_values = "intensity_values";
 Ext.CLIJ2_resultsTableColumnToImage(intensity_values, "MEAN_INTENSITY");
 
-local_mean_intensity_values = "local_mean_intensity_values";
-Ext.CLIJ2_meanOfTouchingNeighbors(intensity_values, touch_matrix, local_mean_intensity_values);
-
-local_minimum_intensity_values = "local_minimum_intensity_values";
-Ext.CLIJ2_minimumOfTouchingNeighbors(intensity_values, touch_matrix, local_minimum_intensity_values);
-
-local_maximum_intensity_values = "local_maximum_intensity_values";
-Ext.CLIJ2_maximumOfTouchingNeighbors(intensity_values, touch_matrix, local_maximum_intensity_values);
-
-intensity_map = "intensity_map";
+/*
+Show Mean intensity per label as parametric image
+*/
 Ext.CLIJ2_replaceIntensities(labelled_extended, intensity_values, intensity_map);
-
-local_mean_intensity_map = "local_mean_intensity_map";
-Ext.CLIJ2_replaceIntensities(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
-
-local_minimum_intensity_map = "local_minimum_intensity_map";
-Ext.CLIJ2_replaceIntensities(labelled_extended, local_minimum_intensity_values, local_minimum_intensity_map);
-
-local_maximum_intensity_map = "local_maximum_intensity_map";
-Ext.CLIJ2_replaceIntensities(labelled_extended, local_maximum_intensity_values, local_maximum_intensity_map);
-
-Ext.CLIJ2_pull(input);
 Ext.CLIJ2_pull(intensity_map);
+rename("label intensity");
+
+/*
+Determine mean (mean) intensity of local neighbors and draw another parametric image
+ */
+
+Ext.CLIJ2_meanOfTouchingNeighbors(intensity_values, touch_matrix, local_mean_intensity_values);
+Ext.CLIJ2_replaceIntensities(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
 Ext.CLIJ2_pull(local_mean_intensity_map);
+rename("mean neighbor intensity");
+
+/*
+Determine min and max (mean) intensity of local neighbors and draw two more parametric image
+*/
+
+// min
+Ext.CLIJ2_minimumOfTouchingNeighbors(intensity_values, touch_matrix, local_minimum_intensity_values);
+Ext.CLIJ2_replaceIntensities(labelled_extended, local_minimum_intensity_values, local_minimum_intensity_map);
 Ext.CLIJ2_pull(local_minimum_intensity_map);
+rename("minimum neighbor intensity");
+
+// max
+Ext.CLIJ2_maximumOfTouchingNeighbors(intensity_values, touch_matrix, local_maximum_intensity_values);
+Ext.CLIJ2_replaceIntensities(labelled_extended, local_maximum_intensity_values, local_maximum_intensity_map);
 Ext.CLIJ2_pull(local_maximum_intensity_map);
+rename("maximum neighbor intensity");
 
-
+/*
+Clean up by the end.
+*/
+Ext.CLIJ2_clear();

@@ -21,7 +21,7 @@ mask = "mask";
 labelmap = "labelmap";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
@@ -56,18 +56,15 @@ Ext.CLIJ2_generateDistanceMatrix(pointlist1, pointlist2, distance_matrix);
 
 Ext.CLIJ2_pull(distance_matrix);
 
-Ext.CLIJ2_transposeXZ(distance_matrix, "test");
-Ext.CLIJ2_pull("test");
-
 minimum_distances = "minimum_distances";
 Ext.CLIJ2_shortestDistances(distance_matrix, minimum_distances);
 
-Ext.CLIJ2_meanOfAllPixels(minimum_distances);
-meanDistance = getResult("Mean", nResults() - 1);
+Ext.CLIJ2_getMeanOfAllPixels(minimum_distances, meanDistance);
 IJ.log("mean distance: " + meanDistance);
-
 
 Ext.CLIJ2_pull(minimum_distances);
 
-
-
+/*
+Clean up by the end
+*/
+Ext.CLIJ2_clear();

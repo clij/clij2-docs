@@ -9,6 +9,7 @@ Let's start with ImageJ. We have a workflow loading an image,
 processing with background subtracting and thresholding. Note 
 the two lines using the `getTime()`.
 */
+run("Close All");
 
 // Get test data
 open("https://github.com/clij/clij2-docs/raw/master/src/main/resources/Lund_MAX_001300.tif");
@@ -34,25 +35,27 @@ Now we run the same workflow with CLIJ
 
 // Get test data
 open("https://github.com/clij/clij2-docs/raw/master/src/main/resources/Lund_MAX_001300.tif");
-rename("input_clij");
+input_clij = getTitle();
 
 start_time_clij = getTime();
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
-Ext.CLIJ2_push("input_clij");
+Ext.CLIJ2_push(input_clij);
 
 // subtract background in the image
 radius = 25;
-Ext.CLIJ2_topHatBox("input_clij", "background_subtracted_clij", 25, 25, 0);
-Ext.CLIJ2_pull("background_subtracted_clij");
+background_subtracted_clij = "background_subtracted_clij";
+Ext.CLIJ2_topHatBox(input_clij, background_subtracted_clij, 25, 25, 0);
+Ext.CLIJ2_pull(background_subtracted_clij);
 
 // threshold the image
-Ext.CLIJ2_automaticThreshold("background_subtracted_clij", "thresholded_clij", "Default");
-Ext.CLIJ2_pullBinary("thresholded_clij");
+thresholded_clij = "thresholded_clij";
+Ext.CLIJ2_automaticThreshold(background_subtracted_clij, thresholded_clij, "Default");
+Ext.CLIJ2_pullBinary(thresholded_clij);
 
 end_time_clij = getTime();
 
@@ -99,12 +102,12 @@ in 32-bit because 8-bit images don't support negative values.
 
 ## Visual differences between background_subtracted images
 */
-imageCalculator("Subtract create 32-bit", "background_subtracted_imagej","background_subtracted_clij");
+imageCalculator("Subtract create 32-bit", "background_subtracted_imagej", background_subtracted_clij);
 
 /*
 ## Visual differences between thresholded images
 */
-imageCalculator("Subtract create 32-bit", "thresholded_imagej","thresholded_clij");
+imageCalculator("Subtract create 32-bit", "thresholded_imagej", thresholded_clij);
 
 /*
 This confirms visually our assumption: The background_subtracted images 
@@ -123,8 +126,10 @@ The numbers shown here depend on used GPU hardware. Let's therefore it's
 good practice to document which GPU was used:
 */
 
-run("Clear Results");
-Ext.CLIJ2_getGPUProperties();
+Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
+print("GPU: " + gpu);
+print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
+print("OpenCL version: " + opencl_version);
 
 /*
 Note: If you run this script a second time, numbers may be a bit different,

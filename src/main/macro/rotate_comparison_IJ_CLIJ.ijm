@@ -1,37 +1,52 @@
-// CLIJ example macro: rotate_comparison_IJ_CLIJ.ijm
-//
-// This macro shows how stacks can be rotated in the GPU
-// and how different results are between CLIJ and ImageJ.
-//
-// Author: Robert Haase
-// July 2019
-// ---------------------------------------------
+/* 
+# CLIJ example macro: rotate_comparison_IJ_CLIJ.ijm
+
+This macro shows how stacks can be rotated in the GPU
+and how different results are between CLIJ and ImageJ.
+
+Author: Robert Haase
+July 2019
+
+## Get test data
+*/
 run("Close All");
 
-// Get test data
 run("Blobs (25K)");
-run("32-bit");
+run("Invert LUT");
 
-getDimensions(width, height, channels, slices, frames);
-input = getTitle();
+input = getTitle();
 
-rotated = "Rotated";
-
-// Init GPU
+/* 
+## Initialize GPU and push image data to GPU memory
+*/
 run("CLIJ Macro Extensions", "cl_device=1070");
 Ext.CLIJ2_clear();
 
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-// rotate on CPU
+/*
+## Rotate image on CPU
+*/
+run("Duplicate...", " ");
 run("Rotate... ", "angle=45 grid=1 interpolation=Bilinear");
+rotated_cpu = getTitle();
 
-// rotate on GPU
-Ext.CLIJ2_affineTransform2D(input, rotated, "center rotate=45 -center");
+/*
+## Rotate image on GPU
+*/
+Ext.CLIJ2_affineTransform2D(input, rotated_gpu, "-center rotate=45 center");
 
 // show results
-Ext.CLIJ2_pull(rotated);
+Ext.CLIJ2_pull(rotated_gpu);
 
-// calculate difference image between CPU and GPU
-imageCalculator("Subtract create 32-bit", input, rotated);
+
+/* 
+## Calculate difference image between CPU and GPU
+*/
+imageCalculator("Subtract create 32-bit", rotated_cpu, rotated_gpu);
+
+/*
+Clean up by the end
+*/
+Ext.CLIJ2_clear();

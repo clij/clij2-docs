@@ -49,15 +49,46 @@ for (i = 0; i < 1000; i++) {
 	// view the image
 	Ext.CLIJx_showRGB(input_r, input_g, input_b, "viewer");
 
+
+	slice = "slice";
+	Ext.CLIJ2_create2D(slice, image_width, image_height, 32);
+	Ext.CLIJx_convertRGBStackToGraySlice(input, slice);
+
+	inverted = "inverted";
+	//Ext.CLIJ2_subtractImageFromScalar(slice, inverted, 255);
+	Ext.CLIJ2_copy(slice, inverted);
+
+	backgroundSubtracted = "backgroundSubtracted";
+	Ext.CLIJx_subtractBackground2D(inverted, backgroundSubtracted, 5, 5);
+
+	extended = "extended";
+	Ext.CLIJ2_minimum2DBox(backgroundSubtracted, extended, 2, 2);
+	//Ext.CLIJ2_copy(backgroundSubtracted, extended);
+
+	blurred = "blurred";
+	Ext.CLIJ2_median2DBox(extended, blurred, 3, 3);
+
+	thresholded = "thresholded";
+	Ext.CLIJ2_thresholdHuang(blurred, thresholded);
+
+	binary_inverted = "binary_inverted";
+	Ext.CLIJ2_binaryNot(thresholded, binary_inverted);
+
+	labelled = "labelled";
+	Ext.CLIJ2_connectedComponentsLabelingBox(binary_inverted, labelled);
+	Ext.CLIJx_showGrey(labelled, "labelled");
+	selectWindow(labelled);
+	run("glasbey");
+	
+
 	// in case the first window was closed, cancel the program
 	if (!isOpen(cancelText)) {
 		print("Exiting");
 		break;
 	}
 
-	if (i > 0) {
-		//break;
-	}
+	//break;
+	
 	wait(200);
 }
 
