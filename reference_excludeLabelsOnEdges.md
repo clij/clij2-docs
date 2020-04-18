@@ -53,6 +53,7 @@ clij2.release(label_map_destination);
 <a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/segmentation.m"><img src="images/language_matlab.png" height="20"/></a> [segmentation.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/segmentation.m)  
 
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

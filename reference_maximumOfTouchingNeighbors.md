@@ -62,6 +62,7 @@ clij2.release(maximum_values_destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

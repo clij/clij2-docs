@@ -4,6 +4,10 @@
 Scales an image using given scaling factors for X and Y dimensions. The nearest-neighbor method
 is applied. In ImageJ the method which is similar is called 'Interpolation method: none'.
 
+### downsample2D often follows after
+* <a href="reference_subtractImages">subtractImages</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_downsample2D(Image source, Image destination, Number factorX, Number factorY);
@@ -46,6 +50,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

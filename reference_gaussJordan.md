@@ -97,6 +97,7 @@ clijx.release(solution_destination);
 //Study of General Purpose Applications on Graphics Processors using CUDA" Journal of  
 //Parallel and Distributed Computing, Elsevier, June 2008.
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

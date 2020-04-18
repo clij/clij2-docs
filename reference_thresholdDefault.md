@@ -47,6 +47,7 @@ The code for the automatic thresholding methods originates from https://github.c
   
 Detailed documentation on the implemented methods can be found online: https://imagej.net/Auto_Threshold
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)

@@ -11,6 +11,7 @@ of these methods in the method text field:
 
 
 ### automaticThreshold is often followed by
+* <a href="reference_subtractImages">subtractImages</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (6)
 * <a href="reference_centerOfMass">centerOfMass</a> (2)
 * <a href="reference_getSorensenDiceCoefficient">getSorensenDiceCoefficient</a> (3)
@@ -63,8 +64,6 @@ clij2.release(destination);
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm"><img src="images/language_macro.png" height="20"/></a> [distanceMap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_area_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_area_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_area_per_label.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/watershed.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/autoThreshold.ijm"><img src="images/language_macro.png" height="20"/></a> [autoThreshold.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/autoThreshold.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/boundingBoxes.ijm"><img src="images/language_macro.png" height="20"/></a> [boundingBoxes.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/boundingBoxes.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/center_of_mass.ijm"><img src="images/language_macro.png" height="20"/></a> [center_of_mass.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/center_of_mass.ijm)  
@@ -80,6 +79,8 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullLabelsToROIManager.ijm"><img src="images/language_macro.png" height="20"/></a> [pullLabelsToROIManager.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullLabelsToROIManager.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullToROIManager.ijm"><img src="images/language_macro.png" height="20"/></a> [pullToROIManager.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullToROIManager.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/watershed.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 <a href="https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb"><img src="images/language_python.png" height="20"/></a> [benchmark_clijx_pull.ipynb](https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb)  
 <a href="https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb"><img src="images/language_python.png" height="20"/></a> [clijpy_demo.ipynb](https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb)  
 <a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
@@ -91,6 +92,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/thresholding.m"><img src="images/language_matlab.png" height="20"/></a> [thresholding.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/thresholding.m)  
 
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)
