@@ -8,11 +8,6 @@ voronoi image of a binary image in the GPU.
 Author: Robert Haase 
         March 2020
 
-```java
-
-
-```
-
 Get test data
 
 ```java
