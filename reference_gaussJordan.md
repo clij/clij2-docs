@@ -19,7 +19,7 @@ L.G. Szafaryn, K. Skadron and J. Saucerman. "Experiences Accelerating MATLAB Sys
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, Image solution_destination);
+Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, ByRef Image solution_destination);
 ```
 
 

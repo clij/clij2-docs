@@ -1,11 +1,13 @@
 ## minimumOctagon
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Applies a minimum filter with kernel size 3x3 n times to an image iteratively. Odd iterations are done with box neighborhood, even iterations with a diamond. Thus, with n > 2, the filter shape is an octagon. The given number of iterations makes the filter result very similar to minimum sphere. Approximately:radius = iterations - 2
+Applies a minimum filter with kernel size 3x3 n times to an image iteratively. 
+
+Odd iterations are done with box neighborhood, even iterations with a diamond. Thus, with n > 2, the filter shape is an octagon. The given number of iterations makes the filter result very similar to minimum sphere. Approximately:radius = iterations - 2
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimumOctagon(Image input, Image destination, Number iterations);
+Ext.CLIJ2_minimumOctagon(Image input, ByRef Image destination, Number iterations);
 ```
 
 
@@ -41,8 +43,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

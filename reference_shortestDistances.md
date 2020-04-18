@@ -1,11 +1,17 @@
 ## shortestDistances
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determine the shortest distance from a distance matrix. This corresponds to the minimum in a matrix for each individial column.
+Determine the shortest distance from a distance matrix. 
+
+This corresponds to the minimum for each individial column.
+
+### shortestDistances often followes after
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_shortestDistances(Image distance_matrix, Image destination_minimum_distances);
+Ext.CLIJ2_shortestDistances(Image distance_matrix, ByRef Image destination_minimum_distances);
 ```
 
 
@@ -40,7 +46,7 @@ clij2.release(destination_minimum_distances);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

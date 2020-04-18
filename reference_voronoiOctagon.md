@@ -1,11 +1,17 @@
 ## voronoiOctagon
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes a binary image and dilates the regions using a octagon shape until the touch. The pixels where  the regions touched are afterwards returned as binary image which cooresponds to the Voronoi diagram.
+Takes a binary image and dilates the regions using a octagon shape until they touch. 
+
+The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
+
+### voronoiOctagon often followes after
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_voronoiOctagon(Image input, Image destination);
+Ext.CLIJ2_voronoiOctagon(Image input, ByRef Image destination);
 ```
 
 
@@ -39,10 +45,18 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://github.com/clij/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://github.com/clij/clij2-docs/md/mean_of_touching_neighbors)  
+<a href="https://github.com/clij/clij2-docs/md/voronoi"><img src="images/language_macro.png" height="20"/></a> [voronoi](https://github.com/clij/clij2-docs/md/voronoi)  
+
+
+
+
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [benchmarkVoronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [voronoi3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi3D.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkVoronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi3D.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi3D.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

@@ -1,11 +1,11 @@
 ## connectedComponentsLabelingDiamond
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Performs connected components analysis to a binary image and generates a label map.
+Performs connected components analysis inspecting the diamond neighborhood of every pixel to a binary image and generates a label map.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, Image labeling_destination);
+Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, ByRef Image labeling_destination);
 ```
 
 

@@ -5,7 +5,7 @@ Applies a top-hat filter for background subtraction to the input image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_topHatSphere(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_topHatSphere(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 
@@ -38,6 +38,12 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmark_xt.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmark_xt.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmark_xt.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

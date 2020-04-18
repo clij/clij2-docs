@@ -3,11 +3,11 @@
 
 Determines if an image A and a constant b are equal.
 
-f(a, b) = 1 if a == b; 0 otherwise. 
+<pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_equalConstant(Image source, Image destination, Number constant);
+Ext.CLIJ2_equalConstant(Image source, ByRef Image destination, Number constant);
 ```
 
 

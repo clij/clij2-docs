@@ -1,11 +1,23 @@
 ## touchMatrixToMesh
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
+Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of 
+size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
+
+### touchMatrixToMesh often followes after
+* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+
+
+### touchMatrixToMesh is often followed by
+* <a href="reference_rotate3D">rotate3D</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, Image mesh_destination);
+Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, ByRef Image mesh_destination);
 ```
 
 
@@ -42,8 +54,8 @@ clij2.release(mesh_destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

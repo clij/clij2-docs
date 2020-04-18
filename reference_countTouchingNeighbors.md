@@ -1,11 +1,11 @@
 ## countTouchingNeighbors
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes a touching-neighbors-matrix as input and delivers a vector with number of touching neighbors per label as a vector.
+Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, Image touching_neighbors_count_destination);
+Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, ByRef Image touching_neighbors_count_destination);
 ```
 
 

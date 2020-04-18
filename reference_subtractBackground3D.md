@@ -5,7 +5,7 @@ Applies Gaussian blur to the input image and subtracts the result from the origi
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_subtractBackground3D(Image input, Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
+Ext.CLIJx_subtractBackground3D(Image input, ByRef Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
 ```
 
 

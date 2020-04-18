@@ -3,9 +3,13 @@
 
 Resamples an image with given size factors using an affine transform.
 
+### resample is often followed by
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_resample(Image source, Image destination, Number factorX, Number factorY, Number factorZ, Boolean linearInterpolation);
+Ext.CLIJ2_resample(Image source, ByRef Image destination, Number factorX, Number factorY, Number factorZ, Boolean linearInterpolation);
 ```
 
 
@@ -44,7 +48,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

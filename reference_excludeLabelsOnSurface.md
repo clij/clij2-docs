@@ -1,11 +1,13 @@
 ## excludeLabelsOnSurface
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-This operation follows a ray from a given position towards a label (or opposite direction) and checks if  there is another label between the label an the image border. If yes, this label is eliminated from the label map.
+This operation follows a ray from a given position towards a label (or opposite direction) and checks if  there is another label between the label an the image border. 
+
+If yes, this label is eliminated from the label map.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, Image label_map_destination, Number centerX, Number centerY, Number centerZ);
+Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, ByRef Image label_map_destination, Number centerX, Number centerY, Number centerZ);
 ```
 
 

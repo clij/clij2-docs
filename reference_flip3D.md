@@ -3,6 +3,10 @@
 
 Flips an image in X, Y and/or Z direction depending on boolean flags.
 
+### flip3D is often followed by
+* <a href="reference_copySlice">copySlice</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_flip3D(Image source, Image destination, Boolean flipX, Boolean flipY, Boolean flipZ);
@@ -43,8 +47,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [flip.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/flip.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_move_rect.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_move_rect.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/flip.ijm"><img src="images/language_macro.png" height="20"/></a> [flip.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/flip.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_move_rect.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_move_rect.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_move_rect.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

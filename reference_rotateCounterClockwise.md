@@ -1,13 +1,15 @@
 ## rotateCounterClockwise
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Rotates a given input image by 90 degrees counter-clockwise. For that, X and Y axis of an image stack
+Rotates a given input image by 90 degrees counter-clockwise. 
+
+For that, X and Y axis of an image stack
 are flipped. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility 
 such as interpolation.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_rotateCounterClockwise(Image source, Image destination);
+Ext.CLIJ2_rotateCounterClockwise(Image source, ByRef Image destination);
 ```
 
 
@@ -42,7 +44,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotate.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotate.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotate.ijm"><img src="images/language_macro.png" height="20"/></a> [rotate.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotate.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

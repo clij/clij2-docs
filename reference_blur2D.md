@@ -5,6 +5,10 @@ Computes the Gaussian blurred image of an image given two sigma values in X and 
 
 The implementation is done separable. In case a sigma equals zero, the direction is not blurred.
 
+### blur2D is often followed by
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_blur2D(Image source, Image destination, Number sigmaX, Number sigmaY);
@@ -44,7 +48,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

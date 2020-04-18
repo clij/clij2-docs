@@ -1,11 +1,13 @@
 ## labelSpots
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
+Transforms a binary image with single pixles set to 1 to a labelled spots image. 
+
 Transforms a spots image as resulting from maximum/minimum detection in an image of the same size where every spot has a number 1, 2, ... n.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_labelSpots(Image input_spots, Image labelled_spots_destination);
+Ext.CLIJ2_labelSpots(Image input_spots, ByRef Image labelled_spots_destination);
 ```
 
 

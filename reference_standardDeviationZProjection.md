@@ -5,7 +5,7 @@ Determines the standard deviation projection of an image stack along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_standardDeviationZProjection(Image source, Image destination);
+Ext.CLIJ2_standardDeviationZProjection(Image source, ByRef Image destination);
 ```
 
 
@@ -40,8 +40,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [standardDeviationZProjectionComparion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/standardDeviationZProjectionComparion.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/standardDeviationZProjectionComparion.ijm"><img src="images/language_macro.png" height="20"/></a> [standardDeviationZProjectionComparion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/standardDeviationZProjectionComparion.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

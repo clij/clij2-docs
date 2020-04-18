@@ -4,6 +4,14 @@
 Computes the local maximum of a pixels cube neighborhood. The cubes size is specified by 
 its half-width, half-height and half-depth (radius).
 
+### maximum3DBox often followes after
+* <a href="reference_minimum3DBox">minimum3DBox</a> (2)
+
+
+### maximum3DBox is often followed by
+* <a href="reference_subtractImages">subtractImages</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maximum3DBox(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
@@ -44,7 +52,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [topHat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm"><img src="images/language_macro.png" height="20"/></a> [topHat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

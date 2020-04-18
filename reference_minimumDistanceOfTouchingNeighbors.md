@@ -5,7 +5,7 @@ Takes a touch matrix and a distance matrix to determine the shortest distance of
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image minimum_distancelist_destination);
+Ext.CLIJ2_minimumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, ByRef Image minimum_distancelist_destination);
 ```
 
 

@@ -3,9 +3,17 @@
 
 Transpose X and Y axes of an image.
 
+### transposeXY often followes after
+* <a href="reference_crop2D">crop2D</a> (2)
+
+
+### transposeXY is often followed by
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_transposeXY(Image input, Image destination);
+Ext.CLIJ2_transposeXY(Image input, ByRef Image destination);
 ```
 
 
@@ -40,7 +48,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

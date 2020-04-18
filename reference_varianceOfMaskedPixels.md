@@ -1,7 +1,9 @@
 ## varianceOfMaskedPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. The result is put in the results table as new column named 'Masked_variance'.
+Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. 
+
+The result is put in the results table as new column named 'Masked_variance'.
 
 ### Usage in ImageJ macro
 ```

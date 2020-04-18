@@ -1,14 +1,21 @@
 ## maskLabel
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes a masked image by applying a label mask to an image. All pixel values x of image X will be copied
+Computes a masked image by applying a label mask to an image. 
+
+All pixel values x of image X will be copied
 to the destination image in case pixel value m at the same position in the label_map image has the right index value i.
 
 f(x,m,i) = (x if (m == i); (0 otherwise))
 
+### maskLabel often followes after
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
+* <a href="reference_create2D">create2D</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maskLabel(Image source, Image label_map, Image destination, Number label_index);
+Ext.CLIJ2_maskLabel(Image source, Image label_map, ByRef Image destination, Number label_index);
 ```
 
 
@@ -46,7 +53,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

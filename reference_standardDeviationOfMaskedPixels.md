@@ -1,7 +1,9 @@
 ## standardDeviationOfMaskedPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the standard deviation of all pixels in an image which have non-zero value in a corresponding mask image. The value will be stored in a new row of ImageJs
+Determines the standard deviation of all pixels in an image which have non-zero value in a corresponding mask image. 
+
+The value will be stored in a new row of ImageJs
 Results table in the column 'Masked_standard_deviation'.
 
 ### Usage in ImageJ macro

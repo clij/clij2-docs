@@ -5,7 +5,7 @@ Determines the maximum projection of an image along Z within a given z range.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumZProjectionBounded(Image source, Image destination_max, Number min_z, Number max_z);
+Ext.CLIJ2_maximumZProjectionBounded(Image source, ByRef Image destination_max, Number min_z, Number max_z);
 ```
 
 

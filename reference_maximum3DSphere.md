@@ -44,7 +44,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [localMaximum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/localMaximum.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/localMaximum.ijm"><img src="images/language_macro.png" height="20"/></a> [localMaximum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/localMaximum.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

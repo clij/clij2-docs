@@ -1,13 +1,13 @@
 ## greaterConstant
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines if two images A and B greater pixel wise.
+Determines if two images A and B greater pixel wise. 
 
 f(a, b) = 1 if a > b; 0 otherwise. 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_greaterConstant(Image source, Image destination, Number constant);
+Ext.CLIJ2_greaterConstant(Image source, ByRef Image destination, Number constant);
 ```
 
 

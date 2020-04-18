@@ -3,9 +3,13 @@
 
 Applies a top-hat filter for background subtraction to the input image.
 
+### topHatBox is often followed by
+* <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_topHatBox(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_topHatBox(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 
@@ -38,6 +42,12 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm"><img src="images/language_macro.png" height="20"/></a> [compare_workflows.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

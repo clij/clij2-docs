@@ -43,8 +43,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mean_detailed_comparison_IJ_CLIJ.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mean_detailed_comparison_IJ_CLIJ_radius.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ_radius.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_detailed_comparison_IJ_CLIJ.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ_radius.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_detailed_comparison_IJ_CLIJ_radius.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ_radius.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

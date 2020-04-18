@@ -1,11 +1,11 @@
 ## closingDiamond
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Apply a binary closing to the input image by calling n dilations and n erosions subsequenntly.
+Apply a binary closing to the input image by calling n dilations and n erosions subsequently.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_closingDiamond(Image input, Image destination, Number number_of_dilations_and_erotions);
+Ext.CLIJ2_closingDiamond(Image input, ByRef Image destination, Number number_of_dilations_and_erotions);
 ```
 
 

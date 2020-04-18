@@ -1,12 +1,23 @@
 ## labelledSpotsToPointList
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Transforms a labelmap of spots (single pixels with values 1, 2, ..., n for n spots) as resulting from connected components analysis in an image where every column contains d 
+Generates a coordinate list of points in a labelled spot image. 
+
+Transforms a labelmap of spots (single pixels with values 1, 2, ..., n for n spots) as resulting 
+from connected components analysis in an image where every column contains d 
 pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
+
+### labelledSpotsToPointList often followes after
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
+
+
+### labelledSpotsToPointList is often followed by
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, Image destination_pointlist);
+Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, ByRef Image destination_pointlist);
 ```
 
 
@@ -41,7 +52,7 @@ clij2.release(destination_pointlist);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

@@ -7,7 +7,7 @@ Replaces recursively all pixels of value a with value b if the pixels have a nei
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_floodFillDiamond(Image source, Image destination, Number value_to_replace, Number value_replacement);
+Ext.CLIJ2_floodFillDiamond(Image source, ByRef Image destination, Number value_to_replace, Number value_replacement);
 ```
 
 
@@ -44,6 +44,8 @@ clij2.release(destination);
 
 
 ### License terms
+  
+Code was translated from    
   
  Skeletonize3D plugin for ImageJ(C).  
  Copyright (C) 2008 Ignacio Arganda-Carreras   

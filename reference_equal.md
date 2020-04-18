@@ -1,13 +1,13 @@
 ## equal
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines if two images A and B equal pixel wise.
+Determines if two images A and B equal pixel wise. 
 
-f(a, b) = 1 if a == b; 0 otherwise. 
+<pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_equal(Image source1, Image source2, Image destination);
+Ext.CLIJ2_equal(Image source1, Image source2, ByRef Image destination);
 ```
 
 

@@ -1,11 +1,13 @@
 ## writeValuesToPositions
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z] and v and target image. The value v will be written at position x/y[/z] in the target image.
+Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z] and v and target image. 
+
+The value v will be written at position x/y[/z] in the target image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, Image destination);
+Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, ByRef Image destination);
 ```
 
 

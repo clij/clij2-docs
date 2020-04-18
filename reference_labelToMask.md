@@ -1,11 +1,13 @@
 ## labelToMask
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Masks a single label in a label map: Sets all pixels in the target image to 1, where the given label index was present in the label map. Other pixels are set to 0.
+Masks a single label in a label map. 
+
+Sets all pixels in the target image to 1, where the given label index was present in the label map. Other pixels are set to 0.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_labelToMask(Image label_map_source, Image mask_destination, Number label_index);
+Ext.CLIJ2_labelToMask(Image label_map_source, ByRef Image mask_destination, Number label_index);
 ```
 
 
@@ -41,8 +43,9 @@ clij2.release(mask_destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [measure_area_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_area_per_label.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [boundingBoxes.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/boundingBoxes.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_area_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_area_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_area_per_label.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/boundingBoxes.ijm"><img src="images/language_macro.png" height="20"/></a> [boundingBoxes.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/boundingBoxes.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/center_of_mass.ijm"><img src="images/language_macro.png" height="20"/></a> [center_of_mass.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/center_of_mass.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

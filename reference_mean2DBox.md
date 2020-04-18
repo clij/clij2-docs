@@ -4,6 +4,10 @@
 Computes the local mean average of a pixels rectangular neighborhood. The rectangles size is specified by 
 its half-width and half-height (radius).
 
+### mean2DBox is often followed by
+* <a href="reference_threshold">threshold</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_mean2DBox(Image source, Image destination, Number radiusX, Number radiusY);
@@ -43,8 +47,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [mean2d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean2d.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean2d.ijm"><img src="images/language_macro.png" height="20"/></a> [mean2d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean2d.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

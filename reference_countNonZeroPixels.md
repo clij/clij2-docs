@@ -1,7 +1,9 @@
 ## countNonZeroPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the number of all pixels in a given image which are not equal to 0. It will be stored in a new row of ImageJs
+Determines the number of all pixels in a given image which are not equal to 0. 
+
+It will be stored in a new row of ImageJs
 Results table in the column 'CountNonZero'.
 
 ### Usage in ImageJ macro
@@ -38,7 +40,7 @@ clij2.release(source);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

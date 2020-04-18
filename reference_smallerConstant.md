@@ -7,7 +7,7 @@ f(a, b) = 1 if a < b; 0 otherwise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_smallerConstant(Image source, Image destination, Number constant);
+Ext.CLIJ2_smallerConstant(Image source, ByRef Image destination, Number constant);
 ```
 
 

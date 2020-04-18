@@ -5,6 +5,10 @@ Computes the absolute value of every individual pixel x in a given image.
 
 <pre>f(x) = |x| </pre>
 
+### absolute often followes after
+* <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_absolute(Image source, Image destination);
@@ -42,7 +46,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [absolute.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/absolute.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/absolute.ijm"><img src="images/language_macro.png" height="20"/></a> [absolute.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/absolute.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

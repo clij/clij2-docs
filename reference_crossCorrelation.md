@@ -5,7 +5,7 @@ Performs cross correlation analysis between two images. The second image is shif
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_crossCorrelation(Image input1, Image meanInput1, Image input2, Image meanInput2, Image destination, Number radius, Number deltaPos, Number dimension);
+Ext.CLIJx_crossCorrelation(Image input1, Image meanInput1, Image input2, Image meanInput2, ByRef Image destination, Number radius, Number deltaPos, Number dimension);
 ```
 
 

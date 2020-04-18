@@ -1,7 +1,9 @@
 ## varianceOfAllPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the variance of all pixels in an image. The value will be stored in a new row of ImageJs
+Determines the variance of all pixels in an image. 
+
+The value will be stored in a new row of ImageJs
 Results table in the column 'Variance'.
 
 ### Usage in ImageJ macro

@@ -5,7 +5,7 @@ Determines the maximum projection of an image along X.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumXProjection(Image source, Image destination_max);
+Ext.CLIJ2_maximumXProjection(Image source, ByRef Image destination_max);
 ```
 
 
@@ -40,7 +40,7 @@ clij2.release(destination_max);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

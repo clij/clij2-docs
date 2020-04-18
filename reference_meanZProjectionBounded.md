@@ -5,7 +5,7 @@ Determines the mean projection of an image along Z within a given z range.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_meanZProjectionBounded(Image source, Image destination_mean, Number min_z, Number max_z);
+Ext.CLIJ2_meanZProjectionBounded(Image source, ByRef Image destination_mean, Number min_z, Number max_z);
 ```
 
 

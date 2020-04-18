@@ -1,11 +1,11 @@
 ## concatenateStacks
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Concatenates two stacks
+Concatenates two stacks in Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, Image destination);
+Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, ByRef Image destination);
 ```
 
 

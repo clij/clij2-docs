@@ -6,6 +6,14 @@ the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image.
 
+### rotate2D often followes after
+* <a href="reference_copy">copy</a> (2)
+
+
+### rotate2D is often followed by
+* <a href="reference_copySlice">copySlice</a> (3)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_rotate2D(Image source, Image destination, Number angle, Boolean rotateAroundCenter);
@@ -45,8 +53,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotateFree.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotateFree.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotateOverwriteOriginal.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotateOverwriteOriginal.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotateFree.ijm"><img src="images/language_macro.png" height="20"/></a> [rotateFree.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotateFree.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotateOverwriteOriginal.ijm"><img src="images/language_macro.png" height="20"/></a> [rotateOverwriteOriginal.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotateOverwriteOriginal.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

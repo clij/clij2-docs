@@ -6,6 +6,15 @@ the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image stack.
 
+### rotate3D often followes after
+* <a href="reference_translate3D">translate3D</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+
+
+### rotate3D is often followed by
+* <a href="reference_maximumZProjection">maximumZProjection</a> (3)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_rotate3D(Image source, Image destination, Number angleX, Number angleY, Number angleZ, Boolean rotateAroundCenter);
@@ -47,8 +56,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [project3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/project3D.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/project3D.ijm"><img src="images/language_macro.png" height="20"/></a> [project3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/project3D.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

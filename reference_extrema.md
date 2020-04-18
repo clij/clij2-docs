@@ -5,7 +5,7 @@ Returns an image with pixel values most distant from 0: f(x, y) = x if abs(x) > 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_extrema(Image input1, Image input2, Image destination);
+Ext.CLIJx_extrema(Image input1, Image input2, ByRef Image destination);
 ```
 
 

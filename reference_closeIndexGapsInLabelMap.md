@@ -2,12 +2,14 @@
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
 Analyses a label map and if there are gaps in the indexing (e.g. label 5 is not present) all 
-subsequent labels will be relabelled. Thus, afterwards number of labels and maximum label index are equal.
+subsequent labels will be relabelled. 
+
+Thus, afterwards number of labels and maximum label index are equal.
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, Image labeling_destination);
+Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, ByRef Image labeling_destination);
 ```
 
 

@@ -1,11 +1,11 @@
 ## binaryFillHoles
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Fills holes in a binary image.
+Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_binaryFillHoles(Image source, Image destination);
+Ext.CLIJ2_binaryFillHoles(Image source, ByRef Image destination);
 ```
 
 
@@ -40,8 +40,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [benchmarkFillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [fillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/fillHoles.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkFillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/fillHoles.ijm"><img src="images/language_macro.png" height="20"/></a> [fillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/fillHoles.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

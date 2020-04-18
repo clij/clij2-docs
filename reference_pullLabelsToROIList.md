@@ -1,7 +1,10 @@
 ## pullLabelsToROIList
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Pulls all labels in a label map as ROIs to a list.
+Pulls all labels in a label map as ROIs to a list. 
+
+From ImageJ macro this list is written to the log 
+window. From ImageJ macro conside using pullLabelsToROIManager.
 
 ### Usage in ImageJ macro
 ```

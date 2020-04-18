@@ -1,11 +1,15 @@
 ## maximumOctagon
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Applies a maximum filter with kernel size 3x3 n times to an image iteratively. Odd iterations are done with box neighborhood, even iterations with a diamond. Thus, with n > 2, the filter shape is an octagon. The given number of iterations makes the filter result very similar to minimum sphere. Approximately:radius = iterations - 2
+Applies a maximum filter with kernel size 3x3 n times to an image iteratively. 
+
+Odd iterations are done with box neighborhood, even iterations with a diamond. 
+Thus, with n > 2, the filter shape is an octagon. The given number of iterations makes the filter 
+result very similar to minimum sphere. Approximately:radius = iterations - 2
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumOctagon(Image input, Image destination, Number iterations);
+Ext.CLIJ2_maximumOctagon(Image input, ByRef Image destination, Number iterations);
 ```
 
 

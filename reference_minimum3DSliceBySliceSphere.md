@@ -2,13 +2,15 @@
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Computes the local minimum of a pixels ellipsoidal 2D neighborhood in an image stack 
-slice by slice. The ellipses size is specified by its half-width and half-height (radius).
+slice by slice. 
+
+The ellipses size is specified by its half-width and half-height (radius).
 
 This filter is applied slice by slice in 2D.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimum3DSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_minimum3DSliceBySliceSphere(Image source, ByRef Image destination, Number radiusX, Number radiusY);
 ```
 
 

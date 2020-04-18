@@ -5,7 +5,7 @@ Takes a labelmap and returns an image where all pixels on label edges are set to
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_detectLabelEdges(Image label_map, Image edge_image_destination);
+Ext.CLIJ2_detectLabelEdges(Image label_map, ByRef Image edge_image_destination);
 ```
 
 

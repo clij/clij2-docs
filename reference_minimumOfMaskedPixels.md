@@ -1,7 +1,9 @@
 ## minimumOfMaskedPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the minimum intensity in an image, but only in pixels which have non-zero values in another mask image.
+Determines the minimum intensity in a masked image. 
+
+But only in pixels which have non-zero values in another mask image.
 
 ### Usage in ImageJ macro
 ```

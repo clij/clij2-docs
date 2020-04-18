@@ -4,6 +4,10 @@
 Computes the local minimum of a pixels spherical neighborhood. The spheres size is specified by 
 its half-width, half-height and half-depth (radius).
 
+### minimum3DSphere often followes after
+* <a href="reference_crop3D">crop3D</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimum3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
@@ -44,10 +48,10 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum_x.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum_x.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [oddEven.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/oddEven.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum_x.ijm"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum_x.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum_x.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/oddEven.ijm"><img src="images/language_macro.png" height="20"/></a> [oddEven.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/oddEven.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

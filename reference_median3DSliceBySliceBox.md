@@ -1,14 +1,16 @@
 ## median3DSliceBySliceBox
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Computes the local median of a pixels rectangular neighborhood. This is done slice-by-slice in a 3D 
+Computes the local median of a pixels rectangular neighborhood. 
+
+This is done slice-by-slice in a 3D 
 image stack. The rectangle is specified by its half-width and half-height (radius).
 
 For technical reasons, the area of the rectangle must have less than 1000 pixels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_median3DSliceBySliceBox(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_median3DSliceBySliceBox(Image source, ByRef Image destination, Number radiusX, Number radiusY);
 ```
 
 

@@ -1,11 +1,17 @@
 ## excludeLabelsOnEdges
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Removes all labels from a label map which touch the edges of the image (in X, Y and Z if the image is 3D). Remaining label elements are renumbered afterwards.
+Removes all labels from a label map which touch the edges of the image (in X, Y and Z if the image is 3D). 
+
+Remaining label elements are renumbered afterwards.
+
+### excludeLabelsOnEdges often followes after
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, Image label_map_destination);
+Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, ByRef Image label_map_destination);
 ```
 
 
@@ -40,11 +46,11 @@ clij2.release(label_map_destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [excludeLabelsOnEdges.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsOnEdges.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [pullLabelsToROIManager.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullLabelsToROIManager.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/"><img src="images/language_python.png" height="20"/></a> [benchmark_clijx_pull.ipynb](https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb)  
-<a href="https://github.com/clij/clijpy/blob/master/python/"><img src="images/language_python.png" height="20"/></a> [clijpy_demo.ipynb](https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb)  
-<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/"><img src="images/language_matlab.png" height="20"/></a> [segmentation.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/segmentation.m)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsOnEdges.ijm"><img src="images/language_macro.png" height="20"/></a> [excludeLabelsOnEdges.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsOnEdges.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullLabelsToROIManager.ijm"><img src="images/language_macro.png" height="20"/></a> [pullLabelsToROIManager.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/pullLabelsToROIManager.ijm)  
+<a href="https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb"><img src="images/language_python.png" height="20"/></a> [benchmark_clijx_pull.ipynb](https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb)  
+<a href="https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb"><img src="images/language_python.png" height="20"/></a> [clijpy_demo.ipynb](https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/segmentation.m"><img src="images/language_matlab.png" height="20"/></a> [segmentation.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/segmentation.m)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

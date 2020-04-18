@@ -8,6 +8,14 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 This method is comparable to the 'Dilate' menu in ImageJ in case it is applied to a 2D image. The only
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
+### dilateBox often followes after
+* <a href="reference_dilateBox">dilateBox</a> (2)
+
+
+### dilateBox is often followed by
+* <a href="reference_dilateBox">dilateBox</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_dilateBox(Image source, Image destination);
@@ -45,10 +53,10 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [binaryProcessing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/"><img src="images/language_jython.png" height="20"/></a> [interactiveSphereProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm"><img src="images/language_macro.png" height="20"/></a> [binaryProcessing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveSphereProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

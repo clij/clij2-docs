@@ -7,6 +7,11 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 <pre>f(x, y) = (x & !y) | (!x & y)</pre>
 
+### binaryXOr often followes after
+* <a href="reference_threshold">threshold</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryXOr(Image operand1, Image operand2, Image destination);
@@ -46,7 +51,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

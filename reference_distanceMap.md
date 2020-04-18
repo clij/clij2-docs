@@ -1,11 +1,15 @@
 ## distanceMap
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Generates a distance map from a binary image. Pixels with non-zero value in the binary image are set to a number representing the distance to the closest zero-value pixel.
+Generates a distance map from a binary image. 
+
+Pixels with non-zero value in the binary image are set to a number representing the distance to the closest zero-value pixel.
+
+Note: This is not a distance matrix. See generateDistanceMatrix for details.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_distanceMap(Image source, Image destination);
+Ext.CLIJ2_distanceMap(Image source, ByRef Image destination);
 ```
 
 
@@ -40,7 +44,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [distanceMap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm"><img src="images/language_macro.png" height="20"/></a> [distanceMap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

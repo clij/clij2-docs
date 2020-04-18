@@ -1,7 +1,8 @@
 ## jaccardIndex
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the overlap of two binary images using the Jaccard index.
+Determines the overlap of two binary images using the Jaccard index. 
+
 A value of 0 suggests no overlap, 1 means perfect overlap.
 The resulting Jaccard index is saved to the results table in the 'Jaccard_Index' column.
 Note that the Sorensen-Dice coefficient can be calculated from the Jaccard index j using this formula:
@@ -43,8 +44,7 @@ clij2.release(source2);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/"><img src="images/language_macro.png" height="20"/></a> [measureOverlap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measureOverlap.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/"><img src="images/language_jython.png" height="20"/></a> [jaccardIndex.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py"><img src="images/language_jython.png" height="20"/></a> [jaccardIndex.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py)  
 
 
 [Back to CLIJ documentation](https://clij.github.io/)

@@ -1,12 +1,13 @@
 ## equalizeMeanIntensitiesOfSlices
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines correction factors for each z-slice so that the average intensity in all slices can be made the same and multiplies these factors with the slices.
+Determines correction factors for each z-slice so that the average intensity in all slices can be made the same and multiplies these factors with the slices. 
+
 This functionality is similar to the 'Simple Ratio Bleaching Correction' in Fiji.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_equalizeMeanIntensitiesOfSlices(Image input, Image destination, Number referenceSlice);
+Ext.CLIJ2_equalizeMeanIntensitiesOfSlices(Image input, ByRef Image destination, Number referenceSlice);
 ```
 
 

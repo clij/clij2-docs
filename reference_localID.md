@@ -5,7 +5,7 @@ local id
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_localID(Image input, Image destination);
+Ext.CLIJx_localID(Image input, ByRef Image destination);
 ```
 
 

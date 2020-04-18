@@ -1,7 +1,9 @@
 ## meanOfMaskedPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the mean intensity in an image, but only in pixels which have non-zero values in another binary mask image.
+Determines the mean intensity in a masked image. 
+
+Only in pixels which have non-zero values in another binary mask image.
 
 ### Usage in ImageJ macro
 ```
