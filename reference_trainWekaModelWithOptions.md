@@ -19,13 +19,13 @@ Ext.CLIJx_trainWekaModelWithOptions(Image featureStack3D, Image groundTruth2D, S
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer featureStack3D = clij2.push(featureStack3DImagePlus);
-ClearCLBuffer groundTruth2D = clij2.push(groundTruth2DImagePlus);
+ClearCLBuffer featureStack3D = clijx.push(featureStack3DImagePlus);
+ClearCLBuffer groundTruth2D = clijx.push(groundTruth2DImagePlus);
 int trees = 10;
 int features = 20;
 int maxDepth = 30;
@@ -33,7 +33,7 @@ int maxDepth = 30;
 
 ```
 // Execute operation on GPU
-CLIJxWeka2 resultTrainWekaModelWithOptions = clij2.trainWekaModelWithOptions(clij, featureStack3D, groundTruth2D, saveModelFilename, trees, features, maxDepth);
+CLIJxWeka2 resultTrainWekaModelWithOptions = clijx.trainWekaModelWithOptions(clij, featureStack3D, groundTruth2D, saveModelFilename, trees, features, maxDepth);
 ```
 
 ```
@@ -41,8 +41,8 @@ CLIJxWeka2 resultTrainWekaModelWithOptions = clij2.trainWekaModelWithOptions(cli
 System.out.println(resultTrainWekaModelWithOptions);
 
 // cleanup memory on GPU
-clij2.release(featureStack3D);
-clij2.release(groundTruth2D);
+clijx.release(featureStack3D);
+clijx.release(groundTruth2D);
 ```
 
 

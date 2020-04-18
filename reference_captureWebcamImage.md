@@ -1,7 +1,9 @@
 ## captureWebcamImage
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/webcam-capture
+Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. 
+
+It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/webcam-capture
 
 ### Usage in ImageJ macro
 ```
@@ -12,9 +14,9 @@ Ext.CLIJx_captureWebcamImage(ByRef Image destination, Number cameraDeviceIndex, 
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 destination = clij.create();
@@ -25,16 +27,16 @@ int imageHeight = 30;
 
 ```
 // Execute operation on GPU
-clij2.captureWebcamImage(clij, destination, cameraDeviceIndex, imageWidth, imageHeight);
+clijx.captureWebcamImage(clij, destination, cameraDeviceIndex, imageWidth, imageHeight);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(destination);
+clijx.release(destination);
 ```
 
 

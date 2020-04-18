@@ -12,12 +12,12 @@ Ext.CLIJx_particleImageVelocimetryTimelapse(Image source, Image destinationDelta
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
 destinationDeltaX = clij.create(source);
 destinationDeltaY = clij.create(source);
 destinationDeltaZ = clij.create(source);
@@ -29,23 +29,23 @@ boolean correctLocalShift = true;
 
 ```
 // Execute operation on GPU
-clij2.particleImageVelocimetryTimelapse(clij, source, destinationDeltaX, destinationDeltaY, destinationDeltaZ, maxDeltaX, maxDeltaY, maxDeltaZ, correctLocalShift);
+clijx.particleImageVelocimetryTimelapse(clij, source, destinationDeltaX, destinationDeltaY, destinationDeltaZ, maxDeltaX, maxDeltaY, maxDeltaZ, correctLocalShift);
 ```
 
 ```
 //show result
-destinationDeltaXImagePlus = clij2.pull(destinationDeltaX);
+destinationDeltaXImagePlus = clijx.pull(destinationDeltaX);
 destinationDeltaXImagePlus.show();
-destinationDeltaYImagePlus = clij2.pull(destinationDeltaY);
+destinationDeltaYImagePlus = clijx.pull(destinationDeltaY);
 destinationDeltaYImagePlus.show();
-destinationDeltaZImagePlus = clij2.pull(destinationDeltaZ);
+destinationDeltaZImagePlus = clijx.pull(destinationDeltaZ);
 destinationDeltaZImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(source);
-clij2.release(destinationDeltaX);
-clij2.release(destinationDeltaY);
-clij2.release(destinationDeltaZ);
+clijx.release(source);
+clijx.release(destinationDeltaX);
+clijx.release(destinationDeltaY);
+clijx.release(destinationDeltaZ);
 ```
 
 

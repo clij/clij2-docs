@@ -12,9 +12,9 @@ Ext.CLIJx_connectedComponentsLabelingInplace(Image binary_source_labeling_destin
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 binary_source_labeling_destination = clij.create();
@@ -22,16 +22,16 @@ binary_source_labeling_destination = clij.create();
 
 ```
 // Execute operation on GPU
-clij2.connectedComponentsLabelingInplace(clij, binary_source_labeling_destination);
+clijx.connectedComponentsLabelingInplace(clij, binary_source_labeling_destination);
 ```
 
 ```
 //show result
-binary_source_labeling_destinationImagePlus = clij2.pull(binary_source_labeling_destination);
+binary_source_labeling_destinationImagePlus = clijx.pull(binary_source_labeling_destination);
 binary_source_labeling_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(binary_source_labeling_destination);
+clijx.release(binary_source_labeling_destination);
 ```
 
 

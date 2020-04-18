@@ -1,7 +1,9 @@
 ## localExtremaBox
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Applies a local minimum and maximum filter. Afterwards, the value is returned which is more far from zero.
+Applies a local minimum and maximum filter. 
+
+Afterwards, the value is returned which is more far from zero.
 
 ### Usage in ImageJ macro
 ```
@@ -12,12 +14,12 @@ Ext.CLIJx_localExtremaBox(Image input, ByRef Image destination, Number radiusX, 
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
+ClearCLBuffer input = clijx.push(inputImagePlus);
 destination = clij.create(input);
 int radiusX = 10;
 int radiusY = 20;
@@ -26,17 +28,17 @@ int radiusZ = 30;
 
 ```
 // Execute operation on GPU
-clij2.localExtremaBox(clij, input, destination, radiusX, radiusY, radiusZ);
+clijx.localExtremaBox(clij, input, destination, radiusX, radiusY, radiusZ);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input);
-clij2.release(destination);
+clijx.release(input);
+clijx.release(destination);
 ```
 
 

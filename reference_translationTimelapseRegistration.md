@@ -12,28 +12,28 @@ Ext.CLIJx_translationTimelapseRegistration(Image input, ByRef Image output);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
+ClearCLBuffer input = clijx.push(inputImagePlus);
 output = clij.create(input);
 ```
 
 ```
 // Execute operation on GPU
-clij2.translationTimelapseRegistration(clij, input, output);
+clijx.translationTimelapseRegistration(clij, input, output);
 ```
 
 ```
 //show result
-outputImagePlus = clij2.pull(output);
+outputImagePlus = clijx.pull(output);
 outputImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input);
-clij2.release(output);
+clijx.release(input);
+clijx.release(output);
 ```
 
 

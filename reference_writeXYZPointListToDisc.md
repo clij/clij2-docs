@@ -12,24 +12,24 @@ Ext.CLIJx_writeXYZPointListToDisc(Image pointlist, String filename);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
+ClearCLBuffer pointlist = clijx.push(pointlistImagePlus);
 ```
 
 ```
 // Execute operation on GPU
-clij2.writeXYZPointListToDisc(clij, pointlist, filename);
+clijx.writeXYZPointListToDisc(clij, pointlist, filename);
 ```
 
 ```
 //show result
 
 // cleanup memory on GPU
-clij2.release(pointlist);
+clijx.release(pointlist);
 ```
 
 

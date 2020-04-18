@@ -4,7 +4,9 @@
 By Robert Haase with code from (Shuai Che: sc5nf@cs.virginia.edu
 and Kevin Skadron: skadron@cs.virginia.edu)
 
-Gauss Jordan elimination algorithm for solving linear equation systems. Ent the equation coefficients as an n*n sized image A and an n*1 sized image B:
+Gauss Jordan elimination algorithm for solving linear equation systems. 
+
+Ent the equation coefficients as an n*n sized image A and an n*1 sized image B:
 <pre>a(1,1)*x + a(2,1)*y + a(3,1)+z = b(1)
 a(2,1)*x + a(2,2)*y + a(3,2)+z = b(2)
 a(3,1)*x + a(3,2)*y + a(3,3)+z = b(3)
@@ -26,30 +28,30 @@ Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, ByRef Image solutio
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer A_matrix = clij2.push(A_matrixImagePlus);
-ClearCLBuffer B_result_vector = clij2.push(B_result_vectorImagePlus);
+ClearCLBuffer A_matrix = clijx.push(A_matrixImagePlus);
+ClearCLBuffer B_result_vector = clijx.push(B_result_vectorImagePlus);
 solution_destination = clij.create(A_matrix);
 ```
 
 ```
 // Execute operation on GPU
-clij2.gaussJordan(clij, A_matrix, B_result_vector, solution_destination);
+clijx.gaussJordan(clij, A_matrix, B_result_vector, solution_destination);
 ```
 
 ```
 //show result
-solution_destinationImagePlus = clij2.pull(solution_destination);
+solution_destinationImagePlus = clijx.pull(solution_destination);
 solution_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(A_matrix);
-clij2.release(B_result_vector);
-clij2.release(solution_destination);
+clijx.release(A_matrix);
+clijx.release(B_result_vector);
+clijx.release(solution_destination);
 ```
 
 

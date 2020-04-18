@@ -12,17 +12,17 @@ Ext.CLIJx_showGrey(Image input, String title);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
+ClearCLBuffer input = clijx.push(inputImagePlus);
 ```
 
 ```
 // Execute operation on GPU
-ImagePlus resultShowGrey = clij2.showGrey(clij, input, title);
+ImagePlus resultShowGrey = clijx.showGrey(clij, input, title);
 ```
 
 ```
@@ -30,7 +30,7 @@ ImagePlus resultShowGrey = clij2.showGrey(clij, input, title);
 System.out.println(resultShowGrey);
 
 // cleanup memory on GPU
-clij2.release(input);
+clijx.release(input);
 ```
 
 

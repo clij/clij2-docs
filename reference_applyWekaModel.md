@@ -13,29 +13,29 @@ Ext.CLIJx_applyWekaModel(Image featureStack3D, Image prediction2D_destination, S
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer featureStack3D = clij2.push(featureStack3DImagePlus);
+ClearCLBuffer featureStack3D = clijx.push(featureStack3DImagePlus);
 prediction2D_destination = clij.create(featureStack3D);
 ```
 
 ```
 // Execute operation on GPU
-CLIJxWeka2 resultApplyWekaModel = clij2.applyWekaModel(clij, featureStack3D, prediction2D_destination, loadModelFilename);
+CLIJxWeka2 resultApplyWekaModel = clijx.applyWekaModel(clij, featureStack3D, prediction2D_destination, loadModelFilename);
 ```
 
 ```
 //show result
 System.out.println(resultApplyWekaModel);
-prediction2D_destinationImagePlus = clij2.pull(prediction2D_destination);
+prediction2D_destinationImagePlus = clijx.pull(prediction2D_destination);
 prediction2D_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(featureStack3D);
-clij2.release(prediction2D_destination);
+clijx.release(featureStack3D);
+clijx.release(prediction2D_destination);
 ```
 
 

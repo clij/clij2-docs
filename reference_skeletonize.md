@@ -3,7 +3,9 @@
 
 By Robert Haase translated original work by Ignacio Arganda-Carreras
 
-Erodes a binary image until just its skeleton is left. The result is similar to Skeletonize3D in Fiji.
+Erodes a binary image until just its skeleton is left. 
+
+The result is similar to Skeletonize3D in Fiji.
 
 ### Usage in ImageJ macro
 ```
@@ -14,28 +16,28 @@ Ext.CLIJx_skeletonize(Image source, ByRef Image destination);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
 destination = clij.create(source);
 ```
 
 ```
 // Execute operation on GPU
-clij2.skeletonize(clij, source, destination);
+clijx.skeletonize(clij, source, destination);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination);
+clijx.release(source);
+clijx.release(destination);
 ```
 
 

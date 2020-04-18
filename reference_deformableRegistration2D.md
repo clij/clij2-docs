@@ -12,13 +12,13 @@ Ext.CLIJx_deformableRegistration2D(Image input1, Image input2, ByRef Image desti
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input1 = clij2.push(input1ImagePlus);
-ClearCLBuffer input2 = clij2.push(input2ImagePlus);
+ClearCLBuffer input1 = clijx.push(input1ImagePlus);
+ClearCLBuffer input2 = clijx.push(input2ImagePlus);
 destination = clij.create(input1);
 int maxDeltaX = 10;
 int maxDeltaY = 20;
@@ -26,18 +26,18 @@ int maxDeltaY = 20;
 
 ```
 // Execute operation on GPU
-clij2.deformableRegistration2D(clij, input1, input2, destination, maxDeltaX, maxDeltaY);
+clijx.deformableRegistration2D(clij, input1, input2, destination, maxDeltaX, maxDeltaY);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input1);
-clij2.release(input2);
-clij2.release(destination);
+clijx.release(input1);
+clijx.release(input2);
+clijx.release(destination);
 ```
 
 

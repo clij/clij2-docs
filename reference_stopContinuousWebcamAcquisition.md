@@ -1,7 +1,7 @@
 ## stopContinuousWebcamAcquisition
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/webcam-capture
+Stops continous acquistion from a webcam.
 
 ### Usage in ImageJ macro
 ```
@@ -12,9 +12,9 @@ Ext.CLIJx_stopContinuousWebcamAcquisition(Number cameraDeviceIndex);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 int cameraDeviceIndex = 10;
@@ -22,7 +22,7 @@ int cameraDeviceIndex = 10;
 
 ```
 // Execute operation on GPU
-clij2.stopContinuousWebcamAcquisition(clij, cameraDeviceIndex);
+clijx.stopContinuousWebcamAcquisition(clij, cameraDeviceIndex);
 ```
 
 ```

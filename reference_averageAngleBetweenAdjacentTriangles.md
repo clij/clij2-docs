@@ -12,30 +12,30 @@ Ext.CLIJx_averageAngleBetweenAdjacentTriangles(Image pointlist, Image touch_matr
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
-ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
+ClearCLBuffer pointlist = clijx.push(pointlistImagePlus);
+ClearCLBuffer touch_matrix = clijx.push(touch_matrixImagePlus);
 average_distancelist_destination = clij.create(pointlist);
 ```
 
 ```
 // Execute operation on GPU
-clij2.averageAngleBetweenAdjacentTriangles(clij, pointlist, touch_matrix, average_distancelist_destination);
+clijx.averageAngleBetweenAdjacentTriangles(clij, pointlist, touch_matrix, average_distancelist_destination);
 ```
 
 ```
 //show result
-average_distancelist_destinationImagePlus = clij2.pull(average_distancelist_destination);
+average_distancelist_destinationImagePlus = clijx.pull(average_distancelist_destination);
 average_distancelist_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(pointlist);
-clij2.release(touch_matrix);
-clij2.release(average_distancelist_destination);
+clijx.release(pointlist);
+clijx.release(touch_matrix);
+clijx.release(average_distancelist_destination);
 ```
 
 

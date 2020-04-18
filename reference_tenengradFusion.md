@@ -12,12 +12,12 @@ Ext.CLIJx_tenengradFusion(Image input, Image destination, Number number_of_subst
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
+ClearCLBuffer input = clijx.push(inputImagePlus);
 destination = clij.create(input);
 int number_of_substacks = 10;
 float sigmaX = 1.0;
@@ -28,17 +28,17 @@ float exponent = 4.0;
 
 ```
 // Execute operation on GPU
-clij2.tenengradFusion(clij, input, destination, number_of_substacks, sigmaX, sigmaY, sigmaZ, exponent);
+clijx.tenengradFusion(clij, input, destination, number_of_substacks, sigmaX, sigmaY, sigmaZ, exponent);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input);
-clij2.release(destination);
+clijx.release(input);
+clijx.release(destination);
 ```
 
 

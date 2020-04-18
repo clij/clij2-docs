@@ -14,12 +14,12 @@ Ext.CLIJx_blurSliceBySlice(Image source, Image destination, Number sigmaX, Numbe
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
 destination = clij.create(source);
 float sigmaX = 1.0;
 float sigmaY = 2.0;
@@ -27,17 +27,17 @@ float sigmaY = 2.0;
 
 ```
 // Execute operation on GPU
-clij2.blurSliceBySlice(clij, source, destination, sigmaX, sigmaY);
+clijx.blurSliceBySlice(clij, source, destination, sigmaX, sigmaY);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination);
+clijx.release(source);
+clijx.release(destination);
 ```
 
 

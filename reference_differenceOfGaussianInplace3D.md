@@ -14,9 +14,9 @@ Ext.CLIJx_differenceOfGaussianInplace3D(Image input_and_destination, Number sigm
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 input_and_destination = clij.create();
@@ -30,16 +30,16 @@ float sigma2z = 6.0;
 
 ```
 // Execute operation on GPU
-clij2.differenceOfGaussianInplace3D(clij, input_and_destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+clijx.differenceOfGaussianInplace3D(clij, input_and_destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 ```
 
 ```
 //show result
-input_and_destinationImagePlus = clij2.pull(input_and_destination);
+input_and_destinationImagePlus = clijx.pull(input_and_destination);
 input_and_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input_and_destination);
+clijx.release(input_and_destination);
 ```
 
 

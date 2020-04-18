@@ -14,9 +14,9 @@ Ext.CLIJx_preloadFromDisc(Image destination, String filename, String nextFilenam
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 destination = clij.create();
@@ -24,17 +24,17 @@ destination = clij.create();
 
 ```
 // Execute operation on GPU
-ClearCLBuffer resultPreloadFromDisc = clij2.preloadFromDisc(clij, destination, filename, nextFilename, loaderId);
+ClearCLBuffer resultPreloadFromDisc = clijx.preloadFromDisc(clij, destination, filename, nextFilename, loaderId);
 ```
 
 ```
 //show result
 System.out.println(resultPreloadFromDisc);
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(destination);
+clijx.release(destination);
 ```
 
 

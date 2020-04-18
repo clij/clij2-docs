@@ -17,12 +17,12 @@ Ext.CLIJ_maximumXYZProjection(Image source, Image destination_max, Number dimens
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
 destination_max = clij.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
 int dimensionX = 10;
 int dimensionY = 20;
@@ -31,17 +31,17 @@ int projectedDimension = 30;
 
 ```
 // Execute operation on GPU
-clij2.maximumXYZProjection(clij, source, destination_max, dimensionX, dimensionY, projectedDimension);
+clijx.maximumXYZProjection(clij, source, destination_max, dimensionX, dimensionY, projectedDimension);
 ```
 
 ```
 //show result
-destination_maxImagePlus = clij2.pull(destination_max);
+destination_maxImagePlus = clijx.pull(destination_max);
 destination_maxImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination_max);
+clijx.release(source);
+clijx.release(destination_max);
 ```
 
 

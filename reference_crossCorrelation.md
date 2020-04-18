@@ -1,7 +1,9 @@
 ## crossCorrelation
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Performs cross correlation analysis between two images. The second image is shifted by deltaPos in the given dimension. The cross correlation coefficient is calculated for each pixel in a range around the given pixel with given radius in the given dimension. Together with the original images it is recommended to hand over mean filtered images using the same radius.  
+Performs cross correlation analysis between two images. 
+
+The second image is shifted by deltaPos in the given dimension. The cross correlation coefficient is calculated for each pixel in a range around the given pixel with given radius in the given dimension. Together with the original images it is recommended to hand over mean filtered images using the same radius.  
 
 ### Usage in ImageJ macro
 ```
@@ -12,15 +14,15 @@ Ext.CLIJx_crossCorrelation(Image input1, Image meanInput1, Image input2, Image m
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input1 = clij2.push(input1ImagePlus);
-ClearCLBuffer meanInput1 = clij2.push(meanInput1ImagePlus);
-ClearCLBuffer input2 = clij2.push(input2ImagePlus);
-ClearCLBuffer meanInput2 = clij2.push(meanInput2ImagePlus);
+ClearCLBuffer input1 = clijx.push(input1ImagePlus);
+ClearCLBuffer meanInput1 = clijx.push(meanInput1ImagePlus);
+ClearCLBuffer input2 = clijx.push(input2ImagePlus);
+ClearCLBuffer meanInput2 = clijx.push(meanInput2ImagePlus);
 destination = clij.create(input1);
 int radius = 10;
 int deltaPos = 20;
@@ -29,20 +31,20 @@ int dimension = 30;
 
 ```
 // Execute operation on GPU
-clij2.crossCorrelation(clij, input1, meanInput1, input2, meanInput2, destination, radius, deltaPos, dimension);
+clijx.crossCorrelation(clij, input1, meanInput1, input2, meanInput2, destination, radius, deltaPos, dimension);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input1);
-clij2.release(meanInput1);
-clij2.release(input2);
-clij2.release(meanInput2);
-clij2.release(destination);
+clijx.release(input1);
+clijx.release(meanInput1);
+clijx.release(input2);
+clijx.release(meanInput2);
+clijx.release(destination);
 ```
 
 

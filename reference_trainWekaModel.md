@@ -14,18 +14,18 @@ Ext.CLIJx_trainWekaModel(Image featureStack3D, Image groundTruth2D, String saveM
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer featureStack3D = clij2.push(featureStack3DImagePlus);
-ClearCLBuffer groundTruth2D = clij2.push(groundTruth2DImagePlus);
+ClearCLBuffer featureStack3D = clijx.push(featureStack3DImagePlus);
+ClearCLBuffer groundTruth2D = clijx.push(groundTruth2DImagePlus);
 ```
 
 ```
 // Execute operation on GPU
-CLIJxWeka2 resultTrainWekaModel = clij2.trainWekaModel(clij, featureStack3D, groundTruth2D, saveModelFilename);
+CLIJxWeka2 resultTrainWekaModel = clijx.trainWekaModel(clij, featureStack3D, groundTruth2D, saveModelFilename);
 ```
 
 ```
@@ -33,8 +33,8 @@ CLIJxWeka2 resultTrainWekaModel = clij2.trainWekaModel(clij, featureStack3D, gro
 System.out.println(resultTrainWekaModel);
 
 // cleanup memory on GPU
-clij2.release(featureStack3D);
-clij2.release(groundTruth2D);
+clijx.release(featureStack3D);
+clijx.release(groundTruth2D);
 ```
 
 

@@ -12,12 +12,12 @@ Ext.CLIJx_subtractBackground2D(Image input, ByRef Image destination, Number sigm
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
+ClearCLBuffer input = clijx.push(inputImagePlus);
 destination = clij.create(input);
 float sigmaX = 1.0;
 float sigmaY = 2.0;
@@ -25,17 +25,17 @@ float sigmaY = 2.0;
 
 ```
 // Execute operation on GPU
-clij2.subtractBackground2D(clij, input, destination, sigmaX, sigmaY);
+clijx.subtractBackground2D(clij, input, destination, sigmaX, sigmaY);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(input);
-clij2.release(destination);
+clijx.release(input);
+clijx.release(destination);
 ```
 
 

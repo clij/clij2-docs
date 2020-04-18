@@ -12,9 +12,9 @@ Ext.CLIJx_organiseWindows(Number startX, Number startY, Number tilesX, Number ti
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 int startX = 10;
@@ -27,7 +27,7 @@ int tileHeight = 60;
 
 ```
 // Execute operation on GPU
-clij2.organiseWindows(clij, startX, startY, tilesX, tilesY, tileWidth, tileHeight);
+clijx.organiseWindows(clij, startX, startY, tilesX, tilesY, tileWidth, tileHeight);
 ```
 
 ```

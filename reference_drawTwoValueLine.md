@@ -1,7 +1,9 @@
 ## drawTwoValueLine
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Draws a line between two points with a given thickness. Pixels close to point 1 are set to value1. Pixels closer to point 2 are set to value2 All pixels other than on the line are untouched. Consider using clij.set(buffer, 0); in advance.
+Draws a line between two points with a given thickness. 
+
+Pixels close to point 1 are set to value1. Pixels closer to point 2 are set to value2 All pixels other than on the line are untouched. Consider using clij.set(buffer, 0); in advance.
 
 ### Usage in ImageJ macro
 ```
@@ -12,9 +14,9 @@ Ext.CLIJx_drawTwoValueLine(ByRef Image destination, Number x1, Number y1, Number
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 destination = clij.create();
@@ -31,16 +33,16 @@ float destination0 = 9.0;
 
 ```
 // Execute operation on GPU
-clij2.drawTwoValueLine(clij, destination, x1, y1, z1, x2, y2, z2, thickness, value1, destination0);
+clijx.drawTwoValueLine(clij, destination, x1, y1, z1, x2, y2, z2, thickness, value1, destination0);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(destination);
+clijx.release(destination);
 ```
 
 

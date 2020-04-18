@@ -12,16 +12,16 @@ Ext.CLIJx_stopWatch(String text);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 ```
 
 ```
 // Execute operation on GPU
-clij2.stopWatch(clij, text);
+clijx.stopWatch(clij, text);
 ```
 
 ```

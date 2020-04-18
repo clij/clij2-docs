@@ -12,12 +12,12 @@ Ext.CLIJx_stackToTiles(Image source, ByRef Image destination, Number tiles_x, Nu
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
 destination = clij.create(source);
 int tiles_x = 10;
 int tiles_y = 20;
@@ -25,17 +25,17 @@ int tiles_y = 20;
 
 ```
 // Execute operation on GPU
-clij2.stackToTiles(clij, source, destination, tiles_x, tiles_y);
+clijx.stackToTiles(clij, source, destination, tiles_x, tiles_y);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination);
+clijx.release(source);
+clijx.release(destination);
 ```
 
 

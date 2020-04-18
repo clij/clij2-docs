@@ -12,26 +12,26 @@ Ext.CLIJx_writeVTKLineListToDisc(Image pointlist, Image touch_matrix, String fil
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
-ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
+ClearCLBuffer pointlist = clijx.push(pointlistImagePlus);
+ClearCLBuffer touch_matrix = clijx.push(touch_matrixImagePlus);
 ```
 
 ```
 // Execute operation on GPU
-clij2.writeVTKLineListToDisc(clij, pointlist, touch_matrix, filename);
+clijx.writeVTKLineListToDisc(clij, pointlist, touch_matrix, filename);
 ```
 
 ```
 //show result
 
 // cleanup memory on GPU
-clij2.release(pointlist);
-clij2.release(touch_matrix);
+clijx.release(pointlist);
+clijx.release(touch_matrix);
 ```
 
 

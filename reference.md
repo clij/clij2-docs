@@ -116,7 +116,7 @@ Determines the bounding box of all non-zero pixels in a binary image.
 
 ## C
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_captureWebcamImage">captureWebcamImage (Experimental)</a>  
-Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/webcam-capture
+Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_centerOfMass">centerOfMass</a>  
 Determines the center of mass of an image or image stack and writes the result in the results table in the columns MassX, MassY and MassZ.
@@ -170,7 +170,7 @@ Counts non-zero voxels in a sphere around every voxel.Put the number in the resu
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crossCorrelation">crossCorrelation (Experimental)</a>  
-Performs cross correlation analysis between two images. The second image is shifted by deltaPos in the given dimension. The cross correlation coefficient is calculated for each pixel in a range around the given pixel with given radius in the given dimension. Together with the original images it is recommended to hand over mean filtered images using the same radius.  
+Performs cross correlation analysis between two images. 
 
 <a name="D"></a>
 
@@ -242,7 +242,7 @@ Draws a line between two points with a given thickness.
 Draws a sphere around a given point with given radii in x, y and z (if 3D). 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_drawTwoValueLine">drawTwoValueLine (Experimental)</a>  
-Draws a line between two points with a given thickness. Pixels close to point 1 are set to value1. Pixels closer to point 2 are set to value2 All pixels other than on the line are untouched. Consider using clij.set(buffer, 0); in advance.
+Draws a line between two points with a given thickness. 
 
 <a name="E"></a>
 
@@ -281,7 +281,7 @@ This operation follows a ray from a given position towards a label (or opposite 
 Computes base exponential of all pixels values.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_extrema">extrema (Experimental)</a>  
-Returns an image with pixel values most distant from 0: f(x, y) = x if abs(x) > abs(y), y else.
+Returns an image with pixel values most distant from 0: 
 
 <a name="F"></a>
 
@@ -299,7 +299,7 @@ Replaces recursively all pixels of value a with value b if the pixels have a nei
 
 ## G
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gaussJordan">gaussJordan (Experimental)</a>  
-Gauss Jordan elimination algorithm for solving linear equation systems. Ent the equation coefficients as an n*n sized image A and an n*1 sized image B: <pre>a(1,1)*x + a(2,1)*y + a(3,1)+z = b(1) a(2,1)*x + a(2,2)*y + a(3,2)+z = b(2) a(3,1)*x + a(3,2)*y + a(3,3)+z = b(3) </pre> The results will then be given in an n*1 image with values [x, y, z].
+Gauss Jordan elimination algorithm for solving linear equation systems. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gaussianBlur2D">gaussianBlur2D</a>  
 Computes the Gaussian blurred image of an image given two sigma values in X and Y. 
@@ -380,7 +380,7 @@ Applies the Laplace operator (Box neighborhood) to an image.
 Applies the Laplace operator (Diamond neighborhood) to an image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localExtremaBox">localExtremaBox (Experimental)</a>  
-Applies a local minimum and maximum filter. Afterwards, the value is returned which is more far from zero.
+Applies a local minimum and maximum filter. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localID">localID (Experimental)</a>  
 local id
@@ -608,7 +608,7 @@ Computes all pixels value x to the power of a given exponent a.
 This plugin takes two image filenames and loads them into RAM. The first image is returned immediately, the second image is loaded in the background and  will be returned when the plugin is called again.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_presign">presign (Experimental)</a>  
-Determines the extrema of pixel values: f(x) = x / abs(x).
+Determines the extrema of pixel values: 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_print">print (Experimental)</a>  
 Visualises an image on standard out (console).
@@ -713,7 +713,7 @@ Sets all pixel values x of a given image X to a constant value v.
 Determine the shortest distance from a distance matrix. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_showGlasbeyOnGrey">showGlasbeyOnGrey (Experimental)</a>  
-Visualises two 2D images as one RGB image. The first channel is shown in grey, the second with glasbey LUT.
+Visualises two 2D images as one RGB image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_showGrey">showGrey (Experimental)</a>  
 Visualises a single 2D image.
@@ -722,7 +722,7 @@ Visualises a single 2D image.
 Visualises three 2D images as one RGB image
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_skeletonize">skeletonize (Experimental)</a>  
-Erodes a binary image until just its skeleton is left. The result is similar to Skeletonize3D in Fiji.
+Erodes a binary image until just its skeleton is left. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_smallerConstant">smallerConstant</a>  
 Determines if two images A and B smaller pixel wise.
@@ -758,13 +758,13 @@ Determines the standard deviation of all pixels in an image which have non-zero 
 Determines the standard deviation projection of an image stack along Z.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_startContinuousWebcamAcquisition">startContinuousWebcamAcquisition (Experimental)</a>  
-Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/webcam-capture
+Starts acquistion of images from a webcam.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a>  
 Determines bounding box, area (in pixels/voxels), min, max and mean intensity   of labelled objects in a label map and corresponding pixels in the original image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_stopContinuousWebcamAcquisition">stopContinuousWebcamAcquisition (Experimental)</a>  
-Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/webcam-capture
+Stops continous acquistion from a webcam.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_stopWatch">stopWatch (Experimental)</a>  
 Measures time and outputs delay to last call.
@@ -860,10 +860,10 @@ Computes a binary image with pixel values 0 and 1. All pixel values x of a given
 Applies a top-hat filter for background subtraction to the input image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_topHatOctagonSliceBySlice">topHatOctagonSliceBySlice (Experimental)</a>  
-Applies a minimum filter with kernel size 3x3 n times to an image iteratively. Odd iterations are done with box neighborhood, even iterations with a diamond. Thus, with n > 2, the filter shape is an octagon. The given number of iterations - 2 makes the filter result very similar to minimum sphere.
+Applies a minimum filter with kernel size 3x3 n times to an image iteratively. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_topHatOctagon">topHatOctagon (Experimental)</a>  
-Applies a minimum filter with kernel size 3x3 n times to an image iteratively. Odd iterations are done with box neighborhood, even iterations with a diamond. Thus, with n > 2, the filter shape is an octagon. The given number of iterations - 2 makes the filter result very similar to minimum sphere.
+Applies a minimum filter with kernel size 3x3 n times to an image iteratively. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_topHatSphere">topHatSphere</a>  
 Applies a top-hat filter for background subtraction to the input image.

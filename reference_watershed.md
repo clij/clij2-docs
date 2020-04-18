@@ -12,28 +12,28 @@ Ext.CLIJx_watershed(Image binary_source, ByRef Image destination);
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer binary_source = clij2.push(binary_sourceImagePlus);
+ClearCLBuffer binary_source = clijx.push(binary_sourceImagePlus);
 destination = clij.create(binary_source);
 ```
 
 ```
 // Execute operation on GPU
-clij2.watershed(clij, binary_source, destination);
+clijx.watershed(clij, binary_source, destination);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(binary_source);
-clij2.release(destination);
+clijx.release(binary_source);
+clijx.release(destination);
 ```
 
 

@@ -12,32 +12,32 @@ Ext.CLIJ_applyVectorfield(Image source, Image vectorX, Image vectorY, Image dest
 ### Usage in Java
 ```
 // init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clijx.CLIJx;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
+CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer source = clij2.push(sourceImagePlus);
-ClearCLBuffer vectorX = clij2.push(vectorXImagePlus);
-ClearCLBuffer vectorY = clij2.push(vectorYImagePlus);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
+ClearCLBuffer vectorX = clijx.push(vectorXImagePlus);
+ClearCLBuffer vectorY = clijx.push(vectorYImagePlus);
 destination = clij.create(source);
 ```
 
 ```
 // Execute operation on GPU
-clij2.applyVectorfield(clij, source, vectorX, vectorY, destination);
+clijx.applyVectorfield(clij, source, vectorX, vectorY, destination);
 ```
 
 ```
 //show result
-destinationImagePlus = clij2.pull(destination);
+destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(source);
-clij2.release(vectorX);
-clij2.release(vectorY);
-clij2.release(destination);
+clijx.release(source);
+clijx.release(vectorX);
+clijx.release(vectorY);
+clijx.release(destination);
 ```
 
 
