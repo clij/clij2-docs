@@ -6,7 +6,7 @@ By Robert Haase based on work by G. Landini and W. Rasband
 The automatic thresholder utilizes the Otsu threshold method implemented in ImageJ using a histogram determined on 
 the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
 
-### thresholdOtsu often followes after
+### thresholdOtsu often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (3)
 
 

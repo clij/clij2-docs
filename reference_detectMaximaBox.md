@@ -4,7 +4,7 @@
 Detects local maxima in a given square/cubic neighborhood. Pixels in the resulting image are set to 1 if
 there is no other pixel in a given radius which has a higher intensity, and to 0 otherwise.
 
-### detectMaximaBox often followes after
+### detectMaximaBox often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
 * <a href="reference_blur2D">blur2D</a> (2)

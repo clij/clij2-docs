@@ -5,7 +5,7 @@ Performs connected components analysis to a binary image and generates a label m
 
 DEPRECATED: This method is <b>deprecated</b>. Use ConnectedComponentsLabellingBox (or Diamond) instead.
 
-### connectedComponentsLabeling often followes after
+### connectedComponentsLabeling often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (6)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)

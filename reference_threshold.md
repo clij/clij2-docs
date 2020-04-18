@@ -8,7 +8,7 @@ f(x,t) = (1 if (x >= t); (0 otherwise))
 
 This plugin is comparable to setting a raw threshold in ImageJ and using the 'Convert to Mask' menu.
 
-### threshold often followes after
+### threshold often follows after
 * <a href="reference_mean2DBox">mean2DBox</a> (2)
 
 

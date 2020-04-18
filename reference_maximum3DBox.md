@@ -4,7 +4,7 @@
 Computes the local maximum of a pixels cube neighborhood. The cubes size is specified by 
 its half-width, half-height and half-depth (radius).
 
-### maximum3DBox often followes after
+### maximum3DBox often follows after
 * <a href="reference_minimum3DBox">minimum3DBox</a> (2)
 
 

@@ -17,8 +17,7 @@ Supported transforms:
 Example transform:
 transform = "center scale=2 rotate=45 -center";
 
-### affineTransform2D often followes after
-* <a href="reference_copy">copy</a> (3)
+### affineTransform2D often follows after
 * <a href="reference_copySlice">copySlice</a> (3)
 
 

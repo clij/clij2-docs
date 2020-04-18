@@ -5,7 +5,7 @@ Removes all labels from a label map which touch the edges of the image (in X, Y 
 
 Remaining label elements are renumbered afterwards.
 
-### excludeLabelsOnEdges often followes after
+### excludeLabelsOnEdges often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 
 

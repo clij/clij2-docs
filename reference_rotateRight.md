@@ -5,7 +5,7 @@ Rotates a given input image by 90 degrees clockwise. For that, X and Y axis of a
 are flipped. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility 
 such as interpolation.
 
-### rotateRight often followes after
+### rotateRight often follows after
 * <a href="reference_resliceLeft">resliceLeft</a> (2)
 
 

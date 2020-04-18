@@ -5,17 +5,9 @@ Copies an image.
 
 <pre>f(x) = x</pre>
 
-### copy often followes after
+### copy often follows after
 * <a href="reference_drawBox">drawBox</a> (2)
 * <a href="reference_create2D">create2D</a> (2)
-
-
-### copy is often followed by
-* <a href="reference_affineTransform2D">affineTransform2D</a> (3)
-* <a href="reference_rotate2D">rotate2D</a> (2)
-* <a href="reference_release">release</a> (3)
-* <a href="reference_median2DBox">median2DBox</a> (2)
-* <a href="reference_push">push</a> (2)
 
 
 ### Usage in ImageJ macro

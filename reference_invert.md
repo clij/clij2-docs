@@ -8,7 +8,7 @@ Computes the negative value of all pixels in a given image. It is recommended to
 
 For binary images, use binaryNot.
 
-### invert often followes after
+### invert often follows after
 * <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)
 
 

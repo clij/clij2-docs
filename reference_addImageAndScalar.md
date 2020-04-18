@@ -5,7 +5,7 @@ Adds a scalar value s to all pixels x of a given image X.
 
 <pre>f(x, s) = x + s</pre>
 
-### addImageAndScalar often followes after
+### addImageAndScalar often follows after
 * <a href="reference_invert">invert</a> (2)
 
 

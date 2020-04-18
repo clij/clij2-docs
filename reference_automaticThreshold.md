@@ -6,7 +6,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 of these methods in the method text field:
 [Default, Huang, Intermodes, IsoData, IJ_IsoData, Li, MaxEntropy, Mean, MinError, Minimum, Moments, Otsu, Percentile, RenyiEntropy, Shanbhag, Triangle, Yen]
 
-### automaticThreshold often followes after
+### automaticThreshold often follows after
 * <a href="reference_topHatBox">topHatBox</a> (2)
 
 

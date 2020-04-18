@@ -5,7 +5,7 @@ Determine the shortest distance from a distance matrix.
 
 This corresponds to the minimum for each individial column.
 
-### shortestDistances often followes after
+### shortestDistances often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 
 

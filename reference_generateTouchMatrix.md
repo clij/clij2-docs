@@ -5,7 +5,7 @@ Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixe
 
 Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 are touching then the pixel (3,4) in the matrix will be set to 1.
 
-### generateTouchMatrix often followes after
+### generateTouchMatrix often follows after
 * <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (2)
 
 

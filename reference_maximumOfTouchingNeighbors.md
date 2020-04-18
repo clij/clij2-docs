@@ -5,7 +5,7 @@ Takes a touch matrix and a vector of values to determine the maximum value among
 
 TODO: This only works for values between 0 and 255 for now.
 
-### maximumOfTouchingNeighbors often followes after
+### maximumOfTouchingNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (2)
 

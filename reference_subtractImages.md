@@ -5,7 +5,7 @@ Subtracts one image X from another image Y pixel wise.
 
 <pre>f(x, y) = x - y</pre>
 
-### subtractImages often followes after
+### subtractImages often follows after
 * <a href="reference_medianSliceBySliceSphere">medianSliceBySliceSphere</a> (2)
 * <a href="reference_maximum3DBox">maximum3DBox</a> (2)
 

@@ -5,7 +5,7 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 
 The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
 
-### voronoiOctagon often followes after
+### voronoiOctagon often follows after
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 

@@ -10,7 +10,7 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
  * All pixels with value 3 get value 2
 
 
-### replaceIntensities often followes after
+### replaceIntensities often follows after
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (2)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)

@@ -6,10 +6,6 @@ the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image.
 
-### rotate2D often followes after
-* <a href="reference_copy">copy</a> (2)
-
-
 ### rotate2D is often followed by
 * <a href="reference_copySlice">copySlice</a> (3)
 

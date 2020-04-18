@@ -5,7 +5,7 @@ Computes the absolute value of every individual pixel x in a given image.
 
 <pre>f(x) = |x| </pre>
 
-### absolute often followes after
+### absolute often follows after
 * <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)
 
 

@@ -3,7 +3,7 @@
 
 Determines the maximum projection of an image along Z.
 
-### maximumZProjection often followes after
+### maximumZProjection often follows after
 * <a href="reference_rotate3D">rotate3D</a> (3)
 * <a href="reference_resample">resample</a> (2)
 

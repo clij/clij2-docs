@@ -8,7 +8,7 @@ to the destination image in case pixel value m at the same position in the label
 
 f(x,m,i) = (x if (m == i); (0 otherwise))
 
-### maskLabel often followes after
+### maskLabel often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_create2D">create2D</a> (2)
 

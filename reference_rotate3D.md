@@ -6,7 +6,7 @@ the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image stack.
 
-### rotate3D often followes after
+### rotate3D often follows after
 * <a href="reference_translate3D">translate3D</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 

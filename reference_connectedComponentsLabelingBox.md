@@ -3,7 +3,7 @@
 
 Performs connected components analysis inspecting the box neighborhood of every pixel to a binary image and generates a label map.
 
-### connectedComponentsLabelingBox often followes after
+### connectedComponentsLabelingBox often follows after
 * <a href="reference_binaryNot">binaryNot</a> (3)
 
 

@@ -9,7 +9,7 @@ The first case is only available via ImageJ macro. If you are using it, it is re
 target 3D image already pre-exists in GPU memory before calling this method. Otherwise, CLIJ create 
 the image stack with z planes.
 
-### copySlice often followes after
+### copySlice often follows after
 * <a href="reference_affineTransform2D">affineTransform2D</a> (3)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (3)
 * <a href="reference_rotate2D">rotate2D</a> (3)

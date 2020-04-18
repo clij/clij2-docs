@@ -4,7 +4,7 @@
 Computes the local minimum of a pixels spherical neighborhood. The spheres size is specified by 
 its half-width, half-height and half-depth (radius).
 
-### minimum3DSphere often followes after
+### minimum3DSphere often follows after
 * <a href="reference_crop3D">crop3D</a> (2)
 
 

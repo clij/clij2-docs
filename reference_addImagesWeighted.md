@@ -5,7 +5,7 @@ Calculates the sum of pairs of pixels x and y from images X and Y weighted with 
 
 <pre>f(x, y, a, b) = x * a + y * b</pre>
 
-### addImagesWeighted often followes after
+### addImagesWeighted often follows after
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
 
 

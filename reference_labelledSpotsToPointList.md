@@ -7,7 +7,7 @@ Transforms a labelmap of spots (single pixels with values 1, 2, ..., n for n spo
 from connected components analysis in an image where every column contains d 
 pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
-### labelledSpotsToPointList often followes after
+### labelledSpotsToPointList often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 
 

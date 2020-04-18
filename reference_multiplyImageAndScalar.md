@@ -5,7 +5,7 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 
 <pre>f(x, s) = x * s</pre>
 
-### multiplyImageAndScalar often followes after
+### multiplyImageAndScalar often follows after
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 

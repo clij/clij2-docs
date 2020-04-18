@@ -4,7 +4,7 @@
 Determines pixels/voxels which are on the surface of binary objects and sets only them to 1 in the 
 destination image. All other pixels are set to 0.
 
-### binaryEdgeDetection often followes after
+### binaryEdgeDetection often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 
 

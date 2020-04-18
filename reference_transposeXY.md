@@ -3,7 +3,7 @@
 
 Transpose X and Y axes of an image.
 
-### transposeXY often followes after
+### transposeXY often follows after
 * <a href="reference_crop2D">crop2D</a> (2)
 
 

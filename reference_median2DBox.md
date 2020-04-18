@@ -6,10 +6,6 @@ its half-width and half-height (radius).
 
 For technical reasons, the area of the rectangle must have less than 1000 pixels.
 
-### median2DBox often followes after
-* <a href="reference_copy">copy</a> (2)
-
-
 ### median2DBox is often followed by
 * <a href="reference_thresholdHuang">thresholdHuang</a> (2)
 

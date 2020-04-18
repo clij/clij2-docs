@@ -7,7 +7,7 @@ All pixel values except 0 in the input image are interpreted as 1.
 
 <pre>f(x) = !x</pre>
 
-### binaryNot often followes after
+### binaryNot often follows after
 * <a href="reference_thresholdHuang">thresholdHuang</a> (2)
 
 

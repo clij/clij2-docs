@@ -4,7 +4,7 @@
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of 
 size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
-### touchMatrixToMesh often followes after
+### touchMatrixToMesh often follows after
 * <a href="reference_transposeXY">transposeXY</a> (2)
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)

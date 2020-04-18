@@ -4,7 +4,7 @@
 Determines the center of mass of an image or image stack and writes the result in the results table
 in the columns MassX, MassY and MassZ.
 
-### centerOfMass often followes after
+### centerOfMass often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 * <a href="reference_threshold">threshold</a> (3)
 
