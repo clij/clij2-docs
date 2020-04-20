@@ -44,42 +44,40 @@ All processing steps are performed in 3D, for visualisation purposes, we're look
 ## Spot detection
 After some noise removal / smoothing, we perform local maximum detection:
 
-```java
-// gaussian blur
-sigma = 2;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_gaussianBlur3D</a>(input, blurred, sigma, sigma, sigma);
 
-// detect maxima
-radius = 2.0;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_detectMaximaBox">CLIJ2_detectMaximaBox</a>(blurred, detected_maxima, radius);
-show_spots(detected_maxima, "detected maxima");
-```
+    // gaussian blur
+    sigma = 2;
+    Ext.[CLIJ2_gaussianBlur3D](https://clij.github.io/clij2-docs/reference_gaussianBlur3D)(input, blurred, sigma, sigma, sigma);
+    
+    // detect maxima
+    radius = 2.0;
+    Ext.[CLIJ2_detectMaximaBox](https://clij.github.io/clij2-docs/reference_detectMaximaBox)(blurred, detected_maxima, radius);
+    show_spots(detected_maxima, "detected maxima");
+
 <a href="image_1587408724032.png"><img src="image_1587408724032.png" width="250" alt="CLIJ2_maximumZProjection_result485"/></a>
 
 ## Spot curation
 We now remove spots which are below a certain intensity and label the remaining spots.
 
-```java
-// threshold
-threshold = 300.0;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_threshold">CLIJ2_threshold</a>(blurred, thresholded, threshold);
+    // threshold
+    threshold = 300.0;
+    Ext.[CLIJ2_threshold](https://clij.github.io/clij2-docs/reference_threshold)(blurred, thresholded, threshold);
+    
+    // mask
+    Ext.[CLIJ2_mask](https://clij.github.io/clij2-docs/reference_mask)(detected_maxima, thresholded, masked_spots);
+    
+    // label spots
+    Ext.[CLIJ2_labelSpots](https://clij.github.io/clij2-docs/reference_labelSpots)(masked_spots, labelled_spots);
+    show_spots(labelled_spots, "selected, labelled spots");
+    run("glasbey_on_dark");
 
-// mask
-Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(detected_maxima, thresholded, masked_spots);
-
-// label spots
-Ext.<a href="https://clij.github.io/clij2-docs/reference_labelSpots">CLIJ2_labelSpots</a>(masked_spots, labelled_spots);
-show_spots(labelled_spots, "selected, labelled spots");
-run("glasbey_on_dark");
-```
 <a href="image_1587408724363.png"><img src="image_1587408724363.png" width="250" alt="CLIJ2_maximumZProjection_result490"/></a>
 
 Let's see how many spots are there:
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_getMaximumOfAllPixels">CLIJ2_getMaximumOfAllPixels</a>(labelled_spots, number_of_spots);
-print("Number of detected spots: " + number_of_spots);
-```
+    Ext.[CLIJ2_getMaximumOfAllPixels](https://clij.github.io/clij2-docs/reference_getMaximumOfAllPixels)(labelled_spots, number_of_spots);
+    print("Number of detected spots: " + number_of_spots);
+    
 <pre>
 > Number of detected spots: 1501
 </pre>
@@ -87,20 +85,19 @@ print("Number of detected spots: " + number_of_spots);
 ## Expanding labelled spots
 We next extend the numbered spots spatially by applying a maximum filter.
 
-```java
-// labelmap closing
-number_of_dilations = 10;
-number_of_erosions = 4;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_copy">CLIJ2_copy</a>(labelled_spots, flip);
-for (i = 0; i < number_of_dilations; i++) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumBox">CLIJ2_onlyzeroOverwriteMaximumBox</a>(flip, flop);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumDiamond">CLIJ2_onlyzeroOverwriteMaximumDiamond</a>(flop, flip);
-	if (i % 2 == 0) {
-		show(flip, "Extended spots after " + (i * 2) + " dilations");
-		run("glasbey_on_dark");
-	}
-}
-```
+    // labelmap closing
+    number_of_dilations = 10;
+    number_of_erosions = 4;
+    Ext.[CLIJ2_copy](https://clij.github.io/clij2-docs/reference_copy)(labelled_spots, flip);
+    for (i = 0; i < number_of_dilations; i++) {
+        Ext.[CLIJ2_onlyzeroOverwriteMaximumBox](https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumBox)(flip, flop);
+        Ext.[CLIJ2_onlyzeroOverwriteMaximumDiamond](https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumDiamond)(flop, flip);
+        if (i % 2 == 0) {
+            show(flip, "Extended spots after " + (i * 2) + " dilations");
+            run("glasbey_on_dark");
+        }
+    }
+
 <a href="image_1587408724906.png"><img src="image_1587408724906.png" width="250" alt="CLIJ2_maximumZProjection_result493"/></a>
 <a href="image_1587408724975.png"><img src="image_1587408724975.png" width="250" alt="CLIJ2_maximumZProjection_result494"/></a>
 <a href="image_1587408725026.png"><img src="image_1587408725026.png" width="250" alt="CLIJ2_maximumZProjection_result495"/></a>
@@ -109,52 +106,48 @@ for (i = 0; i < number_of_dilations; i++) {
 
 Afterwards, we erode the label map again and get the final result of the cell segementation
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_threshold">CLIJ2_threshold</a>(flip, flap, 1);
-for (i = 0; i < number_of_erosions; i++) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(flap, flop);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(flop, flap);
-}
-Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(flip, flap, labels);
-show(labels, "cell segmentation");
-run("glasbey_on_dark");
-```
+    Ext.[CLIJ2_threshold](https://clij.github.io/clij2-docs/reference_threshold)(flip, flap, 1);
+    for (i = 0; i < number_of_erosions; i++) {
+        Ext.[CLIJ2_erodeBox](https://clij.github.io/clij2-docs/reference_erodeBox)(flap, flop);
+        Ext.[CLIJ2_erodeBox](https://clij.github.io/clij2-docs/reference_erodeBox)(flop, flap);
+    }
+    Ext.[CLIJ2_mask](https://clij.github.io/clij2-docs/reference_mask)(flip, flap, labels);
+    show(labels, "cell segmentation");
+    run("glasbey_on_dark");
+
 <a href="image_1587408725243.png"><img src="image_1587408725243.png" width="250" alt="CLIJ2_maximumZProjection_result500"/></a>
 
 ## Draw connectivity of the cells as mesh
 We then read out the positions of the detected nuclei. 
 Furthermore, using this pointlist, we can generate a distance matrix of all nuclei to each other:
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_labelledSpotsToPointList">CLIJ2_labelledSpotsToPointList</a>(labelled_spots, pointlist);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">CLIJ2_generateDistanceMatrix</a>(pointlist, pointlist, distance_matrix);
-show(distance_matrix, "distance matrix");
-```
+    Ext.[CLIJ2_labelledSpotsToPointList](https://clij.github.io/clij2-docs/reference_labelledSpotsToPointList)(labelled_spots, pointlist);
+    Ext.[CLIJ2_generateDistanceMatrix](https://clij.github.io/clij2-docs/reference_generateDistanceMatrix)(pointlist, pointlist, distance_matrix);
+    show(distance_matrix, "distance matrix");
+
 <a href="image_1587408725366.png"><img src="image_1587408725366.png" width="250" alt="CLIJ2_maximumZProjection_result503"/></a>
 
 Starting from the label map of the cells, we can generate a touch matrix:
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labels, touch_matrix);
+    Ext.[CLIJ2_generateTouchMatrix](https://clij.github.io/clij2-docs/reference_generateTouchMatrix)(labels, touch_matrix);
+    
+    // we set the first column in the touch matrix to zero because we want to ignore that spots touch the background (background label 0, first column)
+    Ext.[CLIJ2_setColumn](https://clij.github.io/clij2-docs/reference_setColumn)(touch_matrix, 0, 0);
+    show_spots(touch_matrix, "touch matrix");
 
-// we set the first column in the touch matrix to zero because we want to ignore that spots touch the background (background label 0, first column)
-Ext.<a href="https://clij.github.io/clij2-docs/reference_setColumn">CLIJ2_setColumn</a>(touch_matrix, 0, 0);
-show_spots(touch_matrix, "touch matrix");
-```
 <a href="image_1587408726325.png"><img src="image_1587408726325.png" width="250" alt="CLIJ2_maximumZProjection_result506"/></a>
 
 By element-wise multiplication of distance matrix and touch matrix, we know the length of 
 each edge. We can use this information to draw a mesh with colour doing distance (between 0 and 50 micron):
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(touch_matrix, distance_matrix, touch_matrix_with_distances);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(input, width, height, depth);
-Ext.CLIJ2_create3D(mesh, width, height, depth, 32);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ2_touchMatrixToMesh</a>(pointlist, touch_matrix_with_distances, mesh);
-show(mesh, "distance mesh");
-run("Green Fire Blue");
-setMinAndMax(0, 50);
-```
+    Ext.[CLIJ2_multiplyImages](https://clij.github.io/clij2-docs/reference_multiplyImages)(touch_matrix, distance_matrix, touch_matrix_with_distances);
+    Ext.[CLIJ2_getDimensions](https://clij.github.io/clij2-docs/reference_getDimensions)(input, width, height, depth);
+    Ext.CLIJ2_create3D(mesh, width, height, depth, 32);
+    Ext.[CLIJ2_touchMatrixToMesh](https://clij.github.io/clij2-docs/reference_touchMatrixToMesh)(pointlist, touch_matrix_with_distances, mesh);
+    show(mesh, "distance mesh");
+    run("Green Fire Blue");
+    setMinAndMax(0, 50);
+
 <a href="image_1587408726622.png"><img src="image_1587408726622.png" width="250" alt="CLIJ2_maximumZProjection_result509"/></a>
 
 ## Quantitative analysis of distances between neighbors
@@ -163,48 +156,44 @@ a vector with as many entries as nodes in the graph. We use this vector to colou
 label map of the cell segmentation. This means, we replace label 1 with the average distance to 
 node 1 and label 2 with the average distance to node 2.
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_averageDistanceOfTouchingNeighbors">CLIJ2_averageDistanceOfTouchingNeighbors</a>(distance_matrix, touch_matrix, distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, distances_vector, distance_map);
-show(distance_map, "distance map");
-run("Fire");
-setMinAndMax(0, 50);
+    Ext.[CLIJ2_averageDistanceOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_averageDistanceOfTouchingNeighbors)(distance_matrix, touch_matrix, distances_vector);
+    Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labels, distances_vector, distance_map);
+    show(distance_map, "distance map");
+    run("Fire");
+    setMinAndMax(0, 50);
 
-```
 <a href="image_1587408726870.png"><img src="image_1587408726870.png" width="250" alt="CLIJ2_maximumZProjection_result512"/></a>
 
 Now we measure the mean of the neighbors neighbord to their neigbors and visualise it as above.
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighbors">CLIJ2_meanOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_mean_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_mean_distances_vector, local_mean_pixel_count_map);
-show(local_mean_pixel_count_map, "neighbor mean distance map");
-run("Fire");
-setMinAndMax(0, 50);
-```
+    Ext.[CLIJ2_meanOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighbors)(distances_vector, touch_matrix, local_mean_distances_vector);
+    Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labels, local_mean_distances_vector, local_mean_pixel_count_map);
+    show(local_mean_pixel_count_map, "neighbor mean distance map");
+    run("Fire");
+    setMinAndMax(0, 50);
+
 <a href="image_1587408726995.png"><img src="image_1587408726995.png" width="250" alt="CLIJ2_maximumZProjection_result515"/></a>
 
 We can do the same with minimum, median and maximum distances:
 
-```java
-Ext.<a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">CLIJ2_minimumOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_minimum_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_minimum_distances_vector, local_minimum_pixel_count_map);
-show(local_minimum_pixel_count_map, "neighbor minimum distance map");
-run("Fire");
-setMinAndMax(0, 50);
+    Ext.[CLIJ2_minimumOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors)(distances_vector, touch_matrix, local_minimum_distances_vector);
+    Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labels, local_minimum_distances_vector, local_minimum_pixel_count_map);
+    show(local_minimum_pixel_count_map, "neighbor minimum distance map");
+    run("Fire");
+    setMinAndMax(0, 50);
+    
+    Ext.[CLIJ2_medianOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors)(distances_vector, touch_matrix, local_median_distances_vector);
+    Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labels, local_median_distances_vector, local_median_pixel_count_map);
+    show(local_median_pixel_count_map, "neighbor median distance map");
+    run("Fire");
+    setMinAndMax(0, 50);
+    
+    Ext.[CLIJ2_maximumOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighbors)(distances_vector, touch_matrix, local_maximum_distances_vector);
+    Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labels, local_maximum_distances_vector, local_maximum_pixel_count_map);
+    show(local_maximum_pixel_count_map, "neighbor maximum distance map");
+    run("Fire");
+    setMinAndMax(0, 50);
 
-Ext.<a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">CLIJ2_medianOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_median_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_median_distances_vector, local_median_pixel_count_map);
-show(local_median_pixel_count_map, "neighbor median distance map");
-run("Fire");
-setMinAndMax(0, 50);
-
-Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighbors">CLIJ2_maximumOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_maximum_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_maximum_distances_vector, local_maximum_pixel_count_map);
-show(local_maximum_pixel_count_map, "neighbor maximum distance map");
-run("Fire");
-setMinAndMax(0, 50);
-```
 <a href="image_1587408727291.png"><img src="image_1587408727291.png" width="250" alt="CLIJ2_maximumZProjection_result518"/></a>
 <a href="image_1587408727338.png"><img src="image_1587408727338.png" width="250" alt="CLIJ2_maximumZProjection_result521"/></a>
 <a href="image_1587408727386.png"><img src="image_1587408727386.png" width="250" alt="CLIJ2_maximumZProjection_result524"/></a>
@@ -213,20 +202,18 @@ setMinAndMax(0, 50);
 Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 
 as intermediate results are save to disc.
 
-```java
-print("The whole workflow took " + (getTime() - time) + " msec");
 
-```
+    print("The whole workflow took " + (getTime() - time) + " msec");
+
+
 <pre>
 > The whole workflow took 4343 msec
 </pre>
 
 Also let's see how much memory this workflow used. Cleaning up by the end is also important.
 
-```java
-Ext.CLIJ2_reportMemory();
+    Ext.CLIJ2_reportMemory();
 
-```
 <pre>
 > GPU contains 25 images.
 > - CLIJ2_copy_result491[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@69c4ce57] 204.8 Mb
@@ -260,27 +247,20 @@ Ext.CLIJ2_reportMemory();
 
 The following are convienence methods for proper visualisation in a noteboook:
 
-```java
-function show(input, text) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
-	Ext.CLIJ2_pull(max_projection);
-	setColor(100000);
-	drawString(text, 20, 20);
-	Ext.CLIJ2_release(max_projection);
-}
-
-function show_spots(input, text) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximum3DBox">CLIJ2_maximum3DBox</a>(input, extended, 1, 1, 0);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(extended, max_projection);
-	Ext.CLIJ2_pull(max_projection);
-	setColor(100000);
-	drawString(text, 20, 20);
-	Ext.CLIJ2_release(extended);
-	Ext.CLIJ2_release(max_projection);
-}
-```
-
-
-
-```
-```
+    function show(input, text) {
+        Ext.[CLIJ2_maximumZProjection](https://clij.github.io/clij2-docs/reference_maximumZProjection)(input, max_projection);
+        Ext.CLIJ2_pull(max_projection);
+        setColor(100000);
+        drawString(text, 20, 20);
+        Ext.CLIJ2_release(max_projection);
+    }
+    
+    function show_spots(input, text) {
+        Ext.[CLIJ2_maximum3DBox](https://clij.github.io/clij2-docs/reference_maximum3DBox)(input, extended, 1, 1, 0);
+        Ext.[CLIJ2_maximumZProjection](https://clij.github.io/clij2-docs/reference_maximumZProjection)(extended, max_projection);
+        Ext.CLIJ2_pull(max_projection);
+        setColor(100000);
+        drawString(text, 20, 20);
+        Ext.CLIJ2_release(extended);
+        Ext.CLIJ2_release(max_projection);
+    }
