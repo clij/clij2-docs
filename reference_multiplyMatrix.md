@@ -3,6 +3,15 @@
 
 Multiplies two matrices with each other.
 
+### multiplyMatrix often follows after
+* <a href="reference_pushArray">pushArray</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (2)
+
+
+### multiplyMatrix is often followed by
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destination);
@@ -41,8 +50,15 @@ clij2.release(matrix_destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/matrix_multiply"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply](https://clij.github.io/clij2-docs/md/matrix_multiply)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_mulitply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_mulitply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_mulitply.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

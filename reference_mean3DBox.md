@@ -43,6 +43,12 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/benchmarking"><img src="images/language_macro.png" height="20"/></a> [benchmarking](https://clij.github.io/clij2-docs/md/benchmarking)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarking.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/processTiles3D.ijm"><img src="images/language_macro.png" height="20"/></a> [processTiles3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/processTiles3D.ijm)  

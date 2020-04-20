@@ -5,6 +5,11 @@ Generates a mesh from a distance matric and a list of point coordinates.
 
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a distance matrix of size n*n to draw lines from all points to points if the corresponding pixel in the distance matrix is smaller than a given distance threshold.
 
+### distanceMatrixToMesh often follows after
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, ByRef Image mesh_destination, Number maximum_distance);
@@ -40,6 +45,18 @@ clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
 ```
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

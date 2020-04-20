@@ -38,7 +38,7 @@ close();
 We can use the classical maximum intensity projection in Z:
 
 ```java
-Ext.CLIJ2_maximumZProjection(input, maximum_z_projected);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, maximum_z_projected);
 Ext.CLIJ2_pull(maximum_z_projected);
 ```
 <a href="image_1587404232000.png"><img src="image_1587404232000.png" width="250" alt="CLIJ2_maximumZProjection_result71"/></a>
@@ -46,10 +46,10 @@ Ext.CLIJ2_pull(maximum_z_projected);
 But we can also project in X and Y direction:
 
 ```java
-Ext.CLIJ2_maximumYProjection(input, maximum_y_projected);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumYProjection">CLIJ2_maximumYProjection</a>(input, maximum_y_projected);
 Ext.CLIJ2_pull(maximum_y_projected);
 
-Ext.CLIJ2_maximumXProjection(input, maximum_x_projected);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumXProjection">CLIJ2_maximumXProjection</a>(input, maximum_x_projected);
 Ext.CLIJ2_pull(maximum_x_projected);
 ```
 <a href="image_1587404232083.png"><img src="image_1587404232083.png" width="250" alt="CLIJ2_maximumYProjection_result72"/></a>
@@ -60,7 +60,7 @@ Furthermore, we can frame the range from which the projection is drawn:
 ```java
 min_z = 90;
 max_z = 100;
-Ext.CLIJ2_maximumZProjectionBounded(input, bound_projection, min_z, max_z);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjectionBounded">CLIJ2_maximumZProjectionBounded</a>(input, bound_projection, min_z, max_z);
 Ext.CLIJ2_pull(bound_projection);
 ```
 <a href="image_1587404232142.png"><img src="image_1587404232142.png" width="250" alt="CLIJ2_maximumZProjectionBounded_result74"/></a>

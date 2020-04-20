@@ -13,8 +13,8 @@ the image stack with z planes.
 * <a href="reference_affineTransform2D">affineTransform2D</a> (3)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (3)
 * <a href="reference_rotate2D">rotate2D</a> (3)
-* <a href="reference_translate2D">translate2D</a> (2)
 * <a href="reference_scale2D">scale2D</a> (2)
+* <a href="reference_translate2D">translate2D</a> (2)
 * <a href="reference_applyVectorField2D">applyVectorField2D</a> (4)
 * <a href="reference_flip3D">flip3D</a> (2)
 

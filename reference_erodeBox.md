@@ -8,9 +8,15 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 This method is comparable to the 'Erode' menu in ImageJ in case it is applied to a 2D image. The only
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
+### erodeBox often follows after
+* <a href="reference_erodeBox">erodeBox</a> (2)
+
+
 ### erodeBox is often followed by
 * <a href="reference_binaryXOr">binaryXOr</a> (2)
 * <a href="reference_dilateBox">dilateBox</a> (2)
+* <a href="reference_mask">mask</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -49,9 +55,16 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm"><img src="images/language_macro.png" height="20"/></a> [binaryProcessing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 
 

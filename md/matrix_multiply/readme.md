@@ -25,8 +25,8 @@ array1 = newArray(1, 2, 3, 4, 5);
 array2 = newArray(6, 7, 8, 9, 10);
 
 // push arrays to GPU
-Ext.CLIJ2_pushArray(vector1, array1, 5, 1, 1);
-Ext.CLIJ2_pushArray(vector2, array2, 5, 1, 1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector1, array1, 5, 1, 1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector2, array2, 5, 1, 1);
 
 ```
 
@@ -35,7 +35,7 @@ Therefore, we transpose one of our vectors
 
 ```java
 // transpose first input vector and show it
-Ext.CLIJ2_transposeXY(vector1, vector1transposed);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_transposeXY">CLIJ2_transposeXY</a>(vector1, vector1transposed);
 Ext.CLIJ2_pull(vector1transposed);
 zoom(100);
 
@@ -50,7 +50,7 @@ zoom(100);
 ## Matrix multiplication
 
 ```java
-Ext.CLIJ2_multiplyMatrix(vector1transposed, vector2, matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyMatrix">CLIJ2_multiplyMatrix</a>(vector1transposed, vector2, matrix);
 Ext.CLIJ2_pull(matrix);
 zoom(100);
 
@@ -62,15 +62,15 @@ zoom(100);
 ```java
 
 // generate another matrix of the same size with random values
-Ext.CLIJ2_getDimensions(matrix, width, height, depth);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(matrix, width, height, depth);
 bitDepth_float = 32;// 32-bit float type
 Ext.CLIJ2_create2D(another_matrix, width, height, bitDepth_float); 
 
 // random values between 0 and 1; seed is 5
-Ext.CLIJ2_setRandom(another_matrix, 0, 1, 5); 
+Ext.<a href="https://clij.github.io/clij2-docs/reference_setRandom">CLIJ2_setRandom</a>(another_matrix, 0, 1, 5); 
 
 // element wise multiplication
-Ext.CLIJ2_multiplyImages(matrix, another_matrix, matrix_element_wise_multiplied);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(matrix, another_matrix, matrix_element_wise_multiplied);
 Ext.CLIJ2_pull(matrix_element_wise_multiplied);
 zoom(100);
 
@@ -80,7 +80,7 @@ zoom(100);
 ## Element wise multiplication of the matrix with a scalar
 
 ```java
-Ext.CLIJ2_multiplyImageAndScalar(matrix, elements_times_2, 2);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndScalar">CLIJ2_multiplyImageAndScalar</a>(matrix, elements_times_2, 2);
 Ext.CLIJ2_pull(elements_times_2);
 zoom(100);
 

@@ -42,10 +42,10 @@ run("Close All");
 ## Segment the image and create a label mask
 
 ```java
-Ext.CLIJ2_thresholdOtsu(input, mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input, mask);
 
 // connected components analysis
-Ext.CLIJ2_connectedComponentsLabeling(mask, labelmap);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabeling">CLIJ2_connectedComponentsLabeling</a>(mask, labelmap);
 
 // show labelling
 Ext.CLIJx_pull(labelmap);
@@ -59,7 +59,7 @@ run("glasbey on dark");
  
 
 ```java
-Ext.CLIJ2_statisticsOfLabelledPixels(input, labelmap);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels">CLIJ2_statisticsOfLabelledPixels</a>(input, labelmap);
 
 
 ```

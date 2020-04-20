@@ -86,7 +86,7 @@ run("Close All");
 // Local mean filter in GPU
 for (i = 1; i <= 10; i++) {
 	time = getTime();
-	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_mean3DBox">CLIJ2_mean3DBox</a>(input, blurred, 3, 3, 3);
 	print("CLIJ2 GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
 ```

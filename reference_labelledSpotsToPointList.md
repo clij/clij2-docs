@@ -9,10 +9,11 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 
 ### labelledSpotsToPointList often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
+* <a href="reference_labelSpots">labelSpots</a> (2)
 
 
 ### labelledSpotsToPointList is often followed by
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -51,8 +52,15 @@ clij2.release(destination_pointlist);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
