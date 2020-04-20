@@ -15,9 +15,9 @@ is empty in this case asking CLIJ to automatically select a GPU. If you have a G
 `[nVendor Awesomed Intelligent 3000]` but you can also just enter a part of the name such as `nVendor` 
 or `some`. CLIJ will select this GPU in case the is no other GPU containing that part of the name.
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-```
+</pre>
 
 
 ## Cleaning up at the beginning
@@ -25,29 +25,29 @@ Furthermore, to make sure that the memory of the GPU is empty, you can call `cle
 sense in case you develop a new workflow. In case your macro crashes, it leaves behind images in 
 GPU memory. Thus, you want to clean up first before starting:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 ## Loading images and pushing it to GPU memory
 
 For loading images, we use ImageJs functionality. Then, we use CLIJs `push()` method to send the 
 image to the GPU memory.
 
-```java
+<pre class="highlight">
 run("Cell Colony (31K)");
 
 input_image = getTitle();
 Ext.CLIJ2_push(input_image);
-```
+</pre>
 <a href="image_1587403227407.png"><img src="image_1587403227407.png" width="250" alt="Cell_Colony-2.jpg"/></a>
 
 The image is now named in the GPU like it its image on screen. We can ask the GPU to tell us 
 which images it knows right now: 
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_reportMemory();
-```
+</pre>
 <pre>
 > GPU contains 1 images.
 > - Cell_Colony-2.jpg[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3dbc6b0e] 161.8 kb
@@ -58,28 +58,28 @@ Ext.CLIJ2_reportMemory();
 ## Processing an image
 If we blur the input image, another `result` image is allocated in GPU memory.
 
-```java
+<pre class="highlight">
 sigma = 5;
 //// you can, but you don't have to define the result image name:
 //result = "blurred_image"; 
 Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur2D">CLIJ2_gaussianBlur2D</a>(input_image, result, sigma, sigma);
-```
+</pre>
 
 ## Showing a result image
 If we would stop the program here using the `exit();` method, no result would be shown.
 
 In order to get the `result` back from the GPU, we need to pull it:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_pull(result);
-```
+</pre>
 <a href="image_1587403227857.png"><img src="image_1587403227857.png" width="250" alt="CLIJ2_gaussianBlur2D_result46"/></a>
 
 Furthermore, let's ask again which images are now in GPU memory:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_reportMemory();
-```
+</pre>
 <pre>
 > GPU contains 2 images.
 > - Cell_Colony-2.jpg[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3dbc6b0e] 161.8 kb
@@ -94,11 +94,11 @@ them would be allocated in GPU memory until it's full and a red error message
 `CL_OUT_OF_RESOURCES` or `CL_OUT_OF_HOST_MEMORY`
 shows up. Thus, we need to release an image to free memory. 
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_release(input_image);
 
 Ext.CLIJ2_reportMemory();
-```
+</pre>
 <pre>
 > GPU contains 1 images.
 > - CLIJ2_gaussianBlur2D_result46[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4111efae] 161.8 kb
@@ -115,12 +115,12 @@ when needed in your workflow.
 ## Clean up when you're done
 Furthermore, by the end of your macro, be a good programmer and clean up. ;-)
 
-```java
+<pre class="highlight">
 
 Ext.CLIJ2_clear();
 Ext.CLIJ2_reportMemory();
 
-```
+</pre>
 <pre>
 > GPU contains 0 images.
 > = 0.0 b
@@ -129,5 +129,5 @@ Ext.CLIJ2_reportMemory();
 
 
 
-```
-```
+</pre>
+</pre>

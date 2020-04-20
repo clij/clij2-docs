@@ -8,7 +8,7 @@ on the GPU.
 Author: Robert Haase
          April 2020
 
-```java
+<pre class="highlight">
 
 // Initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
@@ -16,11 +16,11 @@ Ext.CLIJ2_clear();
 
 run("Close All");
 
-```
+</pre>
 
 ## Define two arrays (vectors) and push them to the GPU 
 
-```java
+<pre class="highlight">
 array1 = newArray(1, 2, 3, 4, 5);
 array2 = newArray(6, 7, 8, 9, 10);
 
@@ -29,12 +29,12 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushAr
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector2, array2, 5, 1, 1);
 
 
-```
+</pre>
 
 ## In order to do matrix multiplication, the input matrice must be of size n*m and m*n. 
 Therefore, we transpose one of our vectors 
 
-```java
+<pre class="highlight">
 // transpose first input vector and show it
 Ext.<a href="https://clij.github.io/clij2-docs/reference_transposeXY">CLIJ2_transposeXY</a>(vector1, vector1transposed);
 
@@ -45,23 +45,23 @@ zoom(100);
 Ext.CLIJ2_pull(vector2);
 zoom(100);
 
-```
+</pre>
 <a href="image_1587393055708.png"><img src="image_1587393055708.png" width="250" alt="CLIJ2_transposeXY_result245-1"/></a>
 <a href="image_1587393055718.png"><img src="image_1587393055718.png" width="250" alt="CLIJ2_pushArray_result244-1"/></a>
 
 ## Matrix multiplication
 
-```java
+<pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyMatrix">CLIJ2_multiplyMatrix</a>(vector1transposed, vector2, matrix);
 Ext.CLIJ2_pull(matrix);
 zoom(100);
 
-```
+</pre>
 <a href="image_1587393055826.png"><img src="image_1587393055826.png" width="250" alt="CLIJ2_multiplyMatrix_result246-1"/></a>
 
 ## Element wise multiplication of the matrix with another matrix
 
-```java
+<pre class="highlight">
 
 // generate another matrix of the same size with random values
 Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(matrix, width, height, depth);
@@ -76,30 +76,30 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_m
 Ext.CLIJ2_pull(matrix_element_wise_multiplied);
 zoom(100);
 
-```
+</pre>
 <a href="image_1587393055936.png"><img src="image_1587393055936.png" width="250" alt="CLIJ2_multiplyImages_result248-1"/></a>
 
 ## Element wise multiplication of the matrix with a scalar
 
-```java
+<pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndScalar">CLIJ2_multiplyImageAndScalar</a>(matrix, elements_times_2, 2);
 Ext.CLIJ2_pull(elements_times_2);
 zoom(100);
 
 
-```
+</pre>
 <a href="image_1587393056035.png"><img src="image_1587393056035.png" width="250" alt="CLIJ2_multiplyImageAndScalar_result249-1"/></a>
 
 Clean up by the end
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 This is just a utility function to make the visualisation in the notebook nice.
 
-```java
+<pre class="highlight">
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
 	before = getTitle();	
@@ -108,9 +108,9 @@ function zoom(factor) {
 	close();
 }
 
-```
+</pre>
 
 
 
-```
-```
+</pre>
+</pre>

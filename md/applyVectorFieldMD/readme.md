@@ -10,19 +10,19 @@ March 2019
 
 Get test data
 
-```java
+<pre class="highlight">
 run("Close All");
 
 // get test image
 run("Blobs (25K)");
 input = getTitle();
 
-```
+</pre>
 <a href="image_1587212184330.png"><img src="image_1587212184330.png" width="250" alt="blobs.gif"/></a>
 
 Create two images describing local shift
 
-```java
+<pre class="highlight">
 shiftX = "shiftX";
 shiftY = "shiftY";
 newImage(shiftX, "32-bit black", 256, 254, 1);
@@ -36,23 +36,23 @@ run("Select None");
 run("Gaussian Blur...", "sigma=15");
 run("Enhance Contrast", "saturated=0.35");
 
-```
+</pre>
 <a href="image_1587212188199.png"><img src="image_1587212188199.png" width="250" alt="shiftX"/></a>
 <a href="image_1587212188209.png"><img src="image_1587212188209.png" width="250" alt="shiftY"/></a>
 
 ## Initialize GPU and push images to GPU memory
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_push(input);
 Ext.CLIJ2_push(shiftX);
 Ext.CLIJ2_push(shiftY);
 
-```
+</pre>
 
 ## Apply shift; rotate it; apply again in a loop
 
-```java
+<pre class="highlight">
 for (i = 0; i < 36; i += 6) {
 
 	// change the shift from slice to slice
@@ -66,7 +66,7 @@ for (i = 0; i < 36; i += 6) {
 	rename("Angle " + (i * 10) + " deg");
 }
 
-```
+</pre>
 <a href="image_1587212192189.png"><img src="image_1587212192189.png" width="250" alt="Angle 0 deg"/></a>
 <a href="image_1587212192239.png"><img src="image_1587212192239.png" width="250" alt="Angle 60 deg"/></a>
 <a href="image_1587212192294.png"><img src="image_1587212192294.png" width="250" alt="Angle 120 deg"/></a>
@@ -76,11 +76,11 @@ for (i = 0; i < 36; i += 6) {
 
 Cleanup by the end
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+</pre>
+</pre>
