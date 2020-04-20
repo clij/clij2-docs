@@ -6,7 +6,7 @@ Takes a touch matrix and a vector of values to determine the minimum value among
 TODO: This only works for values between 0 and 255 for now.
 
 ### minimumOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -49,12 +49,14 @@ clij2.release(minimum_values_destination);
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
+<a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
 
 
 
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

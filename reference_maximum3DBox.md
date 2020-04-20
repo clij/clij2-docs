@@ -10,6 +10,7 @@ its half-width, half-height and half-depth (radius).
 
 ### maximum3DBox is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (2)
+* <a href="reference_release">release</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -51,8 +52,15 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm"><img src="images/language_macro.png" height="20"/></a> [topHat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

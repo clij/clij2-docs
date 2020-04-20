@@ -1,11 +1,11 @@
-## print
+## touchMatrixToAdjacencyMatrix
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Visualises an image on standard out (console).
+Converts a touch matrix in an adjacency matrix
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_print(Image input);
+Ext.CLIJ2_touchMatrixToAdjacencyMatrix(Image touch_matrix, ByRef Image adjacency_matrix);
 ```
 
 
@@ -17,19 +17,21 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clij2.push(inputImagePlus);
+ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
+ClearCLBuffer adjacency_matrix = clij2.push(adjacency_matrixImagePlus);
 ```
 
 ```
 // Execute operation on GPU
-clij2.print(clij, input);
+clij2.touchMatrixToAdjacencyMatrix(clij, touch_matrix, adjacency_matrix);
 ```
 
 ```
 //show result
 
 // cleanup memory on GPU
-clij2.release(input);
+clij2.release(touch_matrix);
+clij2.release(adjacency_matrix);
 ```
 
 

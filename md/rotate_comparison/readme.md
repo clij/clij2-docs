@@ -47,7 +47,7 @@ rotated_cpu = getTitle();
 ## Rotate image on GPU
 
 ```java
-Ext.CLIJ2_affineTransform2D(input, rotated_gpu, "-center rotate=45 center");
+Ext.[CLIJ2_affineTransform2D](https://clij.github.io/clij2-docs/reference_affineTransform2D)(input, rotated_gpu, "-center rotate=45 center");
 
 // show results
 Ext.CLIJ2_pull(rotated_gpu);

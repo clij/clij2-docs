@@ -7,6 +7,18 @@ zero.
 
 <pre>f(x,m) = (x if (m != 0); (0 otherwise))</pre>
 
+### mask often follows after
+* <a href="reference_threshold">threshold</a> (2)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (2)
+
+
+### mask is often followed by
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_labelSpots">labelSpots</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_mask(Image source, Image mask, Image destination);
@@ -45,8 +57,15 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/countNeighbors3D.py"><img src="images/language_jython.png" height="20"/></a> [countNeighbors3D.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/countNeighbors3D.py)  
 <a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
 <a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/spotDetection3D.m"><img src="images/language_matlab.png" height="20"/></a> [spotDetection3D.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/spotDetection3D.m)  

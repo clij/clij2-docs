@@ -39,10 +39,10 @@ run("Close All");
 Create a mask using a fixed threshold and label connected components
 
 ```java
-Ext.CLIJ2_automaticThreshold(input, mask, "Otsu");
+Ext.[CLIJ2_automaticThreshold](https://clij.github.io/clij2-docs/reference_automaticThreshold)(input, mask, "Otsu");
 
 // label
-Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
+Ext.[CLIJ2_connectedComponentsLabelingBox](https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox)(mask, labelmap);
 
 // show result
 Ext.CLIJ2_pull(mask);

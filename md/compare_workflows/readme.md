@@ -56,12 +56,12 @@ Ext.CLIJ2_push(input_clij);
 // subtract background in the image
 radius = 25;
 background_subtracted_clij = "background_subtracted_clij";
-Ext.CLIJ2_topHatBox(input_clij, background_subtracted_clij, 25, 25, 0);
+Ext.[CLIJ2_topHatBox](https://clij.github.io/clij2-docs/reference_topHatBox)(input_clij, background_subtracted_clij, 25, 25, 0);
 Ext.CLIJ2_pull(background_subtracted_clij);
 
 // threshold the image
 thresholded_clij = "thresholded_clij";
-Ext.CLIJ2_automaticThreshold(background_subtracted_clij, thresholded_clij, "Default");
+Ext.[CLIJ2_automaticThreshold](https://clij.github.io/clij2-docs/reference_automaticThreshold)(background_subtracted_clij, thresholded_clij, "Default");
 Ext.CLIJ2_pullBinary(thresholded_clij);
 
 end_time_clij = getTime();

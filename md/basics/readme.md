@@ -62,7 +62,7 @@ If we blur the input image, another `result` image is allocated in GPU memory.
 sigma = 5;
 //// you can, but you don't have to define the result image name:
 //result = "blurred_image"; 
-Ext.CLIJ2_gaussianBlur2D(input_image, result, sigma, sigma);
+Ext.[CLIJ2_gaussianBlur2D](https://clij.github.io/clij2-docs/reference_gaussianBlur2D)(input_image, result, sigma, sigma);
 ```
 
 ## Showing a result image

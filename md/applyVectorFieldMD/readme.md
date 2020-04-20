@@ -56,10 +56,10 @@ Ext.CLIJ2_push(shiftY);
 for (i = 0; i < 36; i += 6) {
 
 	// change the shift from slice to slice
-	Ext.CLIJ2_affineTransform2D(shiftX, rotatedShiftX, "-center rotate=" + (i * 10) + " center");
+	Ext.[CLIJ2_affineTransform2D](https://clij.github.io/clij2-docs/reference_affineTransform2D)(shiftX, rotatedShiftX, "-center rotate=" + (i * 10) + " center");
 	
 	// apply transform
-	Ext.CLIJ2_applyVectorField2D(input, rotatedShiftX, shiftY, transformed);
+	Ext.[CLIJ2_applyVectorField2D](https://clij.github.io/clij2-docs/reference_applyVectorField2D)(input, rotatedShiftX, shiftY, transformed);
 
 	// get result back from GPU
 	Ext.CLIJ2_pull(transformed);

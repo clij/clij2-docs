@@ -39,8 +39,8 @@ run("Close All");
 
 ```java
 
-Ext.CLIJ2_automaticThreshold(input, mask1, "Otsu");
-Ext.CLIJ2_automaticThreshold(input, mask2, "MinError");
+Ext.[CLIJ2_automaticThreshold](https://clij.github.io/clij2-docs/reference_automaticThreshold)(input, mask1, "Otsu");
+Ext.[CLIJ2_automaticThreshold](https://clij.github.io/clij2-docs/reference_automaticThreshold)(input, mask2, "MinError");
 
 Ext.CLIJ2_pullBinary(mask1);
 Ext.CLIJ2_pullBinary(mask2);
@@ -52,8 +52,8 @@ Ext.CLIJ2_pullBinary(mask2);
 ## measure overlap between the two masks
 
 ```java
-Ext.CLIJ2_getJaccardIndex(mask1, mask2, jaccardIndex);
-Ext.CLIJ2_getSorensenDiceCoefficient(mask1, mask2, diceIndex);
+Ext.[CLIJ2_getJaccardIndex](https://clij.github.io/clij2-docs/reference_getJaccardIndex)(mask1, mask2, jaccardIndex);
+Ext.[CLIJ2_getSorensenDiceCoefficient](https://clij.github.io/clij2-docs/reference_getSorensenDiceCoefficient)(mask1, mask2, diceIndex);
 
 // output result
 IJ.log("Overlap (Jaccard index): " + (jaccardIndex*100) + "%");

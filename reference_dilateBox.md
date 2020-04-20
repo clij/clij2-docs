@@ -9,8 +9,8 @@ This method is comparable to the 'Dilate' menu in ImageJ in case it is applied t
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
 ### dilateBox often follows after
-* <a href="reference_dilateBox">dilateBox</a> (2)
 * <a href="reference_erodeBox">erodeBox</a> (2)
+* <a href="reference_dilateBox">dilateBox</a> (2)
 
 
 ### dilateBox is often followed by

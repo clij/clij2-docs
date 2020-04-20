@@ -30,7 +30,7 @@ Ext.CLIJ2_create2D(pointlist, number_of_points, number_of_dimensions, bit_depth)
 random_min = 0;
 random_max = 100;
 seed = getTime();
-Ext.CLIJ2_setRandom(pointlist, random_min, random_max, seed);
+Ext.[CLIJ2_setRandom](https://clij.github.io/clij2-docs/reference_setRandom)(pointlist, random_min, random_max, seed);
 Ext.CLIJ2_pull(pointlist);
 zoom(10);
 
@@ -40,7 +40,7 @@ zoom(10);
 ## Draw the spots labelled (1, 2, 3, ...) in 2D space
 
 ```java
-Ext.CLIJ2_pointlistToLabelledSpots(pointlist, spots_image);
+Ext.[CLIJ2_pointlistToLabelledSpots](https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpots)(pointlist, spots_image);
 Ext.CLIJ2_pull(spots_image);
 zoom(4);
 run("glasbey_on_dark");
@@ -68,7 +68,7 @@ for (i = 0; i < number_of_points; i += 1) {
 }
 measurement_array[number_of_points / 2] = 20;
 
-Ext.CLIJ2_pushArray(measurement, measurement_array, number_of_points, 1, 1);
+Ext.[CLIJ2_pushArray](https://clij.github.io/clij2-docs/reference_pushArray)(measurement, measurement_array, number_of_points, 1, 1);
 Ext.CLIJ2_pull(measurement);
 zoom(10);
 
@@ -78,7 +78,7 @@ zoom(10);
 ## Make a parametric image showing measurements in 2D space
 
 ```java
-Ext.CLIJ2_replaceIntensities(labelled_voronoi, measurement, parametric_image);
+Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labelled_voronoi, measurement, parametric_image);
 Ext.CLIJ2_pull(parametric_image);
 zoom(4);
 setMinAndMax(0, 20);
@@ -92,13 +92,13 @@ run("Fire");
 ```java
 
 // determine the touch matrix
-Ext.CLIJ2_generateTouchMatrix(labelled_voronoi, touch_matrix);
+Ext.[CLIJ2_generateTouchMatrix](https://clij.github.io/clij2-docs/reference_generateTouchMatrix)(labelled_voronoi, touch_matrix);
 
 /// determine median value of each nodes neighbors
-Ext.CLIJ2_medianOfTouchingNeighbors(measurement, touch_matrix, median_measurement);
+Ext.[CLIJ2_medianOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors)(measurement, touch_matrix, median_measurement);
 
 // draw the median measurement, again as parametric image
-Ext.CLIJ2_replaceIntensities(labelled_voronoi, median_measurement, parametric_image);
+Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labelled_voronoi, median_measurement, parametric_image);
 Ext.CLIJ2_pull(parametric_image);
 zoom(4);
 setMinAndMax(0, 20);
