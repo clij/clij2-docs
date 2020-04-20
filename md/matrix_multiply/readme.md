@@ -28,6 +28,7 @@ array2 = newArray(6, 7, 8, 9, 10);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector1, array1, 5, 1, 1);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector2, array2, 5, 1, 1);
 
+
 ```
 
 ## In order to do matrix multiplication, the input matrice must be of size n*m and m*n. 
@@ -36,6 +37,7 @@ Therefore, we transpose one of our vectors
 ```java
 // transpose first input vector and show it
 Ext.<a href="https://clij.github.io/clij2-docs/reference_transposeXY">CLIJ2_transposeXY</a>(vector1, vector1transposed);
+
 Ext.CLIJ2_pull(vector1transposed);
 zoom(100);
 

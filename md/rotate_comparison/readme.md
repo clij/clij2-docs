@@ -49,6 +49,7 @@ rotated_cpu = getTitle();
 ```java
 Ext.<a href="https://clij.github.io/clij2-docs/reference_affineTransform2D">CLIJ2_affineTransform2D</a>(input, rotated_gpu, "-center rotate=45 center");
 
+
 // show results
 Ext.CLIJ2_pull(rotated_gpu);
 

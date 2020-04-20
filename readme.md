@@ -32,6 +32,8 @@ This page is under construction. Links may change
   * Benchmarking
     * [Comparing and benchmarking workflows](https://clij.github.io/clij2-docs/md/compare_workflows/)
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison/)
-
+    
+  * NEUBIAS Academy 2020
+    * [Tribolium morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
 
 

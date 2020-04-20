@@ -43,6 +43,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_th
 // voronoi
 Ext.<a href="https://clij.github.io/clij2-docs/reference_voronoiOctagon">CLIJ2_voronoiOctagon</a>(mask, voronoi_diagram);
 
+
 // show result
 Ext.CLIJ2_pullBinary(mask);
 Ext.CLIJ2_pullBinary(voronoi_diagram);
