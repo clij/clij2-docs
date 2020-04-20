@@ -33,7 +33,7 @@ width = 5;
 height = 5;
 depth = 1;
 
-Ext.[CLIJ2_pushArray](https://clij.github.io/clij2-docs/reference_pushArray)(spots_image, array, width, height, depth);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(spots_image, array, width, height, depth);
 Ext.CLIJ2_pull(spots_image);
 zoom(100);
 
@@ -43,7 +43,7 @@ zoom(100);
 ## Convert the spots image to a point list
 
 ```java
-Ext.[CLIJ2_spotsToPointList](https://clij.github.io/clij2-docs/reference_spotsToPointList)(spots_image, pointlist);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">CLIJ2_spotsToPointList</a>(spots_image, pointlist);
 Ext.CLIJ2_pull(pointlist);
 zoom(100);
 ```
@@ -52,7 +52,7 @@ zoom(100);
 ## Determine the distance from every spot to every spot and write it in a distance matrix. 
 
 ```java
-Ext.[CLIJ2_generateDistanceMatrix](https://clij.github.io/clij2-docs/reference_generateDistanceMatrix)(pointlist, pointlist, distance_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">CLIJ2_generateDistanceMatrix</a>(pointlist, pointlist, distance_matrix);
 Ext.CLIJ2_pull(distance_matrix);
 zoom(100);
 
@@ -62,7 +62,7 @@ zoom(100);
 ## Label all spots
 
 ```java
-Ext.[CLIJ2_labelSpots](https://clij.github.io/clij2-docs/reference_labelSpots)(spots_image, labelled_spots);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_labelSpots">CLIJ2_labelSpots</a>(spots_image, labelled_spots);
 Ext.CLIJ2_pull(labelled_spots);
 zoom(100);
 run("glasbey_on_dark");
@@ -83,7 +83,7 @@ zoom(100);
 ## Analyse which label touches which other labels and save it in a touch matrix
 
 ```java
-Ext.[CLIJ2_generateTouchMatrix](https://clij.github.io/clij2-docs/reference_generateTouchMatrix)(label_voronoi, touch_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(label_voronoi, touch_matrix);
 Ext.CLIJ2_pull(touch_matrix);
 zoom(100);
 
@@ -93,7 +93,7 @@ zoom(100);
 ## Count neighbors for every node
 
 ```java
-Ext.[CLIJ2_countTouchingNeighbors](https://clij.github.io/clij2-docs/reference_countTouchingNeighbors)(touch_matrix, count_vector);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_countTouchingNeighbors">CLIJ2_countTouchingNeighbors</a>(touch_matrix, count_vector);
 Ext.CLIJ2_pull(count_vector);
 zoom(100);
 
@@ -104,7 +104,7 @@ zoom(100);
 
 ```java
 run("Clear Results");
-Ext.[CLIJ2_statisticsOfLabelledPixels](https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels)(spots_image, label_voronoi);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels">CLIJ2_statisticsOfLabelledPixels</a>(spots_image, label_voronoi);
 
 ```
 <table>
@@ -120,7 +120,7 @@ Ext.[CLIJ2_statisticsOfLabelledPixels](https://clij.github.io/clij2-docs/referen
 ## Push results table as image to the GPU
 
 ```java
-Ext.[CLIJ2_pushResultsTable](https://clij.github.io/clij2-docs/reference_pushResultsTable)(table_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTable">CLIJ2_pushResultsTable</a>(table_image);
 Ext.CLIJ2_pull(table_image);
 zoom(100);
 
@@ -130,7 +130,7 @@ zoom(100);
 ## Push a single column of the results table to the GPU
 
 ```java
-Ext.[CLIJ2_pushResultsTableColumn](https://clij.github.io/clij2-docs/reference_pushResultsTableColumn)(mean_intensity_vector, "MEAN_INTENSITY");
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTableColumn">CLIJ2_pushResultsTableColumn</a>(mean_intensity_vector, "MEAN_INTENSITY");
 Ext.CLIJ2_pull(mean_intensity_vector);
 zoom(100);
 
@@ -141,7 +141,7 @@ zoom(100);
 
 ```java
 zoom_factor = 100;
-Ext.[CLIJ2_multiplyImageAndScalar](https://clij.github.io/clij2-docs/reference_multiplyImageAndScalar)(pointlist, pointlist_multiplied, zoom_factor);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndScalar">CLIJ2_multiplyImageAndScalar</a>(pointlist, pointlist_multiplied, zoom_factor);
 Ext.CLIJ2_pull(pointlist_multiplied);
 zoom(100);
 
@@ -152,7 +152,7 @@ zoom(100);
 
 ```java
 Ext.CLIJ2_create2D(mesh, width * zoom_factor, height * zoom_factor, 32);
-Ext.[CLIJ2_touchMatrixToMesh](https://clij.github.io/clij2-docs/reference_touchMatrixToMesh)(pointlist_multiplied, touch_matrix, mesh);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ2_touchMatrixToMesh</a>(pointlist_multiplied, touch_matrix, mesh);
 Ext.CLIJ2_pull(mesh);
 
 ```
@@ -162,7 +162,7 @@ Ext.CLIJ2_pull(mesh);
 
 ```java
 Ext.CLIJ2_create2D(mesh2, width * zoom_factor, height * zoom_factor, 32);
-Ext.[CLIJ2_distanceMatrixToMesh](https://clij.github.io/clij2-docs/reference_distanceMatrixToMesh)(pointlist_multiplied, distance_matrix, mesh2, 2.5);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_distanceMatrixToMesh">CLIJ2_distanceMatrixToMesh</a>(pointlist_multiplied, distance_matrix, mesh2, 2.5);
 Ext.CLIJ2_pull(mesh2);
 
 ```

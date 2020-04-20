@@ -38,10 +38,11 @@ run("Close All");
 ## Create a mask using a threshold algorithm and draw the Voronoi map
 
 ```java
-Ext.[CLIJ2_thresholdOtsu](https://clij.github.io/clij2-docs/reference_thresholdOtsu)(input, mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input, mask);
 
 // voronoi
-Ext.[CLIJ2_voronoiOctagon](https://clij.github.io/clij2-docs/reference_voronoiOctagon)(mask, voronoi_diagram);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_voronoiOctagon">CLIJ2_voronoiOctagon</a>(mask, voronoi_diagram);
+
 
 // show result
 Ext.CLIJ2_pullBinary(mask);

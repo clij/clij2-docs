@@ -37,7 +37,7 @@ run("Close All");
 Create a mask using the Otsu threshold algorithm
 
 ```java
-Ext.[CLIJ2_thresholdOtsu](https://clij.github.io/clij2-docs/reference_thresholdOtsu)(input, mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input, mask);
 Ext.CLIJ2_pull(mask);
 
 ```
@@ -47,9 +47,9 @@ Draw a Voronoi diagram and invert it
 
 ```java
 
-Ext.[CLIJ2_voronoiOctagon](https://clij.github.io/clij2-docs/reference_voronoiOctagon)(mask, voronoi_diagram);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_voronoiOctagon">CLIJ2_voronoiOctagon</a>(mask, voronoi_diagram);
 // invert
-Ext.[CLIJ2_binaryNot](https://clij.github.io/clij2-docs/reference_binaryNot)(voronoi_diagram, inverted_voronoi);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_binaryNot">CLIJ2_binaryNot</a>(voronoi_diagram, inverted_voronoi);
 
 Ext.CLIJ2_pullBinary(voronoi_diagram);
 Ext.CLIJ2_pullBinary(inverted_voronoi);
@@ -61,10 +61,10 @@ Ext.CLIJ2_pullBinary(inverted_voronoi);
 Generate a label map and extend it to make labels touch
 
 ```java
-Ext.[CLIJ2_connectedComponentsLabelingBox](https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox)(inverted_voronoi, labelled);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox">CLIJ2_connectedComponentsLabelingBox</a>(inverted_voronoi, labelled);
 
 // Extend labels so that they touch
-Ext.[CLIJ2_maximum2DBox](https://clij.github.io/clij2-docs/reference_maximum2DBox)(labelled, labelled_extended, 2, 2);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximum2DBox">CLIJ2_maximum2DBox</a>(labelled, labelled_extended, 2, 2);
 
 Ext.CLIJ2_pull(labelled);
 Ext.CLIJ2_pull(labelled_extended);
@@ -76,7 +76,7 @@ Ext.CLIJ2_pull(labelled_extended);
 Determine touch matrix
 
 ```java
-Ext.[CLIJ2_generateTouchMatrix](https://clij.github.io/clij2-docs/reference_generateTouchMatrix)(labelled_extended, touch_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labelled_extended, touch_matrix);
 Ext.CLIJ2_pullBinary(touch_matrix);
 
 ```
@@ -87,16 +87,16 @@ Do statistics on the label map
 
 ```java
 run("Clear Results");
-Ext.[CLIJ2_statisticsOfBackgroundAndLabelledPixels](https://clij.github.io/clij2-docs/reference_statisticsOfBackgroundAndLabelledPixels)(input, labelled_extended);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfBackgroundAndLabelledPixels">CLIJ2_statisticsOfBackgroundAndLabelledPixels</a>(input, labelled_extended);
 
-Ext.[CLIJ2_resultsTableColumnToImage](https://clij.github.io/clij2-docs/reference_resultsTableColumnToImage)(intensity_values, "MEAN_INTENSITY");
+Ext.<a href="https://clij.github.io/clij2-docs/reference_resultsTableColumnToImage">CLIJ2_resultsTableColumnToImage</a>(intensity_values, "MEAN_INTENSITY");
 
 ```
 
 Show Mean intensity per label as parametric image
 
 ```java
-Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labelled_extended, intensity_values, intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, intensity_values, intensity_map);
 Ext.CLIJ2_pull(intensity_map);
 rename("label intensity");
 
@@ -107,8 +107,8 @@ Determine mean (mean) intensity of local neighbors and draw another parametric i
 
 ```java
 
-Ext.[CLIJ2_meanOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighbors)(intensity_values, touch_matrix, local_mean_intensity_values);
-Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighbors">CLIJ2_meanOfTouchingNeighbors</a>(intensity_values, touch_matrix, local_mean_intensity_values);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
 Ext.CLIJ2_pull(local_mean_intensity_map);
 rename("mean neighbor intensity");
 
@@ -120,14 +120,14 @@ Determine min and max (mean) intensity of local neighbors and draw two more para
 ```java
 
 // min
-Ext.[CLIJ2_minimumOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors)(intensity_values, touch_matrix, local_minimum_intensity_values);
-Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labelled_extended, local_minimum_intensity_values, local_minimum_intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">CLIJ2_minimumOfTouchingNeighbors</a>(intensity_values, touch_matrix, local_minimum_intensity_values);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, local_minimum_intensity_values, local_minimum_intensity_map);
 Ext.CLIJ2_pull(local_minimum_intensity_map);
 rename("minimum neighbor intensity");
 
 // max
-Ext.[CLIJ2_maximumOfTouchingNeighbors](https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighbors)(intensity_values, touch_matrix, local_maximum_intensity_values);
-Ext.[CLIJ2_replaceIntensities](https://clij.github.io/clij2-docs/reference_replaceIntensities)(labelled_extended, local_maximum_intensity_values, local_maximum_intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighbors">CLIJ2_maximumOfTouchingNeighbors</a>(intensity_values, touch_matrix, local_maximum_intensity_values);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, local_maximum_intensity_values, local_maximum_intensity_map);
 Ext.CLIJ2_pull(local_maximum_intensity_map);
 rename("maximum neighbor intensity");
 

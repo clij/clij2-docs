@@ -37,7 +37,7 @@ run("Close All");
 Apply a Gaussian blur filter in GPU
 
 ```java
-Ext.[CLIJ2_gaussianBlur3D](https://clij.github.io/clij2-docs/reference_gaussianBlur3D)(input, blurred, 5, 5, 1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_gaussianBlur3D</a>(input, blurred, 5, 5, 1);
 
 // Get results back from GPU
 Ext.CLIJ2_pull(blurred);
