@@ -20,7 +20,7 @@ time = getTime();
 </pre>
 
 ## Load a data set
-The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/data/lund1051_resampled.tif). 
+The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif). 
 It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm. 
 The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use it for detecting nuclei and generating an estimated cell-segmentation first.
 
