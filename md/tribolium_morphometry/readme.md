@@ -44,7 +44,7 @@ All processing steps are performed in 3D, for visualisation purposes, we're look
 ## Spot detection
 After some noise removal / smoothing, we perform local maximum detection:
 
-
+<pre>
     // gaussian blur
     sigma = 2;
     Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_gaussianBlur3D</a>(input, blurred, sigma, sigma, sigma);
@@ -53,6 +53,7 @@ After some noise removal / smoothing, we perform local maximum detection:
     radius = 2.0;
     Ext.[CLIJ2_detectMaximaBox](https://clij.github.io/clij2-docs/reference_detectMaximaBox)(blurred, detected_maxima, radius);
     show_spots(detected_maxima, "detected maxima");
+</pre>
 
 <a href="image_1587408724032.png"><img src="image_1587408724032.png" width="250" alt="CLIJ2_maximumZProjection_result485"/></a>
 
