@@ -1,36 +1,54 @@
-// CLIJ example macro: backgroundSubtraction.ijm
-//
-// This macro shows how maximum projection can be done in the GPU.
-//
-// Author: Robert Haase
-// December 2018
-// ---------------------------------------------
+/* 
+# Maximum Projections
 
+This macro shows how maximum projection 
+can be done in the GPU.
+
+Author: Robert Haase
+        April 2020
+
+## Start
+Let's clean up first and load some 3D example data.
+*/
 run ("Close All");
 
 // Get test data
-//open("C:/structure/data/t1-head.tif");
 run("T1 Head (2.4M, 16-bits)");
-input = getTitle();
-background = "background";
-background_subtracted = "background_subtracted";
-maximum_projected = "maximum_projected";
 
-// Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+/*
+We then initialize the GPU and send the image to its memory.
+*/
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU
+input = getTitle();
 Ext.CLIJ2_push(input);
 
 // CleanUp ImageJ
 close();
+/*
+## Maximum projecitons
+We can use the classical maximum intensity projection in Z:
+*/
+Ext.CLIJ2_maximumZProjection(input, maximum_z_projected);
+Ext.CLIJ2_pull(maximum_z_projected);
+/*
+But we can also project in X and Y direction:
+*/
+Ext.CLIJ2_maximumYProjection(input, maximum_y_projected);
+Ext.CLIJ2_pull(maximum_y_projected);
 
-// maximum projection
-Ext.CLIJ2_maximumZProjection(input, maximum_projected);
-
-// Get results back from GPU
-Ext.CLIJ2_pull(maximum_projected);
-
-// Cleanup by the end
+Ext.CLIJ2_maximumXProjection(input, maximum_x_projected);
+Ext.CLIJ2_pull(maximum_x_projected);
+/*
+Furthermore, we can frame the range from which the projection is drawn:
+*/
+min_z = 90;
+max_z = 100;
+Ext.CLIJ2_maximumZProjectionBounded(input, bound_projection, min_z, max_z);
+Ext.CLIJ2_pull(bound_projection);
+/*
+Cleanup by the end
+*/
 Ext.CLIJ2_clear();
