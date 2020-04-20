@@ -47,7 +47,7 @@ After some noise removal / smoothing, we perform local maximum detection:
 
     // gaussian blur
     sigma = 2;
-    Ext.[CLIJ2_gaussianBlur3D](https://clij.github.io/clij2-docs/reference_gaussianBlur3D)(input, blurred, sigma, sigma, sigma);
+    Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_gaussianBlur3D</a>(input, blurred, sigma, sigma, sigma);
     
     // detect maxima
     radius = 2.0;
