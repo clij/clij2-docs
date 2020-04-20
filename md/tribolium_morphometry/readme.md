@@ -11,13 +11,11 @@ graphics card with at least 8 GB of GDDR6 memory. It may otherwise be quite slow
 
 Let's initialize that graphics card and mesure the start time.
 
-```java
-run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
-
-run("Close All");
-time = getTime();
-```
+    run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
+    Ext.CLIJ2_clear();
+    
+    run("Close All");
+    time = getTime();
 
 ## Load a data set
 The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/data/lund1051_resampled.tif). 
@@ -26,18 +24,18 @@ The data set has been resampled to a voxel size of 1x1x1 microns. The embryo exp
 
 All processing steps are performed in 3D, for visualisation purposes, we're looking at maximum intensity projections in Z: 
 
-```java
-open("C:/structure/teaching/neubias_academy_clij2/data/lund1051_resampled.tif");
-input = getTitle();
 
-print("Loading took " + (getTime() - time) + " msec");
+    open("C:/structure/teaching/neubias_academy_clij2/data/lund1051_resampled.tif");
+    input = getTitle();
+    
+    print("Loading took " + (getTime() - time) + " msec");
+    
+    Ext.CLIJ2_push(input);
+    run("Close All");
+    
+    // visualise the dataset
+    show(input, "input");
 
-Ext.CLIJ2_push(input);
-run("Close All");
-
-// visualise the dataset
-show(input, "input");
-```
 <pre>
 > Loading took 249 msec
 </pre>
