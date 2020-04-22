@@ -34,6 +34,7 @@ This page is under construction. Links may change
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison/)
     
   * NEUBIAS Academy 2020
-    * [Tribolium morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
+    * [Tribolium embryo morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
+    * [Drosophila embryo cell counting](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection/)
 
 
