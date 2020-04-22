@@ -10,18 +10,17 @@ Author: Robert Haase
 June 2019
 
 
-// Get test data
 
 <pre class="highlight">
+//Get test data
 run("Blobs (25K)");
-//open("C:/structure/data/blobs.gif");
 input = getTitle();
 
 
 </pre>
-<a href="image_1587210890936.png"><img src="image_1587210890936.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587568435554.png"><img src="image_1587568435554.png" width="250" alt="blobs.gif"/></a>
 
-Init GPU
+## Init GPU
  and push image data to the GPU memory
 
 <pre class="highlight">
@@ -36,23 +35,26 @@ run("Close All");
 
 </pre>
 
-Create a mask using a fixed threshold and label connected components
+## Create a mask using a fixed threshold
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(input, mask, "Otsu");
+Ext.CLIJ2_pull(mask);
 
-// label
+</pre>
+<a href="image_1587568435708.png"><img src="image_1587568435708.png" width="250" alt="CLIJ2_automaticThreshold_result9"/></a>
+
+## Label connected components
+
+<pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox">CLIJ2_connectedComponentsLabelingBox</a>(mask, labelmap);
 
-// show result
-Ext.CLIJ2_pull(mask);
 Ext.CLIJ2_pull(labelmap);
 run("glasbey on dark");
 
 
 </pre>
-<a href="image_1587210894992.png"><img src="image_1587210894992.png" width="250" alt="CLIJ2_automaticThreshold_result1"/></a>
-<a href="image_1587210895025.png"><img src="image_1587210895025.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result2"/></a>
+<a href="image_1587568435838.png"><img src="image_1587568435838.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result10"/></a>
 
 Clean up by the end.
 
@@ -66,5 +68,4 @@ Ext.CLIJ2_clear();
 
 
 
-</pre>
-</pre>
+
