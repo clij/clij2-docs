@@ -12,13 +12,16 @@ This page is under construction. Links may change
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
   * [Measure speedup](https://clij.github.io/clij2-docs/md/benchmarking/)
   * Filtering and processing images
+    * [Crop and paste images](https://clij.github.io/clij2-docs/md/crop_and_paste/)
     * [Gaussian blur](https://clij.github.io/clij2-docs/md/blur/)
     * [Maximum projections](https://clij.github.io/clij2-docs/md/maxiumProjection/)
-    * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
     * [Warp images](https://clij.github.io/clij2-docs/md/applyVectorFieldMD/)
 
   * Segmentation and labelling
     * [Labeling](https://clij.github.io/clij2-docs/md/labeling/)
+    * [Binary images](https://clij.github.io/clij2-docs/md/binary_processing/)
+    * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
+    * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
 
   * Working with matrices and graphs
     * [Filtering in graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs/)
@@ -26,7 +29,8 @@ This page is under construction. Links may change
     * [Spots, pointlists, matrices and tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables/)
     
   * Statistics and measurements
-    * [Basic pixel statistics on labelled images](https://clij.github.io/clij2-docs/md/measure_statistics/)
+    * [Images statistics](https://clij.github.io/clij2-docs/md/image_statistics/)
+    * [Pixel statistics on labelled images](https://clij.github.io/clij2-docs/md/measure_statistics/)
     * [Colocalisation measurements using Jaccard index and Sorensen/Dice coefficient](https://clij.github.io/clij2-docs/md/measure_overlap/)
 
   * Benchmarking

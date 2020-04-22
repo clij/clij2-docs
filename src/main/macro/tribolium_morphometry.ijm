@@ -1,5 +1,5 @@
 /*
-# Tribolium morphometry
+# Tribolium embryo morphometry
 
 
 Author: Robert Haase
@@ -171,6 +171,9 @@ print("The whole workflow took " + (getTime() - time) + " msec");
 Also let's see how much memory this workflow used. Cleaning up by the end is also important.
 */
 Ext.CLIJ2_reportMemory();
+
+// clean up finally.
+Ext.CLIJ2_clear();
 
 /*
 The following are convienence methods for proper visualisation in a noteboook:

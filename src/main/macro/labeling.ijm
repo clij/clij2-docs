@@ -9,14 +9,13 @@ Author: Robert Haase
 June 2019
 
 
-// Get test data
 */
+//Get test data
 run("Blobs (25K)");
-//open("C:/structure/data/blobs.gif");
 input = getTitle();
 
 /*
-Init GPU and push image data to the GPU memory
+## Init GPU and push image data to the GPU memory
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -28,15 +27,16 @@ Ext.CLIJ2_push(input);
 run("Close All");
 
 /*
-Create a mask using a fixed threshold and label connected components
+## Create a mask using a fixed threshold
 */
 Ext.CLIJ2_automaticThreshold(input, mask, "Otsu");
+Ext.CLIJ2_pull(mask);
 
-// label
+/*
+## Label connected components
+*/
 Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
 
-// show result
-Ext.CLIJ2_pull(mask);
 Ext.CLIJ2_pull(labelmap);
 run("glasbey on dark");
 
