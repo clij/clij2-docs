@@ -8,5 +8,6 @@ for macro users everythin stays the same
 
 meanIJ was removed. Use meanSphere2D or meanSphere3D instead
 
+resliceRadial has more parameters now
 
 resample/scale factor is inverted use 2 instead of 0.5
