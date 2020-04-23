@@ -1,15 +1,17 @@
 /*
 # Measure speedup (Benchmarking)
+Author: Robert Haase 
+        April 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/benchmarking.ijm)
 
 This macro shows how to measure performance of image processing in ImageJ on the CPU 
 and CLIJ2 on the GPU.
 
-Author: Robert Haase 
-        December 2018
-
-Let's get some test data first
+Let's get some test data first. 
+We use an electron microscopy dataset from ["Segmented anisotropic ssTEM dataset of neural tissue." Stephan Gerhard, Jan Funke, Julien Martel, Albert Cardona, Richard Fetter. figshare. Retrieved 16:09, Nov 20, 2013 (GMT)](http://dx.doi.org/10.6084/m9.figshare.856713)
 */
-run("T1 Head (2.4M, 16-bits)");
+run("Image Sequence...", "open=C:/structure/data/unidesigner_groundtruth-drosophila-vnc/stack1/raw/00.tif sort");
 input = getTitle();
 
 /*
@@ -37,7 +39,7 @@ we also measure the time `push()` and `pull()` commands take.
 
 Let's start with initializin the GPU.
 */
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 /*
@@ -69,7 +71,6 @@ for (i = 1; i <= 10; i++) {
 	print("CLIJ GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
 /*
-
 ### Pull result image from the GPU
 */
 

@@ -1,9 +1,9 @@
 /*
 # Tribolium embryo morphometry
-
-
 Author: Robert Haase
         April 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm)
 
 This script is heavy GPU-accelerated processing. It is recommended to use a dedicated
 graphics card with at least 8 GB of GDDR6 memory. It may otherwise be quite slow.
@@ -15,6 +15,7 @@ Ext.CLIJ2_clear();
 
 run("Close All");
 time = getTime();
+Ext.CLIJ2_startTimeTracing();
 /*
 ## Load a data set
 The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
@@ -161,11 +162,18 @@ show(local_maximum_pixel_count_map, "neighbor maximum distance map");
 run("Fire");
 setMinAndMax(0, 50);
 /*
-# Performance evaluation
+## Performance evaluation
 Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 
 as intermediate results are save to disc.
 */
 print("The whole workflow took " + (getTime() - time) + " msec");
+
+/*
+### Detailed time tracing for all operations
+*/
+Ext.CLIJ2_stopTimeTracing();
+Ext.CLIJ2_getTimeTracing(time_traces);
+print(time_traces);
 
 /*
 Also let's see how much memory this workflow used. Cleaning up by the end is also important.

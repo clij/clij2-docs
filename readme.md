@@ -10,7 +10,6 @@ This page is under construction. Links may change
 
 * Tutorials
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
-  * [Measure speedup](https://clij.github.io/clij2-docs/md/benchmarking/)
   * Filtering and processing images
     * [Crop and paste images](https://clij.github.io/clij2-docs/md/crop_and_paste/)
     * [Gaussian blur](https://clij.github.io/clij2-docs/md/blur/)
@@ -34,6 +33,8 @@ This page is under construction. Links may change
     * [Colocalisation measurements using Jaccard index and Sorensen/Dice coefficient](https://clij.github.io/clij2-docs/md/measure_overlap/)
 
   * Benchmarking
+    * [Measure speedup](https://clij.github.io/clij2-docs/md/benchmarking/)
+    * [Detailed time tracing](https://clij.github.io/clij2-docs/md/time_tracing/)
     * [Comparing and benchmarking workflows](https://clij.github.io/clij2-docs/md/compare_workflows/)
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison/)
     
