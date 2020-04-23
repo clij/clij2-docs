@@ -17,24 +17,24 @@ mask = "mask";
 labelmap = "labelmap";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
-Ext.CLIJ_clear();
+run("CLIJ2 Macro Extensions", "cl_device=");
+Ext.CLIJ2_clear();
 
 // push data to GPU
-Ext.CLIJ_push(input);
+Ext.CLIJ2_push(input);
 
 // cleanup ImageJ
 run("Close All");
 
-// create a mask using a fixed threshold
-Ext.CLIJx_automaticThreshold(input, mask, "Otsu");
+// create a mask using a threshold algorithm
+Ext.CLIJ2_thresholdOtsu(input, mask);
 
 distance_map = "distance_map";
-Ext.CLIJx_distanceMap(mask, distance_map);
+Ext.CLIJ2_distanceMap(mask, distance_map);
 
 
-Ext.CLIJx_pullBinary(mask);
-Ext.CLIJx_pull(distance_map);
+Ext.CLIJ2_pullBinary(mask);
+Ext.CLIJ2_pull(distance_map);
 //run("Fire");
 run("Enhance Contrast", "saturated=0.35");
 

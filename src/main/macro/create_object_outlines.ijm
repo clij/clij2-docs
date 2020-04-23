@@ -8,15 +8,32 @@
 // December 2018
 // ---------------------------------------------
 
+run("Close All");
+
 run("Blobs (25K)");
 
-//run("Close All");
-//open("C:/structure/data/blobs.gif");
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
 
-Ext.CLIJ2_push("blobs.gif");
-Ext.CLIJ2_mean2DBox("blobs.gif", "CLIJ_mean2DBox_destination_blobs.gif", 2.0, 2.0);
-Ext.CLIJ2_threshold("CLIJ_mean2DBox_destination_blobs.gif", "CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif", 127.0);
-Ext.CLIJ2_erodeBox("CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif", "CLIJ_erodeBox_destination_CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif");
-Ext.CLIJ2_binaryXOr("CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif", "CLIJ_erodeBox_destination_CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif", "CLIJ_binaryXOr_destination_CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif");
-Ext.CLIJ2_pull("CLIJ_binaryXOr_destination_CLIJ_threshold_destination_CLIJ_mean2DBox_destination_blobs.gif");
+// mean
+image1 = getTitle();
+Ext.CLIJ_push(image1);
+image2 = "mean-379861202";
+radius_x = 2.0;
+radius_y = 2.0;
+Ext.CLIJ2_mean2DBox(image1, image2, radius_x, radius_y);
+Ext.CLIJ_pull(image2);
+
+// threshold otsu
+image3 = "threshold_otsu1213781482";
+Ext.CLIJ2_thresholdOtsu(image2, image3);
+Ext.CLIJ_pull(image3);
+
+// erode
+image4 = "erode1098774671";
+Ext.CLIJ2_erodeBox(image3, image4);
+Ext.CLIJ_pull(image4);
+
+// binary x or
+image5 = "binary_x_or-1653784026";
+Ext.CLIJ2_binaryXOr(image3, image4, image5);
+Ext.CLIJ_pull(image5);

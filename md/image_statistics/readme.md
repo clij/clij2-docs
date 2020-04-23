@@ -4,6 +4,9 @@
 Author: Robert Haase
         April 2020
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/image_statistics.ijm)
+        
+
 This macro shows how to determine basic image statistics
 
 ```java
@@ -15,7 +18,7 @@ run("Invert LUT");
 input = getTitle();
 
 ```
-<a href="image_1587569568033.png"><img src="image_1587569568033.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587652419772.png"><img src="image_1587652419772.png" width="250" alt="blobs-2.gif"/></a>
 
 ## Initialize GPU
  and push image data to GPU memory
@@ -80,9 +83,10 @@ Ext.CLIJ2_statisticsOfImage(input);
 
 ```
 <table>
-<tr><th>IDENTIFIER</th><th>BOUNDING_BOX_X</th><th>BOUNDING_BOX_Y</th><th>BOUNDING_BOX_Z</th><th>BOUNDING_BOX_END_X</th><th>BOUNDING_BOX_END_Y</th><th>BOUNDING_BOX_END_Z</th><th>BOUNDING_BOX_WIDTH</th><th>BOUNDING_BOX_HEIGHT</th><th>BOUNDING_BOX_DEPTH</th><th>MINIMUM_INTENSITY</th><th>MAXIMUM_INTENSITY</th><th>MEAN_INTENSITY</th><th>SUM_INTENSITY</th><th>STANDARD_DEVIATION_INTENSITY</th><th>PIXEL_COUNT</th><th>SUM_INTENSITY_TIMES_X</th><th>SUM_INTENSITY_TIMES_Y</th><th>SUM_INTENSITY_TIMES_Z</th><th>MASS_CENTER_X</th><th>MASS_CENTER_Y</th><th>MASS_CENTER_Z</th><th>SUM_X</th><th>SUM_Y</th><th>SUM_Z</th><th>CENTROID_X</th><th>CENTROID_Y</th><th>CENTROID_Z</th></tr>
-<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>255</td><td>253</td><td>0</td><td>256</td><td>254</td><td>1</td><td>8</td><td>248</td><td>103.269</td><td>6714936</td><td>71.057</td><td>65024</td><td>869461976</td><td>845974672</td><td>0</td><td>129.482</td><td>125.984</td><td>0</td><td>8290560</td><td>8225536</td><td>0</td><td>127.500</td><td>126.500</td><td>0</td></tr>
-<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>255</td><td>253</td><td>0</td><td>256</td><td>254</td><td>1</td><td>8</td><td>248</td><td>103.269</td><td>6714936</td><td>71.057</td><td>65024</td><td>869461976</td><td>845974672</td><td>0</td><td>129.482</td><td>125.984</td><td>0</td><td>8290560</td><td>8225536</td><td>0</td><td>127.500</td><td>126.500</td><td>0</td></tr>
+<tr><th>Width</th><th>Height</th><th>IDENTIFIER</th><th>BOUNDING_BOX_X</th><th>BOUNDING_BOX_Y</th><th>BOUNDING_BOX_Z</th><th>BOUNDING_BOX_END_X</th><th>BOUNDING_BOX_END_Y</th><th>BOUNDING_BOX_END_Z</th><th>BOUNDING_BOX_WIDTH</th><th>BOUNDING_BOX_HEIGHT</th><th>BOUNDING_BOX_DEPTH</th><th>MINIMUM_INTENSITY</th><th>MAXIMUM_INTENSITY</th><th>MEAN_INTENSITY</th><th>SUM_INTENSITY</th><th>STANDARD_DEVIATION_INTENSITY</th><th>PIXEL_COUNT</th><th>SUM_INTENSITY_TIMES_X</th><th>SUM_INTENSITY_TIMES_Y</th><th>SUM_INTENSITY_TIMES_Z</th><th>MASS_CENTER_X</th><th>MASS_CENTER_Y</th><th>MASS_CENTER_Z</th><th>SUM_X</th><th>SUM_Y</th><th>SUM_Z</th><th>CENTROID_X</th><th>CENTROID_Y</th><th>CENTROID_Z</th></tr>
+<tr><td>256</td><td>254</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>256</td><td>254</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>NaN</td><td>0</td><td>NaN</td><td>0</td><td>0</td><td>0</td><td>0</td><td>NaN</td><td>NaN</td><td>NaN</td><td>0</td><td>0</td><td>0</td><td>NaN</td><td>NaN</td><td>NaN</td></tr>
 </table>
 
 

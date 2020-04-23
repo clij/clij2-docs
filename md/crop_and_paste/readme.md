@@ -3,6 +3,8 @@
 # Cropping and pasting images
 This macro shows how crop and paste images in the GPU
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/crop_and_paste.ijm)
+
 Author: Robert Haase
         April 2020
 
@@ -16,12 +18,12 @@ run("Invert LUT");
 input = getTitle();
 
 ```
-<a href="image_1587570552671.png"><img src="image_1587570552671.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587652041130.png"><img src="image_1587652041130.png" width="250" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push image to GPU memory
 
 ```java
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU
@@ -42,7 +44,7 @@ Ext.CLIJ2_crop2D(input, cropped, x, y, width, height);
 Ext.CLIJ2_pull(cropped);
 
 ```
-<a href="image_1587570552787.png"><img src="image_1587570552787.png" width="250" alt="CLIJ2_crop2D_result24"/></a>
+<a href="image_1587652041252.png"><img src="image_1587652041252.png" width="250" alt="CLIJ2_crop2D_result136"/></a>
 
 ## Paste the image into another image
 We create an empty image and make a collage
@@ -71,7 +73,7 @@ Ext.CLIJ2_paste2D(flipped, collage, 2, height + 4);
 Ext.CLIJ2_pull(collage);
 
 ```
-<a href="image_1587570552839.png"><img src="image_1587570552839.png" width="250" alt="CLIJ2_create2D_result25"/></a>
+<a href="image_1587652041298.png"><img src="image_1587652041298.png" width="250" alt="CLIJ2_create2D_result137"/></a>
 
 Clean up be the end
 

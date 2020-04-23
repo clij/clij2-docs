@@ -1,13 +1,14 @@
 /* 
 # CLIJ example macro: measure_statistics.ijm
 
+Author: Robert Haase 
+        March 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/measure_statistics.ijm)
 
 This macro shows how to apply an automatic 
 threshold method, connected components labeling 
 and do basic measurments using CLIJ
-
-Author: Robert Haase
-        September 2019
 
 
 Get test data

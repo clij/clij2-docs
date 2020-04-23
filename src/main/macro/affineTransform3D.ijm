@@ -12,16 +12,14 @@ run("Close All");
 
 run("T1 Head (2.4M, 16-bits)");
 //open("C:/structure/data/t1-head.tif");
-
-run("32-bit"); // interplation works better with float images
-rename("original");
+original = getTitle();
 
 // init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU
-Ext.CLIJ2_push("original");
+Ext.CLIJ2_push(original);
 
 // cleanup imagej
 run("Close All");
@@ -32,7 +30,7 @@ transform = transform + " scaleX=2"; // relative zoom factor
 transform = transform + " translateY=25"; // pixels
 transform = transform + " center";
 
-Ext.CLIJ2_affineTransform3D("original", "target", transform);
+Ext.CLIJ2_affineTransform3D(original, target, transform);
 
 // show result
-Ext.CLIJ2_pull("target");
+Ext.CLIJ2_pull(target);

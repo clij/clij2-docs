@@ -22,7 +22,7 @@ labelmap = "labelmap";
 singleLabel = "singleLabel";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
@@ -45,10 +45,10 @@ for (i = 0; i < numberOfObjects; i++) {
 	Ext.CLIJ2_sumOfAllPixels(singleLabel);
 	sum = getResult("Sum", nResults() - 1);
 	
-	Ext.CLIJ2_create2D("white", width, height, 8);
-	Ext.CLIJ2_set("white", 1);
+	Ext.CLIJ2_create2D(white, width, height, 8);
+	Ext.CLIJ2_set(white, 1);
 	
-	Ext.CLIJ2_maskLabel("white", labelmap, singleLabel, i + 1);
+	Ext.CLIJ2_maskLabel(white, labelmap, singleLabel, i + 1);
 	Ext.CLIJ2_countNonZeroPixels(singleLabel);
 	count = getResult("CountNonZero", nResults() - 1);
 	

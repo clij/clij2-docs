@@ -3,6 +3,8 @@
 Author: Robert Haase, Myers lab, MPI CBG, rhaase@mpi-cbg.de
         April 2020
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/drosophila_max_cylinder_projection.ijm)
+
 In this example workflow we estimate nuclei count in a Droshophila melanogaster 
 using spot detection on a cylindrical maximum intensity projection.
 

@@ -1,11 +1,12 @@
 /* 
-# CLIJ example macro: rotate_comparison_IJ_CLIJ.ijm
+# Rotation comparison ImageJ versus CLIJ
+Author: Robert Haase
+July 2019
+
 
 This macro shows how stacks can be rotated in the GPU
 and how different results are between CLIJ and ImageJ.
 
-Author: Robert Haase
-July 2019
 
 ## Get test data
 */

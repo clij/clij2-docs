@@ -1,12 +1,15 @@
 /* 
 # CLIJ2 tutorial: Working with spots, pointlists, matrixes and tables
 
+Author: Robert Haase
+        April 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/spots_pointlists_matrices_tables.ijm)
+
+
 This macro demonstrates working with
 spot images, pointlists, distance matrixes and
 touch matrices on the GPU.
-
-Author: Robert Haase
-        April 2020
 
 */
 // init GPU

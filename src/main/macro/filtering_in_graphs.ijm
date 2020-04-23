@@ -1,11 +1,14 @@
 /* 
 # CLIJ2 Tutorial: Filtering in graphs
+Author: Robert Haase
+         April 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/filtering_in_graphs.ijm)
+
 
 This macro shows how to apply a filter to values 
 in a graph
 
-Author: Robert Haase
-         April 2020
 */
 
 // Initialize GPU

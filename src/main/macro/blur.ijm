@@ -1,6 +1,8 @@
 /* 
 # CLIJ example macro: blur.ijm
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/blur.ijm)
+
 This macro shows how to blur an image in the GPU.
 
 Author: Robert Haase

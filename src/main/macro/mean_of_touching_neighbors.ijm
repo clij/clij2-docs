@@ -1,13 +1,12 @@
 /* 
 # CLIJ example macro: mean_of_touching_neighbors.ijm
-
-This macro shows how to apply an get a
-voronoi image of a binary image in the GPU.
-
 Author: Robert Haase 
         March 2020
 
----
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/mean_of_touching_neighbors.ijm)
+
+This macro shows how to apply an get a
+voronoi image of a binary image in the GPU.
 
 Clean up first and get test data
 */

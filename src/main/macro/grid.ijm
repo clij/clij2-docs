@@ -23,7 +23,7 @@ value = 1;
 image = "image";
 
 // initialize GPU
-run("CLIJ Macro Extensions", "cl_device=[Intel(R) UHD Graphics 620]");
+run("CLIJ2 Macro Extensions", "cl_device=[Intel(R) UHD Graphics 620]");
 
 // create an empty image on the GPU
 Ext.CLIJ2_create2D(image, width, height, 8);

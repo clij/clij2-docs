@@ -9,31 +9,31 @@
 run("Close All");
 
 // Get test data
-//run("Blobs (25K)");
 //open("C:/structure/data/t1-head.tif");
 run("T1 Head (2.4M, 16-bits)");
-rename("original");
-getDimensions(width, height, channels, slices, frames)
+getDimensions(width, height, channels, slices, frames);
+original = getTitle();
 
 newImage("background", "16-bit ramp", width, height, slices);
+background = getTitle();
 
 // init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU
-Ext.CLIJ2_push("original");
-Ext.CLIJ2_push("background");
+Ext.CLIJ2_push(original);
+Ext.CLIJ2_push(background);
 
 
 // cleanup imagej
 run("Close All");
 
 // create output image with 32 bits
-Ext.CLIJ2_create3D("originalWithBackground", width, height, slices, 32);
+Ext.CLIJ2_create3D(originalWithBackground, width, height, slices, 32);
 
 // add images
-Ext.CLIJ2_addImagesWeighted("original", "background", "originalWithBackground", 1, 0.01);
+Ext.CLIJ2_addImagesWeighted(original, background, originalWithBackground, 1, 0.01);
 
 // show result
-Ext.CLIJ2_pull("originalWithBackground");
+Ext.CLIJ2_pull(originalWithBackground);

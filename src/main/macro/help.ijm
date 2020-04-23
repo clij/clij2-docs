@@ -7,5 +7,5 @@
 // ---------------------------------------------
 
 
-run("CLIJ Macro Extensions", "cl_device=");
-Ext.CLIJ2_help("clijx_");
+run("CLIJ2 Macro Extensions", "cl_device=");
+Ext.CLIJ2_help("clij2_");

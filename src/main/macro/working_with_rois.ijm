@@ -1,11 +1,13 @@
 /* 
 # Working with ROIs 
+Author: Robert Haase
+        April 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/working_with_rois.ijm)
 
 This macro shows how to apply an automatic threshold method, use connected 
 components labeling and visualize / measure bounding boxes of objects .
 
-Author: Robert Haase
-        April 2020
 */
 // clean up first
 run("Close All");

@@ -1,11 +1,13 @@
 /*
 # CLIJ Example: applyVectorFieldMD.ijm
+Author: Robert Haase, rhaase@mpi-cbg.de
+March 2019
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/applyVectorFieldMD.ijm)
 
 This script demonstrates how to apply a vector field
 to an image in order to transform it non-rigidly
 
-Author: Robert Haase, rhaase@mpi-cbg.de
-March 2019
 
 Get test data
 */

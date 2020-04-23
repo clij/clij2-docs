@@ -12,7 +12,7 @@ run("T1 Head (2.4M, 16-bits)");
 // push data to GPU
 run("CLIJ2 Macro Extensions", "cl_device=");
 input = getTitle();
-Ext.CLIJ_push(input);
+Ext.CLIJ2_push(input);
 
 // threshold
 Ext.CLIJ2_thresholdHuang(input, thresholded);

@@ -4,6 +4,8 @@
 Author: Robert Haase
         April 2020
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/binary_processing.ijm)
+
 This macro shows how to deal with binary images, e.g. 
 thresholding, dilation, erosion, file holes etc in the GPU.
 
@@ -27,7 +29,7 @@ run("Crop", " ");
 input = getTitle();
 
 ```
-<a href="image_1587575243351.png"><img src="image_1587575243351.png" width="250" alt="embryos.jpg"/></a>
+<a href="image_1587651111934.png"><img src="image_1587651111934.png" width="250" alt="embryos.jpg"/></a>
 
 Initialize GPU and push image to GPU memory
 
@@ -56,7 +58,7 @@ Ext.CLIJ2_thresholdOtsu(inverted, thresholded);
 Ext.CLIJ2_pull(thresholded);
 
 ```
-<a href="image_1587575243809.png"><img src="image_1587575243809.png" width="250" alt="CLIJ2_thresholdOtsu_result89"/></a>
+<a href="image_1587651114252.png"><img src="image_1587651114252.png" width="250" alt="CLIJ2_thresholdOtsu_result116"/></a>
 
 ## Binary opening using erosion and dilation
 We do binary opening by hand: It consists of binary erosion and dilation, applied twice each.
@@ -69,7 +71,7 @@ Ext.CLIJ2_erodeBox(temp, intermediate_result);
 // show intermediate result
 Ext.CLIJ2_pull(intermediate_result);
 ```
-<a href="image_1587575243891.png"><img src="image_1587575243891.png" width="250" alt="CLIJ2_erodeBox_result91"/></a>
+<a href="image_1587651114810.png"><img src="image_1587651114810.png" width="250" alt="CLIJ2_erodeBox_result118"/></a>
 
 
 ```java
@@ -80,7 +82,7 @@ Ext.CLIJ2_dilateBox(temp, opening_result);
 Ext.CLIJ2_pull(opening_result);
 
 ```
-<a href="image_1587575243983.png"><img src="image_1587575243983.png" width="250" alt="CLIJ2_dilateBox_result92"/></a>
+<a href="image_1587651115369.png"><img src="image_1587651115369.png" width="250" alt="CLIJ2_dilateBox_result119"/></a>
 
 ## Binary closing
 For binary closing and opening, on can also call methods directly: 
@@ -93,7 +95,7 @@ Ext.CLIJ2_closingBox(thresholded, closing_result, number_of_iterations);
 Ext.CLIJ2_pull(closing_result);
 
 ```
-<a href="image_1587575244072.png"><img src="image_1587575244072.png" width="250" alt="CLIJ2_closingBox_result93"/></a>
+<a href="image_1587651115444.png"><img src="image_1587651115444.png" width="250" alt="CLIJ2_closingBox_result120"/></a>
 
 ## Fill holes
 It is also possible to fill holes:
@@ -104,7 +106,7 @@ Ext.CLIJ2_binaryFillHoles(thresholded, holes_filled);
 Ext.CLIJ2_pullBinary(holes_filled);
 
 ```
-<a href="image_1587575244211.png"><img src="image_1587575244211.png" width="250" alt="CLIJ2_binaryFillHoles_result94"/></a>
+<a href="image_1587651118709.png"><img src="image_1587651118709.png" width="250" alt="CLIJ2_binaryFillHoles_result121"/></a>
 
 ## Edge detection
 We can retrieve an edge image like this:
@@ -115,7 +117,7 @@ Ext.CLIJ2_binaryEdgeDetection(thresholded, edges);
 Ext.CLIJ2_pullBinary(edges);
 
 ```
-<a href="image_1587575244295.png"><img src="image_1587575244295.png" width="250" alt="CLIJ2_binaryEdgeDetection_result95"/></a>
+<a href="image_1587651119241.png"><img src="image_1587651119241.png" width="250" alt="CLIJ2_binaryEdgeDetection_result122"/></a>
 
 Finally, always clean up:
 

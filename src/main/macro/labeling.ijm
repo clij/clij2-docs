@@ -1,12 +1,15 @@
 /*
 # CLIJ example macro: labeling.ijm
 
+Author: Robert Haase
+June 2019
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/labeling.ijm)
+
 This macro shows how to apply an automatic 
 threshold method and connected components labeling
 to an image on the GPU
 
-Author: Robert Haase
-June 2019
 
 
 */

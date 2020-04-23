@@ -2,6 +2,8 @@
 # Cropping and pasting images
 This macro shows how crop and paste images in the GPU
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/crop_and_paste.ijm)
+
 Author: Robert Haase
         April 2020
 */
@@ -16,7 +18,7 @@ input = getTitle();
 /*
 ## Initialize GPU and push image to GPU memory
 */
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU

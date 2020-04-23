@@ -13,15 +13,15 @@ run("Blobs (25K)");
 input = getTitle();
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 
 // get info from currently selected GPU
-Ext.CLIJx_getGPUProperties();
+Ext.CLIJ2_GPUProperties();
 
 setResult("GPUName", nResults(), "-----------------");
 
 // get info from all GPUs
-Ext.CLIJx_listAvailableGPUs();
+Ext.CLIJ2_listAvailableGPUs();
 
 
 

@@ -3,6 +3,9 @@
 Author: Robert Haase
         April 2020
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/image_statistics.ijm)
+        
+
 This macro shows how to determine basic image statistics
 */
 

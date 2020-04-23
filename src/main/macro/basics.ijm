@@ -1,10 +1,13 @@
 /*
 # CLIJ2 basics
 
-This macro explains basics for image processing on graphics processing units (GPUs) using CLIJ2.
-
 Author: Robert Haase
         April 2020
+        
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/basics.ijm)
+
+This macro explains basics for image processing on graphics processing units (GPUs) using CLIJ2.
+
 
 
 ## How to start

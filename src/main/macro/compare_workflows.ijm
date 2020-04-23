@@ -2,6 +2,8 @@
 # Comparing Workflows: ImageJ versus CLIJ
 Robert Haase, March 2020
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/compare_workflows.ijm)
+
 This page shows how to compare ImageJ based workflow with their 
 translations using CLIJ. 
 
@@ -40,7 +42,7 @@ input_clij = getTitle();
 start_time_clij = getTime();
 
 // Init GPU
-run("CLIJ2 Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=RTX");
 Ext.CLIJ2_clear();
 
 // push data to GPU

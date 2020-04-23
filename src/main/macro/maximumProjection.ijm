@@ -1,11 +1,14 @@
 /* 
 # Maximum Projections
+Author: Robert Haase
+        April 2020
+
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/maximumProjection.ijm)
+
 
 This macro shows how maximum projection 
 can be done in the GPU.
 
-Author: Robert Haase
-        April 2020
 
 ## Start
 Let's clean up first and load some 3D example data.

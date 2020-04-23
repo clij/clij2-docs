@@ -3,6 +3,8 @@
 Author: Robert Haase
         April 2020
 
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/binary_processing.ijm)
+
 This macro shows how to deal with binary images, e.g. 
 thresholding, dilation, erosion, file holes etc in the GPU.
 

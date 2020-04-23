@@ -18,7 +18,7 @@ background = "background";
 newImage(background, "16-bit ramp", width, height, slices);
 
 // init GPU
-run("CLIJ Macro Extensions", "cl_device=[] automatic_output_naming");
+run("CLIJ2 Macro Extensions", "cl_device=[] automatic_output_naming");
 Ext.CLIJ2_clear();
 
 // push images to GPU

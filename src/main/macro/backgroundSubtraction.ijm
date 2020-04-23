@@ -16,7 +16,7 @@ background = "background";
 background_subtracted = "background_subtracted";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU
@@ -29,7 +29,7 @@ close();
 Ext.CLIJ2_gaussianBlur3D(input, background, 10, 10, 1);
 
 // subtraction from original
-Ext.CLIJ2_addImagesWeighted(input, background, background_subtracted, 1, -1);
+Ext.CLIJ2_subtractImages(input, background, background_subtracted);
 
 // Get results back from GPU
 Ext.CLIJ2_pull(input);

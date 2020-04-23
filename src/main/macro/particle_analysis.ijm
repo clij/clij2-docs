@@ -12,10 +12,6 @@
 
 // Get test data
 run("Blobs (25K)");
-run("32-bit");
-
-//open("C:/structure/data/blobs.gif");
-getDimensions(width, height, channels, slices, frames);
 input = getTitle();
 
 mask = "mask";
@@ -23,7 +19,7 @@ labelmap = "labelmap";
 singleLabelMask = "singleLabelMask";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
