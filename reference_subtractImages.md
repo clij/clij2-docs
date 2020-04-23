@@ -7,6 +7,7 @@ Subtracts one image X from another image Y pixel wise.
 
 ### subtractImages often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
 * <a href="reference_medianSliceBySliceSphere">medianSliceBySliceSphere</a> (2)
 * <a href="reference_maximum3DBox">maximum3DBox</a> (2)
 * <a href="reference_dilateBox">dilateBox</a> (2)
@@ -55,6 +56,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm"><img src="images/language_macro.png" height="20"/></a> [backgroundSubtraction.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm"><img src="images/language_macro.png" height="20"/></a> [topHat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 

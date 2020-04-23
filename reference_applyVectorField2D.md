@@ -4,12 +4,11 @@
 Deforms an image according to distances provided in the given vector images. It is recommended to use 32-bit images for input, output and vector images. 
 
 ### applyVectorField2D often follows after
-* <a href="reference_affineTransform2D">affineTransform2D</a> (7)
-* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_affineTransform2D">affineTransform2D</a> (3)
 
 
 ### applyVectorField2D is often followed by
-* <a href="reference_copySlice">copySlice</a> (4)
+* <a href="reference_copySlice">copySlice</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -59,11 +58,8 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/virtual_ablation.ijm"><img src="images/language_macro.png" height="20"/></a> [virtual_ablation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/virtual_ablation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/applyVectorField.ijm"><img src="images/language_macro.png" height="20"/></a> [applyVectorField.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/applyVectorField.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/applyVectorFieldMD.ijm"><img src="images/language_macro.png" height="20"/></a> [applyVectorFieldMD.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/applyVectorFieldMD.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat.ijm"><img src="images/language_macro.png" height="20"/></a> [warpCat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat_RGB.ijm"><img src="images/language_macro.png" height="20"/></a> [warpCat_RGB.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat_RGB.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

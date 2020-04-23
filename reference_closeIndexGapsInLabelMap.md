@@ -5,7 +5,7 @@ Analyses a label map and if there are gaps in the indexing (e.g. label 5 is not 
 subsequent labels will be relabelled. 
 
 Thus, afterwards number of labels and maximum label index are equal.
-
+This operation is mostly performed on the CPU.
 
 ### Usage in ImageJ macro
 ```

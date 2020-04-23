@@ -5,12 +5,10 @@ Transpose X and Y axes of an image.
 
 ### transposeXY often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_crop2D">crop2D</a> (2)
 
 
 ### transposeXY is often followed by
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -56,8 +54,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_mulitply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_mulitply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_mulitply.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

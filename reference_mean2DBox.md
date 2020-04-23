@@ -5,7 +5,7 @@ Computes the local mean average of a pixels rectangular neighborhood. The rectan
 its half-width and half-height (radius).
 
 ### mean2DBox is often followed by
-* <a href="reference_threshold">threshold</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 
 ### Usage in ImageJ macro

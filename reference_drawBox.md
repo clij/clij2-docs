@@ -17,9 +17,7 @@ Ext.CLIJ2_drawBox(ByRef Image destination, Number x, Number y, Number z, Number 
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/virtual_ablation.ijm"><img src="images/language_macro.png" height="20"/></a> [virtual_ablation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/virtual_ablation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
-<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/drawBinaryRectangle.m"><img src="images/language_matlab.png" height="20"/></a> [drawBinaryRectangle.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/drawBinaryRectangle.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

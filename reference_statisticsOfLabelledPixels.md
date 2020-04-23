@@ -6,9 +6,9 @@ Determines bounding box, area (in pixels/voxels), min, max and mean intensity
 
 Instead of a label map, you can also use a binary image as a binary image is a label map with just one label.
 
+This method is executed on the CPU and not on the GPU/OpenCL device.
+
 ### statisticsOfLabelledPixels often follows after
-* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (3)
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_pushArray">pushArray</a> (2)
@@ -30,8 +30,6 @@ Ext.CLIJ2_statisticsOfLabelledPixels(Image input, Image labelmap);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis_area.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis_area.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis_area.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/particle_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [particle_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/particle_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  

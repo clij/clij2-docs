@@ -13,6 +13,12 @@ Ext.CLIJ2_getMeanOfAllPixels(Image source, ByRef Number mean_of_all_pixels);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/image_statistics"><img src="images/language_macro.png" height="20"/></a> [image_statistics](https://clij.github.io/clij2-docs/md/image_statistics)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [image_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  

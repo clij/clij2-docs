@@ -47,8 +47,6 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB.ijm"><img src="images/language_macro.png" height="20"/></a> [showRGB.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB_x.ijm"><img src="images/language_macro.png" height="20"/></a> [showRGB_x.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB_x.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/translate.ijm"><img src="images/language_macro.png" height="20"/></a> [translate.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/translate.ijm)  
 

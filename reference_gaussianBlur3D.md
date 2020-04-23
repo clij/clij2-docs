@@ -8,8 +8,7 @@ Thus, the filterkernel can have non-isotropic shape.
 The implementation is done separable. In case a sigma equals zero, the direction is not blurred.
 
 ### gaussianBlur3D is often followed by
-* <a href="reference_addImagesWeighted">addImagesWeighted</a> (2)
-* <a href="reference_release">release</a> (2)
+* <a href="reference_subtractImages">subtractImages</a> (2)
 * <a href="reference_threshold">threshold</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 
@@ -62,10 +61,7 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm"><img src="images/language_macro.png" height="20"/></a> [backgroundSubtraction.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkingGaussianBlurs_x.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkingGaussianBlurs_x.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkingGaussianBlurs_x.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmark_xt.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmark_xt.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmark_xt.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/blur.ijm"><img src="images/language_macro.png" height="20"/></a> [blur.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/blur.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/blur_batch.ijm"><img src="images/language_macro.png" height="20"/></a> [blur_batch.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/blur_batch.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 

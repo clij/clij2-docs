@@ -23,7 +23,7 @@ transform = "center scale=2 rotate=45 -center";
 
 ### affineTransform2D is often followed by
 * <a href="reference_copySlice">copySlice</a> (3)
-* <a href="reference_applyVectorField2D">applyVectorField2D</a> (7)
+* <a href="reference_applyVectorField2D">applyVectorField2D</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -37,6 +37,7 @@ Ext.CLIJ2_affineTransform2D(Image source, Image destination, String transform);
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/applyVectorFieldMD"><img src="images/language_macro.png" height="20"/></a> [applyVectorFieldMD](https://clij.github.io/clij2-docs/md/applyVectorFieldMD)  
 <a href="https://clij.github.io/clij2-docs/md/rotate_comparison"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison](https://clij.github.io/clij2-docs/md/rotate_comparison)  
+<a href="https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison_IJ_CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ)  
 
 
 
@@ -48,9 +49,6 @@ Ext.CLIJ2_affineTransform2D(Image source, Image destination, String transform);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection.ijm"><img src="images/language_macro.png" height="20"/></a> [motionCorrection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection_compare_stackreg.ijm"><img src="images/language_macro.png" height="20"/></a> [motionCorrection_compare_stackreg.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection_compare_stackreg.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotate_comparison_IJ_CLIJ.ijm"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison_IJ_CLIJ.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotate_comparison_IJ_CLIJ.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat.ijm"><img src="images/language_macro.png" height="20"/></a> [warpCat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat_RGB.ijm"><img src="images/language_macro.png" height="20"/></a> [warpCat_RGB.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/warpCat_RGB.ijm)  
-<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/affineTransform.m"><img src="images/language_matlab.png" height="20"/></a> [affineTransform.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/affineTransform.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -9,13 +9,6 @@ Ext.CLIJx_tenengradFusion(Image input, Image destination, Number number_of_subst
 ```
 
 
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/fusion.ijm"><img src="images/language_macro.png" height="20"/></a> [fusion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/fusion.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/fusion_x.ijm"><img src="images/language_macro.png" height="20"/></a> [fusion_x.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/fusion_x.ijm)  
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

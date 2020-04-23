@@ -42,7 +42,6 @@ clij2.release(source2);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm"><img src="images/language_macro.png" height="20"/></a> [iterative_minimum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/iterative_minimum.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
 
 

@@ -14,7 +14,7 @@ When executing this script, execute it twice!
 You may observe that the second execution is faster because of the 
 [warm-up effect](https://stackoverflow.com/questions/36198278/why-does-the-jvm-require-warmup).
 
-```java
+<pre class="highlight">
 // Cleanup first
 
 run ("Close All");
@@ -24,12 +24,12 @@ run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
 
-```
+</pre>
 <a href="image_1587649367585.png"><img src="image_1587649367585.png" width="250" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push image to GPU memory
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
@@ -39,34 +39,34 @@ Ext.CLIJ2_push(input);
 // CleanUp ImageJ
 close();
 
-```
+</pre>
 
 ## Start time tracing
 Before we run the actual workflow or filter, we start time tracing.
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_startTimeTracing();
 
 radius = 10;
 
-Ext.CLIJ2_topHatBox(input, background_subtacted, radius, radius, 0);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_topHatBox">CLIJ2_topHatBox</a>(input, background_subtacted, radius, radius, 0);
 
 // show result
 Ext.CLIJ2_pull(background_subtacted);
 
-```
+</pre>
 <a href="image_1587649367718.png"><img src="image_1587649367718.png" width="250" alt="CLIJ2_topHatBox_result8"/></a>
 
 ## Stop and inspect time tracing
 After finishing the workflow, we can take a look at which operations called which other operations
 and how long they took:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_stopTimeTracing();
 Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
 
-```
+</pre>
 <pre>
 > > timeTracing
 >  > TopHatBox
@@ -83,13 +83,13 @@ print(time_traces);
 
 For documentation purposes, we should also report which GPU was used
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
-```
+</pre>
 <pre>
 > GPU: Intel(R) UHD Graphics 620
 > Memory in GB: 6.3017
@@ -98,11 +98,10 @@ print("OpenCL version: " + opencl_version);
 
 Cleanup by the end
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+

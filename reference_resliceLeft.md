@@ -4,7 +4,12 @@
 Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method 
  but offers less flexibility such as interpolation.
 
+### resliceLeft often follows after
+* <a href="reference_resliceRadial">resliceRadial</a> (2)
+
+
 ### resliceLeft is often followed by
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_rotateRight">rotateRight</a> (2)
 
 
@@ -44,7 +49,14 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
+
+
+
+
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/reslicing.ijm"><img src="images/language_macro.png" height="20"/></a> [reslicing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/reslicing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/turn_stack.ijm"><img src="images/language_macro.png" height="20"/></a> [turn_stack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/turn_stack.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  

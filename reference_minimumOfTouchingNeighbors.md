@@ -3,7 +3,7 @@
 
 Takes a touch matrix and a vector of values to determine the minimum value among touching neighbors for every object. 
 
-TODO: This only works for values between 0 and 255 for now.
+
 
 ### minimumOfTouchingNeighbors is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)

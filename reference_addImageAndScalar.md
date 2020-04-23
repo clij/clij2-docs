@@ -5,12 +5,7 @@ Adds a scalar value s to all pixels x of a given image X.
 
 <pre>f(x, s) = x + s</pre>
 
-### addImageAndScalar often follows after
-* <a href="reference_invert">invert</a> (2)
-
-
 ### addImageAndScalar is often followed by
-* <a href="reference_invert">invert</a> (2)
 * <a href="reference_absolute">absolute</a> (2)
 
 
@@ -53,7 +48,6 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/absolute.ijm"><img src="images/language_macro.png" height="20"/></a> [absolute.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/absolute.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rgb_invert_black_white.ijm"><img src="images/language_macro.png" height="20"/></a> [rgb_invert_black_white.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rgb_invert_black_white.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

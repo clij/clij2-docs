@@ -3,8 +3,13 @@
 
 Resamples an image with given size factors using an affine transform.
 
+### resample often follows after
+* <a href="reference_maximumImageAndScalar">maximumImageAndScalar</a> (2)
+
+
 ### resample is often followed by
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+* <a href="reference_resliceTop">resliceTop</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -47,7 +52,14 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
+
+
+
+
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
 
 

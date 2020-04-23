@@ -13,7 +13,7 @@ components labeling
 
 
 
-```java
+<pre class="highlight">
 // clean up first
 run("Close All");
 run("Clear Results");
@@ -23,64 +23,64 @@ if (roiManager("count") > 0) {
 }
 
 
-```
+</pre>
 
 
 Get test data
 
-```java
+<pre class="highlight">
 run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
 
 
-```
+</pre>
 <a href="image_1587653255960.png"><img src="image_1587653255960.png" width="250" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push push image data to GPU memory
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-```
+</pre>
 
 ## Image segmentation + labelling
 We now apply a threshold method and connected components analysis to separate objects.
 
-```java
-Ext.CLIJ2_thresholdOtsu(input, mask);
-Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input, mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox">CLIJ2_connectedComponentsLabelingBox</a>(mask, labelmap);
 
-```
+</pre>
 
 ## Visualize the labelled objects
 
-```java
+<pre class="highlight">
 // show the image
 Ext.CLIJ2_pull(input);
 // show the labels as ROIs on top of the image
-Ext.CLIJ2_pullLabelsToROIManager(labelmap);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullLabelsToROIManager">CLIJ2_pullLabelsToROIManager</a>(labelmap);
 roiManager("show all");
 show();
-```
+</pre>
 <a href="image_1587653256521.png"><img src="image_1587653256521.png" width="250" alt="blobs-1.gif"/></a>
 
 ## We now go through the labelled objects in the label map and measure their bounding box area:
 
-```java
+<pre class="highlight">
 
 // how many objects are in the labelmap?
-Ext.CLIJ2_getMaximumOfAllPixels(labelmap, number_of_objects);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getMaximumOfAllPixels">CLIJ2_getMaximumOfAllPixels</a>(labelmap, number_of_objects);
 
 for (i = 0; i < number_of_objects; i++) {
 	// cut label map into individual masks
-	Ext.CLIJ2_labelToMask(labelmap, binaryImage, i + 1); // 0 is background, 1 is the first label
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_labelToMask">CLIJ2_labelToMask</a>(labelmap, binaryImage, i + 1); // 0 is background, 1 is the first label
 	// put bounding boxes in the ROI manager
-	Ext.CLIJ2_getBoundingBox(binaryImage, x, y, z, w, h, d);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_getBoundingBox">CLIJ2_getBoundingBox</a>(binaryImage, x, y, z, w, h, d);
 
 	// draw the bounding box
 	makeRectangle(x, y, w, h);
@@ -97,7 +97,7 @@ for (i = 0; i < number_of_objects; i++) {
 	setResult("Bounding_Box_Area", i, w * h);
 }
 
-```
+</pre>
 <table>
 <tr><th>ROI_number</th><th>Bounding_Box_Area</th></tr>
 <tr><td>1</td><td>754</td></tr>
@@ -169,7 +169,7 @@ for (i = 0; i < number_of_objects; i++) {
 
 ## Bounding box visualisation
 
-```java
+<pre class="highlight">
 
 // show the image
 Ext.CLIJ2_pull(input);
@@ -178,26 +178,25 @@ Ext.CLIJ2_pull(input);
 roiManager("show all");
 show();
 
-```
+</pre>
 <a href="image_1587653257021.png"><img src="image_1587653257021.png" width="250" alt="blobs-2.gif"/></a>
 
 Clean up by the end
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 This is just a convenience method for showing images properly in the notebook 
 
-```java
+<pre class="highlight">
 
 function show() {
 	run("Flatten");
 }
-```
+</pre>
 
 
 
-```
-```
+

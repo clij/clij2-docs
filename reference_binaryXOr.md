@@ -8,7 +8,7 @@ All pixel values except 0 in the input images are interpreted as 1.
 <pre>f(x, y) = (x & !y) | (!x & y)</pre>
 
 ### binaryXOr often follows after
-* <a href="reference_threshold">threshold</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 * <a href="reference_erodeBox">erodeBox</a> (2)
 
 

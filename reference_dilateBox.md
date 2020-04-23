@@ -9,7 +9,7 @@ This method is comparable to the 'Dilate' menu in ImageJ in case it is applied t
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
 ### dilateBox often follows after
-* <a href="reference_erodeBox">erodeBox</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (3)
 * <a href="reference_dilateBox">dilateBox</a> (2)
 
 
@@ -54,8 +54,14 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+
+
+
+
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm"><img src="images/language_macro.png" height="20"/></a> [binaryProcessing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binaryProcessing.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveSphereProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py)  

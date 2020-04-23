@@ -3,7 +3,7 @@
 
 Takes a touch matrix and a vector of values to determine the maximum value among touching neighbors for every object. 
 
-TODO: This only works for values between 0 and 255 for now.
+
 
 ### maximumOfTouchingNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)

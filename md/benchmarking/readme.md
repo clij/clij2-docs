@@ -13,11 +13,11 @@ and CLIJ2 on the GPU.
 Let's get some test data first. 
 We use an electron microscopy dataset from ["Segmented anisotropic ssTEM dataset of neural tissue." Stephan Gerhard, Jan Funke, Julien Martel, Albert Cardona, Richard Fetter. figshare. Retrieved 16:09, Nov 20, 2013 (GMT)](http://dx.doi.org/10.6084/m9.figshare.856713)
 
-```java
+<pre class="highlight">
 run("Image Sequence...", "open=C:/structure/data/unidesigner_groundtruth-drosophila-vnc/stack1/raw/00.tif sort");
 input = getTitle();
 
-```
+</pre>
 <a href="image_1587649616046.png"><img src="image_1587649616046.png" width="250" alt="raw"/></a>
 
 ## Measure processing time on the CPU
@@ -30,7 +30,7 @@ subsequently. Especially the first exection could be slower because of the
 We measure the processing time by saving the current time in the variable `time` before 
 processing and printing `(getTime() - time)` after processing:
 
-```java
+<pre class="highlight">
 
 // Local mean filter in CPU
 for (i = 1; i <= 10; i++) {
@@ -38,7 +38,7 @@ for (i = 1; i <= 10; i++) {
 	run("Mean 3D...", "x=3 y=3 z=3");
 	print("CPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
-```
+</pre>
 <pre>
 > CPU mean filter no 1 took 6456 msec
 > CPU mean filter no 2 took 7233 msec
@@ -60,16 +60,16 @@ we also measure the time `push()` and `pull()` commands take.
 
 Let's start with initializin the GPU.
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 ##
 # Push images to GPU
 
-```java
+<pre class="highlight">
 time = getTime();
 Ext.CLIJ2_push(input);
 print("Pushing one image to the GPU took " + (getTime() - time) + " msec");
@@ -77,21 +77,21 @@ print("Pushing one image to the GPU took " + (getTime() - time) + " msec");
 // cleanup ImageJ
 run("Close All");
 
-```
+</pre>
 <pre>
 > Pushing one image to the GPU took 63 msec
 </pre>
 
 ### Process images on the GPU using CLIJ2
 
-```java
+<pre class="highlight">
 // Local mean filter in GPU
 for (i = 1; i <= 10; i++) {
 	time = getTime();
-	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_mean3DBox">CLIJ2_mean3DBox</a>(input, blurred, 3, 3, 3);
 	print("CLIJ2 GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
-```
+</pre>
 <pre>
 > CLIJ2 GPU mean filter no 1 took 2137 msec
 > CLIJ2 GPU mean filter no 2 took 65 msec
@@ -107,14 +107,14 @@ for (i = 1; i <= 10; i++) {
 
 ### Compare CLIJ2 with its predecessor, [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
 
-```java
+<pre class="highlight">
 // Local mean filter in GPU
 for (i = 1; i <= 10; i++) {
 	time = getTime();
 	Ext.CLIJ_mean3DBox(input, blurred, 3, 3, 3);
 	print("CLIJ GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
-```
+</pre>
 <pre>
 > CLIJ GPU mean filter no 1 took 2937 msec
 > CLIJ GPU mean filter no 2 took 68 msec
@@ -130,14 +130,14 @@ for (i = 1; i <= 10; i++) {
 
 ### Pull result image from the GPU
 
-```java
+<pre class="highlight">
 
 time = getTime();
 Ext.CLIJ2_pull(blurred);
 
 print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
 
-```
+</pre>
 <pre>
 > Pulling one image from the GPU took 127 msec
 </pre>
@@ -145,13 +145,13 @@ print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
 
 For documentation purposes, we should also report which GPU was used
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
-```
+</pre>
 <pre>
 > GPU: Intel(R) UHD Graphics 620
 > Memory in GB: 6.3017
@@ -161,11 +161,10 @@ print("OpenCL version: " + opencl_version);
 Cleanup GPU 
 by the end.
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+

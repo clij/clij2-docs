@@ -14,7 +14,7 @@ and do basic measurments using CLIJ
 
 Get test data
 
-```java
+<pre class="highlight">
 run("Blobs (25K)");
 
 //open("C:/structure/data/blobs.gif");
@@ -22,13 +22,13 @@ getDimensions(width, height, channels, slices, frames);
 input = getTitle();
 
 
-```
+</pre>
 <a href="image_1587652902570.png"><img src="image_1587652902570.png" width="250" alt="blobs.gif"/></a>
 
 ## Init GPU and push image data to the GPU
  
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
@@ -38,32 +38,32 @@ Ext.CLIJ2_push(input);
 // cleanup ImageJ
 run("Close All");
 
-```
+</pre>
 
 ## Segment the image and create a label mask
 
-```java
-Ext.CLIJ2_thresholdOtsu(input, mask);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input, mask);
 
 // connected components analysis
-Ext.CLIJ2_connectedComponentsLabeling(mask, labelmap);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabeling">CLIJ2_connectedComponentsLabeling</a>(mask, labelmap);
 
 // show labelling
 Ext.CLIJx_pull(labelmap);
 run("glasbey on dark");
 
 
-```
+</pre>
 <a href="image_1587652902814.png"><img src="image_1587652902814.png" width="250" alt="CLIJ2_connectedComponentsLabeling_result247"/></a>
 
 ## Basic measurements
  
 
-```java
-Ext.CLIJ2_statisticsOfLabelledPixels(input, labelmap);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels">CLIJ2_statisticsOfLabelledPixels</a>(input, labelmap);
 
 
-```
+</pre>
 <table>
 <tr><th>IDENTIFIER</th><th>BOUNDING_BOX_X</th><th>BOUNDING_BOX_Y</th><th>BOUNDING_BOX_Z</th><th>BOUNDING_BOX_END_X</th><th>BOUNDING_BOX_END_Y</th><th>BOUNDING_BOX_END_Z</th><th>BOUNDING_BOX_WIDTH</th><th>BOUNDING_BOX_HEIGHT</th><th>BOUNDING_BOX_DEPTH</th><th>MINIMUM_INTENSITY</th><th>MAXIMUM_INTENSITY</th><th>MEAN_INTENSITY</th><th>SUM_INTENSITY</th><th>STANDARD_DEVIATION_INTENSITY</th><th>PIXEL_COUNT</th><th>SUM_INTENSITY_TIMES_X</th><th>SUM_INTENSITY_TIMES_Y</th><th>SUM_INTENSITY_TIMES_Z</th><th>MASS_CENTER_X</th><th>MASS_CENTER_Y</th><th>MASS_CENTER_Z</th><th>SUM_X</th><th>SUM_Y</th><th>SUM_Z</th><th>CENTROID_X</th><th>CENTROID_Y</th><th>CENTROID_Z</th></tr>
 <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>NaN</td><td>0</td><td>NaN</td><td>0</td><td>0</td><td>0</td><td>0</td><td>NaN</td><td>NaN</td><td>NaN</td><td>0</td><td>0</td><td>0</td><td>NaN</td><td>NaN</td><td>NaN</td></tr>
@@ -200,11 +200,10 @@ Ext.CLIJ2_statisticsOfLabelledPixels(input, labelmap);
 
 Clean up by the end 
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+

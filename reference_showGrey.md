@@ -34,15 +34,6 @@ clijx.release(input);
 ```
 
 
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_analysis.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_stripe_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB.ijm"><img src="images/language_macro.png" height="20"/></a> [showRGB.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB_x.ijm"><img src="images/language_macro.png" height="20"/></a> [showRGB_x.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/showRGB_x.ijm)  
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

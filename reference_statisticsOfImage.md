@@ -1,13 +1,14 @@
-## getMinimumOfAllPixels
+## statisticsOfImage
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Determines the minimum of all pixels in a given image. 
+Determines image size (bounding box), area (in pixels/voxels), min, max and mean intensity 
+ of all pixels in the original image.
 
-It will be stored in the variable minimum_of_all_pixels.
+This method is executed on the CPU and not on the GPU/OpenCL device.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getMinimumOfAllPixels(Image source, ByRef Number minimum_of_all_pixels);
+Ext.CLIJ2_statisticsOfImage(Image input);
 ```
 
 

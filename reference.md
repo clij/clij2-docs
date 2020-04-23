@@ -427,6 +427,9 @@ Transforms a binary image with single pixles set to 1 to a labelled spots image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelToMask">labelToMask</a>  
 Masks a single label in a label map. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelVoronoiOctagon">labelVoronoiOctagon</a>  
+Takes a labelled image and dilates the labels using a octagon shape until they touch. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelledSpotsToPointList">labelledSpotsToPointList</a>  
 Generates a coordinate list of points in a labelled spot image. 
 
@@ -560,7 +563,7 @@ Computes the local median of a pixels cuboid neighborhood. The cuboid size is sp
 Computes the local median of a pixels spherical neighborhood. The spheres size is specified by  its half-width, half-height and half-depth (radius).
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a>  
-Takes a touch matrix and a vector of values to determine the mean value among touching neighbors for every object. 
+Takes a touch matrix and a vector of values to determine the median value among touching neighbors for every object. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjection">medianZProjection</a>  
 Determines the median projection of an image stack along Z.
@@ -629,6 +632,9 @@ Multiplies all pairs of pixel values x and y from an image stack X and a 2D imag
 <a name="N"></a>
 
 ## N
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nClosestDistances">nClosestDistances</a>  
+Determine the n point indices with shortest distance for all points in a distance matrix. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nClosestPoints">nClosestPoints</a>  
 Determine the n point indices with shortest distance for all points in a distance matrix. 
 
@@ -713,8 +719,14 @@ Pulls all labels in a label map as ROIs to a list.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullLabelsToROIManager">pullLabelsToROIManager</a>  
 Pulls all labels in a label map as ROIs to the ROI manager.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullString">pullString</a>  
+Writes an image into a string.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullTile">pullTile (Experimental)</a>  
 Pushes a tile in an image specified by its name, position and size from GPU memory.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullToResultsTable">pullToResultsTable</a>  
+Converts an image into a table.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushArray">pushArray</a>  
 Converts an array to an image.
@@ -895,6 +907,9 @@ Starts acquistion of images from a webcam.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_statisticsOfBackgroundAndLabelledPixels">statisticsOfBackgroundAndLabelledPixels</a>  
 Determines bounding box, area (in pixels/voxels), min, max and mean intensity   of background and labelled objects in a label map and corresponding pixels in the original image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_statisticsOfImage">statisticsOfImage</a>  
+Determines image size (bounding box), area (in pixels/voxels), min, max and mean intensity   of all pixels in the original image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a>  
 Determines bounding box, area (in pixels/voxels), min, max and mean intensity   of labelled objects in a label map and corresponding pixels in the original image. 

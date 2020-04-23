@@ -1,11 +1,11 @@
-## pullString
+## pullToResultsTable
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Writes an image into a string.
+Converts an image into a table.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pullString(Image input, ByRef String output);
+Ext.CLIJ2_pullToResultsTable(Image source);
 ```
 
 

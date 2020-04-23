@@ -6,6 +6,7 @@ destination image. All other pixels are set to 0.
 
 ### binaryEdgeDetection often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -44,9 +45,15 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+
+
+
+
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm"><img src="images/language_macro.png" height="20"/></a> [outline.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm)  
-<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/outline.m"><img src="images/language_matlab.png" height="20"/></a> [outline.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/outline.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

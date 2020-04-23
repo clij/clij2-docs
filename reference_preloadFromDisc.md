@@ -38,12 +38,6 @@ clijx.release(destination);
 ```
 
 
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/preloading.ijm"><img src="images/language_macro.png" height="20"/></a> [preloading.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/preloading.ijm)  
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

@@ -39,8 +39,15 @@ clij2.release(destination);
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkFillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/fillHoles.ijm"><img src="images/language_macro.png" height="20"/></a> [fillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/fillHoles.ijm)  
 
 

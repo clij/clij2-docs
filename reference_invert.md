@@ -8,14 +8,6 @@ Computes the negative value of all pixels in a given image. It is recommended to
 
 For binary images, use binaryNot.
 
-### invert often follows after
-* <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)
-
-
-### invert is often followed by
-* <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_invert(Image source, Image destination);
@@ -48,13 +40,6 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
-
-
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/virtual_ablation.ijm"><img src="images/language_macro.png" height="20"/></a> [virtual_ablation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/virtual_ablation.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rgb_invert_black_white.ijm"><img src="images/language_macro.png" height="20"/></a> [rgb_invert_black_white.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rgb_invert_black_white.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

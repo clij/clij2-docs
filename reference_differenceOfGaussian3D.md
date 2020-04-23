@@ -5,6 +5,14 @@ Applies Gaussian blur to the input image twice with different sigma values resul
 
 It is recommended to apply this operation to images of type Float (32 bit) as results might be negative.
 
+### differenceOfGaussian3D often follows after
+* <a href="reference_convertFloat">convertFloat</a> (2)
+
+
+### differenceOfGaussian3D is often followed by
+* <a href="reference_maximumImageAndScalar">maximumImageAndScalar</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number sigma1x, Number sigma1y, Number sigma1z, Number sigma2x, Number sigma2y, Number sigma2z);
@@ -43,6 +51,18 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

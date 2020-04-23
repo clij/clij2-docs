@@ -3,6 +3,14 @@
 
 Flips an image in X and/or Y direction depending on boolean flags.
 
+### flip2D often follows after
+* <a href="reference_crop2D">crop2D</a> (2)
+
+
+### flip2D is often followed by
+* <a href="reference_paste2D">paste2D</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_flip2D(Image source, Image destination, Boolean flipX, Boolean flipY);
@@ -37,6 +45,18 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/crop_and_paste"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste](https://clij.github.io/clij2-docs/md/crop_and_paste)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

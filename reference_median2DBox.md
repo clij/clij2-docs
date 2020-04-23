@@ -6,10 +6,6 @@ its half-width and half-height (radius).
 
 For technical reasons, the area of the rectangle must have less than 1000 pixels.
 
-### median2DBox is often followed by
-* <a href="reference_thresholdHuang">thresholdHuang</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_median2DBox(Image source, Image destination, Number radiusX, Number radiusY);
@@ -44,12 +40,6 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
-
-
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [interactive_webcam_acquisition_stripe_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/interactive_webcam_acquisition_stripe_analysis.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
