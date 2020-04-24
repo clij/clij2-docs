@@ -5,6 +5,10 @@ This page is under construction. Links may change
 * CLIJ2
   * Introduction
   * [Reference](https://clij.github.io/clij2-docs/reference)
+  * Examples
+   * [ImageJ macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro)
+ 
+* CLIJ - CLIJ2 
   * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
   * [CLIJ - CLIJ2 transition guide](clij2_transition_notes)
 
