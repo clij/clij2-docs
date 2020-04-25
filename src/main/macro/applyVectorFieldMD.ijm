@@ -1,5 +1,5 @@
 /*
-# CLIJ Example: applyVectorFieldMD.ijm
+# Warp images
 Author: Robert Haase, rhaase@mpi-cbg.de
 March 2019
 

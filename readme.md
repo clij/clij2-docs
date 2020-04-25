@@ -20,6 +20,7 @@ This page is under construction. Links may change
     * [Gaussian blur](https://clij.github.io/clij2-docs/md/blur/)
     * [Maximum projections](https://clij.github.io/clij2-docs/md/maxiumProjection/)
     * [Warp images](https://clij.github.io/clij2-docs/md/applyVectorFieldMD/)
+    * [Drosophila embryo cell counting](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection/)
 
   * Segmentation and labelling
     * [Labeling](https://clij.github.io/clij2-docs/md/labeling/)
@@ -28,9 +29,11 @@ This page is under construction. Links may change
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
 
   * Working with matrices and graphs
-    * [Filtering in graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs/)
+    * [Mulitiply vectors and matrices](https://clij.github.io/clij2-docs/md/multiply_vectors_matrices)
     * [Matrix multiplication](https://clij.github.io/clij2-docs/md/matrix_multiply/)
     * [Spots, pointlists, matrices and tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables/)
+    * [Filtering in graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs/)
+    * [Tribolium embryo morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
     
   * Statistics and measurements
     * [Images statistics](https://clij.github.io/clij2-docs/md/image_statistics/)
@@ -43,8 +46,5 @@ This page is under construction. Links may change
     * [Comparing and benchmarking workflows](https://clij.github.io/clij2-docs/md/compare_workflows/)
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison/)
     
-  * NEUBIAS Academy 2020
-    * [Tribolium embryo morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
-    * [Drosophila embryo cell counting](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection/)
 
 
