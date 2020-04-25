@@ -1,7 +1,6 @@
 
 
-# CLIJ example macro: labeling.ijm
-
+# Labelling
 Author: Robert Haase
 June 2019
 
@@ -18,10 +17,8 @@ to an image on the GPU
 //Get test data
 run("Blobs (25K)");
 input = getTitle();
-
-
 </pre>
-<a href="image_1587652528521.png"><img src="image_1587652528521.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587800124387.png"><img src="image_1587800124387.png" width="250" alt="blobs.gif"/></a>
 
 ## Init GPU
  and push image data to the GPU memory
@@ -35,7 +32,6 @@ Ext.CLIJ2_push(input);
 
 // cleanup ImageJ
 run("Close All");
-
 </pre>
 
 ## Create a mask using a fixed threshold
@@ -43,9 +39,8 @@ run("Close All");
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(input, mask, "Otsu");
 Ext.CLIJ2_pull(mask);
-
 </pre>
-<a href="image_1587652528671.png"><img src="image_1587652528671.png" width="250" alt="CLIJ2_automaticThreshold_result204"/></a>
+<a href="image_1587800125971.png"><img src="image_1587800125971.png" width="250" alt="CLIJ2_automaticThreshold_result66"/></a>
 
 ## Label connected components
 
@@ -55,9 +50,18 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabe
 Ext.CLIJ2_pull(labelmap);
 run("glasbey on dark");
 
+</pre>
+<a href="image_1587800128826.png"><img src="image_1587800128826.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result67"/></a>
+
+## Remove labels touching image borders
+
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_excludeLabelsOnEdges">CLIJ2_excludeLabelsOnEdges</a>(labelmap, labels_not_touching_image_borders);
+Ext.CLIJ2_pull(labels_not_touching_image_borders);
+run("glasbey on dark");
 
 </pre>
-<a href="image_1587652528795.png"><img src="image_1587652528795.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result205"/></a>
+<a href="image_1587800129401.png"><img src="image_1587800129401.png" width="250" alt="CLIJ2_excludeLabelsOnEdges_result68"/></a>
 
 Clean up by the end.
 
