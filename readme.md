@@ -14,11 +14,11 @@ This page is under construction. Links may change
 
 * Tutorials
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
-  * [Combining CLIJ and CLIJ1](https://clij.github.io/clij2-docs/md/clij1_clij2_combination/)
+  * [Combining CLIJ and CLIJ2](https://clij.github.io/clij2-docs/md/clij1_clij2_combination/)
   * Filtering and processing images
     * [Crop and paste images](https://clij.github.io/clij2-docs/md/crop_and_paste/)
     * [Gaussian blur](https://clij.github.io/clij2-docs/md/blur/)
-    * [Maximum projections](https://clij.github.io/clij2-docs/md/maxiumProjection/)
+    * [Maximum projections](https://clij.github.io/clij2-docs/md/maximumProjection/)
     * [Warp images](https://clij.github.io/clij2-docs/md/applyVectorFieldMD/)
     * [Drosophila embryo cell counting](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection/)
 
