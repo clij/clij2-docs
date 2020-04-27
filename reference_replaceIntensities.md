@@ -33,7 +33,10 @@ Ext.CLIJ2_replaceIntensities(Image input, Image new_values_vector, ByRef Image d
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.replaceIntensities(input, new_values_vector, destination);
 </summary>
@@ -64,11 +67,17 @@ clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.replaceIntensities(input, new_values_vector, destination);
 </summary>
@@ -96,11 +105,17 @@ clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.replaceIntensities(input, new_values_vector, destination);
 </summary>
@@ -131,7 +146,10 @@ clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

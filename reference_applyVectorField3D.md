@@ -10,7 +10,10 @@ Ext.CLIJ2_applyVectorField3D(Image source, Image vectorX, Image vectorY, Image v
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.applyVectorField3D(source, vectorX, vectorY, vectorZ, destination);
 </summary>
@@ -45,11 +48,17 @@ clij2.release(vectorY);
 clij2.release(vectorZ);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.applyVectorField3D(source, vectorX, vectorY, vectorZ, destination);
 </summary>
@@ -81,11 +90,17 @@ clij2.release(vectorY);
 clij2.release(vectorZ);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.applyVectorField3D(source, vectorX, vectorY, vectorZ, destination);
 </summary>
@@ -120,7 +135,10 @@ clij2.release(vectorY);
 clij2.release(vectorZ);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

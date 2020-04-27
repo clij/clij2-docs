@@ -26,7 +26,10 @@ Ext.CLIJ2_mask(Image source, Image mask, Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.mask(source, mask, destination);
 </summary>
@@ -57,11 +60,17 @@ clij2.release(source);
 clij2.release(mask);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.mask(source, mask, destination);
 </summary>
@@ -89,11 +98,17 @@ clij2.release(source);
 clij2.release(mask);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.mask(source, mask, destination);
 </summary>
@@ -124,7 +139,10 @@ clij2.release(source);
 clij2.release(mask);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

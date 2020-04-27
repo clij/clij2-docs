@@ -10,7 +10,10 @@ Ext.CLIJ2_multiplyImageAndCoordinate(Image source, ByRef Image destination, Numb
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
 </summary>
@@ -40,11 +43,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
 </summary>
@@ -71,11 +80,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
 </summary>
@@ -105,7 +120,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

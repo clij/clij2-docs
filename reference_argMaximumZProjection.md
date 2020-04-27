@@ -11,7 +11,10 @@ Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image desti
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
 </summary>
@@ -44,11 +47,17 @@ clij2.release(source);
 clij2.release(destination_max);
 clij2.release(destination_arg_max);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
 </summary>
@@ -77,11 +86,17 @@ clij2.release(source);
 clij2.release(destination_max);
 clij2.release(destination_arg_max);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
 </summary>
@@ -113,7 +128,10 @@ clij2.release(source);
 clij2.release(destination_max);
 clij2.release(destination_arg_max);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

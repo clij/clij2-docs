@@ -12,7 +12,10 @@ Ext.CLIJ2_divideImages(Image divident, Image divisor, Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.divideImages(divident, divisor, destination);
 </summary>
@@ -43,11 +46,17 @@ clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.divideImages(divident, divisor, destination);
 </summary>
@@ -75,11 +84,17 @@ clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.divideImages(divident, divisor, destination);
 </summary>
@@ -110,7 +125,10 @@ clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

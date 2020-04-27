@@ -10,7 +10,10 @@ Ext.CLIJ2_paste3D(Image source, ByRef Image destination, Number destinationX, Nu
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.paste3D(source, destination, destinationX, destinationY, destinationZ);
 </summary>
@@ -42,11 +45,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.paste3D(source, destination, destinationX, destinationY, destinationZ);
 </summary>
@@ -75,11 +84,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.paste3D(source, destination, destinationX, destinationY, destinationZ);
 </summary>
@@ -111,7 +126,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

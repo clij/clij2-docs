@@ -21,7 +21,10 @@ Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, ByRef Image mes
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 </summary>
@@ -52,11 +55,17 @@ clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 </summary>
@@ -84,11 +93,17 @@ clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 </summary>
@@ -119,7 +134,10 @@ clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
 ```
+
+
 </details>
+
 
 
 

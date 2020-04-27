@@ -16,7 +16,10 @@ Ext.CLIJ2_addImageAndScalar(Image source, Image destination, Number scalar);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.addImageAndScalar(source, destination, scalar);
 </summary>
@@ -46,11 +49,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.addImageAndScalar(source, destination, scalar);
 </summary>
@@ -77,11 +86,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.addImageAndScalar(source, destination, scalar);
 </summary>
@@ -111,7 +126,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

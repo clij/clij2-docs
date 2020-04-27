@@ -10,7 +10,10 @@ Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, ByRef Image destination)
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.concatenateStacks(stack1, stack2, destination);
 </summary>
@@ -41,11 +44,17 @@ clij2.release(stack1);
 clij2.release(stack2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.concatenateStacks(stack1, stack2, destination);
 </summary>
@@ -73,11 +82,17 @@ clij2.release(stack1);
 clij2.release(stack2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.concatenateStacks(stack1, stack2, destination);
 </summary>
@@ -108,7 +123,10 @@ clij2.release(stack1);
 clij2.release(stack2);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

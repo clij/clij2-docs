@@ -10,7 +10,10 @@ Ext.CLIJ2_detectLabelEdges(Image label_map, ByRef Image edge_image_destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.detectLabelEdges(label_map, edge_image_destination);
 </summary>
@@ -39,11 +42,17 @@ edge_image_destinationImagePlus.show();
 clij2.release(label_map);
 clij2.release(edge_image_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.detectLabelEdges(label_map, edge_image_destination);
 </summary>
@@ -69,11 +78,17 @@ edge_image_destination = clij2.pullMat(edge_image_destination)
 clij2.release(label_map);
 clij2.release(edge_image_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.detectLabelEdges(label_map, edge_image_destination);
 </summary>
@@ -102,7 +117,10 @@ Icy.addSequence(edge_image_destination_sequence
 clij2.release(label_map);
 clij2.release(edge_image_destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

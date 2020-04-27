@@ -22,7 +22,10 @@ Ext.CLIJ2_spotsToPointList(Image input_spots, ByRef Image destination_pointlist)
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.spotsToPointList(input_spots, destination_pointlist);
 </summary>
@@ -51,11 +54,17 @@ destination_pointlistImagePlus.show();
 clij2.release(input_spots);
 clij2.release(destination_pointlist);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.spotsToPointList(input_spots, destination_pointlist);
 </summary>
@@ -81,11 +90,17 @@ destination_pointlist = clij2.pullMat(destination_pointlist)
 clij2.release(input_spots);
 clij2.release(destination_pointlist);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.spotsToPointList(input_spots, destination_pointlist);
 </summary>
@@ -114,7 +129,10 @@ Icy.addSequence(destination_pointlist_sequence
 clij2.release(input_spots);
 clij2.release(destination_pointlist);
 ```
+
+
 </details>
+
 
 
 

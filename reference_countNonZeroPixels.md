@@ -13,7 +13,10 @@ Ext.CLIJ2_countNonZeroPixels(Image source);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.countNonZeroPixels(source);
 </summary>
@@ -39,11 +42,17 @@ System.out.println(resultCountNonZeroPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.countNonZeroPixels(source);
 </summary>
@@ -67,11 +76,17 @@ System.out.println(resultCountNonZeroPixels);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.countNonZeroPixels(source);
 </summary>
@@ -98,7 +113,10 @@ System.out.println(resultCountNonZeroPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 

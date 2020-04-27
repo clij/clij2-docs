@@ -12,7 +12,10 @@ Ext.CLIJ2_getSize(Image source);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.getSize(source);
 </summary>
@@ -38,11 +41,17 @@ System.out.println(resultGetSize);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.getSize(source);
 </summary>
@@ -66,11 +75,17 @@ System.out.println(resultGetSize);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.getSize(source);
 </summary>
@@ -97,7 +112,10 @@ System.out.println(resultGetSize);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 

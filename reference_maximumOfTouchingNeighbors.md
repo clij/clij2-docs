@@ -22,7 +22,10 @@ Ext.CLIJ2_maximumOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Ima
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maximumOfTouchingNeighbors(values, touch_matrix, maximum_values_destination);
 </summary>
@@ -53,11 +56,17 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(maximum_values_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maximumOfTouchingNeighbors(values, touch_matrix, maximum_values_destination);
 </summary>
@@ -85,11 +94,17 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(maximum_values_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maximumOfTouchingNeighbors(values, touch_matrix, maximum_values_destination);
 </summary>
@@ -120,7 +135,10 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(maximum_values_destination);
 ```
+
+
 </details>
+
 
 
 

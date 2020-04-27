@@ -18,7 +18,10 @@ Ext.CLIJ2_excludeLabels(Image binary_flaglist, Image label_map_input, ByRef Imag
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
 </summary>
@@ -49,11 +52,17 @@ clij2.release(binary_flaglist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
 </summary>
@@ -81,11 +90,17 @@ clij2.release(binary_flaglist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
 </summary>
@@ -116,7 +131,10 @@ clij2.release(binary_flaglist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+
+
 </details>
+
 
 
 

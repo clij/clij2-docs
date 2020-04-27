@@ -12,7 +12,10 @@ Ext.CLIJ2_sobel(Image source, ByRef Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.sobel(source, destination);
 </summary>
@@ -41,11 +44,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.sobel(source, destination);
 </summary>
@@ -71,11 +80,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.sobel(source, destination);
 </summary>
@@ -104,7 +119,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

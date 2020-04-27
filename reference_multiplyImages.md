@@ -21,7 +21,10 @@ Ext.CLIJ2_multiplyImages(Image factor1, Image factor2, Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.multiplyImages(factor1, factor2, destination);
 </summary>
@@ -52,11 +55,17 @@ clij2.release(factor1);
 clij2.release(factor2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.multiplyImages(factor1, factor2, destination);
 </summary>
@@ -84,11 +93,17 @@ clij2.release(factor1);
 clij2.release(factor2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.multiplyImages(factor1, factor2, destination);
 </summary>
@@ -119,7 +134,10 @@ clij2.release(factor1);
 clij2.release(factor2);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

@@ -13,7 +13,10 @@ Ext.CLIJ2_standardDeviationOfMaskedPixels(Image source, Image mask);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.standardDeviationOfMaskedPixels(source, mask);
 </summary>
@@ -41,11 +44,17 @@ System.out.println(resultStandardDeviationOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.standardDeviationOfMaskedPixels(source, mask);
 </summary>
@@ -71,11 +80,17 @@ System.out.println(resultStandardDeviationOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.standardDeviationOfMaskedPixels(source, mask);
 </summary>
@@ -104,7 +119,10 @@ System.out.println(resultStandardDeviationOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

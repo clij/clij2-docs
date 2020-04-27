@@ -22,7 +22,10 @@ Ext.CLIJ2_labelVoronoiOctagon(Image label_map, ByRef Image label_voronoi_destina
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </summary>
@@ -51,11 +54,17 @@ label_voronoi_destinationImagePlus.show();
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </summary>
@@ -81,11 +90,17 @@ label_voronoi_destination = clij2.pullMat(label_voronoi_destination)
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </summary>
@@ -114,7 +129,10 @@ Icy.addSequence(label_voronoi_destination_sequence
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);
 ```
+
+
 </details>
+
 
 
 

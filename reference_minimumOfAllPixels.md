@@ -11,7 +11,10 @@ Ext.CLIJ2_minimumOfAllPixels(Image source);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.minimumOfAllPixels(source);
 </summary>
@@ -37,11 +40,17 @@ System.out.println(resultMinimumOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.minimumOfAllPixels(source);
 </summary>
@@ -65,11 +74,17 @@ System.out.println(resultMinimumOfAllPixels);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.minimumOfAllPixels(source);
 </summary>
@@ -96,7 +111,10 @@ System.out.println(resultMinimumOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

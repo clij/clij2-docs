@@ -10,7 +10,10 @@ Ext.CLIJ2_setImageBorders(Image destination, Number value);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.setImageBorders(destination, value);
 </summary>
@@ -38,11 +41,17 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.setImageBorders(destination, value);
 </summary>
@@ -67,11 +76,17 @@ destination = clij2.pullMat(destination)
 % cleanup memory on GPU
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.setImageBorders(destination, value);
 </summary>
@@ -99,7 +114,10 @@ Icy.addSequence(destination_sequence
 // cleanup memory on GPU
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

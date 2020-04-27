@@ -17,7 +17,10 @@ Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, ByRef Ima
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
 </summary>
@@ -49,11 +52,17 @@ clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
 </summary>
@@ -82,11 +91,17 @@ clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
 </summary>
@@ -118,7 +133,10 @@ clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
 ```
+
+
 </details>
+
 
 
 

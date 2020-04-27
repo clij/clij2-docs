@@ -13,7 +13,10 @@ Ext.CLIJ2_meanSquaredError(Image source1, Image source2);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.meanSquaredError(source1, source2);
 </summary>
@@ -41,11 +44,17 @@ System.out.println(resultMeanSquaredError);
 clij2.release(source1);
 clij2.release(source2);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.meanSquaredError(source1, source2);
 </summary>
@@ -71,11 +80,17 @@ System.out.println(resultMeanSquaredError);
 clij2.release(source1);
 clij2.release(source2);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.meanSquaredError(source1, source2);
 </summary>
@@ -104,7 +119,10 @@ System.out.println(resultMeanSquaredError);
 clij2.release(source1);
 clij2.release(source2);
 ```
+
+
 </details>
+
 
 
 

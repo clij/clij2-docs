@@ -25,7 +25,10 @@ Ext.CLIJ2_automaticThreshold(Image input, Image destination, String method);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.automaticThreshold(input, destination, method);
 </summary>
@@ -54,11 +57,17 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.automaticThreshold(input, destination, method);
 </summary>
@@ -84,11 +93,17 @@ destination = clij2.pullMat(destination)
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.automaticThreshold(input, destination, method);
 </summary>
@@ -117,7 +132,10 @@ Icy.addSequence(destination_sequence
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

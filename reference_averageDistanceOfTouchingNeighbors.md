@@ -19,7 +19,10 @@ Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
 </summary>
@@ -50,11 +53,17 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
 </summary>
@@ -82,11 +91,17 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
 </summary>
@@ -117,7 +132,10 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
 ```
+
+
 </details>
+
 
 
 

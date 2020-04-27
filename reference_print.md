@@ -15,7 +15,10 @@ Ext.CLIJ2_print(Image input);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.print(input);
 </summary>
@@ -40,11 +43,17 @@ clij2.print(input);
 // cleanup memory on GPU
 clij2.release(input);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.print(input);
 </summary>
@@ -67,11 +76,17 @@ clij2.print(input);
 % cleanup memory on GPU
 clij2.release(input);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.print(input);
 </summary>
@@ -97,7 +112,10 @@ clij2.print(input);
 // cleanup memory on GPU
 clij2.release(input);
 ```
+
+
 </details>
+
 
 
 

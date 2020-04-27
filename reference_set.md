@@ -12,7 +12,10 @@ Ext.CLIJ2_set(Image source, Number value);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.set(source, value);
 </summary>
@@ -38,11 +41,17 @@ clij2.set(source, value);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.set(source, value);
 </summary>
@@ -66,11 +75,17 @@ clij2.set(source, value);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.set(source, value);
 </summary>
@@ -97,7 +112,10 @@ clij2.set(source, value);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 

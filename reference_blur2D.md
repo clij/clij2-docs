@@ -16,7 +16,10 @@ Ext.CLIJ2_blur2D(Image source, Image destination, Number sigmaX, Number sigmaY);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.blur2D(source, destination, sigmaX, sigmaY);
 </summary>
@@ -47,11 +50,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.blur2D(source, destination, sigmaX, sigmaY);
 </summary>
@@ -79,11 +88,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.blur2D(source, destination, sigmaX, sigmaY);
 </summary>
@@ -114,7 +129,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

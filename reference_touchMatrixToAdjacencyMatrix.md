@@ -10,7 +10,10 @@ Ext.CLIJ2_touchMatrixToAdjacencyMatrix(Image touch_matrix, ByRef Image adjacency
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 </summary>
@@ -37,11 +40,17 @@ clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 clij2.release(touch_matrix);
 clij2.release(adjacency_matrix);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 </summary>
@@ -66,11 +75,17 @@ clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 clij2.release(touch_matrix);
 clij2.release(adjacency_matrix);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 </summary>
@@ -98,7 +113,10 @@ clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 clij2.release(touch_matrix);
 clij2.release(adjacency_matrix);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

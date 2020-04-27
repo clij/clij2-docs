@@ -10,7 +10,10 @@ Ext.CLIJ2_meanZProjectionBounded(Image source, ByRef Image destination_mean, Num
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.meanZProjectionBounded(source, destination_mean, min_z, max_z);
 </summary>
@@ -41,11 +44,17 @@ destination_meanImagePlus.show();
 clij2.release(source);
 clij2.release(destination_mean);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.meanZProjectionBounded(source, destination_mean, min_z, max_z);
 </summary>
@@ -73,11 +82,17 @@ destination_mean = clij2.pullMat(destination_mean)
 clij2.release(source);
 clij2.release(destination_mean);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.meanZProjectionBounded(source, destination_mean, min_z, max_z);
 </summary>
@@ -108,7 +123,10 @@ Icy.addSequence(destination_mean_sequence
 clij2.release(source);
 clij2.release(destination_mean);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

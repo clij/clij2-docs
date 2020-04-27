@@ -12,7 +12,10 @@ Ext.CLIJ2_labelToMask(Image label_map_source, ByRef Image mask_destination, Numb
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.labelToMask(label_map_source, mask_destination, label_index);
 </summary>
@@ -42,11 +45,17 @@ mask_destinationImagePlus.show();
 clij2.release(label_map_source);
 clij2.release(mask_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.labelToMask(label_map_source, mask_destination, label_index);
 </summary>
@@ -73,11 +82,17 @@ mask_destination = clij2.pullMat(mask_destination)
 clij2.release(label_map_source);
 clij2.release(mask_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.labelToMask(label_map_source, mask_destination, label_index);
 </summary>
@@ -107,7 +122,10 @@ Icy.addSequence(mask_destination_sequence
 clij2.release(label_map_source);
 clij2.release(mask_destination);
 ```
+
+
 </details>
+
 
 
 

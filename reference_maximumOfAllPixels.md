@@ -11,7 +11,10 @@ Ext.CLIJ2_maximumOfAllPixels(Image source);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maximumOfAllPixels(source);
 </summary>
@@ -37,11 +40,17 @@ System.out.println(resultMaximumOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maximumOfAllPixels(source);
 </summary>
@@ -65,11 +74,17 @@ System.out.println(resultMaximumOfAllPixels);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maximumOfAllPixels(source);
 </summary>
@@ -96,7 +111,10 @@ System.out.println(resultMaximumOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 

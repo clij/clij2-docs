@@ -14,7 +14,10 @@ Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, ByRef Image labeling_de
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
 </summary>
@@ -43,11 +46,17 @@ labeling_destinationImagePlus.show();
 clij2.release(labeling_input);
 clij2.release(labeling_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
 </summary>
@@ -73,11 +82,17 @@ labeling_destination = clij2.pullMat(labeling_destination)
 clij2.release(labeling_input);
 clij2.release(labeling_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
 </summary>
@@ -106,7 +121,10 @@ Icy.addSequence(labeling_destination_sequence
 clij2.release(labeling_input);
 clij2.release(labeling_destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

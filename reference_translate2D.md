@@ -15,7 +15,10 @@ Ext.CLIJ2_translate2D(Image source, Image destination, Number translateX, Number
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.translate2D(source, destination, translateX, translateY);
 </summary>
@@ -46,11 +49,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.translate2D(source, destination, translateX, translateY);
 </summary>
@@ -78,11 +87,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.translate2D(source, destination, translateX, translateY);
 </summary>
@@ -113,7 +128,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

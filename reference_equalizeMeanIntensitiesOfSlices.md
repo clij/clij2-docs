@@ -12,7 +12,10 @@ Ext.CLIJ2_equalizeMeanIntensitiesOfSlices(Image input, ByRef Image destination, 
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.equalizeMeanIntensitiesOfSlices(input, destination, referenceSlice);
 </summary>
@@ -42,11 +45,17 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.equalizeMeanIntensitiesOfSlices(input, destination, referenceSlice);
 </summary>
@@ -73,11 +82,17 @@ destination = clij2.pullMat(destination)
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.equalizeMeanIntensitiesOfSlices(input, destination, referenceSlice);
 </summary>
@@ -107,7 +122,10 @@ Icy.addSequence(destination_sequence
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

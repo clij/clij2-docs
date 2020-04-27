@@ -21,7 +21,10 @@ Ext.CLIJ2_labelSpots(Image input_spots, ByRef Image labelled_spots_destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.labelSpots(input_spots, labelled_spots_destination);
 </summary>
@@ -50,11 +53,17 @@ labelled_spots_destinationImagePlus.show();
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.labelSpots(input_spots, labelled_spots_destination);
 </summary>
@@ -80,11 +89,17 @@ labelled_spots_destination = clij2.pullMat(labelled_spots_destination)
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.labelSpots(input_spots, labelled_spots_destination);
 </summary>
@@ -113,7 +128,10 @@ Icy.addSequence(labelled_spots_destination_sequence
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);
 ```
+
+
 </details>
+
 
 
 

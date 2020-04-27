@@ -19,7 +19,10 @@ Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destin
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </summary>
@@ -50,11 +53,17 @@ clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </summary>
@@ -82,11 +91,17 @@ clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </summary>
@@ -117,7 +132,10 @@ clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
 ```
+
+
 </details>
+
 
 
 

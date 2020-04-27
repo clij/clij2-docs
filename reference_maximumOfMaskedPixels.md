@@ -10,7 +10,10 @@ Ext.CLIJ2_maximumOfMaskedPixels(Image source, Image mask);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maximumOfMaskedPixels(source, mask);
 </summary>
@@ -38,11 +41,17 @@ System.out.println(resultMaximumOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maximumOfMaskedPixels(source, mask);
 </summary>
@@ -68,11 +77,17 @@ System.out.println(resultMaximumOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maximumOfMaskedPixels(source, mask);
 </summary>
@@ -101,7 +116,10 @@ System.out.println(resultMaximumOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

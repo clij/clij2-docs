@@ -12,7 +12,10 @@ Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image ind
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 </summary>
@@ -42,11 +45,17 @@ indexlist_destinationImagePlus.show();
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 </summary>
@@ -73,11 +82,17 @@ indexlist_destination = clij2.pullMat(indexlist_destination)
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 </summary>
@@ -107,7 +122,10 @@ Icy.addSequence(indexlist_destination_sequence
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

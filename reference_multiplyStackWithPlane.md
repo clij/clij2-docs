@@ -13,7 +13,10 @@ Ext.CLIJ2_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image des
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
 </summary>
@@ -44,11 +47,17 @@ clij2.release(sourceStack);
 clij2.release(sourcePlane);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
 </summary>
@@ -76,11 +85,17 @@ clij2.release(sourceStack);
 clij2.release(sourcePlane);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
 </summary>
@@ -111,7 +126,10 @@ clij2.release(sourceStack);
 clij2.release(sourcePlane);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

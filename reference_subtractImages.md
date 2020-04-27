@@ -24,7 +24,10 @@ Ext.CLIJ2_subtractImages(Image subtrahend, Image minuend, Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.subtractImages(subtrahend, minuend, destination);
 </summary>
@@ -55,11 +58,17 @@ clij2.release(subtrahend);
 clij2.release(minuend);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.subtractImages(subtrahend, minuend, destination);
 </summary>
@@ -87,11 +96,17 @@ clij2.release(subtrahend);
 clij2.release(minuend);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.subtractImages(subtrahend, minuend, destination);
 </summary>
@@ -122,7 +137,10 @@ clij2.release(subtrahend);
 clij2.release(minuend);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

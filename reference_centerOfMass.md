@@ -15,7 +15,10 @@ Ext.CLIJ2_centerOfMass(Image source);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.centerOfMass(source);
 </summary>
@@ -41,11 +44,17 @@ System.out.println(resultCenterOfMass);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.centerOfMass(source);
 </summary>
@@ -69,11 +78,17 @@ System.out.println(resultCenterOfMass);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.centerOfMass(source);
 </summary>
@@ -100,7 +115,10 @@ System.out.println(resultCenterOfMass);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 

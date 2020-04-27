@@ -23,7 +23,10 @@ Ext.CLIJ2_generateTouchMatrix(Image label_map, ByRef Image touch_matrix_destinat
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
 </summary>
@@ -52,11 +55,17 @@ touch_matrix_destinationImagePlus.show();
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
 </summary>
@@ -82,11 +91,17 @@ touch_matrix_destination = clij2.pullMat(touch_matrix_destination)
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
 </summary>
@@ -115,7 +130,10 @@ Icy.addSequence(touch_matrix_destination_sequence
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
 ```
+
+
 </details>
+
 
 
 

@@ -10,7 +10,10 @@ Ext.CLIJ2_pullAsROI(Image binary_input);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.pullAsROI(binary_input);
 </summary>
@@ -36,11 +39,17 @@ System.out.println(resultPullAsROI);
 // cleanup memory on GPU
 clij2.release(binary_input);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.pullAsROI(binary_input);
 </summary>
@@ -64,11 +73,17 @@ System.out.println(resultPullAsROI);
 % cleanup memory on GPU
 clij2.release(binary_input);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.pullAsROI(binary_input);
 </summary>
@@ -95,7 +110,10 @@ System.out.println(resultPullAsROI);
 // cleanup memory on GPU
 clij2.release(binary_input);
 ```
+
+
 </details>
+
 
 
 

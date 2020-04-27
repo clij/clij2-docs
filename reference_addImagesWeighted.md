@@ -12,7 +12,10 @@ Ext.CLIJ2_addImagesWeighted(Image summand1, Image summand2, Image destination, N
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
 </summary>
@@ -45,11 +48,17 @@ clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
 </summary>
@@ -79,11 +88,17 @@ clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
 </summary>
@@ -116,7 +131,10 @@ clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

@@ -12,7 +12,10 @@ Ext.CLIJ2_equal(Image source1, Image source2, ByRef Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.equal(source1, source2, destination);
 </summary>
@@ -43,11 +46,17 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.equal(source1, source2, destination);
 </summary>
@@ -75,11 +84,17 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.equal(source1, source2, destination);
 </summary>
@@ -110,7 +125,10 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

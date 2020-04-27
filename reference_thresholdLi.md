@@ -13,7 +13,10 @@ Ext.CLIJ2_thresholdLi(Image input, ByRef Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.thresholdLi(input, destination);
 </summary>
@@ -42,11 +45,17 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.thresholdLi(input, destination);
 </summary>
@@ -72,11 +81,17 @@ destination = clij2.pullMat(destination)
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.thresholdLi(input, destination);
 </summary>
@@ -105,7 +120,10 @@ Icy.addSequence(destination_sequence
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

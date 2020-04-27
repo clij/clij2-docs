@@ -10,7 +10,10 @@ Ext.CLIJ2_minimumZProjectionBounded(Image source, ByRef Image destination_min, N
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
 </summary>
@@ -41,11 +44,17 @@ destination_minImagePlus.show();
 clij2.release(source);
 clij2.release(destination_min);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
 </summary>
@@ -73,11 +82,17 @@ destination_min = clij2.pullMat(destination_min)
 clij2.release(source);
 clij2.release(destination_min);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
 </summary>
@@ -108,7 +123,10 @@ Icy.addSequence(destination_min_sequence
 clij2.release(source);
 clij2.release(destination_min);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -11,7 +11,10 @@ Ext.CLIJ2_mean3DSphere(Image source, Image destination, Number radiusX, Number r
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.mean3DSphere(source, destination, radiusX, radiusY, radiusZ);
 </summary>
@@ -43,11 +46,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.mean3DSphere(source, destination, radiusX, radiusY, radiusZ);
 </summary>
@@ -76,11 +85,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.mean3DSphere(source, destination, radiusX, radiusY, radiusZ);
 </summary>
@@ -112,7 +127,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

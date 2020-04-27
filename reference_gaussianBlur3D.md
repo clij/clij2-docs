@@ -20,7 +20,10 @@ Ext.CLIJ2_gaussianBlur3D(Image source, ByRef Image destination, Number sigmaX, N
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.gaussianBlur3D(source, destination, sigmaX, sigmaY, sigmaZ);
 </summary>
@@ -52,11 +55,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.gaussianBlur3D(source, destination, sigmaX, sigmaY, sigmaZ);
 </summary>
@@ -85,11 +94,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.gaussianBlur3D(source, destination, sigmaX, sigmaY, sigmaZ);
 </summary>
@@ -121,7 +136,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

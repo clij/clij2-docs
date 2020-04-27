@@ -10,7 +10,10 @@ Ext.CLIJ2_setRampX(Image source);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.setRampX(source);
 </summary>
@@ -35,11 +38,17 @@ clij2.setRampX(source);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.setRampX(source);
 </summary>
@@ -62,11 +71,17 @@ clij2.setRampX(source);
 % cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.setRampX(source);
 </summary>
@@ -92,7 +107,10 @@ clij2.setRampX(source);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

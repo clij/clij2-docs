@@ -13,7 +13,10 @@ Ext.CLIJ2_localThreshold(Image source, Image localThreshold, Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.localThreshold(source, localThreshold, destination);
 </summary>
@@ -44,11 +47,17 @@ clij2.release(source);
 clij2.release(localThreshold);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.localThreshold(source, localThreshold, destination);
 </summary>
@@ -76,11 +85,17 @@ clij2.release(source);
 clij2.release(localThreshold);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.localThreshold(source, localThreshold, destination);
 </summary>
@@ -111,7 +126,10 @@ clij2.release(source);
 clij2.release(localThreshold);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

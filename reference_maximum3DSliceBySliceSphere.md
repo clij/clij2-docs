@@ -14,7 +14,10 @@ Ext.CLIJ2_maximum3DSliceBySliceSphere(Image source, ByRef Image destination, Num
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maximum3DSliceBySliceSphere(source, destination, radiusX, radiusY);
 </summary>
@@ -45,11 +48,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maximum3DSliceBySliceSphere(source, destination, radiusX, radiusY);
 </summary>
@@ -77,11 +86,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maximum3DSliceBySliceSphere(source, destination, radiusX, radiusY);
 </summary>
@@ -112,7 +127,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

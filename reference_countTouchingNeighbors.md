@@ -10,7 +10,10 @@ Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, ByRef Image touching_neighb
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
 </summary>
@@ -39,11 +42,17 @@ touching_neighbors_count_destinationImagePlus.show();
 clij2.release(touch_matrix);
 clij2.release(touching_neighbors_count_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
 </summary>
@@ -69,11 +78,17 @@ touching_neighbors_count_destination = clij2.pullMat(touching_neighbors_count_de
 clij2.release(touch_matrix);
 clij2.release(touching_neighbors_count_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
 </summary>
@@ -102,7 +117,10 @@ Icy.addSequence(touching_neighbors_count_destination_sequence
 clij2.release(touch_matrix);
 clij2.release(touching_neighbors_count_destination);
 ```
+
+
 </details>
+
 
 
 

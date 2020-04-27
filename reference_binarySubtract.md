@@ -10,7 +10,10 @@ Ext.CLIJ2_binarySubtract(Image minuend, Image subtrahend, ByRef Image destinatio
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.binarySubtract(minuend, subtrahend, destination);
 </summary>
@@ -41,11 +44,17 @@ clij2.release(minuend);
 clij2.release(subtrahend);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.binarySubtract(minuend, subtrahend, destination);
 </summary>
@@ -73,11 +82,17 @@ clij2.release(minuend);
 clij2.release(subtrahend);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.binarySubtract(minuend, subtrahend, destination);
 </summary>
@@ -108,7 +123,10 @@ clij2.release(minuend);
 clij2.release(subtrahend);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

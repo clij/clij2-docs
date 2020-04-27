@@ -10,7 +10,10 @@ Ext.CLIJ2_sumZProjection(Image source, Image destination_sum);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.sumZProjection(source, destination_sum);
 </summary>
@@ -39,11 +42,17 @@ destination_sumImagePlus.show();
 clij2.release(source);
 clij2.release(destination_sum);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.sumZProjection(source, destination_sum);
 </summary>
@@ -69,11 +78,17 @@ destination_sum = clij2.pullMat(destination_sum)
 clij2.release(source);
 clij2.release(destination_sum);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.sumZProjection(source, destination_sum);
 </summary>
@@ -102,7 +117,10 @@ Icy.addSequence(destination_sum_sequence
 clij2.release(source);
 clij2.release(destination_sum);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

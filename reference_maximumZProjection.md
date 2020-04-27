@@ -22,7 +22,10 @@ Ext.CLIJ2_maximumZProjection(Image source, Image destination_max);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maximumZProjection(source, destination_max);
 </summary>
@@ -51,11 +54,17 @@ destination_maxImagePlus.show();
 clij2.release(source);
 clij2.release(destination_max);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maximumZProjection(source, destination_max);
 </summary>
@@ -81,11 +90,17 @@ destination_max = clij2.pullMat(destination_max)
 clij2.release(source);
 clij2.release(destination_max);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maximumZProjection(source, destination_max);
 </summary>
@@ -114,7 +129,10 @@ Icy.addSequence(destination_max_sequence
 clij2.release(source);
 clij2.release(destination_max);
 ```
+
+
 </details>
+
 
 
 

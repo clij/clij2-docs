@@ -13,7 +13,10 @@ Ext.CLIJ2_median3DBox(Image source, Image destination, Number radiusX, Number ra
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.median3DBox(source, destination, radiusX, radiusY, radiusZ);
 </summary>
@@ -45,11 +48,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.median3DBox(source, destination, radiusX, radiusY, radiusZ);
 </summary>
@@ -78,11 +87,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.median3DBox(source, destination, radiusX, radiusY, radiusZ);
 </summary>
@@ -114,7 +129,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

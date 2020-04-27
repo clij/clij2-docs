@@ -20,7 +20,10 @@ Ext.CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number si
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 </summary>
@@ -55,11 +58,17 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 </summary>
@@ -91,11 +100,17 @@ destination = clij2.pullMat(destination)
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 </summary>
@@ -130,7 +145,10 @@ Icy.addSequence(destination_sequence
 clij2.release(input);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

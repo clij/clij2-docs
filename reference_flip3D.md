@@ -10,7 +10,10 @@ Ext.CLIJ2_flip3D(Image source, Image destination, Boolean flipX, Boolean flipY, 
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.flip3D(source, destination, flipX, flipY, flipZ);
 </summary>
@@ -42,11 +45,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.flip3D(source, destination, flipX, flipY, flipZ);
 </summary>
@@ -75,11 +84,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.flip3D(source, destination, flipX, flipY, flipZ);
 </summary>
@@ -111,7 +126,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

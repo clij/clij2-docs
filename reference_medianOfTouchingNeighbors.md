@@ -21,7 +21,10 @@ Ext.CLIJ2_medianOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Imag
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
 </summary>
@@ -52,11 +55,17 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(mean_values_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
 </summary>
@@ -84,11 +93,17 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(mean_values_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
 </summary>
@@ -119,7 +134,10 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(mean_values_destination);
 ```
+
+
 </details>
+
 
 
 

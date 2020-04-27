@@ -20,7 +20,10 @@ Ext.CLIJ2_maskLabel(Image source, Image label_map, ByRef Image destination, Numb
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maskLabel(source, label_map, destination, label_index);
 </summary>
@@ -52,11 +55,17 @@ clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maskLabel(source, label_map, destination, label_index);
 </summary>
@@ -85,11 +94,17 @@ clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maskLabel(source, label_map, destination, label_index);
 </summary>
@@ -121,7 +136,10 @@ clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

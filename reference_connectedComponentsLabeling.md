@@ -25,7 +25,10 @@ Ext.CLIJ2_connectedComponentsLabeling(Image binary_input, ByRef Image labeling_d
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.connectedComponentsLabeling(binary_input, labeling_destination);
 </summary>
@@ -54,11 +57,17 @@ labeling_destinationImagePlus.show();
 clij2.release(binary_input);
 clij2.release(labeling_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.connectedComponentsLabeling(binary_input, labeling_destination);
 </summary>
@@ -84,11 +93,17 @@ labeling_destination = clij2.pullMat(labeling_destination)
 clij2.release(binary_input);
 clij2.release(labeling_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.connectedComponentsLabeling(binary_input, labeling_destination);
 </summary>
@@ -117,7 +132,10 @@ Icy.addSequence(labeling_destination_sequence
 clij2.release(binary_input);
 clij2.release(labeling_destination);
 ```
+
+
 </details>
+
 
 
 

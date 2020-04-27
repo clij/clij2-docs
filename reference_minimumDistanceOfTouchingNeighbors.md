@@ -10,7 +10,10 @@ Ext.CLIJ2_minimumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.minimumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, minimum_distancelist_destination);
 </summary>
@@ -41,11 +44,17 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(minimum_distancelist_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.minimumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, minimum_distancelist_destination);
 </summary>
@@ -73,11 +82,17 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(minimum_distancelist_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.minimumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, minimum_distancelist_destination);
 </summary>
@@ -108,7 +123,10 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(minimum_distancelist_destination);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

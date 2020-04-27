@@ -16,7 +16,10 @@ Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, ByRef Image label_map_dest
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 </summary>
@@ -45,11 +48,17 @@ label_map_destinationImagePlus.show();
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 </summary>
@@ -75,11 +84,17 @@ label_map_destination = clij2.pullMat(label_map_destination)
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 </summary>
@@ -108,7 +123,10 @@ Icy.addSequence(label_map_destination_sequence
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+
+
 </details>
+
 
 
 

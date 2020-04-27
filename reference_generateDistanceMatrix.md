@@ -23,7 +23,10 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 </summary>
@@ -54,11 +57,17 @@ clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 </summary>
@@ -86,11 +95,17 @@ clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 </summary>
@@ -121,7 +136,10 @@ clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
 ```
+
+
 </details>
+
 
 
 

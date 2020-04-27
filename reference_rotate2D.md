@@ -17,7 +17,10 @@ Ext.CLIJ2_rotate2D(Image source, Image destination, Number angle, Boolean rotate
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
 </summary>
@@ -48,11 +51,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
 </summary>
@@ -80,11 +89,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
 </summary>
@@ -115,7 +130,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

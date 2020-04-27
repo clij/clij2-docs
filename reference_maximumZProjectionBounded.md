@@ -10,7 +10,10 @@ Ext.CLIJ2_maximumZProjectionBounded(Image source, ByRef Image destination_max, N
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.maximumZProjectionBounded(source, destination_max, min_z, max_z);
 </summary>
@@ -41,11 +44,17 @@ destination_maxImagePlus.show();
 clij2.release(source);
 clij2.release(destination_max);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.maximumZProjectionBounded(source, destination_max, min_z, max_z);
 </summary>
@@ -73,11 +82,17 @@ destination_max = clij2.pullMat(destination_max)
 clij2.release(source);
 clij2.release(destination_max);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.maximumZProjectionBounded(source, destination_max, min_z, max_z);
 </summary>
@@ -108,7 +123,10 @@ Icy.addSequence(destination_max_sequence
 clij2.release(source);
 clij2.release(destination_max);
 ```
+
+
 </details>
+
 
 
 

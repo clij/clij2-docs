@@ -16,7 +16,10 @@ Ext.CLIJ2_shortestDistances(Image distance_matrix, ByRef Image destination_minim
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.shortestDistances(distance_matrix, destination_minimum_distances);
 </summary>
@@ -45,11 +48,17 @@ destination_minimum_distancesImagePlus.show();
 clij2.release(distance_matrix);
 clij2.release(destination_minimum_distances);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.shortestDistances(distance_matrix, destination_minimum_distances);
 </summary>
@@ -75,11 +84,17 @@ destination_minimum_distances = clij2.pullMat(destination_minimum_distances)
 clij2.release(distance_matrix);
 clij2.release(destination_minimum_distances);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.shortestDistances(distance_matrix, destination_minimum_distances);
 </summary>
@@ -108,7 +123,10 @@ Icy.addSequence(destination_minimum_distances_sequence
 clij2.release(distance_matrix);
 clij2.release(destination_minimum_distances);
 ```
+
+
 </details>
+
 
 
 

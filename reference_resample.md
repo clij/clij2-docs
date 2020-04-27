@@ -19,7 +19,10 @@ Ext.CLIJ2_resample(Image source, ByRef Image destination, Number factorX, Number
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.resample(source, destination, factorX, factorY, factorZ, linearInterpolation);
 </summary>
@@ -52,11 +55,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.resample(source, destination, factorX, factorY, factorZ, linearInterpolation);
 </summary>
@@ -86,11 +95,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.resample(source, destination, factorX, factorY, factorZ, linearInterpolation);
 </summary>
@@ -123,7 +138,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

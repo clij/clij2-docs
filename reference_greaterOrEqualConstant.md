@@ -21,7 +21,10 @@ Ext.CLIJ2_greaterOrEqualConstant(Image source, ByRef Image destination, Number c
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.greaterOrEqualConstant(source, destination, constant);
 </summary>
@@ -51,11 +54,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.greaterOrEqualConstant(source, destination, constant);
 </summary>
@@ -82,11 +91,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.greaterOrEqualConstant(source, destination, constant);
 </summary>
@@ -116,7 +131,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

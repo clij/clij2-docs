@@ -19,7 +19,10 @@ Ext.CLIJ2_binaryXOr(Image operand1, Image operand2, Image destination);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.binaryXOr(operand1, operand2, destination);
 </summary>
@@ -50,11 +53,17 @@ clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.binaryXOr(operand1, operand2, destination);
 </summary>
@@ -82,11 +91,17 @@ clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.binaryXOr(operand1, operand2, destination);
 </summary>
@@ -117,7 +132,10 @@ clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

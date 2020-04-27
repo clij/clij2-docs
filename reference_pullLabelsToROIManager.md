@@ -10,7 +10,10 @@ Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.pullLabelsToROIManager(labelmap_input);
 </summary>
@@ -35,11 +38,17 @@ clij2.pullLabelsToROIManager(labelmap_input);
 // cleanup memory on GPU
 clij2.release(labelmap_input);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.pullLabelsToROIManager(labelmap_input);
 </summary>
@@ -62,11 +71,17 @@ clij2.pullLabelsToROIManager(labelmap_input);
 % cleanup memory on GPU
 clij2.release(labelmap_input);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.pullLabelsToROIManager(labelmap_input);
 </summary>
@@ -92,7 +107,10 @@ clij2.pullLabelsToROIManager(labelmap_input);
 // cleanup memory on GPU
 clij2.release(labelmap_input);
 ```
+
+
 </details>
+
 
 
 

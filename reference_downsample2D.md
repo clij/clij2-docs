@@ -15,7 +15,10 @@ Ext.CLIJ2_downsample2D(Image source, Image destination, Number factorX, Number f
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.downsample2D(source, destination, factorX, factorY);
 </summary>
@@ -46,11 +49,17 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.downsample2D(source, destination, factorX, factorY);
 </summary>
@@ -78,11 +87,17 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.downsample2D(source, destination, factorX, factorY);
 </summary>
@@ -113,7 +128,10 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(destination);
 ```
+
+
 </details>
+
 
 
 

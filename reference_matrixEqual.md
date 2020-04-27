@@ -12,7 +12,10 @@ Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 
 
 ### Usage in Java
+
+
 <details>
+
 <summary>
 clij2.matrixEqual(input1, input2, tolerance);
 </summary>
@@ -40,11 +43,17 @@ clij2.matrixEqual(input1, input2, tolerance);
 clij2.release(input1);
 clij2.release(input2);
 ```
+
+
 </details>
 
 
+
 ### Usage in Matlab
+
+
 <details>
+
 <summary>
 clij2.matrixEqual(input1, input2, tolerance);
 </summary>
@@ -70,11 +79,17 @@ clij2.matrixEqual(input1, input2, tolerance);
 clij2.release(input1);
 clij2.release(input2);
 ```
+
+
 </details>
 
 
+
 ### Usage in Icy
-<details>
+
+
+details>
+
 <summary>
 clij2.matrixEqual(input1, input2, tolerance);
 </summary>
@@ -103,7 +118,10 @@ clij2.matrixEqual(input1, input2, tolerance);
 clij2.release(input1);
 clij2.release(input2);
 ```
+
+
 </details>
+
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
