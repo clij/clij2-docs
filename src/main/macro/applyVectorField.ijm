@@ -8,7 +8,7 @@
 run("Close All");
 
 // get test image
-run("Blobs (25K)");
+open("C:/Users/rober/Desktop/NEUBIAS_circle_color_dark_background.tif");
 run("32-bit");
 blobs = getTitle();
 

@@ -19,12 +19,13 @@ Ext.CLIJ2_startTimeTracing();
 /*
 ## Load a data set
 The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
-It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm. 
+It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
 The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use it for detecting nuclei and generating an estimated cell-segmentation first.
 
 All processing steps are performed in 3D, for visualisation purposes, we're looking at maximum intensity projections in Z: 
 */
-open("C:/structure/teaching/neubias_academy_clij2/data/lund1051_resampled.tif");
+path = "C:/structure/teaching/neubias_academy_clij2/data/";
+open(path + "lund1051_resampled.tif");
 input = getTitle();
 
 print("Loading took " + (getTime() - time) + " msec");
@@ -93,6 +94,13 @@ for (i = 0; i < number_of_erosions; i++) {
 Ext.CLIJ2_mask(flip, flap, labels);
 show(labels, "cell segmentation");
 run("glasbey_on_dark");
+/*
+We also save the labels to disc because other notebooks use them as starting point
+*/
+Ext.CLIJ2_pull(labels);
+saveAs("TIF", path + "lund1051_labelled.tif");
+close();
+
 /*
 ## Draw connectivity of the cells as mesh
 We then read out the positions of the detected nuclei. 
