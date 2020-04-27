@@ -27,8 +27,7 @@ Ext.CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number si
 <summary>
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -42,14 +41,14 @@ float sigma1z = 3.0;
 float sigma2x = 4.0;
 float sigma2y = 5.0;
 float sigma2z = 6.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -57,8 +56,7 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(input);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -72,8 +70,7 @@ clij2.release(destination);
 <summary>
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -85,22 +82,21 @@ sigma1z = 3.0;
 sigma2x = 4.0;
 sigma2y = 5.0;
 sigma2z = 6.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
 clij2.release(input);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -109,13 +105,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -130,22 +125,21 @@ sigma1z = 3.0;
 sigma2x = 4.0;
 sigma2y = 5.0;
 sigma2z = 6.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
 // cleanup memory on GPU
 clij2.release(input);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

@@ -21,8 +21,7 @@ Ext.CLIJ2_binaryAnd(Image operand1, Image operand2, Image destination);
 <summary>
 clij2.binaryAnd(operand1, operand2, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -31,14 +30,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer operand1 = clij2.push(operand1ImagePlus);
 ClearCLBuffer operand2 = clij2.push(operand2ImagePlus);
 destination = clij2.create(operand1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.binaryAnd(operand1, operand2, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -47,8 +46,7 @@ destinationImagePlus.show();
 clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -62,22 +60,21 @@ clij2.release(destination);
 <summary>
 clij2.binaryAnd(operand1, operand2, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 operand1 = clij2.pushMat(operand1_matrix);
 operand2 = clij2.pushMat(operand2_matrix);
 destination = clij2.create(operand1);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.binaryAnd(operand1, operand2, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -85,8 +82,7 @@ destination = clij2.pullMat(destination)
 clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -95,13 +91,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.binaryAnd(operand1, operand2, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -111,14 +106,14 @@ clij2 = CLICY.getInstance();
 operand1_sequence = getSequence();operand1 = clij2.pushSequence(operand1_sequence);
 operand2_sequence = getSequence();operand2 = clij2.pushSequence(operand2_sequence);
 destination = clij2.create(operand1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.binaryAnd(operand1, operand2, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -126,8 +121,7 @@ Icy.addSequence(destination_sequence
 clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

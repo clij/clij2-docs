@@ -17,8 +17,7 @@ Ext.CLIJ2_powerImages(Image input, Image exponent, ByRef Image destination);
 <summary>
 clij2.powerImages(input, exponent, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -27,14 +26,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer input = clij2.push(inputImagePlus);
 ClearCLBuffer exponent = clij2.push(exponentImagePlus);
 destination = clij2.create(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.powerImages(input, exponent, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -43,8 +42,7 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(exponent);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -58,22 +56,21 @@ clij2.release(destination);
 <summary>
 clij2.powerImages(input, exponent, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 input = clij2.pushMat(input_matrix);
 exponent = clij2.pushMat(exponent_matrix);
 destination = clij2.create(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.powerImages(input, exponent, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -81,8 +78,7 @@ destination = clij2.pullMat(destination)
 clij2.release(input);
 clij2.release(exponent);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -91,13 +87,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.powerImages(input, exponent, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -107,14 +102,14 @@ clij2 = CLICY.getInstance();
 input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
 exponent_sequence = getSequence();exponent = clij2.pushSequence(exponent_sequence);
 destination = clij2.create(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.powerImages(input, exponent, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -122,8 +117,7 @@ Icy.addSequence(destination_sequence
 clij2.release(input);
 clij2.release(exponent);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

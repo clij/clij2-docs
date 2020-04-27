@@ -22,28 +22,26 @@ Ext.CLIJ2_print(Image input);
 <summary>
 clij2.print(input);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.print(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 
 // cleanup memory on GPU
 clij2.release(input);
-```
-
+</pre>
 
 </details>
 
@@ -57,26 +55,24 @@ clij2.release(input);
 <summary>
 clij2.print(input);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 input = clij2.pushMat(input_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.print(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 
 % cleanup memory on GPU
 clij2.release(input);
-```
-
+</pre>
 
 </details>
 
@@ -85,13 +81,12 @@ clij2.release(input);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.print(input);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -99,20 +94,19 @@ clij2 = CLICY.getInstance();
 
 // get input parameters
 input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.print(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 
 // cleanup memory on GPU
 clij2.release(input);
-```
-
+</pre>
 
 </details>
 

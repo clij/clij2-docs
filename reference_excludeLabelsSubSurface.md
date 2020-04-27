@@ -19,8 +19,7 @@ Ext.CLIJ2_excludeLabelsSubSurface(Image pointlist, Image label_map_input, ByRef 
 <summary>
 clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -32,14 +31,14 @@ label_map_destination = clij2.create(pointlist);
 float centerX = 1.0;
 float centerY = 2.0;
 float centerZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 label_map_destinationImagePlus = clij2.pull(label_map_destination);
 label_map_destinationImagePlus.show();
@@ -48,8 +47,7 @@ label_map_destinationImagePlus.show();
 clij2.release(pointlist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
-```
-
+</pre>
 
 </details>
 
@@ -63,8 +61,7 @@ clij2.release(label_map_destination);
 <summary>
 clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -74,14 +71,14 @@ label_map_destination = clij2.create(pointlist);
 centerX = 1.0;
 centerY = 2.0;
 centerZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 label_map_destination = clij2.pullMat(label_map_destination)
 
@@ -89,8 +86,7 @@ label_map_destination = clij2.pullMat(label_map_destination)
 clij2.release(pointlist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
-```
-
+</pre>
 
 </details>
 
@@ -99,13 +95,12 @@ clij2.release(label_map_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -118,14 +113,14 @@ label_map_destination = clij2.create(pointlist);
 centerX = 1.0;
 centerY = 2.0;
 centerZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 label_map_destination_sequence = clij2.pullSequence(label_map_destination)
 Icy.addSequence(label_map_destination_sequence
@@ -133,8 +128,7 @@ Icy.addSequence(label_map_destination_sequence
 clij2.release(pointlist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
-```
-
+</pre>
 
 </details>
 

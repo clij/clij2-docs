@@ -27,8 +27,7 @@ Ext.CLIJ2_maskLabel(Image source, Image label_map, ByRef Image destination, Numb
 <summary>
 clij2.maskLabel(source, label_map, destination, label_index);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -38,14 +37,14 @@ ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
 destination = clij2.create(source);
 float label_index = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.maskLabel(source, label_map, destination, label_index);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -54,8 +53,7 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -69,8 +67,7 @@ clij2.release(destination);
 <summary>
 clij2.maskLabel(source, label_map, destination, label_index);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -78,14 +75,14 @@ source = clij2.pushMat(source_matrix);
 label_map = clij2.pushMat(label_map_matrix);
 destination = clij2.create(source);
 label_index = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.maskLabel(source, label_map, destination, label_index);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -93,8 +90,7 @@ destination = clij2.pullMat(destination)
 clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -103,13 +99,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.maskLabel(source, label_map, destination, label_index);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -120,14 +115,14 @@ source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 label_map_sequence = getSequence();label_map = clij2.pushSequence(label_map_sequence);
 destination = clij2.create(source);
 label_index = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.maskLabel(source, label_map, destination, label_index);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -135,8 +130,7 @@ Icy.addSequence(destination_sequence
 clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

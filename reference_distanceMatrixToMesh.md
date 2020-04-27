@@ -24,8 +24,7 @@ Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, ByRef Ima
 <summary>
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -35,14 +34,14 @@ ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
 mesh_destination = clij2.create(pointlist);
 float maximum_distance = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 mesh_destinationImagePlus = clij2.pull(mesh_destination);
 mesh_destinationImagePlus.show();
@@ -51,8 +50,7 @@ mesh_destinationImagePlus.show();
 clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 
@@ -66,8 +64,7 @@ clij2.release(mesh_destination);
 <summary>
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -75,14 +72,14 @@ pointlist = clij2.pushMat(pointlist_matrix);
 distance_matrix = clij2.pushMat(distance_matrix_matrix);
 mesh_destination = clij2.create(pointlist);
 maximum_distance = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 mesh_destination = clij2.pullMat(mesh_destination)
 
@@ -90,8 +87,7 @@ mesh_destination = clij2.pullMat(mesh_destination)
 clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 
@@ -100,13 +96,12 @@ clij2.release(mesh_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -117,14 +112,14 @@ pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequ
 distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 mesh_destination = clij2.create(pointlist);
 maximum_distance = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 mesh_destination_sequence = clij2.pullSequence(mesh_destination)
 Icy.addSequence(mesh_destination_sequence
@@ -132,8 +127,7 @@ Icy.addSequence(mesh_destination_sequence
 clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 

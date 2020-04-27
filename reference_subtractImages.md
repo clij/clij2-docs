@@ -31,8 +31,7 @@ Ext.CLIJ2_subtractImages(Image subtrahend, Image minuend, Image destination);
 <summary>
 clij2.subtractImages(subtrahend, minuend, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -41,14 +40,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer subtrahend = clij2.push(subtrahendImagePlus);
 ClearCLBuffer minuend = clij2.push(minuendImagePlus);
 destination = clij2.create(subtrahend);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.subtractImages(subtrahend, minuend, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -57,8 +56,7 @@ destinationImagePlus.show();
 clij2.release(subtrahend);
 clij2.release(minuend);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -72,22 +70,21 @@ clij2.release(destination);
 <summary>
 clij2.subtractImages(subtrahend, minuend, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 subtrahend = clij2.pushMat(subtrahend_matrix);
 minuend = clij2.pushMat(minuend_matrix);
 destination = clij2.create(subtrahend);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.subtractImages(subtrahend, minuend, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -95,8 +92,7 @@ destination = clij2.pullMat(destination)
 clij2.release(subtrahend);
 clij2.release(minuend);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -105,13 +101,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.subtractImages(subtrahend, minuend, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -121,14 +116,14 @@ clij2 = CLICY.getInstance();
 subtrahend_sequence = getSequence();subtrahend = clij2.pushSequence(subtrahend_sequence);
 minuend_sequence = getSequence();minuend = clij2.pushSequence(minuend_sequence);
 destination = clij2.create(subtrahend);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.subtractImages(subtrahend, minuend, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -136,8 +131,7 @@ Icy.addSequence(destination_sequence
 clij2.release(subtrahend);
 clij2.release(minuend);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

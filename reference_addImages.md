@@ -19,8 +19,7 @@ Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);
 <summary>
 clij2.addImages(summand1, summand2, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -29,14 +28,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer summand1 = clij2.push(summand1ImagePlus);
 ClearCLBuffer summand2 = clij2.push(summand2ImagePlus);
 destination = clij2.create(summand1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.addImages(summand1, summand2, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -45,8 +44,7 @@ destinationImagePlus.show();
 clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -60,22 +58,21 @@ clij2.release(destination);
 <summary>
 clij2.addImages(summand1, summand2, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 summand1 = clij2.pushMat(summand1_matrix);
 summand2 = clij2.pushMat(summand2_matrix);
 destination = clij2.create(summand1);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.addImages(summand1, summand2, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -83,8 +80,7 @@ destination = clij2.pullMat(destination)
 clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -93,13 +89,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.addImages(summand1, summand2, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -109,14 +104,14 @@ clij2 = CLICY.getInstance();
 summand1_sequence = getSequence();summand1 = clij2.pushSequence(summand1_sequence);
 summand2_sequence = getSequence();summand2 = clij2.pushSequence(summand2_sequence);
 destination = clij2.create(summand1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.addImages(summand1, summand2, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -124,8 +119,7 @@ Icy.addSequence(destination_sequence
 clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

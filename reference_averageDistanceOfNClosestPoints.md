@@ -19,8 +19,7 @@ Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image ind
 <summary>
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -29,14 +28,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
 indexlist_destination = clij2.create(distance_matrix);
 int nClosestPointsTofind = 10;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 indexlist_destinationImagePlus = clij2.pull(indexlist_destination);
 indexlist_destinationImagePlus.show();
@@ -44,8 +43,7 @@ indexlist_destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
-```
-
+</pre>
 
 </details>
 
@@ -59,30 +57,28 @@ clij2.release(indexlist_destination);
 <summary>
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 distance_matrix = clij2.pushMat(distance_matrix_matrix);
 indexlist_destination = clij2.create(distance_matrix);
 nClosestPointsTofind = 10;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 indexlist_destination = clij2.pullMat(indexlist_destination)
 
 % cleanup memory on GPU
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
-```
-
+</pre>
 
 </details>
 
@@ -91,13 +87,12 @@ clij2.release(indexlist_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -107,22 +102,21 @@ clij2 = CLICY.getInstance();
 distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 indexlist_destination = clij2.create(distance_matrix);
 nClosestPointsTofind = 10;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 indexlist_destination_sequence = clij2.pullSequence(indexlist_destination)
 Icy.addSequence(indexlist_destination_sequence
 // cleanup memory on GPU
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
-```
-
+</pre>
 
 </details>
 

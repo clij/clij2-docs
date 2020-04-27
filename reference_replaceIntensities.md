@@ -40,8 +40,7 @@ Ext.CLIJ2_replaceIntensities(Image input, Image new_values_vector, ByRef Image d
 <summary>
 clij2.replaceIntensities(input, new_values_vector, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -50,14 +49,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer input = clij2.push(inputImagePlus);
 ClearCLBuffer new_values_vector = clij2.push(new_values_vectorImagePlus);
 destination = clij2.create(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.replaceIntensities(input, new_values_vector, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -66,8 +65,7 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -81,22 +79,21 @@ clij2.release(destination);
 <summary>
 clij2.replaceIntensities(input, new_values_vector, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 input = clij2.pushMat(input_matrix);
 new_values_vector = clij2.pushMat(new_values_vector_matrix);
 destination = clij2.create(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.replaceIntensities(input, new_values_vector, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -104,8 +101,7 @@ destination = clij2.pullMat(destination)
 clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -114,13 +110,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.replaceIntensities(input, new_values_vector, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -130,14 +125,14 @@ clij2 = CLICY.getInstance();
 input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
 new_values_vector_sequence = getSequence();new_values_vector = clij2.pushSequence(new_values_vector_sequence);
 destination = clij2.create(input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.replaceIntensities(input, new_values_vector, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -145,8 +140,7 @@ Icy.addSequence(destination_sequence
 clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

@@ -17,8 +17,7 @@ Ext.CLIJ2_translate3D(Image source, Image destination, Number translateX, Number
 <summary>
 clij2.translate3D(source, destination, translateX, translateY, translateZ);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -29,14 +28,14 @@ destination = clij2.create(source);
 float translateX = 1.0;
 float translateY = 2.0;
 float translateZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.translate3D(source, destination, translateX, translateY, translateZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -44,8 +43,7 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -59,8 +57,7 @@ clij2.release(destination);
 <summary>
 clij2.translate3D(source, destination, translateX, translateY, translateZ);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -69,22 +66,21 @@ destination = clij2.create(source);
 translateX = 1.0;
 translateY = 2.0;
 translateZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.translate3D(source, destination, translateX, translateY, translateZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -93,13 +89,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.translate3D(source, destination, translateX, translateY, translateZ);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -111,22 +106,21 @@ destination = clij2.create(source);
 translateX = 1.0;
 translateY = 2.0;
 translateZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.translate3D(source, destination, translateX, translateY, translateZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

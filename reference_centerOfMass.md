@@ -22,29 +22,27 @@ Ext.CLIJ2_centerOfMass(Image source);
 <summary>
 clij2.centerOfMass(source);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 double[] resultCenterOfMass = clij2.centerOfMass(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 System.out.println(resultCenterOfMass);
 
 // cleanup memory on GPU
 clij2.release(source);
-```
-
+</pre>
 
 </details>
 
@@ -58,27 +56,25 @@ clij2.release(source);
 <summary>
 clij2.centerOfMass(source);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 double[] resultCenterOfMass = clij2.centerOfMass(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 System.out.println(resultCenterOfMass);
 
 % cleanup memory on GPU
 clij2.release(source);
-```
-
+</pre>
 
 </details>
 
@@ -87,13 +83,12 @@ clij2.release(source);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.centerOfMass(source);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -101,21 +96,20 @@ clij2 = CLICY.getInstance();
 
 // get input parameters
 source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 double[] resultCenterOfMass = clij2.centerOfMass(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 System.out.println(resultCenterOfMass);
 
 // cleanup memory on GPU
 clij2.release(source);
-```
-
+</pre>
 
 </details>
 

@@ -17,28 +17,26 @@ Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 <summary>
 clij2.pullLabelsToROIManager(labelmap_input);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer labelmap_input = clij2.push(labelmap_inputImagePlus);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.pullLabelsToROIManager(labelmap_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 
 // cleanup memory on GPU
 clij2.release(labelmap_input);
-```
-
+</pre>
 
 </details>
 
@@ -52,26 +50,24 @@ clij2.release(labelmap_input);
 <summary>
 clij2.pullLabelsToROIManager(labelmap_input);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 labelmap_input = clij2.pushMat(labelmap_input_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.pullLabelsToROIManager(labelmap_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 
 % cleanup memory on GPU
 clij2.release(labelmap_input);
-```
-
+</pre>
 
 </details>
 
@@ -80,13 +76,12 @@ clij2.release(labelmap_input);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.pullLabelsToROIManager(labelmap_input);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -94,20 +89,19 @@ clij2 = CLICY.getInstance();
 
 // get input parameters
 labelmap_input_sequence = getSequence();labelmap_input = clij2.pushSequence(labelmap_input_sequence);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.pullLabelsToROIManager(labelmap_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 
 // cleanup memory on GPU
 clij2.release(labelmap_input);
-```
-
+</pre>
 
 </details>
 

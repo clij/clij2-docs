@@ -17,8 +17,7 @@ Ext.CLIJ2_maximumYProjection(Image source, ByRef Image destination_max);
 <summary>
 clij2.maximumYProjection(source, destination_max);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -26,14 +25,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination_max = clij2.create(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.maximumYProjection(source, destination_max);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destination_maxImagePlus = clij2.pull(destination_max);
 destination_maxImagePlus.show();
@@ -41,8 +40,7 @@ destination_maxImagePlus.show();
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination_max);
-```
-
+</pre>
 
 </details>
 
@@ -56,29 +54,27 @@ clij2.release(destination_max);
 <summary>
 clij2.maximumYProjection(source, destination_max);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination_max = clij2.create(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.maximumYProjection(source, destination_max);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination_max = clij2.pullMat(destination_max)
 
 % cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination_max);
-```
-
+</pre>
 
 </details>
 
@@ -87,13 +83,12 @@ clij2.release(destination_max);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.maximumYProjection(source, destination_max);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -102,22 +97,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 destination_max = clij2.create(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.maximumYProjection(source, destination_max);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_max_sequence = clij2.pullSequence(destination_max)
 Icy.addSequence(destination_max_sequence
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination_max);
-```
-
+</pre>
 
 </details>
 

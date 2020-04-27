@@ -18,8 +18,7 @@ Ext.CLIJ2_downsample3D(Image source, Image destination, Number factorX, Number f
 <summary>
 clij2.downsample3D(source, destination, factorX, factorY, factorZ);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -30,14 +29,14 @@ destination = clij2.create(source);
 float factorX = 1.0;
 float factorY = 2.0;
 float factorZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.downsample3D(source, destination, factorX, factorY, factorZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -45,8 +44,7 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -60,8 +58,7 @@ clij2.release(destination);
 <summary>
 clij2.downsample3D(source, destination, factorX, factorY, factorZ);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -70,22 +67,21 @@ destination = clij2.create(source);
 factorX = 1.0;
 factorY = 2.0;
 factorZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.downsample3D(source, destination, factorX, factorY, factorZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -94,13 +90,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.downsample3D(source, destination, factorX, factorY, factorZ);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -112,22 +107,21 @@ destination = clij2.create(source);
 factorX = 1.0;
 factorY = 2.0;
 factorZ = 3.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.downsample3D(source, destination, factorX, factorY, factorZ);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

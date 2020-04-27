@@ -26,8 +26,7 @@ Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destin
 <summary>
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -36,14 +35,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer matrix1 = clij2.push(matrix1ImagePlus);
 ClearCLBuffer matrix2 = clij2.push(matrix2ImagePlus);
 matrix_destination = clij2.create(matrix1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 matrix_destinationImagePlus = clij2.pull(matrix_destination);
 matrix_destinationImagePlus.show();
@@ -52,8 +51,7 @@ matrix_destinationImagePlus.show();
 clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
-```
-
+</pre>
 
 </details>
 
@@ -67,22 +65,21 @@ clij2.release(matrix_destination);
 <summary>
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 matrix1 = clij2.pushMat(matrix1_matrix);
 matrix2 = clij2.pushMat(matrix2_matrix);
 matrix_destination = clij2.create(matrix1);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 matrix_destination = clij2.pullMat(matrix_destination)
 
@@ -90,8 +87,7 @@ matrix_destination = clij2.pullMat(matrix_destination)
 clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
-```
-
+</pre>
 
 </details>
 
@@ -100,13 +96,12 @@ clij2.release(matrix_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -116,14 +111,14 @@ clij2 = CLICY.getInstance();
 matrix1_sequence = getSequence();matrix1 = clij2.pushSequence(matrix1_sequence);
 matrix2_sequence = getSequence();matrix2 = clij2.pushSequence(matrix2_sequence);
 matrix_destination = clij2.create(matrix1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 matrix_destination_sequence = clij2.pullSequence(matrix_destination)
 Icy.addSequence(matrix_destination_sequence
@@ -131,8 +126,7 @@ Icy.addSequence(matrix_destination_sequence
 clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
-```
-
+</pre>
 
 </details>
 

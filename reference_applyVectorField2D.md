@@ -25,8 +25,7 @@ Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, Image d
 <summary>
 clij2.applyVectorField2D(source, vectorX, vectorY, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -36,14 +35,14 @@ ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer vectorX = clij2.push(vectorXImagePlus);
 ClearCLBuffer vectorY = clij2.push(vectorYImagePlus);
 destination = clij2.create(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.applyVectorField2D(source, vectorX, vectorY, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -53,8 +52,7 @@ clij2.release(source);
 clij2.release(vectorX);
 clij2.release(vectorY);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -68,8 +66,7 @@ clij2.release(destination);
 <summary>
 clij2.applyVectorField2D(source, vectorX, vectorY, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -77,14 +74,14 @@ source = clij2.pushMat(source_matrix);
 vectorX = clij2.pushMat(vectorX_matrix);
 vectorY = clij2.pushMat(vectorY_matrix);
 destination = clij2.create(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.applyVectorField2D(source, vectorX, vectorY, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -93,8 +90,7 @@ clij2.release(source);
 clij2.release(vectorX);
 clij2.release(vectorY);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -103,13 +99,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.applyVectorField2D(source, vectorX, vectorY, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -120,14 +115,14 @@ source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 vectorX_sequence = getSequence();vectorX = clij2.pushSequence(vectorX_sequence);
 vectorY_sequence = getSequence();vectorY = clij2.pushSequence(vectorY_sequence);
 destination = clij2.create(source);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.applyVectorField2D(source, vectorX, vectorY, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -136,8 +131,7 @@ clij2.release(source);
 clij2.release(vectorX);
 clij2.release(vectorY);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

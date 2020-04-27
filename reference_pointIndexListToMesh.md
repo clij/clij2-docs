@@ -17,8 +17,7 @@ Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, ByRef Image mes
 <summary>
 clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -27,14 +26,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer indexList = clij2.push(indexListImagePlus);
 mesh_destination = clij2.create(pointlist);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 mesh_destinationImagePlus = clij2.pull(mesh_destination);
 mesh_destinationImagePlus.show();
@@ -43,8 +42,7 @@ mesh_destinationImagePlus.show();
 clij2.release(pointlist);
 clij2.release(indexList);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 
@@ -58,22 +56,21 @@ clij2.release(mesh_destination);
 <summary>
 clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 pointlist = clij2.pushMat(pointlist_matrix);
 indexList = clij2.pushMat(indexList_matrix);
 mesh_destination = clij2.create(pointlist);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 mesh_destination = clij2.pullMat(mesh_destination)
 
@@ -81,8 +78,7 @@ mesh_destination = clij2.pullMat(mesh_destination)
 clij2.release(pointlist);
 clij2.release(indexList);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 
@@ -91,13 +87,12 @@ clij2.release(mesh_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -107,14 +102,14 @@ clij2 = CLICY.getInstance();
 pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
 indexList_sequence = getSequence();indexList = clij2.pushSequence(indexList_sequence);
 mesh_destination = clij2.create(pointlist);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 mesh_destination_sequence = clij2.pullSequence(mesh_destination)
 Icy.addSequence(mesh_destination_sequence
@@ -122,8 +117,7 @@ Icy.addSequence(mesh_destination_sequence
 clij2.release(pointlist);
 clij2.release(indexList);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 

@@ -29,8 +29,7 @@ Ext.CLIJ2_minimumOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Ima
 <summary>
 clij2.minimumOfTouchingNeighbors(values, touch_matrix, minimum_values_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -39,14 +38,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer values = clij2.push(valuesImagePlus);
 ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
 minimum_values_destination = clij2.create(values);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.minimumOfTouchingNeighbors(values, touch_matrix, minimum_values_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 minimum_values_destinationImagePlus = clij2.pull(minimum_values_destination);
 minimum_values_destinationImagePlus.show();
@@ -55,8 +54,7 @@ minimum_values_destinationImagePlus.show();
 clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(minimum_values_destination);
-```
-
+</pre>
 
 </details>
 
@@ -70,22 +68,21 @@ clij2.release(minimum_values_destination);
 <summary>
 clij2.minimumOfTouchingNeighbors(values, touch_matrix, minimum_values_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 values = clij2.pushMat(values_matrix);
 touch_matrix = clij2.pushMat(touch_matrix_matrix);
 minimum_values_destination = clij2.create(values);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.minimumOfTouchingNeighbors(values, touch_matrix, minimum_values_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 minimum_values_destination = clij2.pullMat(minimum_values_destination)
 
@@ -93,8 +90,7 @@ minimum_values_destination = clij2.pullMat(minimum_values_destination)
 clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(minimum_values_destination);
-```
-
+</pre>
 
 </details>
 
@@ -103,13 +99,12 @@ clij2.release(minimum_values_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.minimumOfTouchingNeighbors(values, touch_matrix, minimum_values_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -119,14 +114,14 @@ clij2 = CLICY.getInstance();
 values_sequence = getSequence();values = clij2.pushSequence(values_sequence);
 touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 minimum_values_destination = clij2.create(values);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.minimumOfTouchingNeighbors(values, touch_matrix, minimum_values_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 minimum_values_destination_sequence = clij2.pullSequence(minimum_values_destination)
 Icy.addSequence(minimum_values_destination_sequence
@@ -134,8 +129,7 @@ Icy.addSequence(minimum_values_destination_sequence
 clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(minimum_values_destination);
-```
-
+</pre>
 
 </details>
 

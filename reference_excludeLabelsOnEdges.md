@@ -23,8 +23,7 @@ Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, ByRef Image label_map_dest
 <summary>
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -32,14 +31,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer label_map_input = clij2.push(label_map_inputImagePlus);
 label_map_destination = clij2.create(label_map_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 label_map_destinationImagePlus = clij2.pull(label_map_destination);
 label_map_destinationImagePlus.show();
@@ -47,8 +46,7 @@ label_map_destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
-```
-
+</pre>
 
 </details>
 
@@ -62,29 +60,27 @@ clij2.release(label_map_destination);
 <summary>
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 label_map_input = clij2.pushMat(label_map_input_matrix);
 label_map_destination = clij2.create(label_map_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 label_map_destination = clij2.pullMat(label_map_destination)
 
 % cleanup memory on GPU
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
-```
-
+</pre>
 
 </details>
 
@@ -93,13 +89,12 @@ clij2.release(label_map_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -108,22 +103,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 label_map_input_sequence = getSequence();label_map_input = clij2.pushSequence(label_map_input_sequence);
 label_map_destination = clij2.create(label_map_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 label_map_destination_sequence = clij2.pullSequence(label_map_destination)
 Icy.addSequence(label_map_destination_sequence
 // cleanup memory on GPU
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
-```
-
+</pre>
 
 </details>
 

@@ -19,8 +19,7 @@ Ext.CLIJ2_divideImages(Image divident, Image divisor, Image destination);
 <summary>
 clij2.divideImages(divident, divisor, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -29,14 +28,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer divident = clij2.push(dividentImagePlus);
 ClearCLBuffer divisor = clij2.push(divisorImagePlus);
 destination = clij2.create(divident);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.divideImages(divident, divisor, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -45,8 +44,7 @@ destinationImagePlus.show();
 clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -60,22 +58,21 @@ clij2.release(destination);
 <summary>
 clij2.divideImages(divident, divisor, destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 divident = clij2.pushMat(divident_matrix);
 divisor = clij2.pushMat(divisor_matrix);
 destination = clij2.create(divident);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.divideImages(divident, divisor, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
@@ -83,8 +80,7 @@ destination = clij2.pullMat(destination)
 clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -93,13 +89,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.divideImages(divident, divisor, destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -109,14 +104,14 @@ clij2 = CLICY.getInstance();
 divident_sequence = getSequence();divident = clij2.pushSequence(divident_sequence);
 divisor_sequence = getSequence();divisor = clij2.pushSequence(divisor_sequence);
 destination = clij2.create(divident);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.divideImages(divident, divisor, destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
@@ -124,8 +119,7 @@ Icy.addSequence(destination_sequence
 clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

@@ -28,8 +28,7 @@ Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, ByRef Image mes
 <summary>
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -38,14 +37,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
 mesh_destination = clij2.create(pointlist);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 mesh_destinationImagePlus = clij2.pull(mesh_destination);
 mesh_destinationImagePlus.show();
@@ -54,8 +53,7 @@ mesh_destinationImagePlus.show();
 clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 
@@ -69,22 +67,21 @@ clij2.release(mesh_destination);
 <summary>
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 pointlist = clij2.pushMat(pointlist_matrix);
 touch_matrix = clij2.pushMat(touch_matrix_matrix);
 mesh_destination = clij2.create(pointlist);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 mesh_destination = clij2.pullMat(mesh_destination)
 
@@ -92,8 +89,7 @@ mesh_destination = clij2.pullMat(mesh_destination)
 clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 
@@ -102,13 +98,12 @@ clij2.release(mesh_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -118,14 +113,14 @@ clij2 = CLICY.getInstance();
 pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
 touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 mesh_destination = clij2.create(pointlist);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 mesh_destination_sequence = clij2.pullSequence(mesh_destination)
 Icy.addSequence(mesh_destination_sequence
@@ -133,8 +128,7 @@ Icy.addSequence(mesh_destination_sequence
 clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
-```
-
+</pre>
 
 </details>
 

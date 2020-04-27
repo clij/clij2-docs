@@ -17,29 +17,27 @@ Ext.CLIJ2_pullAsROI(Image binary_input);
 <summary>
 clij2.pullAsROI(binary_input);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer binary_input = clij2.push(binary_inputImagePlus);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 Roi resultPullAsROI = clij2.pullAsROI(binary_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 System.out.println(resultPullAsROI);
 
 // cleanup memory on GPU
 clij2.release(binary_input);
-```
-
+</pre>
 
 </details>
 
@@ -53,27 +51,25 @@ clij2.release(binary_input);
 <summary>
 clij2.pullAsROI(binary_input);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 binary_input = clij2.pushMat(binary_input_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 Roi resultPullAsROI = clij2.pullAsROI(binary_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 System.out.println(resultPullAsROI);
 
 % cleanup memory on GPU
 clij2.release(binary_input);
-```
-
+</pre>
 
 </details>
 
@@ -82,13 +78,12 @@ clij2.release(binary_input);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.pullAsROI(binary_input);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -96,21 +91,20 @@ clij2 = CLICY.getInstance();
 
 // get input parameters
 binary_input_sequence = getSequence();binary_input = clij2.pushSequence(binary_input_sequence);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 Roi resultPullAsROI = clij2.pullAsROI(binary_input);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 System.out.println(resultPullAsROI);
 
 // cleanup memory on GPU
 clij2.release(binary_input);
-```
-
+</pre>
 
 </details>
 

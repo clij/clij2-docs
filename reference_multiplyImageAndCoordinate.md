@@ -17,8 +17,7 @@ Ext.CLIJ2_multiplyImageAndCoordinate(Image source, ByRef Image destination, Numb
 <summary>
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -27,14 +26,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
 int dimension = 10;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -42,8 +41,7 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -57,30 +55,28 @@ clij2.release(destination);
 <summary>
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
 dimension = 10;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -89,13 +85,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -105,22 +100,21 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
 dimension = 10;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.multiplyImageAndCoordinate(source, destination, dimension);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

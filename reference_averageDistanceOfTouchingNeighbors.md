@@ -26,8 +26,7 @@ Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 <summary>
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -36,14 +35,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
 ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
 average_distancelist_destination = clij2.create(distance_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 average_distancelist_destinationImagePlus = clij2.pull(average_distancelist_destination);
 average_distancelist_destinationImagePlus.show();
@@ -52,8 +51,7 @@ average_distancelist_destinationImagePlus.show();
 clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
-```
-
+</pre>
 
 </details>
 
@@ -67,22 +65,21 @@ clij2.release(average_distancelist_destination);
 <summary>
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 distance_matrix = clij2.pushMat(distance_matrix_matrix);
 touch_matrix = clij2.pushMat(touch_matrix_matrix);
 average_distancelist_destination = clij2.create(distance_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 average_distancelist_destination = clij2.pullMat(average_distancelist_destination)
 
@@ -90,8 +87,7 @@ average_distancelist_destination = clij2.pullMat(average_distancelist_destinatio
 clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
-```
-
+</pre>
 
 </details>
 
@@ -100,13 +96,12 @@ clij2.release(average_distancelist_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -116,14 +111,14 @@ clij2 = CLICY.getInstance();
 distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 average_distancelist_destination = clij2.create(distance_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 average_distancelist_destination_sequence = clij2.pullSequence(average_distancelist_destination)
 Icy.addSequence(average_distancelist_destination_sequence
@@ -131,8 +126,7 @@ Icy.addSequence(average_distancelist_destination_sequence
 clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
-```
-
+</pre>
 
 </details>
 

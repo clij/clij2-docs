@@ -19,8 +19,7 @@ Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 <summary>
 clij2.matrixEqual(input1, input2, tolerance);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -29,21 +28,20 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer input1 = clij2.push(input1ImagePlus);
 ClearCLBuffer input2 = clij2.push(input2ImagePlus);
 float tolerance = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.matrixEqual(input1, input2, tolerance);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 
 // cleanup memory on GPU
 clij2.release(input1);
 clij2.release(input2);
-```
-
+</pre>
 
 </details>
 
@@ -57,29 +55,27 @@ clij2.release(input2);
 <summary>
 clij2.matrixEqual(input1, input2, tolerance);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 input1 = clij2.pushMat(input1_matrix);
 input2 = clij2.pushMat(input2_matrix);
 tolerance = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.matrixEqual(input1, input2, tolerance);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 
 % cleanup memory on GPU
 clij2.release(input1);
 clij2.release(input2);
-```
-
+</pre>
 
 </details>
 
@@ -88,13 +84,12 @@ clij2.release(input2);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.matrixEqual(input1, input2, tolerance);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -104,21 +99,20 @@ clij2 = CLICY.getInstance();
 input1_sequence = getSequence();input1 = clij2.pushSequence(input1_sequence);
 input2_sequence = getSequence();input2 = clij2.pushSequence(input2_sequence);
 tolerance = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.matrixEqual(input1, input2, tolerance);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 
 // cleanup memory on GPU
 clij2.release(input1);
 clij2.release(input2);
-```
-
+</pre>
 
 </details>
 

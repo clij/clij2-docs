@@ -29,8 +29,7 @@ Ext.CLIJ2_labelVoronoiOctagon(Image label_map, ByRef Image label_voronoi_destina
 <summary>
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -38,14 +37,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
 label_voronoi_destination = clij2.create(label_map);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 label_voronoi_destinationImagePlus = clij2.pull(label_voronoi_destination);
 label_voronoi_destinationImagePlus.show();
@@ -53,8 +52,7 @@ label_voronoi_destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);
-```
-
+</pre>
 
 </details>
 
@@ -68,29 +66,27 @@ clij2.release(label_voronoi_destination);
 <summary>
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 label_map = clij2.pushMat(label_map_matrix);
 label_voronoi_destination = clij2.create(label_map);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 label_voronoi_destination = clij2.pullMat(label_voronoi_destination)
 
 % cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);
-```
-
+</pre>
 
 </details>
 
@@ -99,13 +95,12 @@ clij2.release(label_voronoi_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -114,22 +109,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 label_map_sequence = getSequence();label_map = clij2.pushSequence(label_map_sequence);
 label_voronoi_destination = clij2.create(label_map);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 label_voronoi_destination_sequence = clij2.pullSequence(label_voronoi_destination)
 Icy.addSequence(label_voronoi_destination_sequence
 // cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);
-```
-
+</pre>
 
 </details>
 

@@ -24,8 +24,7 @@ Ext.CLIJ2_rotate2D(Image source, Image destination, Number angle, Boolean rotate
 <summary>
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -35,14 +34,14 @@ ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
 float angle = 1.0;
 boolean rotateAroundCenter = true;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
@@ -50,8 +49,7 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -65,8 +63,7 @@ clij2.release(destination);
 <summary>
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
@@ -74,22 +71,21 @@ source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
 angle = 1.0;
 rotateAroundCenter = true;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 
@@ -98,13 +94,12 @@ clij2.release(destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -115,22 +110,21 @@ source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
 angle = 1.0;
 rotateAroundCenter = true;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.rotate2D(source, destination, angle, rotateAroundCenter);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);
-```
-
+</pre>
 
 </details>
 

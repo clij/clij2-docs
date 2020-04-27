@@ -30,8 +30,7 @@ Ext.CLIJ2_generateTouchMatrix(Image label_map, ByRef Image touch_matrix_destinat
 <summary>
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -39,14 +38,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
 touch_matrix_destination = clij2.create(label_map);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 touch_matrix_destinationImagePlus = clij2.pull(touch_matrix_destination);
 touch_matrix_destinationImagePlus.show();
@@ -54,8 +53,7 @@ touch_matrix_destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
-```
-
+</pre>
 
 </details>
 
@@ -69,29 +67,27 @@ clij2.release(touch_matrix_destination);
 <summary>
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 label_map = clij2.pushMat(label_map_matrix);
 touch_matrix_destination = clij2.create(label_map);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 touch_matrix_destination = clij2.pullMat(touch_matrix_destination)
 
 % cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
-```
-
+</pre>
 
 </details>
 
@@ -100,13 +96,12 @@ clij2.release(touch_matrix_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -115,22 +110,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 label_map_sequence = getSequence();label_map = clij2.pushSequence(label_map_sequence);
 touch_matrix_destination = clij2.create(label_map);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.generateTouchMatrix(label_map, touch_matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 touch_matrix_destination_sequence = clij2.pullSequence(touch_matrix_destination)
 Icy.addSequence(touch_matrix_destination_sequence
 // cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
-```
-
+</pre>
 
 </details>
 

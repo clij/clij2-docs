@@ -22,8 +22,7 @@ Ext.CLIJ2_setWhereXgreaterThanY(Image source, Number value);
 <summary>
 clij2.setWhereXgreaterThanY(source, value);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -31,20 +30,19 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 float value = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.setWhereXgreaterThanY(source, value);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 
 // cleanup memory on GPU
 clij2.release(source);
-```
-
+</pre>
 
 </details>
 
@@ -58,27 +56,25 @@ clij2.release(source);
 <summary>
 clij2.setWhereXgreaterThanY(source, value);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
 value = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.setWhereXgreaterThanY(source, value);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 
 % cleanup memory on GPU
 clij2.release(source);
-```
-
+</pre>
 
 </details>
 
@@ -87,13 +83,12 @@ clij2.release(source);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.setWhereXgreaterThanY(source, value);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -102,20 +97,19 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 value = 1.0;
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.setWhereXgreaterThanY(source, value);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 
 // cleanup memory on GPU
 clij2.release(source);
-```
-
+</pre>
 
 </details>
 

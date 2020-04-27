@@ -30,8 +30,7 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 <summary>
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -40,14 +39,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer coordinate_list1 = clij2.push(coordinate_list1ImagePlus);
 ClearCLBuffer coordinate_list2 = clij2.push(coordinate_list2ImagePlus);
 distance_matrix_destination = clij2.create(coordinate_list1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 distance_matrix_destinationImagePlus = clij2.pull(distance_matrix_destination);
 distance_matrix_destinationImagePlus.show();
@@ -56,8 +55,7 @@ distance_matrix_destinationImagePlus.show();
 clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
-```
-
+</pre>
 
 </details>
 
@@ -71,22 +69,21 @@ clij2.release(distance_matrix_destination);
 <summary>
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 coordinate_list1 = clij2.pushMat(coordinate_list1_matrix);
 coordinate_list2 = clij2.pushMat(coordinate_list2_matrix);
 distance_matrix_destination = clij2.create(coordinate_list1);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 distance_matrix_destination = clij2.pullMat(distance_matrix_destination)
 
@@ -94,8 +91,7 @@ distance_matrix_destination = clij2.pullMat(distance_matrix_destination)
 clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
-```
-
+</pre>
 
 </details>
 
@@ -104,13 +100,12 @@ clij2.release(distance_matrix_destination);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -120,14 +115,14 @@ clij2 = CLICY.getInstance();
 coordinate_list1_sequence = getSequence();coordinate_list1 = clij2.pushSequence(coordinate_list1_sequence);
 coordinate_list2_sequence = getSequence();coordinate_list2 = clij2.pushSequence(coordinate_list2_sequence);
 distance_matrix_destination = clij2.create(coordinate_list1);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 distance_matrix_destination_sequence = clij2.pullSequence(distance_matrix_destination)
 Icy.addSequence(distance_matrix_destination_sequence
@@ -135,8 +130,7 @@ Icy.addSequence(distance_matrix_destination_sequence
 clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
-```
-
+</pre>
 
 </details>
 

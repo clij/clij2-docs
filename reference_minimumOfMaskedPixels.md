@@ -19,8 +19,7 @@ Ext.CLIJ2_minimumOfMaskedPixels(Image source, Image mask);
 <summary>
 clij2.minimumOfMaskedPixels(source, mask);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
@@ -28,22 +27,21 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer mask = clij2.push(maskImagePlus);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 double resultMinimumOfMaskedPixels = clij2.minimumOfMaskedPixels(source, mask);
-```
+</pre>
 
-```
+<pre class="highlight">
 //show result
 System.out.println(resultMinimumOfMaskedPixels);
 
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(mask);
-```
-
+</pre>
 
 </details>
 
@@ -57,29 +55,27 @@ clij2.release(mask);
 <summary>
 clij2.minimumOfMaskedPixels(source, mask);
 </summary>
-```
-% init CLIJ and GPU
+<pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
 mask = clij2.pushMat(mask_matrix);
-```
+</pre>
 
-```
+<pre class="highlight">
 % Execute operation on GPU
 double resultMinimumOfMaskedPixels = clij2.minimumOfMaskedPixels(source, mask);
-```
+</pre>
 
-```
+<pre class="highlight">
 % show result
 System.out.println(resultMinimumOfMaskedPixels);
 
 % cleanup memory on GPU
 clij2.release(source);
 clij2.release(mask);
-```
-
+</pre>
 
 </details>
 
@@ -88,13 +84,12 @@ clij2.release(mask);
 ### Usage in Icy
 
 
-details>
+<details>
 
 <summary>
 clij2.minimumOfMaskedPixels(source, mask);
 </summary>
-```
-// init CLIJ and GPU
+<pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
 importClass(Packages.icy.main.Icy);
 
@@ -103,22 +98,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
 mask_sequence = getSequence();mask = clij2.pushSequence(mask_sequence);
-```
+</pre>
 
-```
+<pre class="highlight">
 // Execute operation on GPU
 double resultMinimumOfMaskedPixels = clij2.minimumOfMaskedPixels(source, mask);
-```
+</pre>
 
-```
+<pre class="highlight">
 // show result
 System.out.println(resultMinimumOfMaskedPixels);
 
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(mask);
-```
-
+</pre>
 
 </details>
 
