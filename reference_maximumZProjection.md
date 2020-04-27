@@ -21,6 +21,8 @@ Ext.CLIJ2_maximumZProjection(Image source, Image destination_max);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -58,6 +60,8 @@ clij2.release(destination_max);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -89,6 +93,8 @@ clij2.release(destination_max);
 </pre>
 
 </details>
+
+
 
 
 

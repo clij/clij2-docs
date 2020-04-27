@@ -18,6 +18,8 @@ Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -57,6 +59,8 @@ clij2.release(average_distancelist_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -90,6 +94,8 @@ clij2.release(average_distancelist_destination);
 </pre>
 
 </details>
+
+
 
 
 

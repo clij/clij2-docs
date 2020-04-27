@@ -9,6 +9,8 @@ Ext.CLIJ2_flip(Image source, Image destination, Boolean flipX, Boolean flipY);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -48,6 +50,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

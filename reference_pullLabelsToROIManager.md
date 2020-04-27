@@ -9,6 +9,8 @@ Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -42,6 +44,8 @@ clij2.release(labelmap_input);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -70,6 +74,8 @@ clij2.release(labelmap_input);
 </pre>
 
 </details>
+
+
 
 
 

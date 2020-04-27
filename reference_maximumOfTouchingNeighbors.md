@@ -21,6 +21,8 @@ Ext.CLIJ2_maximumOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Ima
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -60,6 +62,8 @@ clij2.release(maximum_values_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -93,6 +97,8 @@ clij2.release(maximum_values_destination);
 </pre>
 
 </details>
+
+
 
 
 

@@ -20,6 +20,8 @@ Ext.CLIJ2_rotate3D(Image source, Image destination, Number angleX, Number angleY
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -61,6 +63,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -96,6 +100,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

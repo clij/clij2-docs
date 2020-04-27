@@ -16,6 +16,8 @@ Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, ByRef Ima
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -56,6 +58,8 @@ clij2.release(mesh_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -90,6 +94,8 @@ clij2.release(mesh_destination);
 </pre>
 
 </details>
+
+
 
 
 

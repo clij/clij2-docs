@@ -12,6 +12,8 @@ Ext.CLIJ2_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image des
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -51,6 +53,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -84,6 +88,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

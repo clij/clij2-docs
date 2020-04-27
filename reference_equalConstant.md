@@ -11,6 +11,8 @@ Ext.CLIJ2_equalConstant(Image source, ByRef Image destination, Number constant);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -49,6 +51,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

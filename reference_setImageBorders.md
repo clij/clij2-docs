@@ -9,6 +9,8 @@ Ext.CLIJ2_setImageBorders(Image destination, Number value);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -45,6 +47,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -75,6 +79,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

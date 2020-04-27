@@ -22,6 +22,8 @@ Ext.CLIJ2_multiplyImageAndScalar(Image source, Image destination, Number scalar)
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -60,6 +62,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -92,6 +96,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

@@ -9,6 +9,8 @@ Ext.CLIJ2_openingDiamond(Image input, ByRef Image destination, Number number_of_
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -47,6 +49,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -79,6 +83,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

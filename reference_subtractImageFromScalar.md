@@ -15,6 +15,8 @@ Ext.CLIJ2_subtractImageFromScalar(Image input, ByRef Image destination, Number s
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -53,6 +55,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -85,6 +89,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

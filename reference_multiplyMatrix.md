@@ -18,6 +18,8 @@ Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destin
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -57,6 +59,8 @@ clij2.release(matrix_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -90,6 +94,8 @@ clij2.release(matrix_destination);
 </pre>
 
 </details>
+
+
 
 
 

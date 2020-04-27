@@ -11,6 +11,8 @@ Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -47,6 +49,8 @@ clij2.release(input2);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -78,6 +82,8 @@ clij2.release(input2);
 </pre>
 
 </details>
+
+
 
 
 

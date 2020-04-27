@@ -12,6 +12,8 @@ Ext.CLIJ2_median3DBox(Image source, Image destination, Number radiusX, Number ra
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -52,6 +54,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -86,6 +90,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

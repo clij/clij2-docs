@@ -13,6 +13,8 @@ Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, ByRef Image labeling_de
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(labeling_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(labeling_destination);
 </pre>
 
 </details>
+
+
 
 
 

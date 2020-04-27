@@ -17,6 +17,8 @@ Ext.CLIJ2_excludeLabels(Image binary_flaglist, Image label_map_input, ByRef Imag
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -56,6 +58,8 @@ clij2.release(label_map_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -89,6 +93,8 @@ clij2.release(label_map_destination);
 </pre>
 
 </details>
+
+
 
 
 

@@ -9,6 +9,8 @@ Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, ByRef Image touching_neighb
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -46,6 +48,8 @@ clij2.release(touching_neighbors_count_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -77,6 +81,8 @@ clij2.release(touching_neighbors_count_destination);
 </pre>
 
 </details>
+
+
 
 
 

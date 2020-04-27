@@ -10,6 +10,8 @@ Ext.CLIJ2_mean3DBox(Image source, Image destination, Number radiusX, Number radi
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -84,6 +88,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

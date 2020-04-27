@@ -13,6 +13,8 @@ Ext.CLIJ2_topHatBox(Image input, ByRef Image destination, Number radiusX, Number
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -53,6 +55,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -87,6 +91,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

@@ -9,6 +9,8 @@ Ext.CLIJ2_detectLabelEdges(Image label_map, ByRef Image edge_image_destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -46,6 +48,8 @@ clij2.release(edge_image_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -77,6 +81,8 @@ clij2.release(edge_image_destination);
 </pre>
 
 </details>
+
+
 
 
 

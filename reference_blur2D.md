@@ -15,6 +15,8 @@ Ext.CLIJ2_blur2D(Image source, Image destination, Number sigmaX, Number sigmaY);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -54,6 +56,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -87,6 +91,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

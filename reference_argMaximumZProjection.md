@@ -10,6 +10,8 @@ Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image desti
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -51,6 +53,8 @@ clij2.release(destination_arg_max);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -85,6 +89,8 @@ clij2.release(destination_arg_max);
 </pre>
 
 </details>
+
+
 
 
 

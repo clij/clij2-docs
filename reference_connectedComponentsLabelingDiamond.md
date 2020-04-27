@@ -9,6 +9,8 @@ Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, ByRef Image lab
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -46,6 +48,8 @@ clij2.release(labeling_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -77,6 +81,8 @@ clij2.release(labeling_destination);
 </pre>
 
 </details>
+
+
 
 
 

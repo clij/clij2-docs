@@ -32,6 +32,8 @@ Ext.CLIJ2_replaceIntensities(Image input, Image new_values_vector, ByRef Image d
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -71,6 +73,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -104,6 +108,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

@@ -24,6 +24,8 @@ Ext.CLIJ2_automaticThreshold(Image input, Image destination, String method);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -61,6 +63,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -92,6 +96,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

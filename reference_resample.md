@@ -18,6 +18,8 @@ Ext.CLIJ2_resample(Image source, ByRef Image destination, Number factorX, Number
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -59,6 +61,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -94,6 +98,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

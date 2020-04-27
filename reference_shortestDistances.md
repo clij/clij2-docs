@@ -15,6 +15,8 @@ Ext.CLIJ2_shortestDistances(Image distance_matrix, ByRef Image destination_minim
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -52,6 +54,8 @@ clij2.release(destination_minimum_distances);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(destination_minimum_distances);
 </pre>
 
 </details>
+
+
 
 
 

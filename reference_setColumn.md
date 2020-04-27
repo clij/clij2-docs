@@ -11,6 +11,8 @@ Ext.CLIJ2_setColumn(Image source, Number columnIndex, Number value);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -46,6 +48,8 @@ clij2.release(source);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -76,6 +80,8 @@ clij2.release(source);
 </pre>
 
 </details>
+
+
 
 
 

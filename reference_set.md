@@ -11,6 +11,8 @@ Ext.CLIJ2_set(Image source, Number value);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -45,6 +47,8 @@ clij2.release(source);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -74,6 +78,8 @@ clij2.release(source);
 </pre>
 
 </details>
+
+
 
 
 

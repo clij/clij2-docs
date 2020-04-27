@@ -11,6 +11,8 @@ Ext.CLIJ2_addImagesWeighted(Image summand1, Image summand2, Image destination, N
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -52,6 +54,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -87,6 +91,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

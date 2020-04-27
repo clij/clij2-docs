@@ -9,6 +9,8 @@ Ext.CLIJ2_imageToStack(Image source, ByRef Image destination, Number num_slices)
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -47,6 +49,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -79,6 +83,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

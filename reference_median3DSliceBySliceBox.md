@@ -14,6 +14,8 @@ Ext.CLIJ2_median3DSliceBySliceBox(Image source, ByRef Image destination, Number 
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -53,6 +55,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -86,6 +90,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

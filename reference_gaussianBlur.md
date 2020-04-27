@@ -13,6 +13,8 @@ Ext.CLIJ2_gaussianBlur(Image source, ByRef Image destination, Number sigmaX, Num
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -52,6 +54,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -85,6 +89,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

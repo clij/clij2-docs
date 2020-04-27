@@ -9,6 +9,8 @@ Ext.CLIJ2_meanZProjectionBounded(Image source, ByRef Image destination_mean, Num
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -48,6 +50,8 @@ clij2.release(destination_mean);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(destination_mean);
 </pre>
 
 </details>
+
+
 
 
 

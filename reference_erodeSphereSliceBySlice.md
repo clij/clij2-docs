@@ -13,6 +13,8 @@ Ext.CLIJ2_erodeSphereSliceBySlice(Image source, Image destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

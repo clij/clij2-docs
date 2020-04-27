@@ -11,6 +11,8 @@ Ext.CLIJ2_minimumOfMaskedPixels(Image source, Image mask);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -47,6 +49,8 @@ clij2.release(mask);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -78,6 +82,8 @@ clij2.release(mask);
 </pre>
 
 </details>
+
+
 
 
 

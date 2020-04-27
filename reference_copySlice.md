@@ -29,6 +29,8 @@ Ext.CLIJ2_copySlice(Image source, Image destination, Number sliceIndex);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -67,6 +69,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -99,6 +103,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

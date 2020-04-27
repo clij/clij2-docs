@@ -18,6 +18,8 @@ Ext.CLIJ2_binaryXOr(Image operand1, Image operand2, Image destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -57,6 +59,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -90,6 +94,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

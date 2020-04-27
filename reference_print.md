@@ -14,6 +14,8 @@ Ext.CLIJ2_print(Image input);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -47,6 +49,8 @@ clij2.release(input);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -75,6 +79,8 @@ clij2.release(input);
 </pre>
 
 </details>
+
+
 
 
 

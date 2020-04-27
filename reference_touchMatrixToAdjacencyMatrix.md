@@ -9,6 +9,8 @@ Ext.CLIJ2_touchMatrixToAdjacencyMatrix(Image touch_matrix, ByRef Image adjacency
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -44,6 +46,8 @@ clij2.release(adjacency_matrix);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -74,6 +78,8 @@ clij2.release(adjacency_matrix);
 </pre>
 
 </details>
+
+
 
 
 

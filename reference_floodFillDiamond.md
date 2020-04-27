@@ -11,6 +11,8 @@ Ext.CLIJ2_floodFillDiamond(Image source, ByRef Image destination, Number value_t
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

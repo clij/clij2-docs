@@ -14,6 +14,8 @@ Ext.CLIJ2_translate2D(Image source, Image destination, Number translateX, Number
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -53,6 +55,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -86,6 +90,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

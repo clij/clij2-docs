@@ -11,6 +11,8 @@ Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

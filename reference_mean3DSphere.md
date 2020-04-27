@@ -10,6 +10,8 @@ Ext.CLIJ2_mean3DSphere(Image source, Image destination, Number radiusX, Number r
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -84,6 +88,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

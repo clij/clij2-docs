@@ -20,6 +20,8 @@ Ext.CLIJ2_labelSpots(Image input_spots, ByRef Image labelled_spots_destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -57,6 +59,8 @@ clij2.release(labelled_spots_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -88,6 +92,8 @@ clij2.release(labelled_spots_destination);
 </pre>
 
 </details>
+
+
 
 
 

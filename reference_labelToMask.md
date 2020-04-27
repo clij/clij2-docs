@@ -11,6 +11,8 @@ Ext.CLIJ2_labelToMask(Image label_map_source, ByRef Image mask_destination, Numb
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -49,6 +51,8 @@ clij2.release(mask_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(mask_destination);
 </pre>
 
 </details>
+
+
 
 
 

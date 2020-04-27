@@ -13,6 +13,8 @@ Ext.CLIJ2_maximumOctagon(Image input, ByRef Image destination, Number iterations
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -51,6 +53,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

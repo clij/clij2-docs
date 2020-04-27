@@ -22,6 +22,8 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -61,6 +63,8 @@ clij2.release(distance_matrix_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -94,6 +98,8 @@ clij2.release(distance_matrix_destination);
 </pre>
 
 </details>
+
+
 
 
 

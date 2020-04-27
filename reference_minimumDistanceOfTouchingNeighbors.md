@@ -9,6 +9,8 @@ Ext.CLIJ2_minimumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -48,6 +50,8 @@ clij2.release(minimum_distancelist_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(minimum_distancelist_destination);
 </pre>
 
 </details>
+
+
 
 
 

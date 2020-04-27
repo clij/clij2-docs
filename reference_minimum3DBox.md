@@ -14,6 +14,8 @@ Ext.CLIJ2_minimum3DBox(Image source, Image destination, Number radiusX, Number r
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -54,6 +56,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -88,6 +92,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

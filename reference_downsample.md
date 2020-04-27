@@ -10,6 +10,8 @@ Ext.CLIJ2_downsample(Image source, Image destination, Number factorX, Number fac
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -49,6 +51,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -82,6 +86,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

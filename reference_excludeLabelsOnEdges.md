@@ -15,6 +15,8 @@ Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, ByRef Image label_map_dest
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -52,6 +54,8 @@ clij2.release(label_map_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(label_map_destination);
 </pre>
 
 </details>
+
+
 
 
 

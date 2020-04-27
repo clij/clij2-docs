@@ -9,6 +9,8 @@ Ext.CLIJ2_countNonZeroVoxels3DSphere(Image source, Image destination, Number rad
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -49,6 +51,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

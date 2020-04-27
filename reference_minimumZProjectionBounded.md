@@ -9,6 +9,8 @@ Ext.CLIJ2_minimumZProjectionBounded(Image source, ByRef Image destination_min, N
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -48,6 +50,8 @@ clij2.release(destination_min);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(destination_min);
 </pre>
 
 </details>
+
+
 
 
 

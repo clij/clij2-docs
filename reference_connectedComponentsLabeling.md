@@ -24,6 +24,8 @@ Ext.CLIJ2_connectedComponentsLabeling(Image binary_input, ByRef Image labeling_d
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -61,6 +63,8 @@ clij2.release(labeling_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -92,6 +96,8 @@ clij2.release(labeling_destination);
 </pre>
 
 </details>
+
+
 
 
 

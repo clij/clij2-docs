@@ -9,6 +9,8 @@ Ext.CLIJ2_binarySubtract(Image minuend, Image subtrahend, ByRef Image destinatio
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -48,6 +50,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

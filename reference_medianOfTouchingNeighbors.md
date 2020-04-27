@@ -20,6 +20,8 @@ Ext.CLIJ2_medianOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Imag
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -59,6 +61,8 @@ clij2.release(mean_values_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -92,6 +96,8 @@ clij2.release(mean_values_destination);
 </pre>
 
 </details>
+
+
 
 
 

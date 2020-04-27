@@ -9,6 +9,8 @@ Ext.CLIJ2_paste3D(Image source, ByRef Image destination, Number destinationX, Nu
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -49,6 +51,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -83,6 +87,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

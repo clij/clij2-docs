@@ -21,6 +21,8 @@ Ext.CLIJ2_labelVoronoiOctagon(Image label_map, ByRef Image label_voronoi_destina
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -58,6 +60,8 @@ clij2.release(label_voronoi_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -89,6 +93,8 @@ clij2.release(label_voronoi_destination);
 </pre>
 
 </details>
+
+
 
 
 

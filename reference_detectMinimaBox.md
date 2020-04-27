@@ -10,6 +10,8 @@ Ext.CLIJ2_detectMinimaBox(Image source, Image destination, Number radius);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -48,6 +50,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -80,6 +84,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

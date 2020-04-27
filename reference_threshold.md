@@ -23,6 +23,8 @@ Ext.CLIJ2_threshold(Image source, Image destination, Number threshold);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -61,6 +63,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -93,6 +97,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

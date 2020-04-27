@@ -22,6 +22,8 @@ Ext.CLIJ2_generateTouchMatrix(Image label_map, ByRef Image touch_matrix_destinat
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -59,6 +61,8 @@ clij2.release(touch_matrix_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -90,6 +94,8 @@ clij2.release(touch_matrix_destination);
 </pre>
 
 </details>
+
+
 
 
 

@@ -14,6 +14,8 @@ Ext.CLIJ2_jaccardIndex(Image source1, Image source2);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -50,6 +52,8 @@ clij2.release(source2);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -81,6 +85,8 @@ clij2.release(source2);
 </pre>
 
 </details>
+
+
 
 
 

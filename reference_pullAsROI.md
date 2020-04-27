@@ -9,6 +9,8 @@ Ext.CLIJ2_pullAsROI(Image binary_input);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -43,6 +45,8 @@ clij2.release(binary_input);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -72,6 +76,8 @@ clij2.release(binary_input);
 </pre>
 
 </details>
+
+
 
 
 

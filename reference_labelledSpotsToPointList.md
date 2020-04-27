@@ -22,6 +22,8 @@ Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, ByRef Image desti
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -59,6 +61,8 @@ clij2.release(destination_pointlist);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -90,6 +94,8 @@ clij2.release(destination_pointlist);
 </pre>
 
 </details>
+
+
 
 
 

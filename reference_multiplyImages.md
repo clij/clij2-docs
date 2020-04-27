@@ -20,6 +20,8 @@ Ext.CLIJ2_multiplyImages(Image factor1, Image factor2, Image destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -59,6 +61,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -92,6 +96,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

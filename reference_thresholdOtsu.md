@@ -26,6 +26,8 @@ Ext.CLIJ2_thresholdOtsu(Image input, ByRef Image destination);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -63,6 +65,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -94,6 +98,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

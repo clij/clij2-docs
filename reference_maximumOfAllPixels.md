@@ -10,6 +10,8 @@ Ext.CLIJ2_maximumOfAllPixels(Image source);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -44,6 +46,8 @@ clij2.release(source);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -73,6 +77,8 @@ clij2.release(source);
 </pre>
 
 </details>
+
+
 
 
 

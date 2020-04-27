@@ -9,6 +9,8 @@ Ext.CLIJ2_minimumZProjection(Image source, Image destination_sum);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -46,6 +48,8 @@ clij2.release(destination_sum);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -77,6 +81,8 @@ clij2.release(destination_sum);
 </pre>
 
 </details>
+
+
 
 
 

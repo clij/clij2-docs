@@ -17,6 +17,8 @@ Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, Image d
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -58,6 +60,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -93,6 +97,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

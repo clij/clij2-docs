@@ -11,6 +11,8 @@ Ext.CLIJ2_differenceOfGaussian(Image input, ByRef Image destination, Number sigm
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -52,6 +54,8 @@ clij2.release(destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -87,6 +91,8 @@ clij2.release(destination);
 </pre>
 
 </details>
+
+
 
 
 

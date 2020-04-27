@@ -9,6 +9,8 @@ Ext.CLIJ2_setRampX(Image source);
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -42,6 +44,8 @@ clij2.release(source);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -70,6 +74,8 @@ clij2.release(source);
 </pre>
 
 </details>
+
+
 
 
 

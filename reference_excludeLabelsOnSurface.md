@@ -11,6 +11,8 @@ Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, ByRef I
 ```
 
 
+
+
 ### Usage in Java
 
 
@@ -53,6 +55,8 @@ clij2.release(label_map_destination);
 
 
 
+
+
 ### Usage in Matlab
 
 
@@ -89,6 +93,8 @@ clij2.release(label_map_destination);
 </pre>
 
 </details>
+
+
 
 
 
