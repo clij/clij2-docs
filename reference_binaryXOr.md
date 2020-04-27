@@ -18,34 +18,11 @@ Ext.CLIJ2_binaryXOr(Image operand1, Image operand2, Image destination);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-operand1 = clij2.pushMat(operand1);
-operand2 = clij2.pushMat(operand2);
-destination = clij2.create(operand1);
-```
-
-```
-% Execute operation on GPU
-clij2.binaryXOr(clij, operand1, operand2, destination);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(operand1);
-clij2.release(operand2);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.binaryXOr(operand1, operand2, destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -60,7 +37,7 @@ destination = clij2.create(operand1);
 
 ```
 // Execute operation on GPU
-clij2.binaryXOr(clij, operand1, operand2, destination);
+clij2.binaryXOr(operand1, operand2, destination);
 ```
 
 ```
@@ -73,6 +50,74 @@ clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.binaryXOr(operand1, operand2, destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+operand1 = clij2.pushMat(operand1_matrix);
+operand2 = clij2.pushMat(operand2_matrix);
+destination = clij2.create(operand1);
+```
+
+```
+% Execute operation on GPU
+clij2.binaryXOr(operand1, operand2, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(operand1);
+clij2.release(operand2);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.binaryXOr(operand1, operand2, destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+operand1_sequence = getSequence();operand1 = clij2.pushSequence(operand1_sequence);
+operand2_sequence = getSequence();operand2 = clij2.pushSequence(operand2_sequence);
+destination = clij2.create(operand1);
+```
+
+```
+// Execute operation on GPU
+clij2.binaryXOr(operand1, operand2, destination);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(operand1);
+clij2.release(operand2);
+clij2.release(destination);
+```
+</details>
 
 
 

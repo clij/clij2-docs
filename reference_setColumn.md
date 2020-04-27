@@ -11,31 +11,11 @@ Ext.CLIJ2_setColumn(Image source, Number columnIndex, Number value);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-columnIndex = 10;
-value = 1.0;
-```
-
-```
-% Execute operation on GPU
-clij2.setColumn(clij, source, columnIndex, value);
-```
-
-```
-% show result
-
-% cleanup memory on GPU
-clij2.release(source);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.setColumn(source, columnIndex, value);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -50,7 +30,7 @@ float value = 1.0;
 
 ```
 // Execute operation on GPU
-clij2.setColumn(clij, source, columnIndex, value);
+clij2.setColumn(source, columnIndex, value);
 ```
 
 ```
@@ -59,6 +39,68 @@ clij2.setColumn(clij, source, columnIndex, value);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.setColumn(source, columnIndex, value);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+columnIndex = 10;
+value = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.setColumn(source, columnIndex, value);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.setColumn(source, columnIndex, value);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+columnIndex = 10;
+value = 1.0;
+```
+
+```
+// Execute operation on GPU
+clij2.setColumn(source, columnIndex, value);
+```
+
+```
+// show result
+
+// cleanup memory on GPU
+clij2.release(source);
+```
+</details>
 
 
 

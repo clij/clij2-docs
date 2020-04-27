@@ -9,30 +9,11 @@ Ext.CLIJ2_pullAsROI(Image binary_input);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-binary_input = clij2.pushMat(binary_input);
-```
-
-```
-% Execute operation on GPU
-Roi resultPullAsROI = clij2.pullAsROI(clij, binary_input);
-```
-
-```
-% show result
-System.out.println(resultPullAsROI);
-
-% cleanup memory on GPU
-clij2.release(binary_input);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.pullAsROI(binary_input);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -45,7 +26,7 @@ ClearCLBuffer binary_input = clij2.push(binary_inputImagePlus);
 
 ```
 // Execute operation on GPU
-Roi resultPullAsROI = clij2.pullAsROI(clij, binary_input);
+Roi resultPullAsROI = clij2.pullAsROI(binary_input);
 ```
 
 ```
@@ -55,6 +36,66 @@ System.out.println(resultPullAsROI);
 // cleanup memory on GPU
 clij2.release(binary_input);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.pullAsROI(binary_input);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+binary_input = clij2.pushMat(binary_input_matrix);
+```
+
+```
+% Execute operation on GPU
+Roi resultPullAsROI = clij2.pullAsROI(binary_input);
+```
+
+```
+% show result
+System.out.println(resultPullAsROI);
+
+% cleanup memory on GPU
+clij2.release(binary_input);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.pullAsROI(binary_input);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+binary_input_sequence = getSequence();binary_input = clij2.pushSequence(binary_input_sequence);
+```
+
+```
+// Execute operation on GPU
+Roi resultPullAsROI = clij2.pullAsROI(binary_input);
+```
+
+```
+// show result
+System.out.println(resultPullAsROI);
+
+// cleanup memory on GPU
+clij2.release(binary_input);
+```
+</details>
 
 
 

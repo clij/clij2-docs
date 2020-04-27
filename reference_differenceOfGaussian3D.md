@@ -19,38 +19,11 @@ Ext.CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number si
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input = clij2.pushMat(input);
-destination = clij2.create(input);
-sigma1x = 1.0;
-sigma1y = 2.0;
-sigma1z = 3.0;
-sigma2x = 4.0;
-sigma2y = 5.0;
-sigma2z = 6.0;
-```
-
-```
-% Execute operation on GPU
-clij2.differenceOfGaussian3D(clij, input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(input);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -70,7 +43,7 @@ float sigma2z = 6.0;
 
 ```
 // Execute operation on GPU
-clij2.differenceOfGaussian3D(clij, input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
 ```
 
 ```
@@ -82,6 +55,82 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input_matrix);
+destination = clij2.create(input);
+sigma1x = 1.0;
+sigma1y = 2.0;
+sigma1z = 3.0;
+sigma2x = 4.0;
+sigma2y = 5.0;
+sigma2z = 6.0;
+```
+
+```
+% Execute operation on GPU
+clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
+destination = clij2.create(input);
+sigma1x = 1.0;
+sigma1y = 2.0;
+sigma1z = 3.0;
+sigma2x = 4.0;
+sigma2y = 5.0;
+sigma2z = 6.0;
+```
+
+```
+// Execute operation on GPU
+clij2.differenceOfGaussian3D(input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+</details>
 
 
 

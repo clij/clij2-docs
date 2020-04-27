@@ -9,29 +9,11 @@ Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-labelmap_input = clij2.pushMat(labelmap_input);
-```
-
-```
-% Execute operation on GPU
-clij2.pullLabelsToROIManager(clij, labelmap_input);
-```
-
-```
-% show result
-
-% cleanup memory on GPU
-clij2.release(labelmap_input);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.pullLabelsToROIManager(labelmap_input);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -44,7 +26,7 @@ ClearCLBuffer labelmap_input = clij2.push(labelmap_inputImagePlus);
 
 ```
 // Execute operation on GPU
-clij2.pullLabelsToROIManager(clij, labelmap_input);
+clij2.pullLabelsToROIManager(labelmap_input);
 ```
 
 ```
@@ -53,6 +35,64 @@ clij2.pullLabelsToROIManager(clij, labelmap_input);
 // cleanup memory on GPU
 clij2.release(labelmap_input);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.pullLabelsToROIManager(labelmap_input);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+labelmap_input = clij2.pushMat(labelmap_input_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.pullLabelsToROIManager(labelmap_input);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(labelmap_input);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.pullLabelsToROIManager(labelmap_input);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+labelmap_input_sequence = getSequence();labelmap_input = clij2.pushSequence(labelmap_input_sequence);
+```
+
+```
+// Execute operation on GPU
+clij2.pullLabelsToROIManager(labelmap_input);
+```
+
+```
+// show result
+
+// cleanup memory on GPU
+clij2.release(labelmap_input);
+```
+</details>
 
 
 

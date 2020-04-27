@@ -21,32 +21,11 @@ Ext.CLIJ2_spotsToPointList(Image input_spots, ByRef Image destination_pointlist)
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input_spots = clij2.pushMat(input_spots);
-destination_pointlist = clij2.create(input_spots);
-```
-
-```
-% Execute operation on GPU
-clij2.spotsToPointList(clij, input_spots, destination_pointlist);
-```
-
-```
-% show result
-destination_pointlist = clij2.pullMat(destination_pointlist)
-
-% cleanup memory on GPU
-clij2.release(input_spots);
-clij2.release(destination_pointlist);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.spotsToPointList(input_spots, destination_pointlist);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -60,7 +39,7 @@ destination_pointlist = clij2.create(input_spots);
 
 ```
 // Execute operation on GPU
-clij2.spotsToPointList(clij, input_spots, destination_pointlist);
+clij2.spotsToPointList(input_spots, destination_pointlist);
 ```
 
 ```
@@ -72,6 +51,70 @@ destination_pointlistImagePlus.show();
 clij2.release(input_spots);
 clij2.release(destination_pointlist);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.spotsToPointList(input_spots, destination_pointlist);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input_spots = clij2.pushMat(input_spots_matrix);
+destination_pointlist = clij2.create(input_spots);
+```
+
+```
+% Execute operation on GPU
+clij2.spotsToPointList(input_spots, destination_pointlist);
+```
+
+```
+% show result
+destination_pointlist = clij2.pullMat(destination_pointlist)
+
+% cleanup memory on GPU
+clij2.release(input_spots);
+clij2.release(destination_pointlist);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.spotsToPointList(input_spots, destination_pointlist);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_spots_sequence = getSequence();input_spots = clij2.pushSequence(input_spots_sequence);
+destination_pointlist = clij2.create(input_spots);
+```
+
+```
+// Execute operation on GPU
+clij2.spotsToPointList(input_spots, destination_pointlist);
+```
+
+```
+// show result
+destination_pointlist_sequence = clij2.pullSequence(destination_pointlist)
+Icy.addSequence(destination_pointlist_sequence
+// cleanup memory on GPU
+clij2.release(input_spots);
+clij2.release(destination_pointlist);
+```
+</details>
 
 
 

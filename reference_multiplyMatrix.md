@@ -18,34 +18,11 @@ Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destin
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-matrix1 = clij2.pushMat(matrix1);
-matrix2 = clij2.pushMat(matrix2);
-matrix_destination = clij2.create(matrix1);
-```
-
-```
-% Execute operation on GPU
-clij2.multiplyMatrix(clij, matrix1, matrix2, matrix_destination);
-```
-
-```
-% show result
-matrix_destination = clij2.pullMat(matrix_destination)
-
-% cleanup memory on GPU
-clij2.release(matrix1);
-clij2.release(matrix2);
-clij2.release(matrix_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -60,7 +37,7 @@ matrix_destination = clij2.create(matrix1);
 
 ```
 // Execute operation on GPU
-clij2.multiplyMatrix(clij, matrix1, matrix2, matrix_destination);
+clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 ```
 
 ```
@@ -73,6 +50,74 @@ clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+matrix1 = clij2.pushMat(matrix1_matrix);
+matrix2 = clij2.pushMat(matrix2_matrix);
+matrix_destination = clij2.create(matrix1);
+```
+
+```
+% Execute operation on GPU
+clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+```
+
+```
+% show result
+matrix_destination = clij2.pullMat(matrix_destination)
+
+% cleanup memory on GPU
+clij2.release(matrix1);
+clij2.release(matrix2);
+clij2.release(matrix_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+matrix1_sequence = getSequence();matrix1 = clij2.pushSequence(matrix1_sequence);
+matrix2_sequence = getSequence();matrix2 = clij2.pushSequence(matrix2_sequence);
+matrix_destination = clij2.create(matrix1);
+```
+
+```
+// Execute operation on GPU
+clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+```
+
+```
+// show result
+matrix_destination_sequence = clij2.pullSequence(matrix_destination)
+Icy.addSequence(matrix_destination_sequence
+// cleanup memory on GPU
+clij2.release(matrix1);
+clij2.release(matrix2);
+clij2.release(matrix_destination);
+```
+</details>
 
 
 

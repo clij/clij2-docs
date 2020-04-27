@@ -15,32 +15,11 @@ Ext.CLIJ2_shortestDistances(Image distance_matrix, ByRef Image destination_minim
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-distance_matrix = clij2.pushMat(distance_matrix);
-destination_minimum_distances = clij2.create(distance_matrix);
-```
-
-```
-% Execute operation on GPU
-clij2.shortestDistances(clij, distance_matrix, destination_minimum_distances);
-```
-
-```
-% show result
-destination_minimum_distances = clij2.pullMat(destination_minimum_distances)
-
-% cleanup memory on GPU
-clij2.release(distance_matrix);
-clij2.release(destination_minimum_distances);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -54,7 +33,7 @@ destination_minimum_distances = clij2.create(distance_matrix);
 
 ```
 // Execute operation on GPU
-clij2.shortestDistances(clij, distance_matrix, destination_minimum_distances);
+clij2.shortestDistances(distance_matrix, destination_minimum_distances);
 ```
 
 ```
@@ -66,6 +45,70 @@ destination_minimum_distancesImagePlus.show();
 clij2.release(distance_matrix);
 clij2.release(destination_minimum_distances);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+distance_matrix = clij2.pushMat(distance_matrix_matrix);
+destination_minimum_distances = clij2.create(distance_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+```
+
+```
+% show result
+destination_minimum_distances = clij2.pullMat(destination_minimum_distances)
+
+% cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(destination_minimum_distances);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+destination_minimum_distances = clij2.create(distance_matrix);
+```
+
+```
+// Execute operation on GPU
+clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+```
+
+```
+// show result
+destination_minimum_distances_sequence = clij2.pullSequence(destination_minimum_distances)
+Icy.addSequence(destination_minimum_distances_sequence
+// cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(destination_minimum_distances);
+```
+</details>
 
 
 

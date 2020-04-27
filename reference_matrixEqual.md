@@ -11,32 +11,11 @@ Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input1 = clij2.pushMat(input1);
-input2 = clij2.pushMat(input2);
-tolerance = 1.0;
-```
-
-```
-% Execute operation on GPU
-clij2.matrixEqual(clij, input1, input2, tolerance);
-```
-
-```
-% show result
-
-% cleanup memory on GPU
-clij2.release(input1);
-clij2.release(input2);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.matrixEqual(input1, input2, tolerance);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +30,7 @@ float tolerance = 1.0;
 
 ```
 // Execute operation on GPU
-clij2.matrixEqual(clij, input1, input2, tolerance);
+clij2.matrixEqual(input1, input2, tolerance);
 ```
 
 ```
@@ -61,6 +40,70 @@ clij2.matrixEqual(clij, input1, input2, tolerance);
 clij2.release(input1);
 clij2.release(input2);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.matrixEqual(input1, input2, tolerance);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input1 = clij2.pushMat(input1_matrix);
+input2 = clij2.pushMat(input2_matrix);
+tolerance = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.matrixEqual(input1, input2, tolerance);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(input1);
+clij2.release(input2);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.matrixEqual(input1, input2, tolerance);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input1_sequence = getSequence();input1 = clij2.pushSequence(input1_sequence);
+input2_sequence = getSequence();input2 = clij2.pushSequence(input2_sequence);
+tolerance = 1.0;
+```
+
+```
+// Execute operation on GPU
+clij2.matrixEqual(input1, input2, tolerance);
+```
+
+```
+// show result
+
+// cleanup memory on GPU
+clij2.release(input1);
+clij2.release(input2);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

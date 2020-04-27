@@ -22,34 +22,11 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-coordinate_list1 = clij2.pushMat(coordinate_list1);
-coordinate_list2 = clij2.pushMat(coordinate_list2);
-distance_matrix_destination = clij2.create(coordinate_list1);
-```
-
-```
-% Execute operation on GPU
-clij2.generateDistanceMatrix(clij, coordinate_list1, coordinate_list2, distance_matrix_destination);
-```
-
-```
-% show result
-distance_matrix_destination = clij2.pullMat(distance_matrix_destination)
-
-% cleanup memory on GPU
-clij2.release(coordinate_list1);
-clij2.release(coordinate_list2);
-clij2.release(distance_matrix_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -64,7 +41,7 @@ distance_matrix_destination = clij2.create(coordinate_list1);
 
 ```
 // Execute operation on GPU
-clij2.generateDistanceMatrix(clij, coordinate_list1, coordinate_list2, distance_matrix_destination);
+clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
 ```
 
 ```
@@ -77,6 +54,74 @@ clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);
 clij2.release(distance_matrix_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+coordinate_list1 = clij2.pushMat(coordinate_list1_matrix);
+coordinate_list2 = clij2.pushMat(coordinate_list2_matrix);
+distance_matrix_destination = clij2.create(coordinate_list1);
+```
+
+```
+% Execute operation on GPU
+clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+```
+
+```
+% show result
+distance_matrix_destination = clij2.pullMat(distance_matrix_destination)
+
+% cleanup memory on GPU
+clij2.release(coordinate_list1);
+clij2.release(coordinate_list2);
+clij2.release(distance_matrix_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+coordinate_list1_sequence = getSequence();coordinate_list1 = clij2.pushSequence(coordinate_list1_sequence);
+coordinate_list2_sequence = getSequence();coordinate_list2 = clij2.pushSequence(coordinate_list2_sequence);
+distance_matrix_destination = clij2.create(coordinate_list1);
+```
+
+```
+// Execute operation on GPU
+clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+```
+
+```
+// show result
+distance_matrix_destination_sequence = clij2.pullSequence(distance_matrix_destination)
+Icy.addSequence(distance_matrix_destination_sequence
+// cleanup memory on GPU
+clij2.release(coordinate_list1);
+clij2.release(coordinate_list2);
+clij2.release(distance_matrix_destination);
+```
+</details>
 
 
 

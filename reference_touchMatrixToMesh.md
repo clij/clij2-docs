@@ -20,34 +20,11 @@ Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, ByRef Image mes
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-pointlist = clij2.pushMat(pointlist);
-touch_matrix = clij2.pushMat(touch_matrix);
-mesh_destination = clij2.create(pointlist);
-```
-
-```
-% Execute operation on GPU
-clij2.touchMatrixToMesh(clij, pointlist, touch_matrix, mesh_destination);
-```
-
-```
-% show result
-mesh_destination = clij2.pullMat(mesh_destination)
-
-% cleanup memory on GPU
-clij2.release(pointlist);
-clij2.release(touch_matrix);
-clij2.release(mesh_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -62,7 +39,7 @@ mesh_destination = clij2.create(pointlist);
 
 ```
 // Execute operation on GPU
-clij2.touchMatrixToMesh(clij, pointlist, touch_matrix, mesh_destination);
+clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
 ```
 
 ```
@@ -75,6 +52,74 @@ clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist_matrix);
+touch_matrix = clij2.pushMat(touch_matrix_matrix);
+mesh_destination = clij2.create(pointlist);
+```
+
+```
+% Execute operation on GPU
+clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
+```
+
+```
+% show result
+mesh_destination = clij2.pullMat(mesh_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(touch_matrix);
+clij2.release(mesh_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
+touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+mesh_destination = clij2.create(pointlist);
+```
+
+```
+// Execute operation on GPU
+clij2.touchMatrixToMesh(pointlist, touch_matrix, mesh_destination);
+```
+
+```
+// show result
+mesh_destination_sequence = clij2.pullSequence(mesh_destination)
+Icy.addSequence(mesh_destination_sequence
+// cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(touch_matrix);
+clij2.release(mesh_destination);
+```
+</details>
 
 
 

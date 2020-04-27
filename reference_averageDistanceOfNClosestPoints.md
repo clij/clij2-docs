@@ -11,33 +11,11 @@ Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image ind
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-distance_matrix = clij2.pushMat(distance_matrix);
-indexlist_destination = clij2.create(distance_matrix);
-nClosestPointsTofind = 10;
-```
-
-```
-% Execute operation on GPU
-clij2.averageDistanceOfNClosestPoints(clij, distance_matrix, indexlist_destination, nClosestPointsTofind);
-```
-
-```
-% show result
-indexlist_destination = clij2.pullMat(indexlist_destination)
-
-% cleanup memory on GPU
-clij2.release(distance_matrix);
-clij2.release(indexlist_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -52,7 +30,7 @@ int nClosestPointsTofind = 10;
 
 ```
 // Execute operation on GPU
-clij2.averageDistanceOfNClosestPoints(clij, distance_matrix, indexlist_destination, nClosestPointsTofind);
+clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
 ```
 
 ```
@@ -64,6 +42,72 @@ indexlist_destinationImagePlus.show();
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+distance_matrix = clij2.pushMat(distance_matrix_matrix);
+indexlist_destination = clij2.create(distance_matrix);
+nClosestPointsTofind = 10;
+```
+
+```
+% Execute operation on GPU
+clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
+```
+
+```
+% show result
+indexlist_destination = clij2.pullMat(indexlist_destination)
+
+% cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(indexlist_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+indexlist_destination = clij2.create(distance_matrix);
+nClosestPointsTofind = 10;
+```
+
+```
+// Execute operation on GPU
+clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nClosestPointsTofind);
+```
+
+```
+// show result
+indexlist_destination_sequence = clij2.pullSequence(indexlist_destination)
+Icy.addSequence(indexlist_destination_sequence
+// cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(indexlist_destination);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

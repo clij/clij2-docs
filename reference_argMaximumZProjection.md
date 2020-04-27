@@ -10,35 +10,11 @@ Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image desti
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-destination_max = clij2.create(source);
-destination_arg_max = clij2.create(source);
-```
-
-```
-% Execute operation on GPU
-clij2.argMaximumZProjection(clij, source, destination_max, destination_arg_max);
-```
-
-```
-% show result
-destination_max = clij2.pullMat(destination_max)
-destination_arg_max = clij2.pullMat(destination_arg_max)
-
-% cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination_max);
-clij2.release(destination_arg_max);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -53,7 +29,7 @@ destination_arg_max = clij2.create(source);
 
 ```
 // Execute operation on GPU
-clij2.argMaximumZProjection(clij, source, destination_max, destination_arg_max);
+clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
 ```
 
 ```
@@ -68,6 +44,76 @@ clij2.release(source);
 clij2.release(destination_max);
 clij2.release(destination_arg_max);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+destination_max = clij2.create(source);
+destination_arg_max = clij2.create(source);
+```
+
+```
+% Execute operation on GPU
+clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
+```
+
+```
+% show result
+destination_max = clij2.pullMat(destination_max)
+destination_arg_max = clij2.pullMat(destination_arg_max)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_max);
+clij2.release(destination_arg_max);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+destination_max = clij2.create(source);
+destination_arg_max = clij2.create(source);
+```
+
+```
+// Execute operation on GPU
+clij2.argMaximumZProjection(source, destination_max, destination_arg_max);
+```
+
+```
+// show result
+destination_max_sequence = clij2.pullSequence(destination_max)
+Icy.addSequence(destination_max_sequencedestination_arg_max_sequence = clij2.pullSequence(destination_arg_max)
+Icy.addSequence(destination_arg_max_sequence
+// cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_max);
+clij2.release(destination_arg_max);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

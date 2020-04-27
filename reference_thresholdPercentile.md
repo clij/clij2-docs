@@ -12,32 +12,11 @@ Ext.CLIJ2_thresholdPercentile(Image input, ByRef Image destination);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input = clij2.pushMat(input);
-destination = clij2.create(input);
-```
-
-```
-% Execute operation on GPU
-clij2.thresholdPercentile(clij, input, destination);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(input);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.thresholdPercentile(input, destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +30,7 @@ destination = clij2.create(input);
 
 ```
 // Execute operation on GPU
-clij2.thresholdPercentile(clij, input, destination);
+clij2.thresholdPercentile(input, destination);
 ```
 
 ```
@@ -63,6 +42,70 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.thresholdPercentile(input, destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input_matrix);
+destination = clij2.create(input);
+```
+
+```
+% Execute operation on GPU
+clij2.thresholdPercentile(input, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.thresholdPercentile(input, destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
+destination = clij2.create(input);
+```
+
+```
+// Execute operation on GPU
+clij2.thresholdPercentile(input, destination);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+</details>
 
 
 

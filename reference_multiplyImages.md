@@ -20,34 +20,11 @@ Ext.CLIJ2_multiplyImages(Image factor1, Image factor2, Image destination);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-factor1 = clij2.pushMat(factor1);
-factor2 = clij2.pushMat(factor2);
-destination = clij2.create(factor1);
-```
-
-```
-% Execute operation on GPU
-clij2.multiplyImages(clij, factor1, factor2, destination);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(factor1);
-clij2.release(factor2);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.multiplyImages(factor1, factor2, destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -62,7 +39,7 @@ destination = clij2.create(factor1);
 
 ```
 // Execute operation on GPU
-clij2.multiplyImages(clij, factor1, factor2, destination);
+clij2.multiplyImages(factor1, factor2, destination);
 ```
 
 ```
@@ -75,6 +52,74 @@ clij2.release(factor1);
 clij2.release(factor2);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.multiplyImages(factor1, factor2, destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+factor1 = clij2.pushMat(factor1_matrix);
+factor2 = clij2.pushMat(factor2_matrix);
+destination = clij2.create(factor1);
+```
+
+```
+% Execute operation on GPU
+clij2.multiplyImages(factor1, factor2, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(factor1);
+clij2.release(factor2);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.multiplyImages(factor1, factor2, destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+factor1_sequence = getSequence();factor1 = clij2.pushSequence(factor1_sequence);
+factor2_sequence = getSequence();factor2 = clij2.pushSequence(factor2_sequence);
+destination = clij2.create(factor1);
+```
+
+```
+// Execute operation on GPU
+clij2.multiplyImages(factor1, factor2, destination);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(factor1);
+clij2.release(factor2);
+clij2.release(destination);
+```
+</details>
 
 
 

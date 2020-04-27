@@ -18,32 +18,11 @@ Ext.CLIJ2_pointlistToLabelledSpots(Image pointlist, ByRef Image spots_destinatio
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-pointlist = clij2.pushMat(pointlist);
-spots_destination = clij2.create(pointlist);
-```
-
-```
-% Execute operation on GPU
-clij2.pointlistToLabelledSpots(clij, pointlist, spots_destination);
-```
-
-```
-% show result
-spots_destination = clij2.pullMat(spots_destination)
-
-% cleanup memory on GPU
-clij2.release(pointlist);
-clij2.release(spots_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.pointlistToLabelledSpots(pointlist, spots_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -57,7 +36,7 @@ spots_destination = clij2.create(pointlist);
 
 ```
 // Execute operation on GPU
-clij2.pointlistToLabelledSpots(clij, pointlist, spots_destination);
+clij2.pointlistToLabelledSpots(pointlist, spots_destination);
 ```
 
 ```
@@ -69,6 +48,70 @@ spots_destinationImagePlus.show();
 clij2.release(pointlist);
 clij2.release(spots_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.pointlistToLabelledSpots(pointlist, spots_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist_matrix);
+spots_destination = clij2.create(pointlist);
+```
+
+```
+% Execute operation on GPU
+clij2.pointlistToLabelledSpots(pointlist, spots_destination);
+```
+
+```
+% show result
+spots_destination = clij2.pullMat(spots_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(spots_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.pointlistToLabelledSpots(pointlist, spots_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
+spots_destination = clij2.create(pointlist);
+```
+
+```
+// Execute operation on GPU
+clij2.pointlistToLabelledSpots(pointlist, spots_destination);
+```
+
+```
+// show result
+spots_destination_sequence = clij2.pullSequence(spots_destination)
+Icy.addSequence(spots_destination_sequence
+// cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(spots_destination);
+```
+</details>
 
 
 

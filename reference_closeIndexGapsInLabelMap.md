@@ -13,32 +13,11 @@ Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, ByRef Image labeling_de
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-labeling_input = clij2.pushMat(labeling_input);
-labeling_destination = clij2.create(labeling_input);
-```
-
-```
-% Execute operation on GPU
-clij2.closeIndexGapsInLabelMap(clij, labeling_input, labeling_destination);
-```
-
-```
-% show result
-labeling_destination = clij2.pullMat(labeling_destination)
-
-% cleanup memory on GPU
-clij2.release(labeling_input);
-clij2.release(labeling_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -52,7 +31,7 @@ labeling_destination = clij2.create(labeling_input);
 
 ```
 // Execute operation on GPU
-clij2.closeIndexGapsInLabelMap(clij, labeling_input, labeling_destination);
+clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
 ```
 
 ```
@@ -64,6 +43,70 @@ labeling_destinationImagePlus.show();
 clij2.release(labeling_input);
 clij2.release(labeling_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+labeling_input = clij2.pushMat(labeling_input_matrix);
+labeling_destination = clij2.create(labeling_input);
+```
+
+```
+% Execute operation on GPU
+clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
+```
+
+```
+% show result
+labeling_destination = clij2.pullMat(labeling_destination)
+
+% cleanup memory on GPU
+clij2.release(labeling_input);
+clij2.release(labeling_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+labeling_input_sequence = getSequence();labeling_input = clij2.pushSequence(labeling_input_sequence);
+labeling_destination = clij2.create(labeling_input);
+```
+
+```
+// Execute operation on GPU
+clij2.closeIndexGapsInLabelMap(labeling_input, labeling_destination);
+```
+
+```
+// show result
+labeling_destination_sequence = clij2.pullSequence(labeling_destination)
+Icy.addSequence(labeling_destination_sequence
+// cleanup memory on GPU
+clij2.release(labeling_input);
+clij2.release(labeling_destination);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

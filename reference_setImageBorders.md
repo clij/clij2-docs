@@ -9,31 +9,11 @@ Ext.CLIJ2_setImageBorders(Image destination, Number value);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-destination = clij2.create();
-value = 1.0;
-```
-
-```
-% Execute operation on GPU
-clij2.setImageBorders(clij, destination, value);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.setImageBorders(destination, value);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -47,7 +27,7 @@ float value = 1.0;
 
 ```
 // Execute operation on GPU
-clij2.setImageBorders(clij, destination, value);
+clij2.setImageBorders(destination, value);
 ```
 
 ```
@@ -58,6 +38,68 @@ destinationImagePlus.show();
 // cleanup memory on GPU
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.setImageBorders(destination, value);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+destination = clij2.create();
+value = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.setImageBorders(destination, value);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.setImageBorders(destination, value);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+destination = clij2.create();
+value = 1.0;
+```
+
+```
+// Execute operation on GPU
+clij2.setImageBorders(destination, value);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(destination);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -15,32 +15,11 @@ Ext.CLIJ2_excludeLabelsOnEdges(Image label_map_input, ByRef Image label_map_dest
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-label_map_input = clij2.pushMat(label_map_input);
-label_map_destination = clij2.create(label_map_input);
-```
-
-```
-% Execute operation on GPU
-clij2.excludeLabelsOnEdges(clij, label_map_input, label_map_destination);
-```
-
-```
-% show result
-label_map_destination = clij2.pullMat(label_map_destination)
-
-% cleanup memory on GPU
-clij2.release(label_map_input);
-clij2.release(label_map_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -54,7 +33,7 @@ label_map_destination = clij2.create(label_map_input);
 
 ```
 // Execute operation on GPU
-clij2.excludeLabelsOnEdges(clij, label_map_input, label_map_destination);
+clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 ```
 
 ```
@@ -66,6 +45,70 @@ label_map_destinationImagePlus.show();
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+label_map_input = clij2.pushMat(label_map_input_matrix);
+label_map_destination = clij2.create(label_map_input);
+```
+
+```
+% Execute operation on GPU
+clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
+```
+
+```
+% show result
+label_map_destination = clij2.pullMat(label_map_destination)
+
+% cleanup memory on GPU
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+label_map_input_sequence = getSequence();label_map_input = clij2.pushSequence(label_map_input_sequence);
+label_map_destination = clij2.create(label_map_input);
+```
+
+```
+// Execute operation on GPU
+clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
+```
+
+```
+// show result
+label_map_destination_sequence = clij2.pullSequence(label_map_destination)
+Icy.addSequence(label_map_destination_sequence
+// cleanup memory on GPU
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+</details>
 
 
 

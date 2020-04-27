@@ -11,34 +11,11 @@ Ext.CLIJ2_greaterOrEqual(Image source1, Image source2, ByRef Image destination);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source1 = clij2.pushMat(source1);
-source2 = clij2.pushMat(source2);
-destination = clij2.create(source1);
-```
-
-```
-% Execute operation on GPU
-clij2.greaterOrEqual(clij, source1, source2, destination);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(source1);
-clij2.release(source2);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.greaterOrEqual(source1, source2, destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -53,7 +30,7 @@ destination = clij2.create(source1);
 
 ```
 // Execute operation on GPU
-clij2.greaterOrEqual(clij, source1, source2, destination);
+clij2.greaterOrEqual(source1, source2, destination);
 ```
 
 ```
@@ -66,6 +43,74 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.greaterOrEqual(source1, source2, destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source1 = clij2.pushMat(source1_matrix);
+source2 = clij2.pushMat(source2_matrix);
+destination = clij2.create(source1);
+```
+
+```
+% Execute operation on GPU
+clij2.greaterOrEqual(source1, source2, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source1);
+clij2.release(source2);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.greaterOrEqual(source1, source2, destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source1_sequence = getSequence();source1 = clij2.pushSequence(source1_sequence);
+source2_sequence = getSequence();source2 = clij2.pushSequence(source2_sequence);
+destination = clij2.create(source1);
+```
+
+```
+// Execute operation on GPU
+clij2.greaterOrEqual(source1, source2, destination);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(source1);
+clij2.release(source2);
+clij2.release(destination);
+```
+</details>
 
 
 

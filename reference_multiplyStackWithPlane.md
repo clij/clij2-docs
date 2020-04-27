@@ -12,34 +12,11 @@ Ext.CLIJ2_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image des
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-sourceStack = clij2.pushMat(sourceStack);
-sourcePlane = clij2.pushMat(sourcePlane);
-destination = clij2.create(sourceStack);
-```
-
-```
-% Execute operation on GPU
-clij2.multiplyStackWithPlane(clij, sourceStack, sourcePlane, destination);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(sourceStack);
-clij2.release(sourcePlane);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -54,7 +31,7 @@ destination = clij2.create(sourceStack);
 
 ```
 // Execute operation on GPU
-clij2.multiplyStackWithPlane(clij, sourceStack, sourcePlane, destination);
+clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
 ```
 
 ```
@@ -67,6 +44,74 @@ clij2.release(sourceStack);
 clij2.release(sourcePlane);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+sourceStack = clij2.pushMat(sourceStack_matrix);
+sourcePlane = clij2.pushMat(sourcePlane_matrix);
+destination = clij2.create(sourceStack);
+```
+
+```
+% Execute operation on GPU
+clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(sourceStack);
+clij2.release(sourcePlane);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+sourceStack_sequence = getSequence();sourceStack = clij2.pushSequence(sourceStack_sequence);
+sourcePlane_sequence = getSequence();sourcePlane = clij2.pushSequence(sourcePlane_sequence);
+destination = clij2.create(sourceStack);
+```
+
+```
+// Execute operation on GPU
+clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(sourceStack);
+clij2.release(sourcePlane);
+clij2.release(destination);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

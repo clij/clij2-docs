@@ -14,29 +14,11 @@ Ext.CLIJ2_print(Image input);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input = clij2.pushMat(input);
-```
-
-```
-% Execute operation on GPU
-clij2.print(clij, input);
-```
-
-```
-% show result
-
-% cleanup memory on GPU
-clij2.release(input);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.print(input);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -49,7 +31,7 @@ ClearCLBuffer input = clij2.push(inputImagePlus);
 
 ```
 // Execute operation on GPU
-clij2.print(clij, input);
+clij2.print(input);
 ```
 
 ```
@@ -58,6 +40,64 @@ clij2.print(clij, input);
 // cleanup memory on GPU
 clij2.release(input);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.print(input);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.print(input);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(input);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.print(input);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
+```
+
+```
+// Execute operation on GPU
+clij2.print(input);
+```
+
+```
+// show result
+
+// cleanup memory on GPU
+clij2.release(input);
+```
+</details>
 
 
 

@@ -21,32 +21,11 @@ Ext.CLIJ2_maximumZProjection(Image source, Image destination_max);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-destination_max = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
-```
-
-```
-% Execute operation on GPU
-clij2.maximumZProjection(clij, source, destination_max);
-```
-
-```
-% show result
-destination_max = clij2.pullMat(destination_max)
-
-% cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination_max);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.maximumZProjection(source, destination_max);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -60,7 +39,7 @@ destination_max = clij2.create(new long[]{source.getWidth(), source.getHeight()}
 
 ```
 // Execute operation on GPU
-clij2.maximumZProjection(clij, source, destination_max);
+clij2.maximumZProjection(source, destination_max);
 ```
 
 ```
@@ -72,6 +51,70 @@ destination_maxImagePlus.show();
 clij2.release(source);
 clij2.release(destination_max);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.maximumZProjection(source, destination_max);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+destination_max = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
+```
+
+```
+% Execute operation on GPU
+clij2.maximumZProjection(source, destination_max);
+```
+
+```
+% show result
+destination_max = clij2.pullMat(destination_max)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_max);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.maximumZProjection(source, destination_max);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+destination_max = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
+```
+
+```
+// Execute operation on GPU
+clij2.maximumZProjection(source, destination_max);
+```
+
+```
+// show result
+destination_max_sequence = clij2.pullSequence(destination_max)
+Icy.addSequence(destination_max_sequence
+// cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_max);
+```
+</details>
 
 
 

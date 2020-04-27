@@ -13,34 +13,11 @@ Ext.CLIJ2_gaussianBlur(Image source, ByRef Image destination, Number sigmaX, Num
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-destination = clij2.create(source);
-sigmaX = 1.0;
-sigmaY = 2.0;
-```
-
-```
-% Execute operation on GPU
-clij2.gaussianBlur(clij, source, destination, sigmaX, sigmaY);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.gaussianBlur(source, destination, sigmaX, sigmaY);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -56,7 +33,7 @@ float sigmaY = 2.0;
 
 ```
 // Execute operation on GPU
-clij2.gaussianBlur(clij, source, destination, sigmaX, sigmaY);
+clij2.gaussianBlur(source, destination, sigmaX, sigmaY);
 ```
 
 ```
@@ -68,6 +45,74 @@ destinationImagePlus.show();
 clij2.release(source);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.gaussianBlur(source, destination, sigmaX, sigmaY);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+destination = clij2.create(source);
+sigmaX = 1.0;
+sigmaY = 2.0;
+```
+
+```
+% Execute operation on GPU
+clij2.gaussianBlur(source, destination, sigmaX, sigmaY);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.gaussianBlur(source, destination, sigmaX, sigmaY);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+destination = clij2.create(source);
+sigmaX = 1.0;
+sigmaY = 2.0;
+```
+
+```
+// Execute operation on GPU
+clij2.gaussianBlur(source, destination, sigmaX, sigmaY);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+</details>
 
 
 

@@ -12,32 +12,11 @@ Ext.CLIJ2_meanSquaredError(Image source1, Image source2);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source1 = clij2.pushMat(source1);
-source2 = clij2.pushMat(source2);
-```
-
-```
-% Execute operation on GPU
-double resultMeanSquaredError = clij2.meanSquaredError(clij, source1, source2);
-```
-
-```
-% show result
-System.out.println(resultMeanSquaredError);
-
-% cleanup memory on GPU
-clij2.release(source1);
-clij2.release(source2);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.meanSquaredError(source1, source2);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +30,7 @@ ClearCLBuffer source2 = clij2.push(source2ImagePlus);
 
 ```
 // Execute operation on GPU
-double resultMeanSquaredError = clij2.meanSquaredError(clij, source1, source2);
+double resultMeanSquaredError = clij2.meanSquaredError(source1, source2);
 ```
 
 ```
@@ -62,6 +41,70 @@ System.out.println(resultMeanSquaredError);
 clij2.release(source1);
 clij2.release(source2);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.meanSquaredError(source1, source2);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source1 = clij2.pushMat(source1_matrix);
+source2 = clij2.pushMat(source2_matrix);
+```
+
+```
+% Execute operation on GPU
+double resultMeanSquaredError = clij2.meanSquaredError(source1, source2);
+```
+
+```
+% show result
+System.out.println(resultMeanSquaredError);
+
+% cleanup memory on GPU
+clij2.release(source1);
+clij2.release(source2);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.meanSquaredError(source1, source2);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source1_sequence = getSequence();source1 = clij2.pushSequence(source1_sequence);
+source2_sequence = getSequence();source2 = clij2.pushSequence(source2_sequence);
+```
+
+```
+// Execute operation on GPU
+double resultMeanSquaredError = clij2.meanSquaredError(source1, source2);
+```
+
+```
+// show result
+System.out.println(resultMeanSquaredError);
+
+// cleanup memory on GPU
+clij2.release(source1);
+clij2.release(source2);
+```
+</details>
 
 
 

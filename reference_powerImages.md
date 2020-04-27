@@ -9,34 +9,11 @@ Ext.CLIJ2_powerImages(Image input, Image exponent, ByRef Image destination);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input = clij2.pushMat(input);
-exponent = clij2.pushMat(exponent);
-destination = clij2.create(input);
-```
-
-```
-% Execute operation on GPU
-clij2.powerImages(clij, input, exponent, destination);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(input);
-clij2.release(exponent);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.powerImages(input, exponent, destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +28,7 @@ destination = clij2.create(input);
 
 ```
 // Execute operation on GPU
-clij2.powerImages(clij, input, exponent, destination);
+clij2.powerImages(input, exponent, destination);
 ```
 
 ```
@@ -64,6 +41,74 @@ clij2.release(input);
 clij2.release(exponent);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.powerImages(input, exponent, destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input_matrix);
+exponent = clij2.pushMat(exponent_matrix);
+destination = clij2.create(input);
+```
+
+```
+% Execute operation on GPU
+clij2.powerImages(input, exponent, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(exponent);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.powerImages(input, exponent, destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
+exponent_sequence = getSequence();exponent = clij2.pushSequence(exponent_sequence);
+destination = clij2.create(input);
+```
+
+```
+// Execute operation on GPU
+clij2.powerImages(input, exponent, destination);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(input);
+clij2.release(exponent);
+clij2.release(destination);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -17,34 +17,11 @@ Ext.CLIJ2_excludeLabels(Image binary_flaglist, Image label_map_input, ByRef Imag
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-binary_flaglist = clij2.pushMat(binary_flaglist);
-label_map_input = clij2.pushMat(label_map_input);
-label_map_destination = clij2.create(binary_flaglist);
-```
-
-```
-% Execute operation on GPU
-clij2.excludeLabels(clij, binary_flaglist, label_map_input, label_map_destination);
-```
-
-```
-% show result
-label_map_destination = clij2.pullMat(label_map_destination)
-
-% cleanup memory on GPU
-clij2.release(binary_flaglist);
-clij2.release(label_map_input);
-clij2.release(label_map_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -59,7 +36,7 @@ label_map_destination = clij2.create(binary_flaglist);
 
 ```
 // Execute operation on GPU
-clij2.excludeLabels(clij, binary_flaglist, label_map_input, label_map_destination);
+clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
 ```
 
 ```
@@ -72,6 +49,74 @@ clij2.release(binary_flaglist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+binary_flaglist = clij2.pushMat(binary_flaglist_matrix);
+label_map_input = clij2.pushMat(label_map_input_matrix);
+label_map_destination = clij2.create(binary_flaglist);
+```
+
+```
+% Execute operation on GPU
+clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
+```
+
+```
+% show result
+label_map_destination = clij2.pullMat(label_map_destination)
+
+% cleanup memory on GPU
+clij2.release(binary_flaglist);
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+binary_flaglist_sequence = getSequence();binary_flaglist = clij2.pushSequence(binary_flaglist_sequence);
+label_map_input_sequence = getSequence();label_map_input = clij2.pushSequence(label_map_input_sequence);
+label_map_destination = clij2.create(binary_flaglist);
+```
+
+```
+// Execute operation on GPU
+clij2.excludeLabels(binary_flaglist, label_map_input, label_map_destination);
+```
+
+```
+// show result
+label_map_destination_sequence = clij2.pullSequence(label_map_destination)
+Icy.addSequence(label_map_destination_sequence
+// cleanup memory on GPU
+clij2.release(binary_flaglist);
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+</details>
 
 
 

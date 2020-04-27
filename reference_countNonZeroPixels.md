@@ -12,30 +12,11 @@ Ext.CLIJ2_countNonZeroPixels(Image source);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-```
-
-```
-% Execute operation on GPU
-double resultCountNonZeroPixels = clij2.countNonZeroPixels(clij, source);
-```
-
-```
-% show result
-System.out.println(resultCountNonZeroPixels);
-
-% cleanup memory on GPU
-clij2.release(source);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.countNonZeroPixels(source);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -48,7 +29,7 @@ ClearCLBuffer source = clij2.push(sourceImagePlus);
 
 ```
 // Execute operation on GPU
-double resultCountNonZeroPixels = clij2.countNonZeroPixels(clij, source);
+double resultCountNonZeroPixels = clij2.countNonZeroPixels(source);
 ```
 
 ```
@@ -58,6 +39,66 @@ System.out.println(resultCountNonZeroPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.countNonZeroPixels(source);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+```
+
+```
+% Execute operation on GPU
+double resultCountNonZeroPixels = clij2.countNonZeroPixels(source);
+```
+
+```
+% show result
+System.out.println(resultCountNonZeroPixels);
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.countNonZeroPixels(source);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+```
+
+```
+// Execute operation on GPU
+double resultCountNonZeroPixels = clij2.countNonZeroPixels(source);
+```
+
+```
+// show result
+System.out.println(resultCountNonZeroPixels);
+
+// cleanup memory on GPU
+clij2.release(source);
+```
+</details>
 
 
 

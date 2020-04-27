@@ -9,32 +9,11 @@ Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, ByRef Image touching_neighb
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-touch_matrix = clij2.pushMat(touch_matrix);
-touching_neighbors_count_destination = clij2.create(touch_matrix);
-```
-
-```
-% Execute operation on GPU
-clij2.countTouchingNeighbors(clij, touch_matrix, touching_neighbors_count_destination);
-```
-
-```
-% show result
-touching_neighbors_count_destination = clij2.pullMat(touching_neighbors_count_destination)
-
-% cleanup memory on GPU
-clij2.release(touch_matrix);
-clij2.release(touching_neighbors_count_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -48,7 +27,7 @@ touching_neighbors_count_destination = clij2.create(touch_matrix);
 
 ```
 // Execute operation on GPU
-clij2.countTouchingNeighbors(clij, touch_matrix, touching_neighbors_count_destination);
+clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
 ```
 
 ```
@@ -60,6 +39,70 @@ touching_neighbors_count_destinationImagePlus.show();
 clij2.release(touch_matrix);
 clij2.release(touching_neighbors_count_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+touch_matrix = clij2.pushMat(touch_matrix_matrix);
+touching_neighbors_count_destination = clij2.create(touch_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+```
+
+```
+% show result
+touching_neighbors_count_destination = clij2.pullMat(touching_neighbors_count_destination)
+
+% cleanup memory on GPU
+clij2.release(touch_matrix);
+clij2.release(touching_neighbors_count_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+touching_neighbors_count_destination = clij2.create(touch_matrix);
+```
+
+```
+// Execute operation on GPU
+clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+```
+
+```
+// show result
+touching_neighbors_count_destination_sequence = clij2.pullSequence(touching_neighbors_count_destination)
+Icy.addSequence(touching_neighbors_count_destination_sequence
+// cleanup memory on GPU
+clij2.release(touch_matrix);
+clij2.release(touching_neighbors_count_destination);
+```
+</details>
 
 
 

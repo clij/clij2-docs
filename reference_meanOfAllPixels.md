@@ -10,30 +10,11 @@ Ext.CLIJ2_meanOfAllPixels(Image source);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-```
-
-```
-% Execute operation on GPU
-double resultMeanOfAllPixels = clij2.meanOfAllPixels(clij, source);
-```
-
-```
-% show result
-System.out.println(resultMeanOfAllPixels);
-
-% cleanup memory on GPU
-clij2.release(source);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.meanOfAllPixels(source);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -46,7 +27,7 @@ ClearCLBuffer source = clij2.push(sourceImagePlus);
 
 ```
 // Execute operation on GPU
-double resultMeanOfAllPixels = clij2.meanOfAllPixels(clij, source);
+double resultMeanOfAllPixels = clij2.meanOfAllPixels(source);
 ```
 
 ```
@@ -56,6 +37,66 @@ System.out.println(resultMeanOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.meanOfAllPixels(source);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+```
+
+```
+% Execute operation on GPU
+double resultMeanOfAllPixels = clij2.meanOfAllPixels(source);
+```
+
+```
+% show result
+System.out.println(resultMeanOfAllPixels);
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.meanOfAllPixels(source);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+```
+
+```
+// Execute operation on GPU
+double resultMeanOfAllPixels = clij2.meanOfAllPixels(source);
+```
+
+```
+// show result
+System.out.println(resultMeanOfAllPixels);
+
+// cleanup memory on GPU
+clij2.release(source);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

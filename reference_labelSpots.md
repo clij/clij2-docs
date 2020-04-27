@@ -20,32 +20,11 @@ Ext.CLIJ2_labelSpots(Image input_spots, ByRef Image labelled_spots_destination);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input_spots = clij2.pushMat(input_spots);
-labelled_spots_destination = clij2.create(input_spots);
-```
-
-```
-% Execute operation on GPU
-clij2.labelSpots(clij, input_spots, labelled_spots_destination);
-```
-
-```
-% show result
-labelled_spots_destination = clij2.pullMat(labelled_spots_destination)
-
-% cleanup memory on GPU
-clij2.release(input_spots);
-clij2.release(labelled_spots_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.labelSpots(input_spots, labelled_spots_destination);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -59,7 +38,7 @@ labelled_spots_destination = clij2.create(input_spots);
 
 ```
 // Execute operation on GPU
-clij2.labelSpots(clij, input_spots, labelled_spots_destination);
+clij2.labelSpots(input_spots, labelled_spots_destination);
 ```
 
 ```
@@ -71,6 +50,70 @@ labelled_spots_destinationImagePlus.show();
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.labelSpots(input_spots, labelled_spots_destination);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input_spots = clij2.pushMat(input_spots_matrix);
+labelled_spots_destination = clij2.create(input_spots);
+```
+
+```
+% Execute operation on GPU
+clij2.labelSpots(input_spots, labelled_spots_destination);
+```
+
+```
+% show result
+labelled_spots_destination = clij2.pullMat(labelled_spots_destination)
+
+% cleanup memory on GPU
+clij2.release(input_spots);
+clij2.release(labelled_spots_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.labelSpots(input_spots, labelled_spots_destination);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_spots_sequence = getSequence();input_spots = clij2.pushSequence(input_spots_sequence);
+labelled_spots_destination = clij2.create(input_spots);
+```
+
+```
+// Execute operation on GPU
+clij2.labelSpots(input_spots, labelled_spots_destination);
+```
+
+```
+// show result
+labelled_spots_destination_sequence = clij2.pullSequence(labelled_spots_destination)
+Icy.addSequence(labelled_spots_destination_sequence
+// cleanup memory on GPU
+clij2.release(input_spots);
+clij2.release(labelled_spots_destination);
+```
+</details>
 
 
 

@@ -9,34 +9,11 @@ Ext.CLIJ2_minimumZProjectionBounded(Image source, ByRef Image destination_min, N
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-destination_min = clij2.create(source);
-min_z = 10;
-max_z = 20;
-```
-
-```
-% Execute operation on GPU
-clij2.minimumZProjectionBounded(clij, source, destination_min, min_z, max_z);
-```
-
-```
-% show result
-destination_min = clij2.pullMat(destination_min)
-
-% cleanup memory on GPU
-clij2.release(source);
-clij2.release(destination_min);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -52,7 +29,7 @@ int max_z = 20;
 
 ```
 // Execute operation on GPU
-clij2.minimumZProjectionBounded(clij, source, destination_min, min_z, max_z);
+clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
 ```
 
 ```
@@ -64,6 +41,74 @@ destination_minImagePlus.show();
 clij2.release(source);
 clij2.release(destination_min);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+destination_min = clij2.create(source);
+min_z = 10;
+max_z = 20;
+```
+
+```
+% Execute operation on GPU
+clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+```
+
+```
+% show result
+destination_min = clij2.pullMat(destination_min)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_min);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+destination_min = clij2.create(source);
+min_z = 10;
+max_z = 20;
+```
+
+```
+// Execute operation on GPU
+clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+```
+
+```
+// show result
+destination_min_sequence = clij2.pullSequence(destination_min)
+Icy.addSequence(destination_min_sequence
+// cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_min);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

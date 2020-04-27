@@ -11,37 +11,11 @@ Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, ByRef I
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-pointlist = clij2.pushMat(pointlist);
-label_map_input = clij2.pushMat(label_map_input);
-label_map_destination = clij2.create(pointlist);
-centerX = 1.0;
-centerY = 2.0;
-centerZ = 3.0;
-```
-
-```
-% Execute operation on GPU
-clij2.excludeLabelsOnSurface(clij, pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
-```
-
-```
-% show result
-label_map_destination = clij2.pullMat(label_map_destination)
-
-% cleanup memory on GPU
-clij2.release(pointlist);
-clij2.release(label_map_input);
-clij2.release(label_map_destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -59,7 +33,7 @@ float centerZ = 3.0;
 
 ```
 // Execute operation on GPU
-clij2.excludeLabelsOnSurface(clij, pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
 ```
 
 ```
@@ -72,6 +46,80 @@ clij2.release(pointlist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist_matrix);
+label_map_input = clij2.pushMat(label_map_input_matrix);
+label_map_destination = clij2.create(pointlist);
+centerX = 1.0;
+centerY = 2.0;
+centerZ = 3.0;
+```
+
+```
+% Execute operation on GPU
+clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+```
+
+```
+% show result
+label_map_destination = clij2.pullMat(label_map_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
+label_map_input_sequence = getSequence();label_map_input = clij2.pushSequence(label_map_input_sequence);
+label_map_destination = clij2.create(pointlist);
+centerX = 1.0;
+centerY = 2.0;
+centerZ = 3.0;
+```
+
+```
+// Execute operation on GPU
+clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+```
+
+```
+// show result
+label_map_destination_sequence = clij2.pullSequence(label_map_destination)
+Icy.addSequence(label_map_destination_sequence
+// cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

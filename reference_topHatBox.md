@@ -13,35 +13,11 @@ Ext.CLIJ2_topHatBox(Image input, ByRef Image destination, Number radiusX, Number
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-input = clij2.pushMat(input);
-destination = clij2.create(input);
-radiusX = 10;
-radiusY = 20;
-radiusZ = 30;
-```
-
-```
-% Execute operation on GPU
-clij2.topHatBox(clij, input, destination, radiusX, radiusY, radiusZ);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(input);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.topHatBox(input, destination, radiusX, radiusY, radiusZ);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -58,7 +34,7 @@ int radiusZ = 30;
 
 ```
 // Execute operation on GPU
-clij2.topHatBox(clij, input, destination, radiusX, radiusY, radiusZ);
+clij2.topHatBox(input, destination, radiusX, radiusY, radiusZ);
 ```
 
 ```
@@ -70,6 +46,76 @@ destinationImagePlus.show();
 clij2.release(input);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.topHatBox(input, destination, radiusX, radiusY, radiusZ);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input_matrix);
+destination = clij2.create(input);
+radiusX = 10;
+radiusY = 20;
+radiusZ = 30;
+```
+
+```
+% Execute operation on GPU
+clij2.topHatBox(input, destination, radiusX, radiusY, radiusZ);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.topHatBox(input, destination, radiusX, radiusY, radiusZ);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
+destination = clij2.create(input);
+radiusX = 10;
+radiusY = 20;
+radiusZ = 30;
+```
+
+```
+// Execute operation on GPU
+clij2.topHatBox(input, destination, radiusX, radiusY, radiusZ);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+</details>
 
 
 

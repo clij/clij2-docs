@@ -14,30 +14,11 @@ Ext.CLIJ2_setWhereXequalsY(Image source, Number value);
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-source = clij2.pushMat(source);
-value = 1.0;
-```
-
-```
-% Execute operation on GPU
-clij2.setWhereXequalsY(clij, source, value);
-```
-
-```
-% show result
-
-% cleanup memory on GPU
-clij2.release(source);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.setWhereXequalsY(source, value);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +32,7 @@ float value = 1.0;
 
 ```
 // Execute operation on GPU
-clij2.setWhereXequalsY(clij, source, value);
+clij2.setWhereXequalsY(source, value);
 ```
 
 ```
@@ -60,6 +41,66 @@ clij2.setWhereXequalsY(clij, source, value);
 // cleanup memory on GPU
 clij2.release(source);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.setWhereXequalsY(source, value);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source_matrix);
+value = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.setWhereXequalsY(source, value);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.setWhereXequalsY(source, value);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+value = 1.0;
+```
+
+```
+// Execute operation on GPU
+clij2.setWhereXequalsY(source, value);
+```
+
+```
+// show result
+
+// cleanup memory on GPU
+clij2.release(source);
+```
+</details>
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

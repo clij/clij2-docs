@@ -11,36 +11,11 @@ Ext.CLIJ2_addImagesWeighted(Image summand1, Image summand2, Image destination, N
 ```
 
 
-### Usage in Matlab
-```
-// init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-summand1 = clij2.pushMat(summand1);
-summand2 = clij2.pushMat(summand2);
-destination = clij2.create(summand1);
-factor1 = 1.0;
-factor2 = 2.0;
-```
-
-```
-% Execute operation on GPU
-clij2.addImagesWeighted(clij, summand1, summand2, destination, factor1, factor2);
-```
-
-```
-% show result
-destination = clij2.pullMat(destination)
-
-% cleanup memory on GPU
-clij2.release(summand1);
-clij2.release(summand2);
-clij2.release(destination);
-```
-
-
 ### Usage in Java
+<details>
+<summary>
+clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
+</summary>
 ```
 // init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -57,7 +32,7 @@ float factor2 = 2.0;
 
 ```
 // Execute operation on GPU
-clij2.addImagesWeighted(clij, summand1, summand2, destination, factor1, factor2);
+clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
 ```
 
 ```
@@ -70,6 +45,78 @@ clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
 ```
+</details>
+
+
+### Usage in Matlab
+<details>
+<summary>
+clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
+</summary>
+```
+% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+summand1 = clij2.pushMat(summand1_matrix);
+summand2 = clij2.pushMat(summand2_matrix);
+destination = clij2.create(summand1);
+factor1 = 1.0;
+factor2 = 2.0;
+```
+
+```
+% Execute operation on GPU
+clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(summand1);
+clij2.release(summand2);
+clij2.release(destination);
+```
+</details>
+
+
+### Usage in Icy
+<details>
+<summary>
+clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
+</summary>
+```
+// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+summand1_sequence = getSequence();summand1 = clij2.pushSequence(summand1_sequence);
+summand2_sequence = getSequence();summand2 = clij2.pushSequence(summand2_sequence);
+destination = clij2.create(summand1);
+factor1 = 1.0;
+factor2 = 2.0;
+```
+
+```
+// Execute operation on GPU
+clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
+```
+
+```
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence
+// cleanup memory on GPU
+clij2.release(summand1);
+clij2.release(summand2);
+clij2.release(destination);
+```
+</details>
 
 
 
