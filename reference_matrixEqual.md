@@ -11,6 +11,31 @@ Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input1 = clij2.pushMat(input1);
+input2 = clij2.pushMat(input2);
+tolerance = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.matrixEqual(clij, input1, input2, tolerance);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(input1);
+clij2.release(input2);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

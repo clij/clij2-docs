@@ -10,6 +10,34 @@ Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image desti
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination_max = clij2.create(source);
+destination_arg_max = clij2.create(source);
+```
+
+```
+% Execute operation on GPU
+clij2.argMaximumZProjection(clij, source, destination_max, destination_arg_max);
+```
+
+```
+% show result
+destination_max = clij2.pullMat(destination_max)
+destination_arg_max = clij2.pullMat(destination_arg_max)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_max);
+clij2.release(destination_arg_max);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -19,8 +47,8 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination_max = clij.create(source);
-destination_arg_max = clij.create(source);
+destination_max = clij2.create(source);
+destination_arg_max = clij2.create(source);
 ```
 
 ```

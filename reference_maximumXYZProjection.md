@@ -14,37 +14,6 @@ Ext.CLIJ_maximumXYZProjection(Image source, Image destination_max, Number dimens
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer source = clijx.push(sourceImagePlus);
-destination_max = clij.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
-int dimensionX = 10;
-int dimensionY = 20;
-int projectedDimension = 30;
-```
-
-```
-// Execute operation on GPU
-clijx.maximumXYZProjection(clij, source, destination_max, dimensionX, dimensionY, projectedDimension);
-```
-
-```
-//show result
-destination_maxImagePlus = clijx.pull(destination_max);
-destination_maxImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(source);
-clijx.release(destination_max);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

@@ -9,6 +9,32 @@ Ext.CLIJ2_closingDiamond(Image input, ByRef Image destination, Number number_of_
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input);
+destination = clij2.create(input);
+number_of_dilations_and_erotions = 10;
+```
+
+```
+% Execute operation on GPU
+clij2.closingDiamond(clij, input, destination, number_of_dilations_and_erotions);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -18,7 +44,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
-destination = clij.create(input);
+destination = clij2.create(input);
 int number_of_dilations_and_erotions = 10;
 ```
 

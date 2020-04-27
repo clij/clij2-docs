@@ -9,6 +9,33 @@ Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, ByRef Image destination)
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+stack1 = clij2.pushMat(stack1);
+stack2 = clij2.pushMat(stack2);
+destination = clij2.create(stack1);
+```
+
+```
+% Execute operation on GPU
+clij2.concatenateStacks(clij, stack1, stack2, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(stack1);
+clij2.release(stack2);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -19,7 +46,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer stack1 = clij2.push(stack1ImagePlus);
 ClearCLBuffer stack2 = clij2.push(stack2ImagePlus);
-destination = clij.create(stack1);
+destination = clij2.create(stack1);
 ```
 
 ```

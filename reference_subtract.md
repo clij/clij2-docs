@@ -11,6 +11,33 @@ Ext.CLIJ2_subtract(Image subtrahend, Image minuend, Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+subtrahend = clij2.pushMat(subtrahend);
+minuend = clij2.pushMat(minuend);
+destination = clij2.create(subtrahend);
+```
+
+```
+% Execute operation on GPU
+clij2.subtract(clij, subtrahend, minuend, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(subtrahend);
+clij2.release(minuend);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -21,7 +48,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer subtrahend = clij2.push(subtrahendImagePlus);
 ClearCLBuffer minuend = clij2.push(minuendImagePlus);
-destination = clij.create(subtrahend);
+destination = clij2.create(subtrahend);
 ```
 
 ```

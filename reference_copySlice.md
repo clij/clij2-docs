@@ -29,6 +29,32 @@ Ext.CLIJ2_copySlice(Image source, Image destination, Number sliceIndex);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
+sliceIndex = 10;
+```
+
+```
+% Execute operation on GPU
+clij2.copySlice(clij, source, destination, sliceIndex);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -38,7 +64,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
+destination = clij2.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
 int sliceIndex = 10;
 ```
 

@@ -9,6 +9,33 @@ Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, ByRef Image mes
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist);
+indexList = clij2.pushMat(indexList);
+mesh_destination = clij2.create(pointlist);
+```
+
+```
+% Execute operation on GPU
+clij2.pointIndexListToMesh(clij, pointlist, indexList, mesh_destination);
+```
+
+```
+% show result
+mesh_destination = clij2.pullMat(mesh_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(indexList);
+clij2.release(mesh_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -19,7 +46,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer indexList = clij2.push(indexListImagePlus);
-mesh_destination = clij.create(pointlist);
+mesh_destination = clij2.create(pointlist);
 ```
 
 ```

@@ -9,6 +9,31 @@ Ext.CLIJ2_detectLabelEdges(Image label_map, ByRef Image edge_image_destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+label_map = clij2.pushMat(label_map);
+edge_image_destination = clij2.create(label_map);
+```
+
+```
+% Execute operation on GPU
+clij2.detectLabelEdges(clij, label_map, edge_image_destination);
+```
+
+```
+% show result
+edge_image_destination = clij2.pullMat(edge_image_destination)
+
+% cleanup memory on GPU
+clij2.release(label_map);
+clij2.release(edge_image_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -18,7 +43,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
-edge_image_destination = clij.create(label_map);
+edge_image_destination = clij2.create(label_map);
 ```
 
 ```

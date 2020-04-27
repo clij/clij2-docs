@@ -22,6 +22,33 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+coordinate_list1 = clij2.pushMat(coordinate_list1);
+coordinate_list2 = clij2.pushMat(coordinate_list2);
+distance_matrix_destination = clij2.create(coordinate_list1);
+```
+
+```
+% Execute operation on GPU
+clij2.generateDistanceMatrix(clij, coordinate_list1, coordinate_list2, distance_matrix_destination);
+```
+
+```
+% show result
+distance_matrix_destination = clij2.pullMat(distance_matrix_destination)
+
+% cleanup memory on GPU
+clij2.release(coordinate_list1);
+clij2.release(coordinate_list2);
+clij2.release(distance_matrix_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -32,7 +59,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer coordinate_list1 = clij2.push(coordinate_list1ImagePlus);
 ClearCLBuffer coordinate_list2 = clij2.push(coordinate_list2ImagePlus);
-distance_matrix_destination = clij.create(coordinate_list1);
+distance_matrix_destination = clij2.create(coordinate_list1);
 ```
 
 ```

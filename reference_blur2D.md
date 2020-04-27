@@ -15,6 +15,33 @@ Ext.CLIJ2_blur2D(Image source, Image destination, Number sigmaX, Number sigmaY);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create(source);
+sigmaX = 1.0;
+sigmaY = 2.0;
+```
+
+```
+% Execute operation on GPU
+clij2.blur2D(clij, source, destination, sigmaX, sigmaY);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -24,7 +51,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 float sigmaX = 1.0;
 float sigmaY = 2.0;
 ```

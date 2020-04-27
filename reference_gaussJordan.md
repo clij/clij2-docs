@@ -25,36 +25,6 @@ Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, ByRef Image solutio
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer A_matrix = clijx.push(A_matrixImagePlus);
-ClearCLBuffer B_result_vector = clijx.push(B_result_vectorImagePlus);
-solution_destination = clij.create(A_matrix);
-```
-
-```
-// Execute operation on GPU
-clijx.gaussJordan(clij, A_matrix, B_result_vector, solution_destination);
-```
-
-```
-//show result
-solution_destinationImagePlus = clijx.pull(solution_destination);
-solution_destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(A_matrix);
-clijx.release(B_result_vector);
-clijx.release(solution_destination);
-```
-
-
 
 
 ### License terms

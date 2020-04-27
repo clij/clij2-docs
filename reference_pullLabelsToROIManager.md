@@ -9,6 +9,28 @@ Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+labelmap_input = clij2.pushMat(labelmap_input);
+```
+
+```
+% Execute operation on GPU
+clij2.pullLabelsToROIManager(clij, labelmap_input);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(labelmap_input);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

@@ -10,12 +10,38 @@ Performs connected components analysis inspecting the box neighborhood of every 
 
 
 ### connectedComponentsLabelingBox is often followed by
+* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_connectedComponentsLabelingBox(Image binary_input, ByRef Image labeling_destination);
+```
+
+
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+binary_input = clij2.pushMat(binary_input);
+labeling_destination = clij2.create(binary_input);
+```
+
+```
+% Execute operation on GPU
+clij2.connectedComponentsLabelingBox(clij, binary_input, labeling_destination);
+```
+
+```
+% show result
+labeling_destination = clij2.pullMat(labeling_destination)
+
+% cleanup memory on GPU
+clij2.release(binary_input);
+clij2.release(labeling_destination);
 ```
 
 
@@ -28,7 +54,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer binary_input = clij2.push(binary_inputImagePlus);
-labeling_destination = clij.create(binary_input);
+labeling_destination = clij2.create(binary_input);
 ```
 
 ```

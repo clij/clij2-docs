@@ -11,6 +11,29 @@ Ext.CLIJ2_boundingBox(Image source);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+```
+
+```
+% Execute operation on GPU
+double[] resultBoundingBox = clij2.boundingBox(clij, source);
+```
+
+```
+% show result
+System.out.println(resultBoundingBox);
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

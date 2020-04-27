@@ -11,6 +11,36 @@ Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, ByRef I
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist);
+label_map_input = clij2.pushMat(label_map_input);
+label_map_destination = clij2.create(pointlist);
+centerX = 1.0;
+centerY = 2.0;
+centerZ = 3.0;
+```
+
+```
+% Execute operation on GPU
+clij2.excludeLabelsOnSurface(clij, pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+```
+
+```
+% show result
+label_map_destination = clij2.pullMat(label_map_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(label_map_input);
+clij2.release(label_map_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -21,7 +51,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer label_map_input = clij2.push(label_map_inputImagePlus);
-label_map_destination = clij.create(pointlist);
+label_map_destination = clij2.create(pointlist);
 float centerX = 1.0;
 float centerY = 2.0;
 float centerZ = 3.0;

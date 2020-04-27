@@ -17,6 +17,33 @@ Ext.CLIJ2_flip2D(Image source, Image destination, Boolean flipX, Boolean flipY);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create(source);
+flipX = true;
+flipY = false;
+```
+
+```
+% Execute operation on GPU
+clij2.flip2D(clij, source, destination, flipX, flipY);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -26,7 +53,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 boolean flipX = true;
 boolean flipY = false;
 ```

@@ -19,6 +19,34 @@ Ext.CLIJ2_maskLabel(Image source, Image label_map, ByRef Image destination, Numb
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+label_map = clij2.pushMat(label_map);
+destination = clij2.create(source);
+label_index = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.maskLabel(clij, source, label_map, destination, label_index);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(label_map);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -29,7 +57,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 float label_index = 1.0;
 ```
 

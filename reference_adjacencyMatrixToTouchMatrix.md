@@ -9,6 +9,30 @@ Ext.CLIJ2_adjacencyMatrixToTouchMatrix(Image adjacency_matrix, ByRef Image touch
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+adjacency_matrix = clij2.pushMat(adjacency_matrix);
+touch_matrix = clij2.pushMat(touch_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.adjacencyMatrixToTouchMatrix(clij, adjacency_matrix, touch_matrix);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(adjacency_matrix);
+clij2.release(touch_matrix);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

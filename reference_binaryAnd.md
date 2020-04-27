@@ -13,6 +13,33 @@ Ext.CLIJ2_binaryAnd(Image operand1, Image operand2, Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+operand1 = clij2.pushMat(operand1);
+operand2 = clij2.pushMat(operand2);
+destination = clij2.create(operand1);
+```
+
+```
+% Execute operation on GPU
+clij2.binaryAnd(clij, operand1, operand2, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(operand1);
+clij2.release(operand2);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -23,7 +50,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer operand1 = clij2.push(operand1ImagePlus);
 ClearCLBuffer operand2 = clij2.push(operand2ImagePlus);
-destination = clij.create(operand1);
+destination = clij2.create(operand1);
 ```
 
 ```

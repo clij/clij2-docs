@@ -11,6 +11,30 @@ Ext.CLIJ2_meanOfPixelsAboveThreshold(Image source, Number threshold);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+threshold = 1.0;
+```
+
+```
+% Execute operation on GPU
+double resultMeanOfPixelsAboveThreshold = clij2.meanOfPixelsAboveThreshold(clij, source, threshold);
+```
+
+```
+% show result
+System.out.println(resultMeanOfPixelsAboveThreshold);
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

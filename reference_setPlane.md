@@ -11,6 +11,30 @@ Ext.CLIJ2_setPlane(Image source, Number rowIndex, Number value);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+rowIndex = 10;
+value = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.setPlane(clij, source, rowIndex, value);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

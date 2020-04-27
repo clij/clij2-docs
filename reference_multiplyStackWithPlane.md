@@ -12,6 +12,33 @@ Ext.CLIJ2_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image des
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+sourceStack = clij2.pushMat(sourceStack);
+sourcePlane = clij2.pushMat(sourcePlane);
+destination = clij2.create(sourceStack);
+```
+
+```
+% Execute operation on GPU
+clij2.multiplyStackWithPlane(clij, sourceStack, sourcePlane, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(sourceStack);
+clij2.release(sourcePlane);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -22,7 +49,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer sourceStack = clij2.push(sourceStackImagePlus);
 ClearCLBuffer sourcePlane = clij2.push(sourcePlaneImagePlus);
-destination = clij.create(sourceStack);
+destination = clij2.create(sourceStack);
 ```
 
 ```

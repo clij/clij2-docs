@@ -20,6 +20,35 @@ Ext.CLIJ2_rotate3D(Image source, Image destination, Number angleX, Number angleY
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create(source);
+angleX = 1.0;
+angleY = 2.0;
+angleZ = 3.0;
+rotateAroundCenter = true;
+```
+
+```
+% Execute operation on GPU
+clij2.rotate3D(clij, source, destination, angleX, angleY, angleZ, rotateAroundCenter);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -29,7 +58,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 float angleX = 1.0;
 float angleY = 2.0;
 float angleZ = 3.0;

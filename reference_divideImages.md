@@ -11,6 +11,33 @@ Ext.CLIJ2_divideImages(Image divident, Image divisor, Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+divident = clij2.pushMat(divident);
+divisor = clij2.pushMat(divisor);
+destination = clij2.create(divident);
+```
+
+```
+% Execute operation on GPU
+clij2.divideImages(clij, divident, divisor, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(divident);
+clij2.release(divisor);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -21,7 +48,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer divident = clij2.push(dividentImagePlus);
 ClearCLBuffer divisor = clij2.push(divisorImagePlus);
-destination = clij.create(divident);
+destination = clij2.create(divident);
 ```
 
 ```

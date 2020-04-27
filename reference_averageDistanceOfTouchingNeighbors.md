@@ -18,6 +18,33 @@ Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+distance_matrix = clij2.pushMat(distance_matrix);
+touch_matrix = clij2.pushMat(touch_matrix);
+average_distancelist_destination = clij2.create(distance_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.averageDistanceOfTouchingNeighbors(clij, distance_matrix, touch_matrix, average_distancelist_destination);
+```
+
+```
+% show result
+average_distancelist_destination = clij2.pullMat(average_distancelist_destination)
+
+% cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(touch_matrix);
+clij2.release(average_distancelist_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -28,7 +55,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
 ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
-average_distancelist_destination = clij.create(distance_matrix);
+average_distancelist_destination = clij2.create(distance_matrix);
 ```
 
 ```

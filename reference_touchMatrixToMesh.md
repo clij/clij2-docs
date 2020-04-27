@@ -20,6 +20,33 @@ Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, ByRef Image mes
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist);
+touch_matrix = clij2.pushMat(touch_matrix);
+mesh_destination = clij2.create(pointlist);
+```
+
+```
+% Execute operation on GPU
+clij2.touchMatrixToMesh(clij, pointlist, touch_matrix, mesh_destination);
+```
+
+```
+% show result
+mesh_destination = clij2.pullMat(mesh_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(touch_matrix);
+clij2.release(mesh_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -30,7 +57,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
-mesh_destination = clij.create(pointlist);
+mesh_destination = clij2.create(pointlist);
 ```
 
 ```

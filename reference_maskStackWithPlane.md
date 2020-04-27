@@ -13,6 +13,33 @@ Ext.CLIJ2_maskStackWithPlane(Image source, Image mask, Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+mask = clij2.pushMat(mask);
+destination = clij2.create(source);
+```
+
+```
+% Execute operation on GPU
+clij2.maskStackWithPlane(clij, source, mask, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(mask);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -23,7 +50,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer mask = clij2.push(maskImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 ```
 
 ```

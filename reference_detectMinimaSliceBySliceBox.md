@@ -11,6 +11,32 @@ Ext.CLIJ2_detectMinimaSliceBySliceBox(Image source, Image destination, Number ra
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create(source);
+radius = 10;
+```
+
+```
+% Execute operation on GPU
+clij2.detectMinimaSliceBySliceBox(clij, source, destination, radius);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -20,7 +46,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 int radius = 10;
 ```
 

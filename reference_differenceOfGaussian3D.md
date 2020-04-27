@@ -19,6 +19,37 @@ Ext.CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number si
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input);
+destination = clij2.create(input);
+sigma1x = 1.0;
+sigma1y = 2.0;
+sigma1z = 3.0;
+sigma2x = 4.0;
+sigma2y = 5.0;
+sigma2z = 6.0;
+```
+
+```
+% Execute operation on GPU
+clij2.differenceOfGaussian3D(clij, input, destination, sigma1x, sigma1y, sigma1z, sigma2x, sigma2y, sigma2z);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -28,7 +59,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
-destination = clij.create(input);
+destination = clij2.create(input);
 float sigma1x = 1.0;
 float sigma1y = 2.0;
 float sigma1z = 3.0;

@@ -11,6 +11,7 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 
 
 ### multiplyImageAndScalar is often followed by
+* <a href="reference_print">print</a> (2)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
 * <a href="reference_convertUInt16">convertUInt16</a> (2)
 
@@ -18,6 +19,32 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_multiplyImageAndScalar(Image source, Image destination, Number scalar);
+```
+
+
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create(source);
+scalar = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.multiplyImageAndScalar(clij, source, destination, scalar);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
 ```
 
 
@@ -30,7 +57,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 float scalar = 1.0;
 ```
 

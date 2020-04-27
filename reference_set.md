@@ -11,6 +11,29 @@ Ext.CLIJ2_set(Image source, Number value);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+value = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.set(clij, source, value);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

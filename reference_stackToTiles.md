@@ -9,36 +9,6 @@ Ext.CLIJx_stackToTiles(Image source, ByRef Image destination, Number tiles_x, Nu
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer source = clijx.push(sourceImagePlus);
-destination = clij.create(source);
-int tiles_x = 10;
-int tiles_y = 20;
-```
-
-```
-// Execute operation on GPU
-clijx.stackToTiles(clij, source, destination, tiles_x, tiles_y);
-```
-
-```
-//show result
-destinationImagePlus = clijx.pull(destination);
-destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(source);
-clijx.release(destination);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

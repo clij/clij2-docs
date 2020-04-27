@@ -9,34 +9,6 @@ Ext.CLIJx_showRGB(Image red, Image green, Image blue, String title);
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer red = clijx.push(redImagePlus);
-ClearCLBuffer green = clijx.push(greenImagePlus);
-ClearCLBuffer blue = clijx.push(blueImagePlus);
-```
-
-```
-// Execute operation on GPU
-clijx.showRGB(clij, red, green, blue, title);
-```
-
-```
-//show result
-
-// cleanup memory on GPU
-clijx.release(red);
-clijx.release(green);
-clijx.release(blue);
-```
-
-
 
 
 ### Example scripts

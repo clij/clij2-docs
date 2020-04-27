@@ -11,6 +11,31 @@ Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, ByRef Image destinati
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+positionsAndValues = clij2.pushMat(positionsAndValues);
+destination = clij2.create(positionsAndValues);
+```
+
+```
+% Execute operation on GPU
+clij2.writeValuesToPositions(clij, positionsAndValues, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(positionsAndValues);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -20,7 +45,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer positionsAndValues = clij2.push(positionsAndValuesImagePlus);
-destination = clij.create(positionsAndValues);
+destination = clij2.create(positionsAndValues);
 ```
 
 ```

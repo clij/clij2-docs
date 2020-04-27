@@ -14,6 +14,31 @@ Ext.CLIJ2_jaccardIndex(Image source1, Image source2);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source1 = clij2.pushMat(source1);
+source2 = clij2.pushMat(source2);
+```
+
+```
+% Execute operation on GPU
+double resultJaccardIndex = clij2.jaccardIndex(clij, source1, source2);
+```
+
+```
+% show result
+System.out.println(resultJaccardIndex);
+
+% cleanup memory on GPU
+clij2.release(source1);
+clij2.release(source2);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

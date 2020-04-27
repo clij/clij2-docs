@@ -9,28 +9,6 @@ Ext.CLIJx_stopWatch(String text);
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-```
-
-```
-// Execute operation on GPU
-clijx.stopWatch(clij, text);
-```
-
-```
-//show result
-
-// cleanup memory on GPU
-```
-
-
 
 
 ### Example scripts

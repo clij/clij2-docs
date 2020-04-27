@@ -14,6 +14,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 ### thresholdOtsu is often followed by
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (2)
+* <a href="reference_binaryNot">binaryNot</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_binaryXOr">binaryXOr</a> (2)
 * <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
@@ -22,6 +23,31 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_thresholdOtsu(Image input, ByRef Image destination);
+```
+
+
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input);
+destination = clij2.create(input);
+```
+
+```
+% Execute operation on GPU
+clij2.thresholdOtsu(clij, input, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(destination);
 ```
 
 
@@ -34,7 +60,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
-destination = clij.create(input);
+destination = clij2.create(input);
 ```
 
 ```
@@ -71,6 +97,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm"><img src="images/language_macro.png" height="20"/></a> [distanceMap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distance_map.ijm"><img src="images/language_macro.png" height="20"/></a> [distance_map.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distance_map.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  

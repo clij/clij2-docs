@@ -11,41 +11,6 @@ Ext.CLIJx_drawTwoValueLine(ByRef Image destination, Number x1, Number y1, Number
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-destination = clij.create();
-float x1 = 1.0;
-float y1 = 2.0;
-float z1 = 3.0;
-float x2 = 4.0;
-float y2 = 5.0;
-float z2 = 6.0;
-float thickness = 7.0;
-float value1 = 8.0;
-float destination0 = 9.0;
-```
-
-```
-// Execute operation on GPU
-clijx.drawTwoValueLine(clij, destination, x1, y1, z1, x2, y2, z2, thickness, value1, destination0);
-```
-
-```
-//show result
-destinationImagePlus = clijx.pull(destination);
-destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(destination);
-```
-
-
 
 
 ### Example scripts

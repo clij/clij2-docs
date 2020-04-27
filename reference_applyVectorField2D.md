@@ -17,6 +17,35 @@ Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, Image d
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+vectorX = clij2.pushMat(vectorX);
+vectorY = clij2.pushMat(vectorY);
+destination = clij2.create(source);
+```
+
+```
+% Execute operation on GPU
+clij2.applyVectorField2D(clij, source, vectorX, vectorY, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(vectorX);
+clij2.release(vectorY);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -28,7 +57,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer vectorX = clij2.push(vectorXImagePlus);
 ClearCLBuffer vectorY = clij2.push(vectorYImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 ```
 
 ```

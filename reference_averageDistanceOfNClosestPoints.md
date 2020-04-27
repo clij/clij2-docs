@@ -11,6 +11,32 @@ Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image ind
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+distance_matrix = clij2.pushMat(distance_matrix);
+indexlist_destination = clij2.create(distance_matrix);
+nClosestPointsTofind = 10;
+```
+
+```
+% Execute operation on GPU
+clij2.averageDistanceOfNClosestPoints(clij, distance_matrix, indexlist_destination, nClosestPointsTofind);
+```
+
+```
+% show result
+indexlist_destination = clij2.pullMat(indexlist_destination)
+
+% cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(indexlist_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -20,7 +46,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
-indexlist_destination = clij.create(distance_matrix);
+indexlist_destination = clij2.create(distance_matrix);
 int nClosestPointsTofind = 10;
 ```
 

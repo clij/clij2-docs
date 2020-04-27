@@ -11,6 +11,31 @@ Ext.CLIJ2_meanOfMaskedPixels(Image source, Image mask);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+mask = clij2.pushMat(mask);
+```
+
+```
+% Execute operation on GPU
+double resultMeanOfMaskedPixels = clij2.meanOfMaskedPixels(clij, source, mask);
+```
+
+```
+% show result
+System.out.println(resultMeanOfMaskedPixels);
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(mask);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

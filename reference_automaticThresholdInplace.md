@@ -12,32 +12,6 @@ Ext.CLIJx_automaticThresholdInplace(Image input_and_destination, String method);
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-input_and_destination = clij.create();
-```
-
-```
-// Execute operation on GPU
-clijx.automaticThresholdInplace(clij, input_and_destination, method);
-```
-
-```
-//show result
-input_and_destinationImagePlus = clijx.pull(input_and_destination);
-input_and_destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(input_and_destination);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

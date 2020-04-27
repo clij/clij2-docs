@@ -13,34 +13,6 @@ Ext.CLIJx_skeletonize(Image source, ByRef Image destination);
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer source = clijx.push(sourceImagePlus);
-destination = clij.create(source);
-```
-
-```
-// Execute operation on GPU
-clijx.skeletonize(clij, source, destination);
-```
-
-```
-//show result
-destinationImagePlus = clijx.pull(destination);
-destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(source);
-clijx.release(destination);
-```
-
-
 
 
 ### Example scripts

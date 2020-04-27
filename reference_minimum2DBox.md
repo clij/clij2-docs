@@ -10,6 +10,33 @@ Ext.CLIJ2_minimum2DBox(Image source, Image destination, Number radiusX, Number r
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination = clij2.create(source);
+radiusX = 10;
+radiusY = 20;
+```
+
+```
+% Execute operation on GPU
+clij2.minimum2DBox(clij, source, destination, radiusX, radiusY);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -19,7 +46,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 int radiusX = 10;
 int radiusY = 20;
 ```

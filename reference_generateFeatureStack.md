@@ -25,34 +25,6 @@ Ext.CLIJx_generateFeatureStack(Image input, Image feature_stack_destination, Str
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer input = clijx.push(inputImagePlus);
-feature_stack_destination = clij.create(input);
-```
-
-```
-// Execute operation on GPU
-clijx.generateFeatureStack(clij, input, feature_stack_destination, feature_definitions);
-```
-
-```
-//show result
-feature_stack_destinationImagePlus = clijx.pull(feature_stack_destination);
-feature_stack_destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(input);
-clijx.release(feature_stack_destination);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

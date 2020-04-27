@@ -9,6 +9,29 @@ Ext.CLIJ2_pullAsROI(Image binary_input);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+binary_input = clij2.pushMat(binary_input);
+```
+
+```
+% Execute operation on GPU
+Roi resultPullAsROI = clij2.pullAsROI(clij, binary_input);
+```
+
+```
+% show result
+System.out.println(resultPullAsROI);
+
+% cleanup memory on GPU
+clij2.release(binary_input);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -32,6 +55,18 @@ System.out.println(resultPullAsROI);
 // cleanup memory on GPU
 clij2.release(binary_input);
 ```
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/superpixel_segmentation"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

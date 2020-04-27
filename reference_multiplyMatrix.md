@@ -18,6 +18,33 @@ Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destin
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+matrix1 = clij2.pushMat(matrix1);
+matrix2 = clij2.pushMat(matrix2);
+matrix_destination = clij2.create(matrix1);
+```
+
+```
+% Execute operation on GPU
+clij2.multiplyMatrix(clij, matrix1, matrix2, matrix_destination);
+```
+
+```
+% show result
+matrix_destination = clij2.pullMat(matrix_destination)
+
+% cleanup memory on GPU
+clij2.release(matrix1);
+clij2.release(matrix2);
+clij2.release(matrix_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -28,7 +55,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer matrix1 = clij2.push(matrix1ImagePlus);
 ClearCLBuffer matrix2 = clij2.push(matrix2ImagePlus);
-matrix_destination = clij.create(matrix1);
+matrix_destination = clij2.create(matrix1);
 ```
 
 ```

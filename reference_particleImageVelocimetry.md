@@ -11,48 +11,6 @@ Ext.CLIJx_particleImageVelocimetry(Image source1, Image source2, Image destinati
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer source1 = clijx.push(source1ImagePlus);
-ClearCLBuffer source2 = clijx.push(source2ImagePlus);
-destinationDeltaX = clij.create(source1);
-destinationDeltaY = clij.create(source1);
-destinationDeltaZ = clij.create(source1);
-int maxDeltaX = 10;
-int maxDeltaY = 20;
-int maxDeltaZ = 30;
-boolean correctLocalShift = true;
-```
-
-```
-// Execute operation on GPU
-clijx.particleImageVelocimetry(clij, source1, source2, destinationDeltaX, destinationDeltaY, destinationDeltaZ, maxDeltaX, maxDeltaY, maxDeltaZ, correctLocalShift);
-```
-
-```
-//show result
-destinationDeltaXImagePlus = clijx.pull(destinationDeltaX);
-destinationDeltaXImagePlus.show();
-destinationDeltaYImagePlus = clijx.pull(destinationDeltaY);
-destinationDeltaYImagePlus.show();
-destinationDeltaZImagePlus = clijx.pull(destinationDeltaZ);
-destinationDeltaZImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(source1);
-clijx.release(source2);
-clijx.release(destinationDeltaX);
-clijx.release(destinationDeltaY);
-clijx.release(destinationDeltaZ);
-```
-
-
 
 
 ### Example scripts

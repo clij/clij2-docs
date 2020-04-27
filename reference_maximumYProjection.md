@@ -9,6 +9,31 @@ Ext.CLIJ2_maximumYProjection(Image source, ByRef Image destination_max);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination_max = clij2.create(source);
+```
+
+```
+% Execute operation on GPU
+clij2.maximumYProjection(clij, source, destination_max);
+```
+
+```
+% show result
+destination_max = clij2.pullMat(destination_max)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_max);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -18,7 +43,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination_max = clij.create(source);
+destination_max = clij2.create(source);
 ```
 
 ```

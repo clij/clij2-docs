@@ -12,33 +12,6 @@ Ext.CLIJx_trainWekaModel(Image featureStack3D, Image groundTruth2D, String saveM
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer featureStack3D = clijx.push(featureStack3DImagePlus);
-ClearCLBuffer groundTruth2D = clijx.push(groundTruth2DImagePlus);
-```
-
-```
-// Execute operation on GPU
-CLIJxWeka2 resultTrainWekaModel = clijx.trainWekaModel(clij, featureStack3D, groundTruth2D, saveModelFilename);
-```
-
-```
-//show result
-System.out.println(resultTrainWekaModel);
-
-// cleanup memory on GPU
-clijx.release(featureStack3D);
-clijx.release(groundTruth2D);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

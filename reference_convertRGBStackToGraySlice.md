@@ -9,34 +9,6 @@ Ext.CLIJx_convertRGBStackToGraySlice(Image stack_source, ByRef Image slice_desti
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer stack_source = clijx.push(stack_sourceImagePlus);
-slice_destination = clij.create(stack_source);
-```
-
-```
-// Execute operation on GPU
-clijx.convertRGBStackToGraySlice(clij, stack_source, slice_destination);
-```
-
-```
-//show result
-slice_destinationImagePlus = clijx.pull(slice_destination);
-slice_destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(stack_source);
-clijx.release(slice_destination);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

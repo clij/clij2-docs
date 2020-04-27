@@ -20,6 +20,33 @@ Ext.CLIJ2_medianOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Imag
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+values = clij2.pushMat(values);
+touch_matrix = clij2.pushMat(touch_matrix);
+mean_values_destination = clij2.create(values);
+```
+
+```
+% Execute operation on GPU
+clij2.medianOfTouchingNeighbors(clij, values, touch_matrix, mean_values_destination);
+```
+
+```
+% show result
+mean_values_destination = clij2.pullMat(mean_values_destination)
+
+% cleanup memory on GPU
+clij2.release(values);
+clij2.release(touch_matrix);
+clij2.release(mean_values_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -30,7 +57,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer values = clij2.push(valuesImagePlus);
 ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
-mean_values_destination = clij.create(values);
+mean_values_destination = clij2.create(values);
 ```
 
 ```

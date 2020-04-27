@@ -11,35 +11,6 @@ Ext.CLIJx_captureWebcamImage(ByRef Image destination, Number cameraDeviceIndex, 
 ```
 
 
-### Usage in Java
-```
-// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-destination = clij.create();
-int cameraDeviceIndex = 10;
-int imageWidth = 20;
-int imageHeight = 30;
-```
-
-```
-// Execute operation on GPU
-clijx.captureWebcamImage(clij, destination, cameraDeviceIndex, imageWidth, imageHeight);
-```
-
-```
-//show result
-destinationImagePlus = clijx.pull(destination);
-destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(destination);
-```
-
-
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

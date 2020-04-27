@@ -9,6 +9,31 @@ Ext.CLIJ2_minimumZProjection(Image source, Image destination_sum);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination_sum = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
+```
+
+```
+% Execute operation on GPU
+clij2.minimumZProjection(clij, source, destination_sum);
+```
+
+```
+% show result
+destination_sum = clij2.pullMat(destination_sum)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_sum);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -18,7 +43,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination_sum = clij.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
+destination_sum = clij2.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
 ```
 
 ```

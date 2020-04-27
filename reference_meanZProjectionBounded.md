@@ -9,6 +9,33 @@ Ext.CLIJ2_meanZProjectionBounded(Image source, ByRef Image destination_mean, Num
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+destination_mean = clij2.create(source);
+min_z = 10;
+max_z = 20;
+```
+
+```
+% Execute operation on GPU
+clij2.meanZProjectionBounded(clij, source, destination_mean, min_z, max_z);
+```
+
+```
+% show result
+destination_mean = clij2.pullMat(destination_mean)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(destination_mean);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -18,7 +45,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination_mean = clij.create(source);
+destination_mean = clij2.create(source);
 int min_z = 10;
 int max_z = 20;
 ```

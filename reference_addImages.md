@@ -11,6 +11,33 @@ Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+summand1 = clij2.pushMat(summand1);
+summand2 = clij2.pushMat(summand2);
+destination = clij2.create(summand1);
+```
+
+```
+% Execute operation on GPU
+clij2.addImages(clij, summand1, summand2, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(summand1);
+clij2.release(summand2);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -21,7 +48,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer summand1 = clij2.push(summand1ImagePlus);
 ClearCLBuffer summand2 = clij2.push(summand2ImagePlus);
-destination = clij.create(summand1);
+destination = clij2.create(summand1);
 ```
 
 ```

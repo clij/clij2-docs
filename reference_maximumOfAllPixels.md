@@ -10,6 +10,29 @@ Ext.CLIJ2_maximumOfAllPixels(Image source);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+```
+
+```
+% Execute operation on GPU
+double resultMaximumOfAllPixels = clij2.maximumOfAllPixels(clij, source);
+```
+
+```
+% show result
+System.out.println(resultMaximumOfAllPixels);
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

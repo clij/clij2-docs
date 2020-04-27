@@ -9,6 +9,28 @@ Ext.CLIJ2_setRampZ(Image source);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+```
+
+```
+% Execute operation on GPU
+clij2.setRampZ(clij, source);
+```
+
+```
+% show result
+
+% cleanup memory on GPU
+clij2.release(source);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU

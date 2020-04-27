@@ -16,6 +16,34 @@ Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, ByRef Ima
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+pointlist = clij2.pushMat(pointlist);
+distance_matrix = clij2.pushMat(distance_matrix);
+mesh_destination = clij2.create(pointlist);
+maximum_distance = 1.0;
+```
+
+```
+% Execute operation on GPU
+clij2.distanceMatrixToMesh(clij, pointlist, distance_matrix, mesh_destination, maximum_distance);
+```
+
+```
+% show result
+mesh_destination = clij2.pullMat(mesh_destination)
+
+% cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(distance_matrix);
+clij2.release(mesh_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -26,7 +54,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
-mesh_destination = clij.create(pointlist);
+mesh_destination = clij2.create(pointlist);
 float maximum_distance = 1.0;
 ```
 

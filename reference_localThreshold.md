@@ -12,6 +12,33 @@ Ext.CLIJ2_localThreshold(Image source, Image localThreshold, Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+source = clij2.pushMat(source);
+localThreshold = clij2.pushMat(localThreshold);
+destination = clij2.create(source);
+```
+
+```
+% Execute operation on GPU
+clij2.localThreshold(clij, source, localThreshold, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(source);
+clij2.release(localThreshold);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -22,7 +49,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 ClearCLBuffer localThreshold = clij2.push(localThresholdImagePlus);
-destination = clij.create(source);
+destination = clij2.create(source);
 ```
 
 ```

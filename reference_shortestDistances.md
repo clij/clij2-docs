@@ -15,6 +15,31 @@ Ext.CLIJ2_shortestDistances(Image distance_matrix, ByRef Image destination_minim
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+distance_matrix = clij2.pushMat(distance_matrix);
+destination_minimum_distances = clij2.create(distance_matrix);
+```
+
+```
+% Execute operation on GPU
+clij2.shortestDistances(clij, distance_matrix, destination_minimum_distances);
+```
+
+```
+% show result
+destination_minimum_distances = clij2.pullMat(destination_minimum_distances)
+
+% cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(destination_minimum_distances);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -24,7 +49,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
-destination_minimum_distances = clij.create(distance_matrix);
+destination_minimum_distances = clij2.create(distance_matrix);
 ```
 
 ```

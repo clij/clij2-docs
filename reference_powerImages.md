@@ -9,6 +9,33 @@ Ext.CLIJ2_powerImages(Image input, Image exponent, ByRef Image destination);
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input = clij2.pushMat(input);
+exponent = clij2.pushMat(exponent);
+destination = clij2.create(input);
+```
+
+```
+% Execute operation on GPU
+clij2.powerImages(clij, input, exponent, destination);
+```
+
+```
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(input);
+clij2.release(exponent);
+clij2.release(destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -19,7 +46,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
 ClearCLBuffer exponent = clij2.push(exponentImagePlus);
-destination = clij.create(input);
+destination = clij2.create(input);
 ```
 
 ```

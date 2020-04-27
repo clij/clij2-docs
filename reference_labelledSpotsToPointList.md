@@ -22,6 +22,31 @@ Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, ByRef Image desti
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+input_labelled_spots = clij2.pushMat(input_labelled_spots);
+destination_pointlist = clij2.create(input_labelled_spots);
+```
+
+```
+% Execute operation on GPU
+clij2.labelledSpotsToPointList(clij, input_labelled_spots, destination_pointlist);
+```
+
+```
+% show result
+destination_pointlist = clij2.pullMat(destination_pointlist)
+
+% cleanup memory on GPU
+clij2.release(input_labelled_spots);
+clij2.release(destination_pointlist);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -31,7 +56,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer input_labelled_spots = clij2.push(input_labelled_spotsImagePlus);
-destination_pointlist = clij.create(input_labelled_spots);
+destination_pointlist = clij2.create(input_labelled_spots);
 ```
 
 ```

@@ -24,6 +24,31 @@ Ext.CLIJ2_connectedComponentsLabeling(Image binary_input, ByRef Image labeling_d
 ```
 
 
+### Usage in Matlab
+```
+// init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+binary_input = clij2.pushMat(binary_input);
+labeling_destination = clij2.create(binary_input);
+```
+
+```
+% Execute operation on GPU
+clij2.connectedComponentsLabeling(clij, binary_input, labeling_destination);
+```
+
+```
+% show result
+labeling_destination = clij2.pullMat(labeling_destination)
+
+% cleanup memory on GPU
+clij2.release(binary_input);
+clij2.release(labeling_destination);
+```
+
+
 ### Usage in Java
 ```
 // init CLIJ and GPU
@@ -33,7 +58,7 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer binary_input = clij2.push(binary_inputImagePlus);
-labeling_destination = clij.create(binary_input);
+labeling_destination = clij2.create(binary_input);
 ```
 
 ```
