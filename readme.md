@@ -34,6 +34,7 @@ This page is under construction. Links may change
     * [Spots, pointlists, matrices and tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables/)
     * [Filtering in graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs/)
     * [Tribolium embryo morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
+    * [Superpixel segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation/)
     
   * Statistics and measurements
     * [Images statistics](https://clij.github.io/clij2-docs/md/image_statistics/)
