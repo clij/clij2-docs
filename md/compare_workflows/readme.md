@@ -33,9 +33,9 @@ run("Convert to Mask");
 
 end_time_imagej = getTime();
 </pre>
-<a href="image_1587651731709.png"><img src="image_1587651731709.png" width="250" alt="input_imagej"/></a>
-<a href="image_1587651732124.png"><img src="image_1587651732124.png" width="250" alt="background_subtracted_imagej"/></a>
-<a href="image_1587651733133.png"><img src="image_1587651733133.png" width="250" alt="thresholded_imagej"/></a>
+<a href="image_1587651731709.png"><img src="image_1587651731709.png" width="224" alt="input_imagej"/></a>
+<a href="image_1587651732124.png"><img src="image_1587651732124.png" width="224" alt="background_subtracted_imagej"/></a>
+<a href="image_1587651733133.png"><img src="image_1587651733133.png" width="224" alt="thresholded_imagej"/></a>
 
 
 Now we run the same workflow with CLIJ
@@ -69,9 +69,9 @@ Ext.CLIJ2_pullBinary(thresholded_clij);
 end_time_clij = getTime();
 
 </pre>
-<a href="image_1587651734937.png"><img src="image_1587651734937.png" width="250" alt="Lund_MAX_001300.tif"/></a>
-<a href="image_1587651735364.png"><img src="image_1587651735364.png" width="250" alt="background_subtracted_clij"/></a>
-<a href="image_1587651735950.png"><img src="image_1587651735950.png" width="250" alt="thresholded_clij"/></a>
+<a href="image_1587651734937.png"><img src="image_1587651734937.png" width="224" alt="Lund_MAX_001300.tif"/></a>
+<a href="image_1587651735364.png"><img src="image_1587651735364.png" width="224" alt="background_subtracted_clij"/></a>
+<a href="image_1587651735950.png"><img src="image_1587651735950.png" width="224" alt="thresholded_clij"/></a>
 
 The results look similar. There are difference because the 
 implementation of ImageJ background subtraction is close to but
@@ -121,7 +121,7 @@ in 32-bit because 8-bit images don't support negative values.
 imageCalculator("Subtract create 32-bit", "background_subtracted_imagej", background_subtracted_clij);
 
 </pre>
-<a href="image_1587651736256.png"><img src="image_1587651736256.png" width="250" alt="Result of background_subtracted_imagej"/></a>
+<a href="image_1587651736256.png"><img src="image_1587651736256.png" width="224" alt="Result of background_subtracted_imagej"/></a>
 
 ## Visual differences between thresholded images
 
@@ -129,7 +129,7 @@ imageCalculator("Subtract create 32-bit", "background_subtracted_imagej", backgr
 imageCalculator("Subtract create 32-bit", "thresholded_imagej", thresholded_clij);
 
 </pre>
-<a href="image_1587651736902.png"><img src="image_1587651736902.png" width="250" alt="Result of thresholded_imagej"/></a>
+<a href="image_1587651736902.png"><img src="image_1587651736902.png" width="224" alt="Result of thresholded_imagej"/></a>
 
 This confirms visually our assumption: The background_subtracted images 
 are a bit different while the binary result images are not.

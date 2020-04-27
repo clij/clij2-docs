@@ -18,7 +18,7 @@ run("Image Sequence...", "open=C:/structure/data/unidesigner_groundtruth-drosoph
 input = getTitle();
 
 </pre>
-<a href="image_1587649616046.png"><img src="image_1587649616046.png" width="250" alt="raw"/></a>
+<a href="image_1587649616046.png"><img src="image_1587649616046.png" width="224" alt="raw"/></a>
 
 ## Measure processing time on the CPU
 
@@ -51,7 +51,7 @@ for (i = 1; i <= 10; i++) {
 > CPU mean filter no 9 took 9580 msec
 > CPU mean filter no 10 took 11088 msec
 </pre>
-<a href="image_1587649708300.png"><img src="image_1587649708300.png" width="250" alt="raw"/></a>
+<a href="image_1587649708300.png"><img src="image_1587649708300.png" width="224" alt="raw"/></a>
 
 ## Measure processing time on the GPU
 We perform the same strategy to measure processing time on the GPU. As the performance of
@@ -141,7 +141,7 @@ print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
 <pre>
 > Pulling one image from the GPU took 127 msec
 </pre>
-<a href="image_1587649715555.png"><img src="image_1587649715555.png" width="250" alt="CLIJ2_mean3DBox_result9"/></a>
+<a href="image_1587649715555.png"><img src="image_1587649715555.png" width="224" alt="CLIJ2_mean3DBox_result9"/></a>
 
 For documentation purposes, we should also report which GPU was used
 

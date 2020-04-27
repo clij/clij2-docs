@@ -76,7 +76,7 @@ You can also express a matrix as an image:
 Ext.CLIJ2_pull(matrix);
 zoom(100);
 </pre>
-<a href="image_1587799918362.png"><img src="image_1587799918362.png" width="250" alt="CLIJ2_multiplyMatrix_result62-1"/></a>
+<a href="image_1587799918362.png"><img src="image_1587799918362.png" width="224" alt="CLIJ2_multiplyMatrix_result62-1"/></a>
 
 ## Element wise multiplication of the matrix with another matrix
 

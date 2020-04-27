@@ -18,7 +18,7 @@ input = getTitle();
 
 
 </pre>
-<a href="image_1587212624812.png"><img src="image_1587212624812.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587212624812.png"><img src="image_1587212624812.png" width="224" alt="blobs.gif"/></a>
 
 ## Initialize GPU
  and push image data to GPU memory
@@ -49,8 +49,8 @@ Ext.CLIJ2_pullBinary(mask);
 Ext.CLIJ2_pullBinary(voronoi_diagram);
 
 </pre>
-<a href="image_1587212628710.png"><img src="image_1587212628710.png" width="250" alt="CLIJ2_thresholdOtsu_result28"/></a>
-<a href="image_1587212628744.png"><img src="image_1587212628744.png" width="250" alt="CLIJ2_voronoiOctagon_result29"/></a>
+<a href="image_1587212628710.png"><img src="image_1587212628710.png" width="224" alt="CLIJ2_thresholdOtsu_result28"/></a>
+<a href="image_1587212628744.png"><img src="image_1587212628744.png" width="224" alt="CLIJ2_voronoiOctagon_result29"/></a>
 
 Clean up by the end
 

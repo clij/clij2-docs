@@ -20,7 +20,7 @@ run("Blobs (25K)");
 input = getTitle();
 
 </pre>
-<a href="image_1587652857492.png"><img src="image_1587652857492.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587652857492.png"><img src="image_1587652857492.png" width="224" alt="blobs.gif"/></a>
 
 Init GPU
  and data
@@ -44,7 +44,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_th
 Ext.CLIJ2_pull(mask);
 
 </pre>
-<a href="image_1587652857639.png"><img src="image_1587652857639.png" width="250" alt="CLIJ2_thresholdOtsu_result232"/></a>
+<a href="image_1587652857639.png"><img src="image_1587652857639.png" width="224" alt="CLIJ2_thresholdOtsu_result232"/></a>
 
 Draw a Voronoi diagram and invert it
 
@@ -58,8 +58,8 @@ Ext.CLIJ2_pullBinary(voronoi_diagram);
 Ext.CLIJ2_pullBinary(inverted_voronoi);
 
 </pre>
-<a href="image_1587652857789.png"><img src="image_1587652857789.png" width="250" alt="CLIJ2_voronoiOctagon_result233"/></a>
-<a href="image_1587652857818.png"><img src="image_1587652857818.png" width="250" alt="CLIJ2_binaryNot_result234"/></a>
+<a href="image_1587652857789.png"><img src="image_1587652857789.png" width="224" alt="CLIJ2_voronoiOctagon_result233"/></a>
+<a href="image_1587652857818.png"><img src="image_1587652857818.png" width="224" alt="CLIJ2_binaryNot_result234"/></a>
 
 Generate a label map and extend it to make labels touch
 
@@ -73,8 +73,8 @@ Ext.CLIJ2_pull(labelled);
 Ext.CLIJ2_pull(labelled_extended);
 
 </pre>
-<a href="image_1587652857959.png"><img src="image_1587652857959.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result235"/></a>
-<a href="image_1587652857977.png"><img src="image_1587652857977.png" width="250" alt="CLIJ2_maximum2DBox_result236"/></a>
+<a href="image_1587652857959.png"><img src="image_1587652857959.png" width="224" alt="CLIJ2_connectedComponentsLabelingBox_result235"/></a>
+<a href="image_1587652857977.png"><img src="image_1587652857977.png" width="224" alt="CLIJ2_maximum2DBox_result236"/></a>
 
 Determine touch matrix
 
@@ -83,7 +83,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CL
 Ext.CLIJ2_pullBinary(touch_matrix);
 
 </pre>
-<a href="image_1587652858039.png"><img src="image_1587652858039.png" width="250" alt="CLIJ2_generateTouchMatrix_result237"/></a>
+<a href="image_1587652858039.png"><img src="image_1587652858039.png" width="224" alt="CLIJ2_generateTouchMatrix_result237"/></a>
 
 Do statistics on the label map
  and push the mean intensity column back to the GPU
@@ -104,7 +104,7 @@ Ext.CLIJ2_pull(intensity_map);
 rename("label intensity");
 
 </pre>
-<a href="image_1587652858096.png"><img src="image_1587652858096.png" width="250" alt="label intensity"/></a>
+<a href="image_1587652858096.png"><img src="image_1587652858096.png" width="224" alt="label intensity"/></a>
 
 Determine mean (mean) intensity of local neighbors and draw another parametric image
 
@@ -116,7 +116,7 @@ Ext.CLIJ2_pull(local_mean_intensity_map);
 rename("mean neighbor intensity");
 
 </pre>
-<a href="image_1587652858149.png"><img src="image_1587652858149.png" width="250" alt="mean neighbor intensity"/></a>
+<a href="image_1587652858149.png"><img src="image_1587652858149.png" width="224" alt="mean neighbor intensity"/></a>
 
 Determine min and max (mean) intensity of local neighbors and draw two more parametric image
 
@@ -135,8 +135,8 @@ Ext.CLIJ2_pull(local_maximum_intensity_map);
 rename("maximum neighbor intensity");
 
 </pre>
-<a href="image_1587652858252.png"><img src="image_1587652858252.png" width="250" alt="minimum neighbor intensity"/></a>
-<a href="image_1587652858260.png"><img src="image_1587652858260.png" width="250" alt="maximum neighbor intensity"/></a>
+<a href="image_1587652858252.png"><img src="image_1587652858252.png" width="224" alt="minimum neighbor intensity"/></a>
+<a href="image_1587652858260.png"><img src="image_1587652858260.png" width="224" alt="maximum neighbor intensity"/></a>
 
 Clean up by the end.
 

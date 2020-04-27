@@ -18,7 +18,7 @@ run("Invert LUT");
 input = getTitle();
 
 </pre>
-<a href="image_1587652419772.png"><img src="image_1587652419772.png" width="250" alt="blobs-2.gif"/></a>
+<a href="image_1587652419772.png"><img src="image_1587652419772.png" width="224" alt="blobs-2.gif"/></a>
 
 ## Initialize GPU
  and push image data to GPU memory

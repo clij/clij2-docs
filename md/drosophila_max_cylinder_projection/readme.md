@@ -85,7 +85,7 @@ show(input_float, "Input image");
 > = 363.0 Mb
 >  
 </pre>
-<a href="image_1587652222401.png"><img src="image_1587652222401.png" width="250" alt="CLIJ2_maximumZProjection_result172"/></a>
+<a href="image_1587652222401.png"><img src="image_1587652222401.png" width="224" alt="CLIJ2_maximumZProjection_result172"/></a>
 
 ## Noise and background removal
 We use the difference-of-Gaussian (DoG) technique to remove noise and 
@@ -99,7 +99,7 @@ sigma2 = 6;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_differenceOfGaussian3D">CLIJ2_differenceOfGaussian3D</a>(input_float, background_subtracted, sigma1, sigma1, 0, sigma2, sigma2, 0);
 show(background_subtracted, "Background subtracted");
 </pre>
-<a href="image_1587652222915.png"><img src="image_1587652222915.png" width="250" alt="CLIJ2_maximumZProjection_result174"/></a>
+<a href="image_1587652222915.png"><img src="image_1587652222915.png" width="224" alt="CLIJ2_maximumZProjection_result174"/></a>
 
 We remove negative and zero pixel intensities so that later only maxima above zero intensity are detected. 
 
@@ -107,7 +107,7 @@ We remove negative and zero pixel intensities so that later only maxima above ze
 Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumImageAndScalar">CLIJ2_maximumImageAndScalar</a>(background_subtracted, positive_stack, 1.0);
 show(positive_stack, "Positive stack");
 </pre>
-<a href="image_1587652223595.png"><img src="image_1587652223595.png" width="250" alt="CLIJ2_maximumZProjection_result176"/></a>
+<a href="image_1587652223595.png"><img src="image_1587652223595.png" width="224" alt="CLIJ2_maximumZProjection_result176"/></a>
 
 ## Resampling
 All following transforms become mathematically easier to perform by resampling the
@@ -123,7 +123,7 @@ linearInterpolation = true;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_resample">CLIJ2_resample</a>(positive_stack, resampled, resampleX, resampleY, resampleZ, linearInterpolation);
 show(resampled, "Resampled")
 </pre>
-<a href="image_1587652224025.png"><img src="image_1587652224025.png" width="250" alt="CLIJ2_maximumZProjection_result178"/></a>
+<a href="image_1587652224025.png"><img src="image_1587652224025.png" width="224" alt="CLIJ2_maximumZProjection_result178"/></a>
 
 ## Spatial trnansforms 
 Goal of this workflow is to perform a maximum projection from the center of the embryo to the surface. 
@@ -138,7 +138,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_resliceTop">CLIJ2_resli
 show(reslicedFromTop, "Resliced from top");
 
 </pre>
-<a href="image_1587652224173.png"><img src="image_1587652224173.png" width="250" alt="CLIJ2_maximumZProjection_result180"/></a>
+<a href="image_1587652224173.png"><img src="image_1587652224173.png" width="224" alt="CLIJ2_maximumZProjection_result180"/></a>
 
 ### Radial reslicing
 
@@ -156,7 +156,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_resliceRadial">CLIJ2_re
 show(radialResliced, "Radial projection");
 
 </pre>
-<a href="image_1587652224286.png"><img src="image_1587652224286.png" width="250" alt="CLIJ2_maximumZProjection_result182"/></a>
+<a href="image_1587652224286.png"><img src="image_1587652224286.png" width="224" alt="CLIJ2_maximumZProjection_result182"/></a>
 
 ### Reslicing from inside to outside
 
@@ -165,7 +165,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_resliceLeft">CLIJ2_resl
 show(reslicedFromLeft, "Resliced from inside to outside");
 
 </pre>
-<a href="image_1587652224403.png"><img src="image_1587652224403.png" width="250" alt="CLIJ2_maximumZProjection_result184"/></a>
+<a href="image_1587652224403.png"><img src="image_1587652224403.png" width="224" alt="CLIJ2_maximumZProjection_result184"/></a>
 
 ## Maximum projection
 
@@ -185,7 +185,7 @@ the image back from GPU memory to CPU memory.
 Ext.CLIJ_pull(maxProjected);
 
 </pre>
-<a href="image_1587652224510.png"><img src="image_1587652224510.png" width="250" alt="CLIJ2_maximumZProjection_result185"/></a>
+<a href="image_1587652224510.png"><img src="image_1587652224510.png" width="224" alt="CLIJ2_maximumZProjection_result185"/></a>
 
 For spot detection we use ImageJs `Find Maxima` method.
 
@@ -205,7 +205,7 @@ run("Flatten");
 <pre>
 > Number of spots found:2454
 </pre>
-<a href="image_1587652225764.png"><img src="image_1587652225764.png" width="250" alt="CLIJ2_maximumZProjection_result185-1"/></a>
+<a href="image_1587652225764.png"><img src="image_1587652225764.png" width="224" alt="CLIJ2_maximumZProjection_result185-1"/></a>
 
 # Performance evaluation
 Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 

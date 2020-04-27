@@ -20,7 +20,7 @@ run("Blobs (25K)");
 input = getTitle();
 
 </pre>
-<a href="image_1587799043401.png"><img src="image_1587799043401.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587799043401.png"><img src="image_1587799043401.png" width="224" alt="blobs.gif"/></a>
 
 Create two images describing local shift
 
@@ -39,8 +39,8 @@ run("Gaussian Blur...", "sigma=15");
 run("Enhance Contrast", "saturated=0.35");
 
 </pre>
-<a href="image_1587799043590.png"><img src="image_1587799043590.png" width="250" alt="shiftX"/></a>
-<a href="image_1587799043603.png"><img src="image_1587799043603.png" width="250" alt="shiftY"/></a>
+<a href="image_1587799043590.png"><img src="image_1587799043590.png" width="224" alt="shiftX"/></a>
+<a href="image_1587799043603.png"><img src="image_1587799043603.png" width="224" alt="shiftY"/></a>
 
 ## Initialize GPU and push images to GPU memory
 
@@ -69,12 +69,12 @@ for (i = 0; i < 36; i += 6) {
 }
 
 </pre>
-<a href="image_1587799043898.png"><img src="image_1587799043898.png" width="250" alt="Angle 0 deg"/></a>
-<a href="image_1587799043963.png"><img src="image_1587799043963.png" width="250" alt="Angle 60 deg"/></a>
-<a href="image_1587799044037.png"><img src="image_1587799044037.png" width="250" alt="Angle 120 deg"/></a>
-<a href="image_1587799044125.png"><img src="image_1587799044125.png" width="250" alt="Angle 180 deg"/></a>
-<a href="image_1587799044220.png"><img src="image_1587799044220.png" width="250" alt="Angle 240 deg"/></a>
-<a href="image_1587799044278.png"><img src="image_1587799044278.png" width="250" alt="Angle 300 deg"/></a>
+<a href="image_1587799043898.png"><img src="image_1587799043898.png" width="224" alt="Angle 0 deg"/></a>
+<a href="image_1587799043963.png"><img src="image_1587799043963.png" width="224" alt="Angle 60 deg"/></a>
+<a href="image_1587799044037.png"><img src="image_1587799044037.png" width="224" alt="Angle 120 deg"/></a>
+<a href="image_1587799044125.png"><img src="image_1587799044125.png" width="224" alt="Angle 180 deg"/></a>
+<a href="image_1587799044220.png"><img src="image_1587799044220.png" width="224" alt="Angle 240 deg"/></a>
+<a href="image_1587799044278.png"><img src="image_1587799044278.png" width="224" alt="Angle 300 deg"/></a>
 
 Cleanup by the end
 

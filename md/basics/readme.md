@@ -43,7 +43,7 @@ run("Cell Colony (31K)");
 input_image = getTitle();
 Ext.CLIJ2_push(input_image);
 </pre>
-<a href="image_1587650909426.png"><img src="image_1587650909426.png" width="250" alt="Cell_Colony.jpg"/></a>
+<a href="image_1587650909426.png"><img src="image_1587650909426.png" width="224" alt="Cell_Colony.jpg"/></a>
 
 The image is now named in the GPU like it its image on screen. We can ask the GPU to tell us 
 which images it knows right now: 
@@ -76,7 +76,7 @@ In order to get the `result` back from the GPU, we need to pull it:
 <pre class="highlight">
 Ext.CLIJ2_pull(result);
 </pre>
-<a href="image_1587650909598.png"><img src="image_1587650909598.png" width="250" alt="CLIJ2_gaussianBlur2D_result114"/></a>
+<a href="image_1587650909598.png"><img src="image_1587650909598.png" width="224" alt="CLIJ2_gaussianBlur2D_result114"/></a>
 
 Furthermore, let's ask again which images are now in GPU memory:
 

@@ -23,7 +23,7 @@ input = getTitle();
 
 
 </pre>
-<a href="image_1587652902570.png"><img src="image_1587652902570.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587652902570.png"><img src="image_1587652902570.png" width="224" alt="blobs.gif"/></a>
 
 ## Init GPU and push image data to the GPU
  
@@ -54,7 +54,7 @@ run("glasbey on dark");
 
 
 </pre>
-<a href="image_1587652902814.png"><img src="image_1587652902814.png" width="250" alt="CLIJ2_connectedComponentsLabeling_result247"/></a>
+<a href="image_1587652902814.png"><img src="image_1587652902814.png" width="224" alt="CLIJ2_connectedComponentsLabeling_result247"/></a>
 
 ## Basic measurements
  

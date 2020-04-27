@@ -18,7 +18,7 @@ run("Invert LUT");
 input = getTitle();
 
 </pre>
-<a href="image_1587652041130.png"><img src="image_1587652041130.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587652041130.png"><img src="image_1587652041130.png" width="224" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push image to GPU memory
 
@@ -44,7 +44,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_crop2D">CLIJ2_crop2D</a
 Ext.CLIJ2_pull(cropped);
 
 </pre>
-<a href="image_1587652041252.png"><img src="image_1587652041252.png" width="250" alt="CLIJ2_crop2D_result136"/></a>
+<a href="image_1587652041252.png"><img src="image_1587652041252.png" width="224" alt="CLIJ2_crop2D_result136"/></a>
 
 ## Paste the image into another image
 We create an empty image and make a collage
@@ -73,7 +73,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_paste2D">CLIJ2_paste2D<
 Ext.CLIJ2_pull(collage);
 
 </pre>
-<a href="image_1587652041298.png"><img src="image_1587652041298.png" width="250" alt="CLIJ2_create2D_result137"/></a>
+<a href="image_1587652041298.png"><img src="image_1587652041298.png" width="224" alt="CLIJ2_create2D_result137"/></a>
 
 Clean up be the end
 

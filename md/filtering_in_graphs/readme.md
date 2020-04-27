@@ -38,7 +38,7 @@ Ext.CLIJ2_pull(pointlist);
 zoom(10);
 
 </pre>
-<a href="image_1587654657082.png"><img src="image_1587654657082.png" width="250" alt="CLIJ2_create2D_result1-1"/></a>
+<a href="image_1587654657082.png"><img src="image_1587654657082.png" width="224" alt="CLIJ2_create2D_result1-1"/></a>
 
 ## Draw the spots labelled (1, 2, 3, ...) in 2D space
 
@@ -49,7 +49,7 @@ zoom(4);
 run("glasbey_on_dark");
 
 </pre>
-<a href="image_1587654657283.png"><img src="image_1587654657283.png" width="250" alt="CLIJ2_pointlistToLabelledSpots_result2-1"/></a>
+<a href="image_1587654657283.png"><img src="image_1587654657283.png" width="224" alt="CLIJ2_pointlistToLabelledSpots_result2-1"/></a>
 
 ## Partition the space between the points.
 
@@ -60,7 +60,7 @@ zoom(4);
 run("glasbey_on_dark");;
 
 </pre>
-<a href="image_1587654657475.png"><img src="image_1587654657475.png" width="250" alt="CLIJ2_labelVoronoiOctagon_result3-1"/></a>
+<a href="image_1587654657475.png"><img src="image_1587654657475.png" width="224" alt="CLIJ2_labelVoronoiOctagon_result3-1"/></a>
 
 ## Distribute a random measurement in space - with one outlier
 
@@ -76,7 +76,7 @@ Ext.CLIJ2_pull(measurement);
 zoom(10);
 
 </pre>
-<a href="image_1587654657605.png"><img src="image_1587654657605.png" width="250" alt="CLIJ2_pushArray_result4-1"/></a>
+<a href="image_1587654657605.png"><img src="image_1587654657605.png" width="224" alt="CLIJ2_pushArray_result4-1"/></a>
 
 ## Make a parametric image showing measurements in 2D space
 
@@ -88,7 +88,7 @@ setMinAndMax(0, 20);
 run("Fire");
 
 </pre>
-<a href="image_1587654657755.png"><img src="image_1587654657755.png" width="250" alt="CLIJ2_replaceIntensities_result5-1"/></a>
+<a href="image_1587654657755.png"><img src="image_1587654657755.png" width="224" alt="CLIJ2_replaceIntensities_result5-1"/></a>
 
 ## Calculate the median measurement for every node in graph, the median of its neighbors
 
@@ -108,7 +108,7 @@ setMinAndMax(0, 20);
 run("Fire");
 
 </pre>
-<a href="image_1587654657972.png"><img src="image_1587654657972.png" width="250" alt="CLIJ2_replaceIntensities_result5-2"/></a>
+<a href="image_1587654657972.png"><img src="image_1587654657972.png" width="224" alt="CLIJ2_replaceIntensities_result5-2"/></a>
 
 As you can see, the outlier is gone :-)
 

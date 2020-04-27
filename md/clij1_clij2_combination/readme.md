@@ -23,8 +23,8 @@ original = getTitle();
 newImage("background", "16-bit ramp", width, height, slices);
  background = getTitle();
 </pre>
-<a href="image_1587651657700.png"><img src="image_1587651657700.png" width="250" alt="original"/></a>
-<a href="image_1587651657761.png"><img src="image_1587651657761.png" width="250" alt="background"/></a>
+<a href="image_1587651657700.png"><img src="image_1587651657700.png" width="224" alt="original"/></a>
+<a href="image_1587651657761.png"><img src="image_1587651657761.png" width="224" alt="background"/></a>
 
 ## Initialize GPU and push image data to GPU memory
 
@@ -60,7 +60,7 @@ Ext.CLIJ2_pull(originalWithBackground);
 run("Invert LUT"); 
 
 </pre>
-<a href="image_1587651657842.png"><img src="image_1587651657842.png" width="250" alt="originalWithBackground"/></a>
+<a href="image_1587651657842.png"><img src="image_1587651657842.png" width="224" alt="originalWithBackground"/></a>
 
 Clean up finally using CLIJ
 

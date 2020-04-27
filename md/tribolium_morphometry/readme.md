@@ -42,7 +42,7 @@ show(input, "input");
 <pre>
 > Loading took 314 msec
 </pre>
-<a href="image_1587649803906.png"><img src="image_1587649803906.png" width="250" alt="CLIJ2_maximumZProjection_result54"/></a>
+<a href="image_1587649803906.png"><img src="image_1587649803906.png" width="224" alt="CLIJ2_maximumZProjection_result54"/></a>
 
 ## Spot detection
 After some noise removal / smoothing, we perform local maximum detection:
@@ -57,7 +57,7 @@ radius = 2.0;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_detectMaximaBox">CLIJ2_detectMaximaBox</a>(blurred, detected_maxima, radius);
 show_spots(detected_maxima, "detected maxima");
 </pre>
-<a href="image_1587649804236.png"><img src="image_1587649804236.png" width="250" alt="CLIJ2_maximumZProjection_result58"/></a>
+<a href="image_1587649804236.png"><img src="image_1587649804236.png" width="224" alt="CLIJ2_maximumZProjection_result58"/></a>
 
 ## Spot curation
 We now remove spots which are below a certain intensity and label the remaining spots.
@@ -75,7 +75,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_labelSpots">CLIJ2_label
 show_spots(labelled_spots, "selected, labelled spots");
 run("glasbey_on_dark");
 </pre>
-<a href="image_1587649804565.png"><img src="image_1587649804565.png" width="250" alt="CLIJ2_maximumZProjection_result63"/></a>
+<a href="image_1587649804565.png"><img src="image_1587649804565.png" width="224" alt="CLIJ2_maximumZProjection_result63"/></a>
 
 Let's see how many spots are there:
 
@@ -104,11 +104,11 @@ for (i = 0; i < number_of_dilations; i++) {
 	}
 }
 </pre>
-<a href="image_1587649805100.png"><img src="image_1587649805100.png" width="250" alt="CLIJ2_maximumZProjection_result66"/></a>
-<a href="image_1587649805192.png"><img src="image_1587649805192.png" width="250" alt="CLIJ2_maximumZProjection_result67"/></a>
-<a href="image_1587649805242.png"><img src="image_1587649805242.png" width="250" alt="CLIJ2_maximumZProjection_result68"/></a>
-<a href="image_1587649805273.png"><img src="image_1587649805273.png" width="250" alt="CLIJ2_maximumZProjection_result69"/></a>
-<a href="image_1587649805300.png"><img src="image_1587649805300.png" width="250" alt="CLIJ2_maximumZProjection_result70"/></a>
+<a href="image_1587649805100.png"><img src="image_1587649805100.png" width="224" alt="CLIJ2_maximumZProjection_result66"/></a>
+<a href="image_1587649805192.png"><img src="image_1587649805192.png" width="224" alt="CLIJ2_maximumZProjection_result67"/></a>
+<a href="image_1587649805242.png"><img src="image_1587649805242.png" width="224" alt="CLIJ2_maximumZProjection_result68"/></a>
+<a href="image_1587649805273.png"><img src="image_1587649805273.png" width="224" alt="CLIJ2_maximumZProjection_result69"/></a>
+<a href="image_1587649805300.png"><img src="image_1587649805300.png" width="224" alt="CLIJ2_maximumZProjection_result70"/></a>
 
 Afterwards, we erode the label map again and get the final result of the cell segementation
 
@@ -122,7 +122,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(fl
 show(labels, "cell segmentation");
 run("glasbey_on_dark");
 </pre>
-<a href="image_1587649805451.png"><img src="image_1587649805451.png" width="250" alt="CLIJ2_maximumZProjection_result73"/></a>
+<a href="image_1587649805451.png"><img src="image_1587649805451.png" width="224" alt="CLIJ2_maximumZProjection_result73"/></a>
 
 ## Draw connectivity of the cells as mesh
 We then read out the positions of the detected nuclei. 
@@ -133,7 +133,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_labelledSpotsToPointLis
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">CLIJ2_generateDistanceMatrix</a>(pointlist, pointlist, distance_matrix);
 show(distance_matrix, "distance matrix");
 </pre>
-<a href="image_1587649805581.png"><img src="image_1587649805581.png" width="250" alt="CLIJ2_maximumZProjection_result76"/></a>
+<a href="image_1587649805581.png"><img src="image_1587649805581.png" width="224" alt="CLIJ2_maximumZProjection_result76"/></a>
 
 Starting from the label map of the cells, we can generate a touch matrix:
 
@@ -144,7 +144,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CL
 Ext.<a href="https://clij.github.io/clij2-docs/reference_setColumn">CLIJ2_setColumn</a>(touch_matrix, 0, 0);
 show_spots(touch_matrix, "touch matrix");
 </pre>
-<a href="image_1587649806392.png"><img src="image_1587649806392.png" width="250" alt="CLIJ2_maximumZProjection_result79"/></a>
+<a href="image_1587649806392.png"><img src="image_1587649806392.png" width="224" alt="CLIJ2_maximumZProjection_result79"/></a>
 
 By element-wise multiplication of distance matrix and touch matrix, we know the length of 
 each edge. We can use this information to draw a mesh with colour doing distance (between 0 and 50 micron):
@@ -158,7 +158,7 @@ show(mesh, "distance mesh");
 run("Green Fire Blue");
 setMinAndMax(0, 50);
 </pre>
-<a href="image_1587649806684.png"><img src="image_1587649806684.png" width="250" alt="CLIJ2_maximumZProjection_result82"/></a>
+<a href="image_1587649806684.png"><img src="image_1587649806684.png" width="224" alt="CLIJ2_maximumZProjection_result82"/></a>
 
 ## Quantitative analysis of distances between neighbors
 We next determine the averge distance between a node and all of its neighbors. Th result is
@@ -174,7 +174,7 @@ run("Fire");
 setMinAndMax(0, 50);
 
 </pre>
-<a href="image_1587649806937.png"><img src="image_1587649806937.png" width="250" alt="CLIJ2_maximumZProjection_result85"/></a>
+<a href="image_1587649806937.png"><img src="image_1587649806937.png" width="224" alt="CLIJ2_maximumZProjection_result85"/></a>
 
 Now we measure the mean of the neighbors neighbord to their neigbors and visualise it as above.
 
@@ -185,7 +185,7 @@ show(local_mean_pixel_count_map, "neighbor mean distance map");
 run("Fire");
 setMinAndMax(0, 50);
 </pre>
-<a href="image_1587649807066.png"><img src="image_1587649807066.png" width="250" alt="CLIJ2_maximumZProjection_result88"/></a>
+<a href="image_1587649807066.png"><img src="image_1587649807066.png" width="224" alt="CLIJ2_maximumZProjection_result88"/></a>
 
 We can do the same with minimum, median and maximum distances:
 
@@ -208,9 +208,9 @@ show(local_maximum_pixel_count_map, "neighbor maximum distance map");
 run("Fire");
 setMinAndMax(0, 50);
 </pre>
-<a href="image_1587649807400.png"><img src="image_1587649807400.png" width="250" alt="CLIJ2_maximumZProjection_result91"/></a>
-<a href="image_1587649807466.png"><img src="image_1587649807466.png" width="250" alt="CLIJ2_maximumZProjection_result94"/></a>
-<a href="image_1587649807512.png"><img src="image_1587649807512.png" width="250" alt="CLIJ2_maximumZProjection_result97"/></a>
+<a href="image_1587649807400.png"><img src="image_1587649807400.png" width="224" alt="CLIJ2_maximumZProjection_result91"/></a>
+<a href="image_1587649807466.png"><img src="image_1587649807466.png" width="224" alt="CLIJ2_maximumZProjection_result94"/></a>
+<a href="image_1587649807512.png"><img src="image_1587649807512.png" width="224" alt="CLIJ2_maximumZProjection_result97"/></a>
 
 ## Performance evaluation
 Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 

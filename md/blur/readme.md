@@ -19,7 +19,7 @@ run("Invert LUT");
 input = getTitle();
 
 </pre>
-<a href="image_1587651220246.png"><img src="image_1587651220246.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587651220246.png"><img src="image_1587651220246.png" width="224" alt="blobs.gif"/></a>
 
 Init GPU
  and push image data to GPU
@@ -45,7 +45,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_g
 Ext.CLIJ2_pull(blurred);
 
 </pre>
-<a href="image_1587651221795.png"><img src="image_1587651221795.png" width="250" alt="CLIJ2_gaussianBlur3D_result125"/></a>
+<a href="image_1587651221795.png"><img src="image_1587651221795.png" width="224" alt="CLIJ2_gaussianBlur3D_result125"/></a>
 
 Cleanup by the end
 

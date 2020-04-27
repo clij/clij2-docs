@@ -35,7 +35,7 @@ input = getTitle();
 
 
 </pre>
-<a href="image_1587653255960.png"><img src="image_1587653255960.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587653255960.png"><img src="image_1587653255960.png" width="224" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push push image data to GPU memory
 
@@ -67,7 +67,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_pullLabelsToROIManager"
 roiManager("show all");
 show();
 </pre>
-<a href="image_1587653256521.png"><img src="image_1587653256521.png" width="250" alt="blobs-1.gif"/></a>
+<a href="image_1587653256521.png"><img src="image_1587653256521.png" width="224" alt="blobs-1.gif"/></a>
 
 ## We now go through the labelled objects in the label map and measure their bounding box area:
 
@@ -179,7 +179,7 @@ roiManager("show all");
 show();
 
 </pre>
-<a href="image_1587653257021.png"><img src="image_1587653257021.png" width="250" alt="blobs-2.gif"/></a>
+<a href="image_1587653257021.png"><img src="image_1587653257021.png" width="224" alt="blobs-2.gif"/></a>
 
 Clean up by the end
 

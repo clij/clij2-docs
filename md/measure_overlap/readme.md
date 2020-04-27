@@ -17,7 +17,7 @@ run("Blobs (25K)");
 input = getTitle();
 
 </pre>
-<a href="image_1587211571604.png"><img src="image_1587211571604.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587211571604.png"><img src="image_1587211571604.png" width="224" alt="blobs.gif"/></a>
 
 ## Init GPU
  and push image data to GPU memory
@@ -46,8 +46,8 @@ Ext.CLIJ2_pullBinary(mask1);
 Ext.CLIJ2_pullBinary(mask2);
 
 </pre>
-<a href="image_1587211571795.png"><img src="image_1587211571795.png" width="250" alt="CLIJ2_automaticThreshold_result15"/></a>
-<a href="image_1587211571830.png"><img src="image_1587211571830.png" width="250" alt="CLIJ2_automaticThreshold_result16"/></a>
+<a href="image_1587211571795.png"><img src="image_1587211571795.png" width="224" alt="CLIJ2_automaticThreshold_result15"/></a>
+<a href="image_1587211571830.png"><img src="image_1587211571830.png" width="224" alt="CLIJ2_automaticThreshold_result16"/></a>
 
 ## measure overlap between the two masks
 

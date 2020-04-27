@@ -25,7 +25,7 @@ run("Invert LUT");
 input = getTitle();
 
 </pre>
-<a href="image_1587649367585.png"><img src="image_1587649367585.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587649367585.png"><img src="image_1587649367585.png" width="224" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push image to GPU memory
 
@@ -55,7 +55,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_topHatBox">CLIJ2_topHat
 Ext.CLIJ2_pull(background_subtacted);
 
 </pre>
-<a href="image_1587649367718.png"><img src="image_1587649367718.png" width="250" alt="CLIJ2_topHatBox_result8"/></a>
+<a href="image_1587649367718.png"><img src="image_1587649367718.png" width="224" alt="CLIJ2_topHatBox_result8"/></a>
 
 ## Stop and inspect time tracing
 After finishing the workflow, we can take a look at which operations called which other operations

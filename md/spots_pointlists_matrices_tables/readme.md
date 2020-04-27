@@ -41,7 +41,7 @@ Ext.CLIJ2_pull(spots_image);
 zoom(100);
 
 </pre>
-<a href="image_1587653568700.png"><img src="image_1587653568700.png" width="250" alt="CLIJ2_pushArray_result7-1"/></a>
+<a href="image_1587653568700.png"><img src="image_1587653568700.png" width="224" alt="CLIJ2_pushArray_result7-1"/></a>
 
 ## Convert the spots image to a point list
 
@@ -50,7 +50,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">CLIJ2
 Ext.CLIJ2_pull(pointlist);
 zoom(100);
 </pre>
-<a href="image_1587653568952.png"><img src="image_1587653568952.png" width="250" alt="CLIJ2_spotsToPointList_result8-1"/></a>
+<a href="image_1587653568952.png"><img src="image_1587653568952.png" width="224" alt="CLIJ2_spotsToPointList_result8-1"/></a>
 
 ## Determine the distance from every spot to every spot and write it in a distance matrix. 
 
@@ -60,7 +60,7 @@ Ext.CLIJ2_pull(distance_matrix);
 zoom(100);
 
 </pre>
-<a href="image_1587653569089.png"><img src="image_1587653569089.png" width="250" alt="CLIJ2_generateDistanceMatrix_result9-1"/></a>
+<a href="image_1587653569089.png"><img src="image_1587653569089.png" width="224" alt="CLIJ2_generateDistanceMatrix_result9-1"/></a>
 
 ## Label all spots
 
@@ -71,7 +71,7 @@ zoom(100);
 run("glasbey_on_dark");
 
 </pre>
-<a href="image_1587653569253.png"><img src="image_1587653569253.png" width="250" alt="CLIJ2_labelSpots_result10-1"/></a>
+<a href="image_1587653569253.png"><img src="image_1587653569253.png" width="224" alt="CLIJ2_labelSpots_result10-1"/></a>
 
 ## Blow up the labels until they touch; similar to a Voronoi diagrom
 
@@ -81,7 +81,7 @@ Ext.CLIJ2_pull(label_voronoi);
 zoom(100);
 
 </pre>
-<a href="image_1587653569420.png"><img src="image_1587653569420.png" width="250" alt="CLIJ2_labelVoronoiOctagon_result11-1"/></a>
+<a href="image_1587653569420.png"><img src="image_1587653569420.png" width="224" alt="CLIJ2_labelVoronoiOctagon_result11-1"/></a>
 
 ## Analyse which label touches which other labels and save it in a touch matrix
 
@@ -91,7 +91,7 @@ Ext.CLIJ2_pull(touch_matrix);
 zoom(100);
 
 </pre>
-<a href="image_1587653569575.png"><img src="image_1587653569575.png" width="250" alt="CLIJ2_generateTouchMatrix_result12-1"/></a>
+<a href="image_1587653569575.png"><img src="image_1587653569575.png" width="224" alt="CLIJ2_generateTouchMatrix_result12-1"/></a>
 
 ## Count neighbors for every node
 
@@ -101,7 +101,7 @@ Ext.CLIJ2_pull(count_vector);
 zoom(100);
 
 </pre>
-<a href="image_1587653569708.png"><img src="image_1587653569708.png" width="250" alt="CLIJ2_countTouchingNeighbors_result13-1"/></a>
+<a href="image_1587653569708.png"><img src="image_1587653569708.png" width="224" alt="CLIJ2_countTouchingNeighbors_result13-1"/></a>
 
 ## Do pixel statistics on the labelled image
 
@@ -128,7 +128,7 @@ Ext.CLIJ2_pull(table_image);
 zoom(100);
 
 </pre>
-<a href="image_1587653569971.png"><img src="image_1587653569971.png" width="250" alt="CLIJ2_pushResultsTable_result14-1"/></a>
+<a href="image_1587653569971.png"><img src="image_1587653569971.png" width="224" alt="CLIJ2_pushResultsTable_result14-1"/></a>
 
 ## Push a single column of the results table to the GPU
 
@@ -138,7 +138,7 @@ Ext.CLIJ2_pull(mean_intensity_vector);
 zoom(100);
 
 </pre>
-<a href="image_1587653570159.png"><img src="image_1587653570159.png" width="250" alt="CLIJ2_pushResultsTableColumn_result15-1"/></a>
+<a href="image_1587653570159.png"><img src="image_1587653570159.png" width="224" alt="CLIJ2_pushResultsTableColumn_result15-1"/></a>
 
 ## Multiply the pointlist with a scalar makes the points virtually more distant
 
@@ -149,7 +149,7 @@ Ext.CLIJ2_pull(pointlist_multiplied);
 zoom(100);
 
 </pre>
-<a href="image_1587653570292.png"><img src="image_1587653570292.png" width="250" alt="CLIJ2_multiplyImageAndScalar_result16-1"/></a>
+<a href="image_1587653570292.png"><img src="image_1587653570292.png" width="224" alt="CLIJ2_multiplyImageAndScalar_result16-1"/></a>
 
 ## Draw a mesh of touching neighbors and corresponding spots
 
@@ -159,7 +159,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ
 Ext.CLIJ2_pull(mesh);
 
 </pre>
-<a href="image_1587653570373.png"><img src="image_1587653570373.png" width="250" alt="CLIJ2_create2D_result17"/></a>
+<a href="image_1587653570373.png"><img src="image_1587653570373.png" width="224" alt="CLIJ2_create2D_result17"/></a>
 
 ## Draw a showing all edges shorter than a given value
 
@@ -169,7 +169,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_distanceMatrixToMesh">C
 Ext.CLIJ2_pull(mesh2);
 
 </pre>
-<a href="image_1587653570460.png"><img src="image_1587653570460.png" width="250" alt="CLIJ2_create2D_result18"/></a>
+<a href="image_1587653570460.png"><img src="image_1587653570460.png" width="224" alt="CLIJ2_create2D_result18"/></a>
 
 Clean up by the end
 

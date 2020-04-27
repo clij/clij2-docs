@@ -22,7 +22,7 @@ input = getTitle();
 
 
 </pre>
-<a href="image_1587653828332.png"><img src="image_1587653828332.png" width="250" alt="blobs.gif"/></a>
+<a href="image_1587653828332.png"><img src="image_1587653828332.png" width="224" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push image data to GPU memory
 
@@ -43,7 +43,7 @@ run("Rotate... ", "angle=45 grid=1 interpolation=Bilinear");
 rotated_cpu = getTitle();
 
 </pre>
-<a href="image_1587653828457.png"><img src="image_1587653828457.png" width="250" alt="blobs-1.gif"/></a>
+<a href="image_1587653828457.png"><img src="image_1587653828457.png" width="224" alt="blobs-1.gif"/></a>
 
 ## Rotate image on GPU
 
@@ -55,7 +55,7 @@ Ext.CLIJ2_pull(rotated_gpu);
 
 
 </pre>
-<a href="image_1587653828521.png"><img src="image_1587653828521.png" width="250" alt="CLIJ2_affineTransform2D_result27"/></a>
+<a href="image_1587653828521.png"><img src="image_1587653828521.png" width="224" alt="CLIJ2_affineTransform2D_result27"/></a>
 
 ## Calculate difference image between CPU and GPU
 
@@ -63,7 +63,7 @@ Ext.CLIJ2_pull(rotated_gpu);
 imageCalculator("Subtract create 32-bit", rotated_cpu, rotated_gpu);
 
 </pre>
-<a href="image_1587653828620.png"><img src="image_1587653828620.png" width="250" alt="Result of blobs-1.gif"/></a>
+<a href="image_1587653828620.png"><img src="image_1587653828620.png" width="224" alt="Result of blobs-1.gif"/></a>
 
 Clean up by the end
 
