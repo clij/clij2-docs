@@ -5,8 +5,13 @@ Determines if two images A and B greater or equal pixel wise.
 
 f(a, b) = 1 if a >= b; 0 otherwise. 
 
+### greaterOrEqualConstant often follows after
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
+
+
 ### greaterOrEqualConstant is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
 
 
 ### Usage in ImageJ macro

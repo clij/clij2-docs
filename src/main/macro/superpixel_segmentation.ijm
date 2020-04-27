@@ -116,6 +116,17 @@ For thresholding the filtered vector, we reuse the macro function from above:
 */
 threshold_vector_and_visualise(filtered_pixel_count, labels, pixel_count_threshold);
 /*
+## Renumbering label maps
+*/
+// threshold the feature vector
+Ext.CLIJ2_greaterOrEqualConstant(filtered_pixel_count,  binary_vector, pixel_count_threshold);
+// we now remove the labels above the threshold from the labelmap
+Ext.CLIJ2_excludeLabels(binary_vector, labels, labels_embryo);
+show(labels_embryo, "labels_embryo");
+run("glasbey_on_dark");
+
+
+/*
 ## Visualisation of segmentation as ROIs
 We can also show the different regions using ImageJs ROIs and Overlays
 */

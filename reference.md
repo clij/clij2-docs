@@ -301,6 +301,9 @@ This operation follows a ray from a given position towards a label (or opposite 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsSubSurface">excludeLabelsSubSurface</a>  
 This operation follows a ray from a given position towards a label (or opposite direction) and checks if  there is another label between the label an the image border. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabels">excludeLabels</a>  
+This operation removes labels from a labelmap and renumbers the remaining labels. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_exponential">exponential</a>  
 Computes base exponential of all pixels values.
 

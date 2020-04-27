@@ -11,7 +11,7 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 
 
 ### replaceIntensities often follows after
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (4)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (2)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)
