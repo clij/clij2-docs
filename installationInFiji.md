@@ -1,13 +1,13 @@
 
 ## Installation
-[Download and install Fiji](https://fiji.sc/Downloads). Afterwards, click the menu `Help > Update...` and activate the [CLIJ update site](installationInFiji.
+[Download and install Fiji](https://fiji.sc/Downloads). Afterwards, click the menu `Help > Update...` and activate the CLIJ and CLIJ2 update sites.
 
 ![Image](images/updatesite.png)
 
-After restarting Fiji, CLIJ is successfully installed, if you find a menu entry _Plugins > ImageJ on GPU (CLIJ)_.
+After restarting Fiji, CLIJ is successfully installed, if you find a menu entry _Plugins > ImageJ on GPU (CLIJ2)_.
 
 ## Testing the installation
-You can execute [this macro](https://github.com/clij/clij-docs/blob/master/src/main/macro/benchmarking.ijm) to see if CLIJ and graphics card drivers are installed correctly. In case of issues, consult the [troubleshooting section](https://clij.github.io/clij-docs/troubleshooting) or contact us via [image.sc](https://image.sc).
+You can execute [this macro](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm) to see if CLIJ and graphics card drivers are installed correctly. In case of issues, consult the [troubleshooting section](https://clij.github.io/clij-docs/troubleshooting) or contact us via [image.sc](https://image.sc).
 
 ## Windows and MacOS
 On Windows and MacOS the installation should work right away in case the computer has a built-in Intel HD or AMD Ryzen GPU. In case dedicated AMD or NVidia GPUs are used, special drivers might have to be installed. Search for more information about drivers on the websites of the GPU vendors. 
@@ -30,7 +30,7 @@ Be really careful when doing this. Don't do it, if you're not aware what that me
 ## Linux
 Linux users need to install drivers for OpenCL, even on Intel HD GPUs. It is recommended to install the packages [beignet](https://github.com/intel/beignet) and [ocl-icd-devel](https://github.com/OCL-dev/ocl-icd).
 
-[Back to CLIJ documentation](https://clij.github.io/)
+[Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
 [Imprint](https://clij.github.io/imprint)
 
