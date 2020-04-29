@@ -6,12 +6,12 @@ Author: Robert Haase
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/maximumProjection.ijm)
 
 
-This macro shows how maximum projection 
+This macro shows how a maximum projection 
 can be done in the GPU.
 
 
 ## Start
-Let's clean up first and load some 3D example data.
+Let's clean up first and load some 3D example data:
 */
 run ("Close All");
 
@@ -19,7 +19,7 @@ run ("Close All");
 run("T1 Head (2.4M, 16-bits)");
 
 /*
-We then initialize the GPU and send the image to its memory.
+We then initialize the GPU and send the image to its memory:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -31,13 +31,13 @@ Ext.CLIJ2_push(input);
 // CleanUp ImageJ
 close();
 /*
-## Maximum projecitons
-We can use the classical maximum intensity projection in Z:
+## Maximum projections
+We can use the classic maximum intensity projection in Z:
 */
 Ext.CLIJ2_maximumZProjection(input, maximum_z_projected);
 Ext.CLIJ2_pull(maximum_z_projected);
 /*
-But we can also project in X and Y direction:
+But also, we can project maximum intensity in X and Y direction:
 */
 Ext.CLIJ2_maximumYProjection(input, maximum_y_projected);
 Ext.CLIJ2_pull(maximum_y_projected);
@@ -52,6 +52,6 @@ max_z = 100;
 Ext.CLIJ2_maximumZProjectionBounded(input, bound_projection, min_z, max_z);
 Ext.CLIJ2_pull(bound_projection);
 /*
-Cleanup by the end
+Clean up by the end.
 */
 Ext.CLIJ2_clear();
