@@ -1,7 +1,6 @@
 /*
 # Measure speedup (Benchmarking)
-Author: Robert Haase 
-        April 2020
+Author: Robert Haase, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/benchmarking.ijm)
 
@@ -9,11 +8,12 @@ This macro shows how to measure performance of image processing in ImageJ on the
 and CLIJ2 on the GPU.
 
 Let's get some test data first. 
-We use an electron microscopy dataset from ["Segmented anisotropic ssTEM dataset of neural tissue." Stephan Gerhard, Jan Funke, Julien Martel, Albert Cardona, Richard Fetter. figshare. Retrieved 16:09, Nov 20, 2013 (GMT)](http://dx.doi.org/10.6084/m9.figshare.856713)
 */
-run("Image Sequence...", "open=C:/structure/data/unidesigner_groundtruth-drosophila-vnc/stack1/raw/00.tif sort");
+run("T1 Head (2.4M, 16-bits)");
 input = getTitle();
 
+// visualise the center plane
+run("Duplicate...", "duplicate range=64-64");
 /*
 ## Measure processing time on the CPU
 
@@ -27,10 +27,26 @@ processing and printing `(getTime() - time)` after processing:
 */
 // Local mean filter in CPU
 for (i = 1; i <= 10; i++) {
+	// we duplicate the original image to not blur the blurred image again and again
+	selectWindow(input);
+	run("Duplicate...", "duplicate range=1-129");
+	
+	// actual blur operation
 	time = getTime();
 	run("Mean 3D...", "x=3 y=3 z=3");
 	print("CPU mean filter no " + i + " took " + (getTime() - time) + " msec");
+	
+	// keep first blurred image and close the duplicates
+	if (i == 1) {
+		blurred_image = getTitle();
+	} else {
+		close();
+	}
 }
+selectWindow(blurred_image);
+
+// visualise the center plane
+run("Duplicate...", "duplicate range=64-64");
 /*
 ## Measure processing time on the GPU
 We perform the same strategy to measure processing time on the GPU. As the performance of
@@ -60,6 +76,7 @@ for (i = 1; i <= 10; i++) {
 	time = getTime();
 	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
 	print("CLIJ2 GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
+	break;
 }
 /*
 ### Compare CLIJ2 with its predecessor, [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
@@ -77,6 +94,9 @@ for (i = 1; i <= 10; i++) {
 time = getTime();
 Ext.CLIJ2_pull(blurred);
 print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
+
+// visualise the center plane
+run("Duplicate...", "duplicate range=64-64");
 
 /*
 For documentation purposes, we should also report which GPU was used
