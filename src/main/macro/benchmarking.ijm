@@ -76,7 +76,6 @@ for (i = 1; i <= 10; i++) {
 	time = getTime();
 	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
 	print("CLIJ2 GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
-	break;
 }
 /*
 ### Compare CLIJ2 with its predecessor, [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
