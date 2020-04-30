@@ -111,8 +111,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-summand1_sequence = getSequence();summand1 = clij2.pushSequence(summand1_sequence);
-summand2_sequence = getSequence();summand2 = clij2.pushSequence(summand2_sequence);
+summand1_sequence = getSequence();
+summand1 = clij2.pushSequence(summand1_sequence);
+summand2_sequence = getSequence();
+summand2 = clij2.pushSequence(summand2_sequence);
 destination = clij2.create(summand1);
 factor1 = 1.0;
 factor2 = 2.0;
@@ -126,7 +128,7 @@ clij2.addImagesWeighted(summand1, summand2, destination, factor1, factor2);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(summand1);
 clij2.release(summand2);

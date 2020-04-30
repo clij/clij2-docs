@@ -105,8 +105,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-stack1_sequence = getSequence();stack1 = clij2.pushSequence(stack1_sequence);
-stack2_sequence = getSequence();stack2 = clij2.pushSequence(stack2_sequence);
+stack1_sequence = getSequence();
+stack1 = clij2.pushSequence(stack1_sequence);
+stack2_sequence = getSequence();
+stack2 = clij2.pushSequence(stack2_sequence);
 destination = clij2.create(stack1);
 </pre>
 
@@ -118,7 +120,7 @@ clij2.concatenateStacks(stack1, stack2, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(stack1);
 clij2.release(stack2);

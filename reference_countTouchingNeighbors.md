@@ -101,7 +101,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+touch_matrix_sequence = getSequence();
+touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 touching_neighbors_count_destination = clij2.create(touch_matrix);
 </pre>
 
@@ -113,7 +114,7 @@ clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination)
 <pre class="highlight">
 // show result
 touching_neighbors_count_destination_sequence = clij2.pullSequence(touching_neighbors_count_destination)
-Icy.addSequence(touching_neighbors_count_destination_sequence
+Icy.addSequence(touching_neighbors_count_destination_sequence);
 // cleanup memory on GPU
 clij2.release(touch_matrix);
 clij2.release(touching_neighbors_count_destination);

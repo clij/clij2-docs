@@ -107,7 +107,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-label_map_input_sequence = getSequence();label_map_input = clij2.pushSequence(label_map_input_sequence);
+label_map_input_sequence = getSequence();
+label_map_input = clij2.pushSequence(label_map_input_sequence);
 label_map_destination = clij2.create(label_map_input);
 </pre>
 
@@ -119,7 +120,7 @@ clij2.excludeLabelsOnEdges(label_map_input, label_map_destination);
 <pre class="highlight">
 // show result
 label_map_destination_sequence = clij2.pullSequence(label_map_destination)
-Icy.addSequence(label_map_destination_sequence
+Icy.addSequence(label_map_destination_sequence);
 // cleanup memory on GPU
 clij2.release(label_map_input);
 clij2.release(label_map_destination);

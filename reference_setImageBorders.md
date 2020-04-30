@@ -111,7 +111,7 @@ clij2.setImageBorders(destination, value);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(destination);
 </pre>

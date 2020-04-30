@@ -96,7 +96,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-binary_input_sequence = getSequence();binary_input = clij2.pushSequence(binary_input_sequence);
+binary_input_sequence = getSequence();
+binary_input = clij2.pushSequence(binary_input_sequence);
 </pre>
 
 <pre class="highlight">

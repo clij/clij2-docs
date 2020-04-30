@@ -118,8 +118,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-coordinate_list1_sequence = getSequence();coordinate_list1 = clij2.pushSequence(coordinate_list1_sequence);
-coordinate_list2_sequence = getSequence();coordinate_list2 = clij2.pushSequence(coordinate_list2_sequence);
+coordinate_list1_sequence = getSequence();
+coordinate_list1 = clij2.pushSequence(coordinate_list1_sequence);
+coordinate_list2_sequence = getSequence();
+coordinate_list2 = clij2.pushSequence(coordinate_list2_sequence);
 distance_matrix_destination = clij2.create(coordinate_list1);
 </pre>
 
@@ -131,7 +133,7 @@ clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix
 <pre class="highlight">
 // show result
 distance_matrix_destination_sequence = clij2.pullSequence(distance_matrix_destination)
-Icy.addSequence(distance_matrix_destination_sequence
+Icy.addSequence(distance_matrix_destination_sequence);
 // cleanup memory on GPU
 clij2.release(coordinate_list1);
 clij2.release(coordinate_list2);

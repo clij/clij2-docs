@@ -101,7 +101,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+source_sequence = getSequence();
+source = clij2.pushSequence(source_sequence);
 destination_max = clij2.create(source);
 </pre>
 
@@ -113,7 +114,7 @@ clij2.maximumYProjection(source, destination_max);
 <pre class="highlight">
 // show result
 destination_max_sequence = clij2.pullSequence(destination_max)
-Icy.addSequence(destination_max_sequence
+Icy.addSequence(destination_max_sequence);
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination_max);

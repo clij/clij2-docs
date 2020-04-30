@@ -113,10 +113,14 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
-vectorX_sequence = getSequence();vectorX = clij2.pushSequence(vectorX_sequence);
-vectorY_sequence = getSequence();vectorY = clij2.pushSequence(vectorY_sequence);
-vectorZ_sequence = getSequence();vectorZ = clij2.pushSequence(vectorZ_sequence);
+source_sequence = getSequence();
+source = clij2.pushSequence(source_sequence);
+vectorX_sequence = getSequence();
+vectorX = clij2.pushSequence(vectorX_sequence);
+vectorY_sequence = getSequence();
+vectorY = clij2.pushSequence(vectorY_sequence);
+vectorZ_sequence = getSequence();
+vectorZ = clij2.pushSequence(vectorZ_sequence);
 destination = clij2.create(source);
 </pre>
 
@@ -128,7 +132,7 @@ clij2.applyVectorField3D(source, vectorX, vectorY, vectorZ, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(vectorX);

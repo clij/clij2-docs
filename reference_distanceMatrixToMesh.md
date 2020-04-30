@@ -114,8 +114,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
-distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+pointlist_sequence = getSequence();
+pointlist = clij2.pushSequence(pointlist_sequence);
+distance_matrix_sequence = getSequence();
+distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 mesh_destination = clij2.create(pointlist);
 maximum_distance = 1.0;
 </pre>
@@ -128,7 +130,7 @@ clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum
 <pre class="highlight">
 // show result
 mesh_destination_sequence = clij2.pullSequence(mesh_destination)
-Icy.addSequence(mesh_destination_sequence
+Icy.addSequence(mesh_destination_sequence);
 // cleanup memory on GPU
 clij2.release(pointlist);
 clij2.release(distance_matrix);

@@ -94,7 +94,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-labelmap_input_sequence = getSequence();labelmap_input = clij2.pushSequence(labelmap_input_sequence);
+labelmap_input_sequence = getSequence();
+labelmap_input = clij2.pushSequence(labelmap_input_sequence);
 </pre>
 
 <pre class="highlight">

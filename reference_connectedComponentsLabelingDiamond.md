@@ -101,7 +101,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-binary_input_sequence = getSequence();binary_input = clij2.pushSequence(binary_input_sequence);
+binary_input_sequence = getSequence();
+binary_input = clij2.pushSequence(binary_input_sequence);
 labeling_destination = clij2.create(binary_input);
 </pre>
 
@@ -113,7 +114,7 @@ clij2.connectedComponentsLabelingDiamond(binary_input, labeling_destination);
 <pre class="highlight">
 // show result
 labeling_destination_sequence = clij2.pullSequence(labeling_destination)
-Icy.addSequence(labeling_destination_sequence
+Icy.addSequence(labeling_destination_sequence);
 // cleanup memory on GPU
 clij2.release(binary_input);
 clij2.release(labeling_destination);

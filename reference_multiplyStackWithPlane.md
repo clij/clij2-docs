@@ -108,8 +108,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-sourceStack_sequence = getSequence();sourceStack = clij2.pushSequence(sourceStack_sequence);
-sourcePlane_sequence = getSequence();sourcePlane = clij2.pushSequence(sourcePlane_sequence);
+sourceStack_sequence = getSequence();
+sourceStack = clij2.pushSequence(sourceStack_sequence);
+sourcePlane_sequence = getSequence();
+sourcePlane = clij2.pushSequence(sourcePlane_sequence);
 destination = clij2.create(sourceStack);
 </pre>
 
@@ -121,7 +123,7 @@ clij2.multiplyStackWithPlane(sourceStack, sourcePlane, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(sourceStack);
 clij2.release(sourcePlane);

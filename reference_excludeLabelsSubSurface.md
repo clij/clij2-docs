@@ -113,8 +113,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
-label_map_input_sequence = getSequence();label_map_input = clij2.pushSequence(label_map_input_sequence);
+pointlist_sequence = getSequence();
+pointlist = clij2.pushSequence(pointlist_sequence);
+label_map_input_sequence = getSequence();
+label_map_input = clij2.pushSequence(label_map_input_sequence);
 label_map_destination = clij2.create(pointlist);
 centerX = 1.0;
 centerY = 2.0;
@@ -129,7 +131,7 @@ clij2.excludeLabelsSubSurface(pointlist, label_map_input, label_map_destination,
 <pre class="highlight">
 // show result
 label_map_destination_sequence = clij2.pullSequence(label_map_destination)
-Icy.addSequence(label_map_destination_sequence
+Icy.addSequence(label_map_destination_sequence);
 // cleanup memory on GPU
 clij2.release(pointlist);
 clij2.release(label_map_input);

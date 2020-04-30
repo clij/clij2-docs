@@ -111,8 +111,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-values_sequence = getSequence();values = clij2.pushSequence(values_sequence);
-touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+values_sequence = getSequence();
+values = clij2.pushSequence(values_sequence);
+touch_matrix_sequence = getSequence();
+touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 mean_values_destination = clij2.create(values);
 </pre>
 
@@ -124,7 +126,7 @@ clij2.meanOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
 <pre class="highlight">
 // show result
 mean_values_destination_sequence = clij2.pullSequence(mean_values_destination)
-Icy.addSequence(mean_values_destination_sequence
+Icy.addSequence(mean_values_destination_sequence);
 // cleanup memory on GPU
 clij2.release(values);
 clij2.release(touch_matrix);

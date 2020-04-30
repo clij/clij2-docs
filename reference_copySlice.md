@@ -123,7 +123,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+source_sequence = getSequence();
+source = clij2.pushSequence(source_sequence);
 destination = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
 sliceIndex = 10;
 </pre>
@@ -136,7 +137,7 @@ clij2.copySlice(source, destination, sliceIndex);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);

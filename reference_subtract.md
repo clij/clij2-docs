@@ -107,8 +107,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-subtrahend_sequence = getSequence();subtrahend = clij2.pushSequence(subtrahend_sequence);
-minuend_sequence = getSequence();minuend = clij2.pushSequence(minuend_sequence);
+subtrahend_sequence = getSequence();
+subtrahend = clij2.pushSequence(subtrahend_sequence);
+minuend_sequence = getSequence();
+minuend = clij2.pushSequence(minuend_sequence);
 destination = clij2.create(subtrahend);
 </pre>
 
@@ -120,7 +122,7 @@ clij2.subtract(subtrahend, minuend, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(subtrahend);
 clij2.release(minuend);

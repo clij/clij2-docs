@@ -114,8 +114,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-matrix1_sequence = getSequence();matrix1 = clij2.pushSequence(matrix1_sequence);
-matrix2_sequence = getSequence();matrix2 = clij2.pushSequence(matrix2_sequence);
+matrix1_sequence = getSequence();
+matrix1 = clij2.pushSequence(matrix1_sequence);
+matrix2_sequence = getSequence();
+matrix2 = clij2.pushSequence(matrix2_sequence);
 matrix_destination = clij2.create(matrix1);
 </pre>
 
@@ -127,7 +129,7 @@ clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 <pre class="highlight">
 // show result
 matrix_destination_sequence = clij2.pullSequence(matrix_destination)
-Icy.addSequence(matrix_destination_sequence
+Icy.addSequence(matrix_destination_sequence);
 // cleanup memory on GPU
 clij2.release(matrix1);
 clij2.release(matrix2);

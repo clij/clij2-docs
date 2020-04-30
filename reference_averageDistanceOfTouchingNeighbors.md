@@ -114,8 +114,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
-touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+distance_matrix_sequence = getSequence();
+distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+touch_matrix_sequence = getSequence();
+touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 average_distancelist_destination = clij2.create(distance_matrix);
 </pre>
 
@@ -127,7 +129,7 @@ clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_
 <pre class="highlight">
 // show result
 average_distancelist_destination_sequence = clij2.pullSequence(average_distancelist_destination)
-Icy.addSequence(average_distancelist_destination_sequence
+Icy.addSequence(average_distancelist_destination_sequence);
 // cleanup memory on GPU
 clij2.release(distance_matrix);
 clij2.release(touch_matrix);

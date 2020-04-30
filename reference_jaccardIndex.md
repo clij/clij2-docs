@@ -105,8 +105,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source1_sequence = getSequence();source1 = clij2.pushSequence(source1_sequence);
-source2_sequence = getSequence();source2 = clij2.pushSequence(source2_sequence);
+source1_sequence = getSequence();
+source1 = clij2.pushSequence(source1_sequence);
+source2_sequence = getSequence();
+source2 = clij2.pushSequence(source2_sequence);
 </pre>
 
 <pre class="highlight">

@@ -105,7 +105,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+source_sequence = getSequence();
+source = clij2.pushSequence(source_sequence);
 destination_min = clij2.create(source);
 min_z = 10;
 max_z = 20;
@@ -119,7 +120,7 @@ clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
 <pre class="highlight">
 // show result
 destination_min_sequence = clij2.pullSequence(destination_min)
-Icy.addSequence(destination_min_sequence
+Icy.addSequence(destination_min_sequence);
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination_min);

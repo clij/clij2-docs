@@ -107,8 +107,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source1_sequence = getSequence();source1 = clij2.pushSequence(source1_sequence);
-source2_sequence = getSequence();source2 = clij2.pushSequence(source2_sequence);
+source1_sequence = getSequence();
+source1 = clij2.pushSequence(source1_sequence);
+source2_sequence = getSequence();
+source2 = clij2.pushSequence(source2_sequence);
 destination = clij2.create(source1);
 </pre>
 
@@ -120,7 +122,7 @@ clij2.greater(source1, source2, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(source1);
 clij2.release(source2);

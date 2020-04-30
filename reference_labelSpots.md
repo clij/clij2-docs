@@ -112,7 +112,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-input_spots_sequence = getSequence();input_spots = clij2.pushSequence(input_spots_sequence);
+input_spots_sequence = getSequence();
+input_spots = clij2.pushSequence(input_spots_sequence);
 labelled_spots_destination = clij2.create(input_spots);
 </pre>
 
@@ -124,7 +125,7 @@ clij2.labelSpots(input_spots, labelled_spots_destination);
 <pre class="highlight">
 // show result
 labelled_spots_destination_sequence = clij2.pullSequence(labelled_spots_destination)
-Icy.addSequence(labelled_spots_destination_sequence
+Icy.addSequence(labelled_spots_destination_sequence);
 // cleanup memory on GPU
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);

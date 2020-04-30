@@ -107,8 +107,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-divident_sequence = getSequence();divident = clij2.pushSequence(divident_sequence);
-divisor_sequence = getSequence();divisor = clij2.pushSequence(divisor_sequence);
+divident_sequence = getSequence();
+divident = clij2.pushSequence(divident_sequence);
+divisor_sequence = getSequence();
+divisor = clij2.pushSequence(divisor_sequence);
 destination = clij2.create(divident);
 </pre>
 
@@ -120,7 +122,7 @@ clij2.divideImages(divident, divisor, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(divident);
 clij2.release(divisor);

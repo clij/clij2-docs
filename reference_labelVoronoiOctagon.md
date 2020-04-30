@@ -113,7 +113,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-label_map_sequence = getSequence();label_map = clij2.pushSequence(label_map_sequence);
+label_map_sequence = getSequence();
+label_map = clij2.pushSequence(label_map_sequence);
 label_voronoi_destination = clij2.create(label_map);
 </pre>
 
@@ -125,7 +126,7 @@ clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 <pre class="highlight">
 // show result
 label_voronoi_destination_sequence = clij2.pullSequence(label_voronoi_destination)
-Icy.addSequence(label_voronoi_destination_sequence
+Icy.addSequence(label_voronoi_destination_sequence);
 // cleanup memory on GPU
 clij2.release(label_map);
 clij2.release(label_voronoi_destination);

@@ -105,8 +105,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-pointlist_sequence = getSequence();pointlist = clij2.pushSequence(pointlist_sequence);
-indexList_sequence = getSequence();indexList = clij2.pushSequence(indexList_sequence);
+pointlist_sequence = getSequence();
+pointlist = clij2.pushSequence(pointlist_sequence);
+indexList_sequence = getSequence();
+indexList = clij2.pushSequence(indexList_sequence);
 mesh_destination = clij2.create(pointlist);
 </pre>
 
@@ -118,7 +120,7 @@ clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
 <pre class="highlight">
 // show result
 mesh_destination_sequence = clij2.pullSequence(mesh_destination)
-Icy.addSequence(mesh_destination_sequence
+Icy.addSequence(mesh_destination_sequence);
 // cleanup memory on GPU
 clij2.release(pointlist);
 clij2.release(indexList);

@@ -107,7 +107,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+distance_matrix_sequence = getSequence();
+distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 destination_minimum_distances = clij2.create(distance_matrix);
 </pre>
 
@@ -119,7 +120,7 @@ clij2.shortestDistances(distance_matrix, destination_minimum_distances);
 <pre class="highlight">
 // show result
 destination_minimum_distances_sequence = clij2.pullSequence(destination_minimum_distances)
-Icy.addSequence(destination_minimum_distances_sequence
+Icy.addSequence(destination_minimum_distances_sequence);
 // cleanup memory on GPU
 clij2.release(distance_matrix);
 clij2.release(destination_minimum_distances);

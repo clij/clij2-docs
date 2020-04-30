@@ -117,8 +117,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-values_sequence = getSequence();values = clij2.pushSequence(values_sequence);
-touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+values_sequence = getSequence();
+values = clij2.pushSequence(values_sequence);
+touch_matrix_sequence = getSequence();
+touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 maximum_values_destination = clij2.create(values);
 </pre>
 
@@ -130,7 +132,7 @@ clij2.maximumOfTouchingNeighbors(values, touch_matrix, maximum_values_destinatio
 <pre class="highlight">
 // show result
 maximum_values_destination_sequence = clij2.pullSequence(maximum_values_destination)
-Icy.addSequence(maximum_values_destination_sequence
+Icy.addSequence(maximum_values_destination_sequence);
 // cleanup memory on GPU
 clij2.release(values);
 clij2.release(touch_matrix);

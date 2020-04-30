@@ -105,7 +105,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-distance_matrix_sequence = getSequence();distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+distance_matrix_sequence = getSequence();
+distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 indexlist_destination = clij2.create(distance_matrix);
 nClosestPointsTofind = 10;
 </pre>
@@ -118,7 +119,7 @@ clij2.averageDistanceOfNClosestPoints(distance_matrix, indexlist_destination, nC
 <pre class="highlight">
 // show result
 indexlist_destination_sequence = clij2.pullSequence(indexlist_destination)
-Icy.addSequence(indexlist_destination_sequence
+Icy.addSequence(indexlist_destination_sequence);
 // cleanup memory on GPU
 clij2.release(distance_matrix);
 clij2.release(indexlist_destination);

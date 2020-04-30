@@ -116,8 +116,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-factor1_sequence = getSequence();factor1 = clij2.pushSequence(factor1_sequence);
-factor2_sequence = getSequence();factor2 = clij2.pushSequence(factor2_sequence);
+factor1_sequence = getSequence();
+factor1 = clij2.pushSequence(factor1_sequence);
+factor2_sequence = getSequence();
+factor2 = clij2.pushSequence(factor2_sequence);
 destination = clij2.create(factor1);
 </pre>
 
@@ -129,7 +131,7 @@ clij2.multiplyImages(factor1, factor2, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(factor1);
 clij2.release(factor2);

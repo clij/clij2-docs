@@ -107,7 +107,8 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-source_sequence = getSequence();source = clij2.pushSequence(source_sequence);
+source_sequence = getSequence();
+source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
 sigmaX = 1.0;
 sigmaY = 2.0;
@@ -121,7 +122,7 @@ clij2.blur(source, destination, sigmaX, sigmaY);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(source);
 clij2.release(destination);

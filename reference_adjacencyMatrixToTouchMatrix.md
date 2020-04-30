@@ -98,8 +98,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-adjacency_matrix_sequence = getSequence();adjacency_matrix = clij2.pushSequence(adjacency_matrix_sequence);
-touch_matrix_sequence = getSequence();touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+adjacency_matrix_sequence = getSequence();
+adjacency_matrix = clij2.pushSequence(adjacency_matrix_sequence);
+touch_matrix_sequence = getSequence();
+touch_matrix = clij2.pushSequence(touch_matrix_sequence);
 </pre>
 
 <pre class="highlight">

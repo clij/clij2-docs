@@ -105,8 +105,10 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-input_sequence = getSequence();input = clij2.pushSequence(input_sequence);
-exponent_sequence = getSequence();exponent = clij2.pushSequence(exponent_sequence);
+input_sequence = getSequence();
+input = clij2.pushSequence(input_sequence);
+exponent_sequence = getSequence();
+exponent = clij2.pushSequence(exponent_sequence);
 destination = clij2.create(input);
 </pre>
 
@@ -118,7 +120,7 @@ clij2.powerImages(input, exponent, destination);
 <pre class="highlight">
 // show result
 destination_sequence = clij2.pullSequence(destination)
-Icy.addSequence(destination_sequence
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(input);
 clij2.release(exponent);
