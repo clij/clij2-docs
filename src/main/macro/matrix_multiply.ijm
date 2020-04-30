@@ -6,7 +6,7 @@ Author: Robert Haase
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/matrix_multiply.ijm)
 
 
-This macro shows to do matrix multiplication
+This macro shows how to do a matrix multiplication
 on the GPU.
 
 */
@@ -27,8 +27,8 @@ Ext.CLIJ2_pushArray(vector1, array1, 5, 1, 1);
 Ext.CLIJ2_pushArray(vector2, array2, 5, 1, 1);
 
 /*
-## In order to do matrix multiplication, the input matrice must be of size n*m and m*n. 
-Therefore, we transpose one of our vectors 
+## In order to multiplicate matrices, the input matrices must be of size (n * m) and (m * n) 
+Therefore, we transpose one of our vectors: 
 */
 // transpose first input vector and show it
 Ext.CLIJ2_transposeXY(vector1, vector1transposed);
@@ -49,7 +49,7 @@ You can also express a matrix as an image:
 Ext.CLIJ2_pull(matrix);
 zoom(100);
 /* 
-## Element wise multiplication of the matrix with another matrix
+## Element by element multiplication of two matrices
 */
 // generate another matrix of the same size with random values
 Ext.CLIJ2_getDimensions(matrix, width, height, depth);
@@ -63,16 +63,16 @@ Ext.CLIJ2_setRandom(another_matrix, 0, 1, 5);
 Ext.CLIJ2_multiplyImages(matrix, another_matrix, matrix_element_wise_multiplied);
 Ext.CLIJ2_print(matrix_element_wise_multiplied);
 /* 
-## Element wise multiplication of the matrix with a scalar
+## Element by element multiplication of a matrix with a scalar
 */
 Ext.CLIJ2_multiplyImageAndScalar(matrix, elements_times_2, 2);
 Ext.CLIJ2_print(elements_times_2);
 /*
-Clean up by the end
+Clean up by the end:
 */
 Ext.CLIJ2_clear();
 /*
-This is just a utility function to make the visualisation in the notebook nice.
+This is just a useful function to obtain a nice visualization in the notebook.
 */
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
