@@ -5,10 +5,12 @@ Author: Robert Haase
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/working_with_rois.ijm)
 
-This macro shows how to apply an automatic threshold method, use connected 
-components labeling and visualize / measure bounding boxes of objects .
+This macro shows how to apply an automated 
+threshold method, how to use connected components labeling, 
+and how to visualize / measure bounding boxes of objects .
 
-*/
+
+*/
 // clean up first
 run("Close All");
 run("Clear Results");
@@ -17,15 +19,17 @@ if (roiManager("count") > 0) {
 	roiManager("delete");
 }
 
-/*
-Get test data
+
+/*
+Get test data:
 */
 run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
-
+
+
 /* 
-## Initialize GPU and push push image data to GPU memory
+## Initialize GPU and push image data to GPU memory
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -34,14 +38,14 @@ Ext.CLIJ2_clear();
 Ext.CLIJ2_push(input);
 
 /*
-## Image segmentation + labelling
-We now apply a threshold method and connected components analysis to separate objects.
+## Image segmentation and labelling
+Together with a threshold method, we apply a connected components analysis to separate objects.
 */
 Ext.CLIJ2_thresholdOtsu(input, mask);
 Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
 
 /*
-## Visualize the labelled objects
+## Visualization of labelled objects
 */
 // show the image
 Ext.CLIJ2_pull(input);
@@ -50,7 +54,7 @@ Ext.CLIJ2_pullLabelsToROIManager(labelmap);
 roiManager("show all");
 show();
 /*
-## We now go through the labelled objects in the label map and measure their bounding box area:
+## Analyzing labelled objects from label map and measuring their bounding box area:
 */
 
 // how many objects are in the labelmap?
@@ -78,9 +82,10 @@ for (i = 0; i < number_of_objects; i++) {
 }
 
 /*
-## Bounding box visualisation
+## Bounding box visualization
 */
-// show the image
+
+// show the image
 Ext.CLIJ2_pull(input);
 
 // show all labels as ROIs on top of the image
@@ -88,12 +93,12 @@ roiManager("show all");
 show();
 
 /*
-Clean up by the end
+Clean up by the end:
 */
 Ext.CLIJ2_clear();
 
 /*
-This is just a convenience method for showing images properly in the notebook 
+This method is just convenient to show images properly in the notebook. 
 */
 
 function show() {
