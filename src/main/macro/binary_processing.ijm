@@ -6,10 +6,10 @@ Author: Robert Haase
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/binary_processing.ijm)
 
 This macro shows how to deal with binary images, e.g. 
-thresholding, dilation, erosion, file holes etc in the GPU.
+thresholding, dilation, erosion, fill holes etc, in the GPU.
 
-All demonstrated operations work in 2D and 3D. We use a 2D 
-example here for demonstration purposes.
+All demonstrated operations work in 2D and 3D. For demonstration 
+purpose, we use a 2D example.
 
 */
 // clean up first
@@ -25,18 +25,19 @@ run("Crop", " ");
 input = getTitle();
 
 /* 
-Initialize GPU and push image to GPU memory
+Initialize GPU and push image to GPU memory:
 */
 run("CLIJ Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU
 Ext.CLIJ2_push(input);
-
+
+
 /* 
 ## Thresholding
-We create a binary mask image using a Otsus tresholding method threshold. 
-As the image has a bright background, we invert the image first
+We create a binary mask image with white objects on black background, using the Otsu's 
+tresholding method. As the image has a bright background, we need to invert it first.
 */
 Ext.CLIJ2_subtractImageFromScalar(input, inverted, 255);
 
@@ -48,7 +49,8 @@ Ext.CLIJ2_pull(thresholded);
 
 /*
 ## Binary opening using erosion and dilation
-We do binary opening by hand: It consists of binary erosion and dilation, applied twice each.
+First, we apply binary opening: it consists of binary erosion, followed by binary dilation.
+By hand, we apply each step twice to obtain two iterations.
 
 */
 Ext.CLIJ2_erodeBox(thresholded, temp);
@@ -63,10 +65,11 @@ Ext.CLIJ2_dilateBox(temp, opening_result);
 
 // show result
 Ext.CLIJ2_pull(opening_result);
-/*
-## Binary closing
-For binary closing and opening, on can also call methods directly: 
-Given on the number of erosions/dilations we want to apply, we can also use these methods:
+
+/*
+## Binary closing using dilation and erosion
+Given the number of dilation/erosion steps we want to apply, we can call a direct method, too. 
+
 */
 number_of_iterations = 2;
 Ext.CLIJ2_closingBox(thresholded, closing_result, number_of_iterations);
@@ -83,7 +86,7 @@ Ext.CLIJ2_pullBinary(holes_filled);
 
 /*
 ## Edge detection
-We can retrieve an edge image like this:
+We can retrieve an edge-detected image like this:
 */
 Ext.CLIJ2_binaryEdgeDetection(thresholded, edges);
 // show result
