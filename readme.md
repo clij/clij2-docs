@@ -65,6 +65,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Matrix multiplication](https://clij.github.io/clij2-docs/md/matrix_multiply/)
     * [Spots, pointlists, matrices and tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables/)
     * [Filtering in graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs/)
+    * [Neighbors of neighbors](https://clij.github.io/clij2-docs/md/neighbors_of_neighbors)
     * [Tribolium embryo morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
     * [Superpixel segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation/)
     
