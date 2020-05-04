@@ -1,5 +1,5 @@
 /* 
-# CLIJ2 tutorial: Working with spots, pointlists, matrixes and tables
+# Working with spots, pointlists, matrixes and tables
 
 Author: Robert Haase
         April 2020
@@ -7,10 +7,12 @@ Author: Robert Haase
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/spots_pointlists_matrices_tables.ijm)
 
 
-This macro demonstrates working with
-spot images, pointlists, distance matrixes and
-touch matrices on the GPU.
+This macro demonstrates how to operate on
+spot images, pointlists, distance matrices and
+touch matrices in the GPU.
 
+/*
+## Initialize GPU
 */
 // init GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
@@ -19,7 +21,7 @@ Ext.CLIJ2_clear();
 run("Close All");
 
 /*
-## Define a small array represending a spot-detection result and push it to the GPU
+## Define a small array representing a spot detection result and push it to the GPU
 */
 array = newArray(
 	0, 0, 0, 0, 0,
@@ -37,13 +39,13 @@ Ext.CLIJ2_pull(spots_image);
 zoom(100);
 
 /*
-## Convert the spots image to a point list
+## Convert the spot image into a point list
 */
 Ext.CLIJ2_spotsToPointList(spots_image, pointlist);
 Ext.CLIJ2_pull(pointlist);
 zoom(100);
 /*
-## Determine the distance from every spot to every spot and write it in a distance matrix. 
+## Determine the distance between all spots and write the result as distance matrix. 
 */
 Ext.CLIJ2_generateDistanceMatrix(pointlist, pointlist, distance_matrix);
 Ext.CLIJ2_pull(distance_matrix);
@@ -58,34 +60,34 @@ zoom(100);
 run("glasbey_on_dark");
 
 /*
-## Blow up the labels until they touch; similar to a Voronoi diagrom
+## Blow labels up, until they touch (similar to Voronoi diagram)
 */
 Ext.CLIJ2_labelVoronoiOctagon(labelled_spots, label_voronoi);
 Ext.CLIJ2_pull(label_voronoi);
 zoom(100);
 
 /*
-## Analyse which label touches which other labels and save it in a touch matrix
+## Analyze touching labels and save it as a touch matrix
 */
 Ext.CLIJ2_generateTouchMatrix(label_voronoi, touch_matrix);
 Ext.CLIJ2_pull(touch_matrix);
 zoom(100);
 
 /*
-## Count neighbors for every node
+## Count neighbors for every touching node
 */
 Ext.CLIJ2_countTouchingNeighbors(touch_matrix, count_vector);
 Ext.CLIJ2_pull(count_vector);
 zoom(100);
 
 /*
-## Do pixel statistics on the labelled image
+## Get pixel statistics from the labelled image
 */
 run("Clear Results");
 Ext.CLIJ2_statisticsOfLabelledPixels(spots_image, label_voronoi);
 
 /*
-## Push results table as image to the GPU
+## Push the results table as an image to the GPU
 */
 Ext.CLIJ2_pushResultsTable(table_image);
 Ext.CLIJ2_pull(table_image);
@@ -99,7 +101,7 @@ Ext.CLIJ2_pull(mean_intensity_vector);
 zoom(100);
 
 /*
-## Multiply the pointlist with a scalar makes the points virtually more distant
+## Multiply the pointlist with a scalar to get points virtually more distant
 */
 zoom_factor = 100;
 Ext.CLIJ2_multiplyImageAndScalar(pointlist, pointlist_multiplied, zoom_factor);
@@ -114,19 +116,19 @@ Ext.CLIJ2_touchMatrixToMesh(pointlist_multiplied, touch_matrix, mesh);
 Ext.CLIJ2_pull(mesh);
 
 /*
-## Draw a showing all edges shorter than a given value
+## Draw a mesh showing shorter edges than from given value
 */
 Ext.CLIJ2_create2D(mesh2, width * zoom_factor, height * zoom_factor, 32);
 Ext.CLIJ2_distanceMatrixToMesh(pointlist_multiplied, distance_matrix, mesh2, 2.5);
 Ext.CLIJ2_pull(mesh2);
 
 /*
-Clean up by the end
+Clean up by the end:
 */
 Ext.CLIJ2_clear();
 
 /*
-This is just a utility function to make the visualisation in the notebook nice.
+This is just a useful function to get a nice visualization in the notebook.
 */
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
