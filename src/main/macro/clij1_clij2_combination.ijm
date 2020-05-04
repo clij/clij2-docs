@@ -1,7 +1,6 @@
 /* 
 # Combining CLIJ and CLIJ2 
-Author: Robert Haase
-        February 2020
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/clij1_clij2_combination.ijm)
 

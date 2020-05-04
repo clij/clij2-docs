@@ -135,6 +135,7 @@ a vector with as many entries as nodes in the graph. We use this vector to colou
 label map of the cell segmentation. This means, we replace label 1 with the average distance to 
 node 1 and label 2 with the average distance to node 2.
 */
+
 Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
 Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
@@ -169,6 +170,13 @@ Ext.CLIJ2_replaceIntensities(labels, local_maximum_distances_vector, local_maxim
 show(local_maximum_pixel_count_map, "neighbor maximum distance map");
 run("Fire");
 setMinAndMax(0, 50);
+
+Ext.CLIJ2_standardDeviationOfTouchingNeighbors(distances_vector, touch_matrix, local_stddev_distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, local_stddev_distances_vector, local_stddev_pixel_count_map);
+show(local_stddev_pixel_count_map, "neighbor standard deviation distance map");
+run("Fire");
+setMinAndMax(0, 50);
+
 /*
 ## Performance evaluation
 Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 

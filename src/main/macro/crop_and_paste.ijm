@@ -1,7 +1,6 @@
 /* 
 # Crop and paste images
-Author: Robert Haase
-        April 2020
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/crop_and_paste.ijm)

@@ -1,7 +1,6 @@
 /*
 # Labelling
-Author: Robert Haase
-June 2019
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/labeling.ijm)
 
@@ -16,8 +15,8 @@ on an image using GPU.
 run("Blobs (25K)");
 input = getTitle();
 /*
-## Init GPU
-...and push image data to the GPU memory:
+## Initialize GPU
+First we initialize the GPU and push image data to the GPU memory:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
