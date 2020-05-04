@@ -1,5 +1,5 @@
 /* 
-# CLIJ2 Tutorial: Filtering in graphs
+# Filtering in graphs
 Author: Robert Haase
          April 2020
 
@@ -7,7 +7,7 @@ Author: Robert Haase
 
 
 This macro shows how to apply a filter to values 
-in a graph
+of a graph.
 
 */
 
@@ -19,7 +19,7 @@ run("Close All");
 
 /*
 ## Define a list of point coordinates and push them to the GPU 
- */
+*/
 
 // make a pointlist with random coordinated on the GPU
 number_of_points = 100;
@@ -34,7 +34,7 @@ Ext.CLIJ2_pull(pointlist);
 zoom(10);
 
 /*
-## Draw the spots labelled (1, 2, 3, ...) in 2D space
+## Draw labelled spots (1, 2, 3, ...) in 2D space
 */
 Ext.CLIJ2_pointlistToLabelledSpots(pointlist, spots_image);
 Ext.CLIJ2_pull(spots_image);
@@ -42,7 +42,7 @@ zoom(4);
 run("glasbey_on_dark");
 
 /*
-## Partition the space between the points.
+## Partition the space between points
 */
 Ext.CLIJ2_labelVoronoiOctagon(spots_image, labelled_voronoi);
 Ext.CLIJ2_pull(labelled_voronoi);
@@ -50,7 +50,7 @@ zoom(4);
 run("glasbey_on_dark");;
 
 /*
-## Distribute a random measurement in space - with one outlier
+## Distribute random measurements in space - with one outlier
 */
 measurement_array = newArray(number_of_points);
 for (i = 0; i < number_of_points; i += 1) {
@@ -63,7 +63,7 @@ Ext.CLIJ2_pull(measurement);
 zoom(10);
 
 /*
-## Make a parametric image showing measurements in 2D space
+## Create a parametric image showing measurements in 2D space
 */
 Ext.CLIJ2_replaceIntensities(labelled_voronoi, measurement, parametric_image);
 Ext.CLIJ2_pull(parametric_image);
@@ -72,7 +72,7 @@ setMinAndMax(0, 20);
 run("Fire");
 
 /*
-## Calculate the median measurement for every node in graph, the median of its neighbors
+## Calculate the median of every node and its neighbors in the graph
 */
 
 // determine the touch matrix
@@ -89,16 +89,16 @@ setMinAndMax(0, 20);
 run("Fire");
 
 /*
-As you can see, the outlier is gone :-)
+As you can see, the outlier is gone! :-)
 */
 
 /*
-Clean up by the end
+Clean up by the end:
 */
 Ext.CLIJ2_clear();
 
 /*
-This is just a utility function to make the visualisation in the notebook nice.
+This is just a useful function to get a nice visualization in the notebook.
 */
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
