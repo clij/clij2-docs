@@ -32,9 +32,10 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * Introduction
   * Installation
     * [Fiji update site](https://clij.github.io/clij2-docs/installationInFiji)
-    * Icy
+    * [Icy](https://github.com/clij/clicy)
     * [Matlab](https://github.com/clij/clatlab)
   * [Reference](https://clij.github.io/clij2-docs/reference)
+  * [Cheat sheets](https://clij.github.io/clij2-docs/CLIJ2-cheatsheet_V3.pdf)
   * [Release notes](https://github.com/clij/clij2/releases)
   * [Release cycle](https://clij.github.io/clij2-docs/release_cycle)
   * [Future perspective: clEsperanto](http://clesperanto.net)
@@ -79,9 +80,11 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Detailed time tracing](https://clij.github.io/clij2-docs/md/time_tracing/)
     * [Comparing and benchmarking workflows](https://clij.github.io/clij2-docs/md/compare_workflows/)
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison/)
-* Examples
+    
+* Example code
   * [ImageJ macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro)
-  * Icy
+  * [Icy javascript](https://github.com/clij/clicy/tree/master/src/main/javascript)
+  * [Icy protocols](https://github.com/clij/clicy/tree/master/src/main/protocols)
   * [Matlab](https://github.com/clij/clatlab/tree/master/src/main/matlab)
 * FAQ / support
   * [Frequently asked questions](https://clij.github.io/clij-docs/faq)
@@ -98,6 +101,7 @@ Brian Northan (True North Intelligent Algorithms),
 Bruno C. Vellutini (MPI CBG),
 Curtis Rueden (UW-Madison LOCI),
 Damir Krunic (DKFZ),
+Daniela Vorkel (MPI CBG),
 Daniel J. White (GE),
 Gaby G. Martins (IGC),
 Guillaume Witz (Bern University),
