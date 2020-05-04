@@ -15,7 +15,8 @@ run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
 /*
-## Initialize GPU and push image data to GPU memory
+## Initialize GPU
+Push image data to GPU memory:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -34,14 +35,14 @@ Ext.CLIJ2_gaussianBlur3D(input, blurred, 5, 5, 1);
 // Get results back from GPU
 Ext.CLIJ2_pull(blurred);
 /*
-Note: In contrast to CLIJ, the `blurred` variable, which contains the name of the output image, does not have to specified in advance. 
-CLIJ2 automatically names images, in this case:
+Note: In contrast to CLIJ, the variable `blurred` contains the name of the output image and does not need to get specified. 
+CLIJ2 automatically names images, as shown with the `print();` statement:
 */
 print(blurred);
 /*
-If you don't like the names CLIJ2 gives to the images, just name them as you wish before calling the filter function.
+If you don't like the image names created by CLIJ2, just rename them as you wish before calling the filter function.
 
-## Cleanup by the end
-Always clean up GPU memory by the end.
+## Clean up GPU memory
+Always and by the end, clean up GPU memory.
 */
 Ext.CLIJ2_clear();
