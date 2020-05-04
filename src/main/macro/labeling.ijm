@@ -5,9 +5,9 @@ June 2019
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/labeling.ijm)
 
-This macro shows how to apply an automatic 
-threshold method and connected components labeling
-to an image on the GPU
+This macro shows how to apply an automated 
+threshold method and how to label connected components
+on an image using GPU.
 
 
 
@@ -16,7 +16,8 @@ to an image on the GPU
 run("Blobs (25K)");
 input = getTitle();
 /*
-## Init GPU and push image data to the GPU memory
+## Init GPU
+...and push image data to the GPU memory:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -34,7 +35,8 @@ Ext.CLIJ2_pull(mask);
 /*
 ## Label connected components
 */
-Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
+Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
+
 Ext.CLIJ2_pull(labelmap);
 run("glasbey on dark");
 
@@ -44,7 +46,8 @@ run("glasbey on dark");
 Ext.CLIJ2_excludeLabelsOnEdges(labelmap, labels_not_touching_image_borders);
 Ext.CLIJ2_pull(labels_not_touching_image_borders);
 run("glasbey on dark");
-/*
+
+/*
 Clean up by the end.
 */
 
