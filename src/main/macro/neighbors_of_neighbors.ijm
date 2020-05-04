@@ -4,7 +4,7 @@ Author: Robert Haase, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/neighbors_of_neighbors.ijm)
 
-This macro shows how to apply a filters to values in a graph considering neighbors of neighbors
+This macro shows how to apply a filter to values of a graph, considering neighbors of neighbors.
 */
 
 // Initialize GPU
@@ -15,8 +15,8 @@ run("Close All");
 
 /*
 ## The dataset
-We start with a list of random point coordinates, to draw a spots image 
-and partion the image space between these points. 
+We start with a list of random point coordinates, draw a spots image 
+and partition the image space between these points. 
 */
 
 // make a pointlist with random coordinates on the GPU
@@ -37,8 +37,8 @@ Ext.CLIJ2_labelVoronoiOctagon(spots_image, label_map);
 Ext.CLIJ2_pull(label_map);
 run("glasbey_on_dark");
 /*
-Before we can run operations on neighbors, we need to determine which labels
-in our label map are neighbors. Furthermore, we can draw the neighborhood relationships as graph/mesh.
+Before running operations on neighbors, we need to determine which labels of the 
+label map are neighbors. Furthermore, we can draw the neighborhood relationships as a graph/mesh.
 */
 // determine the touch matrix
 Ext.CLIJ2_generateTouchMatrix(label_map, touch_matrix);
@@ -48,9 +48,9 @@ Ext.CLIJ2_touchMatrixToMesh(pointlist, touch_matrix, mesh);
 Ext.CLIJ2_pull(mesh);
 /*
 ## Distribute values in space
-We get the center of mass of the objects in our label map and generate a vector of 
-measurement values which are a bit random, but also different on the left and on 
-the right side of the image.
+We get the center of mass of all objects in our label map and generate vector 
+measurement values which are a bit random, but also differ on the left and 
+right side of the image.
 */
 run("Clear Results");
 Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(label_map, label_map);
@@ -65,7 +65,7 @@ Ext.CLIJ2_pushResultsTableColumn(measurement, "Measurement");
 run("Clear Results");
 
 /*
-## Make a parametric image showing measurements in 2D space
+## Create a parametric image showing measurements in 2D space
 */
 drawResult(label_map, measurement);
 
@@ -80,19 +80,19 @@ function drawResult(label_map, measurement) {
 
 /*
 ## Smoothing between neighbors
-We can apply smoothing operations, e.g. a mean filter:
+We can apply smoothing operations, e.g. the mean filter:
 */
 // determine mean value of each nodes neighbors
 Ext.CLIJ2_meanOfTouchingNeighbors(measurement, touch_matrix, mean_measurement);
 drawResult(label_map, mean_measurement);
 /*
-To prevent the orange stripe in the center, we need to use the median filter:
+To prevent the orange stripe in the center, we use the median filter:
 */
 /// determine median value of each nodes neighbors
 Ext.CLIJ2_medianOfTouchingNeighbors(measurement, touch_matrix, median_measurement);
 drawResult(label_map, median_measurement);
 /*
-From that image, we can make the border visible:
+Based on that image, we can visualize the border:
 */
 /// determine standard deviation between neighbors
 Ext.CLIJ2_standardDeviationOfTouchingNeighbors(median_measurement, touch_matrix, stddev_measurement);
@@ -100,10 +100,9 @@ drawResult(label_map, stddev_measurement);
 setMinAndMax(0, 10);
 
 /*
-## Increasing the radius of the operation
-We can further increase the radius of the operation by using `neighborsOfNeighbors()`.
-One can see that because there is a wider orange stripe in the middle when applying
-the mean filter.
+## Increasing the radius of operation
+Furthermore, we can increase the radius of operation by using `neighborsOfNeighbors();`.
+When applying the mean filter, one can see a wider orange stripe in the middle of the image.
 */
 
 Ext.CLIJ2_neighborsOfNeighbors(touch_matrix, neighbor_matrix);
@@ -111,7 +110,7 @@ Ext.CLIJ2_meanOfTouchingNeighbors(measurement, neighbor_matrix, mean_measurement
 drawResult(label_map, mean_measurement);
 
 /*
-Clean up by the end
+Clean up by the end:
 */
 Ext.CLIJ2_clear();
 
