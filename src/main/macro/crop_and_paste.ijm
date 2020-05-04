@@ -6,7 +6,7 @@ Author: Robert Haase
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/crop_and_paste.ijm)
 
-This macro shows how crop and paste images in the GPU.
+This macro shows how to crop and paste images in the GPU.
 */
 // clean up first
 run("Close All");
@@ -27,7 +27,7 @@ Ext.CLIJ2_push(input);
 
 /*
 ## Crop out a part of the image
-We now crop out a part of the image and show it.
+We now crop out a part of the image and show its result:
 */
 x = 10;
 y = 10;
@@ -39,8 +39,9 @@ Ext.CLIJ2_crop2D(input, cropped, x, y, width, height);
 Ext.CLIJ2_pull(cropped);
 
 /*
-## Paste the image into another image
-We create an empty image and make a collage by pasting the cropped image in. We also transform the cropped image for visualisation purposes:
+## Paste one image into another image
+We create an empty image and make a collage by pasting the cropped image into it. 
+We also transform the cropped image for visualisation purpose:
 */
 
 bit_depth = 8;
@@ -65,7 +66,7 @@ Ext.CLIJ2_paste2D(flipped, collage, 2, height + 4);
 Ext.CLIJ2_pull(collage);
 
 /*
-Clean up be the end
+Again, clean up by the end.
 */
 Ext.CLIJ2_clear();
 
