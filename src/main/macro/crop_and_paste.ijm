@@ -1,5 +1,5 @@
 /* 
-# Cropping and pasting images
+# Crop and paste images
 Author: Robert Haase
         April 2020
 
