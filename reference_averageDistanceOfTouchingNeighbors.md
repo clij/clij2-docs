@@ -9,7 +9,7 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
 
 
 ### averageDistanceOfTouchingNeighbors is often followed by
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
 
 
 ### Usage in ImageJ macro

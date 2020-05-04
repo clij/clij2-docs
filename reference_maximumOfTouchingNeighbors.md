@@ -6,9 +6,8 @@ Takes a touch matrix and a vector of values to determine the maximum value among
 
 
 ### maximumOfTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (2)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
 
 
 ### maximumOfTouchingNeighbors is often followed by
