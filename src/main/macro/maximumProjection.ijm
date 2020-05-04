@@ -1,5 +1,5 @@
 /* 
-# Maximum Projections
+# Maximum projections
 Author: Robert Haase
         April 2020
 
