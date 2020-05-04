@@ -5,8 +5,8 @@ Author: Robert Haase
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm)
 
-This script is heavy GPU-accelerated processing. It is recommended to use a dedicated
-graphics card with at least 8 GB of GDDR6 memory. It may otherwise be quite slow.
+This script is an example of heavy GPU-accelerated processing. It is recommended to use a dedicated
+graphics card with at least 8 GB of GDDR6 memory. Otherwise, it may be quite slow.
 
 Let's initialize that graphics card and mesure the start time.
 */
@@ -19,10 +19,10 @@ Ext.CLIJ2_startTimeTracing();
 /*
 ## Load a data set
 The dataset is available [online](https://git.mpi-cbg.de/rhaase/clij2_example_data/blob/master/lund1051_resampled.tif).
-It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
-The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use it for detecting nuclei and generating an estimated cell-segmentation first.
+It shows a *Tribolium castaneum* embryo, imaged by a custom light sheet microscope, at a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
+The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use the dataset to detect nuclei and to generate an estimated cell-segmentation.
 
-All processing steps are performed in 3D, for visualisation purposes, we're looking at maximum intensity projections in Z: 
+All processing steps are performed in 3D space. For visualization purpose, we are using the maximum intensity projection in Z: 
 */
 path = "C:/structure/teaching/clij2_example_data/";
 open(path + "lund1051_resampled.tif");
@@ -37,7 +37,7 @@ run("Close All");
 show(input, "input");
 /*
 ## Spot detection
-After some noise removal / smoothing, we perform local maximum detection:
+After some noise removal/smoothing, we perform a local maximum detection:
 */
 // gaussian blur
 sigma = 2;
@@ -49,7 +49,7 @@ Ext.CLIJ2_detectMaximaBox(blurred, detected_maxima, radius);
 show_spots(detected_maxima, "detected maxima");
 /*
 ## Spot curation
-We now remove spots which are below a certain intensity and label the remaining spots.
+Now, we remove spots with values below a certain intensity and label the remaining spots.
 */
 // threshold
 threshold = 300.0;
@@ -63,13 +63,13 @@ Ext.CLIJ2_labelSpots(masked_spots, labelled_spots);
 show_spots(labelled_spots, "selected, labelled spots");
 run("glasbey_on_dark");
 /*
-Let's see how many spots are there:
+Let's see how many spots are left:
 */
 Ext.CLIJ2_getMaximumOfAllPixels(labelled_spots, number_of_spots);
 print("Number of detected spots: " + number_of_spots);
 /*
 ## Expanding labelled spots
-We next extend the numbered spots spatially by applying a maximum filter.
+Next, we spatially extend the labelled spots by applying a maximum filter.
 */
 // labelmap closing
 number_of_dilations = 10;
@@ -84,7 +84,7 @@ for (i = 0; i < number_of_dilations; i++) {
 	}
 }
 /*
-Afterwards, we erode the label map again and get the final result of the cell segementation
+Afterwards, we erode all labels in the map and get a final result of cell segementation.
 */
 Ext.CLIJ2_threshold(flip, flap, 1);
 for (i = 0; i < number_of_erosions; i++) {
@@ -95,22 +95,22 @@ Ext.CLIJ2_mask(flip, flap, labels);
 show(labels, "cell segmentation");
 run("glasbey_on_dark");
 /*
-We also save the labels to disc because other notebooks use them as starting point
+We also save all labels to disc to use them as starting point in other notebooks, later.
 */
 Ext.CLIJ2_pull(labels);
 saveAs("TIF", path + "lund1051_labelled.tif");
 close();
 
 /*
-## Draw connectivity of the cells as mesh
-We then read out the positions of the detected nuclei. 
-Furthermore, using this pointlist, we can generate a distance matrix of all nuclei to each other:
+## Draw connectivity of the cells as a mesh
+We then read out all current positions of detected nuclei as a pointlist to generate 
+a distance matrix of all nuclei towards each other:
 */
 Ext.CLIJ2_labelledSpotsToPointList(labelled_spots, pointlist);
 Ext.CLIJ2_generateDistanceMatrix(pointlist, pointlist, distance_matrix);
 show(distance_matrix, "distance matrix");
 /*
-Starting from the label map of the cells, we can generate a touch matrix:
+Starting from the label map of segmented cells, we generate a touch matrix:
 */
 Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
@@ -118,8 +118,8 @@ Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 show_spots(touch_matrix, "touch matrix");
 /*
-By element-wise multiplication of distance matrix and touch matrix, we know the length of 
-each edge. We can use this information to draw a mesh with colour doing distance (between 0 and 50 micron):
+Using element by element multiplication of a distance matrix and a touch matrix, we calculate the length of 
+each edge. We use this result to draw a mesh with a color gradient of distance (between 0 and 50 micron):
 */
 Ext.CLIJ2_multiplyImages(touch_matrix, distance_matrix, touch_matrix_with_distances);
 Ext.CLIJ2_getDimensions(input, width, height, depth);
@@ -129,11 +129,11 @@ show(mesh, "distance mesh");
 run("Green Fire Blue");
 setMinAndMax(0, 50);
 /*
-## Quantitative analysis of distances between neighbors
-We next determine the averge distance between a node and all of its neighbors. Th result is
-a vector with as many entries as nodes in the graph. We use this vector to colour-code the 
-label map of the cell segmentation. This means, we replace label 1 with the average distance to 
-node 1 and label 2 with the average distance to node 2.
+## Quantitative analysis of distance between neighbors
+Next, we determine the averge distance between a node and of all its neighbors. The resulting 
+vector has as many entries as nodes in the graph. We use this vector to color-code the 
+label map of segmented cells. This means, label 1 gets replaced by the average distance to 
+node 1, label 2 by the average distance to node 2, et cetera.
 */
 
 Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
@@ -143,7 +143,7 @@ run("Fire");
 setMinAndMax(0, 50);
 
 /*
-Now we measure the mean of the neighbors neighbord to their neigbors and visualise it as above.
+Now, we measure the mean between neighbors and visualize it as above.
 */
 Ext.CLIJ2_meanOfTouchingNeighbors(distances_vector, touch_matrix, local_mean_distances_vector);
 Ext.CLIJ2_replaceIntensities(labels, local_mean_distances_vector, local_mean_pixel_count_map);
@@ -151,7 +151,7 @@ show(local_mean_pixel_count_map, "neighbor mean distance map");
 run("Fire");
 setMinAndMax(0, 50);
 /*
-We can do the same with minimum, median and maximum distances:
+We can also use the minimum, median and maximum to measure distances:
 */
 Ext.CLIJ2_minimumOfTouchingNeighbors(distances_vector, touch_matrix, local_minimum_distances_vector);
 Ext.CLIJ2_replaceIntensities(labels, local_minimum_distances_vector, local_minimum_pixel_count_map);
@@ -179,8 +179,8 @@ setMinAndMax(0, 50);
 
 /*
 ## Performance evaluation
-Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 
-as intermediate results are save to disc.
+Finally, a time measurement. Note that performing this workflow in ImageJ macro markdown is slower, 
+because intermediate results are saved to disc.
 */
 print("The whole workflow took " + (getTime() - time) + " msec");
 
@@ -192,7 +192,7 @@ Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
 
 /*
-Also let's see how much memory this workflow used. Cleaning up by the end is also important.
+Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 */
 Ext.CLIJ2_reportMemory();
 
