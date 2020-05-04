@@ -200,7 +200,7 @@ Ext.CLIJ2_reportMemory();
 Ext.CLIJ2_clear();
 
 /*
-The following are convienence methods for proper visualisation in a noteboook:
+Following methods are convenient for a proper visualization in a notebook:
 */
 function show(input, text) {
 	Ext.CLIJ2_maximumZProjection(input, max_projection);
