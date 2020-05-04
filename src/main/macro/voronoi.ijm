@@ -1,12 +1,13 @@
 /*
-# CLIJ example macro: voronoi.ijm
+# Voronoi diagrams
 
-This macro shows how to apply an get a
-voronoi image of a binary image in the GPU.
+This macro shows how to create a Voronoi 
+diagram out of a binary image in the GPU.
 
 Author: Robert Haase
          March 2020
-
+
+
 ## Get test data
 */
 run("Blobs (25K)");
@@ -15,7 +16,8 @@ input = getTitle();
 
 
 /* 
-## Initialize GPU and push image data to GPU memory
+## Initialize GPU
+and push image data to GPU memory:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -27,7 +29,10 @@ Ext.CLIJ2_push(input);
 run("Close All");
 
 /*
-## Create a mask using a threshold algorithm and draw the Voronoi map
+## Create a binary mask and draw the Voronoi diagram 
+First, apply Otsu's thresholding method to obtain a 
+binary mask image, then draw the Voronoi diagram.
+
 */
 Ext.CLIJ2_thresholdOtsu(input, mask);
 
@@ -39,7 +44,7 @@ Ext.CLIJ2_pullBinary(mask);
 Ext.CLIJ2_pullBinary(voronoi_diagram);
 
 /*
-Clean up by the end
+Clean up by the end:
 */
 Ext.CLIJ2_clear();
 
