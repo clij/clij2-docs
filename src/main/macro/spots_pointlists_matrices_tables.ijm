@@ -1,8 +1,7 @@
 /* 
 # Working with spots, pointlists, matrixes and tables
 
-Author: Robert Haase
-        April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/spots_pointlists_matrices_tables.ijm)
 
@@ -123,7 +122,7 @@ Ext.CLIJ2_distanceMatrixToMesh(pointlist_multiplied, distance_matrix, mesh2, 2.5
 Ext.CLIJ2_pull(mesh2);
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 
