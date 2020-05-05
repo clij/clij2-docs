@@ -42,6 +42,6 @@ print(blurred);
 If you don't like the image names created by CLIJ2, just rename them as you wish before calling the filter function.
 
 ## Clean up GPU
-By the end of the macro, clean up GPU memory:
+At the end of the macro, clean up GPU memory:
 */
 Ext.CLIJ2_clear();
