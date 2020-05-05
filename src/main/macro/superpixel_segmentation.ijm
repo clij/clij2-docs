@@ -5,7 +5,7 @@ Author: Robert Haase
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/superpixel_segmentation.ijm)
 
-Initialize/clean up ImageJ and graphics card:
+Clean up ImageJ and initialize GPU:
 */
 run("Close All");
 
@@ -17,13 +17,13 @@ time = getTime();
 Ext.CLIJ2_startTimeTracing();
 /*
 ## Load a data set
-The raw dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
-It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
-The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use it for detecting nuclei and generating an estimated cell-segmentation first.
+The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
+It shows a *Tribolium castaneum* embryo, imaged by a custom light sheet microscope, at a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
+The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use the dataset to detect nuclei and to generate an estimated cell-segmentation.
 
-Furthermore, we use a label map of segmented cells, which was generated using [this macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm).
+In addition, we use a label map of segmented cells, which got generated using [this macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm).
 
-All processing steps are performed in 3D, for visualisation purposes, we're looking at maximum intensity projections in Z: 
+All processing steps are performed in 3D space. For visualization purpose, we are using the maximum intensity projection in Z: 
 */
 path = "C:/structure/teaching/neubias_academy_clij2/data/";
 
@@ -40,15 +40,15 @@ Ext.CLIJ2_push(labels);
 // clean up imageJ
 run("Close All");
 /*
-## Inspecting input data
-The processed data is 3D, for visualisation purposes, we look at maximum projections:
+## Viewing input data
+Processed 3D-data will be shown in 2D, using maximum projections in Z:
 */
 show(input, "input");
 show(labels, "labels");
 run("glasbey_on_dark");
 /*
 ## Determine neighborhood relationships between segmented objects
-To process neighboring pixels, we need to derive a touch-matrix from the label map:
+From the label map, we derive a touch-matrix to process neighboring pixel :
 */
 Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
@@ -56,7 +56,7 @@ Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 Ext.CLIJ2_pull(touch_matrix);
 /*
 ## Measure statistics
-We now measure statistics of labelled objects. The statistis are shown in a results table. From this table, we push the column PIXEL_SIZE back to the GPU as image:
+Now, we get statistics of labelled objects, in the form of a results table. From this table, we push the column PIXEL_SIZE as image back to the GPU:
 */
 run("Clear Results");
 Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(input, labels);
@@ -66,8 +66,8 @@ run("Clear Results");
 // show the pixel count vector image
 Ext.CLIJ2_pull(pixel_count);
 /*
-## Visualise measurements in space
-We now colour code the measurents on the label map: 
+## Visualize measurements in space
+Next, we color-code measurements based on the label map: 
 */
 Ext.CLIJ2_replaceIntensities(labels, pixel_count, pixel_count_map);
 show(pixel_count_map, "pixel count map");
@@ -75,8 +75,8 @@ run("Fire");
 
 /*
 ## Thresholding based on derived features
-We segment the image now by differentiating large and small objects using a pixel count threshold. 
-The visualised binary images overlap, because we look at maximum projections of three dimensional binary image stacks:
+Using a pixel count threshold, we segment the image by differentiating large and small objects. 
+Thresholded 2D binary images overlap, because we look at maximum projections of 3D binary image stacks:
 */
 pixel_count_threshold = 4000;
 
@@ -98,9 +98,9 @@ function threshold_vector_and_visualise(vector, labelmap, threshold) {
 	show(large_objects_map, "above threshold");
 }
 /*
-## Improving segmentation results using filtering superpixels
-We can make the difference between the two regions in the dataset more clear by filtering the pixel count factor
-using the corresponding neighborhood:
+## Improving segmentation by superpixel filtering
+Having two regions in the dataset, we can differentiate them more clearly by filtering the 
+pixel count factor, using corresponding neighborhood relationships:
 */
 
 // for every object, determine the minimum pixel count in its local neighbor hood
@@ -112,28 +112,29 @@ show(filtered_pixel_count_map, "filtered pixel count map");
 run("Fire");
 /*
 ## Thresholding filtered features
-For thresholding the filtered vector, we reuse the macro function from above:
+To apply a threshold on a filtered vector, we reuse the macro command from above:
 */
 threshold_vector_and_visualise(filtered_pixel_count, labels, pixel_count_threshold);
 /*
 ## Renumbering label maps
+Based on thresholded features, labels can get excluded and resorted within the label map. 
 */
 // threshold the feature vector
 Ext.CLIJ2_greaterOrEqualConstant(filtered_pixel_count,  binary_vector, pixel_count_threshold);
-// we now remove the labels above the threshold from the labelmap
+// remove all labels above the threshold from the labelmap
 Ext.CLIJ2_excludeLabels(binary_vector, labels, labels_embryo);
 show(labels_embryo, "labels_embryo");
 run("glasbey_on_dark");
 
 
 /*
-## Visualisation of segmentation as ROIs
-We can also show the different regions using ImageJs ROIs and Overlays
+## Visualization of segmented ROIs
+We can also show different regions using ImageJs ROIs and Overlays:
 */
 threshold_vector_and_visualise_as_rois(filtered_pixel_count, labels, input, pixel_count_threshold);
 
-// This function takes a vector, binarizes it using a threshold and 
-// visualises the results as regions of interest
+// This function takes a vector, binarizes it by thresholding 
+// and visualizes the results as regions of interest
 function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, threshold) {
 
 	// threshold the vector in two vectors:
@@ -167,8 +168,8 @@ function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, t
 }
 /*
 ## Performance evaluation
-Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 
-as intermediate results are save to disc.
+Finally, a time measurement. Note that performing this workflow in ImageJ macro markdown is slower, 
+because intermediate results are saved to disc.
 */
 print("The whole workflow took " + (getTime() - time) + " msec");
 /*
@@ -178,14 +179,14 @@ Ext.CLIJ2_stopTimeTracing();
 Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
 /*
-Also let's see how much memory this workflow used. Cleaning up by the end is also important.
+Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 */
 Ext.CLIJ2_reportMemory();
 
 // clean up finally.
 Ext.CLIJ2_clear();
 /*
-The following are convienence methods for proper visualisation in a noteboook:
+Following methods are convenient for a proper visualization in a notebook:
 */
 function show(input, text) {
 	Ext.CLIJ2_maximumZProjection(input, max_projection);
