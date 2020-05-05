@@ -57,6 +57,6 @@ for (i = 0; i < 36; i += 6) {
 }
 
 /* 
-By the end of the macro, clean up:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
