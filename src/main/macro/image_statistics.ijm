@@ -1,6 +1,6 @@
 /* 
 # Image statistics
-Author: Robert Haase, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/image_statistics.ijm)
         
