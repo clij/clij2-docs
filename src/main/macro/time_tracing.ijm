@@ -12,11 +12,11 @@ When executing this script, run it twice!
 You may observe that the second execution is faster, because of the 
 [warm-up effect](https://stackoverflow.com/questions/36198278/why-does-the-jvm-require-warmup).
 */
-// Cleanup first
+// clean up first
 
 run ("Close All");
 
-// Get test data
+// get test data
 run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
@@ -30,7 +30,7 @@ Ext.CLIJ2_clear();
 // push images to GPU
 Ext.CLIJ2_push(input);
 
-// CleanUp ImageJ
+// clean up ImageJ
 close();
 
 /*
@@ -64,6 +64,6 @@ print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
