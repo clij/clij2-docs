@@ -9,7 +9,7 @@ of two binary images in the GPU.
 Get test data:
 */
 run("Blobs (25K)");
-//open("C:/structure/data/blobs.gif");
+// open("C:/structure/data/blobs.gif");
 input = getTitle();
 
 /* 
@@ -22,7 +22,7 @@ Ext.CLIJ2_clear();
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 
 
@@ -48,6 +48,6 @@ IJ.log("Overlap (Sorensen / Dice coefficient): " + (diceIndex*100) + "%");
 
 
 /*
-Clean up GPU memory:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
