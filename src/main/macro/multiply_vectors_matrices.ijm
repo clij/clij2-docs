@@ -47,7 +47,7 @@ if you permute the input parameters, the resulting matrix size will be 'wrong':
 Ext.CLIJ2_multiplyImages(voxel_size, pointlist, transformed_pointlist2);
 Ext.CLIJ2_print(transformed_pointlist2);
 /*
-Clean up by the end:
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
 
