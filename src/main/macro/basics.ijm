@@ -46,8 +46,8 @@ Ext.CLIJ2_reportMemory();
 If we use CLIJ methods to blur the input image, another `result` image gets allocated in GPU memory.
 */
 sigma = 5;
-//// you can, but you don't have to define the resulting image name:
-//result = "blurred_image"; 
+// you can, but you don't have to define the resulting image name:
+// result = "blurred_image"; 
 Ext.CLIJ2_gaussianBlur2D(input_image, result, sigma, sigma);
 /*
 ## Showing a result image
