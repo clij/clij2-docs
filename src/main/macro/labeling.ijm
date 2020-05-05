@@ -1,7 +1,6 @@
 /*
 # Labelling
-Author: Robert Haase
-, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/labeling.ijm)
 
@@ -48,7 +47,7 @@ Ext.CLIJ2_pull(labels_not_touching_image_borders);
 run("glasbey on dark");
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 
 Ext.CLIJ2_clear();
