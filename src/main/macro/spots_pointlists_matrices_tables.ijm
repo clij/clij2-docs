@@ -122,12 +122,12 @@ Ext.CLIJ2_distanceMatrixToMesh(pointlist_multiplied, distance_matrix, mesh2, 2.5
 Ext.CLIJ2_pull(mesh2);
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 
 /*
-This is just a useful function to get a nice visualization in the notebook.
+This is just a useful function to get a nice visualization in the notebook:
 */
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
