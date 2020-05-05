@@ -93,7 +93,7 @@ As you can see, the outlier is gone! :-)
 */
 
 /*
-Clean up by the end:
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
 
