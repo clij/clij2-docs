@@ -1,6 +1,6 @@
 /*
 # Measure speedup (Benchmarking)
-Author: Robert Haase, April 2020
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/benchmarking.ijm)
 
@@ -110,6 +110,6 @@ print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
 /*
-Clean up GPU at the end.
+Clean up GPU at the end:
 */
 Ext.CLIJ2_clear();
