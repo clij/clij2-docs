@@ -92,7 +92,7 @@ roiManager("show all");
 show();
 
 /*
-Clean up by the end:
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
 
