@@ -1,10 +1,10 @@
 /*
 # Voronoi diagrams
 
+Authors: Robert Haase, Daniela Vorkel, March 2020
+
 This macro shows how to create a Voronoi 
 diagram out of a binary image in the GPU.
-
-Author: Robert Haase, March 2020
 
 
 ## Get test data
@@ -43,7 +43,7 @@ Ext.CLIJ2_pullBinary(mask);
 Ext.CLIJ2_pullBinary(voronoi_diagram);
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 
