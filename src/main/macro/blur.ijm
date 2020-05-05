@@ -23,7 +23,7 @@ Ext.CLIJ2_clear();
 // push images to GPU
 Ext.CLIJ2_push(input);
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 /*
 ## Apply a Gaussian blur filter in GPU
@@ -31,7 +31,7 @@ We apply a filter to an image by specifying the input image, the output image an
 */
 Ext.CLIJ2_gaussianBlur3D(input, blurred, 5, 5, 1);
 
-// Get results back from GPU
+// get results back from GPU
 Ext.CLIJ2_pull(blurred);
 /*
 Note: In contrast to CLIJ, the variable `blurred` contains the name of the output image and does not need to get specified. 
