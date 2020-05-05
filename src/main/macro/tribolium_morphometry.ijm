@@ -32,7 +32,7 @@ print("Loading took " + (getTime() - time) + " msec");
 Ext.CLIJ2_push(input);
 run("Close All");
 
-// visualise the dataset
+// visualize the dataset
 show(input, "input");
 /*
 ## Spot detection
@@ -70,7 +70,7 @@ print("Number of detected spots: " + number_of_spots);
 ## Expanding labelled spots
 Next, we spatially extend the labelled spots by applying a maximum filter.
 */
-// labelmap closing
+// label map closing
 number_of_dilations = 10;
 number_of_erosions = 4;
 Ext.CLIJ2_copy(labelled_spots, flip);
@@ -113,7 +113,8 @@ Starting from the label map of segmented cells, we generate a touch matrix:
 */
 Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
-// we set the first column in the touch matrix to zero because we want to ignore that spots touch the background (background label 0, first column)
+// touch matrix:
+// set the first column to zero to ignore all spots touching the background (background label 0, first column)
 Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 show_spots(touch_matrix, "touch matrix");
 /*
