@@ -4,7 +4,7 @@
 This macro shows how to create a Voronoi 
 diagram out of a binary image in the GPU.
 
-Author: Robert Haase, Daniela Vorkel, March 2020
+Author: Robert Haase, March 2020
 
 
 ## Get test data
