@@ -5,12 +5,12 @@ Authors: Robert Haase, Daniela Vorkel, April 2020
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/matrix_multiply.ijm)
 
 
-This macro shows how to do a matrix multiplication
-on the GPU.
+This macro shows how to perform a matrix multiplication
+in the GPU.
 
 */
 
-// Initialize GPU
+// initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
 Ext.CLIJ2_clear();
 
@@ -29,7 +29,7 @@ Ext.CLIJ2_pushArray(vector2, array2, 5, 1, 1);
 ## In order to multiplicate matrices, the input matrices must be of size (n * m) and (m * n) 
 Therefore, we transpose one of our vectors: 
 */
-// transpose first input vector and show it
+// transpose the first input vector and show it
 Ext.CLIJ2_transposeXY(vector1, vector1transposed);
 print("Vector 1 (transposed):");
 Ext.CLIJ2_print(vector1transposed);
@@ -58,7 +58,7 @@ Ext.CLIJ2_create2D(another_matrix, width, height, bitDepth_float);
 // random values between 0 and 1; seed is 5
 Ext.CLIJ2_setRandom(another_matrix, 0, 1, 5); 
 
-// element wise multiplication
+// element by element multiplication
 Ext.CLIJ2_multiplyImages(matrix, another_matrix, matrix_element_wise_multiplied);
 Ext.CLIJ2_print(matrix_element_wise_multiplied);
 /* 
@@ -67,7 +67,7 @@ Ext.CLIJ2_print(matrix_element_wise_multiplied);
 Ext.CLIJ2_multiplyImageAndScalar(matrix, elements_times_2, 2);
 Ext.CLIJ2_print(elements_times_2);
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 /*
