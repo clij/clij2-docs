@@ -1,7 +1,7 @@
 /*
 # CLIJ2 basics
 
-Author: Robert Haase, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
         
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/basics.ijm)
 
@@ -77,7 +77,7 @@ use the `reportMemory();` method to find out which images are currently occupyin
 And when needed for your workflow, release some of them.
 
 ## Clean up when you're done
-Furthermore, by the end of your macro, be a good programmer and clean up. ;-)
+Furthermore, by the end of your macro, be a good programmer and clean up GPU. ;-)
 */
 
 Ext.CLIJ2_clear();
