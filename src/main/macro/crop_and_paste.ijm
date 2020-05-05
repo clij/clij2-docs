@@ -10,7 +10,7 @@ This macro shows how to crop and paste images in the GPU.
 // clean up first
 run("Close All");
 
-// Get test data
+// get test data
 run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
@@ -65,7 +65,7 @@ Ext.CLIJ2_paste2D(flipped, collage, 2, height + 4);
 Ext.CLIJ2_pull(collage);
 
 /*
-Again, clean up at the end:
+By the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 
