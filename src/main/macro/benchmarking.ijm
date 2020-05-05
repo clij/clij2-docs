@@ -1,13 +1,13 @@
 /*
 # Measure speedup (Benchmarking)
-Author: Robert Haase, April 2020
+Author: Robert Haase, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/benchmarking.ijm)
 
-This macro shows how to measure performance of image processing in ImageJ on the CPU 
-and CLIJ2 on the GPU.
+This macro shows how to measure the performance of image processing done by ImageJ in the CPU 
+and by CLIJ2 in the GPU.
 
-Let's get some test data first. 
+First, let's get test data: 
 */
 run("T1 Head (2.4M, 16-bits)");
 input = getTitle();
@@ -15,16 +15,16 @@ input = getTitle();
 // visualise the center plane
 run("Duplicate...", "duplicate range=64-64");
 /*
-## Measure processing time on the CPU
+## Measure processing time in the CPU
 
-We start with measuring processing time of standard ImageJ operations which are executed 
-on the central processing unit (CPU). Note that we execute this operation several times
-to get some insight on different processing times when calling the same operation 
-subsequently. Especially the first exection could be slower because of the 
+We start to measure the processing time of standard ImageJ operations in the central processing unit (CPU). 
+Note that we repeatedly execute this operation to get some insight about different processing times when 
+calling the same operation subsequently. Especially, the first execution could be slower, because of the 
 [warm-up effect](https://stackoverflow.com/questions/36198278/why-does-the-jvm-require-warmup).
-We measure the processing time by saving the current time in the variable `time` before 
-processing and printing `(getTime() - time)` after processing:
-*/
+We measure and save the current processing times as a variable `time`, before printing `(getTime() - time)`.
+As an example of image processing, we use the mean filter:
+*/
+
 // Local mean filter in CPU
 for (i = 1; i <= 10; i++) {
 	// we duplicate the original image to not blur the blurred image again and again
@@ -48,18 +48,18 @@ selectWindow(blurred_image);
 // visualise the center plane
 run("Duplicate...", "duplicate range=64-64");
 /*
-## Measure processing time on the GPU
-We perform the same strategy to measure processing time on the GPU. As the performance of
-GPU-accelerated processing also depends on the data transfer time between CPU and GPU memory,
-we also measure the time `push()` and `pull()` commands take.
+## Measure of processing time in the GPU
+As done for the CPU, we repeat the same strategy to measure the processing time in the GPU. As the performance of
+GPU-accelerated processing also depends on data transfer time between the CPU and GPU memory,
+we consider the taken time for `push()` and `pull()` commands.
 
-Let's start with initializin the GPU.
+Let's start with the initialization of the GPU:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 /*
-### Push images to GPU
+# Push images to GPU
 */
 time = getTime();
 Ext.CLIJ2_push(input);
@@ -69,7 +69,8 @@ print("Pushing one image to the GPU took " + (getTime() - time) + " msec");
 run("Close All");
 
 /*
-### Process images on the GPU using CLIJ2
+# Process images in the GPU using CLIJ2 
+Again, we use the mean filter of CLIJ2:
 */
 // Local mean filter in GPU
 for (i = 1; i <= 10; i++) {
@@ -77,8 +78,10 @@ for (i = 1; i <= 10; i++) {
 	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
 	print("CLIJ2 GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
+
 /*
-### Compare CLIJ2 with its predecessor, [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
+# Compare CLIJ2 with its predecessor: [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
+Once more, we use the mean filter, but of CLIJ:
 */
 // Local mean filter in GPU
 for (i = 1; i <= 10; i++) {
@@ -87,18 +90,19 @@ for (i = 1; i <= 10; i++) {
 	print("CLIJ GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 }
 /*
-### Pull result image from the GPU
+# Pull a result image from the GPU
 */
 
 time = getTime();
-Ext.CLIJ2_pull(blurred);
+Ext.CLIJ2_pull(blurred);
+
 print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
 
 // visualise the center plane
 run("Duplicate...", "duplicate range=64-64");
 
 /*
-For documentation purposes, we should also report which GPU was used
+For documentation purpose, we also should report about the used GPU:
 */
 Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
 print("GPU: " + gpu);
@@ -106,6 +110,6 @@ print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
 /*
-Cleanup GPU by the end.
+Clean up GPU at the end.
 */
 Ext.CLIJ2_clear();
