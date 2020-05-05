@@ -1,6 +1,6 @@
 /* 
 # Matrix Multiplication
-Author: Robert Haase, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/matrix_multiply.ijm)
 
@@ -67,7 +67,7 @@ Ext.CLIJ2_print(matrix_element_wise_multiplied);
 Ext.CLIJ2_multiplyImageAndScalar(matrix, elements_times_2, 2);
 Ext.CLIJ2_print(elements_times_2);
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 /*
