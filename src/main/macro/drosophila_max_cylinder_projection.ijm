@@ -4,7 +4,7 @@ Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/drosophila_max_cylinder_projection.ijm)
 
-In this example workflow, we estimate a nuclei count in Droshophila melanogaster, 
+In this example workflow, we estimate a nuclei count in a dataset of *Droshophila melanogaster*, 
 using spot detection on a cylindrical maximum intensity projection.
 
 The workflow got originally published in the [CLIJ paper](https://doi.org/10.1038/s41592-019-0650-1).
@@ -21,7 +21,7 @@ Ext.CLIJ2_clear();
 
 /*
 ## The dataset
-We process a dataset of a Drosophila melanogaster embryo, expressing histone-RFP 
+We process a dataset of a *Drosophila melanogaster* embryo, expressing histone-RFP 
 ([Flybase 23651](http://flybase.org/reports/FBst0023651)). 
 It was acquired from two opposing perspectives, using a custom multi-view light sheet microscope. 
 Afterwards ans "on the fly", the data was fused and downsampled by a factor of two, 
