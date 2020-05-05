@@ -1,6 +1,6 @@
 /* 
 # Crop and paste images
-Author: Robert Haase, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/crop_and_paste.ijm)
@@ -65,7 +65,7 @@ Ext.CLIJ2_paste2D(flipped, collage, 2, height + 4);
 Ext.CLIJ2_pull(collage);
 
 /*
-Again, clean up at the end.
+Again, clean up at the end:
 */
 Ext.CLIJ2_clear();
 
