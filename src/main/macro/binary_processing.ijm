@@ -1,6 +1,6 @@
 /* 
 # Binary image operations
-Author: Robert Haase, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/binary_processing.ijm)
 
@@ -92,7 +92,7 @@ Ext.CLIJ2_binaryEdgeDetection(thresholded, edges);
 Ext.CLIJ2_pullBinary(edges);
 
 /*
-Finally, clean up.
+Finally, clean up:
 */
 Ext.CLIJ2_clear();
 
