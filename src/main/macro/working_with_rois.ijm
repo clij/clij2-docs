@@ -1,6 +1,6 @@
 /* 
 # Working with ROIs 
-Author: Robert Haase, Daniela Vorkel, April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/working_with_rois.ijm)
 
@@ -92,12 +92,12 @@ roiManager("show all");
 show();
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 
 /*
-This method is just convenient to show images properly in the notebook. 
+This is just convenient method to show images properly in the notebook. 
 */
 
 function show() {
