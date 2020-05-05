@@ -36,7 +36,6 @@ Ext.CLIJ2_affineTransform2D(Image source, Image destination, String transform);
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/applyVectorFieldMD"><img src="images/language_macro.png" height="20"/></a> [applyVectorFieldMD](https://clij.github.io/clij2-docs/md/applyVectorFieldMD)  
-<a href="https://clij.github.io/clij2-docs/md/rotate_comparison"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison](https://clij.github.io/clij2-docs/md/rotate_comparison)  
 <a href="https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison_IJ_CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ)  
 
 

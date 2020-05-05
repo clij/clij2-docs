@@ -11,18 +11,18 @@ This example shows how to multiply a list of coordinates by a given voxel size.
 
 ## Initialize GPU
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=[gfx900]");
 Ext.CLIJ2_clear();
-```
+</pre>
 
 ## Get test data 
 We define the voxel size as an ImageJ macro array and push it to the GPU:
 
-```java
-Ext.CLIJ2_pushArray(voxel_size, newArray(0.2, 0.2, 0.5), 1, 3, 1);
-Ext.CLIJ2_print(voxel_size);
-```
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(voxel_size, newArray(0.2, 0.2, 0.5), 1, 3, 1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(voxel_size);
+</pre>
 <pre>
 > 0.2
 > 0.2
@@ -31,16 +31,16 @@ Ext.CLIJ2_print(voxel_size);
 
 We also define a CLIJ-matrix of XYZ coordinates:
 
-```java
+<pre class="highlight">
 number_of_coordinates = 4;
 number_of_dimensions = 3;
-Ext.CLIJ2_pushArray(pointlist, newArray(
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(pointlist, newArray(
 	1, 3, 5, 11, // X
 	0, 6, 1, 2,  // Y
 	9, 11, 6, 2  // Z
 	), number_of_coordinates, number_of_dimensions, 1);
-Ext.CLIJ2_print(pointlist);
-```
+Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(pointlist);
+</pre>
 <pre>
 > 1.0 3.0 5.0 11.0
 > 0.0 6.0 1.0 2.0
@@ -53,10 +53,10 @@ When multiplying images of different size, the
 strategy is used: to access a pixel outside the image, the value of a closest pixel at the image boundary is used, instead.
 This enables to multiply a vector by a matrix, like shown above:
 
-```java
-Ext.CLIJ2_multiplyImages(pointlist, voxel_size, transformed_pointlist);
-Ext.CLIJ2_print(transformed_pointlist);
-```
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(pointlist, voxel_size, transformed_pointlist);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(transformed_pointlist);
+</pre>
 <pre>
 > 0.2 0.6 1.0 2.2
 > 0.0 1.2 0.2 0.4
@@ -67,10 +67,10 @@ Note: If the resulting image does not exist in first place, CLIJ has to guess
 its size. Thus, it takes the input size of the first image to operate. So, 
 if you permute the input parameters, the resulting matrix size will be 'wrong':
 
-```java
-Ext.CLIJ2_multiplyImages(voxel_size, pointlist, transformed_pointlist2);
-Ext.CLIJ2_print(transformed_pointlist2);
-```
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(voxel_size, pointlist, transformed_pointlist2);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(transformed_pointlist2);
+</pre>
 <pre>
 > 0.2
 > 0.0
@@ -79,12 +79,11 @@ Ext.CLIJ2_print(transformed_pointlist2);
 
 At the end of the macro, clean up:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 
 
-```
-```
+

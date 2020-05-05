@@ -7,7 +7,7 @@ Authors: Robert Haase, Daniela Vorkel, April 2020
 
 Clean up ImageJ and initialize GPU:
 
-```java
+<pre class="highlight">
 run("Close All");
 
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
@@ -16,7 +16,7 @@ Ext.CLIJ2_clear();
 // time measurements
 time = getTime();
 Ext.CLIJ2_startTimeTracing();
-```
+</pre>
 
 ## Load a data set
 The dataset is available [online](https://git.mpi-cbg.de/rhaase/clij2_example_data/blob/master/lund1051_resampled.tif).
@@ -27,7 +27,7 @@ In addition, we use a label map of segmented cells, which got generated using [t
 
 All processing steps are performed in 3D space. For visualization purpose, we are using the maximum intensity projection in Z: 
 
-```java
+<pre class="highlight">
 path = "C:/structure/teaching/clij2_example_data/";
 
 // load data
@@ -42,61 +42,61 @@ Ext.CLIJ2_push(labels);
 
 // clean up ImageJ
 run("Close All");
-```
+</pre>
 
 ## Viewing input data
 Processed 3D-data will be shown in 2D, using maximum projections in Z:
 
-```java
+<pre class="highlight">
 show(input, "input");
 show(labels, "labels");
 run("glasbey_on_dark");
-```
-<a href="image_1588707795876.png"><img src="image_1588707795876.png" width="250" alt="CLIJ2_maximumZProjection_result131"/></a>
-<a href="image_1588707796002.png"><img src="image_1588707796002.png" width="250" alt="CLIJ2_maximumZProjection_result132"/></a>
+</pre>
+<a href="image_1588707795876.png"><img src="image_1588707795876.png" width="224" alt="CLIJ2_maximumZProjection_result131"/></a>
+<a href="image_1588707796002.png"><img src="image_1588707796002.png" width="224" alt="CLIJ2_maximumZProjection_result132"/></a>
 
 ## Determine neighborhood relationships between segmented objects
 From the label map, we derive a touch-matrix to process neighboring pixel :
 
-```java
-Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labels, touch_matrix);
 
 // visualize the touch matrix
 Ext.CLIJ2_pull(touch_matrix);
-```
-<a href="image_1588707796170.png"><img src="image_1588707796170.png" width="250" alt="CLIJ2_generateTouchMatrix_result133"/></a>
+</pre>
+<a href="image_1588707796170.png"><img src="image_1588707796170.png" width="224" alt="CLIJ2_generateTouchMatrix_result133"/></a>
 
 ## Measure statistics
 Now, we get statistics of labelled objects, in the form of a results table. From this table, we push the column PIXEL_SIZE as image back to the GPU:
 
-```java
+<pre class="highlight">
 run("Clear Results");
-Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(input, labels);
-Ext.CLIJ2_pushResultsTableColumn(pixel_count, "PIXEL_COUNT");
+Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfBackgroundAndLabelledPixels">CLIJ2_statisticsOfBackgroundAndLabelledPixels</a>(input, labels);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTableColumn">CLIJ2_pushResultsTableColumn</a>(pixel_count, "PIXEL_COUNT");
 run("Clear Results");
 
 // show the pixel count vector image
 Ext.CLIJ2_pull(pixel_count);
-```
-<a href="image_1588707797604.png"><img src="image_1588707797604.png" width="250" alt="CLIJ2_pushResultsTableColumn_result134"/></a>
+</pre>
+<a href="image_1588707797604.png"><img src="image_1588707797604.png" width="224" alt="CLIJ2_pushResultsTableColumn_result134"/></a>
 
 
 ## Visualize measurements in space
 Next, we color-code measurements based on the label map: 
 
-```java
-Ext.CLIJ2_replaceIntensities(labels, pixel_count, pixel_count_map);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, pixel_count, pixel_count_map);
 show(pixel_count_map, "pixel count map");
 run("Fire");
 
-```
-<a href="image_1588707797696.png"><img src="image_1588707797696.png" width="250" alt="CLIJ2_maximumZProjection_result136"/></a>
+</pre>
+<a href="image_1588707797696.png"><img src="image_1588707797696.png" width="224" alt="CLIJ2_maximumZProjection_result136"/></a>
 
 ## Thresholding based on derived features
 Using a pixel count threshold, we segment the image by differentiating large and small objects. 
 Thresholded 2D binary images overlap, because we look at maximum projections of 3D binary image stacks:
 
-```java
+<pre class="highlight">
 pixel_count_threshold = 4000;
 
 threshold_vector_and_visualise(pixel_count, labels, pixel_count_threshold);
@@ -106,64 +106,64 @@ threshold_vector_and_visualise(pixel_count, labels, pixel_count_threshold);
 function threshold_vector_and_visualise(vector, labelmap, threshold) {
 
 	// threshold the vector in two vectors:
-	Ext.CLIJ2_smallerConstant(vector, small_objects, threshold);
-	Ext.CLIJ2_greaterOrEqualConstant(vector, large_objects, threshold);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_smallerConstant">CLIJ2_smallerConstant</a>(vector, small_objects, threshold);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_greaterOrEqualConstant">CLIJ2_greaterOrEqualConstant</a>(vector, large_objects, threshold);
 	// alternative: use binaryNot
 	
 	// visualise resulting binary images
-	Ext.CLIJ2_replaceIntensities(labelmap, small_objects, small_objects_map);
-	Ext.CLIJ2_replaceIntensities(labelmap, large_objects, large_objects_map);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, small_objects, small_objects_map);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, large_objects, large_objects_map);
 	show(small_objects_map, "below threshold");
 	show(large_objects_map, "above threshold");
 }
-```
-<a href="image_1588707797852.png"><img src="image_1588707797852.png" width="250" alt="CLIJ2_maximumZProjection_result141"/></a>
-<a href="image_1588707797876.png"><img src="image_1588707797876.png" width="250" alt="CLIJ2_maximumZProjection_result142"/></a>
+</pre>
+<a href="image_1588707797852.png"><img src="image_1588707797852.png" width="224" alt="CLIJ2_maximumZProjection_result141"/></a>
+<a href="image_1588707797876.png"><img src="image_1588707797876.png" width="224" alt="CLIJ2_maximumZProjection_result142"/></a>
 
 ## Improving segmentation by superpixel filtering
 Having two regions in the dataset, we can differentiate them more clearly by filtering the 
 pixel count factor, using corresponding neighborhood relationships:
 
-```java
+<pre class="highlight">
 
 // for all objects, determine the minimum pixel count in its local neighborhood
-Ext.CLIJ2_minimumOfTouchingNeighbors(pixel_count, touch_matrix, filtered_pixel_count);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">CLIJ2_minimumOfTouchingNeighbors</a>(pixel_count, touch_matrix, filtered_pixel_count);
 
 // create a parametric image out of the filtered vector
-Ext.CLIJ2_replaceIntensities(labels, filtered_pixel_count, filtered_pixel_count_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, filtered_pixel_count, filtered_pixel_count_map);
 show(filtered_pixel_count_map, "filtered pixel count map");
 run("Fire");
-```
-<a href="image_1588707798001.png"><img src="image_1588707798001.png" width="250" alt="CLIJ2_maximumZProjection_result145"/></a>
+</pre>
+<a href="image_1588707798001.png"><img src="image_1588707798001.png" width="224" alt="CLIJ2_maximumZProjection_result145"/></a>
 
 ## Thresholding filtered features
 To apply a threshold on a filtered vector, we reuse the macro command from above:
 
-```java
+<pre class="highlight">
 threshold_vector_and_visualise(filtered_pixel_count, labels, pixel_count_threshold);
-```
-<a href="image_1588707798140.png"><img src="image_1588707798140.png" width="250" alt="CLIJ2_maximumZProjection_result150"/></a>
-<a href="image_1588707798160.png"><img src="image_1588707798160.png" width="250" alt="CLIJ2_maximumZProjection_result151"/></a>
+</pre>
+<a href="image_1588707798140.png"><img src="image_1588707798140.png" width="224" alt="CLIJ2_maximumZProjection_result150"/></a>
+<a href="image_1588707798160.png"><img src="image_1588707798160.png" width="224" alt="CLIJ2_maximumZProjection_result151"/></a>
 
 ## Renumbering label maps
 Based on thresholded features, labels can get excluded and resorted within the label map. 
 
-```java
+<pre class="highlight">
 // threshold the feature vector
-Ext.CLIJ2_greaterOrEqualConstant(filtered_pixel_count, binary_vector, pixel_count_threshold);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_greaterOrEqualConstant">CLIJ2_greaterOrEqualConstant</a>(filtered_pixel_count, binary_vector, pixel_count_threshold);
 // remove all labels above the threshold from the label map
-Ext.CLIJ2_excludeLabels(binary_vector, labels, labels_embryo);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_excludeLabels">CLIJ2_excludeLabels</a>(binary_vector, labels, labels_embryo);
 show(labels_embryo, "labels_embryo");
 run("glasbey_on_dark");
 
 
-```
-<a href="image_1588707798252.png"><img src="image_1588707798252.png" width="250" alt="CLIJ2_maximumZProjection_result154"/></a>
+</pre>
+<a href="image_1588707798252.png"><img src="image_1588707798252.png" width="224" alt="CLIJ2_maximumZProjection_result154"/></a>
 
 ## Visualization of segmented ROIs
 We can also show different regions using ImageJs ROIs and Overlays:
 
-```java
+<pre class="highlight">
 threshold_vector_and_visualise_as_rois(filtered_pixel_count, labels, input, pixel_count_threshold);
 
 // This function takes a vector, binarizes it by thresholding 
@@ -171,26 +171,26 @@ threshold_vector_and_visualise_as_rois(filtered_pixel_count, labels, input, pixe
 function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, threshold) {
 
 	// threshold the vector in two vectors:
-	Ext.CLIJ2_smallerConstant(vector, small_objects, threshold);
-	Ext.CLIJ2_greaterOrEqualConstant(vector, large_objects, threshold);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_smallerConstant">CLIJ2_smallerConstant</a>(vector, small_objects, threshold);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_greaterOrEqualConstant">CLIJ2_greaterOrEqualConstant</a>(vector, large_objects, threshold);
 	// alternative: use binaryNot
 
 	show(input, "Input with rois");
 	
 	// visualise resulting binary images
-	Ext.CLIJ2_replaceIntensities(labelmap, small_objects, small_objects_map);
-	Ext.CLIJ2_replaceIntensities(labelmap, large_objects, large_objects_map);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, small_objects, small_objects_map);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, large_objects, large_objects_map);
 
-	Ext.CLIJ2_maximumZProjection(small_objects_map, small_objects_map_projected);
-	Ext.CLIJ2_maximumZProjection(large_objects_map, large_objects_map_projected);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(small_objects_map, small_objects_map_projected);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(large_objects_map, large_objects_map_projected);
 
 	// pull a binary image from the GPU as ROI
-	Ext.CLIJ2_pullAsROI(small_objects_map_projected);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pullAsROI">CLIJ2_pullAsROI</a>(small_objects_map_projected);
 	run("Enlarge...", "enlarge=-1"); // prevent overlapping outlines
 	Overlay.addSelection("green");
 
 	// pull a binary image from the GPU as ROI
-	Ext.CLIJ2_pullAsROI(large_objects_map_projected);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pullAsROI">CLIJ2_pullAsROI</a>(large_objects_map_projected);
 	run("Enlarge...", "enlarge=-1"); // prevent overlapping outlines
 	Overlay.addSelection("magenta");
 
@@ -199,27 +199,27 @@ function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, t
 	selectWindow(temp);
 	close();
 }
-```
-<a href="image_1588707798693.png"><img src="image_1588707798693.png" width="250" alt="CLIJ2_maximumZProjection_result157-1"/></a>
+</pre>
+<a href="image_1588707798693.png"><img src="image_1588707798693.png" width="224" alt="CLIJ2_maximumZProjection_result157-1"/></a>
 
 ## Performance evaluation
 Finally, a time measurement. Note that performing this workflow in ImageJ macro markdown is slower, 
 because intermediate results are saved to disc.
 
-```java
+<pre class="highlight">
 print("The whole workflow took " + (getTime() - time) + " msec");
-```
+</pre>
 <pre>
 > The whole workflow took 4390 msec
 </pre>
 
 ### Detailed time tracing for all operations
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_stopTimeTracing();
 Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
-```
+</pre>
 <pre>
 > > timeTracing
 >  > MaximumZProjection
@@ -1164,12 +1164,12 @@ print(time_traces);
 
 Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_reportMemory();
 
 // finally, clean up
 Ext.CLIJ2_clear();
-```
+</pre>
 <pre>
 > GPU contains 23 images.
 > - CLIJ2_greaterOrEqualConstant_result147[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3050f68b] 5.9 kb
@@ -1201,17 +1201,16 @@ Ext.CLIJ2_clear();
 
 Following methods are convenient for a proper visualization in a notebook:
 
-```java
+<pre class="highlight">
 function show(input, text) {
-	Ext.CLIJ2_maximumZProjection(input, max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
 	Ext.CLIJ2_pull(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
 	Ext.CLIJ2_release(max_projection);
 }
-```
+</pre>
 
 
 
-```
-```
+

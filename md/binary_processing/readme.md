@@ -12,27 +12,27 @@ All demonstrated operations work in 2D and 3D. For demonstration
 purpose, we use a 2D example.
 
 
-```java
+<pre class="highlight">
 // clean up first
 run("Close All");
 
-```
+</pre>
 
 ## Get test data
 
-```java
+<pre class="highlight">
 run("Embryos (42K)");
 run("8-bit");
 makeRectangle(714, 14, 768, 394);
 run("Crop", " ");
 input = getTitle();
 
-```
-<a href="image_1588706394529.png"><img src="image_1588706394529.png" width="250" alt="embryos.jpg"/></a>
+</pre>
+<a href="image_1588706394529.png"><img src="image_1588706394529.png" width="224" alt="embryos.jpg"/></a>
 
 Initialize GPU and push image to GPU memory:
 
-```java
+<pre class="highlight">
 run("CLIJ Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
@@ -40,92 +40,91 @@ Ext.CLIJ2_clear();
 Ext.CLIJ2_push(input);
 
 
-```
+</pre>
 
 ## Thresholding
 We create a binary mask image with white objects on black background, using the Otsu's 
 tresholding method. As the image has a bright background, we need to invert it first.
 
-```java
-Ext.CLIJ2_subtractImageFromScalar(input, inverted, 255);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_subtractImageFromScalar">CLIJ2_subtractImageFromScalar</a>(input, inverted, 255);
 
 // apply threshold method
-Ext.CLIJ2_thresholdOtsu(inverted, thresholded);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(inverted, thresholded);
 
 // show thresholding result
 Ext.CLIJ2_pull(thresholded);
 
-```
-<a href="image_1588706395030.png"><img src="image_1588706395030.png" width="250" alt="CLIJ2_thresholdOtsu_result4"/></a>
+</pre>
+<a href="image_1588706395030.png"><img src="image_1588706395030.png" width="224" alt="CLIJ2_thresholdOtsu_result4"/></a>
 
 ## Binary opening using erosion and dilation
 First, we apply binary opening: it consists of binary erosion, followed by binary dilation.
 By hand, we apply each step twice to obtain two iterations.
 
 
-```java
-Ext.CLIJ2_erodeBox(thresholded, temp);
-Ext.CLIJ2_erodeBox(temp, intermediate_result);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(thresholded, temp);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(temp, intermediate_result);
 
 // show intermediate result
 Ext.CLIJ2_pull(intermediate_result);
-```
-<a href="image_1588706395111.png"><img src="image_1588706395111.png" width="250" alt="CLIJ2_erodeBox_result6"/></a>
+</pre>
+<a href="image_1588706395111.png"><img src="image_1588706395111.png" width="224" alt="CLIJ2_erodeBox_result6"/></a>
 
 
-```java
-Ext.CLIJ2_dilateBox(intermediate_result, temp);
-Ext.CLIJ2_dilateBox(temp, opening_result);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_dilateBox">CLIJ2_dilateBox</a>(intermediate_result, temp);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_dilateBox">CLIJ2_dilateBox</a>(temp, opening_result);
 
 // show result
 Ext.CLIJ2_pull(opening_result);
 
-```
-<a href="image_1588706395194.png"><img src="image_1588706395194.png" width="250" alt="CLIJ2_dilateBox_result7"/></a>
+</pre>
+<a href="image_1588706395194.png"><img src="image_1588706395194.png" width="224" alt="CLIJ2_dilateBox_result7"/></a>
 
 ## Binary closing using dilation and erosion
 Given the number of dilation/erosion steps we want to apply, we can call a direct method, too. 
 
 
-```java
+<pre class="highlight">
 number_of_iterations = 2;
-Ext.CLIJ2_closingBox(thresholded, closing_result, number_of_iterations);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_closingBox">CLIJ2_closingBox</a>(thresholded, closing_result, number_of_iterations);
 // show result
 Ext.CLIJ2_pull(closing_result);
 
-```
-<a href="image_1588706395262.png"><img src="image_1588706395262.png" width="250" alt="CLIJ2_closingBox_result8"/></a>
+</pre>
+<a href="image_1588706395262.png"><img src="image_1588706395262.png" width="224" alt="CLIJ2_closingBox_result8"/></a>
 
 ## Fill holes
 It is also possible to fill holes:
 
-```java
-Ext.CLIJ2_binaryFillHoles(thresholded, holes_filled);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_binaryFillHoles">CLIJ2_binaryFillHoles</a>(thresholded, holes_filled);
 // show result
 Ext.CLIJ2_pullBinary(holes_filled);
 
-```
-<a href="image_1588706395509.png"><img src="image_1588706395509.png" width="250" alt="CLIJ2_binaryFillHoles_result9"/></a>
+</pre>
+<a href="image_1588706395509.png"><img src="image_1588706395509.png" width="224" alt="CLIJ2_binaryFillHoles_result9"/></a>
 
 ## Edge detection
 We can retrieve an edge-detected image like this:
 
-```java
-Ext.CLIJ2_binaryEdgeDetection(thresholded, edges);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_binaryEdgeDetection">CLIJ2_binaryEdgeDetection</a>(thresholded, edges);
 // show result
 Ext.CLIJ2_pullBinary(edges);
 
-```
-<a href="image_1588706395598.png"><img src="image_1588706395598.png" width="250" alt="CLIJ2_binaryEdgeDetection_result10"/></a>
+</pre>
+<a href="image_1588706395598.png"><img src="image_1588706395598.png" width="224" alt="CLIJ2_binaryEdgeDetection_result10"/></a>
 
 Finally, clean up:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 
 
-```
-```
+

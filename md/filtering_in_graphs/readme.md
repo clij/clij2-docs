@@ -10,7 +10,7 @@ This macro shows how to apply a filter to values
 of a graph.
 
 
-```java
+<pre class="highlight">
 
 // initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
@@ -18,11 +18,11 @@ Ext.CLIJ2_clear();
 
 run("Close All");
 
-```
+</pre>
 
 ## Define a list of point coordinates and push them to the GPU 
 
-```java
+<pre class="highlight">
 
 // make a pointlist of random coordinates in the GPU
 number_of_points = 100;
@@ -32,99 +32,99 @@ Ext.CLIJ2_create2D(pointlist, number_of_points, number_of_dimensions, bit_depth)
 random_min = 0;
 random_max = 100;
 seed = getTime();
-Ext.CLIJ2_setRandom(pointlist, random_min, random_max, seed);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_setRandom">CLIJ2_setRandom</a>(pointlist, random_min, random_max, seed);
 Ext.CLIJ2_pull(pointlist);
 zoom(10);
 
-```
-<a href="image_1588706777200.png"><img src="image_1588706777200.png" width="250" alt="CLIJ2_create2D_result30-1"/></a>
+</pre>
+<a href="image_1588706777200.png"><img src="image_1588706777200.png" width="224" alt="CLIJ2_create2D_result30-1"/></a>
 
 ## Draw labelled spots (1, 2, 3, ...) in 2D space
 
-```java
-Ext.CLIJ2_pointlistToLabelledSpots(pointlist, spots_image);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpots">CLIJ2_pointlistToLabelledSpots</a>(pointlist, spots_image);
 Ext.CLIJ2_pull(spots_image);
 zoom(4);
 run("glasbey_on_dark");
 
-```
-<a href="image_1588706777388.png"><img src="image_1588706777388.png" width="250" alt="CLIJ2_pointlistToLabelledSpots_result31-1"/></a>
+</pre>
+<a href="image_1588706777388.png"><img src="image_1588706777388.png" width="224" alt="CLIJ2_pointlistToLabelledSpots_result31-1"/></a>
 
 ## Partition the space between points
 
-```java
-Ext.CLIJ2_labelVoronoiOctagon(spots_image, labelled_voronoi);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_labelVoronoiOctagon">CLIJ2_labelVoronoiOctagon</a>(spots_image, labelled_voronoi);
 Ext.CLIJ2_pull(labelled_voronoi);
 zoom(4);
 run("glasbey_on_dark");;
 
-```
-<a href="image_1588706777567.png"><img src="image_1588706777567.png" width="250" alt="CLIJ2_labelVoronoiOctagon_result32-1"/></a>
+</pre>
+<a href="image_1588706777567.png"><img src="image_1588706777567.png" width="224" alt="CLIJ2_labelVoronoiOctagon_result32-1"/></a>
 
 ## Distribute random measurements in space - with one outlier
 
-```java
+<pre class="highlight">
 measurement_array = newArray(number_of_points);
 for (i = 0; i < number_of_points; i += 1) {
 	measurement_array[i] = random() * 10;
 }
 measurement_array[number_of_points / 2] = 20;
 
-Ext.CLIJ2_pushArray(measurement, measurement_array, number_of_points, 1, 1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(measurement, measurement_array, number_of_points, 1, 1);
 Ext.CLIJ2_pull(measurement);
 zoom(10);
 
-```
-<a href="image_1588706777661.png"><img src="image_1588706777661.png" width="250" alt="CLIJ2_pushArray_result33-1"/></a>
+</pre>
+<a href="image_1588706777661.png"><img src="image_1588706777661.png" width="224" alt="CLIJ2_pushArray_result33-1"/></a>
 
 ## Create a parametric image showing measurements in 2D space
 
-```java
-Ext.CLIJ2_replaceIntensities(labelled_voronoi, measurement, parametric_image);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_voronoi, measurement, parametric_image);
 Ext.CLIJ2_pull(parametric_image);
 zoom(4);
 setMinAndMax(0, 20);
 run("Fire");
 
-```
-<a href="image_1588706777784.png"><img src="image_1588706777784.png" width="250" alt="CLIJ2_replaceIntensities_result34-1"/></a>
+</pre>
+<a href="image_1588706777784.png"><img src="image_1588706777784.png" width="224" alt="CLIJ2_replaceIntensities_result34-1"/></a>
 
 ## Calculate the median of every node and its neighbors in the graph
 
-```java
+<pre class="highlight">
 
 // determine the touch matrix
-Ext.CLIJ2_generateTouchMatrix(labelled_voronoi, touch_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labelled_voronoi, touch_matrix);
 
 /// determine the median value of each neighboring nodes
-Ext.CLIJ2_medianOfTouchingNeighbors(measurement, touch_matrix, median_measurement);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">CLIJ2_medianOfTouchingNeighbors</a>(measurement, touch_matrix, median_measurement);
 
 // draw measurements of the median, again as parametric image
-Ext.CLIJ2_replaceIntensities(labelled_voronoi, median_measurement, parametric_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_voronoi, median_measurement, parametric_image);
 Ext.CLIJ2_pull(parametric_image);
 zoom(4);
 setMinAndMax(0, 20);
 run("Fire");
 
-```
-<a href="image_1588706777957.png"><img src="image_1588706777957.png" width="250" alt="CLIJ2_replaceIntensities_result34-2"/></a>
+</pre>
+<a href="image_1588706777957.png"><img src="image_1588706777957.png" width="224" alt="CLIJ2_replaceIntensities_result34-2"/></a>
 
 As you can see, the outlier is gone! :-)
 
-```java
+<pre class="highlight">
 
-```
+</pre>
 
 At the end of the macro, clean up:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 This is just a useful function to get a nice visualization in the notebook:
 
-```java
+<pre class="highlight">
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
 	before = getTitle();	
@@ -135,9 +135,8 @@ function zoom(factor) {
 
 
 
-```
+</pre>
 
 
 
-```
-```
+

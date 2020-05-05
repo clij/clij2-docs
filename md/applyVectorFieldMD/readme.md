@@ -11,19 +11,19 @@ to an image, in order to transform it non-rigidly.
 
 Get test data:
 
-```java
+<pre class="highlight">
 run("Close All");
 
 // get test image
 run("Blobs (25K)");
 input = getTitle();
 
-```
-<a href="image_1588705395527.png"><img src="image_1588705395527.png" width="250" alt="blobs.gif"/></a>
+</pre>
+<a href="image_1588705395527.png"><img src="image_1588705395527.png" width="224" alt="blobs.gif"/></a>
 
 Create two images describing a local shift:
 
-```java
+<pre class="highlight">
 shiftX = "shiftX";
 shiftY = "shiftY";
 newImage(shiftX, "32-bit black", 256, 254, 1);
@@ -37,51 +37,50 @@ run("Select None");
 run("Gaussian Blur...", "sigma=15");
 run("Enhance Contrast", "saturated=0.35");
 
-```
-<a href="image_1588705395688.png"><img src="image_1588705395688.png" width="250" alt="shiftX"/></a>
-<a href="image_1588705395699.png"><img src="image_1588705395699.png" width="250" alt="shiftY"/></a>
+</pre>
+<a href="image_1588705395688.png"><img src="image_1588705395688.png" width="224" alt="shiftX"/></a>
+<a href="image_1588705395699.png"><img src="image_1588705395699.png" width="224" alt="shiftY"/></a>
 
 ## Initialize GPU and push images to GPU memory
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_push(input);
 Ext.CLIJ2_push(shiftX);
 Ext.CLIJ2_push(shiftY);
 
-```
+</pre>
 
 ## Apply a shift, rotate it, and apply as loop
 
-```java
+<pre class="highlight">
 for (i = 0; i < 36; i += 6) {
 
 	// change the shift from slice to slice
-	Ext.CLIJ2_affineTransform2D(shiftX, rotatedShiftX, "-center rotate=" + (i * 10) + " center");
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_affineTransform2D">CLIJ2_affineTransform2D</a>(shiftX, rotatedShiftX, "-center rotate=" + (i * 10) + " center");
 	
 	// apply transform
-	Ext.CLIJ2_applyVectorField2D(input, rotatedShiftX, shiftY, transformed);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_applyVectorField2D">CLIJ2_applyVectorField2D</a>(input, rotatedShiftX, shiftY, transformed);
 
 	// get result back from GPU
 	Ext.CLIJ2_pull(transformed);
 	rename("Angle " + (i * 10) + " deg");
 }
 
-```
-<a href="image_1588705395903.png"><img src="image_1588705395903.png" width="250" alt="Angle 0 deg"/></a>
-<a href="image_1588705395967.png"><img src="image_1588705395967.png" width="250" alt="Angle 60 deg"/></a>
-<a href="image_1588705396027.png"><img src="image_1588705396027.png" width="250" alt="Angle 120 deg"/></a>
-<a href="image_1588705396088.png"><img src="image_1588705396088.png" width="250" alt="Angle 180 deg"/></a>
-<a href="image_1588705396149.png"><img src="image_1588705396149.png" width="250" alt="Angle 240 deg"/></a>
-<a href="image_1588705396209.png"><img src="image_1588705396209.png" width="250" alt="Angle 300 deg"/></a>
+</pre>
+<a href="image_1588705395903.png"><img src="image_1588705395903.png" width="224" alt="Angle 0 deg"/></a>
+<a href="image_1588705395967.png"><img src="image_1588705395967.png" width="224" alt="Angle 60 deg"/></a>
+<a href="image_1588705396027.png"><img src="image_1588705396027.png" width="224" alt="Angle 120 deg"/></a>
+<a href="image_1588705396088.png"><img src="image_1588705396088.png" width="224" alt="Angle 180 deg"/></a>
+<a href="image_1588705396149.png"><img src="image_1588705396149.png" width="224" alt="Angle 240 deg"/></a>
+<a href="image_1588705396209.png"><img src="image_1588705396209.png" width="224" alt="Angle 300 deg"/></a>
 
 At the end of the macro, clean up:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+

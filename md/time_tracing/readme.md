@@ -13,7 +13,7 @@ When executing this script, run it twice!
 You may observe that the second execution is faster, because of the 
 [warm-up effect](https://stackoverflow.com/questions/36198278/why-does-the-jvm-require-warmup).
 
-```java
+<pre class="highlight">
 // clean up first
 
 run ("Close All");
@@ -23,12 +23,12 @@ run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
 
-```
-<a href="image_1588708137544.png"><img src="image_1588708137544.png" width="250" alt="blobs.gif"/></a>
+</pre>
+<a href="image_1588708137544.png"><img src="image_1588708137544.png" width="224" alt="blobs.gif"/></a>
 
 ## Initialize GPU and push image to GPU memory
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
@@ -38,34 +38,34 @@ Ext.CLIJ2_push(input);
 // clean up ImageJ
 close();
 
-```
+</pre>
 
 ## Start time tracing
 Before running the actual filter or workflow, we start the time tracing.
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_startTimeTracing();
 
 radius = 10;
 
-Ext.CLIJ2_topHatBox(input, background_subtacted, radius, radius, 0);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_topHatBox">CLIJ2_topHatBox</a>(input, background_subtacted, radius, radius, 0);
 
 // show result
 Ext.CLIJ2_pull(background_subtacted);
 
-```
-<a href="image_1588708137684.png"><img src="image_1588708137684.png" width="250" alt="CLIJ2_topHatBox_result2"/></a>
+</pre>
+<a href="image_1588708137684.png"><img src="image_1588708137684.png" width="224" alt="CLIJ2_topHatBox_result2"/></a>
 
 ## Stop and inspect the time tracing
 After the workflow finished, we can have a look on all underlying operations and its execution time,
 for each single step and as total duration:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_stopTimeTracing();
 Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
 
-```
+</pre>
 <pre>
 > > timeTracing
 >  > TopHatBox
@@ -82,13 +82,13 @@ print(time_traces);
 
 For documentation purposes, we should also report which GPU was used
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
-```
+</pre>
 <pre>
 > GPU: GeForce RTX 2060 SUPER
 > Memory in GB: 8
@@ -97,11 +97,10 @@ print("OpenCL version: " + opencl_version);
 
 At the end of the macro, clean up:
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+

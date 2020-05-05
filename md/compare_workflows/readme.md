@@ -12,7 +12,7 @@ Let's start with ImageJ:  we have a workflow to load an image and
 to process it with background subtraction and thresholding. Note 
 the two lines using the `getTime();` command.
 
-```java
+<pre class="highlight">
 run("Close All");
 
 // get test data
@@ -33,14 +33,14 @@ run("Convert to Mask");
 
 end_time_imagej = getTime();
 
-```
-<a href="image_1588706560004.png"><img src="image_1588706560004.png" width="250" alt="input_imagej"/></a>
-<a href="image_1588706560418.png"><img src="image_1588706560418.png" width="250" alt="background_subtracted_imagej"/></a>
-<a href="image_1588706561395.png"><img src="image_1588706561395.png" width="250" alt="thresholded_imagej"/></a>
+</pre>
+<a href="image_1588706560004.png"><img src="image_1588706560004.png" width="224" alt="input_imagej"/></a>
+<a href="image_1588706560418.png"><img src="image_1588706560418.png" width="224" alt="background_subtracted_imagej"/></a>
+<a href="image_1588706561395.png"><img src="image_1588706561395.png" width="224" alt="thresholded_imagej"/></a>
 
 Now, we run the same workflow with CLIJ methods:
 
-```java
+<pre class="highlight">
 
 // get test data
 open("https://github.com/clij/clij2-docs/raw/master/src/main/resources/Lund_MAX_001300.tif");
@@ -58,20 +58,20 @@ Ext.CLIJ2_push(input_clij);
 // subtract background in the image
 radius = 25;
 background_subtracted_clij = "background_subtracted_clij";
-Ext.CLIJ2_topHatBox(input_clij, background_subtracted_clij, 25, 25, 0);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_topHatBox">CLIJ2_topHatBox</a>(input_clij, background_subtracted_clij, 25, 25, 0);
 Ext.CLIJ2_pull(background_subtracted_clij);
 
 // threshold the image
 thresholded_clij = "thresholded_clij";
-Ext.CLIJ2_automaticThreshold(background_subtracted_clij, thresholded_clij, "Default");
+Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(background_subtracted_clij, thresholded_clij, "Default");
 Ext.CLIJ2_pullBinary(thresholded_clij);
 
 end_time_clij = getTime();
 
-```
-<a href="image_1588706562777.png"><img src="image_1588706562777.png" width="250" alt="Lund_MAX_001300.tif"/></a>
-<a href="image_1588706563182.png"><img src="image_1588706563182.png" width="250" alt="background_subtracted_clij"/></a>
-<a href="image_1588706563765.png"><img src="image_1588706563765.png" width="250" alt="thresholded_clij"/></a>
+</pre>
+<a href="image_1588706562777.png"><img src="image_1588706562777.png" width="224" alt="Lund_MAX_001300.tif"/></a>
+<a href="image_1588706563182.png"><img src="image_1588706563182.png" width="224" alt="background_subtracted_clij"/></a>
+<a href="image_1588706563765.png"><img src="image_1588706563765.png" width="224" alt="thresholded_clij"/></a>
 
 The results look similar. There are differences, because the 
 implementation of ImageJ background subtraction is close but
@@ -85,7 +85,7 @@ This allows us to compare them, now.
 
 Let's start with quantitative measurements on images and take the duration time for processing.
 
-```java
+<pre class="highlight">
 // clean up and configure measurements
 run("Set Measurements...", "area mean standard min redirect=None decimal=3");
 run("Clear Results");
@@ -104,7 +104,7 @@ run("Measure");
 
 // Table.rename("Results", "Quantitative measurements");
 
-```
+</pre>
 
 From these measurements, we conclude that there are small differences 
 between background-subtracted images, and apparently smaller differences 
@@ -115,19 +115,19 @@ in 32-bit, because 8-bit images don't support negative values.
 
 ## Visual differences between background-subtracted images
 
-```java
+<pre class="highlight">
 imageCalculator("Subtract create 32-bit", "background_subtracted_imagej", background_subtracted_clij);
 
-```
-<a href="image_1588706564062.png"><img src="image_1588706564062.png" width="250" alt="Result of background_subtracted_imagej"/></a>
+</pre>
+<a href="image_1588706564062.png"><img src="image_1588706564062.png" width="224" alt="Result of background_subtracted_imagej"/></a>
 
 ## Visual differences between thresholded images
 
-```java
+<pre class="highlight">
 imageCalculator("Subtract create 32-bit", "thresholded_imagej", thresholded_clij);
 
-```
-<a href="image_1588706564687.png"><img src="image_1588706564687.png" width="250" alt="Result of thresholded_imagej"/></a>
+</pre>
+<a href="image_1588706564687.png"><img src="image_1588706564687.png" width="224" alt="Result of thresholded_imagej"/></a>
 
 The visualization confirms our assumption: The background-subtracted images 
 are slightly different, while the binary result images are not.
@@ -136,12 +136,12 @@ are slightly different, while the binary result images are not.
 
 Also, let's compare the different processing times:
 
-```java
+<pre class="highlight">
 
 print("ImageJ took " + (end_time_imagej - start_time_imagej) + "ms.");
 print("CLIJ took " + (end_time_clij - start_time_clij) + "ms.");
 
-```
+</pre>
 <pre>
 > ImageJ took 410ms.
 > CLIJ took 93ms.
@@ -150,14 +150,14 @@ print("CLIJ took " + (end_time_clij - start_time_clij) + "ms.");
 The shown numbers depend on the used GPU hardware. Therefore, it's
 a good practice to document which GPU was used:
 
-```java
+<pre class="highlight">
 
 Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
-```
+</pre>
 <pre>
 > GPU: GeForce RTX 2060 SUPER
 > Memory in GB: 8
@@ -174,13 +174,12 @@ statistics on its derived measurements.
 
 Last but not least, clean up by closing all windows and empty GPU memory:
 
-```java
+<pre class="highlight">
 
 run("Close All");
 Ext.CLIJ2_clear();
-```
+</pre>
 
 
 
-```
-```
+

@@ -16,12 +16,12 @@ notebook shows maximum projections.
 
 Initialize GPU:
 
-```java
+<pre class="highlight">
 
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
-```
+</pre>
 
 ## The dataset
 We process a dataset of a *Drosophila melanogaster* embryo, expressing histone-RFP 
@@ -35,7 +35,7 @@ The full dataset is available
 
 Load data and push it to GPU memory:
 
-```java
+<pre class="highlight">
 // clean up first
 run("Close All");
 
@@ -58,7 +58,7 @@ Ext.CLIJ2_reportMemory();
 // close the window showing the dataset
 close();
 
-```
+</pre>
 <pre>
 > C:/Users/Rober/Downloads/000300.raw.tif
 > GPU contains 1 images.
@@ -71,12 +71,12 @@ close();
 We convert the dataset into a 32-bit float, in order to deliver smooth results while
 performing subsequent processing steps. 
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_convertFloat(input, input_float);
 Ext.CLIJ2_reportMemory();
 show(input_float, "Input image");
 
-```
+</pre>
 <pre>
 > GPU contains 2 images.
 > - 000300.raw.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@62fc8631] 121.0 Mb
@@ -84,7 +84,7 @@ show(input_float, "Input image");
 > = 363.0 Mb
 >  
 </pre>
-<a href="image_1588706706845.png"><img src="image_1588706706845.png" width="250" alt="CLIJ2_maximumZProjection_result16"/></a>
+<a href="image_1588706706845.png"><img src="image_1588706706845.png" width="224" alt="CLIJ2_maximumZProjection_result16"/></a>
 
 ## Noise and background removal
 We use the difference-of-Gaussian (DoG) technique to remove noise and background 
@@ -92,37 +92,37 @@ intensity. As the voxel size is different in X/Y compared to Z, we only perform
 the Gaussian blur in X/Y-plane. We achieve this by setting both sigmas to "0" 
 in Z-plane:
 
-```java
+<pre class="highlight">
 sigma1 = 2;
 sigma2 = 6;
-Ext.CLIJ2_differenceOfGaussian3D(input_float, background_subtracted, sigma1, sigma1, 0, sigma2, sigma2, 0);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_differenceOfGaussian3D">CLIJ2_differenceOfGaussian3D</a>(input_float, background_subtracted, sigma1, sigma1, 0, sigma2, sigma2, 0);
 show(background_subtracted, "Background subtracted");
-```
-<a href="image_1588706707390.png"><img src="image_1588706707390.png" width="250" alt="CLIJ2_maximumZProjection_result18"/></a>
+</pre>
+<a href="image_1588706707390.png"><img src="image_1588706707390.png" width="224" alt="CLIJ2_maximumZProjection_result18"/></a>
 
 We remove all negative and zero pixel intensities to detect maxima intensity above zero, only. 
 
-```java
-Ext.CLIJ2_maximumImageAndScalar(background_subtracted, positive_stack, 1.0);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumImageAndScalar">CLIJ2_maximumImageAndScalar</a>(background_subtracted, positive_stack, 1.0);
 show(positive_stack, "Positive stack");
-```
-<a href="image_1588706708119.png"><img src="image_1588706708119.png" width="250" alt="CLIJ2_maximumZProjection_result20"/></a>
+</pre>
+<a href="image_1588706708119.png"><img src="image_1588706708119.png" width="224" alt="CLIJ2_maximumZProjection_result20"/></a>
 
 ## Resampling
 All following transformations become mathematically easier to perform, when we change 
 the dataset to consist only of isotropic voxels. Therefore, we initially resample the 
 voxel dimensions as following:
 
-```java
+<pre class="highlight">
 resampleX = 1.0 / 0.52;
 resampleY = 1.0 / 0.52;
 resampleZ = 1.0 / 2.0;
 linearInterpolation = true;
 
-Ext.CLIJ2_resample(positive_stack, resampled, resampleX, resampleY, resampleZ, linearInterpolation);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_resample">CLIJ2_resample</a>(positive_stack, resampled, resampleX, resampleY, resampleZ, linearInterpolation);
 show(resampled, "Resampled")
-```
-<a href="image_1588706708599.png"><img src="image_1588706708599.png" width="250" alt="CLIJ2_maximumZProjection_result22"/></a>
+</pre>
+<a href="image_1588706708599.png"><img src="image_1588706708599.png" width="224" alt="CLIJ2_maximumZProjection_result22"/></a>
 
 ## Spatial transformations
 Goal of this workflow is to perform a maximum projection from the center of the embryo to the surface. 
@@ -132,63 +132,63 @@ In order to apply the radial projection, which assigns to the X/Y-plane, we need
 
 ### Reslicing X/Y-planes along anterior-posterior direction
 
-```java
-Ext.CLIJ2_resliceTop(resampled, reslicedFromTop);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_resliceTop">CLIJ2_resliceTop</a>(resampled, reslicedFromTop);
 show(reslicedFromTop, "Resliced from top");
 
-```
-<a href="image_1588706708785.png"><img src="image_1588706708785.png" width="250" alt="CLIJ2_maximumZProjection_result24"/></a>
+</pre>
+<a href="image_1588706708785.png"><img src="image_1588706708785.png" width="224" alt="CLIJ2_maximumZProjection_result24"/></a>
 
 ### Radial reslicing
 
-```java
+<pre class="highlight">
 number_of_angles = 360;
 angle_step = 1;
 startAngleDegrees = 0;
-Ext.CLIJ2_getDimensions(reslicedFromTop, width, height, depth);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(reslicedFromTop, width, height, depth);
 // we reslice off-center, because the embryo is not centered within the dataset
 centerX = width / 2 - 50; 
 centerY = height / 2;
 scaleFactorX = 1.0;
 scaleFactorY = 1.0;
-Ext.CLIJ2_resliceRadial(reslicedFromTop, radialResliced, number_of_angles, angle_step, startAngleDegrees, centerX, centerY, scaleFactorX, scaleFactorY);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_resliceRadial">CLIJ2_resliceRadial</a>(reslicedFromTop, radialResliced, number_of_angles, angle_step, startAngleDegrees, centerX, centerY, scaleFactorX, scaleFactorY);
 show(radialResliced, "Radial projection");
 
-```
-<a href="image_1588706708936.png"><img src="image_1588706708936.png" width="250" alt="CLIJ2_maximumZProjection_result26"/></a>
+</pre>
+<a href="image_1588706708936.png"><img src="image_1588706708936.png" width="224" alt="CLIJ2_maximumZProjection_result26"/></a>
 
 ### Reslicing from inside to outside
 
-```java
-Ext.CLIJ2_resliceLeft(radialResliced, reslicedFromLeft);
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_resliceLeft">CLIJ2_resliceLeft</a>(radialResliced, reslicedFromLeft);
 show(reslicedFromLeft, "Resliced from inside to outside");
 
-```
-<a href="image_1588706709076.png"><img src="image_1588706709076.png" width="250" alt="CLIJ2_maximumZProjection_result28"/></a>
+</pre>
+<a href="image_1588706709076.png"><img src="image_1588706709076.png" width="224" alt="CLIJ2_maximumZProjection_result28"/></a>
 
 ## Maximum projection
 
-```java
+<pre class="highlight">
 
-Ext.CLIJ2_maximumZProjection(reslicedFromLeft, maxProjected);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(reslicedFromLeft, maxProjected);
 
-```
+</pre>
 
 ## Spot detection
 Before counting spots, we need to retrieve
 the image back from GPU memory to CPU memory.
 
-```java
+<pre class="highlight">
 
 // pull result image back from GPU
 Ext.CLIJ_pull(maxProjected);
 
-```
-<a href="image_1588706709173.png"><img src="image_1588706709173.png" width="250" alt="CLIJ2_maximumZProjection_result29"/></a>
+</pre>
+<a href="image_1588706709173.png"><img src="image_1588706709173.png" width="224" alt="CLIJ2_maximumZProjection_result29"/></a>
 
 For spot detection we use the ImageJs `Find Maxima` method.
 
-```java
+<pre class="highlight">
 noiseThreshold = 5;
 run("Find Maxima...", "noise=" + noiseThreshold + " output=[Point Selection]");
 
@@ -200,34 +200,34 @@ run("Clear Results");
 
 run("Flatten");
 
-```
+</pre>
 <pre>
 > Number of spots found:2454
 </pre>
-<a href="image_1588706711003.png"><img src="image_1588706711003.png" width="250" alt="CLIJ2_maximumZProjection_result29-1"/></a>
+<a href="image_1588706711003.png"><img src="image_1588706711003.png" width="224" alt="CLIJ2_maximumZProjection_result29-1"/></a>
 
 
 # Performance evaluation
 Finally a time measurement. Note that performing this workflow as a ImageJ macro markdown 
 is slower, because intermediate results are saved to disc.
 
-```java
+<pre class="highlight">
 print("The whole workflow took " + (getTime() - startTime) + " msec");
 
-```
+</pre>
 <pre>
 > The whole workflow took 4733 msec
 </pre>
 
 Let's also see how much memory this workflow used. By the end, cleaning up remains important.
 
-```java
+<pre class="highlight">
 Ext.CLIJ2_reportMemory();
 
 // finally, clean up
 Ext.CLIJ2_clear();
 
-```
+</pre>
 <pre>
 > GPU contains 9 images.
 > - CLIJ2_differenceOfGaussian3D_result17[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@6961b130] 242.0 Mb
@@ -245,17 +245,16 @@ Ext.CLIJ2_clear();
 
 The following methods are convenient for a proper visualisation in a notebook:
 
-```java
+<pre class="highlight">
 function show(input, text) {
-	Ext.CLIJ2_maximumZProjection(input, max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
 	Ext.CLIJ2_pull(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
 	Ext.CLIJ2_release(max_projection);
 }
-```
+</pre>
 
 
 
-```
-```
+
