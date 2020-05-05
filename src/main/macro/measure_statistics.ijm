@@ -1,7 +1,7 @@
 /* 
 # Pixel statistics on labelled images
 
-Author: Robert Haase, Daniela Vorkel, March 2020
+Authors: Robert Haase, Daniela Vorkel, March 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/measure_statistics.ijm)
 
