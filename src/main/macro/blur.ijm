@@ -1,6 +1,7 @@
 /* 
 # Gaussian blur
-Author: Robert Haase, Daniela Vorkel, April 2020
+Author: Robert Haase
+, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/blur.ijm)
 
@@ -42,6 +43,6 @@ print(blurred);
 If you don't like the image names created by CLIJ2, just rename them as you wish before calling the filter function.
 
 ## Clean up GPU memory
-Always and by the end, clean up GPU memory.
+At the end, clean up GPU memory.
 */
 Ext.CLIJ2_clear();
