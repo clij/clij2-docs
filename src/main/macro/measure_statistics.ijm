@@ -13,7 +13,7 @@ Get test data:
 */
 run("Blobs (25K)");
 
-//open("C:/structure/data/blobs.gif");
+// open("C:/structure/data/blobs.gif");
 getDimensions(width, height, channels, slices, frames);
 input = getTitle();
 
@@ -28,7 +28,7 @@ Ext.CLIJ2_clear();
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 
 /* 
@@ -52,6 +52,6 @@ Ext.CLIJ2_statisticsOfLabelledPixels(input, labelmap);
 
 
 /* 
-Clean up at the end: 
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
