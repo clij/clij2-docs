@@ -6,10 +6,10 @@ March 2019
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/applyVectorFieldMD.ijm)
 
 This script demonstrates how to apply a vector field
-to an image in order to transform it non-rigidly
+to an image, in order to transform it non-rigidly.
 
 
-Get test data
+Get test data:
 */
 run("Close All");
 
@@ -18,7 +18,7 @@ run("Blobs (25K)");
 input = getTitle();
 
 /* 
-Create two images describing local shift
+Create two images describing a local shift:
 */
 shiftX = "shiftX";
 shiftY = "shiftY";
@@ -42,7 +42,7 @@ Ext.CLIJ2_push(shiftX);
 Ext.CLIJ2_push(shiftY);
 
 /*
-## Apply shift; rotate it; apply again in a loop
+## Apply a shift, rotate it, and apply as loop
 */
 for (i = 0; i < 36; i += 6) {
 
@@ -58,6 +58,6 @@ for (i = 0; i < 36; i += 6) {
 }
 
 /* 
-Cleanup by the end
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
