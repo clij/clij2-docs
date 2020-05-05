@@ -1,21 +1,20 @@
 /* 
-# CLIJ example macro: measure_overlap.ijm
+# Measure overlaps
 
-This macro shows how to measure the overlap 
+Author: Robert Haase, July 2019
+
+This macro shows how to measure an overlap 
 of two binary images in the GPU.
 
-Author: Robert Haase
-July 2019
-
-
-Get test data
+Get test data:
 */
 run("Blobs (25K)");
 //open("C:/structure/data/blobs.gif");
 input = getTitle();
 
 /* 
-## Init GPU and push image data to GPU memory
+## Init GPU
+and push image data to GPU memory:
 */
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
@@ -28,7 +27,7 @@ run("Close All");
 
 
 /*
-## Create a mask using two different threshold methods
+## Create a mask by using two different threshold methods
 */
 
 Ext.CLIJ2_automaticThreshold(input, mask1, "Otsu");
@@ -38,7 +37,7 @@ Ext.CLIJ2_pullBinary(mask1);
 Ext.CLIJ2_pullBinary(mask2);
 
 /*
-## measure overlap between the two masks
+## Measure the overlap between two masks
 */
 Ext.CLIJ2_getJaccardIndex(mask1, mask2, jaccardIndex);
 Ext.CLIJ2_getSorensenDiceCoefficient(mask1, mask2, diceIndex);
@@ -49,6 +48,6 @@ IJ.log("Overlap (Sorensen / Dice coefficient): " + (diceIndex*100) + "%");
 
 
 /*
-cleanup GPU memory
+Clean up GPU memory.
 */
 Ext.CLIJ2_clear();
