@@ -57,7 +57,7 @@ run("Invert LUT");
 
 /*
 ## Finally, clean up using CLIJ2
-As for every workflow, clean up by the end:
+As for every workflow, clean up at the end:
 */
 Ext.CLIJ2_clear();
 
