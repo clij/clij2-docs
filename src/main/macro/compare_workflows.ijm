@@ -13,7 +13,7 @@ the two lines using the `getTime();` command.
 */
 run("Close All");
 
-// Get test data
+// get test data
 open("https://github.com/clij/clij2-docs/raw/master/src/main/resources/Lund_MAX_001300.tif");
 rename("input_imagej");
 
@@ -23,7 +23,7 @@ start_time_imagej = getTime();
 run("Duplicate...", "title=background_subtracted_imagej");
 run("Subtract Background...", "rolling=25");
 
-// theshold the image
+// threshold the image
 run("Duplicate...", "title=thresholded_imagej");
 setAutoThreshold("Default dark");
 setOption("BlackBackground", true);
@@ -35,13 +35,13 @@ end_time_imagej = getTime();
 Now, we run the same workflow with CLIJ methods:
 */
 
-// Get test data
+// get test data
 open("https://github.com/clij/clij2-docs/raw/master/src/main/resources/Lund_MAX_001300.tif");
 input_clij = getTitle();
 
 start_time_clij = getTime();
 
-// Init GPU
+// init GPU
 run("CLIJ2 Macro Extensions", "cl_device=RTX");
 Ext.CLIJ2_clear();
 
@@ -74,7 +74,7 @@ This allows us to compare them, now.
 
 Let's start with quantitative measurements on images and take the duration time for processing.
 */
-// configure measurents, clean up before
+// clean up and configure measurements
 run("Set Measurements...", "area mean standard min redirect=None decimal=3");
 run("Clear Results");
 
@@ -90,7 +90,7 @@ run("Measure");
 selectWindow("thresholded_clij");
 run("Measure");
 
-//Table.rename("Results", "Quantitative measurements");
+// Table.rename("Results", "Quantitative measurements");
 
 /*
 From these measurements, we conclude that there are small differences 
