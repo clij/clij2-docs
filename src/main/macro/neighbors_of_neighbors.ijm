@@ -1,6 +1,6 @@
 /* 
 # Neighbors of neighbors
-Author: Robert Haase, April 2020
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/neighbors_of_neighbors.ijm)
 
@@ -110,7 +110,7 @@ Ext.CLIJ2_meanOfTouchingNeighbors(measurement, neighbor_matrix, mean_measurement
 drawResult(label_map, mean_measurement);
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 
