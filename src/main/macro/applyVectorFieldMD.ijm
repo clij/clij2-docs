@@ -24,7 +24,7 @@ shiftY = "shiftY";
 newImage(shiftX, "32-bit black", 256, 254, 1);
 newImage(shiftY, "32-bit black", 256, 254, 1);
 
-// Blur the shift to smooth it in space
+// blur the shift to smooth it in space
 selectImage("shiftX");
 makeOval(20, 98, 72, 68);
 run("Add...", "value=25");
@@ -57,6 +57,6 @@ for (i = 0; i < 36; i += 6) {
 }
 
 /* 
-Clean up at the end:
+By the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
