@@ -14,7 +14,7 @@ Let's clean up first and load some 3D example data:
 */
 run ("Close All");
 
-// Get test data
+// get test data
 run("T1 Head (2.4M, 16-bits)");
 
 /*
@@ -27,7 +27,7 @@ Ext.CLIJ2_clear();
 input = getTitle();
 Ext.CLIJ2_push(input);
 
-// CleanUp ImageJ
+// clean up ImageJ
 close();
 /*
 ## Maximum projections
