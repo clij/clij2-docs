@@ -48,6 +48,6 @@ Ext.CLIJ2_pull(rotated_gpu);
 imageCalculator("Subtract create 32-bit", rotated_cpu, rotated_gpu);
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
