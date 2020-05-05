@@ -1,6 +1,6 @@
 /*
 # Comparing Workflows: ImageJ vs CLIJ
-Robert Haase, March 2020
+Authors: Robert Haase, Daniela Vorkel, March 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/compare_workflows.ijm)
 
@@ -140,8 +140,7 @@ Furthermore, there are always fluctations in time measurements. Therefore,
 it is recommended to run such workflows many times in a loop, and doing
 statistics on its derived measurements.
 
-Last but not least, let's clean up by closing all windows and emptying
-GPU memory:
+Last but not least, clean up by closing all windows and empty GPU memory:
 */
 
 run("Close All");
