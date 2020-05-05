@@ -1,6 +1,7 @@
 /* 
 # Maximum projections
-Author: Robert Haase, Daniela Vorkel, April 2020
+Author: Robert Haase
+, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/maximumProjection.ijm)
 
@@ -51,6 +52,6 @@ max_z = 100;
 Ext.CLIJ2_maximumZProjectionBounded(input, bound_projection, min_z, max_z);
 Ext.CLIJ2_pull(bound_projection);
 /*
-Clean up by the end.
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
