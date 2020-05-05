@@ -1,7 +1,7 @@
 /* 
 # Measure overlaps
 
-Author: Robert Haase, Daniela Vorkel, July 2019
+Authors: Robert Haase, Daniela Vorkel, July 2019
 
 This macro shows how to measure an overlap 
 of two binary images in the GPU.
