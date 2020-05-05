@@ -48,7 +48,7 @@ Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
 */
 // show the image
 Ext.CLIJ2_pull(input);
-// show the labels as ROIs on top of the image
+// show label as ROIs on top of the image
 Ext.CLIJ2_pullLabelsToROIManager(labelmap);
 roiManager("show all");
 show();
@@ -56,7 +56,7 @@ show();
 ## Analyzing labelled objects from label map and measuring their bounding box area:
 */
 
-// how many objects are in the labelmap?
+// how many objects are in the label map?
 Ext.CLIJ2_getMaximumOfAllPixels(labelmap, number_of_objects);
 
 for (i = 0; i < number_of_objects; i++) {
@@ -70,12 +70,12 @@ for (i = 0; i < number_of_objects; i++) {
 	Roi.setStrokeColor("cyan");
 	roiManager("add");
 
-	// draw the number of the bounding box
+	// draw the ROI number of the bounding box
 	makeText("" + (i + 1), x, y + h);
 	Roi.setStrokeColor("cyan");
 	roiManager("add");
 
-	// save measurements to a table
+	// save measurements as a table
 	setResult("ROI_number", i, i + 1);
 	setResult("Bounding_Box_Area", i, w * h);
 }
@@ -87,12 +87,12 @@ for (i = 0; i < number_of_objects; i++) {
 // show the image
 Ext.CLIJ2_pull(input);
 
-// show all labels as ROIs on top of the image
+// show all label as ROIs on top of the image
 roiManager("show all");
 show();
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 
