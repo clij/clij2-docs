@@ -47,7 +47,7 @@ Ext.CLIJ2_pull(labels_not_touching_image_borders);
 run("glasbey on dark");
 
 /*
-By the end of the macro, clean up:
+At the end of the macro, clean up:
 */
 
 Ext.CLIJ2_clear();
