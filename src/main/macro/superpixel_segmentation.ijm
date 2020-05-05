@@ -36,7 +36,7 @@ labels = getTitle();
 Ext.CLIJ2_push(input);
 Ext.CLIJ2_push(labels);
 
-// clean up imageJ
+// clean up ImageJ
 run("Close All");
 /*
 ## Viewing input data
@@ -51,7 +51,7 @@ From the label map, we derive a touch-matrix to process neighboring pixel :
 */
 Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
-// visualise the touch matrix
+// visualize the touch matrix
 Ext.CLIJ2_pull(touch_matrix);
 /*
 ## Measure statistics
@@ -81,8 +81,8 @@ pixel_count_threshold = 4000;
 
 threshold_vector_and_visualise(pixel_count, labels, pixel_count_threshold);
 
-// This function takes a vector, binarizes it using a threshold and 
-// visualises the results as parametric image using a given labelmap
+// This function takes a vector, binarizes it by using a threshold and 
+// visualizes the results as parametric image by the given label map:
 function threshold_vector_and_visualise(vector, labelmap, threshold) {
 
 	// threshold the vector in two vectors:
@@ -102,10 +102,10 @@ Having two regions in the dataset, we can differentiate them more clearly by fil
 pixel count factor, using corresponding neighborhood relationships:
 */
 
-// for every object, determine the minimum pixel count in its local neighbor hood
+// for all objects, determine the minimum pixel count in its local neighborhood
 Ext.CLIJ2_minimumOfTouchingNeighbors(pixel_count, touch_matrix, filtered_pixel_count);
 
-// we also make a parametric image out of that filtered vector
+// create a parametric image out of the filtered vector
 Ext.CLIJ2_replaceIntensities(labels, filtered_pixel_count, filtered_pixel_count_map);
 show(filtered_pixel_count_map, "filtered pixel count map");
 run("Fire");
@@ -119,8 +119,8 @@ threshold_vector_and_visualise(filtered_pixel_count, labels, pixel_count_thresho
 Based on thresholded features, labels can get excluded and resorted within the label map. 
 */
 // threshold the feature vector
-Ext.CLIJ2_greaterOrEqualConstant(filtered_pixel_count,  binary_vector, pixel_count_threshold);
-// remove all labels above the threshold from the labelmap
+Ext.CLIJ2_greaterOrEqualConstant(filtered_pixel_count, binary_vector, pixel_count_threshold);
+// remove all labels above the threshold from the label map
 Ext.CLIJ2_excludeLabels(binary_vector, labels, labels_embryo);
 show(labels_embryo, "labels_embryo");
 run("glasbey_on_dark");
@@ -133,7 +133,7 @@ We can also show different regions using ImageJs ROIs and Overlays:
 threshold_vector_and_visualise_as_rois(filtered_pixel_count, labels, input, pixel_count_threshold);
 
 // This function takes a vector, binarizes it by thresholding 
-// and visualizes the results as regions of interest
+// and visualizes the results as regions of interests:
 function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, threshold) {
 
 	// threshold the vector in two vectors:
