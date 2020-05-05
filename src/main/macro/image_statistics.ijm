@@ -9,7 +9,7 @@ This macro shows how to retrieve basic statistics from images.
 */
 
 
-// Get test data
+// get test data
 run("Blobs (25K)");
 run("Invert LUT");
 input = getTitle();
@@ -24,7 +24,7 @@ Ext.CLIJ2_clear();
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 
 /*
@@ -59,5 +59,5 @@ More detailed statistics can be done by this method. Note: an empty table will b
 Ext.CLIJ2_statisticsOfImage(input);
 
 /*
-Clean up at the end.
+At the end of the macro, clean up.
 */
