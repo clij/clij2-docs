@@ -183,7 +183,7 @@ Also, let's see how much of GPU memory got used by this workflow. At the end, cl
 */
 Ext.CLIJ2_reportMemory();
 
-// clean up finally.
+// finally, clean up
 Ext.CLIJ2_clear();
 /*
 Following methods are convenient for a proper visualization in a notebook:
