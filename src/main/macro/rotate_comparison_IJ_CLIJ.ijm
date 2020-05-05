@@ -1,6 +1,6 @@
 /* 
 # Comparing image rotation: ImageJ vs CLIJ
-Author: Robert Haase, Daniela Vorkel, July 2019
+Authors: Robert Haase, Daniela Vorkel, July 2019
 
 This macro shows how to rotate stacks in the GPU,
 and how different the results are when using CLIJ or ImageJ.
