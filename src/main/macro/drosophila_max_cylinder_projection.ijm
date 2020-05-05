@@ -4,7 +4,7 @@ Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/drosophila_max_cylinder_projection.ijm)
 
-In this example workflow, we estimate a nuclei count in a dataset of *Droshophila melanogaster*, 
+In this example workflow, we estimate a nuclei count in a dataset of *Drosophila melanogaster*, 
 using spot detection on a cylindrical maximum intensity projection.
 
 The workflow got originally published in the [CLIJ paper](https://doi.org/10.1038/s41592-019-0650-1).
@@ -32,7 +32,7 @@ The full dataset is available
 
 Load data and push it to GPU memory:
 */
-// Clean up first
+// clean up first
 run("Close All");
 
 // load a specific time point
@@ -44,21 +44,20 @@ print(folder + filename);
 open(folder + filename);
 input = getTitle();
 
-// Measure start time of the whole workflow
+// measure start time of the whole workflow
 startTime = getTime();
 
-// Push the image to GPU memory
+// push the image to GPU memory
 Ext.CLIJ2_push(input);
 Ext.CLIJ2_reportMemory();
 
-// Close the window showing the dataset
+// close the window showing the dataset
 close();
 
 /*
 ## Bit-Depth conversion
 We convert the dataset into a 32-bit float, in order to deliver smooth results while
 performing subsequent processing steps. 
-steps deliver smooth results.
 */
 Ext.CLIJ2_convertFloat(input, input_float);
 Ext.CLIJ2_reportMemory();
@@ -112,7 +111,7 @@ number_of_angles = 360;
 angle_step = 1;
 startAngleDegrees = 0;
 Ext.CLIJ2_getDimensions(reslicedFromTop, width, height, depth);
-// we do this off-center because the embryo is not centered in the dataset
+// we reslice off-center, because the embryo is not centered within the dataset
 centerX = width / 2 - 50; 
 centerY = height / 2;
 scaleFactorX = 1.0;
@@ -147,7 +146,7 @@ For spot detection we use the ImageJs `Find Maxima` method.
 noiseThreshold = 5;
 run("Find Maxima...", "noise=" + noiseThreshold + " output=[Point Selection]");
 
-// Count spots
+// count spots
 run("Clear Results");
 run("Measure");
 print("Number of spots found:" + nResults());
@@ -167,7 +166,7 @@ Let's also see how much memory this workflow used. By the end, cleaning up remai
 */
 Ext.CLIJ2_reportMemory();
 
-// clean up finally.
+// finally, clean up
 Ext.CLIJ2_clear();
 
 /*
