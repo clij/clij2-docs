@@ -1,7 +1,6 @@
 /*
 # Multiply vectors and matrices
-Author: Robert Haase, rhaase@mpi-cbg.de
-April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/anisotropic_coordinates.ijm)
 
@@ -47,7 +46,7 @@ if you permute the input parameters, the resulting matrix size will be 'wrong':
 Ext.CLIJ2_multiplyImages(voxel_size, pointlist, transformed_pointlist2);
 Ext.CLIJ2_print(transformed_pointlist2);
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 
