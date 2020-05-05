@@ -11,7 +11,7 @@ Initially, we define two input images we would like to combine by adding.
 // clean up first 
 run("Close All"); 
  
-// Get test data 
+// get test data 
 run("Blobs (25K)"); 
 run("8-bit");
 rename("original");
@@ -36,7 +36,7 @@ Ext.CLIJ2_push(original);
 // push images to GPU using CLIJ
 Ext.CLIJ_push(background);
 
-// cleanup imagej 
+// clean up ImageJ 
 run("Close All"); 
 
 /* 
@@ -57,7 +57,7 @@ run("Invert LUT");
 
 /*
 ## Finally, clean up using CLIJ2
-As for every workflow, clean up at the end:
+As for every workflow, clean up by the end:
 */
 Ext.CLIJ2_clear();
 
