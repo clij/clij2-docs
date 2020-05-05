@@ -10,7 +10,7 @@ of a graph.
 
 */
 
-// Initialize GPU
+// initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
 Ext.CLIJ2_clear();
 
@@ -20,7 +20,7 @@ run("Close All");
 ## Define a list of point coordinates and push them to the GPU 
 */
 
-// make a pointlist with random coordinated on the GPU
+// make a pointlist of random coordinates in the GPU
 number_of_points = 100;
 number_of_dimensions = 2;
 bit_depth = 32;
@@ -77,10 +77,10 @@ run("Fire");
 // determine the touch matrix
 Ext.CLIJ2_generateTouchMatrix(labelled_voronoi, touch_matrix);
 
-/// determine median value of each nodes neighbors
+/// determine the median value of each neighboring nodes
 Ext.CLIJ2_medianOfTouchingNeighbors(measurement, touch_matrix, median_measurement);
 
-// draw the median measurement, again as parametric image
+// draw measurements of the median, again as parametric image
 Ext.CLIJ2_replaceIntensities(labelled_voronoi, median_measurement, parametric_image);
 Ext.CLIJ2_pull(parametric_image);
 zoom(4);
@@ -92,12 +92,12 @@ As you can see, the outlier is gone! :-)
 */
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 
 /*
-This is just a useful function to get a nice visualization in the notebook.
+This is just a useful function to get a nice visualization in the notebook:
 */
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
