@@ -1,7 +1,6 @@
 /* 
 # Filtering in graphs
-Author: Robert Haase
-         April 2020
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/filtering_in_graphs.ijm)
 
@@ -93,7 +92,7 @@ As you can see, the outlier is gone! :-)
 */
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
 
