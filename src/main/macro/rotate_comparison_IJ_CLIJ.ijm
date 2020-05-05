@@ -1,21 +1,21 @@
 /* 
-# Rotation comparison ImageJ versus CLIJ
-Author: Robert Haase
-July 2019
+# Comparing image rotation: ImageJ vs CLIJ
+Author: Robert Haase, Daniela Vorkel, July 2019
 
-
-This macro shows how stacks can be rotated in the GPU
-and how different results are between CLIJ and ImageJ.
+This macro shows how to rotate stacks in the GPU,
+and how different the results are when using CLIJ or ImageJ.
 
 
 ## Get test data
 */
 run("Close All");
-
+
+
 run("Blobs (25K)");
 run("Invert LUT");
 
-input = getTitle();
+input = getTitle();
+
 
 /* 
 ## Initialize GPU and push image data to GPU memory
@@ -27,14 +27,14 @@ Ext.CLIJ2_clear();
 Ext.CLIJ2_push(input);
 
 /*
-## Rotate image on CPU
+## Rotate image in CPU
 */
 run("Duplicate...", " ");
 run("Rotate... ", "angle=45 grid=1 interpolation=Bilinear");
 rotated_cpu = getTitle();
 
 /*
-## Rotate image on GPU
+## Rotate image in GPU
 */
 Ext.CLIJ2_affineTransform2D(input, rotated_gpu, "-center rotate=45 center");
 
@@ -43,11 +43,11 @@ Ext.CLIJ2_pull(rotated_gpu);
 
 
 /* 
-## Calculate difference image between CPU and GPU
+## Calculate the difference of images rotated in CPU and GPU
 */
 imageCalculator("Subtract create 32-bit", rotated_cpu, rotated_gpu);
 
 /*
-Clean up by the end
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
