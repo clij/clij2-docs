@@ -1,34 +1,33 @@
 
 
 # Tribolium embryo morphometry
-Author: Robert Haase
-        April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm)
 
-This script is heavy GPU-accelerated processing. It is recommended to use a dedicated
-graphics card with at least 8 GB of GDDR6 memory. It may otherwise be quite slow.
+This script is an example of heavy GPU-accelerated processing. It is recommended to use a dedicated
+graphics card with at least 8 GB of GDDR6 memory. Otherwise, it may be quite slow.
 
 Let's initialize that graphics card and mesure the start time.
 
-<pre class="highlight">
+```java
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
 Ext.CLIJ2_clear();
 
 run("Close All");
 time = getTime();
 Ext.CLIJ2_startTimeTracing();
-</pre>
+```
 
 ## Load a data set
-The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
-It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
-The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use it for detecting nuclei and generating an estimated cell-segmentation first.
+The dataset is available [online](https://git.mpi-cbg.de/rhaase/clij2_example_data/blob/master/lund1051_resampled.tif).
+It shows a *Tribolium castaneum* embryo, imaged by a custom light sheet microscope, at a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
+The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use the dataset to detect nuclei and to generate an estimated cell-segmentation.
 
-All processing steps are performed in 3D, for visualisation purposes, we're looking at maximum intensity projections in Z: 
+All processing steps are performed in 3D space. For visualization purpose, we are using the maximum intensity projection in Z: 
 
-<pre class="highlight">
-path = "C:/structure/teaching/neubias_academy_clij2/data/";
+```java
+path = "C:/structure/teaching/clij2_example_data/";
 open(path + "lund1051_resampled.tif");
 input = getTitle();
 
@@ -37,434 +36,450 @@ print("Loading took " + (getTime() - time) + " msec");
 Ext.CLIJ2_push(input);
 run("Close All");
 
-// visualise the dataset
+// visualize the dataset
 show(input, "input");
-</pre>
+```
 <pre>
-> Loading took 352 msec
+> Loading took 226 msec
 </pre>
-<a href="image_1587983957241.png"><img src="image_1587983957241.png" width="224" alt="CLIJ2_maximumZProjection_result333"/></a>
+<a href="image_1588707820713.png"><img src="image_1588707820713.png" width="250" alt="CLIJ2_maximumZProjection_result209"/></a>
 
 ## Spot detection
-After some noise removal / smoothing, we perform local maximum detection:
+After some noise removal/smoothing, we perform a local maximum detection:
 
-<pre class="highlight">
+```java
 // gaussian blur
 sigma = 2;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_gaussianBlur3D</a>(input, blurred, sigma, sigma, sigma);
+Ext.CLIJ2_gaussianBlur3D(input, blurred, sigma, sigma, sigma);
 
 // detect maxima
 radius = 2.0;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_detectMaximaBox">CLIJ2_detectMaximaBox</a>(blurred, detected_maxima, radius);
+Ext.CLIJ2_detectMaximaBox(blurred, detected_maxima, radius);
 show_spots(detected_maxima, "detected maxima");
-</pre>
-<a href="image_1587983957579.png"><img src="image_1587983957579.png" width="224" alt="CLIJ2_maximumZProjection_result337"/></a>
+```
+<a href="image_1588707821064.png"><img src="image_1588707821064.png" width="250" alt="CLIJ2_maximumZProjection_result213"/></a>
 
 ## Spot curation
-We now remove spots which are below a certain intensity and label the remaining spots.
+Now, we remove spots with values below a certain intensity and label the remaining spots.
 
-<pre class="highlight">
+```java
 // threshold
 threshold = 300.0;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_threshold">CLIJ2_threshold</a>(blurred, thresholded, threshold);
+Ext.CLIJ2_threshold(blurred, thresholded, threshold);
 
 // mask
-Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(detected_maxima, thresholded, masked_spots);
+Ext.CLIJ2_mask(detected_maxima, thresholded, masked_spots);
 
 // label spots
-Ext.<a href="https://clij.github.io/clij2-docs/reference_labelSpots">CLIJ2_labelSpots</a>(masked_spots, labelled_spots);
+Ext.CLIJ2_labelSpots(masked_spots, labelled_spots);
 show_spots(labelled_spots, "selected, labelled spots");
 run("glasbey_on_dark");
-</pre>
-<a href="image_1587983957882.png"><img src="image_1587983957882.png" width="224" alt="CLIJ2_maximumZProjection_result342"/></a>
+```
+<a href="image_1588707821371.png"><img src="image_1588707821371.png" width="250" alt="CLIJ2_maximumZProjection_result218"/></a>
 
-Let's see how many spots are there:
+Let's see how many spots are left:
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_getMaximumOfAllPixels">CLIJ2_getMaximumOfAllPixels</a>(labelled_spots, number_of_spots);
+```java
+Ext.CLIJ2_getMaximumOfAllPixels(labelled_spots, number_of_spots);
 print("Number of detected spots: " + number_of_spots);
-</pre>
+```
 <pre>
 > Number of detected spots: 1501
 </pre>
 
 ## Expanding labelled spots
-We next extend the numbered spots spatially by applying a maximum filter.
+Next, we spatially extend the labelled spots by applying a maximum filter.
 
-<pre class="highlight">
-// labelmap closing
+```java
+// label map closing
 number_of_dilations = 10;
 number_of_erosions = 4;
-Ext.<a href="https://clij.github.io/clij2-docs/reference_copy">CLIJ2_copy</a>(labelled_spots, flip);
+Ext.CLIJ2_copy(labelled_spots, flip);
 for (i = 0; i < number_of_dilations; i++) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumBox">CLIJ2_onlyzeroOverwriteMaximumBox</a>(flip, flop);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumDiamond">CLIJ2_onlyzeroOverwriteMaximumDiamond</a>(flop, flip);
+	Ext.CLIJ2_onlyzeroOverwriteMaximumBox(flip, flop);
+	Ext.CLIJ2_onlyzeroOverwriteMaximumDiamond(flop, flip);
 	if (i % 2 == 0) {
 		show(flip, "Extended spots after " + (i * 2) + " dilations");
 		run("glasbey_on_dark");
 	}
 }
-</pre>
-<a href="image_1587983958382.png"><img src="image_1587983958382.png" width="224" alt="CLIJ2_maximumZProjection_result345"/></a>
-<a href="image_1587983958451.png"><img src="image_1587983958451.png" width="224" alt="CLIJ2_maximumZProjection_result346"/></a>
-<a href="image_1587983958502.png"><img src="image_1587983958502.png" width="224" alt="CLIJ2_maximumZProjection_result347"/></a>
-<a href="image_1587983958533.png"><img src="image_1587983958533.png" width="224" alt="CLIJ2_maximumZProjection_result348"/></a>
-<a href="image_1587983958562.png"><img src="image_1587983958562.png" width="224" alt="CLIJ2_maximumZProjection_result349"/></a>
+```
+<a href="image_1588707821861.png"><img src="image_1588707821861.png" width="250" alt="CLIJ2_maximumZProjection_result221"/></a>
+<a href="image_1588707821932.png"><img src="image_1588707821932.png" width="250" alt="CLIJ2_maximumZProjection_result222"/></a>
+<a href="image_1588707821982.png"><img src="image_1588707821982.png" width="250" alt="CLIJ2_maximumZProjection_result223"/></a>
+<a href="image_1588707822013.png"><img src="image_1588707822013.png" width="250" alt="CLIJ2_maximumZProjection_result224"/></a>
+<a href="image_1588707822081.png"><img src="image_1588707822081.png" width="250" alt="CLIJ2_maximumZProjection_result225"/></a>
 
-Afterwards, we erode the label map again and get the final result of the cell segementation
+Afterwards, we erode all labels in the map and get a final result of cell segementation.
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_threshold">CLIJ2_threshold</a>(flip, flap, 1);
+```java
+Ext.CLIJ2_threshold(flip, flap, 1);
 for (i = 0; i < number_of_erosions; i++) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(flap, flop);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(flop, flap);
+	Ext.CLIJ2_erodeBox(flap, flop);
+	Ext.CLIJ2_erodeBox(flop, flap);
 }
-Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(flip, flap, labels);
+Ext.CLIJ2_mask(flip, flap, labels);
 show(labels, "cell segmentation");
 run("glasbey_on_dark");
-</pre>
-<a href="image_1587983958701.png"><img src="image_1587983958701.png" width="224" alt="CLIJ2_maximumZProjection_result352"/></a>
+```
+<a href="image_1588707822223.png"><img src="image_1588707822223.png" width="250" alt="CLIJ2_maximumZProjection_result228"/></a>
 
-We also save the labels to disc because other notebooks use them as starting point
+We also save all labels to disc to use them as starting point in other notebooks, later.
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_pull(labels);
 saveAs("TIF", path + "lund1051_labelled.tif");
 close();
 
-</pre>
+```
 
-## Draw connectivity of the cells as mesh
-We then read out the positions of the detected nuclei. 
-Furthermore, using this pointlist, we can generate a distance matrix of all nuclei to each other:
+## Draw connectivity of the cells as a mesh
+We then read out all current positions of detected nuclei as a pointlist to generate 
+a distance matrix of all nuclei towards each other:
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_labelledSpotsToPointList">CLIJ2_labelledSpotsToPointList</a>(labelled_spots, pointlist);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">CLIJ2_generateDistanceMatrix</a>(pointlist, pointlist, distance_matrix);
+```java
+Ext.CLIJ2_labelledSpotsToPointList(labelled_spots, pointlist);
+Ext.CLIJ2_generateDistanceMatrix(pointlist, pointlist, distance_matrix);
 show(distance_matrix, "distance matrix");
-</pre>
-<a href="image_1587983959641.png"><img src="image_1587983959641.png" width="224" alt="CLIJ2_maximumZProjection_result355"/></a>
+```
+<a href="image_1588707823166.png"><img src="image_1588707823166.png" width="250" alt="CLIJ2_maximumZProjection_result231"/></a>
 
-Starting from the label map of the cells, we can generate a touch matrix:
+Starting from the label map of segmented cells, we generate a touch matrix:
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labels, touch_matrix);
+```java
+Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
-// we set the first column in the touch matrix to zero because we want to ignore that spots touch the background (background label 0, first column)
-Ext.<a href="https://clij.github.io/clij2-docs/reference_setColumn">CLIJ2_setColumn</a>(touch_matrix, 0, 0);
+// touch matrix:
+// set the first column to zero to ignore all spots touching the background (background label 0, first column)
+Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 show_spots(touch_matrix, "touch matrix");
-</pre>
-<a href="image_1587983960375.png"><img src="image_1587983960375.png" width="224" alt="CLIJ2_maximumZProjection_result358"/></a>
+```
+<a href="image_1588707823913.png"><img src="image_1588707823913.png" width="250" alt="CLIJ2_maximumZProjection_result234"/></a>
 
-By element-wise multiplication of distance matrix and touch matrix, we know the length of 
-each edge. We can use this information to draw a mesh with colour doing distance (between 0 and 50 micron):
+Using element by element multiplication of a distance matrix and a touch matrix, we calculate the length of 
+each edge. We use this result to draw a mesh with a color gradient of distance (between 0 and 50 micron):
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(touch_matrix, distance_matrix, touch_matrix_with_distances);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(input, width, height, depth);
+```java
+Ext.CLIJ2_multiplyImages(touch_matrix, distance_matrix, touch_matrix_with_distances);
+Ext.CLIJ2_getDimensions(input, width, height, depth);
 Ext.CLIJ2_create3D(mesh, width, height, depth, 32);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ2_touchMatrixToMesh</a>(pointlist, touch_matrix_with_distances, mesh);
+Ext.CLIJ2_touchMatrixToMesh(pointlist, touch_matrix_with_distances, mesh);
 show(mesh, "distance mesh");
 run("Green Fire Blue");
 setMinAndMax(0, 50);
-</pre>
-<a href="image_1587983960647.png"><img src="image_1587983960647.png" width="224" alt="CLIJ2_maximumZProjection_result361"/></a>
+```
+<a href="image_1588707824184.png"><img src="image_1588707824184.png" width="250" alt="CLIJ2_maximumZProjection_result237"/></a>
 
-## Quantitative analysis of distances between neighbors
-We next determine the averge distance between a node and all of its neighbors. Th result is
-a vector with as many entries as nodes in the graph. We use this vector to colour-code the 
-label map of the cell segmentation. This means, we replace label 1 with the average distance to 
-node 1 and label 2 with the average distance to node 2.
+## Quantitative analysis of distance between neighbors
+Next, we determine the averge distance between a node and of all its neighbors. The resulting 
+vector has as many entries as nodes in the graph. We use this vector to color-code the 
+label map of segmented cells. This means, label 1 gets replaced by the average distance to 
+node 1, label 2 by the average distance to node 2, et cetera.
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_averageDistanceOfTouchingNeighbors">CLIJ2_averageDistanceOfTouchingNeighbors</a>(distance_matrix, touch_matrix, distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, distances_vector, distance_map);
+```java
+
+Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
 run("Fire");
 setMinAndMax(0, 50);
 
-</pre>
-<a href="image_1587983960882.png"><img src="image_1587983960882.png" width="224" alt="CLIJ2_maximumZProjection_result364"/></a>
+```
+<a href="image_1588707824421.png"><img src="image_1588707824421.png" width="250" alt="CLIJ2_maximumZProjection_result240"/></a>
 
-Now we measure the mean of the neighbors neighbord to their neigbors and visualise it as above.
+Now, we measure the mean between neighbors and visualize it as above.
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighbors">CLIJ2_meanOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_mean_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_mean_distances_vector, local_mean_pixel_count_map);
+```java
+Ext.CLIJ2_meanOfTouchingNeighbors(distances_vector, touch_matrix, local_mean_distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, local_mean_distances_vector, local_mean_pixel_count_map);
 show(local_mean_pixel_count_map, "neighbor mean distance map");
 run("Fire");
 setMinAndMax(0, 50);
-</pre>
-<a href="image_1587983961002.png"><img src="image_1587983961002.png" width="224" alt="CLIJ2_maximumZProjection_result367"/></a>
+```
+<a href="image_1588707824542.png"><img src="image_1588707824542.png" width="250" alt="CLIJ2_maximumZProjection_result243"/></a>
 
-We can do the same with minimum, median and maximum distances:
+We can also use the minimum, median and maximum to measure distances:
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">CLIJ2_minimumOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_minimum_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_minimum_distances_vector, local_minimum_pixel_count_map);
+```java
+Ext.CLIJ2_minimumOfTouchingNeighbors(distances_vector, touch_matrix, local_minimum_distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, local_minimum_distances_vector, local_minimum_pixel_count_map);
 show(local_minimum_pixel_count_map, "neighbor minimum distance map");
 run("Fire");
 setMinAndMax(0, 50);
 
-Ext.<a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">CLIJ2_medianOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_median_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_median_distances_vector, local_median_pixel_count_map);
+Ext.CLIJ2_medianOfTouchingNeighbors(distances_vector, touch_matrix, local_median_distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, local_median_distances_vector, local_median_pixel_count_map);
 show(local_median_pixel_count_map, "neighbor median distance map");
 run("Fire");
 setMinAndMax(0, 50);
 
-Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighbors">CLIJ2_maximumOfTouchingNeighbors</a>(distances_vector, touch_matrix, local_maximum_distances_vector);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, local_maximum_distances_vector, local_maximum_pixel_count_map);
+Ext.CLIJ2_maximumOfTouchingNeighbors(distances_vector, touch_matrix, local_maximum_distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, local_maximum_distances_vector, local_maximum_pixel_count_map);
 show(local_maximum_pixel_count_map, "neighbor maximum distance map");
 run("Fire");
 setMinAndMax(0, 50);
-</pre>
-<a href="image_1587983961297.png"><img src="image_1587983961297.png" width="224" alt="CLIJ2_maximumZProjection_result370"/></a>
-<a href="image_1587983961344.png"><img src="image_1587983961344.png" width="224" alt="CLIJ2_maximumZProjection_result373"/></a>
-<a href="image_1587983961390.png"><img src="image_1587983961390.png" width="224" alt="CLIJ2_maximumZProjection_result376"/></a>
+
+Ext.CLIJ2_standardDeviationOfTouchingNeighbors(distances_vector, touch_matrix, local_stddev_distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, local_stddev_distances_vector, local_stddev_pixel_count_map);
+show(local_stddev_pixel_count_map, "neighbor standard deviation distance map");
+run("Fire");
+setMinAndMax(0, 50);
+
+```
+<a href="image_1588707824892.png"><img src="image_1588707824892.png" width="250" alt="CLIJ2_maximumZProjection_result246"/></a>
+<a href="image_1588707824937.png"><img src="image_1588707824937.png" width="250" alt="CLIJ2_maximumZProjection_result249"/></a>
+<a href="image_1588707824984.png"><img src="image_1588707824984.png" width="250" alt="CLIJ2_maximumZProjection_result252"/></a>
+<a href="image_1588707825025.png"><img src="image_1588707825025.png" width="250" alt="CLIJ2_maximumZProjection_result255"/></a>
 
 ## Performance evaluation
-Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 
-as intermediate results are save to disc.
+Finally, a time measurement. Note that performing this workflow in ImageJ macro markdown is slower, 
+because intermediate results are saved to disc.
 
-<pre class="highlight">
+```java
 print("The whole workflow took " + (getTime() - time) + " msec");
 
-</pre>
+```
 <pre>
-> The whole workflow took 4878 msec
+> The whole workflow took 4885 msec
 </pre>
 
 ### Detailed time tracing for all operations
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_stopTimeTracing();
 Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
 
-</pre>
+```
 <pre>
 > > timeTracing
 >  > MaximumZProjection
->  < MaximumZProjection           1.8314 ms
+>  < MaximumZProjection           1.7032 ms
 >  > Copy
->  < Copy                         11.9354 ms
+>  < Copy                         8.6801 ms
 >  > GaussianBlur3D
->  < GaussianBlur3D               60.914 ms
+>  < GaussianBlur3D               51.8182 ms
 >  > DetectMaximaBox
->  < DetectMaximaBox              54.3966 ms
+>  < DetectMaximaBox              43.5185 ms
 >  > Maximum3DBox
 >   > Copy
->   < Copy                        9.663 ms
->  < Maximum3DBox                 36.9839 ms
+>   < Copy                        10.3 ms
+>  < Maximum3DBox                 38.3688 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.3251 ms
+>  < MaximumZProjection           1.2814 ms
 >  > Threshold
 >   > GreaterOrEqualConstant
->   < GreaterOrEqualConstant      8.112 ms
->  < Threshold                    8.1191 ms
+>   < GreaterOrEqualConstant      7.8369 ms
+>  < Threshold                    7.8467 ms
 >  > Mask
->  < Mask                         8.5782 ms
+>  < Mask                         8.3492 ms
 >  > LabelSpots
 >   > SumXProjection
->   < SumXProjection              3.6931 ms
+>   < SumXProjection              3.4635 ms
 >   > SumYProjection
->   < SumYProjection              0.772 ms
->  < LabelSpots                   27.6702 ms
+>   < SumYProjection              0.5872 ms
+>  < LabelSpots                   26.8457 ms
 >  > Maximum3DBox
 >   > Copy
->   < Copy                        7.9996 ms
->  < Maximum3DBox                 33.2455 ms
+>   < Copy                        7.8119 ms
+>  < Maximum3DBox                 33.3982 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.2857 ms
+>  < MaximumZProjection           1.5448 ms
 >  > GetMaximumOfAllPixels
 >   > MaximumOfAllPixels
 >    > MaximumZProjection
->    < MaximumZProjection         1.5033 ms
+>    < MaximumZProjection         1.4757 ms
 >    > MaximumYProjection
->    < MaximumYProjection         0.3307 ms
+>    < MaximumYProjection         0.3026 ms
 >    > MaximumXProjection
->    < MaximumXProjection         0.2822 ms
->   < MaximumOfAllPixels          2.8497 ms
->  < GetMaximumOfAllPixels        2.853 ms
+>    < MaximumXProjection         0.2178 ms
+>   < MaximumOfAllPixels          2.5449 ms
+>  < GetMaximumOfAllPixels        2.55 ms
 >  > Copy
->  < Copy                         7.6838 ms
+>  < Copy                         7.5383 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  12.2556 ms
+>  < OnlyzeroOverwriteMaximumBox  15.7007 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.5328 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.5853 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.3024 ms
+>  < MaximumZProjection           1.2408 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.5316 ms
+>  < OnlyzeroOverwriteMaximumBox  5.5987 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3213 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.4022 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.5543 ms
+>  < OnlyzeroOverwriteMaximumBox  5.6145 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.4918 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.452 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.3056 ms
+>  < MaximumZProjection           1.365 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.4981 ms
+>  < OnlyzeroOverwriteMaximumBox  5.5722 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.2993 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.3676 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.7242 ms
+>  < OnlyzeroOverwriteMaximumBox  5.5509 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3111 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.432 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.0834 ms
+>  < MaximumZProjection           1.1657 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.4963 ms
+>  < OnlyzeroOverwriteMaximumBox  5.5698 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.5496 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.3146 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.4232 ms
+>  < OnlyzeroOverwriteMaximumBox  5.3113 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3376 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.3089 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.5244 ms
+>  < MaximumZProjection           1.2267 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.554 ms
+>  < OnlyzeroOverwriteMaximumBox  5.3422 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.2925 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.4418 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.316 ms
+>  < OnlyzeroOverwriteMaximumBox  16.6047 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.4267 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.2761 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.2454 ms
+>  < MaximumZProjection           1.232 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.2776 ms
+>  < OnlyzeroOverwriteMaximumBox  5.2219 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.1786 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.3501 ms
 >  > Threshold
 >   > GreaterOrEqualConstant
->   < GreaterOrEqualConstant      8.2316 ms
->  < Threshold                    8.2367 ms
+>   < GreaterOrEqualConstant      8.0864 ms
+>  < Threshold                    8.0961 ms
 >  > ErodeBox
->  < ErodeBox                     4.5459 ms
+>  < ErodeBox                     4.4863 ms
 >  > ErodeBox
->  < ErodeBox                     4.3615 ms
+>  < ErodeBox                     4.41 ms
 >  > ErodeBox
->  < ErodeBox                     4.2456 ms
+>  < ErodeBox                     4.2245 ms
 >  > ErodeBox
->  < ErodeBox                     4.0463 ms
+>  < ErodeBox                     4.1547 ms
 >  > ErodeBox
->  < ErodeBox                     3.917 ms
+>  < ErodeBox                     4.0565 ms
 >  > ErodeBox
->  < ErodeBox                     3.814 ms
+>  < ErodeBox                     3.9007 ms
 >  > ErodeBox
->  < ErodeBox                     3.7001 ms
+>  < ErodeBox                     3.7941 ms
 >  > ErodeBox
->  < ErodeBox                     3.712 ms
+>  < ErodeBox                     3.6619 ms
 >  > Mask
->  < Mask                         8.2385 ms
+>  < Mask                         8.0845 ms
 >  > MaximumZProjection
->  < MaximumZProjection           2.3052 ms
+>  < MaximumZProjection           1.5882 ms
 >  > LabelledSpotsToPointList
->  < LabelledSpotsToPointList     4.1808 ms
+>  < LabelledSpotsToPointList     3.3621 ms
 >  > GenerateDistanceMatrix
->  < GenerateDistanceMatrix       2.4192 ms
+>  < GenerateDistanceMatrix       2.1924 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.3112 ms
+>  < MaximumZProjection           1.5115 ms
 >  > GenerateTouchMatrix
 >   > Set
->   < Set                         1.2894 ms
->  < GenerateTouchMatrix          4.9767 ms
+>   < Set                         1.3066 ms
+>  < GenerateTouchMatrix          4.2493 ms
 >  > SetColumn
->  < SetColumn                    0.9266 ms
+>  < SetColumn                    0.2206 ms
 >  > Maximum3DBox
->  < Maximum3DBox                 2.9903 ms
+>  < Maximum3DBox                 3.0699 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9882 ms
+>  < MaximumZProjection           1.0672 ms
 >  > MultiplyImages
->  < MultiplyImages               1.4794 ms
+>  < MultiplyImages               1.1109 ms
 >  > GetDimensions
->  < GetDimensions                0.0021 ms
+>  < GetDimensions                0.003 ms
 >  > TouchMatrixToMesh
->  < TouchMatrixToMesh            9.3699 ms
+>  < TouchMatrixToMesh            7.6061 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.86 ms
+>  < MaximumZProjection           0.8022 ms
 >  > AverageDistanceOfTouchingNeighbors
->  < AverageDistanceOfTouchingNeighbors1.3879 ms
+>  < AverageDistanceOfTouchingNeighbors1.5887 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.8685 ms
+>  < ReplaceIntensities           10.2983 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8299 ms
+>  < MaximumZProjection           0.8792 ms
 >  > MeanOfTouchingNeighbors
->  < MeanOfTouchingNeighbors      1.3048 ms
+>  < MeanOfTouchingNeighbors      1.1366 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.3282 ms
+>  < ReplaceIntensities           10.3092 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8031 ms
+>  < MaximumZProjection           0.9442 ms
 >  > MinimumOfTouchingNeighbors
->  < MinimumOfTouchingNeighbors   1.6479 ms
+>  < MinimumOfTouchingNeighbors   1.4375 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.1399 ms
+>  < ReplaceIntensities           10.0923 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8756 ms
+>  < MaximumZProjection           0.9013 ms
 >  > MedianOfTouchingNeighbors
->  < MedianOfTouchingNeighbors    1.129 ms
+>  < MedianOfTouchingNeighbors    1.2121 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           9.9865 ms
+>  < ReplaceIntensities           10.3356 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8457 ms
+>  < MaximumZProjection           0.9228 ms
 >  > MaximumOfTouchingNeighbors
->  < MaximumOfTouchingNeighbors   1.222 ms
+>  < MaximumOfTouchingNeighbors   1.215 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           9.7237 ms
+>  < ReplaceIntensities           10.5516 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8222 ms
-> < timeTracing                   4882.4704 ms
+>  < MaximumZProjection           0.9592 ms
+>  > ReplaceIntensities
+>  < ReplaceIntensities           10.103 ms
+>  > MaximumZProjection
+>  < MaximumZProjection           0.9724 ms
+> < timeTracing                   4888.6108 ms
 >  
 </pre>
 
-Also let's see how much memory this workflow used. Cleaning up by the end is also important.
+Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_reportMemory();
 
-// clean up finally.
+// finally, clean up
 Ext.CLIJ2_clear();
 
-</pre>
+```
 <pre>
-> GPU contains 25 images.
-> - CLIJ2_detectMaximaBox_result335[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@cca3590] 204.8 Mb
-> - CLIJ2_multiplyImages_result359[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2fc7592b] 8.6 Mb
-> - CLIJ2_maximumOfTouchingNeighbors_result374[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@62f4c268] 5.9 kb
-> - CLIJ2_mask_result339[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@53b99e6a] 204.8 Mb
-> - CLIJ2_averageDistanceOfTouchingNeighbors_result362[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@e824738] 5.9 kb
-> - CLIJ2_replaceIntensities_result375[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@1b1949c2] 204.8 Mb
-> - CLIJ2_replaceIntensities_result372[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5f3a3f4b] 204.8 Mb
-> - CLIJ2_onlyzeroOverwriteMaximumBox_result344[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@40efb008] 204.8 Mb
-> - CLIJ2_copy_result343[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5c4894aa] 204.8 Mb
-> - CLIJ2_minimumOfTouchingNeighbors_result368[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@d4e81b8] 5.9 kb
-> - CLIJ2_medianOfTouchingNeighbors_result371[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@300373d] 5.9 kb
-> - CLIJ2_generateTouchMatrix_result356[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3ed2a8a5] 8.6 Mb
-> - CLIJ2_mask_result351[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@26a79611] 204.8 Mb
-> - CLIJ2_create3D_result360[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5f1d903c] 204.8 Mb
-> - CLIJ2_labelSpots_result340[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3065d086] 204.8 Mb
-> - CLIJ2_threshold_result350[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5da6ed3d] 204.8 Mb
-> - lund1051_resampled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@761ae1ac] 204.8 Mb
-> - CLIJ2_meanOfTouchingNeighbors_result365[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@6c17f660] 5.9 kb
-> - CLIJ2_replaceIntensities_result369[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5fb807ae] 204.8 Mb
-> - CLIJ2_replaceIntensities_result366[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@359dd661] 204.8 Mb
-> - CLIJ2_replaceIntensities_result363[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@14ab46ff] 204.8 Mb
-> - CLIJ2_labelledSpotsToPointList_result353[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@475c16fc] 17.6 kb
-> - CLIJ2_generateDistanceMatrix_result354[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@58c6ecce] 8.6 Mb
-> - CLIJ2_threshold_result338[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3331769] 204.8 Mb
-> - CLIJ2_gaussianBlur3D_result334[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4de1254e] 204.8 Mb
-> = 3.2 Gb
+> GPU contains 27 images.
+> - CLIJ2_gaussianBlur3D_result210[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@265861ea] 204.8 Mb
+> - CLIJ2_threshold_result226[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@14e7fe1d] 204.8 Mb
+> - CLIJ2_medianOfTouchingNeighbors_result247[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5ef609a9] 5.9 kb
+> - CLIJ2_create3D_result236[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@63c3f95e] 204.8 Mb
+> - CLIJ2_averageDistanceOfTouchingNeighbors_result238[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@67183fd] 5.9 kb
+> - CLIJ2_multiplyImages_result235[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2dcd8238] 8.6 Mb
+> - CLIJ2_replaceIntensities_result239[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@43186d69] 204.8 Mb
+> - CLIJ2_labelSpots_result216[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5d446226] 204.8 Mb
+> - CLIJ2_mask_result227[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3fed755d] 204.8 Mb
+> - CLIJ2_maximumOfTouchingNeighbors_result250[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@35097736] 5.9 kb
+> - CLIJ2_labelledSpotsToPointList_result229[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7414ffed] 17.6 kb
+> - CLIJ2_meanOfTouchingNeighbors_result241[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7467a723] 5.9 kb
+> - CLIJ2_replaceIntensities_result254[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2074736f] 204.8 Mb
+> - CLIJ2_replaceIntensities_result251[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5e3a0090] 204.8 Mb
+> - CLIJ2_detectMaximaBox_result211[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@d02672d] 204.8 Mb
+> - CLIJ2_threshold_result214[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@44158711] 204.8 Mb
+> - CLIJ2_generateTouchMatrix_result232[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@47796bf7] 8.6 Mb
+> - CLIJ2_onlyzeroOverwriteMaximumBox_result220[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4949cd08] 204.8 Mb
+> - lund1051_resampled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@576ce003] 204.8 Mb
+> - CLIJ2_mask_result215[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3fa9d8f0] 204.8 Mb
+> - CLIJ2_minimumOfTouchingNeighbors_result244[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@33832a21] 5.9 kb
+> - CLIJ2_replaceIntensities_result248[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@342580d4] 204.8 Mb
+> - CLIJ2_standardDeviationOfTouchingNeighbors_result253[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4f902ab] 5.9 kb
+> - CLIJ2_copy_result219[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@75e6349c] 204.8 Mb
+> - CLIJ2_replaceIntensities_result245[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5f1eca23] 204.8 Mb
+> - CLIJ2_replaceIntensities_result242[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@47a5c234] 204.8 Mb
+> - CLIJ2_generateDistanceMatrix_result230[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@b856c31] 8.6 Mb
+> = 3.4 Gb
 >  
 </pre>
 
-The following are convienence methods for proper visualisation in a noteboook:
+Following methods are convenient for a proper visualization in a notebook:
 
-<pre class="highlight">
+```java
 function show(input, text) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
+	Ext.CLIJ2_maximumZProjection(input, max_projection);
 	Ext.CLIJ2_pull(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
@@ -472,16 +487,17 @@ function show(input, text) {
 }
 
 function show_spots(input, text) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximum3DBox">CLIJ2_maximum3DBox</a>(input, extended, 1, 1, 0);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(extended, max_projection);
+	Ext.CLIJ2_maximum3DBox(input, extended, 1, 1, 0);
+	Ext.CLIJ2_maximumZProjection(extended, max_projection);
 	Ext.CLIJ2_pull(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
 	Ext.CLIJ2_release(extended);
 	Ext.CLIJ2_release(max_projection);
 }
-</pre>
+```
 
 
 
-
+```
+```

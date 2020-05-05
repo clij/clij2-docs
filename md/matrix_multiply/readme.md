@@ -1,50 +1,49 @@
 
 
 # Matrix Multiplication
-Author: Robert Haase
-         April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/matrix_multiply.ijm)
 
 
-This macro shows to do matrix multiplication
-on the GPU.
+This macro shows how to perform a matrix multiplication
+in the GPU.
 
 
-<pre class="highlight">
+```java
 
-// Initialize GPU
+// initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
 Ext.CLIJ2_clear();
 
 run("Close All");
-</pre>
+```
 
 ## Define two arrays (vectors) and push them to the GPU 
 
-<pre class="highlight">
+```java
 array1 = newArray(1, 2, 3, 4, 5);
 array2 = newArray(6, 7, 8, 9, 10);
 
 // push arrays to GPU
-Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector1, array1, 5, 1, 1);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(vector2, array2, 5, 1, 1);
+Ext.CLIJ2_pushArray(vector1, array1, 5, 1, 1);
+Ext.CLIJ2_pushArray(vector2, array2, 5, 1, 1);
 
-</pre>
+```
 
-## In order to do matrix multiplication, the input matrice must be of size n*m and m*n. 
-Therefore, we transpose one of our vectors 
+## In order to multiplicate matrices, the input matrices must be of size (n * m) and (m * n) 
+Therefore, we transpose one of our vectors: 
 
-<pre class="highlight">
-// transpose first input vector and show it
-Ext.<a href="https://clij.github.io/clij2-docs/reference_transposeXY">CLIJ2_transposeXY</a>(vector1, vector1transposed);
+```java
+// transpose the first input vector and show it
+Ext.CLIJ2_transposeXY(vector1, vector1transposed);
 print("Vector 1 (transposed):");
-Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(vector1transposed);
+Ext.CLIJ2_print(vector1transposed);
 
 // show second input vector
 print("Vector 2:");
-Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(vector2);
-</pre>
+Ext.CLIJ2_print(vector2);
+```
 <pre>
 > Vector 1 (transposed):
 > 1.0
@@ -58,10 +57,10 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 
 ## Matrix multiplication
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyMatrix">CLIJ2_multiplyMatrix</a>(vector1transposed, vector2, matrix);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(matrix);
-</pre>
+```java
+Ext.CLIJ2_multiplyMatrix(vector1transposed, vector2, matrix);
+Ext.CLIJ2_print(matrix);
+```
 <pre>
 > 6.0 7.0 8.0 9.0 10.0
 > 12.0 14.0 16.0 18.0 20.0
@@ -72,27 +71,27 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 
 You can also express a matrix as an image:
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_pull(matrix);
 zoom(100);
-</pre>
-<a href="image_1587799918362.png"><img src="image_1587799918362.png" width="224" alt="CLIJ2_multiplyMatrix_result62-1"/></a>
+```
+<a href="image_1588706975067.png"><img src="image_1588706975067.png" width="250" alt="CLIJ2_multiplyMatrix_result43-1"/></a>
 
-## Element wise multiplication of the matrix with another matrix
+## Element by element multiplication of two matrices
 
-<pre class="highlight">
+```java
 // generate another matrix of the same size with random values
-Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(matrix, width, height, depth);
+Ext.CLIJ2_getDimensions(matrix, width, height, depth);
 bitDepth_float = 32;// 32-bit float type
 Ext.CLIJ2_create2D(another_matrix, width, height, bitDepth_float); 
 
 // random values between 0 and 1; seed is 5
-Ext.<a href="https://clij.github.io/clij2-docs/reference_setRandom">CLIJ2_setRandom</a>(another_matrix, 0, 1, 5); 
+Ext.CLIJ2_setRandom(another_matrix, 0, 1, 5); 
 
-// element wise multiplication
-Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(matrix, another_matrix, matrix_element_wise_multiplied);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(matrix_element_wise_multiplied);
-</pre>
+// element by element multiplication
+Ext.CLIJ2_multiplyImages(matrix, another_matrix, matrix_element_wise_multiplied);
+Ext.CLIJ2_print(matrix_element_wise_multiplied);
+```
 <pre>
 > 4.383119 1.2362144 0.7060671 5.506363 4.8890452
 > 11.339695 6.46572 13.220956 8.074771 8.551192
@@ -101,12 +100,12 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 > 26.581673 11.132466 8.880062 14.615762 44.193928
 </pre>
 
-## Element wise multiplication of the matrix with a scalar
+## Element by element multiplication of a matrix with a scalar
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndScalar">CLIJ2_multiplyImageAndScalar</a>(matrix, elements_times_2, 2);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(elements_times_2);
-</pre>
+```java
+Ext.CLIJ2_multiplyImageAndScalar(matrix, elements_times_2, 2);
+Ext.CLIJ2_print(elements_times_2);
+```
 <pre>
 > 12.0 14.0 16.0 18.0 20.0
 > 24.0 28.0 32.0 36.0 40.0
@@ -115,15 +114,15 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 > 60.0 70.0 80.0 90.0 100.0
 </pre>
 
-Clean up by the end
+At the end of the macro, clean up:
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_clear();
-</pre>
+```
 
-This is just a utility function to make the visualisation in the notebook nice.
+This is just a useful function to obtain a nice visualization in the notebook.
 
-<pre class="highlight">
+```java
 function zoom(factor) {
 	getDimensions(width, height, channels, slices, frames);
 	before = getTitle();	
@@ -132,8 +131,9 @@ function zoom(factor) {
 	close();
 }
 
-</pre>
+```
 
 
 
-
+```
+```

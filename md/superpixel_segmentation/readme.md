@@ -1,14 +1,13 @@
 
 
 # Superpixel segmentation
-Author: Robert Haase
-        April 2020
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/superpixel_segmentation.ijm)
 
-Initialize/clean up ImageJ and graphics card:
+Clean up ImageJ and initialize GPU:
 
-<pre class="highlight">
+```java
 run("Close All");
 
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
@@ -17,19 +16,19 @@ Ext.CLIJ2_clear();
 // time measurements
 time = getTime();
 Ext.CLIJ2_startTimeTracing();
-</pre>
+```
 
 ## Load a data set
-The raw dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
-It shows a Tribolium castaneum embryo imaged using a custom light sheet microscope using a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
-The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use it for detecting nuclei and generating an estimated cell-segmentation first.
+The dataset is available [online](https://git.mpi-cbg.de/rhaase/clij2_example_data/blob/master/lund1051_resampled.tif).
+It shows a *Tribolium castaneum* embryo, imaged by a custom light sheet microscope, at a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
+The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use the dataset to detect nuclei and to generate an estimated cell-segmentation.
 
-Furthermore, we use a label map of segmented cells, which was generated using [this macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm).
+In addition, we use a label map of segmented cells, which got generated using [this macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro/tribolium_morphometry.ijm).
 
-All processing steps are performed in 3D, for visualisation purposes, we're looking at maximum intensity projections in Z: 
+All processing steps are performed in 3D space. For visualization purpose, we are using the maximum intensity projection in Z: 
 
-<pre class="highlight">
-path = "C:/structure/teaching/neubias_academy_clij2/data/";
+```java
+path = "C:/structure/teaching/clij2_example_data/";
 
 // load data
 open(path + "lund1051_resampled.tif");
@@ -41,155 +40,157 @@ labels = getTitle();
 Ext.CLIJ2_push(input);
 Ext.CLIJ2_push(labels);
 
-// clean up imageJ
+// clean up ImageJ
 run("Close All");
-</pre>
+```
 
-## Inspecting input data
-The processed data is 3D, for visualisation purposes, we look at maximum projections:
+## Viewing input data
+Processed 3D-data will be shown in 2D, using maximum projections in Z:
 
-<pre class="highlight">
+```java
 show(input, "input");
 show(labels, "labels");
 run("glasbey_on_dark");
-</pre>
-<a href="image_1587987175379.png"><img src="image_1587987175379.png" width="224" alt="CLIJ2_maximumZProjection_result84"/></a>
-<a href="image_1587987175531.png"><img src="image_1587987175531.png" width="224" alt="CLIJ2_maximumZProjection_result85"/></a>
+```
+<a href="image_1588707795876.png"><img src="image_1588707795876.png" width="250" alt="CLIJ2_maximumZProjection_result131"/></a>
+<a href="image_1588707796002.png"><img src="image_1588707796002.png" width="250" alt="CLIJ2_maximumZProjection_result132"/></a>
 
 ## Determine neighborhood relationships between segmented objects
-To process neighboring pixels, we need to derive a touch-matrix from the label map:
+From the label map, we derive a touch-matrix to process neighboring pixel :
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labels, touch_matrix);
+```java
+Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
-// visualise the touch matrix
+// visualize the touch matrix
 Ext.CLIJ2_pull(touch_matrix);
-</pre>
-<a href="image_1587987175648.png"><img src="image_1587987175648.png" width="224" alt="CLIJ2_generateTouchMatrix_result86"/></a>
+```
+<a href="image_1588707796170.png"><img src="image_1588707796170.png" width="250" alt="CLIJ2_generateTouchMatrix_result133"/></a>
 
 ## Measure statistics
-We now measure statistics of labelled objects. The statistis are shown in a results table. From this table, we push the column PIXEL_SIZE back to the GPU as image:
+Now, we get statistics of labelled objects, in the form of a results table. From this table, we push the column PIXEL_SIZE as image back to the GPU:
 
-<pre class="highlight">
+```java
 run("Clear Results");
-Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfBackgroundAndLabelledPixels">CLIJ2_statisticsOfBackgroundAndLabelledPixels</a>(input, labels);
-Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTableColumn">CLIJ2_pushResultsTableColumn</a>(pixel_count, "PIXEL_COUNT");
+Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(input, labels);
+Ext.CLIJ2_pushResultsTableColumn(pixel_count, "PIXEL_COUNT");
 run("Clear Results");
 
 // show the pixel count vector image
 Ext.CLIJ2_pull(pixel_count);
-</pre>
-<a href="image_1587987176692.png"><img src="image_1587987176692.png" width="224" alt="CLIJ2_pushResultsTableColumn_result87"/></a>
+```
+<a href="image_1588707797604.png"><img src="image_1588707797604.png" width="250" alt="CLIJ2_pushResultsTableColumn_result134"/></a>
 
-## Visualise measurements in space
-We now colour code the measurents on the label map: 
 
-<pre class="highlight">
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, pixel_count, pixel_count_map);
+## Visualize measurements in space
+Next, we color-code measurements based on the label map: 
+
+```java
+Ext.CLIJ2_replaceIntensities(labels, pixel_count, pixel_count_map);
 show(pixel_count_map, "pixel count map");
 run("Fire");
 
-</pre>
-<a href="image_1587987176765.png"><img src="image_1587987176765.png" width="224" alt="CLIJ2_maximumZProjection_result89"/></a>
+```
+<a href="image_1588707797696.png"><img src="image_1588707797696.png" width="250" alt="CLIJ2_maximumZProjection_result136"/></a>
 
 ## Thresholding based on derived features
-We segment the image now by differentiating large and small objects using a pixel count threshold. 
-The visualised binary images overlap, because we look at maximum projections of three dimensional binary image stacks:
+Using a pixel count threshold, we segment the image by differentiating large and small objects. 
+Thresholded 2D binary images overlap, because we look at maximum projections of 3D binary image stacks:
 
-<pre class="highlight">
+```java
 pixel_count_threshold = 4000;
 
 threshold_vector_and_visualise(pixel_count, labels, pixel_count_threshold);
 
-// This function takes a vector, binarizes it using a threshold and 
-// visualises the results as parametric image using a given labelmap
+// This function takes a vector, binarizes it by using a threshold and 
+// visualizes the results as parametric image by the given label map:
 function threshold_vector_and_visualise(vector, labelmap, threshold) {
 
 	// threshold the vector in two vectors:
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_smallerConstant">CLIJ2_smallerConstant</a>(vector, small_objects, threshold);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_greaterOrEqualConstant">CLIJ2_greaterOrEqualConstant</a>(vector, large_objects, threshold);
+	Ext.CLIJ2_smallerConstant(vector, small_objects, threshold);
+	Ext.CLIJ2_greaterOrEqualConstant(vector, large_objects, threshold);
 	// alternative: use binaryNot
 	
 	// visualise resulting binary images
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, small_objects, small_objects_map);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, large_objects, large_objects_map);
+	Ext.CLIJ2_replaceIntensities(labelmap, small_objects, small_objects_map);
+	Ext.CLIJ2_replaceIntensities(labelmap, large_objects, large_objects_map);
 	show(small_objects_map, "below threshold");
 	show(large_objects_map, "above threshold");
 }
-</pre>
-<a href="image_1587987176905.png"><img src="image_1587987176905.png" width="224" alt="CLIJ2_maximumZProjection_result94"/></a>
-<a href="image_1587987176936.png"><img src="image_1587987176936.png" width="224" alt="CLIJ2_maximumZProjection_result95"/></a>
+```
+<a href="image_1588707797852.png"><img src="image_1588707797852.png" width="250" alt="CLIJ2_maximumZProjection_result141"/></a>
+<a href="image_1588707797876.png"><img src="image_1588707797876.png" width="250" alt="CLIJ2_maximumZProjection_result142"/></a>
 
-## Improving segmentation results using filtering superpixels
-We can make the difference between the two regions in the dataset more clear by filtering the pixel count factor
-using the corresponding neighborhood:
+## Improving segmentation by superpixel filtering
+Having two regions in the dataset, we can differentiate them more clearly by filtering the 
+pixel count factor, using corresponding neighborhood relationships:
 
-<pre class="highlight">
+```java
 
-// for every object, determine the minimum pixel count in its local neighbor hood
-Ext.<a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">CLIJ2_minimumOfTouchingNeighbors</a>(pixel_count, touch_matrix, filtered_pixel_count);
+// for all objects, determine the minimum pixel count in its local neighborhood
+Ext.CLIJ2_minimumOfTouchingNeighbors(pixel_count, touch_matrix, filtered_pixel_count);
 
-// we also make a parametric image out of that filtered vector
-Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, filtered_pixel_count, filtered_pixel_count_map);
+// create a parametric image out of the filtered vector
+Ext.CLIJ2_replaceIntensities(labels, filtered_pixel_count, filtered_pixel_count_map);
 show(filtered_pixel_count_map, "filtered pixel count map");
 run("Fire");
-</pre>
-<a href="image_1587987177058.png"><img src="image_1587987177058.png" width="224" alt="CLIJ2_maximumZProjection_result98"/></a>
+```
+<a href="image_1588707798001.png"><img src="image_1588707798001.png" width="250" alt="CLIJ2_maximumZProjection_result145"/></a>
 
 ## Thresholding filtered features
-For thresholding the filtered vector, we reuse the macro function from above:
+To apply a threshold on a filtered vector, we reuse the macro command from above:
 
-<pre class="highlight">
+```java
 threshold_vector_and_visualise(filtered_pixel_count, labels, pixel_count_threshold);
-</pre>
-<a href="image_1587987177194.png"><img src="image_1587987177194.png" width="224" alt="CLIJ2_maximumZProjection_result103"/></a>
-<a href="image_1587987177215.png"><img src="image_1587987177215.png" width="224" alt="CLIJ2_maximumZProjection_result104"/></a>
+```
+<a href="image_1588707798140.png"><img src="image_1588707798140.png" width="250" alt="CLIJ2_maximumZProjection_result150"/></a>
+<a href="image_1588707798160.png"><img src="image_1588707798160.png" width="250" alt="CLIJ2_maximumZProjection_result151"/></a>
 
 ## Renumbering label maps
+Based on thresholded features, labels can get excluded and resorted within the label map. 
 
-<pre class="highlight">
+```java
 // threshold the feature vector
-Ext.<a href="https://clij.github.io/clij2-docs/reference_greaterOrEqualConstant">CLIJ2_greaterOrEqualConstant</a>(filtered_pixel_count,  binary_vector, pixel_count_threshold);
-// we now remove the labels above the threshold from the labelmap
-Ext.<a href="https://clij.github.io/clij2-docs/reference_excludeLabels">CLIJ2_excludeLabels</a>(binary_vector, labels, labels_embryo);
+Ext.CLIJ2_greaterOrEqualConstant(filtered_pixel_count, binary_vector, pixel_count_threshold);
+// remove all labels above the threshold from the label map
+Ext.CLIJ2_excludeLabels(binary_vector, labels, labels_embryo);
 show(labels_embryo, "labels_embryo");
 run("glasbey_on_dark");
 
 
-</pre>
-<a href="image_1587987177310.png"><img src="image_1587987177310.png" width="224" alt="CLIJ2_maximumZProjection_result107"/></a>
+```
+<a href="image_1588707798252.png"><img src="image_1588707798252.png" width="250" alt="CLIJ2_maximumZProjection_result154"/></a>
 
-## Visualisation of segmentation as ROIs
-We can also show the different regions using ImageJs ROIs and Overlays
+## Visualization of segmented ROIs
+We can also show different regions using ImageJs ROIs and Overlays:
 
-<pre class="highlight">
+```java
 threshold_vector_and_visualise_as_rois(filtered_pixel_count, labels, input, pixel_count_threshold);
 
-// This function takes a vector, binarizes it using a threshold and 
-// visualises the results as regions of interest
+// This function takes a vector, binarizes it by thresholding 
+// and visualizes the results as regions of interests:
 function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, threshold) {
 
 	// threshold the vector in two vectors:
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_smallerConstant">CLIJ2_smallerConstant</a>(vector, small_objects, threshold);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_greaterOrEqualConstant">CLIJ2_greaterOrEqualConstant</a>(vector, large_objects, threshold);
+	Ext.CLIJ2_smallerConstant(vector, small_objects, threshold);
+	Ext.CLIJ2_greaterOrEqualConstant(vector, large_objects, threshold);
 	// alternative: use binaryNot
 
 	show(input, "Input with rois");
 	
 	// visualise resulting binary images
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, small_objects, small_objects_map);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelmap, large_objects, large_objects_map);
+	Ext.CLIJ2_replaceIntensities(labelmap, small_objects, small_objects_map);
+	Ext.CLIJ2_replaceIntensities(labelmap, large_objects, large_objects_map);
 
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(small_objects_map, small_objects_map_projected);
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(large_objects_map, large_objects_map_projected);
+	Ext.CLIJ2_maximumZProjection(small_objects_map, small_objects_map_projected);
+	Ext.CLIJ2_maximumZProjection(large_objects_map, large_objects_map_projected);
 
 	// pull a binary image from the GPU as ROI
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_pullAsROI">CLIJ2_pullAsROI</a>(small_objects_map_projected);
+	Ext.CLIJ2_pullAsROI(small_objects_map_projected);
 	run("Enlarge...", "enlarge=-1"); // prevent overlapping outlines
 	Overlay.addSelection("green");
 
 	// pull a binary image from the GPU as ROI
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_pullAsROI">CLIJ2_pullAsROI</a>(large_objects_map_projected);
+	Ext.CLIJ2_pullAsROI(large_objects_map_projected);
 	run("Enlarge...", "enlarge=-1"); // prevent overlapping outlines
 	Overlay.addSelection("magenta");
 
@@ -198,1018 +199,1019 @@ function threshold_vector_and_visualise_as_rois(vector, labelmap, input_image, t
 	selectWindow(temp);
 	close();
 }
-</pre>
-<a href="image_1587987177600.png"><img src="image_1587987177600.png" width="224" alt="CLIJ2_maximumZProjection_result110-1"/></a>
+```
+<a href="image_1588707798693.png"><img src="image_1588707798693.png" width="250" alt="CLIJ2_maximumZProjection_result157-1"/></a>
 
 ## Performance evaluation
-Finally a time measurement. Note that performing this workflow with ImageJ macro markdown is slower 
-as intermediate results are save to disc.
+Finally, a time measurement. Note that performing this workflow in ImageJ macro markdown is slower, 
+because intermediate results are saved to disc.
 
-<pre class="highlight">
+```java
 print("The whole workflow took " + (getTime() - time) + " msec");
-</pre>
+```
 <pre>
-> The whole workflow took 3463 msec
+> The whole workflow took 4390 msec
 </pre>
 
 ### Detailed time tracing for all operations
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_stopTimeTracing();
 Ext.CLIJ2_getTimeTracing(time_traces);
 print(time_traces);
-</pre>
+```
 <pre>
 > > timeTracing
 >  > MaximumZProjection
->  < MaximumZProjection           1.6646 ms
+>  < MaximumZProjection           18.816 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.1578 ms
+>  < MaximumZProjection           1.7192 ms
 >  > GenerateTouchMatrix
 >   > Set
->   < Set                         1.041 ms
->  < GenerateTouchMatrix          3.8744 ms
+>   < Set                         14.2843 ms
+>  < GenerateTouchMatrix          17.1836 ms
 >  > StatisticsOfBackgroundAndLabelledPixels
 >   > MaximumOfAllPixels
 >    > MaximumZProjection
->    < MaximumZProjection         1.4014 ms
+>    < MaximumZProjection         1.579 ms
 >    > MaximumYProjection
->    < MaximumYProjection         0.2969 ms
+>    < MaximumYProjection         12.9777 ms
 >    > MaximumXProjection
->    < MaximumXProjection         0.1987 ms
->   < MaximumOfAllPixels          2.5808 ms
+>    < MaximumXProjection         13.0664 ms
+>   < MaximumOfAllPixels          28.4014 ms
 >   > StatisticsOfLabelledPixels
 >    > CopySlice
->    < CopySlice                  1.329 ms
+>    < CopySlice                  0.8603 ms
 >    > CopySlice
->    < CopySlice                  0.7898 ms
+>    < CopySlice                  0.2365 ms
 >    > CopySlice
->    < CopySlice                  0.6656 ms
+>    < CopySlice                  0.7719 ms
 >    > CopySlice
->    < CopySlice                  0.2232 ms
+>    < CopySlice                  0.2576 ms
 >    > CopySlice
->    < CopySlice                  0.7439 ms
+>    < CopySlice                  0.7953 ms
 >    > CopySlice
->    < CopySlice                  0.2872 ms
+>    < CopySlice                  0.3884 ms
 >    > CopySlice
->    < CopySlice                  0.9552 ms
+>    < CopySlice                  0.7982 ms
 >    > CopySlice
->    < CopySlice                  0.4482 ms
+>    < CopySlice                  0.2437 ms
 >    > CopySlice
->    < CopySlice                  0.6735 ms
+>    < CopySlice                  0.7158 ms
 >    > CopySlice
->    < CopySlice                  0.2231 ms
+>    < CopySlice                  0.2344 ms
 >    > CopySlice
->    < CopySlice                  0.6439 ms
+>    < CopySlice                  2.9421 ms
 >    > CopySlice
->    < CopySlice                  0.2124 ms
+>    < CopySlice                  0.2828 ms
 >    > CopySlice
->    < CopySlice                  0.6803 ms
+>    < CopySlice                  0.6794 ms
 >    > CopySlice
->    < CopySlice                  0.2061 ms
+>    < CopySlice                  0.2201 ms
 >    > CopySlice
->    < CopySlice                  0.6477 ms
+>    < CopySlice                  0.6428 ms
 >    > CopySlice
->    < CopySlice                  0.1884 ms
->    > CopySlice
->    < CopySlice                  0.6907 ms
->    > CopySlice
->    < CopySlice                  0.2169 ms
->    > CopySlice
->    < CopySlice                  0.6603 ms
->    > CopySlice
->    < CopySlice                  0.2773 ms
->    > CopySlice
->    < CopySlice                  1.1202 ms
->    > CopySlice
->    < CopySlice                  0.23 ms
->    > CopySlice
->    < CopySlice                  0.6169 ms
->    > CopySlice
->    < CopySlice                  0.1795 ms
->    > CopySlice
->    < CopySlice                  0.5855 ms
->    > CopySlice
->    < CopySlice                  0.1933 ms
->    > CopySlice
->    < CopySlice                  0.6261 ms
->    > CopySlice
->    < CopySlice                  0.219 ms
->    > CopySlice
->    < CopySlice                  0.6646 ms
->    > CopySlice
->    < CopySlice                  0.1821 ms
->    > CopySlice
->    < CopySlice                  0.5566 ms
->    > CopySlice
->    < CopySlice                  0.2309 ms
->    > CopySlice
->    < CopySlice                  0.9415 ms
->    > CopySlice
->    < CopySlice                  0.1898 ms
->    > CopySlice
->    < CopySlice                  0.6729 ms
->    > CopySlice
->    < CopySlice                  0.2041 ms
->    > CopySlice
->    < CopySlice                  0.8838 ms
->    > CopySlice
->    < CopySlice                  0.2141 ms
->    > CopySlice
->    < CopySlice                  0.6108 ms
->    > CopySlice
->    < CopySlice                  0.2022 ms
->    > CopySlice
->    < CopySlice                  0.6281 ms
->    > CopySlice
->    < CopySlice                  0.2231 ms
->    > CopySlice
->    < CopySlice                  0.6405 ms
->    > CopySlice
->    < CopySlice                  0.2072 ms
->    > CopySlice
->    < CopySlice                  0.6545 ms
->    > CopySlice
->    < CopySlice                  0.2319 ms
->    > CopySlice
->    < CopySlice                  0.7097 ms
->    > CopySlice
->    < CopySlice                  0.217 ms
->    > CopySlice
->    < CopySlice                  0.6861 ms
->    > CopySlice
->    < CopySlice                  0.2141 ms
->    > CopySlice
->    < CopySlice                  0.799 ms
->    > CopySlice
->    < CopySlice                  0.1992 ms
->    > CopySlice
->    < CopySlice                  0.6984 ms
->    > CopySlice
->    < CopySlice                  0.2057 ms
->    > CopySlice
->    < CopySlice                  0.5687 ms
->    > CopySlice
->    < CopySlice                  0.2079 ms
->    > CopySlice
->    < CopySlice                  0.6938 ms
->    > CopySlice
->    < CopySlice                  0.2156 ms
->    > CopySlice
->    < CopySlice                  0.6843 ms
->    > CopySlice
->    < CopySlice                  0.2082 ms
->    > CopySlice
->    < CopySlice                  0.6653 ms
->    > CopySlice
->    < CopySlice                  0.2169 ms
->    > CopySlice
->    < CopySlice                  0.6407 ms
->    > CopySlice
->    < CopySlice                  0.1767 ms
->    > CopySlice
->    < CopySlice                  0.6434 ms
->    > CopySlice
->    < CopySlice                  0.2084 ms
->    > CopySlice
->    < CopySlice                  0.6269 ms
->    > CopySlice
->    < CopySlice                  0.1997 ms
->    > CopySlice
->    < CopySlice                  0.6558 ms
->    > CopySlice
->    < CopySlice                  0.2193 ms
->    > CopySlice
->    < CopySlice                  0.6849 ms
->    > CopySlice
->    < CopySlice                  0.1899 ms
->    > CopySlice
->    < CopySlice                  0.6228 ms
->    > CopySlice
->    < CopySlice                  0.1999 ms
->    > CopySlice
->    < CopySlice                  0.5644 ms
->    > CopySlice
->    < CopySlice                  0.2319 ms
->    > CopySlice
->    < CopySlice                  0.6369 ms
->    > CopySlice
->    < CopySlice                  0.2249 ms
->    > CopySlice
->    < CopySlice                  0.6143 ms
->    > CopySlice
->    < CopySlice                  0.1849 ms
->    > CopySlice
->    < CopySlice                  0.6201 ms
->    > CopySlice
->    < CopySlice                  0.2055 ms
->    > CopySlice
->    < CopySlice                  0.5719 ms
->    > CopySlice
->    < CopySlice                  0.1902 ms
+>    < CopySlice                  0.2202 ms
 >    > CopySlice
 >    < CopySlice                  0.6541 ms
 >    > CopySlice
->    < CopySlice                  0.1814 ms
+>    < CopySlice                  0.2216 ms
 >    > CopySlice
->    < CopySlice                  0.9017 ms
+>    < CopySlice                  1.3088 ms
 >    > CopySlice
->    < CopySlice                  0.2001 ms
+>    < CopySlice                  0.2722 ms
 >    > CopySlice
->    < CopySlice                  0.5935 ms
+>    < CopySlice                  1.0033 ms
 >    > CopySlice
->    < CopySlice                  0.1936 ms
+>    < CopySlice                  0.2957 ms
 >    > CopySlice
->    < CopySlice                  0.6204 ms
+>    < CopySlice                  0.721 ms
 >    > CopySlice
->    < CopySlice                  0.2116 ms
+>    < CopySlice                  0.2373 ms
 >    > CopySlice
->    < CopySlice                  0.8041 ms
->    > CopySlice
->    < CopySlice                  0.1747 ms
->    > CopySlice
->    < CopySlice                  0.6112 ms
->    > CopySlice
->    < CopySlice                  0.2579 ms
->    > CopySlice
->    < CopySlice                  0.6731 ms
->    > CopySlice
->    < CopySlice                  0.2113 ms
->    > CopySlice
->    < CopySlice                  0.6023 ms
->    > CopySlice
->    < CopySlice                  0.2481 ms
->    > CopySlice
->    < CopySlice                  0.5772 ms
->    > CopySlice
->    < CopySlice                  0.1709 ms
->    > CopySlice
->    < CopySlice                  0.6411 ms
->    > CopySlice
->    < CopySlice                  0.2153 ms
->    > CopySlice
->    < CopySlice                  0.5786 ms
->    > CopySlice
->    < CopySlice                  0.2721 ms
->    > CopySlice
->    < CopySlice                  0.6484 ms
->    > CopySlice
->    < CopySlice                  0.2759 ms
->    > CopySlice
->    < CopySlice                  0.6341 ms
->    > CopySlice
->    < CopySlice                  0.2107 ms
->    > CopySlice
->    < CopySlice                  0.6239 ms
->    > CopySlice
->    < CopySlice                  0.2203 ms
->    > CopySlice
->    < CopySlice                  0.6627 ms
->    > CopySlice
->    < CopySlice                  0.1821 ms
->    > CopySlice
->    < CopySlice                  0.6395 ms
->    > CopySlice
->    < CopySlice                  0.2135 ms
->    > CopySlice
->    < CopySlice                  0.8445 ms
->    > CopySlice
->    < CopySlice                  0.1841 ms
->    > CopySlice
->    < CopySlice                  0.622 ms
->    > CopySlice
->    < CopySlice                  0.2063 ms
->    > CopySlice
->    < CopySlice                  0.6591 ms
->    > CopySlice
->    < CopySlice                  0.2428 ms
->    > CopySlice
->    < CopySlice                  0.8078 ms
->    > CopySlice
->    < CopySlice                  0.2204 ms
->    > CopySlice
->    < CopySlice                  0.9411 ms
->    > CopySlice
->    < CopySlice                  0.2163 ms
->    > CopySlice
->    < CopySlice                  0.6593 ms
->    > CopySlice
->    < CopySlice                  0.2234 ms
->    > CopySlice
->    < CopySlice                  0.6188 ms
->    > CopySlice
->    < CopySlice                  0.1812 ms
->    > CopySlice
->    < CopySlice                  0.651 ms
->    > CopySlice
->    < CopySlice                  0.2099 ms
->    > CopySlice
->    < CopySlice                  0.8221 ms
->    > CopySlice
->    < CopySlice                  0.2095 ms
->    > CopySlice
->    < CopySlice                  0.7036 ms
->    > CopySlice
->    < CopySlice                  0.1982 ms
->    > CopySlice
->    < CopySlice                  0.681 ms
->    > CopySlice
->    < CopySlice                  0.1731 ms
->    > CopySlice
->    < CopySlice                  0.6151 ms
->    > CopySlice
->    < CopySlice                  0.2342 ms
->    > CopySlice
->    < CopySlice                  0.6345 ms
->    > CopySlice
->    < CopySlice                  0.2221 ms
->    > CopySlice
->    < CopySlice                  0.6473 ms
->    > CopySlice
->    < CopySlice                  0.1925 ms
->    > CopySlice
->    < CopySlice                  0.633 ms
->    > CopySlice
->    < CopySlice                  0.2032 ms
->    > CopySlice
->    < CopySlice                  0.7416 ms
->    > CopySlice
->    < CopySlice                  0.2444 ms
->    > CopySlice
->    < CopySlice                  0.9165 ms
->    > CopySlice
->    < CopySlice                  0.2739 ms
->    > CopySlice
->    < CopySlice                  0.6464 ms
->    > CopySlice
->    < CopySlice                  0.2014 ms
->    > CopySlice
->    < CopySlice                  0.7838 ms
->    > CopySlice
->    < CopySlice                  0.2825 ms
->    > CopySlice
->    < CopySlice                  0.5814 ms
+>    < CopySlice                  0.6134 ms
 >    > CopySlice
 >    < CopySlice                  0.1978 ms
 >    > CopySlice
->    < CopySlice                  0.5717 ms
+>    < CopySlice                  0.7361 ms
 >    > CopySlice
->    < CopySlice                  0.1902 ms
+>    < CopySlice                  0.276 ms
 >    > CopySlice
->    < CopySlice                  0.6543 ms
+>    < CopySlice                  0.6377 ms
 >    > CopySlice
->    < CopySlice                  0.247 ms
+>    < CopySlice                  0.1921 ms
 >    > CopySlice
->    < CopySlice                  0.667 ms
+>    < CopySlice                  0.6129 ms
 >    > CopySlice
->    < CopySlice                  0.2587 ms
+>    < CopySlice                  0.1911 ms
 >    > CopySlice
->    < CopySlice                  0.6668 ms
+>    < CopySlice                  0.6211 ms
 >    > CopySlice
->    < CopySlice                  0.2033 ms
+>    < CopySlice                  0.1886 ms
 >    > CopySlice
->    < CopySlice                  0.6866 ms
+>    < CopySlice                  0.7783 ms
 >    > CopySlice
->    < CopySlice                  0.2673 ms
+>    < CopySlice                  0.2712 ms
 >    > CopySlice
->    < CopySlice                  0.7695 ms
+>    < CopySlice                  0.8488 ms
 >    > CopySlice
->    < CopySlice                  0.2206 ms
+>    < CopySlice                  0.5745 ms
 >    > CopySlice
->    < CopySlice                  0.6607 ms
+>    < CopySlice                  1.3508 ms
 >    > CopySlice
->    < CopySlice                  0.249 ms
+>    < CopySlice                  0.2968 ms
 >    > CopySlice
->    < CopySlice                  0.8334 ms
+>    < CopySlice                  0.6131 ms
 >    > CopySlice
->    < CopySlice                  0.2303 ms
->    > CopySlice
->    < CopySlice                  0.6867 ms
->    > CopySlice
->    < CopySlice                  0.2582 ms
->    > CopySlice
->    < CopySlice                  0.639 ms
->    > CopySlice
->    < CopySlice                  0.2139 ms
->    > CopySlice
->    < CopySlice                  0.7539 ms
->    > CopySlice
->    < CopySlice                  0.2112 ms
->    > CopySlice
->    < CopySlice                  0.8202 ms
->    > CopySlice
->    < CopySlice                  0.2507 ms
->    > CopySlice
->    < CopySlice                  0.666 ms
->    > CopySlice
->    < CopySlice                  0.2154 ms
->    > CopySlice
->    < CopySlice                  0.5705 ms
->    > CopySlice
->    < CopySlice                  0.1858 ms
->    > CopySlice
->    < CopySlice                  0.6545 ms
->    > CopySlice
->    < CopySlice                  0.2605 ms
->    > CopySlice
->    < CopySlice                  0.6971 ms
->    > CopySlice
->    < CopySlice                  0.1843 ms
->    > CopySlice
->    < CopySlice                  0.5942 ms
->    > CopySlice
->    < CopySlice                  0.2223 ms
->    > CopySlice
->    < CopySlice                  0.5574 ms
->    > CopySlice
->    < CopySlice                  0.1733 ms
->    > CopySlice
->    < CopySlice                  0.6297 ms
->    > CopySlice
->    < CopySlice                  0.292 ms
->    > CopySlice
->    < CopySlice                  0.5723 ms
->    > CopySlice
->    < CopySlice                  0.1969 ms
->    > CopySlice
->    < CopySlice                  0.6074 ms
->    > CopySlice
->    < CopySlice                  0.2109 ms
->    > CopySlice
->    < CopySlice                  0.6537 ms
->    > CopySlice
->    < CopySlice                  0.1801 ms
->    > CopySlice
->    < CopySlice                  0.5667 ms
->    > CopySlice
->    < CopySlice                  0.1981 ms
->    > CopySlice
->    < CopySlice                  0.5399 ms
->    > CopySlice
->    < CopySlice                  0.1931 ms
->    > CopySlice
->    < CopySlice                  0.6827 ms
->    > CopySlice
->    < CopySlice                  0.2123 ms
->    > CopySlice
->    < CopySlice                  0.643 ms
->    > CopySlice
->    < CopySlice                  0.1947 ms
->    > CopySlice
->    < CopySlice                  0.6398 ms
->    > CopySlice
->    < CopySlice                  0.2002 ms
->    > CopySlice
->    < CopySlice                  0.691 ms
->    > CopySlice
->    < CopySlice                  0.207 ms
->    > CopySlice
->    < CopySlice                  0.8441 ms
->    > CopySlice
->    < CopySlice                  0.2068 ms
->    > CopySlice
->    < CopySlice                  0.7178 ms
->    > CopySlice
->    < CopySlice                  0.1998 ms
->    > CopySlice
->    < CopySlice                  0.6803 ms
->    > CopySlice
->    < CopySlice                  0.1842 ms
->    > CopySlice
->    < CopySlice                  0.6324 ms
->    > CopySlice
->    < CopySlice                  0.1922 ms
->    > CopySlice
->    < CopySlice                  0.6254 ms
->    > CopySlice
->    < CopySlice                  0.2116 ms
->    > CopySlice
->    < CopySlice                  0.6604 ms
->    > CopySlice
->    < CopySlice                  0.2129 ms
->    > CopySlice
->    < CopySlice                  0.6292 ms
->    > CopySlice
->    < CopySlice                  0.1816 ms
->    > CopySlice
->    < CopySlice                  0.6138 ms
->    > CopySlice
->    < CopySlice                  0.2193 ms
->    > CopySlice
->    < CopySlice                  0.6105 ms
->    > CopySlice
->    < CopySlice                  0.1808 ms
->    > CopySlice
->    < CopySlice                  0.5631 ms
->    > CopySlice
->    < CopySlice                  0.1764 ms
->    > CopySlice
->    < CopySlice                  0.5154 ms
->    > CopySlice
->    < CopySlice                  0.1832 ms
->    > CopySlice
->    < CopySlice                  0.6903 ms
->    > CopySlice
->    < CopySlice                  0.2283 ms
->    > CopySlice
->    < CopySlice                  0.6372 ms
->    > CopySlice
->    < CopySlice                  0.221 ms
->    > CopySlice
->    < CopySlice                  0.6908 ms
->    > CopySlice
->    < CopySlice                  0.2137 ms
->    > CopySlice
->    < CopySlice                  0.6102 ms
->    > CopySlice
->    < CopySlice                  0.1747 ms
->    > CopySlice
->    < CopySlice                  0.6248 ms
->    > CopySlice
->    < CopySlice                  0.2295 ms
->    > CopySlice
->    < CopySlice                  0.8936 ms
->    > CopySlice
->    < CopySlice                  0.2167 ms
->    > CopySlice
->    < CopySlice                  0.9402 ms
->    > CopySlice
->    < CopySlice                  0.1931 ms
->    > CopySlice
->    < CopySlice                  0.8763 ms
->    > CopySlice
->    < CopySlice                  0.1905 ms
->    > CopySlice
->    < CopySlice                  0.9067 ms
->    > CopySlice
->    < CopySlice                  0.2254 ms
->    > CopySlice
->    < CopySlice                  0.7164 ms
->    > CopySlice
->    < CopySlice                  0.2143 ms
->    > CopySlice
->    < CopySlice                  0.6665 ms
->    > CopySlice
->    < CopySlice                  0.1989 ms
->    > CopySlice
->    < CopySlice                  1.0606 ms
->    > CopySlice
->    < CopySlice                  0.2234 ms
->    > CopySlice
->    < CopySlice                  0.6502 ms
->    > CopySlice
->    < CopySlice                  0.1978 ms
->    > CopySlice
->    < CopySlice                  0.7001 ms
->    > CopySlice
->    < CopySlice                  0.2284 ms
->    > CopySlice
->    < CopySlice                  0.6411 ms
->    > CopySlice
->    < CopySlice                  0.1855 ms
->    > CopySlice
->    < CopySlice                  0.6945 ms
->    > CopySlice
->    < CopySlice                  0.2164 ms
->    > CopySlice
->    < CopySlice                  0.6951 ms
->    > CopySlice
->    < CopySlice                  0.3344 ms
->    > CopySlice
->    < CopySlice                  0.6966 ms
->    > CopySlice
->    < CopySlice                  0.2222 ms
->    > CopySlice
->    < CopySlice                  0.593 ms
->    > CopySlice
->    < CopySlice                  0.2044 ms
->    > CopySlice
->    < CopySlice                  0.6502 ms
->    > CopySlice
->    < CopySlice                  0.2504 ms
->    > CopySlice
->    < CopySlice                  0.6612 ms
->    > CopySlice
->    < CopySlice                  0.211 ms
->    > CopySlice
->    < CopySlice                  0.6521 ms
->    > CopySlice
->    < CopySlice                  0.1999 ms
->    > CopySlice
->    < CopySlice                  0.6199 ms
->    > CopySlice
->    < CopySlice                  0.1796 ms
->    > CopySlice
->    < CopySlice                  0.6124 ms
->    > CopySlice
->    < CopySlice                  0.1993 ms
->    > CopySlice
->    < CopySlice                  0.613 ms
->    > CopySlice
->    < CopySlice                  0.2025 ms
->    > CopySlice
->    < CopySlice                  0.6687 ms
->    > CopySlice
->    < CopySlice                  0.212 ms
->    > CopySlice
->    < CopySlice                  0.7471 ms
->    > CopySlice
->    < CopySlice                  0.2582 ms
->    > CopySlice
->    < CopySlice                  0.7016 ms
->    > CopySlice
->    < CopySlice                  0.2016 ms
->    > CopySlice
->    < CopySlice                  0.6624 ms
->    > CopySlice
->    < CopySlice                  0.2015 ms
->    > CopySlice
->    < CopySlice                  0.5875 ms
->    > CopySlice
->    < CopySlice                  0.2158 ms
->    > CopySlice
->    < CopySlice                  0.8796 ms
->    > CopySlice
->    < CopySlice                  0.1814 ms
->    > CopySlice
->    < CopySlice                  0.5611 ms
->    > CopySlice
->    < CopySlice                  0.1787 ms
->    > CopySlice
->    < CopySlice                  0.6322 ms
->    > CopySlice
->    < CopySlice                  0.2595 ms
->    > CopySlice
->    < CopySlice                  0.7079 ms
->    > CopySlice
->    < CopySlice                  0.2149 ms
->    > CopySlice
->    < CopySlice                  0.571 ms
->    > CopySlice
->    < CopySlice                  0.1948 ms
->    > CopySlice
->    < CopySlice                  0.5334 ms
->    > CopySlice
->    < CopySlice                  0.2066 ms
->    > CopySlice
->    < CopySlice                  0.6096 ms
->    > CopySlice
->    < CopySlice                  0.2113 ms
->    > CopySlice
->    < CopySlice                  0.9173 ms
->    > CopySlice
->    < CopySlice                  0.3464 ms
->    > CopySlice
->    < CopySlice                  0.8659 ms
->    > CopySlice
->    < CopySlice                  0.1792 ms
->    > CopySlice
->    < CopySlice                  0.7295 ms
->    > CopySlice
->    < CopySlice                  0.2207 ms
->    > CopySlice
->    < CopySlice                  0.6334 ms
->    > CopySlice
->    < CopySlice                  0.254 ms
->    > CopySlice
->    < CopySlice                  0.6161 ms
->    > CopySlice
->    < CopySlice                  0.1872 ms
->    > CopySlice
->    < CopySlice                  0.5859 ms
->    > CopySlice
->    < CopySlice                  0.2099 ms
->    > CopySlice
->    < CopySlice                  0.6062 ms
->    > CopySlice
->    < CopySlice                  0.2115 ms
->    > CopySlice
->    < CopySlice                  0.6542 ms
->    > CopySlice
->    < CopySlice                  0.2113 ms
->    > CopySlice
->    < CopySlice                  0.6418 ms
->    > CopySlice
->    < CopySlice                  0.3045 ms
->    > CopySlice
->    < CopySlice                  0.709 ms
->    > CopySlice
->    < CopySlice                  0.3078 ms
->    > CopySlice
->    < CopySlice                  0.75 ms
->    > CopySlice
->    < CopySlice                  0.1728 ms
->    > CopySlice
->    < CopySlice                  0.5416 ms
->    > CopySlice
->    < CopySlice                  0.2257 ms
->    > CopySlice
->    < CopySlice                  0.583 ms
->    > CopySlice
->    < CopySlice                  0.214 ms
->    > CopySlice
->    < CopySlice                  0.5456 ms
->    > CopySlice
->    < CopySlice                  0.1756 ms
->    > CopySlice
->    < CopySlice                  0.5707 ms
->    > CopySlice
->    < CopySlice                  0.2028 ms
->    > CopySlice
->    < CopySlice                  0.5722 ms
->    > CopySlice
->    < CopySlice                  0.2504 ms
->    > CopySlice
->    < CopySlice                  0.6101 ms
->    > CopySlice
->    < CopySlice                  0.2366 ms
->    > CopySlice
->    < CopySlice                  0.5308 ms
->    > CopySlice
->    < CopySlice                  0.1744 ms
->    > CopySlice
->    < CopySlice                  0.5421 ms
->    > CopySlice
->    < CopySlice                  0.1698 ms
->    > CopySlice
->    < CopySlice                  0.6632 ms
->    > CopySlice
->    < CopySlice                  0.2056 ms
->    > CopySlice
->    < CopySlice                  0.6861 ms
->    > CopySlice
->    < CopySlice                  0.2236 ms
->    > CopySlice
->    < CopySlice                  0.5389 ms
->    > CopySlice
->    < CopySlice                  0.2008 ms
->    > CopySlice
->    < CopySlice                  0.5659 ms
->    > CopySlice
->    < CopySlice                  0.2148 ms
->    > CopySlice
->    < CopySlice                  0.6653 ms
->    > CopySlice
->    < CopySlice                  0.2006 ms
->    > CopySlice
->    < CopySlice                  0.6109 ms
->    > CopySlice
->    < CopySlice                  0.1948 ms
->    > CopySlice
->    < CopySlice                  0.5073 ms
->    > CopySlice
->    < CopySlice                  0.1933 ms
->    > CopySlice
->    < CopySlice                  0.5403 ms
->    > CopySlice
->    < CopySlice                  0.1737 ms
+>    < CopySlice                  0.1819 ms
 >    > CopySlice
 >    < CopySlice                  0.5963 ms
 >    > CopySlice
->    < CopySlice                  0.2014 ms
+>    < CopySlice                  0.1896 ms
 >    > CopySlice
->    < CopySlice                  0.6281 ms
+>    < CopySlice                  0.6839 ms
 >    > CopySlice
->    < CopySlice                  0.1845 ms
+>    < CopySlice                  0.1865 ms
 >    > CopySlice
->    < CopySlice                  0.5027 ms
+>    < CopySlice                  0.6539 ms
 >    > CopySlice
->    < CopySlice                  0.1997 ms
+>    < CopySlice                  0.2128 ms
 >    > CopySlice
->    < CopySlice                  0.6156 ms
+>    < CopySlice                  0.641 ms
 >    > CopySlice
->    < CopySlice                  0.2312 ms
+>    < CopySlice                  0.2093 ms
 >    > CopySlice
->    < CopySlice                  0.8862 ms
+>    < CopySlice                  0.6258 ms
 >    > CopySlice
->    < CopySlice                  0.1734 ms
+>    < CopySlice                  0.192 ms
 >    > CopySlice
->    < CopySlice                  0.6448 ms
+>    < CopySlice                  0.6017 ms
 >    > CopySlice
->    < CopySlice                  0.178 ms
+>    < CopySlice                  0.1782 ms
 >    > CopySlice
->    < CopySlice                  0.5352 ms
+>    < CopySlice                  0.6035 ms
 >    > CopySlice
->    < CopySlice                  0.2065 ms
+>    < CopySlice                  0.1826 ms
 >    > CopySlice
->    < CopySlice                  0.6228 ms
+>    < CopySlice                  0.657 ms
 >    > CopySlice
->    < CopySlice                  0.3096 ms
+>    < CopySlice                  0.1888 ms
 >    > CopySlice
->    < CopySlice                  0.8403 ms
+>    < CopySlice                  0.5751 ms
 >    > CopySlice
->    < CopySlice                  0.204 ms
+>    < CopySlice                  0.1938 ms
 >    > CopySlice
->    < CopySlice                  0.5508 ms
+>    < CopySlice                  0.5794 ms
 >    > CopySlice
->    < CopySlice                  0.1844 ms
+>    < CopySlice                  0.1975 ms
 >    > CopySlice
->    < CopySlice                  0.5599 ms
+>    < CopySlice                  0.5485 ms
 >    > CopySlice
->    < CopySlice                  0.1893 ms
+>    < CopySlice                  0.1723 ms
 >    > CopySlice
->    < CopySlice                  0.5604 ms
+>    < CopySlice                  0.5923 ms
 >    > CopySlice
->    < CopySlice                  0.2099 ms
+>    < CopySlice                  0.1806 ms
 >    > CopySlice
->    < CopySlice                  0.6493 ms
+>    < CopySlice                  0.5451 ms
 >    > CopySlice
->    < CopySlice                  0.2083 ms
+>    < CopySlice                  0.1786 ms
 >    > CopySlice
->    < CopySlice                  0.6352 ms
+>    < CopySlice                  0.5188 ms
 >    > CopySlice
->    < CopySlice                  0.1766 ms
+>    < CopySlice                  0.1686 ms
 >    > CopySlice
->    < CopySlice                  0.5992 ms
+>    < CopySlice                  0.6287 ms
 >    > CopySlice
->    < CopySlice                  0.1818 ms
+>    < CopySlice                  0.2616 ms
 >    > CopySlice
->    < CopySlice                  0.5863 ms
+>    < CopySlice                  0.5532 ms
 >    > CopySlice
->    < CopySlice                  0.1981 ms
+>    < CopySlice                  0.1694 ms
 >    > CopySlice
->    < CopySlice                  0.5983 ms
+>    < CopySlice                  0.5619 ms
 >    > CopySlice
->    < CopySlice                  0.1946 ms
+>    < CopySlice                  0.1739 ms
 >    > CopySlice
->    < CopySlice                  0.6722 ms
+>    < CopySlice                  0.5289 ms
 >    > CopySlice
->    < CopySlice                  0.1866 ms
+>    < CopySlice                  0.1896 ms
 >    > CopySlice
->    < CopySlice                  0.6693 ms
+>    < CopySlice                  0.5329 ms
 >    > CopySlice
->    < CopySlice                  0.2257 ms
+>    < CopySlice                  0.1762 ms
 >    > CopySlice
->    < CopySlice                  0.6081 ms
+>    < CopySlice                  0.5341 ms
 >    > CopySlice
->    < CopySlice                  0.1981 ms
+>    < CopySlice                  0.2073 ms
 >    > CopySlice
->    < CopySlice                  0.5721 ms
+>    < CopySlice                  0.5467 ms
 >    > CopySlice
->    < CopySlice                  0.2138 ms
+>    < CopySlice                  0.172 ms
 >    > CopySlice
->    < CopySlice                  0.6612 ms
+>    < CopySlice                  0.5337 ms
 >    > CopySlice
->    < CopySlice                  0.2743 ms
+>    < CopySlice                  0.2597 ms
 >    > CopySlice
->    < CopySlice                  0.5804 ms
+>    < CopySlice                  0.5441 ms
 >    > CopySlice
->    < CopySlice                  0.1868 ms
+>    < CopySlice                  0.2308 ms
 >    > CopySlice
->    < CopySlice                  0.5611 ms
+>    < CopySlice                  0.5312 ms
 >    > CopySlice
->    < CopySlice                  0.1824 ms
+>    < CopySlice                  0.1694 ms
 >    > CopySlice
->    < CopySlice                  0.5943 ms
+>    < CopySlice                  0.5315 ms
 >    > CopySlice
->    < CopySlice                  0.2563 ms
+>    < CopySlice                  0.1748 ms
 >    > CopySlice
->    < CopySlice                  0.6588 ms
->    > CopySlice
->    < CopySlice                  0.2456 ms
->    > CopySlice
->    < CopySlice                  0.5516 ms
->    > CopySlice
->    < CopySlice                  0.1737 ms
->    > CopySlice
->    < CopySlice                  0.5452 ms
->    > CopySlice
->    < CopySlice                  0.1974 ms
->    > CopySlice
->    < CopySlice                  0.6214 ms
->    > CopySlice
->    < CopySlice                  0.2181 ms
->    > CopySlice
->    < CopySlice                  0.7646 ms
+>    < CopySlice                  0.5731 ms
 >    > CopySlice
 >    < CopySlice                  0.2184 ms
 >    > CopySlice
->    < CopySlice                  0.7279 ms
+>    < CopySlice                  0.5788 ms
 >    > CopySlice
->    < CopySlice                  0.1901 ms
+>    < CopySlice                  0.1757 ms
 >    > CopySlice
->    < CopySlice                  0.5615 ms
+>    < CopySlice                  0.5358 ms
 >    > CopySlice
->    < CopySlice                  0.2565 ms
->   < StatisticsOfLabelledPixels  816.8588 ms
->  < StatisticsOfBackgroundAndLabelledPixels821.1235 ms
+>    < CopySlice                  0.1701 ms
+>    > CopySlice
+>    < CopySlice                  0.5161 ms
+>    > CopySlice
+>    < CopySlice                  0.1745 ms
+>    > CopySlice
+>    < CopySlice                  0.5194 ms
+>    > CopySlice
+>    < CopySlice                  0.2523 ms
+>    > CopySlice
+>    < CopySlice                  0.608 ms
+>    > CopySlice
+>    < CopySlice                  0.2144 ms
+>    > CopySlice
+>    < CopySlice                  0.6039 ms
+>    > CopySlice
+>    < CopySlice                  0.1792 ms
+>    > CopySlice
+>    < CopySlice                  0.5982 ms
+>    > CopySlice
+>    < CopySlice                  0.2295 ms
+>    > CopySlice
+>    < CopySlice                  0.6042 ms
+>    > CopySlice
+>    < CopySlice                  0.1866 ms
+>    > CopySlice
+>    < CopySlice                  0.6206 ms
+>    > CopySlice
+>    < CopySlice                  0.2897 ms
+>    > CopySlice
+>    < CopySlice                  0.536 ms
+>    > CopySlice
+>    < CopySlice                  0.1763 ms
+>    > CopySlice
+>    < CopySlice                  0.5144 ms
+>    > CopySlice
+>    < CopySlice                  0.1692 ms
+>    > CopySlice
+>    < CopySlice                  0.5397 ms
+>    > CopySlice
+>    < CopySlice                  0.2491 ms
+>    > CopySlice
+>    < CopySlice                  0.5443 ms
+>    > CopySlice
+>    < CopySlice                  0.1742 ms
+>    > CopySlice
+>    < CopySlice                  0.5314 ms
+>    > CopySlice
+>    < CopySlice                  0.1728 ms
+>    > CopySlice
+>    < CopySlice                  0.6147 ms
+>    > CopySlice
+>    < CopySlice                  0.1703 ms
+>    > CopySlice
+>    < CopySlice                  0.5792 ms
+>    > CopySlice
+>    < CopySlice                  0.1803 ms
+>    > CopySlice
+>    < CopySlice                  0.544 ms
+>    > CopySlice
+>    < CopySlice                  0.1756 ms
+>    > CopySlice
+>    < CopySlice                  0.5463 ms
+>    > CopySlice
+>    < CopySlice                  0.2634 ms
+>    > CopySlice
+>    < CopySlice                  0.5304 ms
+>    > CopySlice
+>    < CopySlice                  0.1888 ms
+>    > CopySlice
+>    < CopySlice                  0.5068 ms
+>    > CopySlice
+>    < CopySlice                  0.2416 ms
+>    > CopySlice
+>    < CopySlice                  0.5065 ms
+>    > CopySlice
+>    < CopySlice                  0.1686 ms
+>    > CopySlice
+>    < CopySlice                  0.5122 ms
+>    > CopySlice
+>    < CopySlice                  0.1676 ms
+>    > CopySlice
+>    < CopySlice                  0.676 ms
+>    > CopySlice
+>    < CopySlice                  0.1919 ms
+>    > CopySlice
+>    < CopySlice                  0.7422 ms
+>    > CopySlice
+>    < CopySlice                  0.2458 ms
+>    > CopySlice
+>    < CopySlice                  0.6326 ms
+>    > CopySlice
+>    < CopySlice                  0.2224 ms
+>    > CopySlice
+>    < CopySlice                  0.708 ms
+>    > CopySlice
+>    < CopySlice                  0.1975 ms
+>    > CopySlice
+>    < CopySlice                  0.676 ms
+>    > CopySlice
+>    < CopySlice                  0.2094 ms
+>    > CopySlice
+>    < CopySlice                  0.6613 ms
+>    > CopySlice
+>    < CopySlice                  0.2107 ms
+>    > CopySlice
+>    < CopySlice                  0.7997 ms
+>    > CopySlice
+>    < CopySlice                  0.3181 ms
+>    > CopySlice
+>    < CopySlice                  0.5702 ms
+>    > CopySlice
+>    < CopySlice                  0.247 ms
+>    > CopySlice
+>    < CopySlice                  0.6833 ms
+>    > CopySlice
+>    < CopySlice                  0.2197 ms
+>    > CopySlice
+>    < CopySlice                  1.0132 ms
+>    > CopySlice
+>    < CopySlice                  0.229 ms
+>    > CopySlice
+>    < CopySlice                  0.6578 ms
+>    > CopySlice
+>    < CopySlice                  0.2718 ms
+>    > CopySlice
+>    < CopySlice                  0.6065 ms
+>    > CopySlice
+>    < CopySlice                  0.1937 ms
+>    > CopySlice
+>    < CopySlice                  0.6462 ms
+>    > CopySlice
+>    < CopySlice                  0.2375 ms
+>    > CopySlice
+>    < CopySlice                  0.6941 ms
+>    > CopySlice
+>    < CopySlice                  0.211 ms
+>    > CopySlice
+>    < CopySlice                  0.6905 ms
+>    > CopySlice
+>    < CopySlice                  0.2225 ms
+>    > CopySlice
+>    < CopySlice                  0.7558 ms
+>    > CopySlice
+>    < CopySlice                  0.2119 ms
+>    > CopySlice
+>    < CopySlice                  0.7142 ms
+>    > CopySlice
+>    < CopySlice                  0.2191 ms
+>    > CopySlice
+>    < CopySlice                  0.586 ms
+>    > CopySlice
+>    < CopySlice                  0.1852 ms
+>    > CopySlice
+>    < CopySlice                  0.5575 ms
+>    > CopySlice
+>    < CopySlice                  0.2073 ms
+>    > CopySlice
+>    < CopySlice                  0.6916 ms
+>    > CopySlice
+>    < CopySlice                  0.2205 ms
+>    > CopySlice
+>    < CopySlice                  0.5861 ms
+>    > CopySlice
+>    < CopySlice                  0.2124 ms
+>    > CopySlice
+>    < CopySlice                  0.6027 ms
+>    > CopySlice
+>    < CopySlice                  0.1941 ms
+>    > CopySlice
+>    < CopySlice                  0.623 ms
+>    > CopySlice
+>    < CopySlice                  0.2038 ms
+>    > CopySlice
+>    < CopySlice                  0.5897 ms
+>    > CopySlice
+>    < CopySlice                  0.2015 ms
+>    > CopySlice
+>    < CopySlice                  0.5743 ms
+>    > CopySlice
+>    < CopySlice                  0.1977 ms
+>    > CopySlice
+>    < CopySlice                  0.5627 ms
+>    > CopySlice
+>    < CopySlice                  0.2017 ms
+>    > CopySlice
+>    < CopySlice                  0.7999 ms
+>    > CopySlice
+>    < CopySlice                  0.2158 ms
+>    > CopySlice
+>    < CopySlice                  0.6257 ms
+>    > CopySlice
+>    < CopySlice                  0.2004 ms
+>    > CopySlice
+>    < CopySlice                  0.6216 ms
+>    > CopySlice
+>    < CopySlice                  0.2027 ms
+>    > CopySlice
+>    < CopySlice                  0.6893 ms
+>    > CopySlice
+>    < CopySlice                  0.2998 ms
+>    > CopySlice
+>    < CopySlice                  0.6689 ms
+>    > CopySlice
+>    < CopySlice                  0.1876 ms
+>    > CopySlice
+>    < CopySlice                  0.7651 ms
+>    > CopySlice
+>    < CopySlice                  0.2214 ms
+>    > CopySlice
+>    < CopySlice                  0.6186 ms
+>    > CopySlice
+>    < CopySlice                  0.2045 ms
+>    > CopySlice
+>    < CopySlice                  0.6882 ms
+>    > CopySlice
+>    < CopySlice                  0.283 ms
+>    > CopySlice
+>    < CopySlice                  0.6433 ms
+>    > CopySlice
+>    < CopySlice                  0.1897 ms
+>    > CopySlice
+>    < CopySlice                  0.6136 ms
+>    > CopySlice
+>    < CopySlice                  0.1948 ms
+>    > CopySlice
+>    < CopySlice                  0.6547 ms
+>    > CopySlice
+>    < CopySlice                  0.2358 ms
+>    > CopySlice
+>    < CopySlice                  0.6801 ms
+>    > CopySlice
+>    < CopySlice                  0.21 ms
+>    > CopySlice
+>    < CopySlice                  0.6629 ms
+>    > CopySlice
+>    < CopySlice                  0.1833 ms
+>    > CopySlice
+>    < CopySlice                  0.5533 ms
+>    > CopySlice
+>    < CopySlice                  0.2708 ms
+>    > CopySlice
+>    < CopySlice                  0.5894 ms
+>    > CopySlice
+>    < CopySlice                  0.1909 ms
+>    > CopySlice
+>    < CopySlice                  0.644 ms
+>    > CopySlice
+>    < CopySlice                  0.2092 ms
+>    > CopySlice
+>    < CopySlice                  0.6005 ms
+>    > CopySlice
+>    < CopySlice                  0.1864 ms
+>    > CopySlice
+>    < CopySlice                  0.5754 ms
+>    > CopySlice
+>    < CopySlice                  0.2129 ms
+>    > CopySlice
+>    < CopySlice                  0.6921 ms
+>    > CopySlice
+>    < CopySlice                  0.2083 ms
+>    > CopySlice
+>    < CopySlice                  0.6477 ms
+>    > CopySlice
+>    < CopySlice                  0.2039 ms
+>    > CopySlice
+>    < CopySlice                  0.6099 ms
+>    > CopySlice
+>    < CopySlice                  0.2519 ms
+>    > CopySlice
+>    < CopySlice                  0.6174 ms
+>    > CopySlice
+>    < CopySlice                  0.2861 ms
+>    > CopySlice
+>    < CopySlice                  0.64 ms
+>    > CopySlice
+>    < CopySlice                  0.1908 ms
+>    > CopySlice
+>    < CopySlice                  0.6472 ms
+>    > CopySlice
+>    < CopySlice                  0.2221 ms
+>    > CopySlice
+>    < CopySlice                  0.5765 ms
+>    > CopySlice
+>    < CopySlice                  0.2083 ms
+>    > CopySlice
+>    < CopySlice                  0.5938 ms
+>    > CopySlice
+>    < CopySlice                  0.2048 ms
+>    > CopySlice
+>    < CopySlice                  0.6331 ms
+>    > CopySlice
+>    < CopySlice                  0.1929 ms
+>    > CopySlice
+>    < CopySlice                  0.7537 ms
+>    > CopySlice
+>    < CopySlice                  0.2387 ms
+>    > CopySlice
+>    < CopySlice                  0.5745 ms
+>    > CopySlice
+>    < CopySlice                  0.2071 ms
+>    > CopySlice
+>    < CopySlice                  0.662 ms
+>    > CopySlice
+>    < CopySlice                  0.2059 ms
+>    > CopySlice
+>    < CopySlice                  0.6719 ms
+>    > CopySlice
+>    < CopySlice                  0.193 ms
+>    > CopySlice
+>    < CopySlice                  0.6155 ms
+>    > CopySlice
+>    < CopySlice                  0.2084 ms
+>    > CopySlice
+>    < CopySlice                  0.6327 ms
+>    > CopySlice
+>    < CopySlice                  0.2049 ms
+>    > CopySlice
+>    < CopySlice                  0.5862 ms
+>    > CopySlice
+>    < CopySlice                  0.2089 ms
+>    > CopySlice
+>    < CopySlice                  0.7084 ms
+>    > CopySlice
+>    < CopySlice                  0.2105 ms
+>    > CopySlice
+>    < CopySlice                  0.641 ms
+>    > CopySlice
+>    < CopySlice                  0.1984 ms
+>    > CopySlice
+>    < CopySlice                  0.58 ms
+>    > CopySlice
+>    < CopySlice                  0.2956 ms
+>    > CopySlice
+>    < CopySlice                  0.5702 ms
+>    > CopySlice
+>    < CopySlice                  0.1999 ms
+>    > CopySlice
+>    < CopySlice                  0.6299 ms
+>    > CopySlice
+>    < CopySlice                  0.2605 ms
+>    > CopySlice
+>    < CopySlice                  0.6895 ms
+>    > CopySlice
+>    < CopySlice                  0.2023 ms
+>    > CopySlice
+>    < CopySlice                  0.686 ms
+>    > CopySlice
+>    < CopySlice                  0.2827 ms
+>    > CopySlice
+>    < CopySlice                  0.6172 ms
+>    > CopySlice
+>    < CopySlice                  0.2249 ms
+>    > CopySlice
+>    < CopySlice                  0.6433 ms
+>    > CopySlice
+>    < CopySlice                  0.2057 ms
+>    > CopySlice
+>    < CopySlice                  0.6656 ms
+>    > CopySlice
+>    < CopySlice                  0.1996 ms
+>    > CopySlice
+>    < CopySlice                  0.5814 ms
+>    > CopySlice
+>    < CopySlice                  0.1756 ms
+>    > CopySlice
+>    < CopySlice                  0.5626 ms
+>    > CopySlice
+>    < CopySlice                  0.2812 ms
+>    > CopySlice
+>    < CopySlice                  0.6455 ms
+>    > CopySlice
+>    < CopySlice                  0.205 ms
+>    > CopySlice
+>    < CopySlice                  0.691 ms
+>    > CopySlice
+>    < CopySlice                  0.2061 ms
+>    > CopySlice
+>    < CopySlice                  0.5902 ms
+>    > CopySlice
+>    < CopySlice                  0.2078 ms
+>    > CopySlice
+>    < CopySlice                  0.6603 ms
+>    > CopySlice
+>    < CopySlice                  0.2306 ms
+>    > CopySlice
+>    < CopySlice                  0.6994 ms
+>    > CopySlice
+>    < CopySlice                  0.2196 ms
+>    > CopySlice
+>    < CopySlice                  0.654 ms
+>    > CopySlice
+>    < CopySlice                  0.2007 ms
+>    > CopySlice
+>    < CopySlice                  0.6354 ms
+>    > CopySlice
+>    < CopySlice                  0.2449 ms
+>    > CopySlice
+>    < CopySlice                  0.6691 ms
+>    > CopySlice
+>    < CopySlice                  0.1952 ms
+>    > CopySlice
+>    < CopySlice                  0.7035 ms
+>    > CopySlice
+>    < CopySlice                  0.2546 ms
+>    > CopySlice
+>    < CopySlice                  0.6484 ms
+>    > CopySlice
+>    < CopySlice                  0.1837 ms
+>    > CopySlice
+>    < CopySlice                  0.7479 ms
+>    > CopySlice
+>    < CopySlice                  0.3163 ms
+>    > CopySlice
+>    < CopySlice                  0.6387 ms
+>    > CopySlice
+>    < CopySlice                  0.2115 ms
+>    > CopySlice
+>    < CopySlice                  0.5947 ms
+>    > CopySlice
+>    < CopySlice                  0.183 ms
+>    > CopySlice
+>    < CopySlice                  0.7263 ms
+>    > CopySlice
+>    < CopySlice                  0.2112 ms
+>    > CopySlice
+>    < CopySlice                  0.6426 ms
+>    > CopySlice
+>    < CopySlice                  0.2887 ms
+>    > CopySlice
+>    < CopySlice                  0.6105 ms
+>    > CopySlice
+>    < CopySlice                  0.2683 ms
+>    > CopySlice
+>    < CopySlice                  0.5756 ms
+>    > CopySlice
+>    < CopySlice                  0.2182 ms
+>    > CopySlice
+>    < CopySlice                  0.5383 ms
+>    > CopySlice
+>    < CopySlice                  0.1925 ms
+>    > CopySlice
+>    < CopySlice                  0.5747 ms
+>    > CopySlice
+>    < CopySlice                  0.2763 ms
+>    > CopySlice
+>    < CopySlice                  0.5652 ms
+>    > CopySlice
+>    < CopySlice                  0.1978 ms
+>    > CopySlice
+>    < CopySlice                  0.5743 ms
+>    > CopySlice
+>    < CopySlice                  0.291 ms
+>    > CopySlice
+>    < CopySlice                  0.5818 ms
+>    > CopySlice
+>    < CopySlice                  0.2094 ms
+>    > CopySlice
+>    < CopySlice                  0.6221 ms
+>    > CopySlice
+>    < CopySlice                  0.2164 ms
+>    > CopySlice
+>    < CopySlice                  0.6544 ms
+>    > CopySlice
+>    < CopySlice                  0.1894 ms
+>    > CopySlice
+>    < CopySlice                  0.5926 ms
+>    > CopySlice
+>    < CopySlice                  0.2154 ms
+>    > CopySlice
+>    < CopySlice                  0.6087 ms
+>    > CopySlice
+>    < CopySlice                  0.2306 ms
+>    > CopySlice
+>    < CopySlice                  0.5925 ms
+>    > CopySlice
+>    < CopySlice                  0.1748 ms
+>    > CopySlice
+>    < CopySlice                  0.5594 ms
+>    > CopySlice
+>    < CopySlice                  0.2772 ms
+>    > CopySlice
+>    < CopySlice                  0.7453 ms
+>    > CopySlice
+>    < CopySlice                  0.203 ms
+>    > CopySlice
+>    < CopySlice                  0.6488 ms
+>    > CopySlice
+>    < CopySlice                  0.2056 ms
+>    > CopySlice
+>    < CopySlice                  0.5891 ms
+>    > CopySlice
+>    < CopySlice                  0.2284 ms
+>    > CopySlice
+>    < CopySlice                  0.5785 ms
+>    > CopySlice
+>    < CopySlice                  0.2034 ms
+>    > CopySlice
+>    < CopySlice                  0.5931 ms
+>    > CopySlice
+>    < CopySlice                  0.216 ms
+>    > CopySlice
+>    < CopySlice                  0.5965 ms
+>    > CopySlice
+>    < CopySlice                  0.1984 ms
+>    > CopySlice
+>    < CopySlice                  0.5897 ms
+>    > CopySlice
+>    < CopySlice                  0.2277 ms
+>    > CopySlice
+>    < CopySlice                  0.6092 ms
+>    > CopySlice
+>    < CopySlice                  0.2092 ms
+>    > CopySlice
+>    < CopySlice                  0.6332 ms
+>    > CopySlice
+>    < CopySlice                  0.2023 ms
+>    > CopySlice
+>    < CopySlice                  0.6279 ms
+>    > CopySlice
+>    < CopySlice                  0.2058 ms
+>    > CopySlice
+>    < CopySlice                  0.7962 ms
+>    > CopySlice
+>    < CopySlice                  0.3165 ms
+>    > CopySlice
+>    < CopySlice                  0.7155 ms
+>    > CopySlice
+>    < CopySlice                  0.2674 ms
+>    > CopySlice
+>    < CopySlice                  0.6912 ms
+>    > CopySlice
+>    < CopySlice                  0.2026 ms
+>    > CopySlice
+>    < CopySlice                  0.64 ms
+>    > CopySlice
+>    < CopySlice                  0.1816 ms
+>    > CopySlice
+>    < CopySlice                  0.5563 ms
+>    > CopySlice
+>    < CopySlice                  0.2133 ms
+>    > CopySlice
+>    < CopySlice                  0.603 ms
+>    > CopySlice
+>    < CopySlice                  0.2055 ms
+>    > CopySlice
+>    < CopySlice                  0.719 ms
+>    > CopySlice
+>    < CopySlice                  0.2196 ms
+>    > CopySlice
+>    < CopySlice                  0.6674 ms
+>    > CopySlice
+>    < CopySlice                  0.1976 ms
+>    > CopySlice
+>    < CopySlice                  0.6959 ms
+>    > CopySlice
+>    < CopySlice                  0.2851 ms
+>    > CopySlice
+>    < CopySlice                  0.5828 ms
+>    > CopySlice
+>    < CopySlice                  0.1837 ms
+>    > CopySlice
+>    < CopySlice                  0.6213 ms
+>    > CopySlice
+>    < CopySlice                  0.1978 ms
+>    > CopySlice
+>    < CopySlice                  0.5672 ms
+>    > CopySlice
+>    < CopySlice                  0.1936 ms
+>    > CopySlice
+>    < CopySlice                  0.5879 ms
+>    > CopySlice
+>    < CopySlice                  0.2047 ms
+>    > CopySlice
+>    < CopySlice                  0.8409 ms
+>    > CopySlice
+>    < CopySlice                  0.2097 ms
+>    > CopySlice
+>    < CopySlice                  0.6779 ms
+>    > CopySlice
+>    < CopySlice                  0.1863 ms
+>    > CopySlice
+>    < CopySlice                  0.5813 ms
+>    > CopySlice
+>    < CopySlice                  0.2459 ms
+>    > CopySlice
+>    < CopySlice                  0.5595 ms
+>    > CopySlice
+>    < CopySlice                  0.2457 ms
+>    > CopySlice
+>    < CopySlice                  0.57 ms
+>    > CopySlice
+>    < CopySlice                  0.1897 ms
+>    > CopySlice
+>    < CopySlice                  0.5794 ms
+>    > CopySlice
+>    < CopySlice                  0.1808 ms
+>    > CopySlice
+>    < CopySlice                  0.6775 ms
+>    > CopySlice
+>    < CopySlice                  0.2604 ms
+>    > CopySlice
+>    < CopySlice                  0.6173 ms
+>    > CopySlice
+>    < CopySlice                  0.1801 ms
+>    > CopySlice
+>    < CopySlice                  0.6411 ms
+>    > CopySlice
+>    < CopySlice                  0.1892 ms
+>    > CopySlice
+>    < CopySlice                  0.722 ms
+>    > CopySlice
+>    < CopySlice                  0.2638 ms
+>    > CopySlice
+>    < CopySlice                  0.787 ms
+>    > CopySlice
+>    < CopySlice                  0.2578 ms
+>    > CopySlice
+>    < CopySlice                  0.6232 ms
+>    > CopySlice
+>    < CopySlice                  0.2075 ms
+>    > CopySlice
+>    < CopySlice                  0.8134 ms
+>    > CopySlice
+>    < CopySlice                  0.2543 ms
+>    > CopySlice
+>    < CopySlice                  0.7577 ms
+>    > CopySlice
+>    < CopySlice                  0.2675 ms
+>    > CopySlice
+>    < CopySlice                  0.6404 ms
+>    > CopySlice
+>    < CopySlice                  0.2678 ms
+>    > CopySlice
+>    < CopySlice                  0.8938 ms
+>    > CopySlice
+>    < CopySlice                  0.2599 ms
+>    > CopySlice
+>    < CopySlice                  0.7099 ms
+>    > CopySlice
+>    < CopySlice                  0.2662 ms
+>    > CopySlice
+>    < CopySlice                  0.6619 ms
+>    > CopySlice
+>    < CopySlice                  0.2367 ms
+>    > CopySlice
+>    < CopySlice                  0.6643 ms
+>    > CopySlice
+>    < CopySlice                  0.2325 ms
+>    > CopySlice
+>    < CopySlice                  0.6748 ms
+>    > CopySlice
+>    < CopySlice                  0.289 ms
+>    > CopySlice
+>    < CopySlice                  0.6242 ms
+>    > CopySlice
+>    < CopySlice                  0.2014 ms
+>   < StatisticsOfLabelledPixels  1143.4018 ms
+>  < StatisticsOfBackgroundAndLabelledPixels1176.96 ms
 >  > PushResultsTableColumn
 >   > Copy
->   < Copy                        0.3383 ms
->  < PushResultsTableColumn       1.0741 ms
+>   < Copy                        0.4698 ms
+>  < PushResultsTableColumn       1.2462 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           7.7908 ms
+>  < ReplaceIntensities           26.0471 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.814 ms
+>  < MaximumZProjection           0.8355 ms
 >  > SmallerConstant
->  < SmallerConstant              0.4579 ms
+>  < SmallerConstant              13.2893 ms
 >  > GreaterOrEqualConstant
->  < GreaterOrEqualConstant       0.4707 ms
+>  < GreaterOrEqualConstant       12.801 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           8.3586 ms
+>  < ReplaceIntensities           7.8833 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           7.7973 ms
+>  < ReplaceIntensities           8.1147 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8561 ms
+>  < MaximumZProjection           0.7722 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8186 ms
+>  < MaximumZProjection           0.9578 ms
 >  > MinimumOfTouchingNeighbors
->  < MinimumOfTouchingNeighbors   1.3968 ms
+>  < MinimumOfTouchingNeighbors   4.2116 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           8.4356 ms
+>  < ReplaceIntensities           8.2114 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.7966 ms
+>  < MaximumZProjection           0.8552 ms
 >  > SmallerConstant
->  < SmallerConstant              0.3368 ms
+>  < SmallerConstant              0.2937 ms
 >  > GreaterOrEqualConstant
->  < GreaterOrEqualConstant       0.3198 ms
+>  < GreaterOrEqualConstant       0.228 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           8.8922 ms
+>  < ReplaceIntensities           7.9932 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           8.1392 ms
+>  < ReplaceIntensities           8.1928 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9114 ms
+>  < MaximumZProjection           0.7955 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.0035 ms
+>  < MaximumZProjection           0.9131 ms
 >  > GreaterOrEqualConstant
->  < GreaterOrEqualConstant       0.4007 ms
+>  < GreaterOrEqualConstant       0.3734 ms
 >  > ExcludeLabels
 >   > ReplaceIntensities
->   < ReplaceIntensities          8.2478 ms
->  < ExcludeLabels                8.5974 ms
+>   < ReplaceIntensities          7.9824 ms
+>  < ExcludeLabels                8.3484 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9011 ms
+>  < MaximumZProjection           0.7909 ms
 >  > SmallerConstant
->  < SmallerConstant              0.3097 ms
+>  < SmallerConstant              0.4226 ms
 >  > GreaterOrEqualConstant
->  < GreaterOrEqualConstant       0.2478 ms
+>  < GreaterOrEqualConstant       0.2078 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.7315 ms
+>  < MaximumZProjection           0.8014 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           8.5806 ms
+>  < ReplaceIntensities           8.1426 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           8.7063 ms
+>  < ReplaceIntensities           8.1331 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8165 ms
+>  < MaximumZProjection           0.9057 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.7606 ms
+>  < MaximumZProjection           0.832 ms
 >  > PullAsROI
->  < PullAsROI                    7.7233 ms
+>  < PullAsROI                    33.3067 ms
 >  > PullAsROI
->  < PullAsROI                    5.6049 ms
-> < timeTracing                   3467.2337 ms
+>  < PullAsROI                    29.7077 ms
+> < timeTracing                   4392.9165 ms
 >  
 </pre>
 
-Also let's see how much memory this workflow used. Cleaning up by the end is also important.
+Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 
-<pre class="highlight">
+```java
 Ext.CLIJ2_reportMemory();
 
-// clean up finally.
+// finally, clean up
 Ext.CLIJ2_clear();
-</pre>
+```
 <pre>
 > GPU contains 23 images.
-> - CLIJ2_replaceIntensities_result93[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@839425b] 204.8 Mb
-> - CLIJ2_replaceIntensities_result92[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@21ad17b0] 204.8 Mb
-> - CLIJ2_greaterOrEqualConstant_result91[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@721cece0] 5.9 kb
-> - CLIJ2_pushResultsTableColumn_result87[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3a9ad6df] 5.9 kb
-> - CLIJ2_replaceIntensities_result97[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7873604d] 204.8 Mb
-> - CLIJ2_greaterOrEqualConstant_result105[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@31aaf864] 5.9 kb
-> - CLIJ2_excludeLabels_result106[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2444695d] 204.8 Mb
-> - CLIJ2_maximumZProjection_result114[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@48847f24] 984.6 kb
-> - CLIJ2_maximumZProjection_result113[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2b960f71] 984.6 kb
-> - lund1051_labelled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4d99bbbf] 204.8 Mb
-> - CLIJ2_replaceIntensities_result88[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4a103dd0] 204.8 Mb
-> - lund1051_resampled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@210606e9] 204.8 Mb
-> - CLIJ2_greaterOrEqualConstant_result100[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3a70783f] 5.9 kb
-> - CLIJ2_generateTouchMatrix_result86[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3ab4788d] 8.6 Mb
-> - CLIJ2_smallerConstant_result108[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@71012cb6] 5.9 kb
-> - CLIJ2_replaceIntensities_result101[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@60a14d31] 204.8 Mb
-> - CLIJ2_replaceIntensities_result112[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@59a9709a] 204.8 Mb
-> - CLIJ2_minimumOfTouchingNeighbors_result96[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@40c00b32] 5.9 kb
-> - CLIJ2_replaceIntensities_result102[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@385ceb00] 204.8 Mb
-> - CLIJ2_smallerConstant_result90[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@52fee1ff] 5.9 kb
-> - CLIJ2_replaceIntensities_result111[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4041669a] 204.8 Mb
-> - CLIJ2_greaterOrEqualConstant_result109[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@187c3b] 5.9 kb
-> - CLIJ2_smallerConstant_result99[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5fc393d3] 5.9 kb
+> - CLIJ2_greaterOrEqualConstant_result147[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3050f68b] 5.9 kb
+> - CLIJ2_greaterOrEqualConstant_result156[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@65299655] 5.9 kb
+> - CLIJ2_generateTouchMatrix_result133[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@6a7866a0] 8.6 Mb
+> - CLIJ2_greaterOrEqualConstant_result138[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@afa8429] 5.9 kb
+> - lund1051_labelled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3da9df53] 204.8 Mb
+> - lund1051_resampled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@141b7d8d] 204.8 Mb
+> - CLIJ2_minimumOfTouchingNeighbors_result143[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3dff54c8] 5.9 kb
+> - CLIJ2_greaterOrEqualConstant_result152[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@637a5492] 5.9 kb
+> - CLIJ2_excludeLabels_result153[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@105a5ce9] 204.8 Mb
+> - CLIJ2_maximumZProjection_result161[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5f62ac7a] 984.6 kb
+> - CLIJ2_replaceIntensities_result149[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@187cea4a] 204.8 Mb
+> - CLIJ2_pushResultsTableColumn_result134[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2993f313] 5.9 kb
+> - CLIJ2_replaceIntensities_result139[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@6b6c5fdc] 204.8 Mb
+> - CLIJ2_maximumZProjection_result160[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@21272fb7] 984.6 kb
+> - CLIJ2_replaceIntensities_result158[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5ef6bf63] 204.8 Mb
+> - CLIJ2_replaceIntensities_result148[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@684bc4c5] 204.8 Mb
+> - CLIJ2_replaceIntensities_result159[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@61d0e4af] 204.8 Mb
+> - CLIJ2_smallerConstant_result146[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@799225b5] 5.9 kb
+> - CLIJ2_replaceIntensities_result135[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@12f48043] 204.8 Mb
+> - CLIJ2_smallerConstant_result137[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@24af0334] 5.9 kb
+> - CLIJ2_replaceIntensities_result144[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@42bc6e92] 204.8 Mb
+> - CLIJ2_smallerConstant_result155[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2aeb44fd] 5.9 kb
+> - CLIJ2_replaceIntensities_result140[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@1cab2f7b] 204.8 Mb
 > = 2.2 Gb
 >  
 </pre>
 
-The following are convienence methods for proper visualisation in a noteboook:
+Following methods are convenient for a proper visualization in a notebook:
 
-<pre class="highlight">
+```java
 function show(input, text) {
-	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
+	Ext.CLIJ2_maximumZProjection(input, max_projection);
 	Ext.CLIJ2_pull(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
 	Ext.CLIJ2_release(max_projection);
 }
-</pre>
+```
 
 
 
-
+```
+```
