@@ -11,7 +11,7 @@ on an image using GPU.
 
 
 */
-//Get test data
+// get test data
 run("Blobs (25K)");
 input = getTitle();
 /*
@@ -24,7 +24,7 @@ Ext.CLIJ2_clear();
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 /*
 ## Create a mask using a fixed threshold
@@ -47,7 +47,7 @@ Ext.CLIJ2_pull(labels_not_touching_image_borders);
 run("glasbey on dark");
 
 /*
-Clean up at the end:
+By the end of the macro, clean up:
 */
 
 Ext.CLIJ2_clear();
