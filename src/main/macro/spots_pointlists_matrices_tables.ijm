@@ -123,7 +123,7 @@ Ext.CLIJ2_distanceMatrixToMesh(pointlist_multiplied, distance_matrix, mesh2, 2.5
 Ext.CLIJ2_pull(mesh2);
 
 /*
-Clean up by the end:
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
 
