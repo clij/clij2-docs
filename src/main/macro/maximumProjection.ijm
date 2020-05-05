@@ -51,6 +51,6 @@ max_z = 100;
 Ext.CLIJ2_maximumZProjectionBounded(input, bound_projection, min_z, max_z);
 Ext.CLIJ2_pull(bound_projection);
 /*
-Clean up at the end:
+By the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
