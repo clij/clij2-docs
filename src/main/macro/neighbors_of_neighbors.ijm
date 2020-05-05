@@ -110,7 +110,7 @@ Ext.CLIJ2_meanOfTouchingNeighbors(measurement, neighbor_matrix, mean_measurement
 drawResult(label_map, mean_measurement);
 
 /*
-Clean up by the end:
+Clean up at the end.
 */
 Ext.CLIJ2_clear();
 
