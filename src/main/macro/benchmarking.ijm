@@ -12,7 +12,7 @@ First, let's get test data:
 run("T1 Head (2.4M, 16-bits)");
 input = getTitle();
 
-// visualise the center plane
+// visualize the center plane
 run("Duplicate...", "duplicate range=64-64");
 /*
 ## Measure processing time in the CPU
@@ -25,9 +25,9 @@ We measure and save the current processing times as a variable `time`, before pr
 As an example of image processing, we use the mean filter:
 */
 
-// Local mean filter in CPU
+// Local mean filter in the CPU
 for (i = 1; i <= 10; i++) {
-	// we duplicate the original image to not blur the blurred image again and again
+	// duplicate the original image to avoid blurring the same image again and again
 	selectWindow(input);
 	run("Duplicate...", "duplicate range=1-129");
 	
@@ -36,7 +36,7 @@ for (i = 1; i <= 10; i++) {
 	run("Mean 3D...", "x=3 y=3 z=3");
 	print("CPU mean filter no " + i + " took " + (getTime() - time) + " msec");
 	
-	// keep first blurred image and close the duplicates
+	// keep the first blurred image and close the duplicates
 	if (i == 1) {
 		blurred_image = getTitle();
 	} else {
@@ -45,7 +45,7 @@ for (i = 1; i <= 10; i++) {
 }
 selectWindow(blurred_image);
 
-// visualise the center plane
+// visualize the center plane
 run("Duplicate...", "duplicate range=64-64");
 /*
 ## Measure of processing time in the GPU
@@ -65,14 +65,14 @@ time = getTime();
 Ext.CLIJ2_push(input);
 print("Pushing one image to the GPU took " + (getTime() - time) + " msec");
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 
 /*
 # Process images in the GPU using CLIJ2 
 Again, we use the mean filter of CLIJ2:
 */
-// Local mean filter in GPU
+// Local mean filter in the GPU
 for (i = 1; i <= 10; i++) {
 	time = getTime();
 	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
@@ -83,7 +83,7 @@ for (i = 1; i <= 10; i++) {
 # Compare CLIJ2 with its predecessor: [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
 Once more, we use the mean filter, but of CLIJ:
 */
-// Local mean filter in GPU
+// Local mean filter in the GPU
 for (i = 1; i <= 10; i++) {
 	time = getTime();
 	Ext.CLIJ_mean3DBox(input, blurred, 3, 3, 3);
@@ -98,7 +98,7 @@ Ext.CLIJ2_pull(blurred);
 
 print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
 
-// visualise the center plane
+// visualize the center plane
 run("Duplicate...", "duplicate range=64-64");
 
 /*
@@ -110,6 +110,6 @@ print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
 /*
-Clean up GPU at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
