@@ -64,6 +64,6 @@ print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
 /*
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
