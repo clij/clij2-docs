@@ -1,7 +1,6 @@
 /*
 # Superpixel segmentation
-Author: Robert Haase
-        April 2020
+Author: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/superpixel_segmentation.ijm)
 
