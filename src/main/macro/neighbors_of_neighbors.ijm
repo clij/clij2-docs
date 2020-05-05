@@ -7,7 +7,7 @@ Authors: Robert Haase, Daniela Vorkel, April 2020
 This macro shows how to apply a filter to values of a graph, considering neighbors of neighbors.
 */
 
-// Initialize GPU
+// initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
 Ext.CLIJ2_clear();
 
@@ -19,7 +19,7 @@ We start with a list of random point coordinates, draw a spots image
 and partition the image space between these points. 
 */
 
-// make a pointlist with random coordinates on the GPU
+// make a pointlist of random coordinates in the GPU
 number_of_points = 200;
 number_of_dimensions = 2;
 bit_depth = 32;
@@ -29,10 +29,10 @@ random_max = 400;
 seed = getTime();
 Ext.CLIJ2_setRandom(pointlist, random_min, random_max, seed);
 
-// Draw the spots labelled (1, 2, 3, ...) in 2D space
+// draw labelled spots (1, 2, 3, ...) in 2D space
 Ext.CLIJ2_pointlistToLabelledSpots(pointlist, spots_image);
 
-// Partition the space between the points.
+// partition the space between points
 Ext.CLIJ2_labelVoronoiOctagon(spots_image, label_map);
 Ext.CLIJ2_pull(label_map);
 run("glasbey_on_dark");
@@ -43,7 +43,7 @@ label map are neighbors. Furthermore, we can draw the neighborhood relationships
 // determine the touch matrix
 Ext.CLIJ2_generateTouchMatrix(label_map, touch_matrix);
 
-// daw mesh
+// draw mesh
 Ext.CLIJ2_touchMatrixToMesh(pointlist, touch_matrix, mesh);
 Ext.CLIJ2_pull(mesh);
 /*
@@ -70,7 +70,7 @@ run("Clear Results");
 drawResult(label_map, measurement);
 
 function drawResult(label_map, measurement) {
-	// replace the labels in the label map with the corresponding measurement
+	// replace label in the label map with corresponding measurements
 	Ext.CLIJ2_replaceIntensities(label_map, measurement, parametric_image);
 	// show the parametric image
 	Ext.CLIJ2_pull(parametric_image);
@@ -82,19 +82,19 @@ function drawResult(label_map, measurement) {
 ## Smoothing between neighbors
 We can apply smoothing operations, e.g. the mean filter:
 */
-// determine mean value of each nodes neighbors
+// determine the mean value of each neighboring nodes
 Ext.CLIJ2_meanOfTouchingNeighbors(measurement, touch_matrix, mean_measurement);
 drawResult(label_map, mean_measurement);
 /*
 To prevent the orange stripe in the center, we use the median filter:
 */
-/// determine median value of each nodes neighbors
+// determine the median value of each neighboring nodes
 Ext.CLIJ2_medianOfTouchingNeighbors(measurement, touch_matrix, median_measurement);
 drawResult(label_map, median_measurement);
 /*
 Based on that image, we can visualize the border:
 */
-/// determine standard deviation between neighbors
+// determine the standard deviation between neighbors
 Ext.CLIJ2_standardDeviationOfTouchingNeighbors(median_measurement, touch_matrix, stddev_measurement);
 drawResult(label_map, stddev_measurement);
 setMinAndMax(0, 10);
@@ -110,7 +110,7 @@ Ext.CLIJ2_meanOfTouchingNeighbors(measurement, neighbor_matrix, mean_measurement
 drawResult(label_map, mean_measurement);
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 
