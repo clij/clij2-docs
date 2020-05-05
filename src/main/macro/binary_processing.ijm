@@ -4,8 +4,8 @@ Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/binary_processing.ijm)
 
-This macro shows how to deal with binary images, e.g. 
-thresholding, dilation, erosion, fill holes etc, in the GPU.
+This macro shows how to deal with operations on binary images, e.g. 
+thresholding, dilation, erosion, fill holes, in the GPU.
 
 All demonstrated operations work in 2D and 3D. For demonstration 
 purpose, we use a 2D example.
