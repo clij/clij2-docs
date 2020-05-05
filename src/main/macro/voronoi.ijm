@@ -10,7 +10,7 @@ diagram out of a binary image in the GPU.
 ## Get test data
 */
 run("Blobs (25K)");
-//open("C:/structure/data/blobs.gif");
+// open("C:/structure/data/blobs.gif");
 input = getTitle();
 
 
@@ -24,7 +24,7 @@ Ext.CLIJ2_clear();
 // push data to GPU
 Ext.CLIJ2_push(input);
 
-// cleanup ImageJ
+// clean up ImageJ
 run("Close All");
 
 /*
@@ -35,7 +35,7 @@ binary mask image, then draw the Voronoi diagram.
 */
 Ext.CLIJ2_thresholdOtsu(input, mask);
 
-// voronoi
+// apply voronoi
 Ext.CLIJ2_voronoiOctagon(mask, voronoi_diagram);
 
 // show result
@@ -43,7 +43,7 @@ Ext.CLIJ2_pullBinary(mask);
 Ext.CLIJ2_pullBinary(voronoi_diagram);
 
 /*
-Clean up at the end:
+At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
 
