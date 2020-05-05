@@ -1,6 +1,7 @@
 /* 
 # Combining CLIJ and CLIJ2 
-Author: Robert Haase, Daniela Vorkel, April 2020
+Author: Robert Haase
+, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/clij1_clij2_combination.ijm)
 
@@ -57,7 +58,7 @@ run("Invert LUT");
 
 /*
 ## Clean up to finally use CLIJ2
-As for every workflow, clean up by the end:
+As for every workflow, clean up at the end:
 */
 Ext.CLIJ2_clear();
 
