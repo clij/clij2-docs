@@ -65,7 +65,7 @@ Ext.CLIJ2_paste2D(flipped, collage, 2, height + 4);
 Ext.CLIJ2_pull(collage);
 
 /*
-Again, clean up by the end.
+Again, clean up at the end.
 */
 Ext.CLIJ2_clear();
 
