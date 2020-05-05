@@ -1,15 +1,15 @@
 /*
-# Comparing Workflows: ImageJ versus CLIJ
+# Comparing Workflows: ImageJ vs CLIJ
 Robert Haase, March 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/compare_workflows.ijm)
 
-This page shows how to compare ImageJ based workflow with their 
-translations using CLIJ. 
+This macro shows how to compare an ImageJ based workflow and its 
+translation using CLIJ. 
 
-Let's start with ImageJ. We have a workflow loading an image, 
-processing with background subtracting and thresholding. Note 
-the two lines using the `getTime()`.
+Let's start with ImageJ:  we have a workflow to load an image and 
+to process it with background subtraction and thresholding. Note 
+the two lines using the `getTime();` command.
 */
 run("Close All");
 
@@ -30,9 +30,9 @@ setOption("BlackBackground", true);
 run("Convert to Mask");
 
 end_time_imagej = getTime();
-/*
 
-Now we run the same workflow with CLIJ
+/*
+Now, we run the same workflow with CLIJ methods:
 */
 
 // Get test data
@@ -62,30 +62,29 @@ Ext.CLIJ2_pullBinary(thresholded_clij);
 end_time_clij = getTime();
 
 /*
-The results look similar. There are difference because the 
-implementation of ImageJ background subtraction is close to but
-not identical to CLIJs topHatBox filter. Furthermore, CPU and GPUs
-do computation a bit differently.
+The results look similar. There are differences, because the 
+implementation of ImageJ background subtraction is close but
+not identical to the CLIJs topHatBox filter. Furthermore, CPUs and GPUs
+run computations a bit differently.
 
 ## Quantitative image comparison
 
-You may have noticed already, all intermediate images got new names. 
-This allows us now to compare them.
+You may have noticed that all intermediate images got new names. 
+This allows us to compare them, now.
 
-Let's start with quantitative measurements on the images and 
-processing durations.
+Let's start with quantitative measurements on images and take the duration time for processing.
 */
 // configure measurents, clean up before
 run("Set Measurements...", "area mean standard min redirect=None decimal=3");
 run("Clear Results");
 
-// measure in the image from the imagej workflow
+// measure the image using the ImageJ workflow
 selectWindow("background_subtracted_imagej");
 run("Measure");
 selectWindow("thresholded_imagej");
 run("Measure");
 
-// measure in the image from the imagej workflow
+// measure the image using the CLIJ workflow
 selectWindow("background_subtracted_clij");
 run("Measure");
 selectWindow("thresholded_clij");
@@ -94,15 +93,14 @@ run("Measure");
 //Table.rename("Results", "Quantitative measurements");
 
 /*
-From these measurements we can conclude that there are small differences 
-between the background subtracted images, but apparently smaller differences 
-between the binary result images. 
+From these measurements, we conclude that there are small differences 
+between background-subtracted images, and apparently smaller differences 
+between binary result images. 
 
-We can verify that by visualising 
-differences visually. Note that we choose to save the subtraction images 
-in 32-bit because 8-bit images don't support negative values.
+We can verify that by visualizing the differences. Note that we choose to save the subtracted images 
+in 32-bit, because 8-bit images don't support negative values.
 
-## Visual differences between background_subtracted images
+## Visual differences between background-subtracted images
 */
 imageCalculator("Subtract create 32-bit", "background_subtracted_imagej", background_subtracted_clij);
 
@@ -112,20 +110,20 @@ imageCalculator("Subtract create 32-bit", "background_subtracted_imagej", backgr
 imageCalculator("Subtract create 32-bit", "thresholded_imagej", thresholded_clij);
 
 /*
-This confirms visually our assumption: The background_subtracted images 
-are a bit different while the binary result images are not.
+The visualization confirms our assumption: The background-subtracted images 
+are slightly different, while the binary result images are not.
 
 ## Comparing processing time
 
-Let`s now also compare the different processing times:
+Also, let's compare the different processing times:
 */
 
 print("ImageJ took " + (end_time_imagej - start_time_imagej) + "ms.");
 print("CLIJ took " + (end_time_clij - start_time_clij) + "ms.");
 
 /*
-The numbers shown here depend on used GPU hardware. Let's therefore it's
-good practice to document which GPU was used:
+The shown numbers depend on the used GPU hardware. Therefore, it's
+a good practice to document which GPU was used:
 */
 
 Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
@@ -134,13 +132,13 @@ print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
 
 /*
-Note: If you run this script a second time, numbers may be a bit different,
-especially CLIJ becomes faster because the so called warmup period is over.
-During this period, code is compiled. This compilation takes time and thus,
-when doing it a second time, processing can be significantly faster. 
-Furthermore, there are always fluctations in time measurements. Thus,
-it is recommended to run such workflows many times in a loop and doing
-statistics on derived measurements.
+Note: If you run this script a second time, the shown numbers may differ a bit,
+especially when CLIJ becomes faster, because the so called warmup period is over.
+During the first period, code gets compiled. This compilation takes time and thus,
+when done for a second time, the processing can be significantly faster. 
+Furthermore, there are always fluctations in time measurements. Therefore,
+it is recommended to run such workflows many times in a loop, and doing
+statistics on its derived measurements.
 
 Last but not least, let's clean up by closing all windows and emptying
 GPU memory:
