@@ -1,7 +1,7 @@
 /* 
 # Measure overlaps
 
-Author: Robert Haase, July 2019
+Author: Robert Haase, Daniela Vorkel, July 2019
 
 This macro shows how to measure an overlap 
 of two binary images in the GPU.
@@ -48,6 +48,6 @@ IJ.log("Overlap (Sorensen / Dice coefficient): " + (diceIndex*100) + "%");
 
 
 /*
-Clean up GPU memory.
+Clean up GPU memory:
 */
 Ext.CLIJ2_clear();
