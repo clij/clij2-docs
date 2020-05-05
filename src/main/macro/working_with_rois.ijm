@@ -97,7 +97,7 @@ At the end of the macro, clean up:
 Ext.CLIJ2_clear();
 
 /*
-This is just convenient method to show images properly in the notebook. 
+This is just convenient method to show images properly in the notebook: 
 */
 
 function show() {
