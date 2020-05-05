@@ -1,7 +1,9 @@
 /* 
-# Measure overlaps
+# Measure overlap
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
-Authors: Robert Haase, Daniela Vorkel, July 2019
+[Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/measure_overlap.ijm)
+
 
 This macro shows how to measure an overlap 
 of two binary images in the GPU.

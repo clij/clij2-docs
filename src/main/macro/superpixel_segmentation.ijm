@@ -16,7 +16,7 @@ time = getTime();
 Ext.CLIJ2_startTimeTracing();
 /*
 ## Load a data set
-The dataset is available [online](https://git.mpi-cbg.de/rhaase/neubias_academy_clij2/blob/master/data/lund1051_resampled.tif).
+The dataset is available [online](https://git.mpi-cbg.de/rhaase/clij2_example_data/blob/master/lund1051_resampled.tif).
 It shows a *Tribolium castaneum* embryo, imaged by a custom light sheet microscope, at a wavelength of 488nm (Imaging credits: Daniela Vorkel, Myers lab, MPI CBG). 
 The data set has been resampled to a voxel size of 1x1x1 microns. The embryo expresses nuclei-GFP. We will use the dataset to detect nuclei and to generate an estimated cell-segmentation.
 
@@ -24,7 +24,7 @@ In addition, we use a label map of segmented cells, which got generated using [t
 
 All processing steps are performed in 3D space. For visualization purpose, we are using the maximum intensity projection in Z: 
 */
-path = "C:/structure/teaching/neubias_academy_clij2/data/";
+path = "C:/structure/teaching/clij2_example_data/";
 
 // load data
 open(path + "lund1051_resampled.tif");

@@ -1,6 +1,6 @@
 /*
 # Warp images
-Authors: Robert Haase, Daniela Vorkel, March 2019
+Authors: Robert Haase, Daniela Vorkel, April 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/applyVectorFieldMD.ijm)
 

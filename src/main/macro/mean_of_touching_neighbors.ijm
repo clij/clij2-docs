@@ -1,7 +1,6 @@
 /* 
-# CLIJ example macro: mean_of_touching_neighbors.ijm
-Author: Robert Haase 
-        March 2020
+# Filtering between touching neighbors
+Author: Robert Haase, March 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/mean_of_touching_neighbors.ijm)
 
@@ -77,6 +76,7 @@ Show Mean intensity per label as parametric image
 Ext.CLIJ2_replaceIntensities(labelled_extended, intensity_values, intensity_map);
 Ext.CLIJ2_pull(intensity_map);
 rename("label intensity");
+setMinAndMax(0, 255);
 
 /*
 Determine mean (mean) intensity of local neighbors and draw another parametric image
@@ -86,6 +86,7 @@ Ext.CLIJ2_meanOfTouchingNeighbors(intensity_values, touch_matrix, local_mean_int
 Ext.CLIJ2_replaceIntensities(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
 Ext.CLIJ2_pull(local_mean_intensity_map);
 rename("mean neighbor intensity");
+setMinAndMax(0, 255);
 
 /*
 Determine min and max (mean) intensity of local neighbors and draw two more parametric image
@@ -96,12 +97,14 @@ Ext.CLIJ2_minimumOfTouchingNeighbors(intensity_values, touch_matrix, local_minim
 Ext.CLIJ2_replaceIntensities(labelled_extended, local_minimum_intensity_values, local_minimum_intensity_map);
 Ext.CLIJ2_pull(local_minimum_intensity_map);
 rename("minimum neighbor intensity");
+setMinAndMax(0, 255);
 
 // max
 Ext.CLIJ2_maximumOfTouchingNeighbors(intensity_values, touch_matrix, local_maximum_intensity_values);
 Ext.CLIJ2_replaceIntensities(labelled_extended, local_maximum_intensity_values, local_maximum_intensity_map);
 Ext.CLIJ2_pull(local_maximum_intensity_map);
 rename("maximum neighbor intensity");
+setMinAndMax(0, 255);
 
 /*
 Clean up by the end.
