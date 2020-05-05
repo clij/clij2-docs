@@ -1,7 +1,6 @@
 /*
 # Warp images
-Author: Robert Haase, rhaase@mpi-cbg.de
-March 2019
+Author: Robert Haase, rhaase@mpi-cbg.de, March 2019
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/applyVectorFieldMD.ijm)
 
@@ -25,7 +24,7 @@ shiftY = "shiftY";
 newImage(shiftX, "32-bit black", 256, 254, 1);
 newImage(shiftY, "32-bit black", 256, 254, 1);
 
-// Blur the shift to make it smooth in space
+// Blur the shift to smooth it in space
 selectImage("shiftX");
 makeOval(20, 98, 72, 68);
 run("Add...", "value=25");
@@ -58,6 +57,6 @@ for (i = 0; i < 36; i += 6) {
 }
 
 /* 
-Clean up at the end.
+Clean up at the end:
 */
 Ext.CLIJ2_clear();
