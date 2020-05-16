@@ -14,7 +14,7 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (3)
-* <a href="reference_maximum2DBox">maximum2DBox</a> (2)
+* <a href="reference_maximum2DBox">maximum2DBox</a> (3)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (3)
@@ -25,6 +25,7 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 
 ### replaceIntensities is often followed by
 * <a href="reference_maximumZProjection">maximumZProjection</a> (3)
+* <a href="reference_mask">mask</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -168,6 +169,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  

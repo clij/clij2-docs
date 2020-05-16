@@ -1,11 +1,15 @@
-## watershed
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+## combineVertically
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Apply a binary watershed to a binary image and introduces black pixels between objects.
+Combines two images or stacks in Y.
+
+### combineVertically often follows after
+* <a href="reference_combineHorizontally">combineHorizontally</a> (3)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_watershed(Image binary_source, ByRef Image destination);
+Ext.CLIJ2_combineVertically(Image stack1, Image stack2, ByRef Image destination);
 ```
 
 
@@ -17,7 +21,7 @@ Ext.CLIJ2_watershed(Image binary_source, ByRef Image destination);
 <details>
 
 <summary>
-clij2.watershed(binary_source, destination);
+clij2.combineVertically(stack1, stack2, destination);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -25,13 +29,14 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer binary_source = clij2.push(binary_sourceImagePlus);
-destination = clij2.create(binary_source);
+ClearCLBuffer stack1 = clij2.push(stack1ImagePlus);
+ClearCLBuffer stack2 = clij2.push(stack2ImagePlus);
+destination = clij2.create(stack1);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.watershed(binary_source, destination);
+clij2.combineVertically(stack1, stack2, destination);
 </pre>
 
 <pre class="highlight">
@@ -40,7 +45,8 @@ destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(binary_source);
+clij2.release(stack1);
+clij2.release(stack2);
 clij2.release(destination);
 </pre>
 
@@ -56,19 +62,20 @@ clij2.release(destination);
 <details>
 
 <summary>
-clij2.watershed(binary_source, destination);
+clij2.combineVertically(stack1, stack2, destination);
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
-binary_source = clij2.pushMat(binary_source_matrix);
-destination = clij2.create(binary_source);
+stack1 = clij2.pushMat(stack1_matrix);
+stack2 = clij2.pushMat(stack2_matrix);
+destination = clij2.create(stack1);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.watershed(binary_source, destination);
+clij2.combineVertically(stack1, stack2, destination);
 </pre>
 
 <pre class="highlight">
@@ -76,7 +83,8 @@ clij2.watershed(binary_source, destination);
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
-clij2.release(binary_source);
+clij2.release(stack1);
+clij2.release(stack2);
 clij2.release(destination);
 </pre>
 
@@ -92,7 +100,7 @@ clij2.release(destination);
 <details>
 
 <summary>
-clij2.watershed(binary_source, destination);
+clij2.combineVertically(stack1, stack2, destination);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
@@ -101,14 +109,16 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-binary_source_sequence = getSequence();
-binary_source = clij2.pushSequence(binary_source_sequence);
-destination = clij2.create(binary_source);
+stack1_sequence = getSequence();
+stack1 = clij2.pushSequence(stack1_sequence);
+stack2_sequence = getSequence();
+stack2 = clij2.pushSequence(stack2_sequence);
+destination = clij2.create(stack1);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.watershed(binary_source, destination);
+clij2.combineVertically(stack1, stack2, destination);
 </pre>
 
 <pre class="highlight">
@@ -116,12 +126,19 @@ clij2.watershed(binary_source, destination);
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
-clij2.release(binary_source);
+clij2.release(stack1);
+clij2.release(stack2);
 clij2.release(destination);
 </pre>
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/reduceAndCombineImages.ijm"><img src="images/language_macro.png" height="20"/></a> [reduceAndCombineImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/reduceAndCombineImages.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

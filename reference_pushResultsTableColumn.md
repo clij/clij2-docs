@@ -6,8 +6,10 @@ Converts a table column to an image.
 The values are stored in x dimension.
 
 ### pushResultsTableColumn is often followed by
+* <a href="reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
+* <a href="reference_multiplyImages">multiplyImages</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -27,6 +29,8 @@ Ext.CLIJ2_pushResultsTableColumn(ByRef Image destination, String column_name);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsWithinRange.ijm"><img src="images/language_macro.png" height="20"/></a> [excludeLabelsWithinRange.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsWithinRange.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm"><img src="images/language_macro.png" height="20"/></a> [filter_label_maps.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm)  

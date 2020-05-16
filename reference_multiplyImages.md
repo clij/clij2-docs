@@ -6,11 +6,13 @@ Multiplies all pairs of pixel values x and y from two image X and Y.
 <pre>f(x, y) = x * y</pre>
 
 ### multiplyImages often follows after
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
 * <a href="reference_create2D">create2D</a> (2)
 
 
 ### multiplyImages is often followed by
 * <a href="reference_print">print</a> (4)
+* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
@@ -153,6 +155,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm"><img src="images/language_macro.png" height="20"/></a> [filter_label_maps.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [multiply_vectors_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  

@@ -5,8 +5,11 @@ Converts an array to an image.
 
 ### pushArray is often followed by
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
 * <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_statisticsOfBackgroundAndLabelledPixels">statisticsOfBackgroundAndLabelledPixels</a> (2)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
 * <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
 
 
@@ -28,7 +31,9 @@ Ext.CLIJ2_pushArray(ByRef Image destination, Array input, Number width, Number h
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm"><img src="images/language_macro.png" height="20"/></a> [debugging_pixels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm"><img src="images/language_macro.png" height="20"/></a> [filter_label_maps.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [multiply_vectors_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  

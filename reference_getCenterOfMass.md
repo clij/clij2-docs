@@ -6,10 +6,20 @@ Determines the center of mass of an image or image stack.
  It writes the result in the variables
  centerOfMassX, centerOfMassY and centerOfMassZ.
 
+### getCenterOfMass often follows after
+* <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getCenterOfMass(Image source, ByRef Number centerOfMassX, ByRef Number centerOfMassY, , ByRef Number centerOfMassZ);
+Ext.CLIJ2_getCenterOfMass(Image source, ByRef Number centerOfMassX, ByRef Number centerOfMassY, ByRef Number centerOfMassZ);
 ```
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

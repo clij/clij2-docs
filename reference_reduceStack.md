@@ -1,21 +1,17 @@
-## differenceOfGaussian2D
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+## reduceStack
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
+Reduces the number of slices in a stack by a given factor.
+With the offset you have control which slices stay: 
+* With factor 3 and offset 0, slices 0, 3, 6,... are kept. * With factor 4 and offset 1, slices 1, 5, 9,... are kept.
 
-It is recommended to apply this operation to images of type Float (32 bit) as results might be negative.
-
-### differenceOfGaussian2D often follows after
-* <a href="reference_copySlice">copySlice</a> (2)
-
-
-### differenceOfGaussian2D is often followed by
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+### reduceStack is often followed by
+* <a href="reference_combineHorizontally">combineHorizontally</a> (5)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_differenceOfGaussian2D(Image input, ByRef Image destination, Number sigma1x, Number sigma1y, Number sigma2x, Number sigma2y);
+Ext.CLIJ2_reduceStack(Image input, ByRef Image destination, Number reductionFactor, Number offset);
 ```
 
 
@@ -27,7 +23,7 @@ Ext.CLIJ2_differenceOfGaussian2D(Image input, ByRef Image destination, Number si
 <details>
 
 <summary>
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+clij2.reduceStack(input, destination, reductionFactor, offset);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -37,15 +33,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
 destination = clij2.create(input);
-float sigma1x = 1.0;
-float sigma1y = 2.0;
-float sigma2x = 3.0;
-float sigma2y = 4.0;
+int reductionFactor = 10;
+int offset = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+clij2.reduceStack(input, destination, reductionFactor, offset);
 </pre>
 
 <pre class="highlight">
@@ -70,7 +64,7 @@ clij2.release(destination);
 <details>
 
 <summary>
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+clij2.reduceStack(input, destination, reductionFactor, offset);
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -78,15 +72,13 @@ clij2 = init_clatlab();
 % get input parameters
 input = clij2.pushMat(input_matrix);
 destination = clij2.create(input);
-sigma1x = 1.0;
-sigma1y = 2.0;
-sigma2x = 3.0;
-sigma2y = 4.0;
+reductionFactor = 10;
+offset = 20;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+clij2.reduceStack(input, destination, reductionFactor, offset);
 </pre>
 
 <pre class="highlight">
@@ -110,7 +102,7 @@ clij2.release(destination);
 <details>
 
 <summary>
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+clij2.reduceStack(input, destination, reductionFactor, offset);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
@@ -122,15 +114,13 @@ clij2 = CLICY.getInstance();
 input_sequence = getSequence();
 input = clij2.pushSequence(input_sequence);
 destination = clij2.create(input);
-sigma1x = 1.0;
-sigma1y = 2.0;
-sigma2x = 3.0;
-sigma2y = 4.0;
+reductionFactor = 10;
+offset = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+clij2.reduceStack(input, destination, reductionFactor, offset);
 </pre>
 
 <pre class="highlight">
@@ -149,7 +139,7 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/reduceAndCombineImages.ijm"><img src="images/language_macro.png" height="20"/></a> [reduceAndCombineImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/reduceAndCombineImages.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

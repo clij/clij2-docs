@@ -6,15 +6,17 @@ Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixe
 Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 are touching then the pixel (3,4) in the matrix will be set to 1.
 
 ### generateTouchMatrix often follows after
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
 * <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (2)
 
 
 ### generateTouchMatrix is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
+* <a href="reference_release">release</a> (2)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
 * <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
 * <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
 
 
@@ -153,7 +155,9 @@ clij2.release(touch_matrix_destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [large_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  

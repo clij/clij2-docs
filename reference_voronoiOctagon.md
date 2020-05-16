@@ -6,7 +6,11 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
 
 ### voronoiOctagon often follows after
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (3)
+
+
+### voronoiOctagon is often followed by
+* <a href="reference_binaryNot">binaryNot</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -141,6 +145,7 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkVoronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
 

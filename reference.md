@@ -142,6 +142,12 @@ Apply a binary closing to the input image by calling n dilations and n erosions 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_closingDiamond">closingDiamond</a>  
 Apply a binary closing to the input image by calling n dilations and n erosions subsequently.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_combineHorizontally">combineHorizontally</a>  
+Combines two images or stacks in X.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_combineVertically">combineVertically</a>  
+Combines two images or stacks in Y.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_concatenateStacks">concatenateStacks</a>  
 Concatenates two stacks in Z.
 
@@ -199,6 +205,9 @@ Executes a custom operation wirtten in OpenCL on a custom list of images.
 ## D
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_deformableRegistration2D">deformableRegistration2D (Experimental)</a>  
 Applies particle image velocimetry to two images and registers them afterwards by warping input image 2 with a smoothed vector field.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_depthColorProjection">depthColorProjection</a>  
+Determines a maximum projection of an image stack and does a color coding of the determined arg Z (position of the found maximum). 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectLabelEdges">detectLabelEdges</a>  
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
@@ -304,6 +313,12 @@ This operation follows a ray from a given position towards a label (or opposite 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsSubSurface">excludeLabelsSubSurface</a>  
 This operation follows a ray from a given position towards a label (or opposite direction) and checks if  there is another label between the label an the image border. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a>  
+This operation removes labels from a labelmap and renumbers the remaining labels. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsWithValuesWithinRange">excludeLabelsWithValuesWithinRange</a>  
+This operation removes labels from a labelmap and renumbers the remaining labels. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabels">excludeLabels</a>  
 This operation removes labels from a labelmap and renumbers the remaining labels. 
 
@@ -337,11 +352,20 @@ Computes the Gaussian blurred image of an image given two sigma values in X and 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">gaussianBlur3D</a>  
 Computes the Gaussian blurred image of an image given two sigma values in X, Y and Z. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateBinaryOverlapMatrix">generateBinaryOverlapMatrix</a>  
+Takes two labelmaps with n and m labels and generates a (n+1)*(m+1) matrix where all pixels are set to 0 exept those where labels overlap between the label maps. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">generateDistanceMatrix</a>  
 Takes two images containing coordinates and builds up a matrix containing distance between the points. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateFeatureStack">generateFeatureStack (Experimental)</a>  
 Generates a feature stack for Trainable Weka Segmentation. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateParametricImageFromResultsTableColumn">generateParametricImageFromResultsTableColumn</a>  
+Take a labelmap and a column from the results table to replace label 1 with the 1st value in the vector. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateParametricImage">generateParametricImage</a>  
+Take a labelmap and a vector of values to replace label 1 with the 1st value in the vector. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">generateTouchMatrix</a>  
 Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixels are set to 0 exept those where labels are touching. 
@@ -761,6 +785,9 @@ Read an image from disc.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_readRawImageFromDisc">readRawImageFromDisc (Experimental)</a>  
 Reads a raw file from disc and pushes it immediately to the GPU.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reduceStack">reduceStack</a>  
+Reduces the number of slices in a stack by a given factor. With the offset you have control which slices stay:  * With factor 3 and offset 0, slices 0, 3, 6,... are kept. * With factor 4 and offset 1, slices 1, 5, 9,... are kept.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">replaceIntensities</a>  
 Replaces integer intensities specified in a vector image. 
 
@@ -812,7 +839,7 @@ Rotates a given input image by 90 degrees clockwise. For that, X and Y axis of a
 <a name="S"></a>
 
 ## S
-### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_saveAsTIF">saveAsTIF (Experimental)</a>  
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_saveAsTIF">saveAsTIF</a>  
 Pulls an image from the GPU memory and saves it as TIF to disc.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_scale2D">scale2D</a>  
@@ -1083,7 +1110,7 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 <a name="W"></a>
 
 ## W
-### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed (Experimental)</a>  
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_writeVTKLineListToDisc">writeVTKLineListToDisc (Experimental)</a>  

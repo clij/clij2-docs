@@ -8,6 +8,8 @@ zero.
 <pre>f(x,m) = (x if (m != 0); (0 otherwise))</pre>
 
 ### mask often follows after
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_binaryNot">binaryNot</a> (2)
 * <a href="reference_threshold">threshold</a> (2)
 * <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
@@ -16,6 +18,7 @@ zero.
 
 ### mask is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_copySlice">copySlice</a> (2)
 * <a href="reference_labelSpots">labelSpots</a> (2)
 
 
@@ -156,6 +159,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/countNeighbors3D.py"><img src="images/language_jython.png" height="20"/></a> [countNeighbors3D.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/countNeighbors3D.py)  

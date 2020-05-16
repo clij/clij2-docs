@@ -4,8 +4,12 @@
 Computes the local maximum of a pixels rectangular neighborhood. The rectangles size is specified by 
 its half-width and half-height (radius).
 
+### maximum2DBox often follows after
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+
+
 ### maximum2DBox is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -144,6 +148,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 
 

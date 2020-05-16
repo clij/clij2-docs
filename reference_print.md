@@ -4,7 +4,7 @@
 Visualises an image on standard out (console).
 
 ### print often follows after
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (3)
 * <a href="reference_multiplyImages">multiplyImages</a> (4)
 
 
@@ -129,6 +129,8 @@ clij2.release(input);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm"><img src="images/language_macro.png" height="20"/></a> [debugging_pixels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm"><img src="images/language_macro.png" height="20"/></a> [filter_label_maps.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filter_label_maps.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [multiply_vectors_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm)  
 

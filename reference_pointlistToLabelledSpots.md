@@ -9,7 +9,7 @@ size n*n to draw lines from all points to points if the corresponding pixel in t
 
 
 ### pointlistToLabelledSpots is often followed by
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (3)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (4)
 
 
 ### Usage in ImageJ macro
@@ -144,6 +144,7 @@ clij2.release(spots_destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [large_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  
 
 

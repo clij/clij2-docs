@@ -21,6 +21,7 @@ Ext.CLIJ2_getMinimumOfAllPixels(Image source, ByRef Number minimum_of_all_pixels
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [image_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

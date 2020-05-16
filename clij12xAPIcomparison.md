@@ -1,12 +1,14 @@
 ## CLIJ 1/2/x API comparison
 # CLIJ1 methods not part of CLIJ2
+* [CLIJ_detectMaximaSliceBySliceBox(Image source, Image destination, Number radius)](https://clij.github.io/clij-docs/reference#CLIJ_detectMaximaSliceBySliceBox)
+* [CLIJ_detectMinimaSliceBySliceBox(Image source, Image destination, Number radius)](https://clij.github.io/clij-docs/reference#CLIJ_detectMinimaSliceBySliceBox)
 * [CLIJ_maximumXYZProjection(Image source, Image destination_max, Number dimensionX, Number dimensionY, Number projectedDimension)](https://clij.github.io/clij-docs/reference#CLIJ_maximumXYZProjection)
 * [CLIJ_resliceRadial(Image source, Image destination, Number numberOfAngles, Number angleStepSize)](https://clij.github.io/clij-docs/reference#CLIJ_resliceRadial)
 * [CLIJ_scale(Image source, Image destination, Number scaling_factor, Boolean scale_to_center)](https://clij.github.io/clij-docs/reference#CLIJ_scale)
 * [CLIJ_scale2D(Image source, Image destination, Number scaling_factor, Boolean scale_to_center)](https://clij.github.io/clij-docs/reference#CLIJ_scale2D)
 * [CLIJ_scale3D(Image source, Image destination, Number scaling_factor, Boolean scale_to_center)](https://clij.github.io/clij-docs/reference#CLIJ_scale3D)
 
-5 methods listed.
+7 methods listed.
 # CLIJ2 methods not part of CLIJ1
 * [CLIJ2_GPUProperties()](https://clij.github.io/clij2-docs/reference_GPUProperties)
 * [CLIJ2_adjacencyMatrixToTouchMatrix(Image adjacency_matrix, ByRef Image touch_matrix)](https://clij.github.io/clij2-docs/reference_adjacencyMatrixToTouchMatrix)
@@ -26,6 +28,8 @@
 * [CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, ByRef Image labeling_destination)](https://clij.github.io/clij2-docs/reference_closeIndexGapsInLabelMap)
 * [CLIJ2_closingBox(Image input, ByRef Image destination, Number number_of_dilations_and_erosions)](https://clij.github.io/clij2-docs/reference_closingBox)
 * [CLIJ2_closingDiamond(Image input, ByRef Image destination, Number number_of_dilations_and_erotions)](https://clij.github.io/clij2-docs/reference_closingDiamond)
+* [CLIJ2_combineHorizontally(Image stack1, Image stack2, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_combineHorizontally)
+* [CLIJ2_combineVertically(Image stack1, Image stack2, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_combineVertically)
 * [CLIJ2_concatenateStacks(Image stack1, Image stack2, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_concatenateStacks)
 * [CLIJ2_connectedComponentsLabeling(Image binary_input, ByRef Image labeling_destination)](https://clij.github.io/clij2-docs/reference_connectedComponentsLabeling)
 * [CLIJ2_connectedComponentsLabelingBox(Image binary_input, ByRef Image labeling_destination)](https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox)
@@ -35,6 +39,12 @@
 * [CLIJ2_customOperation(String operation_code, String global_code, Array image_parameters)](https://clij.github.io/clij2-docs/reference_customOperation)
 * [CLIJ2_depthColorProjection(Image source, Image lookup_table, ByRef Image destination_max, Number min_display_intensity, Number max_display_intensity)](https://clij.github.io/clij2-docs/reference_depthColorProjection)
 * [CLIJ2_detectLabelEdges(Image label_map, ByRef Image edge_image_destination)](https://clij.github.io/clij2-docs/reference_detectLabelEdges)
+* [CLIJ2_detectMaxima2DBox(Image source, ByRef Image destination, Number radiusX, Number radiusY)](https://clij.github.io/clij2-docs/reference_detectMaxima2DBox)
+* [CLIJ2_detectMaxima3DBox(Image source, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ)](https://clij.github.io/clij2-docs/reference_detectMaxima3DBox)
+* [CLIJ2_detectMaximaSliceBySliceBox(Image source, ByRef Image destination, Number radiusX, Number radiusY)](https://clij.github.io/clij2-docs/reference_detectMaximaSliceBySliceBox)
+* [CLIJ2_detectMinima2DBox(Image source, ByRef Image destination, Number radiusX, Number radiusY)](https://clij.github.io/clij2-docs/reference_detectMinima2DBox)
+* [CLIJ2_detectMinima3DBox(Image source, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ)](https://clij.github.io/clij2-docs/reference_detectMinima3DBox)
+* [CLIJ2_detectMinimaSliceBySliceBox(Image source, ByRef Image destination, Number radiusX, Number RadiusY)](https://clij.github.io/clij2-docs/reference_detectMinimaSliceBySliceBox)
 * [CLIJ2_differenceOfGaussian2D(Image input, ByRef Image destination, Number sigma1x, Number sigma1y, Number sigma2x, Number sigma2y)](https://clij.github.io/clij2-docs/reference_differenceOfGaussian2D)
 * [CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number sigma1x, Number sigma1y, Number sigma1z, Number sigma2x, Number sigma2y, Number sigma2z)](https://clij.github.io/clij2-docs/reference_differenceOfGaussian3D)
 * [CLIJ2_distanceMap(Image source, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_distanceMap)
@@ -50,12 +60,16 @@
 * [CLIJ2_excludeLabelsOnEdges(Image label_map_input, ByRef Image label_map_destination)](https://clij.github.io/clij2-docs/reference_excludeLabelsOnEdges)
 * [CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, ByRef Image label_map_destination, Number centerX, Number centerY, Number centerZ)](https://clij.github.io/clij2-docs/reference_excludeLabelsOnSurface)
 * [CLIJ2_excludeLabelsSubSurface(Image pointlist, Image label_map_input, ByRef Image label_map_destination, Number centerX, Number centerY, Number centerZ)](https://clij.github.io/clij2-docs/reference_excludeLabelsSubSurface)
+* [CLIJ2_excludeLabelsWithValuesOutOfRange(Image values_vector, Image label_map_input, ByRef Image label_map_destination, Number minimum_value_range, Number maximum_value_range)](https://clij.github.io/clij2-docs/reference_excludeLabelsWithValuesOutOfRange)
+* [CLIJ2_excludeLabelsWithValuesWithinRange(Image values_vector, Image label_map_input, ByRef Image label_map_destination, Number minimum_value_range, Number maximum_value_range)](https://clij.github.io/clij2-docs/reference_excludeLabelsWithValuesWithinRange)
 * [CLIJ2_exponential(Image source, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_exponential)
 * [CLIJ2_floodFillDiamond(Image source, ByRef Image destination, Number value_to_replace, Number value_replacement)](https://clij.github.io/clij2-docs/reference_floodFillDiamond)
 * [CLIJ2_gaussianBlur2D(Image source, ByRef Image destination, Number sigmaX, Number sigmaY)](https://clij.github.io/clij2-docs/reference_gaussianBlur2D)
 * [CLIJ2_gaussianBlur3D(Image source, ByRef Image destination, Number sigmaX, Number sigmaY, Number sigmaZ)](https://clij.github.io/clij2-docs/reference_gaussianBlur3D)
+* [CLIJ2_generateBinaryOverlapMatrix(Image label_map1, Image label_map2, ByRef Image touch_matrix_destination)](https://clij.github.io/clij2-docs/reference_generateBinaryOverlapMatrix)
 * [CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2, ByRef Image distance_matrix_destination)](https://clij.github.io/clij2-docs/reference_generateDistanceMatrix)
 * [CLIJ2_generateParametricImage(Image parameter_value_vector, Image label_map, ByRef Image parametric_image_destination)](https://clij.github.io/clij2-docs/reference_generateParametricImage)
+* [CLIJ2_generateParametricImageFromResultsTableColumn(Image label_map, ByRef Image parametric_image_destination, String column)](https://clij.github.io/clij2-docs/reference_generateParametricImageFromResultsTableColumn)
 * [CLIJ2_generateTouchMatrix(Image label_map, ByRef Image touch_matrix_destination)](https://clij.github.io/clij2-docs/reference_generateTouchMatrix)
 * [CLIJ2_getAutomaticThreshold(Image input, String method, ByRef Number threshold_value)](https://clij.github.io/clij2-docs/reference_getAutomaticThreshold)
 * [CLIJ2_getBinaryImageAspectRatio3D(Image binary_input, ByRef Number aspect_ratio)](https://clij.github.io/clij2-docs/reference_getBinaryImageAspectRatio3D)
@@ -144,10 +158,12 @@
 * [CLIJ2_pushResultsTable(ByRef Image destination)](https://clij.github.io/clij2-docs/reference_pushResultsTable)
 * [CLIJ2_pushResultsTableColumn(ByRef Image destination, String column_name)](https://clij.github.io/clij2-docs/reference_pushResultsTableColumn)
 * [CLIJ2_pushString(Image destination, Array input, Number width, Number height, Number depth)](https://clij.github.io/clij2-docs/reference_pushString)
+* [CLIJ2_reduceStack(Image input, ByRef Image destination, Number reductionFactor, Number offset)](https://clij.github.io/clij2-docs/reference_reduceStack)
 * [CLIJ2_replaceIntensities(Image input, Image new_values_vector, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_replaceIntensities)
 * [CLIJ2_replaceIntensity(Image input, ByRef Image destination, Number oldValue, Number newValue)](https://clij.github.io/clij2-docs/reference_replaceIntensity)
 * [CLIJ2_resample(Image source, ByRef Image destination, Number factorX, Number factorY, Number factorZ, Boolean linearInterpolation)](https://clij.github.io/clij2-docs/reference_resample)
 * [CLIJ2_resliceRadial(Image source, ByRef Image destination, Number numberOfAngles, Number angleStepSize, Number startAngleDegrees, Number centerX, Number centerY, Number scaleFactorX, Number scaleFactorY)](https://clij.github.io/clij2-docs/reference_resliceRadial)
+* [CLIJ2_resliceRadialTop(Image source, ByRef Image destination, Number numberOfAngles, Number angleStepSize, Number startAngleDegrees, Number centerX, Number centerY, Number scaleFactorX, Number scaleFactorY)](https://clij.github.io/clij2-docs/reference_resliceRadialTop)
 * [CLIJ2_resultsTableColumnToImage(ByRef Image destination, String column_name)](https://clij.github.io/clij2-docs/reference_resultsTableColumnToImage)
 * [CLIJ2_resultsTableToImage2D(ByRef Image destination)](https://clij.github.io/clij2-docs/reference_resultsTableToImage2D)
 * [CLIJ2_rotateClockwise(Image source, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_rotateClockwise)
@@ -216,9 +232,10 @@
 * [CLIJ2_varianceOfAllPixels(Image source)](https://clij.github.io/clij2-docs/reference_varianceOfAllPixels)
 * [CLIJ2_varianceOfMaskedPixels(Image source, Image mask)](https://clij.github.io/clij2-docs/reference_varianceOfMaskedPixels)
 * [CLIJ2_voronoiOctagon(Image input, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_voronoiOctagon)
+* [CLIJ2_watershed(Image binary_source, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_watershed)
 * [CLIJ2_writeValuesToPositions(Image positionsAndValues, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_writeValuesToPositions)
 
-209 methods listed.
+224 methods listed.
 # CLIJx methods not part of CLIJ2
 * [CLIJx_absoluteInplace(Image source_destination)](https://clij.github.io/clij2-docs/reference_CLIJx_absoluteInplace)
 * [CLIJx_applyAutoContextWekaModel(Image input, Image destination_prediction, String model_filename, String feature_definitions, Number numberOfAutoContextIterations)](https://clij.github.io/clij2-docs/reference_CLIJx_applyAutoContextWekaModel)
@@ -250,13 +267,16 @@
 * [CLIJx_organiseWindows(Number startX, Number startY, Number tilesX, Number tilesY, Number tileWidth, Number tileHeight)](https://clij.github.io/clij2-docs/reference_CLIJx_organiseWindows)
 * [CLIJx_particleImageVelocimetry(Image source1, Image source2, Image destinationDeltaX, Image destinationDeltaY, Image destinationDeltaZ, Number maxDeltaX, Number maxDeltaY, Number maxDeltaZ, Boolean correctLocalShift)](https://clij.github.io/clij2-docs/reference_CLIJx_particleImageVelocimetry)
 * [CLIJx_particleImageVelocimetryTimelapse(Image source, Image destinationDeltaX, Image destinationDeltaY, Image destinationDeltaZ, Number maxDeltaX, Number maxDeltaY, Number maxDeltaZ, Boolean correctLocalShift)](https://clij.github.io/clij2-docs/reference_CLIJx_particleImageVelocimetryTimelapse)
+* [CLIJx_popMetaData()](https://clij.github.io/clij2-docs/reference_CLIJx_popMetaData)
 * [CLIJx_preloadFromDisc(Image destination, String filename, String nextFilename, String loaderId)](https://clij.github.io/clij2-docs/reference_CLIJx_preloadFromDisc)
 * [CLIJx_presign(Image input, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_CLIJx_presign)
 * [CLIJx_pullArray(Image input, ByRef Array destination)](https://clij.github.io/clij2-docs/reference_CLIJx_pullArray)
 * [CLIJx_pullTile(String image, Number tileIndexX, Number tileIndexY, Number tileIndexZ, Number width, Number height, Number depth, Number marginWidth, Number marginHeight, Number marginDepth)](https://clij.github.io/clij2-docs/reference_CLIJx_pullTile)
+* [CLIJx_pushMetaData()](https://clij.github.io/clij2-docs/reference_CLIJx_pushMetaData)
 * [CLIJx_pushTile(String image, Number tileIndexX, Number tileIndexY, Number tileIndexZ, Number width, Number height, Number depth, Number marginWidth, Number marginHeight, Number marginDepth)](https://clij.github.io/clij2-docs/reference_CLIJx_pushTile)
 * [CLIJx_readImageFromDisc(Image destination, String filename)](https://clij.github.io/clij2-docs/reference_CLIJx_readImageFromDisc)
 * [CLIJx_readRawImageFromDisc(Image destination, String filename, Number width, Number height, Number depth, Number bitsPerPixel)](https://clij.github.io/clij2-docs/reference_CLIJx_readRawImageFromDisc)
+* [CLIJx_resetMetaData()](https://clij.github.io/clij2-docs/reference_CLIJx_resetMetaData)
 * [CLIJx_show3DWithTipTilt(Image input, String title, Boolean synchronised_windows)](https://clij.github.io/clij2-docs/reference_CLIJx_show3DWithTipTilt)
 * [CLIJx_showGlasbeyOnGrey(Image red, Image labelling, String title)](https://clij.github.io/clij2-docs/reference_CLIJx_showGlasbeyOnGrey)
 * [CLIJx_showGrey(Image input, String title)](https://clij.github.io/clij2-docs/reference_CLIJx_showGrey)
@@ -300,8 +320,7 @@
 * [CLIJx_trainWekaModelWithOptions(Image featureStack3D, Image groundTruth2D, String saveModelFilename, Number trees, Number features, Number maxDepth)](https://clij.github.io/clij2-docs/reference_CLIJx_trainWekaModelWithOptions)
 * [CLIJx_translationRegistration(Image input1, Image input2, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_CLIJx_translationRegistration)
 * [CLIJx_translationTimelapseRegistration(Image input, ByRef Image output)](https://clij.github.io/clij2-docs/reference_CLIJx_translationTimelapseRegistration)
-* [CLIJx_watershed(Image binary_source, ByRef Image destination)](https://clij.github.io/clij2-docs/reference_CLIJx_watershed)
 * [CLIJx_writeVTKLineListToDisc(Image pointlist, Image touch_matrix, String filename)](https://clij.github.io/clij2-docs/reference_CLIJx_writeVTKLineListToDisc)
 * [CLIJx_writeXYZPointListToDisc(Image pointlist, String filename)](https://clij.github.io/clij2-docs/reference_CLIJx_writeXYZPointListToDisc)
 
-83 methods listed.
+85 methods listed.

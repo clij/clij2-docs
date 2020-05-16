@@ -35,7 +35,7 @@ In CLIJ, transforms are mixed inverse transforms of the specified transforms.
 This has been streamlined in CLIJ2. In order to achieve correct transforms when switching from CLIJ to CLIJ2, 
 translation vectors may have to be inverted:
 ```
-translation_vector_CLIJ2 = translation_vector_CLIJ
+translation_vector_CLIJ2 = -translation_vector_CLIJ
 ```
 
 Similarily, scaling factors have to be inverted:
@@ -43,4 +43,38 @@ Similarily, scaling factors have to be inverted:
 ```
 scaling_factor_CLIJ2 = 1.0 / scaling_factor_CLIJ
 ```
+
+## Scale and detectMaxima/detectMinima
+These operations took a single parameter (scale factor or radius respectively) in CLIJ. 
+In CLIJ2 these methods are deprecated and there exist new methods which take 2 or 3 independent parameters in 2D and 3D:
+
+```
+Ext.CLIJ2_scale2D(input, output, scaleFactorX, scaleFactorY)
+``` 
+
+## detectMaxima and detectMinima 
+These methods found to many maxima in flat regions with local maxima in CLIJ as reported on [image.sc](https://forum.image.sc/t/clij2-alpha-release/33821/5). For backwards-compatibility reasons, these methods were not touched in CLIJ.
+However, CLIJ2 contains updated minima/maxima detectors.
+
+## Maven dependencies
+Developers who accessed CLIJ or dev/alpha versions of CLIJ2 and CLIJx via maven may have to change an entry in their pom.xml file.
+The dependencies clij-coremem and clij-clearcl changed their group-id from net.clearcontrol to net.haesleinhuepf. 
+
+Starting at version 2.0.0.0-BETA, these dependencies should be used:
+```xml
+		<dependency>
+			<groupId>net.haesleinhuepf</groupId>
+			<artifactId>clij-coremem</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.haesleinhuepf</groupId>
+			<artifactId>clij-clearcl</artifactId>
+		</dependency>
+```
+
+
+
+
+
+
 

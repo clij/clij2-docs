@@ -3,6 +3,10 @@
 
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
+### countTouchingNeighbors is often followed by
+* <a href="reference_release">release</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, ByRef Image touching_neighbors_count_destination);
@@ -133,6 +137,7 @@ clij2.release(touching_neighbors_count_destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 
 

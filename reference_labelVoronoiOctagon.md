@@ -6,12 +6,13 @@ Takes a labelled image and dilates the labels using a octagon shape until they t
 The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
 
 ### labelVoronoiOctagon often follows after
-* <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (3)
+* <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (4)
 * <a href="reference_labelSpots">labelSpots</a> (2)
 
 
 ### labelVoronoiOctagon is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
 
 
@@ -148,6 +149,7 @@ clij2.release(label_voronoi_destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [large_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 
