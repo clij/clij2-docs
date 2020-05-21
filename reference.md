@@ -76,6 +76,9 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
 <a name="B"></a>
 
 ## B
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_bilateral">bilateral (Experimental)</a>  
+Applies a bilateral filter using a box neighborhood with sigma weights for space and intensity to the input image.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryAnd">binaryAnd</a>  
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary AND operator &. All pixel values except 0 in the input images are interpreted as 1.
 
@@ -167,6 +170,9 @@ Performs connected components analysis to a binary image and generates a label m
 Converts a three channel image (stack with three slices) to a single channel image (2D image) by multiplying with factors 0.299, 0.587, 0.114.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertToImageJBinary">convertToImageJBinary</a>  
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convolve">convolve</a>  
+Convolve the image with a given kernel image.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_copySlice">copySlice</a>  
 This method has two purposes:  It copies a 2D image to a given slice z position in a 3D image stack or  It copies a given slice at position z in an image stack to a 2D image.
 
@@ -670,6 +676,9 @@ Determine the n point indices with shortest distance for all points in a distanc
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborsOfNeighbors">neighborsOfNeighbors</a>  
 Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nonLocalMeans">nonLocalMeans (Experimental)</a>  
+Applies a non-local means filter using a box neighborhood with a Gaussian weight specified with sigma to the input image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nonzeroMaximumBox">nonzeroMaximumBox</a>  
 Apply a maximum filter (box shape) to the input image. 
