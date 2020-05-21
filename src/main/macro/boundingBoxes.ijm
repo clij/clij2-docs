@@ -2,7 +2,7 @@
 //
 // This macro shows how to apply an automatic 
 // threshold method, use connected components labeling
-// and measure bounding boxes of object 
+// and measure bounding boxes of object s
 //
 // Author: Robert Haase
 // August 2019

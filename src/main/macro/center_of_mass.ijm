@@ -1,11 +1,11 @@
-// CLIJ example macro: boundingBoxes.ijm
+// CLIJ example macro: center_of_mass.ijm
 //
 // This macro shows how to apply an automatic 
 // threshold method, use connected components labeling
-// and measure bounding boxes of object 
+// and measure center of mass of objects 
 //
 // Author: Robert Haase
-// August 2019
+//         May 2020
 // ---------------------------------------------
 
 run("Close All");
@@ -42,10 +42,10 @@ Ext.CLIJ2_getMaximumOfAllPixels(labelmap, number_of_objects);
 for (i = 0; i < number_of_objects; i++) {
 	// cut label map into individual masks
 	Ext.CLIJ2_labelToMask(labelmap, binaryImage, i + 1); // 0 is background, 1 is the first label
-	// put bounding boxes in the ROI manager
-	Ext.CLIJ2_getBoundingBox(binaryImage, x, y, z, w, h, d);
+	// put center of mass in the ROI manager
+	Ext.CLIJ2_getCenterOfMass(binaryImage, x, y, z);
 
-	makeRectangle(x, y, w, h);
+	makePoint(x, y);
 	roiManager("add");
 }
 
