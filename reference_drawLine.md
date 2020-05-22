@@ -13,6 +13,138 @@ Ext.CLIJ2_drawLine(ByRef Image destination, Number x1, Number y1, Number z1, Num
 
 
 
+### Usage in Java
+
+
+<details>
+
+<summary>
+clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJ2 clij2 = CLIJ2.getInstance();
+
+// get input parameters
+destination = clij2.create();
+float x1 = 1.0;
+float y1 = 2.0;
+float z1 = 3.0;
+float x2 = 4.0;
+float y2 = 5.0;
+float z2 = 6.0;
+float thickness = 7.0;
+float value = 8.0;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+</pre>
+
+<pre class="highlight">
+//show result
+destinationImagePlus = clij2.pull(destination);
+destinationImagePlus.show();
+
+// cleanup memory on GPU
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+
+
+### Usage in Matlab
+
+
+<details>
+
+<summary>
+clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+destination = clij2.create();
+x1 = 1.0;
+y1 = 2.0;
+z1 = 3.0;
+x2 = 4.0;
+y2 = 5.0;
+z2 = 6.0;
+thickness = 7.0;
+value = 8.0;
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+</pre>
+
+<pre class="highlight">
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+
+
+### Usage in Icy
+
+
+<details>
+
+<summary>
+clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+destination = clij2.create();
+x1 = 1.0;
+y1 = 2.0;
+z1 = 3.0;
+x2 = 4.0;
+y2 = 5.0;
+z2 = 6.0;
+thickness = 7.0;
+value = 8.0;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+</pre>
+
+<pre class="highlight">
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence);
+// cleanup memory on GPU
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drawLine.ijm"><img src="images/language_macro.png" height="20"/></a> [drawLine.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drawLine.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/grid.ijm"><img src="images/language_macro.png" height="20"/></a> [grid.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/grid.ijm)  

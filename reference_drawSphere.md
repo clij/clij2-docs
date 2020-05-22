@@ -13,6 +13,135 @@ Ext.CLIJ2_drawSphere(ByRef Image destination, Number x, Number y, Number z, Numb
 
 
 
+### Usage in Java
+
+
+<details>
+
+<summary>
+clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clij2.CLIJ2;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJ2 clij2 = CLIJ2.getInstance();
+
+// get input parameters
+destination = clij2.create();
+float x = 1.0;
+float y = 2.0;
+float z = 3.0;
+float radius_x = 4.0;
+float radius_y = 5.0;
+float radius_z = 6.0;
+float value = 7.0;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+</pre>
+
+<pre class="highlight">
+//show result
+destinationImagePlus = clij2.pull(destination);
+destinationImagePlus.show();
+
+// cleanup memory on GPU
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+
+
+### Usage in Matlab
+
+
+<details>
+
+<summary>
+clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clij2 = init_clatlab();
+
+% get input parameters
+destination = clij2.create();
+x = 1.0;
+y = 2.0;
+z = 3.0;
+radius_x = 4.0;
+radius_y = 5.0;
+radius_z = 6.0;
+value = 7.0;
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+</pre>
+
+<pre class="highlight">
+% show result
+destination = clij2.pullMat(destination)
+
+% cleanup memory on GPU
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+
+
+### Usage in Icy
+
+
+<details>
+
+<summary>
+clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+destination = clij2.create();
+x = 1.0;
+y = 2.0;
+z = 3.0;
+radius_x = 4.0;
+radius_y = 5.0;
+radius_z = 6.0;
+value = 7.0;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+</pre>
+
+<pre class="highlight">
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence);
+// cleanup memory on GPU
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py"><img src="images/language_jython.png" height="20"/></a> [jaccardIndex.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py)  
 
