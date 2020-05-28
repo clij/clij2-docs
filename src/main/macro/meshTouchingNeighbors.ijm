@@ -16,7 +16,7 @@ getDimensions(width, height, channels, slices, frames);
 blurred = "Blurred";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU
@@ -90,7 +90,7 @@ for (p = 0; p < number_of_detected_spots; p++) {
 			y2 = getResult("X" + (q), 1);
 	
 			thickness = 1;
-			Ext.CLIJ2_drawLine(mesh, x1, y1, 0, x2, y2, 0, thickness);
+			Ext.CLIJ2_drawLine(mesh, x1, y1, 0, x2, y2, 0, thickness, q);
 		}
 	}
 }
@@ -106,6 +106,3 @@ Ext.CLIJ2_pull(mesh);
 // Cleanup by the end
 Ext.CLIJ2_clear();
 Ext.CLIJ2_reportMemory();
-
-
-
