@@ -5,6 +5,8 @@ Takes a labelled image and dilates the labels using a octagon shape until they t
 
 The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
 
+DEPRECATED: Use VoronoiLabelin instead.
+
 ### labelVoronoiOctagon often follows after
 * <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (4)
 * <a href="reference_labelSpots">labelSpots</a> (2)
