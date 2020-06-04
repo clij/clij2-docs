@@ -96,6 +96,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
 ## Acknowledgements
 Development of CLIJ is a community effort. We would like to thank everybody who helped developing and testing. In particular thanks goes to
 Alex Herbert (University of Sussex),
+Bertrand Vernay (IGBMC, Strasbourg)
 Bram van den Broek (Netherlands Cancer Institute),
 Brenton Cavanagh (RCSI),
 Brian Northan (True North Intelligent Algorithms),
