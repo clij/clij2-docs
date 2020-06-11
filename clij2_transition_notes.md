@@ -3,12 +3,30 @@ This document is under construction. Stay tuned.
 
 CLIJ and CLIJ2 are fully compatible. You can run CLIJ and CLIJ2 command side by side. 
 Thus, there is no immediate need to make the transtion and to change code.
-However, support for CLIJ will run out in June 2021. 
-Until then, code should be adapted to use CLIJ2 instead of CLIJ.
+However, CLIJ may no longer be offically supported in June 2021. 
+It is recommended to update your scripts and programs to use CLIJ2 instead of CLIJ.
+
+When updating ImageJ macro code from CLIJ to CLIJ2, please put a 2 behind CLIJ in this initializing line:
+```
+run("CLIJ2 Macro Extensions", "cl_device=");
+```
+
+Java developers should replace the CLIJ gateway with CLIJ2:
+```
+CLIJ2 clij2 = CLIJ2.getInstance();
+```
+
+Furthermore, all operations are now available directly in the gateway:
+```
+clij2.gaussianBlur(input, output, sigma, sigma);
+```
 
 ## API changes
 The application programming interface (API) of CLIJ and CLIJ2 are different in some minor aspects. If you use one of the
 following listed methods, you find guidance to transition from CLIJ to CLIJ2 here:
+
+## applyVectorfield
+The method applyVectorfield was renamed to applyVectorField.
 
 ## maximumSphere, minimumSphere, maximumSliceBySliceSphere, minimumSliceBySliceSphere, meanSphere, meanSliceBySliceSphere, medianBox, medianSphere, MedianSliceBySliceBox and MedianSliceBySliceSphere 
 For ImageJ macro users, nothing changes. 
@@ -25,10 +43,13 @@ This API inconsistency has been fixed in CLIJ2. All methods take radus as parame
 The method meanIJ was removed in CLIJ2 compared to CLIJ. Use meanSphere2D or meanSphere3D instead.
 
 ## maximumXYZProjection
-The method maximumXYZProjetion doesn't exist in CLIJ2. Use [maximumXProjection](reference_maximumXProjection.md), [maximumYProjection](reference_maximumYProjection.md) and [maximumZProjection](reference_maximumZProjection.md) instead.
+The method maximumXYZProjetion doesn't exist in CLIJ2. 
+Use [maximumXProjection](https://clij.github.io/clij2-docs/reference_maximumXProjection), 
+[maximumYProjection](https://clij.github.io/clij2-docs/reference_maximumYProjection) and 
+[maximumZProjection](https://clij.github.io/clij2-docs/reference_maximumZProjection) instead.
 
 ## resliceRadial 
-[resliceRadial](reference_resliceRadial) has more parameters now. The documentation contains default values.
+[resliceRadial](https://clij.github.io/clij2-docs/reference_resliceRadial) has more parameters now. The documentation contains default values.
 
 ## resample, scale, translate, affineTransform
 In CLIJ, transforms are mixed inverse transforms of the specified transforms. 
@@ -69,6 +90,10 @@ Starting at version 2.0.0.0-BETA, these dependencies should be used:
 		<dependency>
 			<groupId>net.haesleinhuepf</groupId>
 			<artifactId>clij-clearcl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.haesleinhuepf</groupId>
+			<artifactId>clij2_</artifactId>
 		</dependency>
 ```
 

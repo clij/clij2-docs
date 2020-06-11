@@ -26,20 +26,25 @@ If you search for support, please open a thread on the [image.sc](https://image.
 
 [![Image.sc forum](https://img.shields.io/badge/dynamic/json.svg?label=forum&url=https%3A%2F%2Fforum.image.sc%2Ftags%2Fclij.json&query=%24.topic_list.tags.0.topic_count&colorB=brightgreen&suffix=%20topics&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABPklEQVR42m3SyyqFURTA8Y2BER0TDyExZ+aSPIKUlPIITFzKeQWXwhBlQrmFgUzMMFLKZeguBu5y+//17dP3nc5vuPdee6299gohUYYaDGOyyACq4JmQVoFujOMR77hNfOAGM+hBOQqB9TjHD36xhAa04RCuuXeKOvwHVWIKL9jCK2bRiV284QgL8MwEjAneeo9VNOEaBhzALGtoRy02cIcWhE34jj5YxgW+E5Z4iTPkMYpPLCNY3hdOYEfNbKYdmNngZ1jyEzw7h7AIb3fRTQ95OAZ6yQpGYHMMtOTgouktYwxuXsHgWLLl+4x++Kx1FJrjLTagA77bTPvYgw1rRqY56e+w7GNYsqX6JfPwi7aR+Y5SA+BXtKIRfkfJAYgj14tpOF6+I46c4/cAM3UhM3JxyKsxiOIhH0IO6SH/A1Kb1WBeUjbkAAAAAElFTkSuQmCC)](https://forum.image.sc/tags/clij)
 
-<img src="./images/clij_bridge.gif" width="245"> <img src="./images/clicy_bridge2.gif" width="245">
-
 * Overview
-  * Introduction
+    <img src="./images/curtain.gif" width="245">
+  * [Introduction](macro_intro)
+  * [Quick tour](quick_tour)
   * Installation
+      <img src="./images/clij_bridge.gif" width="245">
     * [Fiji update site](https://clij.github.io/clij2-docs/installationInFiji)
+      <img src="./images/clicy_bridge2.gif" width="245">
     * [Icy](https://github.com/clij/clicy)
     * [Matlab](https://github.com/clij/clatlab)
   * [Reference](https://clij.github.io/clij2-docs/reference)
+    <img src="./images/cheat_sheets.png" width="245">
   * [Cheat sheets](https://clij.github.io/clij2-docs/CLIJ2-cheatsheet_V3.pdf)
   * [Release notes](https://github.com/clij/clij2/releases)
-  * [Release cycle](https://clij.github.io/clij-docs/release_cycle)
+  * [Release cycle](https://clij.github.io/clij-docs/release_cycle)    
+    <img src="./images/cle_logo.png" width="100">
   * [Future perspective: clEsperanto](http://clesperanto.net)
   
+![image](images/clij2_website.png) 
 * Tutorials
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
   * [Combining CLIJ and CLIJ2](https://clij.github.io/clij2-docs/md/clij1_clij2_combination/)
@@ -56,6 +61,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
 
+  ![image](images/neighborhood_filters.png) 
   * Working with matrices and graphs
     * [Multiply vectors and matrices](https://clij.github.io/clij2-docs/md/multiply_vectors_matrices)
     * [Matrix multiplication](https://clij.github.io/clij2-docs/md/matrix_multiply/)
@@ -82,11 +88,17 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [Icy javascript](https://github.com/clij/clicy/tree/master/src/main/javascript)
   * [Icy protocols](https://github.com/clij/clicy/tree/master/src/main/protocols)
   * [Matlab](https://github.com/clij/clatlab/tree/master/src/main/matlab)
+  * [Java](https://github.com/clij/clij2-docs/tree/master/src/main/java/net/haesleinhuepf/cli2/examples)
+  * [ImageJ Beanshell](https://github.com/clij/clij2-docs/tree/master/src/main/beanshell)
+  * [ImageJ Groovy](https://github.com/clij/clij2-docs/tree/master/src/main/groovy)
+  * [ImageJ Javascript](https://github.com/clij/clij2-docs/tree/master/src/main/javascript)
+  * [ImageJ Jython](https://github.com/clij/clij2-docs/tree/master/src/main/jython)    
   
 * FAQ / support
   * [Frequently asked questions](https://clij.github.io/clij-docs/faq)
   * CLIJ versus CLIJ2 
-    * [CLIJ documentation (not yet archived)](https://github.com/clij/clij-docs)
+      <img src="./images/clij1_logo.png" width="100">
+    * [CLIJ documentation (archived)](https://github.com/clij/clij-docs)
     * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
     * [CLIJ - CLIJ2 transition guide (under construction)](clij2_transition_notes)
   * [Troubleshooting](https://clij.github.io/clij-docs/troubleshooting)
