@@ -1,11 +1,11 @@
-# CLIJ2 documentation
-
-This page is under construction. Links may change
-
 # CLIJ2: GPU-accelerated image processing for everyone
+
+<img src="./images/curtain.gif" width="245">
+
 ## Introduction
-CLIJ is an OpenCL - ImageJ bridge and a [Fiji](https://fiji.sc/) plugin allowing users with entry-level skills in programming 
-to build GPU-accelerated workflows to speed up their image processing. Increased efforts were put on documentation, code examples, interoperability, and extensibility.
+CLIJ is brings GPU-accelerated image processing library for [ImageJ/Fiji](https://fiji.sc/), Icy, Matlab and Java. 
+Under the hood it uses [OpenCL] but users don't have to learn OpenCL, they can just use it; only entry-evel coding sckills required! 
+Increased efforts were put on documentation, code examples, interoperability, and extensibility.
 CLIJ is based on 
 [ClearCL](http://github.com/ClearControl/ClearCL), 
 [JOCL](http://github.com/gpu/JOCL), 
@@ -27,13 +27,11 @@ If you search for support, please open a thread on the [image.sc](https://image.
 [![Image.sc forum](https://img.shields.io/badge/dynamic/json.svg?label=forum&url=https%3A%2F%2Fforum.image.sc%2Ftags%2Fclij.json&query=%24.topic_list.tags.0.topic_count&colorB=brightgreen&suffix=%20topics&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABPklEQVR42m3SyyqFURTA8Y2BER0TDyExZ+aSPIKUlPIITFzKeQWXwhBlQrmFgUzMMFLKZeguBu5y+//17dP3nc5vuPdee6299gohUYYaDGOyyACq4JmQVoFujOMR77hNfOAGM+hBOQqB9TjHD36xhAa04RCuuXeKOvwHVWIKL9jCK2bRiV284QgL8MwEjAneeo9VNOEaBhzALGtoRy02cIcWhE34jj5YxgW+E5Z4iTPkMYpPLCNY3hdOYEfNbKYdmNngZ1jyEzw7h7AIb3fRTQ95OAZ6yQpGYHMMtOTgouktYwxuXsHgWLLl+4x++Kx1FJrjLTagA77bTPvYgw1rRqY56e+w7GNYsqX6JfPwi7aR+Y5SA+BXtKIRfkfJAYgj14tpOF6+I46c4/cAM3UhM3JxyKsxiOIhH0IO6SH/A1Kb1WBeUjbkAAAAAElFTkSuQmCC)](https://forum.image.sc/tags/clij)
 
 * Overview
-    <img src="./images/curtain.gif" width="245">
-  * [Introduction](macro_intro)
   * [Quick tour](quick_tour)
+  * [Introduction for ImageJ Macro users](macro_intro)
+  * [Introduction for Java developers](macro_intro)
   * Installation
-      <img src="./images/clij_bridge.gif" width="245">
     * [Fiji update site](https://clij.github.io/clij2-docs/installationInFiji)
-      <img src="./images/clicy_bridge2.gif" width="245">
     * [Icy](https://github.com/clij/clicy)
     * [Matlab](https://github.com/clij/clatlab)
   * [Reference](https://clij.github.io/clij2-docs/reference)
