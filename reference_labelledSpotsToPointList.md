@@ -9,16 +9,18 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 
 ### labelledSpotsToPointList often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
-* <a href="reference_labelSpots">labelSpots</a> (2)
+* <a href="reference_labelSpots">labelSpots</a> (4)
 
 
 ### labelledSpotsToPointList is often followed by
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_release">release</a> (3)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (4)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, ByRef Image destination_pointlist);
+Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, Image destination_pointlist);
 ```
 
 

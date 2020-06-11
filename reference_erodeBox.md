@@ -1,7 +1,8 @@
 ## erodeBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image.
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
+
 The erosion takes the Moore-neighborhood (8 pixels in 2D and 26 pixels in 3d) into account.
 The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
 
@@ -9,14 +10,14 @@ This method is comparable to the 'Erode' menu in ImageJ in case it is applied to
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
 ### erodeBox often follows after
-* <a href="reference_erodeBox">erodeBox</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (3)
 
 
 ### erodeBox is often followed by
 * <a href="reference_binaryXOr">binaryXOr</a> (2)
+* <a href="reference_mask">mask</a> (4)
 * <a href="reference_dilateBox">dilateBox</a> (3)
-* <a href="reference_mask">mask</a> (2)
-* <a href="reference_erodeBox">erodeBox</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -154,6 +155,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/binaryProcessing.py"><img src="images/language_jython.png" height="20"/></a> [binaryProcessing.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/binaryProcessing.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

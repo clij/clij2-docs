@@ -17,7 +17,7 @@ Takes a touch matrix and a vector of values to determine the standard deviation 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_standardDeviationOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Image standard_deviation_values_destination);
+Ext.CLIJ2_standardDeviationOfTouchingNeighbors(Image values, Image touch_matrix, Image standard_deviation_values_destination);
 ```
 
 

@@ -12,7 +12,7 @@ Determines the center of mass of an image or image stack.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getCenterOfMass(Image source, ByRef Number centerOfMassX, ByRef Number centerOfMassY, ByRef Number centerOfMassZ);
+Ext.CLIJ2_getCenterOfMass(Image source, Number centerOfMassX, Number centerOfMassY, Number centerOfMassZ);
 ```
 
 

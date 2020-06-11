@@ -5,7 +5,7 @@ Meshes all points in a given point list which are indiced in a corresponding ind
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, ByRef Image mesh_destination);
+Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, Image mesh_destination);
 ```
 
 
@@ -129,6 +129,12 @@ clij2.release(mesh_destination);
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

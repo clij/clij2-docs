@@ -1,8 +1,10 @@
 ## detectMaximaBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Detects local maxima in a given square/cubic neighborhood. Pixels in the resulting image are set to 1 if
-there is no other pixel in a given radius which has a higher intensity, and to 0 otherwise.
+Detects local maxima in a given square/cubic neighborhood. 
+
+Pixels in the resulting image are set to 1 if there is no other pixel in a given radius which has a 
+higher intensity, and to 0 otherwise.
 
 ### detectMaximaBox often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
@@ -12,7 +14,7 @@ there is no other pixel in a given radius which has a higher intensity, and to 0
 
 ### detectMaximaBox is often followed by
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_mask">mask</a> (4)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (3)
 
 
@@ -153,7 +155,8 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

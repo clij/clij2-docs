@@ -3,9 +3,13 @@
 
 Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image.
 
+### binaryFillHoles often follows after
+* <a href="reference_threshold">threshold</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_binaryFillHoles(Image source, ByRef Image destination);
+Ext.CLIJ2_binaryFillHoles(Image source, Image destination);
 ```
 
 

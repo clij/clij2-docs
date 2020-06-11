@@ -1,8 +1,12 @@
 ## automaticThreshold
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
+By Robert Haase based on work by G. Landini and W. Rasband
+
 The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on 
-the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method. Enter one 
+the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
+
+ Enter one 
 of these methods in the method text field:
 [Default, Huang, Intermodes, IsoData, IJ_IsoData, Li, MaxEntropy, Mean, MinError, Minimum, Moments, Otsu, Percentile, RenyiEntropy, Shanbhag, Triangle, Yen]
 
@@ -163,10 +167,17 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/particle_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [particle_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/particle_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/statistics.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb"><img src="images/language_python.png" height="20"/></a> [benchmark_clijx_pull.ipynb](https://github.com/clij/clijpy/blob/master/python/benchmark_clijx_pull.ipynb)  
-<a href="https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb"><img src="images/language_python.png" height="20"/></a> [clijpy_demo.ipynb](https://github.com/clij/clijpy/blob/master/python/clijpy_demo.ipynb)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/automaticThreshold.py"><img src="images/language_jython.png" height="20"/></a> [automaticThreshold.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/automaticThreshold.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/segmentation.py"><img src="images/language_jython.png" height="20"/></a> [segmentation.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/segmentation.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/statistics.py"><img src="images/language_jython.png" height="20"/></a> [statistics.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/statistics.py)  
 
+
+
+
+### License terms
+The code for the automatic thresholding methods originates from https://github.com/imagej/imagej1/blob/master/ij/process/AutoThresholder.java  
+  
+Detailed documentation on the implemented methods can be found online: https://imagej.net/Auto_Threshold
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)

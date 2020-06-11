@@ -6,17 +6,20 @@ Takes a touch matrix and a vector of values to determine the mean value among to
 
 
 ### meanOfTouchingNeighbors often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
-* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (3)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
 
 
 ### meanOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
+* <a href="reference_release">release</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_meanOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Image mean_values_destination);
+Ext.CLIJ2_meanOfTouchingNeighbors(Image values, Image touch_matrix, Image mean_values_destination);
 ```
 
 

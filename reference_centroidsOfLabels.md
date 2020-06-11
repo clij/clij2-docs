@@ -7,7 +7,7 @@ It writes the resulting  coordinates in a pointlist image. Depending on the dime
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_centroidsOfLabels(Image source, ByRef Image pointlist_destination);
+Ext.CLIJ2_centroidsOfLabels(Image source, Image pointlist_destination);
 ```
 
 

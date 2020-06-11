@@ -5,7 +5,7 @@ Applies 2D translation registration to every pair of t, t+1 slices of a 2D+t ima
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_translationTimelapseRegistration(Image input, ByRef Image output);
+Ext.CLIJx_translationTimelapseRegistration(Image input, Image output);
 ```
 
 

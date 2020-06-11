@@ -5,7 +5,7 @@ Takes a pointlist and a touch matrix to determine the average angle of adjacent 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_averageAngleBetweenAdjacentTriangles(Image pointlist, Image touch_matrix, ByRef Image average_distancelist_destination);
+Ext.CLIJx_averageAngleBetweenAdjacentTriangles(Image pointlist, Image touch_matrix, Image average_distancelist_destination);
 ```
 
 

@@ -7,7 +7,7 @@ Odd iterations are done with box neighborhood, even iterations with a diamond. T
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimumOctagon(Image input, ByRef Image destination, Number iterations);
+Ext.CLIJ2_minimumOctagon(Image input, Image destination, Number iterations);
 ```
 
 
@@ -127,12 +127,6 @@ clij2.release(destination);
 
 </details>
 
-
-
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

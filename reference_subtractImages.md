@@ -15,6 +15,7 @@ Subtracts one image X from another image Y pixel wise.
 
 ### subtractImages is often followed by
 * <a href="reference_downsample2D">downsample2D</a> (2)
+* <a href="reference_absolute">absolute</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -151,6 +152,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm"><img src="images/language_macro.png" height="20"/></a> [backgroundSubtraction.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm"><img src="images/language_macro.png" height="20"/></a> [topHat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/backgroundSubtraction.py"><img src="images/language_jython.png" height="20"/></a> [backgroundSubtraction.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/backgroundSubtraction.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

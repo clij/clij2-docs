@@ -10,6 +10,7 @@ This method is executed on the CPU and not on the GPU/OpenCL device.
 
 ### statisticsOfBackgroundAndLabelledPixels often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
+* <a href="reference_copySlice">copySlice</a> (3)
 
 
 ### Usage in ImageJ macro

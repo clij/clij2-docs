@@ -5,7 +5,7 @@ Converts a adjacency matrix in a touch matrix
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_adjacencyMatrixToTouchMatrix(Image adjacency_matrix, ByRef Image touch_matrix);
+Ext.CLIJ2_adjacencyMatrixToTouchMatrix(Image adjacency_matrix, Image touch_matrix);
 ```
 
 

@@ -4,6 +4,7 @@
 Converts an array to an image.
 
 ### pushArray is often followed by
+* <a href="reference_histogram">histogram</a> (2)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
 * <a href="reference_excludeLabels">excludeLabels</a> (2)
 * <a href="reference_transposeXY">transposeXY</a> (2)
@@ -15,7 +16,7 @@ Converts an array to an image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pushArray(ByRef Image destination, Array input, Number width, Number height, Number depth);
+Ext.CLIJ2_pushArray(Image destination, Array input, Number width, Number height, Number depth);
 ```
 
 

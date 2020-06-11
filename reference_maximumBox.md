@@ -1,7 +1,9 @@
 ## maximumBox
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Computes the local maximum of a pixels rectangular neighborhood. The rectangles size is specified by 
+Computes the local maximum of a pixels rectangular neighborhood. 
+
+The rectangles size is specified by 
 its half-width and half-height (radius).
 
 ### Usage in ImageJ macro

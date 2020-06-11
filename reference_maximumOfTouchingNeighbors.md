@@ -6,17 +6,18 @@ Takes a touch matrix and a vector of values to determine the maximum value among
 
 
 ### maximumOfTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
+* <a href="reference_create3D">create3D</a> (2)
 * <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (2)
 
 
 ### maximumOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Image maximum_values_destination);
+Ext.CLIJ2_maximumOfTouchingNeighbors(Image values, Image touch_matrix, Image maximum_values_destination);
 ```
 
 

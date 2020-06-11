@@ -8,7 +8,7 @@ All pixel values except 0 in the input images are interpreted as 1.<pre>f(x, y) 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_binaryUnion(Image operand1, Image operand2, ByRef Image destination);
+Ext.CLIJ2_binaryUnion(Image operand1, Image operand2, Image destination);
 ```
 
 

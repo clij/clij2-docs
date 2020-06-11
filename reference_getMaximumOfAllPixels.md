@@ -10,9 +10,13 @@ It will be stored in the variable maximum_of_all_pixels.
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (3)
 
 
+### getMaximumOfAllPixels is often followed by
+* <a href="reference_histogram">histogram</a> (3)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getMaximumOfAllPixels(Image source, ByRef Number maximum_of_all_pixels);
+Ext.CLIJ2_getMaximumOfAllPixels(Image source, Number maximum_of_all_pixels);
 ```
 
 

@@ -1,11 +1,11 @@
 ## scale
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-DEPRECATED: CLIJ scale() is <b>deprecated</b>. Use scale2D or scale3D instead!
+Scales an image with a given factor.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_scale(Image source, Image destination, Number scaling_factor, Boolean scale_to_center);
+Ext.CLIJ2_scale(Image source, Image destination, Number scaling_factor_x, Number scaling_factor_y, Number scaling_factor_z,  Boolean scale_to_center);
 ```
 
 

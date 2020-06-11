@@ -7,7 +7,7 @@ The radius is fixed to 1 and pixels with value 0 are ignored.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_nonzeroMaximumDiamond(Image input, ByRef Image destination);
+Ext.CLIJ2_nonzeroMaximumDiamond(Image input, Image destination);
 ```
 
 

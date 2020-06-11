@@ -7,7 +7,7 @@ Draws a sphere around a given point with given radii in x, y and z (if 3D).
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_drawSphere(ByRef Image destination, Number x, Number y, Number z, Number radius_x, Number radius_y, Number radius_z, Number value);
+Ext.CLIJ2_drawSphere(Image destination, Number x, Number y, Number z, Number radius_x, Number radius_y, Number radius_z, Number value);
 ```
 
 

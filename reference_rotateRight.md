@@ -1,7 +1,9 @@
 ## rotateRight
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Rotates a given input image by 90 degrees clockwise. For that, X and Y axis of an image stack
+Rotates a given input image by 90 degrees counter-clockwise. 
+
+For that, X and Y axis of an image stack
 are flipped. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility 
 such as interpolation.
 
@@ -134,7 +136,6 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/turn_stack.ijm"><img src="images/language_macro.png" height="20"/></a> [turn_stack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/turn_stack.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

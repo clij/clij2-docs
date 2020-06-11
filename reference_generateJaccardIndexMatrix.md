@@ -8,7 +8,7 @@ Major parts of this operation run on the CPU.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_generateJaccardIndexMatrix(Image label_map1, Image label_map2, ByRef Image jaccard_index_matrix_destination);
+Ext.CLIJ2_generateJaccardIndexMatrix(Image label_map1, Image label_map2, Image jaccard_index_matrix_destination);
 ```
 
 

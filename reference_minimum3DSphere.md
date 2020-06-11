@@ -1,7 +1,9 @@
 ## minimum3DSphere
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local minimum of a pixels spherical neighborhood. The spheres size is specified by 
+Computes the local minimum of a pixels spherical neighborhood. 
+
+The spheres size is specified by 
 its half-width, half-height and half-depth (radius).
 
 ### minimum3DSphere often follows after
@@ -141,7 +143,6 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm"><img src="images/language_macro.png" height="20"/></a> [minimumOctagon.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimumOctagon.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/oddEven.ijm"><img src="images/language_macro.png" height="20"/></a> [oddEven.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/oddEven.ijm)  
 
 

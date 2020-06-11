@@ -9,7 +9,7 @@ f(x) = exp(x)
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_exponential(Image source, ByRef Image destination);
+Ext.CLIJ2_exponential(Image source, Image destination);
 ```
 
 

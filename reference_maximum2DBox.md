@@ -1,7 +1,9 @@
 ## maximum2DBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local maximum of a pixels rectangular neighborhood. The rectangles size is specified by 
+Computes the local maximum of a pixels rectangular neighborhood. 
+
+The rectangles size is specified by 
 its half-width and half-height (radius).
 
 ### maximum2DBox often follows after
@@ -150,6 +152,7 @@ clij2.release(destination);
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

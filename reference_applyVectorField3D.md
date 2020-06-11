@@ -1,7 +1,9 @@
 ## applyVectorField3D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Deforms an image stack according to distances provided in the given vector image stacks. It is recommended to use 32-bit image stacks for input, output and vector image stacks. 
+Deforms an image stack according to distances provided in the given vector image stacks.
+
+It is recommended to use 32-bit image stacks for input, output and vector image stacks. 
 
 ### Usage in ImageJ macro
 ```

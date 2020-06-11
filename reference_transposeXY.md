@@ -5,15 +5,18 @@ Transpose X and Y axes of an image.
 
 ### transposeXY often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### transposeXY is often followed by
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_transposeXY(Image input, ByRef Image destination);
+Ext.CLIJ2_transposeXY(Image input, Image destination);
 ```
 
 

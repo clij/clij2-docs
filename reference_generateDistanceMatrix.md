@@ -6,19 +6,24 @@ Takes two images containing coordinates and builds up a matrix containing distan
 Convention: image width represents number of points, height represents dimensionality (2D, 3D, ... 10D). The result image has width the first input image and height equals to the width of the second input image.
 
 ### generateDistanceMatrix often follows after
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (3)
 
 
 ### generateDistanceMatrix is often followed by
+* <a href="reference_smallerOrEqual">smallerOrEqual</a> (2)
 * <a href="reference_nClosestPoints">nClosestPoints</a> (2)
+* <a href="reference_release">release</a> (4)
 * <a href="reference_shortestDistances">shortestDistances</a> (2)
+* <a href="reference_crop2D">crop2D</a> (2)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (3)
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2, ByRef Image distance_matrix_destination);
+Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2, Image distance_matrix_destination);
 ```
 
 
@@ -158,6 +163,7 @@ clij2.release(distance_matrix_destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

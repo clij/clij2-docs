@@ -1,9 +1,17 @@
 ## maximumImages
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the maximum of a pair of pixel values x, y from two given images X and Y.
+Computes the maximum of a pair of pixel values x, y from two given images X and Y. 
 
 <pre>f(x, y) = max(x, y)</pre>
+
+### maximumImages often follows after
+* <a href="reference_resample">resample</a> (3)
+
+
+### maximumImages is often followed by
+* <a href="reference_invert">invert</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

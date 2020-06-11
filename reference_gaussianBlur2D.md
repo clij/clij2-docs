@@ -7,14 +7,19 @@ Thus, the filterkernel can have non-isotropic shape.
 
 The implementation is done separable. In case a sigma equals zero, the direction is not blurred.
 
+### gaussianBlur2D often follows after
+* <a href="reference_copySlice">copySlice</a> (2)
+
+
 ### gaussianBlur2D is often followed by
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (4)
 * <a href="reference_getMeanSquaredError">getMeanSquaredError</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_gaussianBlur2D(Image source, ByRef Image destination, Number sigmaX, Number sigmaY);
+Ext.CLIJ2_gaussianBlur2D(Image source, Image destination, Number sigmaX, Number sigmaY);
 ```
 
 
@@ -153,6 +158,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_selections.ijm"><img src="images/language_macro.png" height="20"/></a> [push_pull_selections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_selections.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_slices.ijm"><img src="images/language_macro.png" height="20"/></a> [push_pull_slices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_slices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
+<a href="https://github.com/clij/clicy/blob/master/src/main/javascript/simplePipeline.js"><img src="images/language_javascript.png" height="20"/></a> [simplePipeline.js](https://github.com/clij/clicy/blob/master/src/main/javascript/simplePipeline.js)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

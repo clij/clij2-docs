@@ -5,7 +5,7 @@ Converts a three channel image (stack with three slices) to a single channel ima
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_convertRGBStackToGraySlice(Image stack_source, ByRef Image slice_destination);
+Ext.CLIJx_convertRGBStackToGraySlice(Image stack_source, Image slice_destination);
 ```
 
 

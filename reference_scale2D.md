@@ -9,7 +9,7 @@ Scales an image with a given factor.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_scale2D(Image source, Image destination, Number scaling_factor, Boolean scale_to_center);
+Ext.CLIJ2_scale2D(Image source, Image destination, Number scaling_factor_x, Number scaling_factor_y, Boolean scale_to_center);
 ```
 
 

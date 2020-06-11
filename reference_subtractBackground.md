@@ -5,14 +5,8 @@ Applies Gaussian blur to the input image and subtracts the result from the origi
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_subtractBackground(Image input, ByRef Image destination, Number sigmaX, Number sigmaY);
+Ext.CLIJx_subtractBackground(Image input, Image destination, Number sigmaX, Number sigmaY);
 ```
-
-
-
-
-### Example scripts
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

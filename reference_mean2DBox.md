@@ -1,10 +1,18 @@
 ## mean2DBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local mean average of a pixels rectangular neighborhood. The rectangles size is specified by 
+Computes the local mean average of a pixels rectangular neighborhood. 
+
+The rectangles size is specified by 
 its half-width and half-height (radius).
 
+### mean2DBox often follows after
+* <a href="reference_absolute">absolute</a> (2)
+* <a href="reference_distanceMap">distanceMap</a> (2)
+
+
 ### mean2DBox is often followed by
+* <a href="reference_threshold">threshold</a> (2)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 

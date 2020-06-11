@@ -1,9 +1,13 @@
 ## blur2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the Gaussian blurred image of an image given two sigma values in X and Y. Thus, the filterkernel can have non-isotropic shape.
+Computes the Gaussian blurred image of an image given two sigma values in X and Y. 
+
+Thus, the filterkernel can have non-isotropic shape.
 
 The implementation is done separable. In case a sigma equals zero, the direction is not blurred.
+
+DEPRECATED: This method is <b>deprecated</b>. Use gaussianBlur2D instead.
 
 ### blur2D is often followed by
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)

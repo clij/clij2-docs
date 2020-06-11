@@ -1,7 +1,9 @@
 ## median3DSphere
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local median of a pixels spherical neighborhood. The spheres size is specified by 
+Computes the local median of a pixels spherical neighborhood. 
+
+The spheres size is specified by 
 its half-width, half-height and half-depth (radius).
 
 For technical reasons, the volume of the sphere must contain less than 1000 voxels.

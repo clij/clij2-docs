@@ -11,9 +11,13 @@ Note: This is not a distance matrix. See generateDistanceMatrix for details.
 * <a href="reference_binaryNot">binaryNot</a> (2)
 
 
+### distanceMap is often followed by
+* <a href="reference_mean2DBox">mean2DBox</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_distanceMap(Image source, ByRef Image destination);
+Ext.CLIJ2_distanceMap(Image source, Image destination);
 ```
 
 

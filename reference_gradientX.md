@@ -1,7 +1,9 @@
 ## gradientX
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the gradient of gray values along X. Assuming a, b and c are three adjacent
+Computes the gradient of gray values along X. 
+
+Assuming a, b and c are three adjacent
  pixels in X direction. In the target image will be saved as: <pre>b' = c - a;</pre>
 
 ### Usage in ImageJ macro

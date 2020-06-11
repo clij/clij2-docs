@@ -5,9 +5,13 @@ Determines the average of the n closest points for every point in a distance mat
 
 This corresponds to the average of the n minimum values (rows) for each column of the distance matrix.
 
+### averageDistanceOfNClosestPoints is often followed by
+* <a href="reference_release">release</a> (3)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image distance_list_destination, Number nClosestPointsTofind);
+Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, Image distance_list_destination, Number nClosestPointsTofind);
 ```
 
 

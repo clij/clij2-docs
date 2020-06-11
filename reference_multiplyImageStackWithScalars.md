@@ -7,7 +7,7 @@ Multiplies all pixels value x in a given image X with a constant scalar s from a
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_multiplyImageStackWithScalars(Image source, ByRef Image destination, Array scalars);
+Ext.CLIJ2_multiplyImageStackWithScalars(Image source, Image destination, Array scalars);
 ```
 
 

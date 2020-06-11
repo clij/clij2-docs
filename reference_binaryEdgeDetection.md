@@ -11,7 +11,7 @@ destination image. All other pixels are set to 0.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_binaryEdgeDetection(Image source, ByRef Image destination);
+Ext.CLIJ2_binaryEdgeDetection(Image source, Image destination);
 ```
 
 

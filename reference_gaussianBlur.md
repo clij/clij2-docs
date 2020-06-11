@@ -9,7 +9,7 @@ The implementation is done separable. In case a sigma equals zero, the direction
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_gaussianBlur(Image source, ByRef Image destination, Number sigmaX, Number sigmaY);
+Ext.CLIJ2_gaussianBlur(Image source, Image destination, Number sigmaX, Number sigmaY);
 ```
 
 
@@ -154,6 +154,14 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_slices.ijm"><img src="images/language_macro.png" height="20"/></a> [push_pull_slices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_slices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/blurImage.m"><img src="images/language_matlab.png" height="20"/></a> [blurImage.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/blurImage.m)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m"><img src="images/language_matlab.png" height="20"/></a> [simplePipeline.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m)  
+<a href="https://github.com/clij/clicy/blob/master/src/main/javascript/blur_frame_by_frame.js"><img src="images/language_javascript.png" height="20"/></a> [blur_frame_by_frame.js](https://github.com/clij/clicy/blob/master/src/main/javascript/blur_frame_by_frame.js)  
+<a href="https://github.com/clij/clicy/blob/master/src/main/javascript/simplePipeline.js"><img src="images/language_javascript.png" height="20"/></a> [simplePipeline.js](https://github.com/clij/clicy/blob/master/src/main/javascript/simplePipeline.js)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/backgroundSubtraction.py"><img src="images/language_jython.png" height="20"/></a> [backgroundSubtraction.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/backgroundSubtraction.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/multi_GPU_demo.py"><img src="images/language_jython.png" height="20"/></a> [multi_GPU_demo.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/multi_GPU_demo.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/with_statement.py"><img src="images/language_jython.png" height="20"/></a> [with_statement.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/with_statement.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

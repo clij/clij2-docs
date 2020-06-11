@@ -1,7 +1,7 @@
 ## maximumImageAndScalar
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the maximum of a constant scalar s and each pixel value x in a given image X.
+Computes the maximum of a constant scalar s and each pixel value x in a given image X. 
 
 <pre>f(x, s) = max(x, s)</pre>
 

@@ -15,7 +15,7 @@ It is recommended to apply this operation to images of type Float (32 bit) as re
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_differenceOfGaussian3D(Image input, ByRef Image destination, Number sigma1x, Number sigma1y, Number sigma1z, Number sigma2x, Number sigma2y, Number sigma2z);
+Ext.CLIJ2_differenceOfGaussian3D(Image input, Image destination, Number sigma1x, Number sigma1y, Number sigma1z, Number sigma2x, Number sigma2y, Number sigma2z);
 ```
 
 

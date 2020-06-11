@@ -5,7 +5,7 @@ Apply a binary watershed to a binary image and introduces black pixels between o
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_watershed(Image binary_source, ByRef Image destination);
+Ext.CLIJ2_watershed(Image binary_source, Image destination);
 ```
 
 

@@ -4,17 +4,18 @@
 Apply a local maximum filter to an image which only overwrites pixels with value 0.
 
 ### onlyzeroOverwriteMaximumBox often follows after
-* <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (2)
+* <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (5)
 
 
 ### onlyzeroOverwriteMaximumBox is often followed by
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
-* <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (2)
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
+* <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (5)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_onlyzeroOverwriteMaximumBox(Image input, ByRef Image destination);
+Ext.CLIJ2_onlyzeroOverwriteMaximumBox(Image input, Image destination);
 ```
 
 

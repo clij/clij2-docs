@@ -5,7 +5,7 @@ Writes an image into a string.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pullString(Image input, ByRef String output);
+Ext.CLIJ2_pullString(Image input, String output);
 ```
 
 

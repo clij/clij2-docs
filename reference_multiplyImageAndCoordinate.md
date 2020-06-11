@@ -5,7 +5,7 @@ Multiplies all pixel intensities with the x, y or z coordinate, depending on spe
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_multiplyImageAndCoordinate(Image source, ByRef Image destination, Number dimension);
+Ext.CLIJ2_multiplyImageAndCoordinate(Image source, Image destination, Number dimension);
 ```
 
 

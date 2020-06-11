@@ -1,8 +1,14 @@
 ## maximum2DSphere
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local maximum of a pixels ellipsoidal neighborhood. The ellipses size is specified by 
+Computes the local maximum of a pixels ellipsoidal neighborhood. 
+
+The ellipses size is specified by 
 its half-width and half-height (radius).
+
+### maximum2DSphere is often followed by
+* <a href="reference_release">release</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

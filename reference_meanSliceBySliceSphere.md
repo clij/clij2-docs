@@ -2,7 +2,9 @@
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
 Computes the local mean average of a pixels ellipsoidal 2D neighborhood in an image stack 
-slice by slice. The ellipses size is specified by its half-width and half-height (radius).
+slice by slice. 
+
+The ellipses size is specified by its half-width and half-height (radius).
 
 This filter is applied slice by slice in 2D.
 

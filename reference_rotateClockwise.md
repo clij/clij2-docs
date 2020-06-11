@@ -9,7 +9,7 @@ such as interpolation.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_rotateClockwise(Image source, ByRef Image destination);
+Ext.CLIJ2_rotateClockwise(Image source, Image destination);
 ```
 
 

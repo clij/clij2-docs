@@ -7,7 +7,7 @@ If yes, this label is eliminated from the label map.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, ByRef Image label_map_destination, Number centerX, Number centerY, Number centerZ);
+Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, Image label_map_destination, Number centerX, Number centerY, Number centerZ);
 ```
 
 

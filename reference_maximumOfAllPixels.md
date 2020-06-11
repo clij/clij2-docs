@@ -1,7 +1,9 @@
 ## maximumOfAllPixels
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the maximum of all pixels in a given image. It will be stored in a new row of ImageJs
+Determines the maximum of all pixels in a given image. 
+
+It will be stored in a new row of ImageJs
 Results table in the column 'Max'.
 
 ### Usage in ImageJ macro
@@ -122,7 +124,7 @@ clij2.release(source);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/multiply_images_test.py"><img src="images/language_jython.png" height="20"/></a> [multiply_images_test.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/multiply_images_test.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

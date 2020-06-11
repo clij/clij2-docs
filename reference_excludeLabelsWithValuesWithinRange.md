@@ -7,7 +7,7 @@ Hand over a vector of values and a range specifying which labels with which valu
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_excludeLabelsWithValuesWithinRange(Image values_vector, Image label_map_input, ByRef Image label_map_destination, Number minimum_value_range, Number maximum_value_range);
+Ext.CLIJ2_excludeLabelsWithValuesWithinRange(Image values_vector, Image label_map_input, Image label_map_destination, Number minimum_value_range, Number maximum_value_range);
 ```
 
 

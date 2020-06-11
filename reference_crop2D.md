@@ -1,15 +1,18 @@
 ## crop2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Crops a given rectangle out of a given image.
+Crops a given rectangle out of a given image. 
 
 Note: If the destination image pre-exists already, it will be overwritten and keep it's dimensions.
 
 ### crop2D often follows after
+* <a href="reference_getDimensions">getDimensions</a> (3)
 * <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 
 
 ### crop2D is often followed by
+* <a href="reference_nClosestDistances">nClosestDistances</a> (2)
 * <a href="reference_flip2D">flip2D</a> (2)
 
 

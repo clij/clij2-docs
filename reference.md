@@ -1,11 +1,11 @@
 # CLIJ 1/2/x reference
-This reference contains all methods currently available in CLIJ2 and CLIJx. Read more about [CLIJs release cycle](https://clij.github.io/clij-docs/release_cycle) 
+This reference contains all methods currently available in CLIJ, CLIJ2 and CLIJx. Read more about [CLIJs release cycle](https://clij.github.io/clij-docs/release_cycle) 
 
-__Please note:__ CLIJ2 and CLIJx are under heavy construction. This list may change at any point.
+__Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij.github.io/clij2-docs/clij2_transition_notes).
 
-<img src="images/mini_clij1_logo.png" width="18" height="18"/> Method is available in CLIJ (stable release)  
-<img src="images/mini_clij2_logo.png" width="18" height="18"/> Method is available in CLIJ2 (alpha release, [read more](https://forum.image.sc/t/clij2-alpha-release/33821))  
-<img src="images/mini_clijx_logo.png" width="18" height="18"/> Method is available in CLIJx (experimental version)  
+<img src="images/mini_clij1_logo.png" width="18" height="18"/> Method is available in CLIJ (deprecated release)  
+<img src="images/mini_clij2_logo.png" width="18" height="18"/> Method is available in CLIJ2 (stable release)  
+<img src="images/mini_clijx_logo.png" width="18" height="18"/> Method is available in CLIJx (experimental release)  
 
 
 <a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>,<a href="#F">\[F\]</a>,<a href="#G">\[G\]</a>,<a href="#H">\[H\]</a>,<a href="#I">\[I\]</a>,<a href="#J">\[J\]</a>, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>,<a href="#O">\[O\]</a>,<a href="#P">\[P\]</a>, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>,<a href="#U">\[U\]</a>,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
@@ -15,6 +15,9 @@ __Please note:__ CLIJ2 and CLIJx are under heavy construction. This list may cha
 ## A
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_absolute">absolute</a>  
 Computes the absolute value of every individual pixel x in a given image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_absoluteDifference">absoluteDifference</a>  
+Determines the absolute difference pixel by pixel between two images.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_absoluteInplace">absoluteInplace (Experimental)</a>  
 Computes the absolute value of every individual pixel x in a given image.
@@ -38,13 +41,13 @@ Applies an affine transform to a 2D image. Individual transforms must be separat
 Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorField2D">applyVectorField2D</a>  
-Deforms an image according to distances provided in the given vector images. It is recommended to use 32-bit images for input, output and vector images. 
+Deforms an image according to distances provided in the given vector images.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorField3D">applyVectorField3D</a>  
-Deforms an image stack according to distances provided in the given vector image stacks. It is recommended to use 32-bit image stacks for input, output and vector image stacks. 
+Deforms an image stack according to distances provided in the given vector image stacks.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorfield">applyVectorfield</a>  
-Deforms an image according to distances provided in the given vector images. It is recommended to use 32-bit images for input, output and vector images. 
+Deforms an image according to distances provided in the given vector images.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyWekaModel">applyWekaModel (Experimental)</a>  
 Applies a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
@@ -53,10 +56,10 @@ Applies a Weka model using functionality of Fijis Trainable Weka Segmentation pl
 Applies a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_argMaximumZProjection">argMaximumZProjection</a>  
-Determines the maximum projection of an image stack along Z. Furthermore, another 2D image is generated with pixels containing the z-index where the maximum was found (zero based).
+Determines the maximum projection of an image stack along Z.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">automaticThreshold</a>  
-The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on  the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method. Enter one  of these methods in the method text field: [Default, Huang, Intermodes, IsoData, IJ_IsoData, Li, MaxEntropy, Mean, MinError, Minimum, Moments, Otsu, Percentile, RenyiEntropy, Shanbhag, Triangle, Yen]
+The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on  the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_automaticThresholdInplace">automaticThresholdInplace (Experimental)</a>  
 The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on  the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method. Enter one  of these methods in the method text field: [Default, Huang, Intermodes, IsoData, IJ_IsoData, Li, MaxEntropy, Mean, MinError, Minimum, Moments, Otsu, Percentile, RenyiEntropy, Shanbhag, Triangle, Yen]
@@ -92,10 +95,10 @@ Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary 
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary intersection operator &. All pixel values except 0 in the input images are interpreted as 1.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryNot">binaryNot</a>  
-Computes a binary image (containing pixel values 0 and 1) from an image X by negating its pixel values x using the binary NOT operator ! All pixel values except 0 in the input image are interpreted as 1.
+Computes a binary image (containing pixel values 0 and 1) from an image X by negating its pixel values x using the binary NOT operator !
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryOr">binaryOr</a>  
-Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary OR operator |. All pixel values except 0 in the input images are interpreted as 1.<pre>f(x, y) = x | y</pre>
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary OR operator |.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binarySubtract">binarySubtract</a>  
 Subtracts one binary image from another.
@@ -104,13 +107,13 @@ Subtracts one binary image from another.
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary union operator |.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryXOr">binaryXOr</a>  
-Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary operators AND &, OR | and NOT ! implementing the XOR operator. All pixel values except 0 in the input images are interpreted as 1.
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary operators AND &, OR | and NOT ! implementing the XOR operator.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_blur2D">blur2D</a>  
-Computes the Gaussian blurred image of an image given two sigma values in X and Y. Thus, the filterkernel can have non-isotropic shape.
+Computes the Gaussian blurred image of an image given two sigma values in X and Y. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_blur3D">blur3D</a>  
-Computes the Gaussian blurred image of an image given two sigma values in X, Y and Z. Thus, the filterkernel can have non-isotropic shape.
+Computes the Gaussian blurred image of an image given two sigma values in X, Y and Z. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_blurSliceBySlice">blurSliceBySlice (Experimental)</a>  
 Computes the Gaussian blurred image of an image given two sigma values in X and Y. Thus, the filterkernel can have non-isotropic shape.
@@ -131,7 +134,7 @@ Determines the bounding box of all non-zero pixels in a binary image.
 Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_centerOfMass">centerOfMass</a>  
-Determines the center of mass of an image or image stack and writes the result in the results table in the columns MassX, MassY and MassZ.
+Determines the center of mass of an image or image stack. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_centroidsOfLabels">centroidsOfLabels</a>  
 Determines the centroids of all labels in a label image or image stack. 
@@ -183,22 +186,22 @@ This method has two purposes:  It copies a 2D image to a given slice z position 
 Determines the number of all pixels in a given image which are not equal to 0. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countNonZeroPixels2DSphere">countNonZeroPixels2DSphere</a>  
-Counts non-zero pixels in a sphere around every pixel.Put the number in the result image.
+Counts non-zero pixels in a sphere around every pixel. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countNonZeroPixelsSliceBySliceSphere">countNonZeroPixelsSliceBySliceSphere</a>  
-Counts non-zero pixels in a sphere around every pixel slice by slice in a stack and puts the resulting number in the destination image stack.
+Counts non-zero pixels in a sphere around every pixel slice by slice in a stack. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countNonZeroVoxels3DSphere">countNonZeroVoxels3DSphere</a>  
-Counts non-zero voxels in a sphere around every voxel.Put the number in the result image.
+Counts non-zero voxels in a sphere around every voxel. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countTouchingNeighbors">countTouchingNeighbors</a>  
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crop2D">crop2D</a>  
-Crops a given rectangle out of a given image.
+Crops a given rectangle out of a given image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crop3D">crop3D</a>  
-Crops a given sub-stack out of a given image stack.
+Crops a given sub-stack out of a given image stack. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crossCorrelation">crossCorrelation (Experimental)</a>  
 Performs cross correlation analysis between two images. 
@@ -219,16 +222,16 @@ Determines a maximum projection of an image stack and does a color coding of the
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaximaBox">detectMaximaBox</a>  
-Detects local maxima in a given square/cubic neighborhood. Pixels in the resulting image are set to 1 if there is no other pixel in a given radius which has a higher intensity, and to 0 otherwise.
+Detects local maxima in a given square/cubic neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaximaSliceBySliceBox">detectMaximaSliceBySliceBox</a>  
-Detects local maxima in a given square neighborhood of an input image stack. The input image stack is  processed slice by slice. Pixels in the resulting image are set to 1 if there is no other pixel in a  given radius which has a higher intensity, and to 0 otherwise.
+Detects local maxima in a given square neighborhood of an input image stack. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMinimaBox">detectMinimaBox</a>  
-Detects local minima in a given square/cubic neighborhood. Pixels in the resulting image are set to 1 if there is no other pixel in a given radius which has a lower intensity, and to 0 otherwise.
+Detects local minima in a given square/cubic neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMinimaSliceBySliceBox">detectMinimaSliceBySliceBox</a>  
-Detects local minima in a given square neighborhood of an input image stack. The input image stack is  processed slice by slice. Pixels in the resulting image are set to 1 if there is no other pixel in a  given radius which has a lower intensity, and to 0 otherwise.
+Detects local minima in a given square neighborhood of an input image stack. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectOptima">detectOptima</a>  
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectOptimaSliceBySlice">detectOptimaSliceBySlice</a>  
@@ -242,16 +245,16 @@ Applies Gaussian blur to the input image twice with different sigma values resul
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateBox">dilateBox</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image. The dilation takes the Moore-neighborhood (8 pixels in 2D and 26 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateBoxSliceBySlice">dilateBoxSliceBySlice</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image. The dilation takes the Moore-neighborhood (8 pixels in 2D and 26 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateSphere">dilateSphere</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image. The dilation takes the von-Neumann-neighborhood (4 pixels in 2D and 6 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateSphereSliceBySlice">dilateSphereSliceBySlice</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image. The dilation takes the von-Neumann-neighborhood (4 pixels in 2D and 6 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_distanceMap">distanceMap</a>  
 Generates a distance map from a binary image. 
@@ -260,16 +263,16 @@ Generates a distance map from a binary image.
 Generates a mesh from a distance matric and a list of point coordinates.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideImages">divideImages</a>  
-Divides two images X and Y by each other pixel wise.
+Divides two images X and Y by each other pixel wise. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_downsample2D">downsample2D</a>  
-Scales an image using given scaling factors for X and Y dimensions. The nearest-neighbor method is applied. In ImageJ the method which is similar is called 'Interpolation method: none'.
+Scales an image using given scaling factors for X and Y dimensions. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_downsample3D">downsample3D</a>  
-Scales an image using given scaling factors for X and Y dimensions. The nearest-neighbor method is applied. In ImageJ the method which is similar is called 'Interpolation method: none'.
+Scales an image using given scaling factors for X and Y dimensions. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_downsampleSliceBySliceHalfMedian">downsampleSliceBySliceHalfMedian</a>  
-Scales an image using scaling factors 0.5 for X and Y dimensions. The Z dimension stays untouched. Thus, each slice is processed separately. The median method is applied. Thus, each pixel value in the destination image equals to the median of four corresponding pixels in the source image.
+Scales an image using scaling factors 0.5 for X and Y dimensions. The Z dimension stays untouched. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_drawBox">drawBox</a>  
 Draws a box at a given start point with given size.  All pixels other than in the box are untouched. Consider using `set(buffer, 0);` in advance.
@@ -299,16 +302,16 @@ Determines if an image A and a constant b are equal.
 Determines correction factors for each z-slice so that the average intensity in all slices can be made the same and multiplies these factors with the slices. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeBox">erodeBox</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. The erosion takes the Moore-neighborhood (8 pixels in 2D and 26 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeBoxSliceBySlice">erodeBoxSliceBySlice</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. The erosion takes the Moore-neighborhood (8 pixels in 2D and 26 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeSphere">erodeSphere</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. The erosion takes the von-Neumann-neighborhood (4 pixels in 2D and 6 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeSphereSliceBySlice">erodeSphereSliceBySlice</a>  
-Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. The erosion takes the von-Neumann-neighborhood (4 pixels in 2D and 6 pixels in 3d) into account. The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabels">excludeLabels</a>  
 This operation removes labels from a labelmap and renumbers the remaining labels. 
@@ -376,6 +379,9 @@ Take a labelmap and a vector of values to replace label 1 with the 1st value in 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateParametricImageFromResultsTableColumn">generateParametricImageFromResultsTableColumn</a>  
 Take a labelmap and a column from the results table to replace label 1 with the 1st value in the vector. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateTouchCountMatrix">generateTouchCountMatrix</a>  
+Takes a label map with n labels and generates a (n+1)*(n+1) matrix where all pixels are set the number of pixels where labels touch (diamond neighborhood). 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">generateTouchMatrix</a>  
 Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixels are set to 0 exept those where labels are touching. 
 
@@ -413,13 +419,13 @@ Determines the overlap of two binary images using the Sorensen-Dice coefficent.
 Determines the sum of all pixels in a given image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gradientX">gradientX</a>  
-Computes the gradient of gray values along X. Assuming a, b and c are three adjacent  pixels in X direction. In the target image will be saved as: <pre>b' = c - a;</pre>
+Computes the gradient of gray values along X. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gradientY">gradientY</a>  
-Computes the gradient of gray values along Y. Assuming a, b and c are three adjacent  pixels in Y direction. In the target image will be saved as: <pre>b' = c - a;</pre>
+Computes the gradient of gray values along Y. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gradientZ">gradientZ</a>  
-Computes the gradient of gray values along Z. Assuming a, b and c are three adjacent  pixels in Z direction. In the target image will be saved as: <pre>b' = c - a;</pre>
+Computes the gradient of gray values along Z. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greater">greater</a>  
 Determines if two images A and B greater pixel wise.
@@ -449,7 +455,7 @@ Converts an image into a table.
 Copies a single slice into a stack a given number of times.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_invert">invert</a>  
-Computes the negative value of all pixels in a given image. It is recommended to convert images to  32-bit float before applying this operation.
+Computes the negative value of all pixels in a given image. 
 
 <a name="J"></a>
 
@@ -494,40 +500,40 @@ Computes base e logarithm of all pixels values.
 
 ## M
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mask">mask</a>  
-Computes a masked image by applying a mask to an image. All pixel values x of image X will be copied to the destination image in case pixel value m at the same position in the mask image is not equal to  zero.
+Computes a masked image by applying a mask to an image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maskLabel">maskLabel</a>  
 Computes a masked image by applying a label mask to an image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maskStackWithPlane">maskStackWithPlane</a>  
-Computes a masked image by applying a 2D mask to an image stack. All pixel values x of image X will be copied to the destination image in case pixel value m at the same spatial position in the mask image is not equal to  zero.
+Computes a masked image by applying a 2D mask to an image stack. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_matrixEqual">matrixEqual</a>  
 Checks if all elements of a matrix are different by less than or equal to a given tolerance. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximum2DBox">maximum2DBox</a>  
-Computes the local maximum of a pixels rectangular neighborhood. The rectangles size is specified by  its half-width and half-height (radius).
+Computes the local maximum of a pixels rectangular neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximum2DSphere">maximum2DSphere</a>  
-Computes the local maximum of a pixels ellipsoidal neighborhood. The ellipses size is specified by  its half-width and half-height (radius).
+Computes the local maximum of a pixels ellipsoidal neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximum3DBox">maximum3DBox</a>  
-Computes the local maximum of a pixels cube neighborhood. The cubes size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local maximum of a pixels cube neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximum3DSphere">maximum3DSphere</a>  
-Computes the local maximum of a pixels spherical neighborhood. The spheres size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local maximum of a pixels spherical neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumImageAndScalar">maximumImageAndScalar</a>  
-Computes the maximum of a constant scalar s and each pixel value x in a given image X.
+Computes the maximum of a constant scalar s and each pixel value x in a given image X. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumImages">maximumImages</a>  
-Computes the maximum of a pair of pixel values x, y from two given images X and Y.
+Computes the maximum of a pair of pixel values x, y from two given images X and Y. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOctagon">maximumOctagon</a>  
 Applies a maximum filter with kernel size 3x3 n times to an image iteratively. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOfAllPixels">maximumOfAllPixels</a>  
-Determines the maximum of all pixels in a given image. It will be stored in a new row of ImageJs Results table in the column 'Max'.
+Determines the maximum of all pixels in a given image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOfMaskedPixels">maximumOfMaskedPixels</a>  
 Determines the maximum intensity in an image, but only in pixels which have non-zero values in another mask image.
@@ -536,37 +542,35 @@ Determines the maximum intensity in an image, but only in pixels which have non-
 Takes a touch matrix and a vector of values to determine the maximum value among touching neighbors for every object. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumXProjection">maximumXProjection</a>  
-Determines the maximum projection of an image along X.
+Determines the maximum intensity projection of an image along X.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumXYZProjection">maximumXYZProjection</a>  
-Determines the maximum projection of an image along a given dimension. Furthermore, the X and Y  dimesions of the resulting image must be specified by the user according to its definition: X = 0 Y = 1 Z = 2 
-
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumYProjection">maximumYProjection</a>  
-Determines the maximum projection of an image along X.
+Determines the maximum intensity projection of an image along X.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">maximumZProjection</a>  
-Determines the maximum projection of an image along Z.
+Determines the maximum intensity projection of an image along Z.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumZProjectionBounded">maximumZProjectionBounded</a>  
-Determines the maximum projection of an image along Z within a given z range.
+Determines the maximum intensity projection of an image along Z within a given z range.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mean2DBox">mean2DBox</a>  
-Computes the local mean average of a pixels rectangular neighborhood. The rectangles size is specified by  its half-width and half-height (radius).
+Computes the local mean average of a pixels rectangular neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mean2DSphere">mean2DSphere</a>  
-Computes the local mean average of a pixels ellipsoidal neighborhood. The ellipses size is specified by  its half-width and half-height (radius).
+Computes the local mean average of a pixels ellipsoidal neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mean3DBox">mean3DBox</a>  
-Computes the local mean average of a pixels cube neighborhood. The cubes size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local mean average of a pixels cube neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mean3DSphere">mean3DSphere</a>  
-Computes the local mean average of a pixels spherical neighborhood. The spheres size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local mean average of a pixels spherical neighborhood. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanClosestSpotDistance">meanClosestSpotDistance</a>  
 Determines the distance between pairs of closest spots in two binary images. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanOfAllPixels">meanOfAllPixels</a>  
-Determines the mean average of all pixels in a given image. It will be stored in a new row of ImageJs Results table in the column 'Mean'.
+Determines the mean average of all pixels in a given image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanOfMaskedPixels">meanOfMaskedPixels</a>  
 Determines the mean intensity in a masked image. 
@@ -578,52 +582,58 @@ Determines the mean intensity in a threshleded image.
 Takes a touch matrix and a vector of values to determine the mean value among touching neighbors for every object. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanSliceBySliceSphere">meanSliceBySliceSphere</a>  
-Computes the local mean average of a pixels ellipsoidal 2D neighborhood in an image stack  slice by slice. The ellipses size is specified by its half-width and half-height (radius).
+Computes the local mean average of a pixels ellipsoidal 2D neighborhood in an image stack  slice by slice. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanSquaredError">meanSquaredError</a>  
 Determines the mean squared error (MSE) between two images. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanXProjection">meanXProjection</a>  
+Determines the mean average intensity projection of an image along X.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanYProjection">meanYProjection</a>  
+Determines the mean average intensity projection of an image along Y.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanZProjection">meanZProjection</a>  
-Determines the mean average projection of an image along Z.
+Determines the mean average intensity projection of an image along Z.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanZProjectionBounded">meanZProjectionBounded</a>  
-Determines the mean projection of an image along Z within a given z range.
+Determines the mean average intensity projection of an image along Z within a given z range.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_median2DBox">median2DBox</a>  
-Computes the local median of a pixels rectangular neighborhood. The rectangle is specified by  its half-width and half-height (radius).
+Computes the local median of a pixels rectangular neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_median2DSphere">median2DSphere</a>  
-Computes the local median of a pixels ellipsoidal neighborhood. The ellipses size is specified by  its half-width and half-height (radius).
+Computes the local median of a pixels ellipsoidal neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_median3DBox">median3DBox</a>  
-Computes the local median of a pixels cuboid neighborhood. The cuboid size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local median of a pixels cuboid neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_median3DSphere">median3DSphere</a>  
-Computes the local median of a pixels spherical neighborhood. The spheres size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local median of a pixels spherical neighborhood. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a>  
 Takes a touch matrix and a vector of values to determine the median value among touching neighbors for every object. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjection">medianZProjection</a>  
-Determines the median projection of an image stack along Z.
+Determines the median intensity projection of an image stack along Z.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimum2DBox">minimum2DBox</a>  
-Computes the local minimum of a pixels rectangular neighborhood. The rectangles size is specified by  its half-width and half-height (radius).
+Computes the local minimum of a pixels rectangular neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimum2DSphere">minimum2DSphere</a>  
-Computes the local minimum of a pixels ellipsoidal neighborhood. The ellipses size is specified by  its half-width and half-height (radius).
+Computes the local minimum of a pixels ellipsoidal neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimum3DBox">minimum3DBox</a>  
-Computes the local minimum of a pixels cube neighborhood. The cubes size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local minimum of a pixels cube neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimum3DSphere">minimum3DSphere</a>  
-Computes the local minimum of a pixels spherical neighborhood. The spheres size is specified by  its half-width, half-height and half-depth (radius).
+Computes the local minimum of a pixels spherical neighborhood. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumDistanceOfTouchingNeighbors">minimumDistanceOfTouchingNeighbors</a>  
 Takes a touch matrix and a distance matrix to determine the shortest distance of touching neighbors for every object.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumImageAndScalar">minimumImageAndScalar</a>  
-Computes the maximum of a constant scalar s and each pixel value x in a given image X.
+Computes the minimum of a constant scalar s and each pixel value x in a given image X.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumImages">minimumImages</a>  
 Computes the minimum of a pair of pixel values x, y from two given images X and Y.
@@ -632,7 +642,7 @@ Computes the minimum of a pair of pixel values x, y from two given images X and 
 Applies a minimum filter with kernel size 3x3 n times to an image iteratively. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOfAllPixels">minimumOfAllPixels</a>  
-Determines the minimum of all pixels in a given image. It will be stored in a new row of ImageJs Results table in the column 'Min'.
+Determines the minimum of all pixels in a given image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOfMaskedPixels">minimumOfMaskedPixels</a>  
 Determines the minimum intensity in a masked image. 
@@ -640,14 +650,20 @@ Determines the minimum intensity in a masked image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a>  
 Takes a touch matrix and a vector of values to determine the minimum value among touching neighbors for every object. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumXProjection">minimumXProjection</a>  
+Determines the minimum intensity projection of an image along Y.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumYProjection">minimumYProjection</a>  
+Determines the minimum intensity projection of an image along Y.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumZProjection">minimumZProjection</a>  
-Determines the minimum projection of an image along Z.
+Determines the minimum intensity projection of an image along Z.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumZProjectionBounded">minimumZProjectionBounded</a>  
-Determines the minimum projection of an image along Z within a given z range.
+Determines the minimum intensity projection of an image along Z within a given z range.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumZProjectionThresholdedBounded">minimumZProjectionThresholdedBounded</a>  
-Determines the minimum projection of all pixels in an image above a given threshold along Z within a given z range.
+Determines the minimum intensity projection of all pixels in an image above a given threshold along Z within a given z range.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndCoordinate">multiplyImageAndCoordinate</a>  
 Multiplies all pixel intensities with the x, y or z coordinate, depending on specified dimension.
@@ -666,7 +682,7 @@ Multiplies two matrices with each other.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplySliceBySliceWithScalars">multiplySliceBySliceWithScalars</a>  
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyStackWithPlane">multiplyStackWithPlane</a>  
-Multiplies all pairs of pixel values x and y from an image stack X and a 2D image Y. x and y are at  the same spatial position within a plane.
+Multiplies all pairs of pixel values x and y from an image stack X and a 2D image Y. 
 
 <a name="N"></a>
 
@@ -806,6 +822,9 @@ Replaces integer intensities specified in a vector image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replaceIntensity">replaceIntensity</a>  
 Replaces a specific intensity in an image with a given new value.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replacePixelsIfZero">replacePixelsIfZero</a>  
+Replaces pixel values x with y in case x is zero.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resample">resample</a>  
 Resamples an image with given size factors using an affine transform.
 
@@ -816,7 +835,7 @@ Flippes Y and Z axis of an image stack. This operation is similar to ImageJs 'Re
 Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method   but offers less flexibility such as interpolation.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadial">resliceRadial</a>  
-Computes a radial projection of an image stack. Starting point for the line is the center in any  X/Y-plane of a given input image stack. This operation is similar to ImageJs 'Radial Reslice' method but offers less flexibility.
+Computes a radial projection of an image stack. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRight">resliceRight</a>  
 Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method   but offers less flexibility such as interpolation.
@@ -831,10 +850,10 @@ Converts a table column to an image.
 Converts a table to an image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_rotate2D">rotate2D</a>  
-Rotates an image in plane. All angles are entered in degrees. If the image is not rotated around  the center, it is rotated around the coordinate origin.
+Rotates an image in plane. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_rotate3D">rotate3D</a>  
-Rotates an image stack in 3D. All angles are entered in degrees. If the image is not rotated around  the center, it is rotated around the coordinate origin.
+Rotates an image stack in 3D. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_rotateClockwise">rotateClockwise</a>  
 Rotates a given input image by 90 degrees clockwise. 
@@ -843,10 +862,10 @@ Rotates a given input image by 90 degrees clockwise.
 Rotates a given input image by 90 degrees counter-clockwise. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_rotateLeft">rotateLeft</a>  
-Rotates a given input image by 90 degrees counter-clockwise. For that, X and Y axis of an image stack are flipped. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility  such as interpolation.
+Rotates a given input image by 90 degrees counter-clockwise. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_rotateRight">rotateRight</a>  
-Rotates a given input image by 90 degrees clockwise. For that, X and Y axis of an image stack are flipped. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility  such as interpolation.
+Rotates a given input image by 90 degrees counter-clockwise. 
 
 <a name="S"></a>
 
@@ -855,7 +874,7 @@ Rotates a given input image by 90 degrees clockwise. For that, X and Y axis of a
 Pulls an image from the GPU memory and saves it as TIF to disc.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_scale">scale</a>  
-DEPRECATED: CLIJ scale() is <b>deprecated</b>. Use scale2D or scale3D instead!
+Scales an image with a given factor.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_scale2D">scale2D</a>  
 Scales an image with a given factor.
@@ -938,6 +957,9 @@ Determines the overlap of two binary images using the Sorensen-Dice coefficent.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">spotsToPointList</a>  
 Transforms a spots image as resulting from maximum/minimum detection in an image where every column contains d  pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_squaredDifference">squaredDifference</a>  
+Determines the squared difference pixel by pixel between two images.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_stackToTiles">stackToTiles (Experimental)</a>  
 Stack to tiles.
 
@@ -951,7 +973,7 @@ Determines the standard deviation of all pixels in an image which have non-zero 
 Takes a touch matrix and a vector of values to determine the standard deviation value among touching neighbors for every object. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationZProjection">standardDeviationZProjection</a>  
-Determines the standard deviation projection of an image stack along Z.
+Determines the standard deviation intensity projection of an image stack along Z.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_startContinuousWebcamAcquisition">startContinuousWebcamAcquisition (Experimental)</a>  
 Starts acquistion of images from a webcam.
@@ -987,7 +1009,7 @@ Subtracts one image X from another image Y pixel wise.
 Sums all pixels slice by slice and returns them in an array.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sumOfAllPixels">sumOfAllPixels</a>  
-Determines the sum of all pixels in a given image. It will be stored in a new row of ImageJs Results table in the column 'Sum'.
+Determines the sum of all pixels in a given image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sumPixelsSliceBySlice">sumPixelsSliceBySlice</a>  
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sumXProjection">sumXProjection</a>  
@@ -997,7 +1019,7 @@ Determines the sum intensity projection of an image along Z.
 Determines the sum intensity projection of an image along Z.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sumZProjection">sumZProjection</a>  
-Determines the sum projection of an image along Z.
+Determines the sum intensity projection of an image along Z.
 
 <a name="T"></a>
 
@@ -1006,7 +1028,7 @@ Determines the sum projection of an image along Z.
 Fuses #n# image stacks using Tenengrads algorithm.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_threshold">threshold</a>  
-Computes a binary image with pixel values 0 and 1. All pixel values x of a given input image with  value larger or equal to a given threshold t will be set to 1.
+Computes a binary image with pixel values 0 and 1. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_thresholdDefault">thresholdDefault</a>  
 The automatic thresholder utilizes the Default threshold method implemented in ImageJ using a histogram determined on  the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.

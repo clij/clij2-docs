@@ -1,7 +1,9 @@
 ## minimum2DSphere
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local minimum of a pixels ellipsoidal neighborhood. The ellipses size is specified by 
+Computes the local minimum of a pixels ellipsoidal neighborhood. 
+
+The ellipses size is specified by 
 its half-width and half-height (radius).
 
 ### Usage in ImageJ macro

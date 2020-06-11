@@ -1,12 +1,27 @@
 ## histogram
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
+By Robert Haase adapted work from Aaftab Munshi, Benedict Gaster, Timothy Mattson, James Fung, Dan Ginsburg
+
 Determines the histogram of a given image.
+
 The histogram image is of dimensions number_of_bins/1/1; a 3D image with height=1 and depth=1. 
-Histogram bins contain the number of pixels with intensity in this corresponding bin.  
+Histogram bins contain the number of pixels with intensity in this corresponding bin. 
 The histogram bins are uniformly distributed between given minimum and maximum grey value intensity. 
 If the flag determine_min_max is set, minimum and maximum intensity will be determined. 
-When calling this operation many times, it is recommended to determine minimum and maximum intensity once at the beginning and handing over these values.
+When calling this operation many times, it is recommended to determine minimum and maximum intensity 
+once at the beginning and handing over these values.
+
+### histogram often follows after
+* <a href="reference_pushArray">pushArray</a> (2)
+* <a href="reference_copySlice">copySlice</a> (3)
+* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (3)
+
+
+### histogram is often followed by
+* <a href="reference_print">print</a> (3)
+* <a href="reference_paste2D">paste2D</a> (3)
+
 
 ### Usage in ImageJ macro
 ```
@@ -140,6 +155,23 @@ clij2.release(destination);
 </details>
 
 
+
+
+
+### License terms
+// adapted code from  
+// https://github.com/bgaster/opencl-book-samples/blob/master/src/Chapter_14/histogram/histogram_image.cl  
+//  
+// It was published unter BSD license according to  
+// https://code.google.com/archive/p/opencl-book-samples/  
+//  
+// Book:      OpenCL(R) Programming Guide  
+// Authors:   Aaftab Munshi, Benedict Gaster, Timothy Mattson, James Fung, Dan Ginsburg  
+// ISBN-10:   0-321-74964-2  
+// ISBN-13:   978-0-321-74964-2  
+// Publisher: Addison-Wesley Professional  
+// URLs:      http://safari.informit.com/9780132488006/  
+//            http://www.openclprogrammingguide.com
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)

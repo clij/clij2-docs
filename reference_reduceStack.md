@@ -11,7 +11,7 @@ With the offset you have control which slices stay:
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_reduceStack(Image input, ByRef Image destination, Number reductionFactor, Number offset);
+Ext.CLIJ2_reduceStack(Image input, Image destination, Number reductionFactor, Number offset);
 ```
 
 

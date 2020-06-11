@@ -14,7 +14,7 @@ Multiplies two matrices with each other.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, ByRef Image matrix_destination);
+Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, Image matrix_destination);
 ```
 
 
@@ -150,6 +150,8 @@ clij2.release(matrix_destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/matrix_multiply.m"><img src="images/language_matlab.png" height="20"/></a> [matrix_multiply.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/matrix_multiply.m)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/matrix_multiply_benchmarking.m"><img src="images/language_matlab.png" height="20"/></a> [matrix_multiply_benchmarking.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/matrix_multiply_benchmarking.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

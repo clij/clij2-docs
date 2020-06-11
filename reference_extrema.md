@@ -7,7 +7,7 @@ f(x, y) = x if abs(x) > abs(y), y else.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_extrema(Image input1, Image input2, ByRef Image destination);
+Ext.CLIJx_extrema(Image input1, Image input2, Image destination);
 ```
 
 

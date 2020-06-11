@@ -8,19 +8,19 @@ The pixels where  the regions touched are afterwards returned as binary image wh
 DEPRECATED: Use VoronoiLabelin instead.
 
 ### labelVoronoiOctagon often follows after
-* <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (4)
+* <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (5)
 * <a href="reference_labelSpots">labelSpots</a> (2)
 
 
 ### labelVoronoiOctagon is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (7)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_labelVoronoiOctagon(Image label_map, ByRef Image label_voronoi_destination);
+Ext.CLIJ2_labelVoronoiOctagon(Image label_map, Image label_voronoi_destination);
 ```
 
 

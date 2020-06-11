@@ -1,12 +1,13 @@
 ## maximumZProjection
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the maximum projection of an image along Z.
+Determines the maximum intensity projection of an image along Z.
 
 ### maximumZProjection often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 * <a href="reference_rotate3D">rotate3D</a> (2)
 * <a href="reference_resliceLeft">resliceLeft</a> (2)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
 * <a href="reference_resample">resample</a> (2)
 
 
@@ -155,8 +156,10 @@ clij2.release(destination_max);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveSphereProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveSphereProjection.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/javascript/maximumProjection.js"><img src="images/language_javascript.png" height="20"/></a> [maximumProjection.js](https://github.com/clij/clij2-docs/blob/master/src/main/javascript/maximumProjection.js)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/groovy/maximumProjection.groovy"><img src="images/language_groovy.png" height="20"/></a> [maximumProjection.groovy](https://github.com/clij/clij2-docs/blob/master/src/main/groovy/maximumProjection.groovy)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/beanshell/maximumProjection.bsh"><img src="images/language_beanshell.png" height="20"/></a> [maximumProjection.bsh](https://github.com/clij/clij2-docs/blob/master/src/main/beanshell/maximumProjection.bsh)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/multi_GPU_demo.py"><img src="images/language_jython.png" height="20"/></a> [multi_GPU_demo.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/multi_GPU_demo.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

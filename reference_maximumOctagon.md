@@ -9,7 +9,7 @@ result very similar to minimum sphere. Approximately:radius = iterations - 2
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumOctagon(Image input, ByRef Image destination, Number iterations);
+Ext.CLIJ2_maximumOctagon(Image input, Image destination, Number iterations);
 ```
 
 

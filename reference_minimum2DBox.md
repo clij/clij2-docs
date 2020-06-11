@@ -1,7 +1,9 @@
 ## minimum2DBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local minimum of a pixels rectangular neighborhood. The rectangles size is specified by 
+Computes the local minimum of a pixels rectangular neighborhood. 
+
+The rectangles size is specified by 
 its half-width and half-height (radius).
 
 ### Usage in ImageJ macro

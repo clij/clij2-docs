@@ -5,16 +5,17 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
  for every object.
 
 ### averageDistanceOfTouchingNeighbors often follows after
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (3)
 
 
 ### averageDistanceOfTouchingNeighbors is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, ByRef Image average_distancelist_destination);
+Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image average_distancelist_destination);
 ```
 
 

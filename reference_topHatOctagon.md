@@ -7,7 +7,7 @@ Applies a minimum filter with kernel size 3x3 n times to an image iteratively.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_topHatOctagon(Image input, ByRef Image destination, Number iterations);
+Ext.CLIJx_topHatOctagon(Image input, Image destination, Number iterations);
 ```
 
 

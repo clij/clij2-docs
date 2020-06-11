@@ -4,13 +4,14 @@
 Reads out the size of an image [stack] and writes it to the variables 'width', 'height' and 'depth'.
 
 ### getDimensions is often followed by
-* <a href="reference_create3D">create3D</a> (4)
-* <a href="reference_create2D">create2D</a> (5)
+* <a href="reference_crop2D">crop2D</a> (3)
+* <a href="reference_create3D">create3D</a> (15)
+* <a href="reference_create2D">create2D</a> (8)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getDimensions(Image source, ByRef Number width, ByRef Number height, ByRef Number depth);
+Ext.CLIJ2_getDimensions(Image source, Number width, Number height, Number depth);
 ```
 
 
@@ -32,6 +33,7 @@ Ext.CLIJ2_getDimensions(Image source, ByRef Number width, ByRef Number height, B
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [large_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/large_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/matrix_multiply.m"><img src="images/language_matlab.png" height="20"/></a> [matrix_multiply.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/matrix_multiply.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -1,7 +1,9 @@
 ## countNonZeroPixels2DSphere
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Counts non-zero pixels in a sphere around every pixel.Put the number in the result image.
+Counts non-zero pixels in a sphere around every pixel. 
+
+Put the number in the result image.
 
 ### Usage in ImageJ macro
 ```

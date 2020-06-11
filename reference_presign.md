@@ -7,7 +7,7 @@ f(x) = x / abs(x).
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_presign(Image input, ByRef Image destination);
+Ext.CLIJx_presign(Image input, Image destination);
 ```
 
 

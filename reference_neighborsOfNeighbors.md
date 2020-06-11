@@ -4,16 +4,16 @@
 Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
 
 ### neighborsOfNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
 
 
 ### neighborsOfNeighbors is often followed by
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (3)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_neighborsOfNeighbors(Image touch_matrix, ByRef Image neighbor_matrix_destination);
+Ext.CLIJ2_neighborsOfNeighbors(Image touch_matrix, Image neighbor_matrix_destination);
 ```
 
 

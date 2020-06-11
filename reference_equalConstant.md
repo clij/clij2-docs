@@ -7,7 +7,7 @@ Determines if an image A and a constant b are equal.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_equalConstant(Image source, ByRef Image destination, Number constant);
+Ext.CLIJ2_equalConstant(Image source, Image destination, Number constant);
 ```
 
 

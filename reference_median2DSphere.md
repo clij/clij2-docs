@@ -1,7 +1,9 @@
 ## median2DSphere
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local median of a pixels ellipsoidal neighborhood. The ellipses size is specified by 
+Computes the local median of a pixels ellipsoidal neighborhood. 
+
+The ellipses size is specified by 
 its half-width and half-height (radius).
 
 For technical reasons, the area of the ellipse must have less than 1000 pixels.

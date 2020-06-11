@@ -1,7 +1,9 @@
 ## applyVectorField2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Deforms an image according to distances provided in the given vector images. It is recommended to use 32-bit images for input, output and vector images. 
+Deforms an image according to distances provided in the given vector images.
+
+ It is recommended to use 32-bit images for input, output and vector images. 
 
 ### applyVectorField2D often follows after
 * <a href="reference_affineTransform2D">affineTransform2D</a> (3)

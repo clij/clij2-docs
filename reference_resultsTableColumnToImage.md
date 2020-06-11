@@ -6,12 +6,13 @@ Converts a table column to an image.
 The values are stored in x dimension.
 
 ### resultsTableColumnToImage is often followed by
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
 * <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_resultsTableColumnToImage(ByRef Image destination, String column_name);
+Ext.CLIJ2_resultsTableColumnToImage(Image destination, String column_name);
 ```
 
 

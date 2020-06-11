@@ -7,13 +7,15 @@ Multiplies all pairs of pixel values x and y from two image X and Y.
 
 ### multiplyImages often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 * <a href="reference_create2D">create2D</a> (2)
 
 
 ### multiplyImages is often followed by
 * <a href="reference_print">print</a> (4)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -159,6 +161,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm"><img src="images/language_macro.png" height="20"/></a> [multiply_vectors_matrices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/multiply_vectors_matrices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/multiply_images_test.py"><img src="images/language_jython.png" height="20"/></a> [multiply_images_test.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/multiply_images_test.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -1,7 +1,9 @@
 ## rotate2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Rotates an image in plane. All angles are entered in degrees. If the image is not rotated around 
+Rotates an image in plane. 
+
+All angles are entered in degrees. If the image is not rotated around 
 the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image.

@@ -11,7 +11,7 @@ This corresponds to the minimum for each individial column.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_shortestDistances(Image distance_matrix, ByRef Image destination_minimum_distances);
+Ext.CLIJ2_shortestDistances(Image distance_matrix, Image destination_minimum_distances);
 ```
 
 
