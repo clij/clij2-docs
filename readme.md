@@ -35,14 +35,11 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Icy](https://github.com/clij/clicy)
     * [Matlab](https://github.com/clij/clatlab)
   * [Reference](https://clij.github.io/clij2-docs/reference)
-    <img src="./images/cheat_sheets.png" width="245">
   * [Cheat sheets](https://clij.github.io/clij2-docs/CLIJ2-cheatsheet_V3.pdf)
   * [Release notes](https://github.com/clij/clij2/releases)
   * [Release cycle](https://clij.github.io/clij-docs/release_cycle)    
-    <img src="./images/cle_logo.png" width="100">
   * [Future perspective: clEsperanto](http://clesperanto.net)
   
-![image](images/clij2_website.png) 
 * Tutorials
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
   * [Combining CLIJ and CLIJ2](https://clij.github.io/clij2-docs/md/clij1_clij2_combination/)
@@ -59,7 +56,6 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
 
-  ![image](images/neighborhood_filters.png) 
   * Working with matrices and graphs
     * [Multiply vectors and matrices](https://clij.github.io/clij2-docs/md/multiply_vectors_matrices)
     * [Matrix multiplication](https://clij.github.io/clij2-docs/md/matrix_multiply/)
@@ -94,8 +90,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   
 * FAQ / support
   * [Frequently asked questions](https://clij.github.io/clij-docs/faq)
-  * CLIJ versus CLIJ2 
-      <img src="./images/clij1_logo.png" width="100">
+  * CLIJ versus CLIJ2
     * [CLIJ documentation (archived)](https://github.com/clij/clij-docs)
     * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
     * [CLIJ - CLIJ2 transition guide (under construction)](clij2_transition_notes)
