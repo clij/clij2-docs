@@ -6,7 +6,7 @@
 CLIJ2 is a GPU-accelerated image processing library for [ImageJ/Fiji](https://fiji.sc/), 
 [Icy](http://icy.bioimageanalysis.org/), 
 Matlab and Java. 
-Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it; only entry-evel coding sckills required! 
+Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it. Just entry-evel coding skills are required! 
 Increased efforts were put on documentation, code examples, user-convenience, interoperability, and extensibility.
 CLIJ is based on 
 [ClearCL](http://github.com/ClearControl/ClearCL), 
