@@ -28,15 +28,16 @@ If you search for support, please open a thread on the [image.sc](https://image.
 
 * Overview
   * [Quick tour](quick_tour)
-  * [Introduction for ImageJ Macro users](macro_intro)
-  * [Introduction for Java developers](macro_intro)
+  * [Introduction for ImageJ Macro users](https://clij.github.io/clij2-docs/macro_intro)
+  * [Introduction for Java developers](https://clij.github.io/clij2-docs/api_intro)
   * Installation
     * [Fiji update site](https://clij.github.io/clij2-docs/installationInFiji)
     * [Icy](https://github.com/clij/clicy)
     * [Matlab](https://github.com/clij/clatlab)
-  * [Reference](https://clij.github.io/clij2-docs/reference)
   * [Cheat sheets](https://clij.github.io/clij2-docs/CLIJ2-cheatsheet_V3.pdf)
+  * [Reference](https://clij.github.io/clij2-docs/reference)
   * [Release notes](https://github.com/clij/clij2/releases)
+  * [Community guidelines](https://clij.github.io/clij2-docs/)
   * [Release cycle](https://clij.github.io/clij-docs/release_cycle)    
   * [Future perspective: clEsperanto](http://clesperanto.net)
   
@@ -76,7 +77,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Detailed time tracing](https://clij.github.io/clij2-docs/md/time_tracing/)
     * [Comparing and benchmarking workflows](https://clij.github.io/clij2-docs/md/compare_workflows/)
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ/)
-    
+      
 * Example code
   * [ImageJ macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro)
   * [Icy javascript](https://github.com/clij/clicy/tree/master/src/main/javascript)
@@ -88,14 +89,18 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [ImageJ Javascript](https://github.com/clij/clij2-docs/tree/master/src/main/javascript)
   * [ImageJ Jython](https://github.com/clij/clij2-docs/tree/master/src/main/jython)    
   
+* Development
+  * [CLIJ2 development](https://clij.github.io/clij2-docs/development)
+  * [CLIJ2 plugin template](https://github.com/clij2/clij2-plugin-template)
+
 * FAQ / support
-  * [Frequently asked questions](https://clij.github.io/clij-docs/faq)
+  * [Frequently asked questions](https://clij.github.io/clij2-docs/faq)
   * CLIJ versus CLIJ2
     * [CLIJ documentation (archived)](https://github.com/clij/clij-docs)
     * [CLIJ BioRxiv preprint (archived)](https://doi.org/10.1101/660704)
     * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
     * [CLIJ - CLIJ2 transition guide (under construction)](clij2_transition_notes)
-  * [Troubleshooting](https://clij.github.io/clij-docs/troubleshooting)
+  * [Troubleshooting](https://clij.github.io/clij2-docs/troubleshooting)
   * [Support](https://image.sc)
   * [Imprint](https://clij.github.io/imprint)
 
