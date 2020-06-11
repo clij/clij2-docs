@@ -3,9 +3,11 @@
 <img src="./images/curtain.gif" width="245">
 
 ## Introduction
-CLIJ is brings GPU-accelerated image processing library for [ImageJ/Fiji](https://fiji.sc/), Icy, Matlab and Java. 
-Under the hood it uses [OpenCL] but users don't have to learn OpenCL, they can just use it; only entry-evel coding sckills required! 
-Increased efforts were put on documentation, code examples, interoperability, and extensibility.
+CLIJ2 is a GPU-accelerated image processing library for [ImageJ/Fiji](https://fiji.sc/), 
+[Icy](http://icy.bioimageanalysis.org/), 
+Matlab and Java. 
+Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it; only entry-evel coding sckills required! 
+Increased efforts were put on documentation, code examples, user-convenience, interoperability, and extensibility.
 CLIJ is based on 
 [ClearCL](http://github.com/ClearControl/ClearCL), 
 [JOCL](http://github.com/gpu/JOCL), 
@@ -19,8 +21,6 @@ Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt,
 Alexandr Dibrov, Uwe Schmidt, Martin Weigert, Nicola Maghelli, Pavel Tomancak, 
 Florian Jug, Eugene W Myers. 
 *CLIJ: GPU-accelerated image processing for everyone*. [Nat Methods 17, 5-6 (2020) doi:10.1038/s41592-019-0650-1](https://doi.org/10.1038/s41592-019-0650-1)
-
-[Older version in BioRxiv](https://doi.org/10.1101/660704)
 
 If you search for support, please open a thread on the [image.sc](https://image.sc) forum.
 
@@ -92,6 +92,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [Frequently asked questions](https://clij.github.io/clij-docs/faq)
   * CLIJ versus CLIJ2
     * [CLIJ documentation (archived)](https://github.com/clij/clij-docs)
+    * [CLIJ BioRxiv preprint (archived)](https://doi.org/10.1101/660704)
     * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
     * [CLIJ - CLIJ2 transition guide (under construction)](clij2_transition_notes)
   * [Troubleshooting](https://clij.github.io/clij-docs/troubleshooting)
