@@ -9,32 +9,33 @@
 #########################################
 
 from ij import IJ;
-from net.haesleinhuepf.clijx import CLIJx;
+from net.haesleinhuepf.clij2 import CLIJ2;
 
 IJ.run("Close All");
 
 # init GPU
-clijx = CLIJx.getInstance();
+clij2 = CLIJ2.getInstance();
 
 # init two binary images
-image1 = clijx.create([100, 100, 10], clijx.UnsignedByte);
-image2 = clijx.create([100, 100, 10], clijx.UnsignedByte);
-temp = clijx.create([100, 100, 10], clijx.UnsignedByte);
-clijx.set(image1, 0);
-clijx.set(image2, 0);
+image1 = clij2.create([100, 100, 10], clij2.UnsignedByte);
+image2 = clij2.create([100, 100, 10], clij2.UnsignedByte);
+temp = clij2.create([100, 100, 10], clij2.UnsignedByte);
+clij2.set(image1, 0);
+clij2.set(image2, 0);
 
 # set two spheres
-clijx.drawSphere(image1, 50, 50, 5, 20, 20, 5);
-clijx.drawSphere(image2, 40, 40, 5, 20, 20, 5);
+clij2.drawSphere(image1, 50, 50, 5, 20, 20, 5);
+clij2.drawSphere(image2, 40, 40, 5, 20, 20, 5);
 
-# visualise overlap
-clijx.showRGB(image2, image1, image2, "Overlap (single plane)");
+# visualize
+clij2.show(image1, "image1");
+clij2.show(image2, "image2");
 
 # compute and output overlap
-jaccardIndex = clijx.jaccardIndex(image1, image2);
-diceIndex = clijx.sorensenDiceCoefficient(image1, image2);
+jaccardIndex = clij2.jaccardIndex(image1, image2);
+diceIndex = clij2.sorensenDiceCoefficient(image1, image2);
 print("Jaccard index:" + str(jaccardIndex));
 print("Dice index:" + str(diceIndex));
 
 # cleanup by the end
-clijx.clear();
+clij2.clear();

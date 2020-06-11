@@ -36,10 +36,10 @@ masked = clij2.create(input);
 clij2.automaticThreshold(input, mask, "Otsu");
 
 # mask the image
-clij.op().mask(input, mask, masked);
+clij2.mask(input, mask, masked);
 
 # determine mean intensity of masked area:
-meanIntensity = clij2.sumPixels(masked) / input.getWidth() / input.getHeight();
+meanIntensity = clij2.sumOfAllPixels(masked) / input.getWidth() / input.getHeight();
 IJ.log("Mean intensity of masked pixels: " + str(meanIntensity));
 
 # clean up

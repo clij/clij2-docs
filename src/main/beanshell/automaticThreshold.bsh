@@ -27,10 +27,13 @@ input = clij2.push(imp);
 output = clij2.create(input);
 
 // apply threshold method on GPU
-clij2.automaticThreshold(input, output, "Otsu");
+clij2.thresholdOtsu(input, output);
 
 // show result
 clij2.pullBinary(output).show();
+
+// clean up
+clij2.clear();
 
 
 

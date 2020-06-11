@@ -16,8 +16,8 @@ from java.lang import Thread;
 # The Processor class extends Thread so that we can run it
 # in parallel
 class Processor(Thread):
-	# the CLIJ instance doing the heavy work
-	clij = None;
+	# the CLIJ2 instance doing the heavy work
+	clij2 = None;
 	# the image which should be processed
 	image = None;
 	# a flag that says some work is ongoing
@@ -26,8 +26,8 @@ class Processor(Thread):
 	finished = False;
 
 	# Constructor
-	def __init__(self, clij):
-		self.clij = clij;
+	def __init__(self, clij2):
+		self.clij2 = clij2;
 
 	# sets the image which should be processed
 	def setImage(self, image):
@@ -40,23 +40,23 @@ class Processor(Thread):
 		self.working = True;
 		# print("" + str(self.clij) + " starts working...\n");
 		
-		clij = self.clij;
+		clij2 = self.clij2;
 
 		# push the image to GPU memory
-		input_image = clij.push(self.image);
+		input_image = clij2.push(self.image);
 
 		# allocate more memory on the GPU for temp and resul images
-		temp_image = clij.create(input_image);
-		backgroundSubtracted_image = clij.create(input_image);
-		max_projection_image = clij.create([input_image.getWidth(), input_image.getHeight()], input_image.getNativeType());
+		temp_image = clij2.create(input_image);
+		backgroundSubtracted_image = clij2.create(input_image);
+		max_projection_image = clij2.create([input_image.getWidth(), input_image.getHeight()], input_image.getNativeType());
 
 		# perform a background-subtracted maximum projection
-		clij.op().blur(input_image, temp_image, 5, 5, 1);
-		clij.op().subtract(input_image, temp_image, backgroundSubtracted_image);
-		clij.op().maximumZProjection(backgroundSubtracted_image, max_projection_image);
+		clij2.gaussianBlur(input_image, temp_image, 5, 5, 1);
+		clij2.subtract(input_image, temp_image, backgroundSubtracted_image);
+		clij2.maximumZProjection(backgroundSubtracted_image, max_projection_image);
 
 		# pull result back from GPU memory and show it
-		result = clij.pull(max_projection_image);
+		result = clij2.pull(max_projection_image);
 		# result.show();
 		# IJ.run("Enhance Contrast", "saturated=0.35");
 
@@ -77,7 +77,7 @@ class Processor(Thread):
 		return self.finished;
 
 	def getCLIJ(self):
-		return self.clij;
+		return self.clij2;
 
 #imp = IJ.openImage("C:/structure/data/2018-05-23-16-18-13-89-Florence_multisample/processed/tif/000116.raw.tif");
 imp = IJ.openImage("https://bds.mpi-cbg.de/CLIJ_benchmarking_data/000461.raw.tif");

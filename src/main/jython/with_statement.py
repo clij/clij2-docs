@@ -31,7 +31,7 @@ with CLIJ2.getInstance() as clij2:
 	blurred = clij2.create(input);
 
 	# blur, threshold and label the image
-	clij2.blur(input, blurred, 5, 5, 0);
+	clij2.gaussianBlur(input, blurred, 5, 5, 0);
 
 	# show result
 	clij2.show(blurred, "blurred");
@@ -43,3 +43,4 @@ with CLIJ2.getInstance() as clij2:
 
 # check if clijx was clean up by the end of the block
 IJ.log(CLIJ2.getInstance().reportMemory());
+

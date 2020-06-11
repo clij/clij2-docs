@@ -27,6 +27,10 @@ clij2.maximumZProjection(imageInput, imageOutput);
 // show the result
 clij2.show(imageOutput, "output");
 
+// clean up 
+clij2.clear();
+
+
 // get the result back as variable
 result = clij2.pull(imageOutput);
 

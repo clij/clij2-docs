@@ -30,3 +30,6 @@ clij2.show(imageOutput, "output");
 result = clij2.pull(imageOutput);
 
 IJ.run("Enhance Contrast", "saturated=0.35");
+
+// clean up 
+clij2.clear();
