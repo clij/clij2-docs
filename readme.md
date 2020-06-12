@@ -46,7 +46,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Fiji update site](https://clij.github.io/clij2-docs/installationInFiji)
     * [Icy](https://github.com/clij/clicy)
     * [Matlab](https://github.com/clij/clatlab)
-    * [Maven/Java](https://github.com/clij2-docs/dependingViaMaven)
+    * [Maven/Java](https://github.com/clij/clij2-docs/dependingViaMaven)
   * [Cheat sheets](https://clij.github.io/clij2-docs/CLIJ2-cheatsheet_V3.pdf)
   * [Reference](https://clij.github.io/clij2-docs/reference)
   * [Release notes](https://github.com/clij/clij2/releases)
@@ -104,7 +104,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   
 * Development
   * [CLIJ2 development](https://clij.github.io/clij2-docs/development)
-  * [CLIJ2 plugin template](https://github.com/clij2/clij2-plugin-template)
+  * [CLIJ2 plugin template](https://github.com/clij/clij2-plugin-template)
 
 * FAQ / support
   * [Frequently asked questions](https://clij.github.io/clij2-docs/faq)
