@@ -15,7 +15,7 @@ This corresponds to the n row indices with minimum values for each column of the
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_nClosestPoints(Image distance_matrix, ByRef Image indexlist_destination, Number nClosestPointsTofind);
+Ext.CLIJ2_nClosestPoints(Image distance_matrix, Image indexlist_destination, Number nClosestPointsTofind);
 ```
 
 
@@ -23,6 +23,7 @@ Ext.CLIJ2_nClosestPoints(Image distance_matrix, ByRef Image indexlist_destinatio
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

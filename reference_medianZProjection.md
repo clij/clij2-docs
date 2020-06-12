@@ -1,11 +1,11 @@
 ## medianZProjection
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the median projection of an image stack along Z.
+Determines the median intensity projection of an image stack along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_medianZProjection(Image source, ByRef Image destination);
+Ext.CLIJ2_medianZProjection(Image source, Image destination);
 ```
 
 
@@ -127,7 +127,6 @@ clij2.release(destination);
 
 
 ### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/medianZProjectionComparion.ijm"><img src="images/language_macro.png" height="20"/></a> [medianZProjectionComparion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/medianZProjectionComparion.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm)  
 
 

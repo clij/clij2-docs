@@ -1,11 +1,11 @@
 ## maximumZProjectionBounded
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the maximum projection of an image along Z within a given z range.
+Determines the maximum intensity projection of an image along Z within a given z range.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumZProjectionBounded(Image source, ByRef Image destination_max, Number min_z, Number max_z);
+Ext.CLIJ2_maximumZProjectionBounded(Image source, Image destination_max, Number min_z, Number max_z);
 ```
 
 

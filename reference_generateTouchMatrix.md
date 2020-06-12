@@ -12,17 +12,19 @@ Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 a
 
 ### generateTouchMatrix is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
-* <a href="reference_release">release</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
+* <a href="reference_release">release</a> (5)
+* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (3)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
-* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (6)
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (3)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_generateTouchMatrix(Image label_map, ByRef Image touch_matrix_destination);
+Ext.CLIJ2_generateTouchMatrix(Image label_map, Image touch_matrix_destination);
 ```
 
 
@@ -165,6 +167,7 @@ clij2.release(touch_matrix_destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

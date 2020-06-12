@@ -8,13 +8,15 @@ The values are stored in x dimension.
 ### pushResultsTableColumn is often followed by
 * <a href="reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
+* <a href="reference_release">release</a> (3)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (3)
 * <a href="reference_multiplyImages">multiplyImages</a> (3)
+* <a href="reference_paste2D">paste2D</a> (3)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pushResultsTableColumn(ByRef Image destination, String column_name);
+Ext.CLIJ2_pushResultsTableColumn(Image destination, String column_name);
 ```
 
 

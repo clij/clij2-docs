@@ -7,7 +7,7 @@ All pixels other than on the line are untouched. Consider using `set(buffer, 0);
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_drawLine(ByRef Image destination, Number x1, Number y1, Number z1, Number x2, Number y2, Number z2, Number thickness, Number value);
+Ext.CLIJ2_drawLine(Image destination, Number x1, Number y1, Number z1, Number x2, Number y2, Number z2, Number thickness, Number value);
 ```
 
 

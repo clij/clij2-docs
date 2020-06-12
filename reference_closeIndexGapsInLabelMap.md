@@ -9,7 +9,7 @@ This operation is mostly performed on the CPU.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, ByRef Image labeling_destination);
+Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, Image labeling_destination);
 ```
 
 

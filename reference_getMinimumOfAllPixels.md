@@ -7,7 +7,7 @@ It will be stored in the variable minimum_of_all_pixels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getMinimumOfAllPixels(Image source, ByRef Number minimum_of_all_pixels);
+Ext.CLIJ2_getMinimumOfAllPixels(Image source, Number minimum_of_all_pixels);
 ```
 
 

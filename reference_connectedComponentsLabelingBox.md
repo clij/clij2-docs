@@ -5,7 +5,7 @@ Performs connected components analysis inspecting the box neighborhood of every 
 
 ### connectedComponentsLabelingBox often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
-* <a href="reference_binaryNot">binaryNot</a> (2)
+* <a href="reference_binaryNot">binaryNot</a> (3)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 
@@ -17,7 +17,7 @@ Performs connected components analysis inspecting the box neighborhood of every 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_connectedComponentsLabelingBox(Image binary_input, ByRef Image labeling_destination);
+Ext.CLIJ2_connectedComponentsLabelingBox(Image binary_input, Image labeling_destination);
 ```
 
 

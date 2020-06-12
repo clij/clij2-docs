@@ -7,17 +7,18 @@ Takes a touch matrix and a vector of values to determine the minimum value among
 
 ### minimumOfTouchingNeighbors often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
+* <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (2)
 
 
 ### minimumOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimumOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Image minimum_values_destination);
+Ext.CLIJ2_minimumOfTouchingNeighbors(Image values, Image touch_matrix, Image minimum_values_destination);
 ```
 
 

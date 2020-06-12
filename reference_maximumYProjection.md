@@ -1,11 +1,19 @@
 ## maximumYProjection
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the maximum projection of an image along X.
+Determines the maximum intensity projection of an image along X.
+
+### maximumYProjection often follows after
+* <a href="reference_invert">invert</a> (2)
+
+
+### maximumYProjection is often followed by
+* <a href="reference_resample">resample</a> (2)
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximumYProjection(Image source, ByRef Image destination_max);
+Ext.CLIJ2_maximumYProjection(Image source, Image destination_max);
 ```
 
 

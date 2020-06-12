@@ -10,7 +10,7 @@ All pixels other than in the box are untouched. Consider using `set(buffer, 0);`
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_drawBox(ByRef Image destination, Number x, Number y, Number z, Number width, Number height, Number depth, Number value);
+Ext.CLIJ2_drawBox(Image destination, Number x, Number y, Number z, Number width, Number height, Number depth, Number value);
 ```
 
 

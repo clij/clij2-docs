@@ -3,19 +3,21 @@
 
 Computes a binary image (containing pixel values 0 and 1) from an image X by negating its pixel values
 x using the binary NOT operator !
+
 All pixel values except 0 in the input image are interpreted as 1.
 
 <pre>f(x) = !x</pre>
 
 ### binaryNot often follows after
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (2)
+* <a href="reference_thresholdDefault">thresholdDefault</a> (2)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 
 ### binaryNot is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
 * <a href="reference_distanceMap">distanceMap</a> (2)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_mask">mask</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -151,6 +153,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distance_map.ijm"><img src="images/language_macro.png" height="20"/></a> [distance_map.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distance_map.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

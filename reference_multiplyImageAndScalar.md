@@ -7,12 +7,16 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 
 ### multiplyImageAndScalar often follows after
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
+* <a href="reference_invert">invert</a> (2)
 * <a href="reference_pushArray">pushArray</a> (2)
+* <a href="reference_resultsTableToImage2D">resultsTableToImage2D</a> (2)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
 
 ### multiplyImageAndScalar is often followed by
 * <a href="reference_print">print</a> (3)
+* <a href="reference_smallerOrEqual">smallerOrEqual</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (2)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
 * <a href="reference_convertUInt16">convertUInt16</a> (2)
 
@@ -155,6 +159,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm"><img src="images/language_macro.png" height="20"/></a> [debugging_pixels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py"><img src="images/language_jython.png" height="20"/></a> [addImages.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

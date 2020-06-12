@@ -8,13 +8,14 @@ Apply a local maximum filter to an image which only overwrites pixels with value
 
 
 ### onlyzeroOverwriteMaximumDiamond is often followed by
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_mask">mask</a> (3)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_onlyzeroOverwriteMaximumDiamond(Image input, ByRef Image destination);
+Ext.CLIJ2_onlyzeroOverwriteMaximumDiamond(Image input, Image destination);
 ```
 
 

@@ -5,9 +5,11 @@ Flips an image in X and/or Y direction depending on boolean flags.
 
 ### flip2D often follows after
 * <a href="reference_crop2D">crop2D</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
 ### flip2D is often followed by
+* <a href="reference_copySlice">copySlice</a> (2)
 * <a href="reference_paste2D">paste2D</a> (2)
 
 

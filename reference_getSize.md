@@ -127,7 +127,6 @@ clij2.release(source);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/getsize.ijm"><img src="images/language_macro.png" height="20"/></a> [getsize.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/getsize.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -1,8 +1,9 @@
-title: CLIJ2 (BETA test release)
+title: CLIJ2
 logo: /images/clij2_logo.png
-description: CLIJ2 (BETA test release)
+description: CLIJ2
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "neon" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-redirect-from

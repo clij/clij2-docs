@@ -7,7 +7,7 @@ Afterwards, the value is returned which is more far from zero.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_localExtremaBox(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJx_localExtremaBox(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ);
 ```
 
 

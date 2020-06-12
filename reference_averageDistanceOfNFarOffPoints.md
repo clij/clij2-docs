@@ -7,7 +7,7 @@ This corresponds to the average of the n maximum values (rows) for each column o
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_averageDistanceOfNFarOffPoints(Image distance_matrix, ByRef Image distance+_list_destination, Number nFarOffPointsTofind);
+Ext.CLIJ2_averageDistanceOfNFarOffPoints(Image distance_matrix, Image distance+_list_destination, Number nFarOffPointsTofind);
 ```
 
 

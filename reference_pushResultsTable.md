@@ -7,7 +7,7 @@ Rows stay rows, columns stay columns.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pushResultsTable(ByRef Image destination);
+Ext.CLIJ2_pushResultsTable(Image destination);
 ```
 
 

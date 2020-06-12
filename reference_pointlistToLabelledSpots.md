@@ -9,12 +9,12 @@ size n*n to draw lines from all points to points if the corresponding pixel in t
 
 
 ### pointlistToLabelledSpots is often followed by
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (4)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (5)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pointlistToLabelledSpots(Image pointlist, ByRef Image spots_destination);
+Ext.CLIJ2_pointlistToLabelledSpots(Image pointlist, Image spots_destination);
 ```
 
 

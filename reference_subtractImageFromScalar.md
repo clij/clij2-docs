@@ -11,7 +11,7 @@ Subtracts one image X from a scalar s pixel wise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_subtractImageFromScalar(Image input, ByRef Image destination, Number scalar);
+Ext.CLIJ2_subtractImageFromScalar(Image input, Image destination, Number scalar);
 ```
 
 

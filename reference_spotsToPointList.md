@@ -6,10 +6,12 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 
 ### spotsToPointList often follows after
 * <a href="reference_translate2D">translate2D</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (3)
 
 
 ### spotsToPointList is often followed by
+* <a href="reference_release">release</a> (2)
 * <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (3)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (3)
@@ -17,7 +19,7 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_spotsToPointList(Image input_spots, ByRef Image destination_pointlist);
+Ext.CLIJ2_spotsToPointList(Image input_spots, Image destination_pointlist);
 ```
 
 
@@ -149,7 +151,8 @@ clij2.release(destination_pointlist);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

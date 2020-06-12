@@ -23,7 +23,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_thresholdOtsu(Image input, ByRef Image destination);
+Ext.CLIJ2_thresholdOtsu(Image input, Image destination);
 ```
 
 
@@ -166,6 +166,10 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm"><img src="images/language_macro.png" height="20"/></a> [working_with_rois.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m"><img src="images/language_matlab.png" height="20"/></a> [simplePipeline.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/javascript/automaticThreshold.js"><img src="images/language_javascript.png" height="20"/></a> [automaticThreshold.js](https://github.com/clij/clij2-docs/blob/master/src/main/javascript/automaticThreshold.js)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/groovy/automaticThreshold.groovy"><img src="images/language_groovy.png" height="20"/></a> [automaticThreshold.groovy](https://github.com/clij/clij2-docs/blob/master/src/main/groovy/automaticThreshold.groovy)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/beanshell/automaticThreshold.bsh"><img src="images/language_beanshell.png" height="20"/></a> [automaticThreshold.bsh](https://github.com/clij/clij2-docs/blob/master/src/main/beanshell/automaticThreshold.bsh)  
 
 
 

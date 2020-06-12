@@ -7,7 +7,7 @@ The value v will be written at position x/y[/z] in the target image.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, ByRef Image destination);
+Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, Image destination);
 ```
 
 

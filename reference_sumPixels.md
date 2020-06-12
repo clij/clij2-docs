@@ -1,7 +1,9 @@
 ## sumPixels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Determines the sum of all pixels in a given image. It will be stored in a new row of ImageJs
+Determines the sum of all pixels in a given image. 
+
+It will be stored in a new row of ImageJs
 Results table in the column 'Sum'.
 
 ### Usage in ImageJ macro

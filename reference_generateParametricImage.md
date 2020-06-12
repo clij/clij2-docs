@@ -8,7 +8,7 @@ Note that indexing in the vector starts at zero. The 0th entry corresponds to ba
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_generateParametricImage(Image label_map, Image parameter_value_vector, ByRef Image parametric_image_destination);
+Ext.CLIJ2_generateParametricImage(Image label_map, Image parameter_value_vector, Image parametric_image_destination);
 ```
 
 

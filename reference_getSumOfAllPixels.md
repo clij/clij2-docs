@@ -7,7 +7,7 @@ It will be stored in the variable sum_of_all_pixels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getSumOfAllPixels(Image source, ByRef Number sum_of_all_pixels);
+Ext.CLIJ2_getSumOfAllPixels(Image source, Number sum_of_all_pixels);
 ```
 
 

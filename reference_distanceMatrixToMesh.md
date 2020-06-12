@@ -12,7 +12,7 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, ByRef Image mesh_destination, Number maximum_distance);
+Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, Image mesh_destination, Number maximum_distance);
 ```
 
 

@@ -5,6 +5,10 @@ Calculates the sum of pairs of pixels x and y of two images X and Y.
 
 <pre>f(x, y) = x + y</pre>
 
+### addImages often follows after
+* <a href="reference_thresholdHuang">thresholdHuang</a> (3)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);
@@ -145,6 +149,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages.ijm"><img src="images/language_macro.png" height="20"/></a> [addImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages3D.ijm"><img src="images/language_macro.png" height="20"/></a> [addImages3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages3D.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/clij1_clij2_combination.ijm"><img src="images/language_macro.png" height="20"/></a> [clij1_clij2_combination.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/clij1_clij2_combination.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py"><img src="images/language_jython.png" height="20"/></a> [addImages.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

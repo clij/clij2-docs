@@ -7,7 +7,7 @@ It uses the webcam-capture library by Bartosz Firyn.https://github.com/sarxos/we
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_captureWebcamImage(ByRef Image destination, Number cameraDeviceIndex, Number imageWidth, Number imageHeight);
+Ext.CLIJx_captureWebcamImage(Image destination, Number cameraDeviceIndex, Number imageWidth, Number imageHeight);
 ```
 
 

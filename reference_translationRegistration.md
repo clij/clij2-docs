@@ -5,7 +5,7 @@ Measures center of mass of thresholded objects in the two input images and trans
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_translationRegistration(Image input1, Image input2, ByRef Image destination);
+Ext.CLIJx_translationRegistration(Image input1, Image input2, Image destination);
 ```
 
 

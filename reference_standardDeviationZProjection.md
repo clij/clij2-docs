@@ -1,11 +1,11 @@
 ## standardDeviationZProjection
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the standard deviation projection of an image stack along Z.
+Determines the standard deviation intensity projection of an image stack along Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_standardDeviationZProjection(Image source, ByRef Image destination);
+Ext.CLIJ2_standardDeviationZProjection(Image source, Image destination);
 ```
 
 

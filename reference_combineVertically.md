@@ -9,7 +9,7 @@ Combines two images or stacks in Y.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_combineVertically(Image stack1, Image stack2, ByRef Image destination);
+Ext.CLIJ2_combineVertically(Image stack1, Image stack2, Image destination);
 ```
 
 

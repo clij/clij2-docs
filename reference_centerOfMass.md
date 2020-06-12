@@ -1,7 +1,9 @@
 ## centerOfMass
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the center of mass of an image or image stack and writes the result in the results table
+Determines the center of mass of an image or image stack. 
+
+It writes the result in the results table
 in the columns MassX, MassY and MassZ.
 
 ### centerOfMass often follows after

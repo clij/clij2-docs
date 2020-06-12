@@ -5,19 +5,23 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
 ### touchMatrixToMesh often follows after
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (3)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (4)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
-* <a href="reference_create2D">create2D</a> (3)
+* <a href="reference_smallerOrEqual">smallerOrEqual</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (3)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (6)
+* <a href="reference_multiplyImages">multiplyImages</a> (3)
+* <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_create2D">create2D</a> (4)
 
 
 ### touchMatrixToMesh is often followed by
 * <a href="reference_rotate3D">rotate3D</a> (2)
+* <a href="reference_flip2D">flip2D</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, ByRef Image mesh_destination);
+Ext.CLIJ2_touchMatrixToMesh(Image pointlist, Image touch_matrix, Image mesh_destination);
 ```
 
 
@@ -159,6 +163,7 @@ clij2.release(mesh_destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

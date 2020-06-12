@@ -12,25 +12,27 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 
 ### replaceIntensities often follows after
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (3)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (7)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (4)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (3)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (3)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (4)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (4)
 * <a href="reference_smallerConstant">smallerConstant</a> (2)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (3)
 * <a href="reference_mask">mask</a> (2)
 
 
 ### replaceIntensities is often followed by
 * <a href="reference_maximumZProjection">maximumZProjection</a> (3)
+* <a href="reference_release">release</a> (3)
+* <a href="reference_copySlice">copySlice</a> (3)
 * <a href="reference_mask">mask</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_replaceIntensities(Image input, Image new_values_vector, ByRef Image destination);
+Ext.CLIJ2_replaceIntensities(Image input, Image new_values_vector, Image destination);
 ```
 
 

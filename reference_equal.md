@@ -7,7 +7,7 @@ Determines if two images A and B equal pixel wise.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_equal(Image source1, Image source2, ByRef Image destination);
+Ext.CLIJ2_equal(Image source1, Image source2, Image destination);
 ```
 
 

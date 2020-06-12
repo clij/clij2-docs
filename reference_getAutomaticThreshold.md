@@ -12,7 +12,7 @@ of these methods in the method text field:
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getAutomaticThreshold(Image input, String method, ByRef Number threshold_value);
+Ext.CLIJ2_getAutomaticThreshold(Image input, String method, Number threshold_value);
 ```
 
 

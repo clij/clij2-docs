@@ -5,9 +5,13 @@ Converts a table to an image.
 
 Rows stay rows, columns stay columns.
 
+### resultsTableToImage2D is often followed by
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_resultsTableToImage2D(ByRef Image destination);
+Ext.CLIJ2_resultsTableToImage2D(Image destination);
 ```
 
 

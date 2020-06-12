@@ -1,7 +1,7 @@
 ## minimumZProjection
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the minimum projection of an image along Z.
+Determines the minimum intensity projection of an image along Z.
 
 ### Usage in ImageJ macro
 ```

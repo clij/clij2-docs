@@ -1,12 +1,23 @@
 ## invert
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the negative value of all pixels in a given image. It is recommended to convert images to 
+Computes the negative value of all pixels in a given image. 
+
+It is recommended to convert images to 
 32-bit float before applying this operation.
 
 <pre>f(x) = - x</pre>
 
 For binary images, use binaryNot.
+
+### invert often follows after
+* <a href="reference_maximumImages">maximumImages</a> (2)
+
+
+### invert is often followed by
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

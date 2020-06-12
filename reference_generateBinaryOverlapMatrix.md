@@ -7,7 +7,7 @@ For example, if labels 3 in labelmap1 and 4 in labelmap2 are touching then the p
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_generateBinaryOverlapMatrix(Image label_map1, Image label_map2, ByRef Image touch_matrix_destination);
+Ext.CLIJ2_generateBinaryOverlapMatrix(Image label_map1, Image label_map2, Image touch_matrix_destination);
 ```
 
 

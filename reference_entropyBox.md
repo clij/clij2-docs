@@ -7,7 +7,7 @@ Determines the local entropy in a box with a given radius around every pixel.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_entropyBox(Image input, ByRef Image destination, Number radiusX, number radiusY, Number radiusZ);
+Ext.CLIJ2_entropyBox(Image input, Image destination, Number radiusX, number radiusY, Number radiusZ);
 ```
 
 

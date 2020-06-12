@@ -9,13 +9,13 @@ The implementation is done separable. In case a sigma equals zero, the direction
 
 ### gaussianBlur3D is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (2)
-* <a href="reference_threshold">threshold</a> (2)
+* <a href="reference_threshold">threshold</a> (4)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_gaussianBlur3D(Image source, ByRef Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
+Ext.CLIJ2_gaussianBlur3D(Image source, Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
 ```
 
 
@@ -157,6 +157,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/blur.ijm"><img src="images/language_macro.png" height="20"/></a> [blur.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/blur.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
+<a href="https://github.com/clij/clicy/blob/master/src/main/javascript/blur_frame_by_frame.js"><img src="images/language_javascript.png" height="20"/></a> [blur_frame_by_frame.js](https://github.com/clij/clicy/blob/master/src/main/javascript/blur_frame_by_frame.js)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

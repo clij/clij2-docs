@@ -1,7 +1,9 @@
 ## downsample2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Scales an image using given scaling factors for X and Y dimensions. The nearest-neighbor method
+Scales an image using given scaling factors for X and Y dimensions. 
+
+The nearest-neighbor method
 is applied. In ImageJ the method which is similar is called 'Interpolation method: none'.
 
 ### downsample2D often follows after

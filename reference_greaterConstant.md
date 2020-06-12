@@ -5,9 +5,14 @@ Determines if two images A and B greater pixel wise.
 
 f(a, b) = 1 if a > b; 0 otherwise. 
 
+### greaterConstant is often followed by
+* <a href="reference_release">release</a> (2)
+* <a href="reference_spotsToPointList">spotsToPointList</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_greaterConstant(Image source, ByRef Image destination, Number constant);
+Ext.CLIJ2_greaterConstant(Image source, Image destination, Number constant);
 ```
 
 

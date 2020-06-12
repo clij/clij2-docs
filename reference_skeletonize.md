@@ -9,14 +9,8 @@ The result is similar to Skeletonize3D in Fiji.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_skeletonize(Image source, ByRef Image destination);
+Ext.CLIJx_skeletonize(Image source, Image destination);
 ```
-
-
-
-
-### Example scripts
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkSkeletonize.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkSkeletonize.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkSkeletonize.ijm)  
 
 
 

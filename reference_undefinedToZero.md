@@ -5,7 +5,7 @@ Copies all pixels instead those which are not a number (NaN) or infinity (inf), 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_undefinedToZero(Image source, ByRef Image destination);
+Ext.CLIJ2_undefinedToZero(Image source, Image destination);
 ```
 
 

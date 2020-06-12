@@ -8,7 +8,7 @@ Note that indexing in the table column starts at zero. The results table should 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_generateParametricImageFromResultsTableColumn(Image label_map, ByRef Image parametric_image_destination, String column);
+Ext.CLIJ2_generateParametricImageFromResultsTableColumn(Image label_map, Image parametric_image_destination, String column);
 ```
 
 

@@ -10,17 +10,22 @@ target 3D image already pre-exists in GPU memory before calling this method. Oth
 the image stack with z planes.
 
 ### copySlice often follows after
+* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 * <a href="reference_affineTransform2D">affineTransform2D</a> (3)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_rotate2D">rotate2D</a> (3)
 * <a href="reference_scale2D">scale2D</a> (2)
 * <a href="reference_translate2D">translate2D</a> (2)
 * <a href="reference_applyVectorField2D">applyVectorField2D</a> (2)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_flip2D">flip2D</a> (2)
+* <a href="reference_mask">mask</a> (3)
 
 
 ### copySlice is often followed by
+* <a href="reference_histogram">histogram</a> (3)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
 * <a href="reference_affineTransform2D">affineTransform2D</a> (3)
+* <a href="reference_statisticsOfBackgroundAndLabelledPixels">statisticsOfBackgroundAndLabelledPixels</a> (3)
 * <a href="reference_crop3D">crop3D</a> (2)
 * <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (2)
 
@@ -162,6 +167,9 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/scaleFree.ijm"><img src="images/language_macro.png" height="20"/></a> [scaleFree.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/scaleFree.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/translate.ijm"><img src="images/language_macro.png" height="20"/></a> [translate.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/translate.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/applyVectorField.py"><img src="images/language_jython.png" height="20"/></a> [applyVectorField.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/applyVectorField.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/rotateFree.py"><img src="images/language_jython.png" height="20"/></a> [rotateFree.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/rotateFree.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/rotateOverwriteOiginal.py"><img src="images/language_jython.png" height="20"/></a> [rotateOverwriteOiginal.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/rotateOverwriteOiginal.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -7,7 +7,7 @@ It will be stored in the variable mean_of_all_pixels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getMeanOfAllPixels(Image source, ByRef Number mean_of_all_pixels);
+Ext.CLIJ2_getMeanOfAllPixels(Image source, Number mean_of_all_pixels);
 ```
 
 

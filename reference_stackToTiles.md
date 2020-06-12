@@ -5,7 +5,7 @@ Stack to tiles.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_stackToTiles(Image source, ByRef Image destination, Number tiles_x, Number tiles_y);
+Ext.CLIJx_stackToTiles(Image source, Image destination, Number tiles_x, Number tiles_y);
 ```
 
 

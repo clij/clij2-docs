@@ -1,7 +1,9 @@
 ## downsample
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Scales an image using given scaling factors for X and Y dimensions. The nearest-neighbor method
+Scales an image using given scaling factors for X and Y dimensions. 
+
+The nearest-neighbor method
 is applied. In ImageJ the method which is similar is called 'Interpolation method: none'.
 
 ### Usage in ImageJ macro
@@ -135,7 +137,6 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

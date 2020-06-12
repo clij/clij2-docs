@@ -14,7 +14,7 @@ Note that the Sorensen-Dice coefficient s can be calculated from the Jaccard ind
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getSorensenDiceCoefficient(Image source1, Image source2, ByRef Number sorensen_dice_coefficient);
+Ext.CLIJ2_getSorensenDiceCoefficient(Image source1, Image source2, Number sorensen_dice_coefficient);
 ```
 
 

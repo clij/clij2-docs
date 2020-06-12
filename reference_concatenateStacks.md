@@ -5,7 +5,7 @@ Concatenates two stacks in Z.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, ByRef Image destination);
+Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, Image destination);
 ```
 
 

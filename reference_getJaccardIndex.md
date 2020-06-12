@@ -10,7 +10,7 @@ Note that the Sorensen-Dice coefficient can be calculated from the Jaccard index
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getJaccardIndex(Image source1, Image source2, ByRef Number jaccard_index);
+Ext.CLIJ2_getJaccardIndex(Image source1, Image source2, Number jaccard_index);
 ```
 
 

@@ -7,7 +7,7 @@ Applies a non-local means filter using a box neighborhood with a Gaussian weight
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_nonLocalMeans(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ, Number sigma);
+Ext.CLIJx_nonLocalMeans(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ, Number sigma);
 ```
 
 

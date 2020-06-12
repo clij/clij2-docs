@@ -1,8 +1,14 @@
 ## mean3DBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local mean average of a pixels cube neighborhood. The cubes size is specified by 
+Computes the local mean average of a pixels cube neighborhood. 
+
+The cubes size is specified by 
 its half-width, half-height and half-depth (radius).
+
+### mean3DBox is often followed by
+* <a href="reference_thresholdHuang">thresholdHuang</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

@@ -17,7 +17,7 @@ Takes a touch matrix and a vector of values to determine the median value among 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_medianOfTouchingNeighbors(Image values, Image touch_matrix, ByRef Image mean_values_destination);
+Ext.CLIJ2_medianOfTouchingNeighbors(Image values, Image touch_matrix, Image mean_values_destination);
 ```
 
 

@@ -5,7 +5,7 @@ Performs connected components analysis inspecting the diamond neighborhood of ev
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, ByRef Image labeling_destination);
+Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, Image labeling_destination);
 ```
 
 
@@ -122,6 +122,12 @@ clij2.release(labeling_destination);
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m"><img src="images/language_matlab.png" height="20"/></a> [mesh_close_points.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/mesh_close_points.m)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

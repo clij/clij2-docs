@@ -1,7 +1,7 @@
 ## crop3D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Crops a given sub-stack out of a given image stack.
+Crops a given sub-stack out of a given image stack. 
 
 Note: If the destination image pre-exists already, it will be overwritten and keep it's dimensions.
 

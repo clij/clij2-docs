@@ -5,7 +5,7 @@ Calculates x to the power of y pixel wise of two images X and Y.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_powerImages(Image input, Image exponent, ByRef Image destination);
+Ext.CLIJ2_powerImages(Image input, Image exponent, Image destination);
 ```
 
 

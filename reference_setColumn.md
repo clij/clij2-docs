@@ -3,8 +3,6 @@
 
 Sets all pixel values x of a given column in X to a constant value v.
 
-<pre>f(x) = v</pre>
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setColumn(Image source, Number columnIndex, Number value);

@@ -7,7 +7,7 @@ Odd iterations are done with box neighborhood, even iterations with a diamond. T
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_topHatOctagonSliceBySlice(Image input, ByRef Image destination, Number iterations);
+Ext.CLIJx_topHatOctagonSliceBySlice(Image input, Image destination, Number iterations);
 ```
 
 

@@ -3,8 +3,6 @@
 
 Sets all pixel values x of a given row in X to a constant value v.
 
-<pre>f(x) = v</pre>
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setRow(Image source, Number rowIndex, Number value);

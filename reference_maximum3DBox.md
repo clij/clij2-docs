@@ -1,7 +1,9 @@
 ## maximum3DBox
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes the local maximum of a pixels cube neighborhood. The cubes size is specified by 
+Computes the local maximum of a pixels cube neighborhood. 
+
+The cubes size is specified by 
 its half-width, half-height and half-depth (radius).
 
 ### maximum3DBox often follows after

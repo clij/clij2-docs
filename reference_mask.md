@@ -1,7 +1,9 @@
 ## mask
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes a masked image by applying a mask to an image. All pixel values x of image X will be copied
+Computes a masked image by applying a binary mask to an image. 
+
+All pixel values x of image X will be copied
 to the destination image in case pixel value m at the same position in the mask image is not equal to 
 zero.
 
@@ -9,17 +11,18 @@ zero.
 
 ### mask often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_binaryNot">binaryNot</a> (2)
-* <a href="reference_threshold">threshold</a> (2)
-* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
-* <a href="reference_erodeBox">erodeBox</a> (2)
+* <a href="reference_binaryNot">binaryNot</a> (3)
+* <a href="reference_threshold">threshold</a> (4)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (3)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (4)
+* <a href="reference_erodeBox">erodeBox</a> (4)
 
 
 ### mask is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_copySlice">copySlice</a> (2)
-* <a href="reference_labelSpots">labelSpots</a> (2)
+* <a href="reference_release">release</a> (2)
+* <a href="reference_copySlice">copySlice</a> (3)
+* <a href="reference_labelSpots">labelSpots</a> (4)
 
 
 ### Usage in ImageJ macro
@@ -162,8 +165,7 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/countNeighbors3D.py"><img src="images/language_jython.png" height="20"/></a> [countNeighbors3D.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/countNeighbors3D.py)  
-<a href="https://github.com/clij/clijpy/blob/master/python/spot_detection.py"><img src="images/language_python.png" height="20"/></a> [spot_detection.py](https://github.com/clij/clijpy/blob/master/python/spot_detection.py)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/statistics.py"><img src="images/language_jython.png" height="20"/></a> [statistics.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/statistics.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

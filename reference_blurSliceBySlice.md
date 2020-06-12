@@ -5,6 +5,8 @@ Computes the Gaussian blurred image of an image given two sigma values in X and 
 
 The Gaussian blur is applied slice by slice in 2D.
 
+DEPRECATED: This method is <b>deprecated</b>. Use gaussianBlur3D instead.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_blurSliceBySlice(Image source, Image destination, Number sigmaX, Number sigmaY);

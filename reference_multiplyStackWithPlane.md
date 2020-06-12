@@ -1,7 +1,9 @@
 ## multiplyStackWithPlane
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Multiplies all pairs of pixel values x and y from an image stack X and a 2D image Y. x and y are at 
+Multiplies all pairs of pixel values x and y from an image stack X and a 2D image Y. 
+
+x and y are at 
 the same spatial position within a plane.
 
 <pre>f(x, y) = x * y</pre>

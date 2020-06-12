@@ -8,7 +8,7 @@ Resulting image is a 3D image with three Z-planes representing red, green and bl
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_depthColorProjection(Image source, Image lookup_table, ByRef Image destination_max, Number min_display_intensity, Number max_display_intensity);
+Ext.CLIJ2_depthColorProjection(Image source, Image lookup_table, Image destination_max, Number min_display_intensity, Number max_display_intensity);
 ```
 
 

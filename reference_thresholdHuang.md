@@ -6,13 +6,18 @@ By Robert Haase based on work by G. Landini and W. Rasband
 The automatic thresholder utilizes the Huang threshold method implemented in ImageJ using a histogram determined on 
 the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
 
+### thresholdHuang often follows after
+* <a href="reference_mean3DBox">mean3DBox</a> (2)
+
+
 ### thresholdHuang is often followed by
+* <a href="reference_addImages">addImages</a> (3)
 * <a href="reference_getBoundingBox">getBoundingBox</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_thresholdHuang(Image input, ByRef Image destination);
+Ext.CLIJ2_thresholdHuang(Image input, Image destination);
 ```
 
 

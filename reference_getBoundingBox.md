@@ -11,7 +11,7 @@ If called from macro, the positions will be stored in the variables 'boundingBox
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getBoundingBox(Image source, ByRef Number boundingBoxX, ByRef Number boundingBoxY, ByRef Number boundingBoxZ, ByRef Number boundingBoxWidth, ByRef Number boundingBoxHeight, ByRef Number boundingBoxDepth);
+Ext.CLIJ2_getBoundingBox(Image source, Number boundingBoxX, Number boundingBoxY, Number boundingBoxZ, Number boundingBoxWidth, Number boundingBoxHeight, Number boundingBoxDepth);
 ```
 
 

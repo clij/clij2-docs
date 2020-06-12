@@ -1,7 +1,9 @@
 ## minimumOfAllPixels
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines the minimum of all pixels in a given image. It will be stored in a new row of ImageJs
+Determines the minimum of all pixels in a given image. 
+
+It will be stored in a new row of ImageJs
 Results table in the column 'Min'.
 
 ### Usage in ImageJ macro

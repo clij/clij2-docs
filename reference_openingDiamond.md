@@ -5,7 +5,7 @@ Apply a binary opening to the input image by calling n erosions and n dilations 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_openingDiamond(Image input, ByRef Image destination, Number number_of_erotions_and_dilations);
+Ext.CLIJ2_openingDiamond(Image input, Image destination, Number number_of_erotions_and_dilations);
 ```
 
 

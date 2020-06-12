@@ -1,7 +1,9 @@
 ## threshold
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Computes a binary image with pixel values 0 and 1. All pixel values x of a given input image with 
+Computes a binary image with pixel values 0 and 1. 
+
+All pixel values x of a given input image with 
 value larger or equal to a given threshold t will be set to 1.
 
 f(x,t) = (1 if (x >= t); (0 otherwise))
@@ -9,12 +11,14 @@ f(x,t) = (1 if (x >= t); (0 otherwise))
 This plugin is comparable to setting a raw threshold in ImageJ and using the 'Convert to Mask' menu.
 
 ### threshold often follows after
-* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (4)
+* <a href="reference_mean2DBox">mean2DBox</a> (2)
 
 
 ### threshold is often followed by
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
 * <a href="reference_centerOfMass">centerOfMass</a> (3)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_mask">mask</a> (4)
 
 
 ### Usage in ImageJ macro
@@ -171,6 +175,11 @@ clij2.release(destination);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm"><img src="images/language_macro.png" height="20"/></a> [working_with_rois.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm)  
+<a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m"><img src="images/language_matlab.png" height="20"/></a> [simplePipeline.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/javascript/automaticThreshold.js"><img src="images/language_javascript.png" height="20"/></a> [automaticThreshold.js](https://github.com/clij/clij2-docs/blob/master/src/main/javascript/automaticThreshold.js)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/groovy/automaticThreshold.groovy"><img src="images/language_groovy.png" height="20"/></a> [automaticThreshold.groovy](https://github.com/clij/clij2-docs/blob/master/src/main/groovy/automaticThreshold.groovy)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/beanshell/automaticThreshold.bsh"><img src="images/language_beanshell.png" height="20"/></a> [automaticThreshold.bsh](https://github.com/clij/clij2-docs/blob/master/src/main/beanshell/automaticThreshold.bsh)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/binaryProcessing.py"><img src="images/language_jython.png" height="20"/></a> [binaryProcessing.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/binaryProcessing.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

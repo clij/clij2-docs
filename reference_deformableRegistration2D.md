@@ -5,7 +5,7 @@ Applies particle image velocimetry to two images and registers them afterwards b
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_deformableRegistration2D(Image input1, Image input2, ByRef Image destination, Number maxDeltaX, Number maxDeltaY);
+Ext.CLIJx_deformableRegistration2D(Image input1, Image input2, Image destination, Number maxDeltaX, Number maxDeltaY);
 ```
 
 
