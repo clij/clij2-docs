@@ -20,20 +20,6 @@ CLIJ is fully macro-recordable. After recording your workflow, it can be execute
 ![Image](images/clij_macro_recorder2.gif)
 [Download video](images/clij_macro_recorder.mp4)
 
-<a name="clij2"></a>
-## CLIJ2: more flexible functions and new concepts
-CLIJ2 comes with 356 operations for 
-[filtering](https://clij.github.io/clij2-docs/reference__filter), 
-[binarizing](https://clij.github.io/clij2-docs/reference__binary),
-[labeling](https://clij.github.io/clij2-docs/reference__label),
-[measuring](https://clij.github.io/clij2-docs/reference__measurement) in images,
-[projecting](https://clij.github.io/clij2-docs/reference__project) and
-[transforming](https://clij.github.io/clij2-docs/reference__transform) them and running 
-[mathematical operations](https://clij.github.io/clij2-docs/reference__math) on them. 
-While these are classical operations, CLIJ2 also allows performing operations on 
-[matrices](https://clij.github.io/clij2-docs/reference__matrix) potentially representing
-[neighborhood relationships between cells](https://clij.github.io/clij2-docs/reference__neighbor).
-
 ### Vectors, matrices, pointlists, meshes and corresponding operations
 CLIJ2 has various new operations for processing data structures such as 
 [vectors and matrices](https://clij.github.io/clij2-docs/md/multiply_vectors_matrices), 
