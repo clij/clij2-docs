@@ -17,7 +17,8 @@ While most of these are classical image processing operations, CLIJ2 also allows
 
 <img src="./images/curtain.gif" width="245">
 
-Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it. Just entry-evel coding skills are required! 
+Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it transparently. 
+Entry-evel coding skills are sufficient! 
 Increased efforts were put on documentation, code examples, user-convenience, interoperability, and extensibility.
 CLIJ is based on 
 [ClearCL](http://github.com/ClearControl/ClearCL), 
