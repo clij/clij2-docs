@@ -6,3 +6,4 @@ google_analytics:
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-redirect-from
+ 
