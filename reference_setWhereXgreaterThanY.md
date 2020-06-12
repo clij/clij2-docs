@@ -6,8 +6,6 @@ Sets all pixel values a of a given image A to a constant value v in case its coo
 Otherwise the pixel is not overwritten.
 If you want to initialize an identity transfrom matrix, set all pixels to 0 first.
 
-<pre>f(a) = v</pre>
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setWhereXgreaterThanY(Image source, Number value);
