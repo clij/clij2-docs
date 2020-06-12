@@ -50,7 +50,7 @@ getDimensions(width, height, channels, slices, frames);
 
 // Init GPU
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ_clear();
+Ext.CLIJ2_clear();
 
 // push images to GPU
 Ext.CLIJ2_push(input);
