@@ -5,17 +5,19 @@
 ## Introduction
 CLIJ2 is a GPU-accelerated image processing library for [ImageJ/Fiji](https://fiji.sc/), 
 [Icy](http://icy.bioimageanalysis.org/), 
-Matlab and Java. It comes with 356 operations for 
+Matlab and Java. It comes with hundreds of operations for 
 [filtering](https://clij.github.io/clij2-docs/reference__filter), 
 [binarizing](https://clij.github.io/clij2-docs/reference__binary),
 [labeling](https://clij.github.io/clij2-docs/reference__label),
 [measuring](https://clij.github.io/clij2-docs/reference__measurement) in images,
 [projecting](https://clij.github.io/clij2-docs/reference__project) and
-[transforming](https://clij.github.io/clij2-docs/reference__transform) them and running 
+[transforming](https://clij.github.io/clij2-docs/reference__transform) them, and running 
 [mathematical operations](https://clij.github.io/clij2-docs/reference__math) on them. 
-While these are classical operations, CLIJ2 also allows performing operations on 
+While most of these are classical image processing operations, CLIJ2 also allows performing operations on 
 [matrices](https://clij.github.io/clij2-docs/reference__matrix) potentially representing
 [neighborhood relationships between cells](https://clij.github.io/clij2-docs/reference__neighbor).
+
+<img src="./images/droso_neighbor_map.gif" width="245">
 
 Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it. Just entry-evel coding skills are required! 
 Increased efforts were put on documentation, code examples, user-convenience, interoperability, and extensibility.
