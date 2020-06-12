@@ -4,10 +4,10 @@
 @import "{{ site.theme }}";
 
 body {
-  background-color: #fff;
+  background-color: #333333;
   padding:50px;
   font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color:#DDDDDD;
+  color:#EEEEEE;
   font-weight:400;
 }
 
