@@ -1,7 +1,5 @@
 # CLIJ2: GPU-accelerated image processing for everyone
 
-<img src="./images/curtain.gif" width="245">
-
 ## Introduction
 CLIJ2 is a GPU-accelerated image processing library for [ImageJ/Fiji](https://fiji.sc/), 
 [Icy](http://icy.bioimageanalysis.org/), 
@@ -17,7 +15,7 @@ While most of these are classical image processing operations, CLIJ2 also allows
 [matrices](https://clij.github.io/clij2-docs/reference__matrix) potentially representing
 [neighborhood relationships between cells](https://clij.github.io/clij2-docs/reference__neighbor).
 
-<img src="./images/droso_neighbor_map.gif" width="245">
+<img src="./images/curtain.gif" width="245">
 
 Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it. Just entry-evel coding skills are required! 
 Increased efforts were put on documentation, code examples, user-convenience, interoperability, and extensibility.
