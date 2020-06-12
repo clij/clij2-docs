@@ -50,7 +50,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [Cheat sheets](https://clij.github.io/clij2-docs/CLIJ2-cheatsheet_V3.pdf)
   * [Reference](https://clij.github.io/clij2-docs/reference)
   * [Release notes](https://github.com/clij/clij2/releases)
-  * [Community guidelines](https://clij.github.io/clij2-docs/)
+  * [Community guidelines](https://clij.github.io/clij2-docs/community_guidelines)
   * [Release cycle](https://clij.github.io/clij-docs/release_cycle)    
   * [Future perspective: clEsperanto](http://clesperanto.net)
   
