@@ -77,6 +77,32 @@ Ext.CLIJ2_scale2D(input, output, scaleFactorX, scaleFactorY)
 These methods found to many maxima in flat regions with local maxima in CLIJ as reported on [image.sc](https://forum.image.sc/t/clij2-alpha-release/33821/5). For backwards-compatibility reasons, these methods were not touched in CLIJ.
 However, CLIJ2 contains updated minima/maxima detectors.
 
+## Deprecated ImageJ-Ops support
+The ImageJ-Ops API was discontinued. You can transition CLIJ-Ops code to CLIJ2 by replacing lines like this:
+
+```
+#@IOService io
+#@OpService ops
+
+inputGPU = ops.run("CLIJ_push", input)
+targetGPU = ops.run("CLIJ_create", [input.dimension(0), input.dimension(1)], inputGPU.getNativeType())
+ops.run("CLIJ_maximumZProjection", imageOutput, imageInput)
+target = ops.run("CLIJ_pull", targetGPU)
+ui.show(target)
+```
+
+with
+
+```
+from net.haesleinhuepf.clij2 import CLIJ2;
+clij2 = CLIJ2.getInstance();
+
+inputGPU = clij2.push(input);
+targetGPU = clij2.create([inputGPU.getWidth(), inputGPU.getHeight()], inputGPU.getNativeType());
+clij2.maximumZProjection(inputGPU, targetGPU);
+clij2.show(targetGPU, "result");
+```
+
 ## Maven dependencies
 Developers who accessed CLIJ or dev/alpha versions of CLIJ2 and CLIJx via maven may have to change an entry in their pom.xml file.
 The dependencies clij-coremem and clij-clearcl changed their group-id from net.clearcontrol to net.haesleinhuepf. 
