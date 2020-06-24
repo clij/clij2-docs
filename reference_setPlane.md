@@ -5,7 +5,7 @@ Sets all pixel values x of a given plane in X to a constant value v.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_setPlane(Image source, Number rowIndex, Number value);
+Ext.CLIJ2_setPlane(Image source, Number plane_index, Number value);
 ```
 
 
@@ -17,7 +17,7 @@ Ext.CLIJ2_setPlane(Image source, Number rowIndex, Number value);
 <details>
 
 <summary>
-clij2.setPlane(source, rowIndex, value);
+clij2.setPlane(source, plane_index, value);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -26,13 +26,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-int rowIndex = 10;
+int plane_index = 10;
 float value = 1.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.setPlane(source, rowIndex, value);
+clij2.setPlane(source, plane_index, value);
 </pre>
 
 <pre class="highlight">
@@ -54,20 +54,20 @@ clij2.release(source);
 <details>
 
 <summary>
-clij2.setPlane(source, rowIndex, value);
+clij2.setPlane(source, plane_index, value);
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
-rowIndex = 10;
+plane_index = 10;
 value = 1.0;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.setPlane(source, rowIndex, value);
+clij2.setPlane(source, plane_index, value);
 </pre>
 
 <pre class="highlight">
@@ -89,7 +89,7 @@ clij2.release(source);
 <details>
 
 <summary>
-clij2.setPlane(source, rowIndex, value);
+clij2.setPlane(source, plane_index, value);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
@@ -100,13 +100,13 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
-rowIndex = 10;
+plane_index = 10;
 value = 1.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.setPlane(source, rowIndex, value);
+clij2.setPlane(source, plane_index, value);
 </pre>
 
 <pre class="highlight">

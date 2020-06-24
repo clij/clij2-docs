@@ -5,6 +5,8 @@ Applies a top-hat filter for background subtraction to the input image.
 
 ### topHatBox is often followed by
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+* <a href="reference_resliceRadial">resliceRadial</a> (2)
+* <a href="reference_resliceTop">resliceTop</a> (3)
 
 
 ### Usage in ImageJ macro

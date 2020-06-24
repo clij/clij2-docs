@@ -5,8 +5,13 @@ Determines if two images A and B greater pixel wise.
 
 f(a, b) = 1 if a > b; 0 otherwise. 
 
+### greaterConstant often follows after
+* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
+
+
 ### greaterConstant is often followed by
 * <a href="reference_release">release</a> (2)
+* <a href="reference_mask">mask</a> (2)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
 

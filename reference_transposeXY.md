@@ -4,12 +4,14 @@
 Transpose X and Y axes of an image.
 
 ### transposeXY often follows after
+* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
 * <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### transposeXY is often followed by
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
@@ -144,6 +146,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm"><img src="images/language_macro.png" height="20"/></a> [jaccard_matrix.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 
 

@@ -5,11 +5,12 @@ Flippes Y and Z axis of an image stack. This operation is similar to ImageJs 'Re
 offers less flexibility such as interpolation.
 
 ### resliceTop often follows after
+* <a href="reference_topHatBox">topHatBox</a> (3)
 * <a href="reference_resample">resample</a> (2)
 
 
 ### resliceTop is often followed by
-* <a href="reference_resliceRadial">resliceRadial</a> (2)
+* <a href="reference_resliceRadial">resliceRadial</a> (4)
 
 
 ### Usage in ImageJ macro

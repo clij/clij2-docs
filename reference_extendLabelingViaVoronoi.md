@@ -1,15 +1,17 @@
-## detectLabelEdges
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+## extendLabelingViaVoronoi
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
+Takes a label map image and dilates the regions using a octagon shape until they touch. 
 
-### detectLabelEdges often follows after
-* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
+The resulting label map is written to the output.
+
+### extendLabelingViaVoronoi is often followed by
+* <a href="reference_detectLabelEdges">detectLabelEdges</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_detectLabelEdges(Image label_map, Image edge_image_destination);
+Ext.CLIJ2_extendLabelingViaVoronoi(Image input, Image destination);
 ```
 
 
@@ -21,7 +23,7 @@ Ext.CLIJ2_detectLabelEdges(Image label_map, Image edge_image_destination);
 <details>
 
 <summary>
-clij2.detectLabelEdges(label_map, edge_image_destination);
+clij2.extendLabelingViaVoronoi(input, destination);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -29,23 +31,23 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
-edge_image_destination = clij2.create(label_map);
+ClearCLBuffer input = clij2.push(inputImagePlus);
+destination = clij2.create(input);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.detectLabelEdges(label_map, edge_image_destination);
+clij2.extendLabelingViaVoronoi(input, destination);
 </pre>
 
 <pre class="highlight">
 //show result
-edge_image_destinationImagePlus = clij2.pull(edge_image_destination);
-edge_image_destinationImagePlus.show();
+destinationImagePlus = clij2.pull(destination);
+destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(label_map);
-clij2.release(edge_image_destination);
+clij2.release(input);
+clij2.release(destination);
 </pre>
 
 </details>
@@ -60,28 +62,28 @@ clij2.release(edge_image_destination);
 <details>
 
 <summary>
-clij2.detectLabelEdges(label_map, edge_image_destination);
+clij2.extendLabelingViaVoronoi(input, destination);
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
-label_map = clij2.pushMat(label_map_matrix);
-edge_image_destination = clij2.create(label_map);
+input = clij2.pushMat(input_matrix);
+destination = clij2.create(input);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.detectLabelEdges(label_map, edge_image_destination);
+clij2.extendLabelingViaVoronoi(input, destination);
 </pre>
 
 <pre class="highlight">
 % show result
-edge_image_destination = clij2.pullMat(edge_image_destination)
+destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
-clij2.release(label_map);
-clij2.release(edge_image_destination);
+clij2.release(input);
+clij2.release(destination);
 </pre>
 
 </details>
@@ -96,7 +98,7 @@ clij2.release(edge_image_destination);
 <details>
 
 <summary>
-clij2.detectLabelEdges(label_map, edge_image_destination);
+clij2.extendLabelingViaVoronoi(input, destination);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
@@ -105,23 +107,23 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-label_map_sequence = getSequence();
-label_map = clij2.pushSequence(label_map_sequence);
-edge_image_destination = clij2.create(label_map);
+input_sequence = getSequence();
+input = clij2.pushSequence(input_sequence);
+destination = clij2.create(input);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.detectLabelEdges(label_map, edge_image_destination);
+clij2.extendLabelingViaVoronoi(input, destination);
 </pre>
 
 <pre class="highlight">
 // show result
-edge_image_destination_sequence = clij2.pullSequence(edge_image_destination)
-Icy.addSequence(edge_image_destination_sequence);
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
-clij2.release(label_map);
-clij2.release(edge_image_destination);
+clij2.release(input);
+clij2.release(destination);
 </pre>
 
 </details>

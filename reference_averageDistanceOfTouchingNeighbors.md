@@ -5,11 +5,14 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
  for every object.
 
 ### averageDistanceOfTouchingNeighbors often follows after
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (3)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (5)
 
 
 ### averageDistanceOfTouchingNeighbors is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 
 

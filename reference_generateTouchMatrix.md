@@ -15,11 +15,12 @@ Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 a
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
 * <a href="reference_release">release</a> (5)
 * <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (3)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (6)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)
 * <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (3)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
 
 
 ### Usage in ImageJ macro

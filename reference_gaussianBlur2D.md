@@ -12,7 +12,7 @@ The implementation is done separable. In case a sigma equals zero, the direction
 
 
 ### gaussianBlur2D is often followed by
-* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (4)
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (6)
 * <a href="reference_getMeanSquaredError">getMeanSquaredError</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 

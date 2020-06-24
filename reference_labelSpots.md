@@ -7,13 +7,13 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 
 ### labelSpots often follows after
 * <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (2)
-* <a href="reference_mask">mask</a> (4)
+* <a href="reference_mask">mask</a> (6)
 
 
 ### labelSpots is often followed by
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
 * <a href="reference_release">release</a> (4)
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (6)
 
 
 ### Usage in ImageJ macro

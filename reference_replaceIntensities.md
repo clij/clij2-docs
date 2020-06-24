@@ -11,13 +11,17 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 
 
 ### replaceIntensities often follows after
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (7)
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (4)
-* <a href="reference_maximum2DBox">maximum2DBox</a> (3)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (9)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (4)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (4)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (4)
+* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_maximum2DBox">maximum2DBox</a> (3)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (2)
 * <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (4)
 * <a href="reference_smallerConstant">smallerConstant</a> (2)
 * <a href="reference_mask">mask</a> (2)
@@ -173,6 +177,7 @@ clij2.release(destination);
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/filtering_in_graphs.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm"><img src="images/language_macro.png" height="20"/></a> [jaccard_matrix.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm)  

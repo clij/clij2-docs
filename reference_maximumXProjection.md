@@ -3,7 +3,16 @@
 
 Determines the maximum intensity projection of an image along X.
 
+### maximumXProjection often follows after
+* <a href="reference_resliceRadial">resliceRadial</a> (4)
+* <a href="reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a> (2)
+
+
 ### maximumXProjection is often followed by
+* <a href="reference_saveAsTIF">saveAsTIF</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (2)
 * <a href="reference_resample">resample</a> (2)
 
 
@@ -137,6 +146,7 @@ clij2.release(destination_max);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm"><img src="images/language_macro.png" height="20"/></a> [jaccard_matrix.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/maximumProjection.ijm"><img src="images/language_macro.png" height="20"/></a> [maximumProjection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/maximumProjection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
 

@@ -13,7 +13,7 @@ DEPRECATED: Use VoronoiLabelin instead.
 
 
 ### labelVoronoiOctagon is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (7)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (9)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
 

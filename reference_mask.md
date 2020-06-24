@@ -12,7 +12,10 @@ zero.
 ### mask often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_binaryNot">binaryNot</a> (3)
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (3)
 * <a href="reference_threshold">threshold</a> (4)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (2)
 * <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (3)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (4)
 * <a href="reference_erodeBox">erodeBox</a> (4)
@@ -22,7 +25,7 @@ zero.
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_release">release</a> (2)
 * <a href="reference_copySlice">copySlice</a> (3)
-* <a href="reference_labelSpots">labelSpots</a> (4)
+* <a href="reference_labelSpots">labelSpots</a> (6)
 
 
 ### Usage in ImageJ macro

@@ -3,6 +3,10 @@
 
 Pulls an image from the GPU memory and saves it as TIF to disc.
 
+### saveAsTIF often follows after
+* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_saveAsTIF(Image input, String filename);

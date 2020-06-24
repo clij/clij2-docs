@@ -6,6 +6,10 @@ Takes two labelmaps with n and m labels_2 and generates a (n+1)*(m+1) matrix whe
 For the remaining labels_1, the value will be between 0 and 1 indicating the overlap as measured by the Jaccard Index.
 Major parts of this operation run on the CPU.
 
+### generateJaccardIndexMatrix is often followed by
+* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateJaccardIndexMatrix(Image label_map1, Image label_map2, Image jaccard_index_matrix_destination);
@@ -132,6 +136,12 @@ clij2.release(jaccard_index_matrix_destination);
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm"><img src="images/language_macro.png" height="20"/></a> [jaccard_matrix.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

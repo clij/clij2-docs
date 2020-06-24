@@ -6,7 +6,7 @@ Takes two images containing coordinates and builds up a matrix containing distan
 Convention: image width represents number of points, height represents dimensionality (2D, 3D, ... 10D). The result image has width the first input image and height equals to the width of the second input image.
 
 ### generateDistanceMatrix often follows after
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (6)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (3)
 
 
@@ -17,7 +17,7 @@ Convention: image width represents number of points, height represents dimension
 * <a href="reference_shortestDistances">shortestDistances</a> (2)
 * <a href="reference_crop2D">crop2D</a> (2)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (3)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (5)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)
 
 
