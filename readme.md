@@ -69,6 +69,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Binary images](https://clij.github.io/clij2-docs/md/binary_processing/)
     * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
+    * [Label maps and voronoi diagrams](https://clij.github.io/clij2-docs/md/labelmap_voronoi)
 
   * Working with matrices and graphs
     * [Multiply vectors and matrices](https://clij.github.io/clij2-docs/md/multiply_vectors_matrices)
