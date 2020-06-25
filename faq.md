@@ -147,6 +147,29 @@ Yes. As operations executed on the GPU anyway don't make use of user interface e
  and in 
 [cloud systems using docker](https://github.com/clij/clij-apeer-template).
 
+
+
+
+<a name="uberjar"></a>
+## Is it possible to compile a CLIJ dependent project with all dependencies in a single JAR file?
+You can pack your clij dependent project together with clij and all its dependencies in an [uber-jar](https://stackoverflow.com/questions/11947037/what-is-an-uber-jar). 
+This is also how [clicy](https://clij.github.io/clicy/) and [clatlab](https://github.com/clij/clatlab) projects work. 
+It's basically just an entry in their [pom.xml](https://github.com/clij/clicy/blob/master/pom.xml#L94-L120) files.
+
+<a name="own_plugin"></a>
+## Can I develop my own OpenCL code and compile it as plugin for CLIJ?
+Yes, there is a [template-plugin](https://github.com/clij/clij2-plugin-template) available for clij2, where you can [input your code](https://github.com/clij/clij2-plugin-template/blob/master/src/main/java/com/yourdomain/clijplugin/template.cl). Reminder: It's [OpenCL](https://www.khronos.org/opencl/), not C ;-)
+Furthermore, CLIJ brings some convenience functions (actually defines) to make OpenCL easier to use. You find a [full list](https://github.com/clEsperanto/clij-opencl-kernels/blob/master/README.md) online.
+
+<a name="ide"></a>
+## How does CLIJ development work in Eclipse and IntelliJ
+CLIJ projects are best managed, compiled and deployed with [maven](https://maven.apache.org/). 
+Just import the [pom.xml](https://github.com/clij/clij2-plugin-template/blob/83077fc9d23ed9bd099d7f898bc0910572b90767/pom.xml) in your Eclipse, IntelliJ or other [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) as project.
+
+<a name="cpu"></a>
+## Can CLIJ also be executed on CPUs instead of GPUs?
+Yes, as CLIJ is build on OpenCL and OpenCL also runs on CPUs. One may have to install [special drivers](https://software.intel.com/content/www/us/en/develop/articles/opencl-drivers.html) to make it work.
+
 [Back to CLIJ documentation](https://clij.github.io/)
 
 [Imprint](https://clij.github.io/imprint)
