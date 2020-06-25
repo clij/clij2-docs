@@ -2,7 +2,13 @@
 ## Installation
 ![Image](images/clij_bridge.gif)
 
-[Download and install Fiji](https://fiji.sc/Downloads). Afterwards, click the menu `Help > Update...` and activate the CLIJ and CLIJ2 update sites.
+[Download and install Fiji](https://fiji.sc/Downloads). 
+Afterwards, click the menu `Help > Update...` 
+![Image](images/install_fiji_menu.png)
+Click on `Manage Update Sites`
+![Image](images/install_fiji_updater.png)
+
+and activate the CLIJ and CLIJ2 update sites.
 
 ![Image](images/updatesite.png)
 
