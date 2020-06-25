@@ -4,11 +4,12 @@ Author: Robert Haase, June 2020
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/labelmap_voronoi.ijm)
 
-This macro demonstrates different ways for 
-applying voronoi diagrams to label maps.
+
+This macro demonstrates different ways for 
+applying voronoi diagrams to label maps and binary images.
 
 [Voronoi](https://en.wikipedia.org/wiki/Voronoi_diagram) diagrams allow partitioning space 
-between points, or labelled regions. Depdening on which input you have,
+between points, or labelled regions. Depending on which input image type you have,
 different voronoi methods may allow you to process it.
 */
 
@@ -19,7 +20,8 @@ Ext.CLIJ2_clear();
 run("Close All");
 
 /*
-## Binary image to voronoi-label-map
+## 
+Binary image to voronoi-label-map
 Assuming our input data is a binary image and we want to label the objects in it 
 (connected components labelling) and afterwards partion the space between them.
 
@@ -114,4 +116,4 @@ Ext.CLIJ2_pullBinary(binary_voronoi3);
 At the end of the macro, clean up:
 */
 Ext.CLIJ2_clear();
-
+
