@@ -12,8 +12,15 @@ However, as dedicated graphics cards come with their own GDDR-memory, additional
 
 <a name="supported_os"></a>
 ## With which operating systems is CLIJ compatible?
-CLIJ was successfully tested on Windows, MacOS, Fedora linux and Ubuntu linux. 
+CLIJ was successfully tested on Windows 10, MacOS, Fedora linux and Ubuntu linux. 
 Current GPU and OpenCL drivers must be installed.
+
+<a name="windows78"></a>
+## Are Windows 7 and 8 supported?
+Maybe. As Windows 7 and 8 were discontinued before the first CLIJ release, we didn't test it. 
+Theoretically, both systems support OpenCL and GPU vendors provide drivers for it. 
+Thus, depending on the vendor, it mike work without issues. 
+However, we had reports that [serious crashes happened on Windows 7 systems with several different GPUs](https://forum.image.sc/t/clij2-beta-testing-call-for-testers/37911/20).
 
 <a name="optimal_performance"></a>
 ## How can I achieve optimal performance using CLIJ?
