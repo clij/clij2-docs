@@ -170,6 +170,21 @@ Just import the [pom.xml](https://github.com/clij/clij2-plugin-template/blob/830
 ## Can CLIJ also be executed on CPUs instead of GPUs?
 Yes, as CLIJ is build on OpenCL and OpenCL also runs on CPUs. One may have to install [special drivers](https://software.intel.com/content/www/us/en/develop/articles/opencl-drivers.html) to make it work.
 
+<a name="conditional"></a>
+## Can one execute CLIJ commands conditionally in ImageJ macro?
+Yes, as images are basically managed in variables:
+```
+Ext.CLIJ2_push(input);
+
+if (user_input) {
+	Ext.CLIJ2_gaussianBlur2D(input, output, 1, 1);
+} else {
+	output = input;
+}
+
+Ext.CLIJ2_pull(output);
+```
+
 [Back to CLIJ documentation](https://clij.github.io/)
 
 [Imprint](https://clij.github.io/imprint)
