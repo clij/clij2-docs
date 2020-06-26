@@ -17,7 +17,7 @@ spaces for x. For example this string is converted to an image with width=4, hei
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pushString(Image destination, Array input, Number width, Number height, Number depth);
+Ext.CLIJ2_pushString(Image destination, String input, Number width, Number height, Number depth);
 ```
 
 
