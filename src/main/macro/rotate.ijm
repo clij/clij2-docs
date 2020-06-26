@@ -6,7 +6,8 @@
 // December 2018
 // ---------------------------------------------
 run("Close All");
-
+
+
 // Get test data
 run("T1 Head (2.4M, 16-bits)");
 //open("C:/structure/data/t1-head.tif");
@@ -16,7 +17,7 @@ input = getTitle();
 rotated = "Rotate left";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU

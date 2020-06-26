@@ -22,11 +22,11 @@ input = getTitle();
 minimum = "minimum";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
-Ext.CLIJx_clear();
+run("CLIJ2 Macro Extensions", "cl_device=");
+Ext.CLIJ2_clear();
 
 // push data to GPU
-Ext.CLIJx_push(input);
+Ext.CLIJ2_push(input);
 
 // cleanup ImageJ
 run("Close All");
@@ -58,7 +58,8 @@ for (i = 0; i < 10; i++) {
 }
 
 
-Ext.CLIJ2_release(cropped);
+
+Ext.CLIJ2_release(cropped);
 Ext.CLIJ2_crop3D(input, cropped, 0, 0, 0, 100, 101, 100);
 for (i = 0; i < 10; i++) {
 	time = getTime();

@@ -10,7 +10,8 @@
 
 run("Close All");
 
-for (radius = 1; radius < 5; radius++) {
+
+for (radius = 1; radius < 5; radius++) {
 	// -----------------------------------------------------------------
 	
 	// create 2D example image
@@ -27,7 +28,7 @@ run("Close All");
 	makeOverlay();
 	
 	// init GPU
-	run("CLIJ Macro Extensions", "cl_device=");
+	run("CLIJ2 Macro Extensions", "cl_device=");
 	
 	// do operation on GPU
 	outputGPU = "mean2d_GPU (r=" + radius + ")";
@@ -39,7 +40,8 @@ run("Close All");
 	zoom(10);
 	setWindowPosition(radius, 0);
 	setMinAndMax(0, 1);
-	makeOverlay();
+	
+makeOverlay();
 	
 	// do operation on CPU
 	selectWindow(input);
@@ -50,7 +52,8 @@ run("Close All");
 	zoom(10);
 	setWindowPosition(radius, 1);
 	setMinAndMax(0, 1);
-	makeOverlay();
+	
+makeOverlay();
 }
 // -----------------------------------------------------------------
 

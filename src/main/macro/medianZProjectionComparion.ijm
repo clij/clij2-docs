@@ -13,12 +13,12 @@ run("T1 Head (2.4M, 16-bits)");
 run("32-bit");
 
 // median Z-projection on the GPU
-run("CLIJ Macro Extensions", "cl_device=");
-Ext.CLIJx_clear();
-Ext.CLIJx_push(getTitle());
-Ext.CLIJx_medianZProjection(getTitle(), "CLIJ_medianZProjection_destination_t1-head.tif");
-Ext.CLIJx_pull("CLIJ_medianZProjection_destination_t1-head.tif");
-Ext.CLIJx_clear();
+run("CLIJ2 Macro Extensions", "cl_device=");
+Ext.CLIJ2_clear();
+Ext.CLIJ2_push(getTitle());
+Ext.CLIJ2_medianZProjection(getTitle(), "CLIJ_medianZProjection_destination_t1-head.tif");
+Ext.CLIJ2_pull("CLIJ_medianZProjection_destination_t1-head.tif");
+Ext.CLIJ2_clear();
 
 // median Z-projection on the CPU
 selectWindow("t1-head.tif");

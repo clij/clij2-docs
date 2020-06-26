@@ -25,7 +25,7 @@ input = getTitle();
 ## Initialize GPU and push image data to GPU memory
 
 <pre class="highlight">
-run("CLIJ Macro Extensions", "cl_device=1070");
+run("CLIJ2 Macro Extensions", "cl_device=1070");
 Ext.CLIJ2_clear();
 
 // push data to GPU

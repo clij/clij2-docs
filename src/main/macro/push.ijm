@@ -12,7 +12,7 @@ run("T1 Head (2.4M, 16-bits)");
 input = getTitle();
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push images to GPU

@@ -22,7 +22,7 @@ maximumProjectionY = "Maximum projection in Y";
 maximumProjectionZ = "Maximum projection in Z";
 
 // Init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 
 // push data to GPU

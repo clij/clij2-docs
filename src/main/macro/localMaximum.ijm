@@ -19,7 +19,7 @@ for (radius = 1; radius < 4; radius++) {
 	run("Duplicate...", "title=orignal1slice");
 	
 	
-	run("CLIJ Macro Extensions", "cl_device=");
+	run("CLIJ2 Macro Extensions", "cl_device=");
 	Ext.CLIJ2_clear();
 	
 	Ext.CLIJ2_push("original");

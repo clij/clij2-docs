@@ -29,7 +29,7 @@ setMinAndMax(0, 1);
 makeOverlay();
 
 // init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 
 // do operation on GPU
 outputGPU = "mean2d_GPU";
@@ -41,7 +41,8 @@ Ext.CLIJ2_pull(outputGPU);
 zoom(10);
 setWindowPosition(1, 0);
 setMinAndMax(0, 1);
-makeOverlay();
+
+makeOverlay();
 
 // do operation on CPU
 selectWindow(input);
@@ -52,7 +53,8 @@ run("Mean...", "radius=" + radius);
 zoom(10);
 setWindowPosition(2, 0);
 setMinAndMax(0, 1);
-makeOverlay();
+
+makeOverlay();
 
 // -----------------------------------------------------------------
 
@@ -96,7 +98,8 @@ zoom(10);
 setSlice(4);
 setWindowPosition(2, 1);
 setMinAndMax(0, 1);
-makeOverlay();
+
+makeOverlay();
 
 // -----------------------------------------------------------------
 
