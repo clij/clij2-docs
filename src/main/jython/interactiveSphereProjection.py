@@ -266,7 +266,7 @@ while ((not gdp.wasCanceled()) and not (gdp.wasOKed())):
 		# Maximum Intensity Projection
 		clij2.maximumZProjection(transformed, maxProjection);
 
-		# Cylindrical MIP
+		# Spherical MIP
 		clij2.resliceTop(transformed, reslicedFromTop);
 		clij2.resliceRadial(reslicedFromTop, cylinderProjection, 0.666);
 		#clij2.show(cylinderProjection, "cylinderProjection");
