@@ -276,7 +276,7 @@ while ((not gdp.wasCanceled()) and not (gdp.wasOKed())):
 		
 		clij2.affineTransform3D(cylinderProjection, cylinderProjection_temp, translation);
 		clij2.resliceRadial(cylinderProjection_temp, sphereProjection, 0.666);
-		clij2.show(sphereProjection, "sphereProjection");
+		# clij2.show(sphereProjection, "sphereProjection");
 		# break;
 		
 		clij2.resliceLeft(sphereProjection, sphereProjectionTransformed);
