@@ -115,6 +115,13 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [CLIJ2 development](https://clij.github.io/clij2-docs/development)
   * [CLIJ2 plugin template](https://github.com/clij/clij2-plugin-template)
 
+* Further reading (external resources)
+  * [GPU Image Processing using OpenCL, Harald Scheidl, TowardsDataScience](https://towardsdatascience.com/get-started-with-gpu-image-processing-15e34b787480)
+  * [OpenCL SGEMM tuning for Kepler, Cedric Nugteren, SURFsara](https://cnugteren.github.io/tutorial/pages/page1.html)
+  * [OpenCL: A Hands-on Introduction, Tim Mattson, Intel](https://www.nersc.gov/assets/pubs_presos/MattsonTutorialSC14.pdf)
+  * [OpenCL 1.2 Quick Reference, Khronos Group](https://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf)
+  * [OpenCL 1.2 Specifications, Khronos Group](https://www.khronos.org/registry/OpenCL/specs/opencl-1.2.pdf)
+
 * FAQ / support
   * [Frequently asked questions](https://clij.github.io/clij2-docs/faq)
   * CLIJ versus CLIJ2
