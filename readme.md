@@ -125,10 +125,10 @@ If you search for support, please open a thread on the [image.sc](https://image.
 * FAQ / support
   * [Frequently asked questions](https://clij.github.io/clij2-docs/faq)
   * CLIJ versus CLIJ2
-    * [CLIJ documentation (archived)](https://clij.github.io/clij2-docs/clij-docs)
+    * [CLIJ documentation (archived)](https://clij.github.io/clij-docs)
     * [CLIJ BioRxiv preprint (archived)](https://doi.org/10.1101/660704)
     * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
-    * [CLIJ - CLIJ2 transition guide (under construction)](clij2_transition_notes)
+    * [CLIJ - CLIJ2 transition guide (under construction)](https://clij.github.io/clij2-docs/clij2_transition_notes)
   * [Troubleshooting](https://clij.github.io/clij2-docs/troubleshooting)
   * [Support](https://image.sc)
   * [Imprint](https://clij.github.io/imprint)
