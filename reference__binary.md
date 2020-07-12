@@ -178,6 +178,9 @@ Apply a binary opening to the input image by calling n erosions and n dilations 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullAsROI">pullAsROI</a>  
 Pulls a binary image from the GPU memory and puts it on the currently active ImageJ window as region of interest.
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullBinary">pullBinary</a>  
+Copies a binary image specified by its name from GPU memory back to ImageJ and shows it. This binary image will have 0 and 255 pixel intensities as needed for ImageJ to interpret it as binary.
+
 <a name="S"></a>
 
 ## S

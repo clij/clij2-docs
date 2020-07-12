@@ -67,6 +67,9 @@ Determines the center of mass of an image or image stack.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getDimensions">getDimensions</a>  
 Reads out the size of an image [stack] and writes it to the variables 'width', 'height' and 'depth'.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getGPUProperties">getGPUProperties</a>  
+Reads out properties of the currently active GPU and write it in the variables 'GPU_name',  'global_memory_in_bytes' and 'OpenCL_Version'.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getJaccardIndex">getJaccardIndex</a>  
 Determines the overlap of two binary images using the Jaccard index. 
 

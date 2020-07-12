@@ -127,6 +127,7 @@ clij2.release(destination);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/medianZProjectionComparion.ijm"><img src="images/language_macro.png" height="20"/></a> [medianZProjectionComparion.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/medianZProjectionComparion.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm)  
 
 

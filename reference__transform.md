@@ -16,6 +16,9 @@ __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [
 <a name="A"></a>
 
 ## A
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform">affineTransform</a>  
+Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform2D">affineTransform2D</a>  
 Applies an affine transform to a 2D image. Individual transforms must be separated by spaces.
 
@@ -108,6 +111,9 @@ Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadial">resliceRadial</a>  
 Computes a radial projection of an image stack. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadialTop">resliceRadialTop</a>  
+Computes a radial projection of an image stack and reslices it from top. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRight">resliceRight</a>  
 Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method   but offers less flexibility such as interpolation.

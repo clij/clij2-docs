@@ -37,6 +37,9 @@ Calculates the sum of pairs of pixels x and y from images X and Y weighted with 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_adjacencyMatrixToTouchMatrix">adjacencyMatrixToTouchMatrix</a>  
 Converts a adjacency matrix in a touch matrix
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform">affineTransform</a>  
+Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform2D">affineTransform2D</a>  
 Applies an affine transform to a 2D image. Individual transforms must be separated by spaces.
 
@@ -139,6 +142,12 @@ Determines the center of mass of an image or image stack.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_centroidsOfLabels">centroidsOfLabels</a>  
 Determines the centroids of all labels in a label image or image stack. 
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_clInfo">clInfo</a>  
+Outputs information about available OpenCL devices.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_clear">clear</a>  
+Resets the GPUs memory by deleting all cached images.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_closeIndexGapsInLabelMap">closeIndexGapsInLabelMap</a>  
 Analyses a label map and if there are gaps in the indexing (e.g. label 5 is not present) all  subsequent labels will be relabelled. 
 
@@ -169,10 +178,19 @@ Performs connected components analysis inspecting the diamond neighborhood of ev
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingInplace">connectedComponentsLabelingInplace (Experimental)</a>  
 Performs connected components analysis to a binary image and generates a label map.
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertFloat">convertFloat</a>  
+Convert the input image to a float image with 32 bits per pixel.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertRGBStackToGraySlice">convertRGBStackToGraySlice (Experimental)</a>  
 Converts a three channel image (stack with three slices) to a single channel image (2D image) by multiplying with factors 0.299, 0.587, 0.114.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertToImageJBinary">convertToImageJBinary</a>  
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertUInt16">convertUInt16</a>  
+Convert the input image to a unsigned integer image with 16 bits per pixel.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertUInt8">convertUInt8</a>  
+Convert the input image to a unsigned integer image with 8 bits per pixel.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convolve">convolve</a>  
 Convolve the image with a given kernel image.
 
@@ -196,6 +214,12 @@ Counts non-zero voxels in a sphere around every voxel.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countTouchingNeighbors">countTouchingNeighbors</a>  
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_create2D">create2D</a>  
+Allocated memory for a new 2D image in the GPU memory. 
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_create3D">create3D</a>  
+Allocated memory for a new 3D image in the GPU memory. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crop2D">crop2D</a>  
 Crops a given rectangle out of a given image. 
@@ -221,11 +245,23 @@ Determines a maximum projection of an image stack and does a color coding of the
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectLabelEdges">detectLabelEdges</a>  
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaxima2DBox">detectMaxima2DBox</a>  
+Detects local maxima in a given square/cubic neighborhood. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaxima3DBox">detectMaxima3DBox</a>  
+Detects local maxima in a given square/cubic neighborhood. 
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaximaBox">detectMaximaBox</a>  
 Detects local maxima in a given square/cubic neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaximaSliceBySliceBox">detectMaximaSliceBySliceBox</a>  
 Detects local maxima in a given square neighborhood of an input image stack. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMinima2DBox">detectMinima2DBox</a>  
+Detects local minima in a given square/cubic neighborhood. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMinima3DBox">detectMinima3DBox</a>  
+Detects local minima in a given square/cubic neighborhood. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMinimaBox">detectMinimaBox</a>  
 Detects local minima in a given square/cubic neighborhood. 
@@ -400,6 +436,9 @@ Determines the center of mass of an image or image stack.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getDimensions">getDimensions</a>  
 Reads out the size of an image [stack] and writes it to the variables 'width', 'height' and 'depth'.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getGPUProperties">getGPUProperties</a>  
+Reads out properties of the currently active GPU and write it in the variables 'GPU_name',  'global_memory_in_bytes' and 'OpenCL_Version'.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getJaccardIndex">getJaccardIndex</a>  
 Determines the overlap of two binary images using the Jaccard index. 
 
@@ -456,6 +495,9 @@ Converts an image into a table.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageToStack">imageToStack</a>  
 Copies a single slice into a stack a given number of times.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_invalidateKernelCache">invalidateKernelCache</a>  
+Invalidates all cached OpenCL programs and kernels.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_invert">invert</a>  
 Computes the negative value of all pixels in a given image. 
@@ -774,8 +816,14 @@ Determines the extrema of pixel values:
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_print">print</a>  
 Visualises an image on standard out (console).
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pull">pull</a>  
+Copies an image specified by its name from GPU memory back to ImageJ and shows it.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullAsROI">pullAsROI</a>  
 Pulls a binary image from the GPU memory and puts it on the currently active ImageJ window as region of interest.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullBinary">pullBinary</a>  
+Copies a binary image specified by its name from GPU memory back to ImageJ and shows it. This binary image will have 0 and 255 pixel intensities as needed for ImageJ to interpret it as binary.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullLabelsToROIList">pullLabelsToROIList</a>  
 Pulls all labels in a label map as ROIs to a list. 
@@ -792,8 +840,23 @@ Pushes a tile in an image specified by its name, position and size from GPU memo
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullToResultsTable">pullToResultsTable</a>  
 Converts an image into a table.
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_push">push</a>  
+Copies an image specified by its name to GPU memory in order to process it there later.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushArray">pushArray</a>  
 Converts an array to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushCurrentSelection">pushCurrentSelection</a>  
+Copies an image specified by its name to GPU memory in order to process it there later.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushCurrentSlice">pushCurrentSlice</a>  
+Copies an image specified by its name to GPU memory in order to process it there later.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushCurrentSliceSelection">pushCurrentSliceSelection</a>  
+Copies an image specified by its name to GPU memory in order to process it there later.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushCurrentZStack">pushCurrentZStack</a>  
+Copies an image specified by its name to GPU memory in order to process it there later.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushResultsTable">pushResultsTable</a>  
 Converts a table to an image. 
@@ -819,6 +882,9 @@ Reads a raw file from disc and pushes it immediately to the GPU.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reduceStack">reduceStack</a>  
 Reduces the number of slices in a stack by a given factor. With the offset you have control which slices stay:  * With factor 3 and offset 0, slices 0, 3, 6,... are kept. * With factor 4 and offset 1, slices 1, 5, 9,... are kept.
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_release">release</a>  
+Frees memory of a specified image in GPU memory.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">replaceIntensities</a>  
 Replaces integer intensities specified in a vector image. 
 
@@ -827,6 +893,9 @@ Replaces a specific intensity in an image with a given new value.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replacePixelsIfZero">replacePixelsIfZero</a>  
 Replaces pixel values x with y in case x is zero.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reportMemory">reportMemory</a>  
+Prints a list of all images cached in the GPU to ImageJs log window together with a sum of memory  consumption.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resample">resample</a>  
 Resamples an image with given size factors using an affine transform.
@@ -839,6 +908,9 @@ Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadial">resliceRadial</a>  
 Computes a radial projection of an image stack. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadialTop">resliceRadialTop</a>  
+Computes a radial projection of an image stack and reslices it from top. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRight">resliceRight</a>  
 Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method   but offers less flexibility such as interpolation.

@@ -76,6 +76,9 @@ Determines the minimum intensity projection of all pixels in an image above a gi
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadial">resliceRadial</a>  
 Computes a radial projection of an image stack. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceRadialTop">resliceRadialTop</a>  
+Computes a radial projection of an image stack and reslices it from top. 
+
 <a name="S"></a>
 
 ## S
