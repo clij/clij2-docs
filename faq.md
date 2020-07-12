@@ -105,9 +105,12 @@ No. All numeric spatial parameters in CLIJ such as radius and sigma are always e
 ## Are pixel positions 0- or 1-indiced?
 Pixel coordinates in X, Y and Z are zero-based indiced.
 
-<a name="multi)_channels"></a>
+<a name="multi_channels"></a>
 ## Are multi-channel images and timelapse data supported by CLIJ?
-In general no. CLIJ supports two and three dimensional images. If the third dimension represents channels or frames, these images can be processed using CLIJs 3D filters. When processing 4D or 5D images, it is recommended to split them into 3D blocks.
+Not directly. CLIJ supports two and three dimensional images. 
+If the third dimension represents channels or frames, these images can be processed using CLIJs 3D filters. 
+In order to process 4D or 5D images, it is recommended to split them into 3D blocks.
+There are functions like pushCurrentZStack and pushCurrentSlice to simplify this.
 
 <a name="inplace_operations"></a>
 ## Are in-place operations supported?
