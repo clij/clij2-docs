@@ -24,10 +24,10 @@ and push image data to GPU memory:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // clean up ImageJ
 run("Close All");
@@ -46,8 +46,8 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_th
 Ext.<a href="https://clij.github.io/clij2-docs/reference_voronoiOctagon">CLIJ2_voronoiOctagon</a>(mask, voronoi_diagram);
 
 // show result
-Ext.CLIJ2_pullBinary(mask);
-Ext.CLIJ2_pullBinary(voronoi_diagram);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(voronoi_diagram);
 
 </pre>
 <a href="image_1588707838158.png"><img src="image_1588707838158.png" width="224" alt="CLIJ2_thresholdOtsu_result256"/></a>
@@ -56,7 +56,7 @@ Ext.CLIJ2_pullBinary(voronoi_diagram);
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

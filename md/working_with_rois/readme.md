@@ -38,10 +38,10 @@ input = getTitle();
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 </pre>
 
@@ -58,7 +58,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabe
 
 <pre class="highlight">
 // show the image
-Ext.CLIJ2_pull(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(input);
 // show label as ROIs on top of the image
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pullLabelsToROIManager">CLIJ2_pullLabelsToROIManager</a>(labelmap);
 roiManager("show all");
@@ -101,7 +101,7 @@ for (i = 0; i < number_of_objects; i++) {
 <pre class="highlight">
 
 // show the image
-Ext.CLIJ2_pull(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(input);
 
 // show all label as ROIs on top of the image
 roiManager("show all");
@@ -113,7 +113,7 @@ show();
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

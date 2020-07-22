@@ -28,10 +28,10 @@ input = getTitle();
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // clean up ImageJ
 run("Close All");
@@ -199,7 +199,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPix
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

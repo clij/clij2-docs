@@ -24,10 +24,10 @@ First we initialize the GPU and push image data to the GPU memory:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // clean up ImageJ
 run("Close All");
@@ -37,7 +37,7 @@ run("Close All");
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(input, mask, "Otsu");
-Ext.CLIJ2_pull(mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(mask);
 </pre>
 <a href="image_1588706840667.png"><img src="image_1588706840667.png" width="224" alt="CLIJ2_automaticThreshold_result37"/></a>
 
@@ -46,7 +46,7 @@ Ext.CLIJ2_pull(mask);
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox">CLIJ2_connectedComponentsLabelingBox</a>(mask, labelmap);
 
-Ext.CLIJ2_pull(labelmap);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labelmap);
 run("glasbey on dark");
 
 </pre>
@@ -56,7 +56,7 @@ run("glasbey on dark");
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_excludeLabelsOnEdges">CLIJ2_excludeLabelsOnEdges</a>(labelmap, labels_not_touching_image_borders);
-Ext.CLIJ2_pull(labels_not_touching_image_borders);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labels_not_touching_image_borders);
 run("glasbey on dark");
 
 </pre>
@@ -66,7 +66,7 @@ At the end of the macro, clean up:
 
 <pre class="highlight">
 
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 
 

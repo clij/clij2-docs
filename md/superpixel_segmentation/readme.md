@@ -11,7 +11,7 @@ Clean up ImageJ and initialize GPU:
 run("Close All");
 
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // time measurements
 time = getTime();
@@ -37,8 +37,8 @@ open(path + "lund1051_labelled.tif");
 labels = getTitle();
 
 // push images to GPU
-Ext.CLIJ2_push(input);
-Ext.CLIJ2_push(labels);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(labels);
 
 // clean up ImageJ
 run("Close All");
@@ -62,7 +62,7 @@ From the label map, we derive a touch-matrix to process neighboring pixel :
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labels, touch_matrix);
 
 // visualize the touch matrix
-Ext.CLIJ2_pull(touch_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(touch_matrix);
 </pre>
 <a href="image_1588707796170.png"><img src="image_1588707796170.png" width="224" alt="CLIJ2_generateTouchMatrix_result133"/></a>
 
@@ -76,7 +76,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTableColumn"
 run("Clear Results");
 
 // show the pixel count vector image
-Ext.CLIJ2_pull(pixel_count);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(pixel_count);
 </pre>
 <a href="image_1588707797604.png"><img src="image_1588707797604.png" width="224" alt="CLIJ2_pushResultsTableColumn_result134"/></a>
 
@@ -1165,10 +1165,10 @@ print(time_traces);
 Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 
 <pre class="highlight">
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 
 // finally, clean up
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 <pre>
 > GPU contains 23 images.
@@ -1204,10 +1204,10 @@ Following methods are convenient for a proper visualization in a notebook:
 <pre class="highlight">
 function show(input, text) {
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
-	Ext.CLIJ2_pull(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
-	Ext.CLIJ2_release(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_release">CLIJ2_release</a>(max_projection);
 }
 </pre>
 

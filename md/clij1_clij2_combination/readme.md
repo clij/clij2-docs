@@ -32,7 +32,7 @@ CLIJ2 takes care of initializing CLIJ in the background:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device="); 
-Ext.CLIJ2_clear(); 
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>(); 
 </pre>
 
 ## Pushing images to GPU memory
@@ -40,7 +40,7 @@ Afterwards, all methods from CLIJ and CLIJ2 are available, for example to push i
 
 <pre class="highlight">
 // push images to GPU using CLIJ2
-Ext.CLIJ2_push(original);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(original);
 // push images to GPU using CLIJ
 Ext.CLIJ_push(background);
 
@@ -64,7 +64,7 @@ Images, which have been pushed and/or created by CLIJ or CLIJ2, can be combined 
  Ext.<a href="https://clij.github.io/clij2-docs/reference_addImagesWeighted">CLIJ2_addImagesWeighted</a>(original, background, originalWithBackground, 1, 0.01);
  
 // show result using CLIJ2
-Ext.CLIJ2_pull(originalWithBackground); 
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(originalWithBackground); 
 run("Invert LUT"); 
 
 </pre>
@@ -74,7 +74,7 @@ run("Invert LUT");
 As for every workflow, clean up at the end:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

@@ -23,10 +23,10 @@ Push image data to GPU memory:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push images to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // clean up ImageJ
 run("Close All");
@@ -39,7 +39,7 @@ We apply a filter to an image by specifying the input image, the output image an
 Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur3D">CLIJ2_gaussianBlur3D</a>(input, blurred, 5, 5, 1);
 
 // get results back from GPU
-Ext.CLIJ2_pull(blurred);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(blurred);
 </pre>
 <a href="image_1588706434451.png"><img src="image_1588706434451.png" width="224" alt="CLIJ2_gaussianBlur3D_result11"/></a>
 
@@ -59,7 +59,7 @@ If you don't like the image names created by CLIJ2, just rename them as you wish
 At the end of the macro, clean up GPU memory:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

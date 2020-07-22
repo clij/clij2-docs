@@ -29,7 +29,7 @@ This makes a lot of sense while developing new workflows. In case your macro cra
 be left in GPU memory. Thus and before starting any macro, you want to clean up first:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 ## Loading images and pushing them into GPU memory
@@ -41,7 +41,7 @@ image to GPU memory.
 run("Cell Colony (31K)");
 
 input_image = getTitle();
-Ext.CLIJ2_push(input_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input_image);
 </pre>
 <a href="image_1588705429972.png"><img src="image_1588705429972.png" width="224" alt="Cell_Colony.jpg"/></a>
 
@@ -49,7 +49,7 @@ Now, the image in the GPU is named like its correspondent image on the screen.
 We can request the GPU memory to find out which images are registered there by now: 
 
 <pre class="highlight">
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 </pre>
 <pre>
 > GPU contains 1 images.
@@ -74,14 +74,14 @@ If we want to stop a program just by using the `exit();` method, it won't displa
 In order to get the `result` back from the GPU, we need to pull it:
 
 <pre class="highlight">
-Ext.CLIJ2_pull(result);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(result);
 </pre>
 <a href="image_1588705430989.png"><img src="image_1588705430989.png" width="224" alt="CLIJ2_gaussianBlur2D_result397"/></a>
 
 Furthermore, let's ask again which images are known in GPU memory:
 
 <pre class="highlight">
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 </pre>
 <pre>
 > GPU contains 2 images.
@@ -97,9 +97,9 @@ be allocated in the GPU until its memory is full. At full memory, it will show a
 `CL_OUT_OF_RESOURCES` or `CL_OUT_OF_HOST_MEMORY`. Thus, we need to release an image to free GPU memory. 
 
 <pre class="highlight">
-Ext.CLIJ2_release(input_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_release">CLIJ2_release</a>(input_image);
 
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 </pre>
 <pre>
 > GPU contains 1 images.
@@ -119,8 +119,8 @@ Furthermore, by the end of your macro, be a good programmer and clean up GPU. ;-
 
 <pre class="highlight">
 
-Ext.CLIJ2_clear();
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 
 </pre>
 <pre>

@@ -45,9 +45,9 @@ run("Enhance Contrast", "saturated=0.35");
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_push(input);
-Ext.CLIJ2_push(shiftX);
-Ext.CLIJ2_push(shiftY);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(shiftX);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(shiftY);
 
 </pre>
 
@@ -63,7 +63,7 @@ for (i = 0; i < 36; i += 6) {
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_applyVectorField2D">CLIJ2_applyVectorField2D</a>(input, rotatedShiftX, shiftY, transformed);
 
 	// get result back from GPU
-	Ext.CLIJ2_pull(transformed);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(transformed);
 	rename("Angle " + (i * 10) + " deg");
 }
 
@@ -78,7 +78,7 @@ for (i = 0; i < 36; i += 6) {
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

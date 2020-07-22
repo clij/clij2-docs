@@ -24,10 +24,10 @@ and push image data to GPU memory:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // clean up ImageJ
 run("Close All");
@@ -42,8 +42,8 @@ run("Close All");
 Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(input, mask1, "Otsu");
 Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(input, mask2, "MinError");
 
-Ext.CLIJ2_pullBinary(mask1);
-Ext.CLIJ2_pullBinary(mask2);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(mask1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(mask2);
 
 </pre>
 <a href="image_1588707322448.png"><img src="image_1588707322448.png" width="224" alt="CLIJ2_automaticThreshold_result93"/></a>
@@ -69,7 +69,7 @@ IJ.log("Overlap (Sorensen / Dice coefficient): " + (diceIndex*100) + "%");
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

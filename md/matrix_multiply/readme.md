@@ -14,7 +14,7 @@ in the GPU.
 
 // initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 run("Close All");
 </pre>
@@ -72,7 +72,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 You can also express a matrix as an image:
 
 <pre class="highlight">
-Ext.CLIJ2_pull(matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(matrix);
 zoom(100);
 </pre>
 <a href="image_1588706975067.png"><img src="image_1588706975067.png" width="224" alt="CLIJ2_multiplyMatrix_result43-1"/></a>
@@ -83,7 +83,7 @@ zoom(100);
 // generate another matrix of the same size with random values
 Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(matrix, width, height, depth);
 bitDepth_float = 32;// 32-bit float type
-Ext.CLIJ2_create2D(another_matrix, width, height, bitDepth_float); 
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create2D">CLIJ2_create2D</a>(another_matrix, width, height, bitDepth_float); 
 
 // random values between 0 and 1; seed is 5
 Ext.<a href="https://clij.github.io/clij2-docs/reference_setRandom">CLIJ2_setRandom</a>(another_matrix, 0, 1, 5); 
@@ -117,7 +117,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 This is just a useful function to obtain a nice visualization in the notebook.

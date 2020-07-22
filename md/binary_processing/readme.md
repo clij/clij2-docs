@@ -34,10 +34,10 @@ Initialize GPU and push image to GPU memory:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 
 </pre>
@@ -53,7 +53,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_subtractImageFromScalar
 Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(inverted, thresholded);
 
 // show thresholding result
-Ext.CLIJ2_pull(thresholded);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(thresholded);
 
 </pre>
 <a href="image_1588706395030.png"><img src="image_1588706395030.png" width="224" alt="CLIJ2_thresholdOtsu_result4"/></a>
@@ -68,7 +68,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBo
 Ext.<a href="https://clij.github.io/clij2-docs/reference_erodeBox">CLIJ2_erodeBox</a>(temp, intermediate_result);
 
 // show intermediate result
-Ext.CLIJ2_pull(intermediate_result);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(intermediate_result);
 </pre>
 <a href="image_1588706395111.png"><img src="image_1588706395111.png" width="224" alt="CLIJ2_erodeBox_result6"/></a>
 
@@ -78,7 +78,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_dilateBox">CLIJ2_dilate
 Ext.<a href="https://clij.github.io/clij2-docs/reference_dilateBox">CLIJ2_dilateBox</a>(temp, opening_result);
 
 // show result
-Ext.CLIJ2_pull(opening_result);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(opening_result);
 
 </pre>
 <a href="image_1588706395194.png"><img src="image_1588706395194.png" width="224" alt="CLIJ2_dilateBox_result7"/></a>
@@ -91,7 +91,7 @@ Given the number of dilation/erosion steps we want to apply, we can call a direc
 number_of_iterations = 2;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_closingBox">CLIJ2_closingBox</a>(thresholded, closing_result, number_of_iterations);
 // show result
-Ext.CLIJ2_pull(closing_result);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(closing_result);
 
 </pre>
 <a href="image_1588706395262.png"><img src="image_1588706395262.png" width="224" alt="CLIJ2_closingBox_result8"/></a>
@@ -102,7 +102,7 @@ It is also possible to fill holes:
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_binaryFillHoles">CLIJ2_binaryFillHoles</a>(thresholded, holes_filled);
 // show result
-Ext.CLIJ2_pullBinary(holes_filled);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(holes_filled);
 
 </pre>
 <a href="image_1588706395509.png"><img src="image_1588706395509.png" width="224" alt="CLIJ2_binaryFillHoles_result9"/></a>
@@ -113,7 +113,7 @@ We can retrieve an edge-detected image like this:
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_binaryEdgeDetection">CLIJ2_binaryEdgeDetection</a>(thresholded, edges);
 // show result
-Ext.CLIJ2_pullBinary(edges);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(edges);
 
 </pre>
 <a href="image_1588706395598.png"><img src="image_1588706395598.png" width="224" alt="CLIJ2_binaryEdgeDetection_result10"/></a>
@@ -121,7 +121,7 @@ Ext.CLIJ2_pullBinary(edges);
 Finally, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

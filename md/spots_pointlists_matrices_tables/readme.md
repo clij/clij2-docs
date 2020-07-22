@@ -18,7 +18,7 @@ touch matrices in the GPU.
 <pre class="highlight">
 // init GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 run("Close All");
 
@@ -39,7 +39,7 @@ height = 5;
 depth = 1;
 
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(spots_image, array, width, height, depth);
-Ext.CLIJ2_pull(spots_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(spots_image);
 zoom(100);
 
 </pre>
@@ -49,7 +49,7 @@ zoom(100);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">CLIJ2_spotsToPointList</a>(spots_image, pointlist);
-Ext.CLIJ2_pull(pointlist);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(pointlist);
 zoom(100);
 </pre>
 <a href="image_1588707709188.png"><img src="image_1588707709188.png" width="224" alt="CLIJ2_spotsToPointList_result120-1"/></a>
@@ -58,7 +58,7 @@ zoom(100);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">CLIJ2_generateDistanceMatrix</a>(pointlist, pointlist, distance_matrix);
-Ext.CLIJ2_pull(distance_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(distance_matrix);
 zoom(100);
 
 </pre>
@@ -68,7 +68,7 @@ zoom(100);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_labelSpots">CLIJ2_labelSpots</a>(spots_image, labelled_spots);
-Ext.CLIJ2_pull(labelled_spots);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labelled_spots);
 zoom(100);
 run("glasbey_on_dark");
 
@@ -79,7 +79,7 @@ run("glasbey_on_dark");
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_labelVoronoiOctagon">CLIJ2_labelVoronoiOctagon</a>(labelled_spots, label_voronoi);
-Ext.CLIJ2_pull(label_voronoi);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(label_voronoi);
 zoom(100);
 
 </pre>
@@ -89,7 +89,7 @@ zoom(100);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(label_voronoi, touch_matrix);
-Ext.CLIJ2_pull(touch_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(touch_matrix);
 zoom(100);
 
 </pre>
@@ -99,7 +99,7 @@ zoom(100);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_countTouchingNeighbors">CLIJ2_countTouchingNeighbors</a>(touch_matrix, count_vector);
-Ext.CLIJ2_pull(count_vector);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(count_vector);
 zoom(100);
 
 </pre>
@@ -126,7 +126,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPix
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTable">CLIJ2_pushResultsTable</a>(table_image);
-Ext.CLIJ2_pull(table_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(table_image);
 zoom(100);
 
 </pre>
@@ -136,7 +136,7 @@ zoom(100);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushResultsTableColumn">CLIJ2_pushResultsTableColumn</a>(mean_intensity_vector, "MEAN_INTENSITY");
-Ext.CLIJ2_pull(mean_intensity_vector);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(mean_intensity_vector);
 zoom(100);
 
 </pre>
@@ -147,7 +147,7 @@ zoom(100);
 <pre class="highlight">
 zoom_factor = 100;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndScalar">CLIJ2_multiplyImageAndScalar</a>(pointlist, pointlist_multiplied, zoom_factor);
-Ext.CLIJ2_pull(pointlist_multiplied);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(pointlist_multiplied);
 zoom(100);
 
 </pre>
@@ -156,9 +156,9 @@ zoom(100);
 ## Draw a mesh of touching neighbors and corresponding spots
 
 <pre class="highlight">
-Ext.CLIJ2_create2D(mesh, width * zoom_factor, height * zoom_factor, 32);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create2D">CLIJ2_create2D</a>(mesh, width * zoom_factor, height * zoom_factor, 32);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ2_touchMatrixToMesh</a>(pointlist_multiplied, touch_matrix, mesh);
-Ext.CLIJ2_pull(mesh);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(mesh);
 
 </pre>
 <a href="image_1588707710448.png"><img src="image_1588707710448.png" width="224" alt="CLIJ2_create2D_result129"/></a>
@@ -166,9 +166,9 @@ Ext.CLIJ2_pull(mesh);
 ## Draw a mesh showing shorter edges than from given value
 
 <pre class="highlight">
-Ext.CLIJ2_create2D(mesh2, width * zoom_factor, height * zoom_factor, 32);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create2D">CLIJ2_create2D</a>(mesh2, width * zoom_factor, height * zoom_factor, 32);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_distanceMatrixToMesh">CLIJ2_distanceMatrixToMesh</a>(pointlist_multiplied, distance_matrix, mesh2, 2.5);
-Ext.CLIJ2_pull(mesh2);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(mesh2);
 
 </pre>
 <a href="image_1588707710517.png"><img src="image_1588707710517.png" width="224" alt="CLIJ2_create2D_result130"/></a>
@@ -176,7 +176,7 @@ Ext.CLIJ2_pull(mesh2);
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

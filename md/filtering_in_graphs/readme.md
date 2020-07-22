@@ -14,7 +14,7 @@ of a graph.
 
 // initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 run("Close All");
 
@@ -28,12 +28,12 @@ run("Close All");
 number_of_points = 100;
 number_of_dimensions = 2;
 bit_depth = 32;
-Ext.CLIJ2_create2D(pointlist, number_of_points, number_of_dimensions, bit_depth);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create2D">CLIJ2_create2D</a>(pointlist, number_of_points, number_of_dimensions, bit_depth);
 random_min = 0;
 random_max = 100;
 seed = getTime();
 Ext.<a href="https://clij.github.io/clij2-docs/reference_setRandom">CLIJ2_setRandom</a>(pointlist, random_min, random_max, seed);
-Ext.CLIJ2_pull(pointlist);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(pointlist);
 zoom(10);
 
 </pre>
@@ -43,7 +43,7 @@ zoom(10);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpots">CLIJ2_pointlistToLabelledSpots</a>(pointlist, spots_image);
-Ext.CLIJ2_pull(spots_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(spots_image);
 zoom(4);
 run("glasbey_on_dark");
 
@@ -54,7 +54,7 @@ run("glasbey_on_dark");
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_labelVoronoiOctagon">CLIJ2_labelVoronoiOctagon</a>(spots_image, labelled_voronoi);
-Ext.CLIJ2_pull(labelled_voronoi);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labelled_voronoi);
 zoom(4);
 run("glasbey_on_dark");;
 
@@ -71,7 +71,7 @@ for (i = 0; i < number_of_points; i += 1) {
 measurement_array[number_of_points / 2] = 20;
 
 Ext.<a href="https://clij.github.io/clij2-docs/reference_pushArray">CLIJ2_pushArray</a>(measurement, measurement_array, number_of_points, 1, 1);
-Ext.CLIJ2_pull(measurement);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(measurement);
 zoom(10);
 
 </pre>
@@ -81,7 +81,7 @@ zoom(10);
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_voronoi, measurement, parametric_image);
-Ext.CLIJ2_pull(parametric_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(parametric_image);
 zoom(4);
 setMinAndMax(0, 20);
 run("Fire");
@@ -101,7 +101,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbo
 
 // draw measurements of the median, again as parametric image
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_voronoi, median_measurement, parametric_image);
-Ext.CLIJ2_pull(parametric_image);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(parametric_image);
 zoom(4);
 setMinAndMax(0, 20);
 run("Fire");
@@ -118,7 +118,7 @@ As you can see, the outlier is gone! :-)
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

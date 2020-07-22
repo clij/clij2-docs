@@ -78,7 +78,7 @@ Let's start with the initialization of the GPU:
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 
@@ -86,7 +86,7 @@ Ext.CLIJ2_clear();
 
 <pre class="highlight">
 time = getTime();
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 print("Pushing one image to the GPU took " + (getTime() - time) + " msec");
 
 // clean up ImageJ
@@ -151,7 +151,7 @@ for (i = 1; i <= 10; i++) {
 <pre class="highlight">
 
 time = getTime();
-Ext.CLIJ2_pull(blurred);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(blurred);
 
 print("Pulling one image from the GPU took " + (getTime() - time) + " msec");
 
@@ -168,7 +168,7 @@ run("Duplicate...", "duplicate range=64-64");
 For documentation purpose, we also should report about the used GPU:
 
 <pre class="highlight">
-Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getGPUProperties">CLIJ2_getGPUProperties</a>(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
@@ -183,7 +183,7 @@ print("OpenCL version: " + opencl_version);
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

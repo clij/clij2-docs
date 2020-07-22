@@ -30,10 +30,10 @@ input = getTitle();
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push images to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // clean up ImageJ
 close();
@@ -51,7 +51,7 @@ radius = 10;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_topHatBox">CLIJ2_topHatBox</a>(input, background_subtacted, radius, radius, 0);
 
 // show result
-Ext.CLIJ2_pull(background_subtacted);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(background_subtacted);
 
 </pre>
 <a href="image_1588708137684.png"><img src="image_1588708137684.png" width="224" alt="CLIJ2_topHatBox_result2"/></a>
@@ -83,7 +83,7 @@ print(time_traces);
 For documentation purposes, we should also report which GPU was used
 
 <pre class="highlight">
-Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getGPUProperties">CLIJ2_getGPUProperties</a>(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
@@ -98,7 +98,7 @@ print("OpenCL version: " + opencl_version);
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

@@ -50,21 +50,21 @@ start_time_clij = getTime();
 
 // init GPU
 run("CLIJ2 Macro Extensions", "cl_device=RTX");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input_clij);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input_clij);
 
 // subtract background in the image
 radius = 25;
 background_subtracted_clij = "background_subtracted_clij";
 Ext.<a href="https://clij.github.io/clij2-docs/reference_topHatBox">CLIJ2_topHatBox</a>(input_clij, background_subtracted_clij, 25, 25, 0);
-Ext.CLIJ2_pull(background_subtracted_clij);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(background_subtracted_clij);
 
 // threshold the image
 thresholded_clij = "thresholded_clij";
 Ext.<a href="https://clij.github.io/clij2-docs/reference_automaticThreshold">CLIJ2_automaticThreshold</a>(background_subtracted_clij, thresholded_clij, "Default");
-Ext.CLIJ2_pullBinary(thresholded_clij);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(thresholded_clij);
 
 end_time_clij = getTime();
 
@@ -152,7 +152,7 @@ a good practice to document which GPU was used:
 
 <pre class="highlight">
 
-Ext.CLIJ2_getGPUProperties(gpu, memory, opencl_version);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getGPUProperties">CLIJ2_getGPUProperties</a>(gpu, memory, opencl_version);
 print("GPU: " + gpu);
 print("Memory in GB: " + (memory / 1024 / 1024 / 1024) );
 print("OpenCL version: " + opencl_version);
@@ -177,7 +177,7 @@ Last but not least, clean up by closing all windows and empty GPU memory:
 <pre class="highlight">
 
 run("Close All");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 

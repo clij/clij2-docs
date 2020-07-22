@@ -12,7 +12,7 @@ Let's initialize that graphics card and mesure the start time.
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 run("Close All");
 time = getTime();
@@ -33,7 +33,7 @@ input = getTitle();
 
 print("Loading took " + (getTime() - time) + " msec");
 
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 run("Close All");
 
 // visualize the dataset
@@ -127,7 +127,7 @@ run("glasbey_on_dark");
 We also save all labels to disc to use them as starting point in other notebooks, later.
 
 <pre class="highlight">
-Ext.CLIJ2_pull(labels);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labels);
 saveAs("TIF", path + "lund1051_labelled.tif");
 close();
 
@@ -162,7 +162,7 @@ each edge. We use this result to draw a mesh with a color gradient of distance (
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_multiplyImages">CLIJ2_multiplyImages</a>(touch_matrix, distance_matrix, touch_matrix_with_distances);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_getDimensions">CLIJ2_getDimensions</a>(input, width, height, depth);
-Ext.CLIJ2_create3D(mesh, width, height, depth, 32);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create3D">CLIJ2_create3D</a>(mesh, width, height, depth, 32);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ2_touchMatrixToMesh</a>(pointlist, touch_matrix_with_distances, mesh);
 show(mesh, "distance mesh");
 run("Green Fire Blue");
@@ -436,10 +436,10 @@ print(time_traces);
 Also, let's see how much of GPU memory got used by this workflow. At the end, cleaning up remains important.
 
 <pre class="highlight">
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 
 // finally, clean up
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 <pre>
@@ -480,20 +480,20 @@ Following methods are convenient for a proper visualization in a notebook:
 <pre class="highlight">
 function show(input, text) {
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
-	Ext.CLIJ2_pull(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
-	Ext.CLIJ2_release(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_release">CLIJ2_release</a>(max_projection);
 }
 
 function show_spots(input, text) {
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximum3DBox">CLIJ2_maximum3DBox</a>(input, extended, 1, 1, 0);
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(extended, max_projection);
-	Ext.CLIJ2_pull(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
-	Ext.CLIJ2_release(extended);
-	Ext.CLIJ2_release(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_release">CLIJ2_release</a>(extended);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_release">CLIJ2_release</a>(max_projection);
 }
 </pre>
 

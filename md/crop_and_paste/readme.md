@@ -24,10 +24,10 @@ input = getTitle();
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push images to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 </pre>
 
@@ -42,7 +42,7 @@ height = 75;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_crop2D">CLIJ2_crop2D</a>(input, cropped, x, y, width, height);
 
 // show result
-Ext.CLIJ2_pull(cropped);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(cropped);
 
 </pre>
 <a href="image_1588706597099.png"><img src="image_1588706597099.png" width="224" alt="CLIJ2_crop2D_result12"/></a>
@@ -54,7 +54,7 @@ We also transform the cropped image for visualisation purpose:
 <pre class="highlight">
 
 bit_depth = 8;
-Ext.CLIJ2_create2D(collage, width * 2 + 6, height * 2 + 6, bit_depth);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create2D">CLIJ2_create2D</a>(collage, width * 2 + 6, height * 2 + 6, bit_depth);
 
 // fill the background of the collage with white pixels
 Ext.<a href="https://clij.github.io/clij2-docs/reference_set">CLIJ2_set</a>(collage, 255);
@@ -72,7 +72,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_flip2D">CLIJ2_flip2D</a
 Ext.<a href="https://clij.github.io/clij2-docs/reference_paste2D">CLIJ2_paste2D</a>(flipped, collage, 2, height + 4);
 
 // show collage
-Ext.CLIJ2_pull(collage);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(collage);
 
 </pre>
 <a href="image_1588706597180.png"><img src="image_1588706597180.png" width="224" alt="CLIJ2_create2D_result13"/></a>
@@ -80,7 +80,7 @@ Ext.CLIJ2_pull(collage);
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

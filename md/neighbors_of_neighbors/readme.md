@@ -11,7 +11,7 @@ This macro shows how to apply a filter to values of a graph, considering neighbo
 
 // initialize GPU
 run("CLIJ2 Macro Extensions", "cl_device=[GeForce RTX 2060 SUPER]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 run("Close All");
 
@@ -27,7 +27,7 @@ and partition the image space between these points.
 number_of_points = 200;
 number_of_dimensions = 2;
 bit_depth = 32;
-Ext.CLIJ2_create2D(pointlist, number_of_points, number_of_dimensions, bit_depth);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_create2D">CLIJ2_create2D</a>(pointlist, number_of_points, number_of_dimensions, bit_depth);
 random_min = 0;
 random_max = 400;
 seed = getTime();
@@ -38,7 +38,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpot
 
 // partition the space between points
 Ext.<a href="https://clij.github.io/clij2-docs/reference_labelVoronoiOctagon">CLIJ2_labelVoronoiOctagon</a>(spots_image, label_map);
-Ext.CLIJ2_pull(label_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(label_map);
 run("glasbey_on_dark");
 </pre>
 <a href="image_1588707389177.png"><img src="image_1588707389177.png" width="224" alt="CLIJ2_labelVoronoiOctagon_result103"/></a>
@@ -52,7 +52,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CL
 
 // draw mesh
 Ext.<a href="https://clij.github.io/clij2-docs/reference_touchMatrixToMesh">CLIJ2_touchMatrixToMesh</a>(pointlist, touch_matrix, mesh);
-Ext.CLIJ2_pull(mesh);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(mesh);
 </pre>
 <a href="image_1588707389261.png"><img src="image_1588707389261.png" width="224" alt="CLIJ2_touchMatrixToMesh_result105"/></a>
 
@@ -86,7 +86,7 @@ function drawResult(label_map, measurement) {
 	// replace label in the label map with corresponding measurements
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(label_map, measurement, parametric_image);
 	// show the parametric image
-	Ext.CLIJ2_pull(parametric_image);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(parametric_image);
 	setMinAndMax(50, 100);
 	run("Fire");
 }
@@ -140,7 +140,7 @@ drawResult(label_map, mean_measurement);
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

@@ -13,7 +13,7 @@ This example shows how to multiply a list of coordinates by a given voxel size.
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=[gfx900]");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 ## Get test data 
@@ -80,7 +80,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_print">CLIJ2_print</a>(
 At the end of the macro, clean up:
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 

@@ -19,7 +19,7 @@ Initialize GPU:
 <pre class="highlight">
 
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 
@@ -52,8 +52,8 @@ input = getTitle();
 startTime = getTime();
 
 // push the image to GPU memory
-Ext.CLIJ2_push(input);
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 
 // close the window showing the dataset
 close();
@@ -72,8 +72,8 @@ We convert the dataset into a 32-bit float, in order to deliver smooth results w
 performing subsequent processing steps. 
 
 <pre class="highlight">
-Ext.CLIJ2_convertFloat(input, input_float);
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_convertFloat">CLIJ2_convertFloat</a>(input, input_float);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 show(input_float, "Input image");
 
 </pre>
@@ -222,10 +222,10 @@ print("The whole workflow took " + (getTime() - startTime) + " msec");
 Let's also see how much memory this workflow used. By the end, cleaning up remains important.
 
 <pre class="highlight">
-Ext.CLIJ2_reportMemory();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_reportMemory">CLIJ2_reportMemory</a>();
 
 // finally, clean up
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 </pre>
 <pre>
@@ -248,10 +248,10 @@ The following methods are convenient for a proper visualisation in a notebook:
 <pre class="highlight">
 function show(input, text) {
 	Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumZProjection">CLIJ2_maximumZProjection</a>(input, max_projection);
-	Ext.CLIJ2_pull(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(max_projection);
 	setColor(100000);
 	drawString(text, 20, 20);
-	Ext.CLIJ2_release(max_projection);
+	Ext.<a href="https://clij.github.io/clij2-docs/reference_release">CLIJ2_release</a>(max_projection);
 }
 </pre>
 

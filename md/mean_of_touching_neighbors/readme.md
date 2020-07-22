@@ -26,10 +26,10 @@ Init GPU
 
 <pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // cleanup ImageJ
 run("Close All");
@@ -40,7 +40,7 @@ Create a mask using the Otsu threshold algorithm
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input, mask);
-Ext.CLIJ2_pull(mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(mask);
 
 </pre>
 <a href="image_1588707179459.png"><img src="image_1588707179459.png" width="224" alt="CLIJ2_thresholdOtsu_result79"/></a>
@@ -53,8 +53,8 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_voronoiOctagon">CLIJ2_v
 // invert
 Ext.<a href="https://clij.github.io/clij2-docs/reference_binaryNot">CLIJ2_binaryNot</a>(voronoi_diagram, inverted_voronoi);
 
-Ext.CLIJ2_pullBinary(voronoi_diagram);
-Ext.CLIJ2_pullBinary(inverted_voronoi);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(voronoi_diagram);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(inverted_voronoi);
 
 </pre>
 <a href="image_1588707179594.png"><img src="image_1588707179594.png" width="224" alt="CLIJ2_voronoiOctagon_result80"/></a>
@@ -68,8 +68,8 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabe
 // Extend labels so that they touch
 Ext.<a href="https://clij.github.io/clij2-docs/reference_maximum2DBox">CLIJ2_maximum2DBox</a>(labelled, labelled_extended, 2, 2);
 
-Ext.CLIJ2_pull(labelled);
-Ext.CLIJ2_pull(labelled_extended);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labelled);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labelled_extended);
 
 </pre>
 <a href="image_1588707179745.png"><img src="image_1588707179745.png" width="224" alt="CLIJ2_connectedComponentsLabelingBox_result82"/></a>
@@ -79,7 +79,7 @@ Determine touch matrix
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labelled_extended, touch_matrix);
-Ext.CLIJ2_pullBinary(touch_matrix);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pullBinary">CLIJ2_pullBinary</a>(touch_matrix);
 
 </pre>
 <a href="image_1588707179813.png"><img src="image_1588707179813.png" width="224" alt="CLIJ2_generateTouchMatrix_result84"/></a>
@@ -99,7 +99,7 @@ Show Mean intensity per label as parametric image
 
 <pre class="highlight">
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, intensity_values, intensity_map);
-Ext.CLIJ2_pull(intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(intensity_map);
 rename("label intensity");
 setMinAndMax(0, 255);
 
@@ -112,7 +112,7 @@ Determine mean (mean) intensity of local neighbors and draw another parametric i
 
 Ext.<a href="https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighbors">CLIJ2_meanOfTouchingNeighbors</a>(intensity_values, touch_matrix, local_mean_intensity_values);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
-Ext.CLIJ2_pull(local_mean_intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(local_mean_intensity_map);
 rename("mean neighbor intensity");
 setMinAndMax(0, 255);
 
@@ -126,14 +126,14 @@ Determine min and max (mean) intensity of local neighbors and draw two more para
 // min
 Ext.<a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighbors">CLIJ2_minimumOfTouchingNeighbors</a>(intensity_values, touch_matrix, local_minimum_intensity_values);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, local_minimum_intensity_values, local_minimum_intensity_map);
-Ext.CLIJ2_pull(local_minimum_intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(local_minimum_intensity_map);
 rename("minimum neighbor intensity");
 setMinAndMax(0, 255);
 
 // max
 Ext.<a href="https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighbors">CLIJ2_maximumOfTouchingNeighbors</a>(intensity_values, touch_matrix, local_maximum_intensity_values);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labelled_extended, local_maximum_intensity_values, local_maximum_intensity_map);
-Ext.CLIJ2_pull(local_maximum_intensity_map);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(local_maximum_intensity_map);
 rename("maximum neighbor intensity");
 setMinAndMax(0, 255);
 
@@ -144,7 +144,7 @@ setMinAndMax(0, 255);
 Clean up by the end.
 
 <pre class="highlight">
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 </pre>
 
 
