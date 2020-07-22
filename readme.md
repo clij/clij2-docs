@@ -92,13 +92,16 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Comparing and benchmarking workflows](https://clij.github.io/clij2-docs/md/compare_workflows/)
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ/)
 
-* Media
+* Media (external resources)
+  * [How CLIJ2 can make your bio-image analysis workflows incredibly fast, FocalPlane](https://focalplane.biologists.com/2020/07/14/how-clij-can-make-your-image-analysis-incredibly-fast/)
   * [YouTube NEUBIAS Academy @home](https://youtu.be/uMj0OS1TiQE)
-  * [NEUBIAS Symposium 2020, Bordeaux](https://git.mpi-cbg.de/rhaase/clij_neubias_2020)
-  * [NEUBIAS Training School TS14, Bordeaux](https://git.mpi-cbg.de/rhaase/neubias_ts14)
-  * [MTZ Image Processing Seminar, TU Dresden](https://git.mpi-cbg.de/rhaase/clij_mtz_2020)
-  * [Quantitative BioImaging Conference 2020, Oxford](slides/2020-01-QBI_SmartMicroscopy_Haase_V2.pdf)
-  * [NEUBIAS Training School TS13, Porto](https://git.mpi-cbg.de/rhaase/neubias_ts14)
+  * [NEUBIAS Symposium 2020, Invited talk, Bordeaux](https://git.mpi-cbg.de/rhaase/clij_neubias_2020)
+  * [NEUBIAS Training School TS14, Teaching session, Bordeaux](https://git.mpi-cbg.de/rhaase/neubias_ts14)
+  * [MTZ Image Processing Seminar, Teaching session, TU Dresden](https://git.mpi-cbg.de/rhaase/clij_mtz_2020)
+  * [Quantitative BioImaging Conference 2020, Selected talk, Oxford](slides/2020-01-QBI_SmartMicroscopy_Haase_V2.pdf)
+  * [Fast, Faster, CLIJ, News, Center for Systems Biology Dresden](https://www.csbdresden.de/news-events/news/article/2019/11/18/fast-faster-clij/)
+  * [CLIJ: GPU-accelerated image processing for everyone, Article, Nature Methods](https://www.nature.com/articles/s41592-019-0650-1)
+  * [NEUBIAS Training School TS13, Teaching session, Porto](https://git.mpi-cbg.de/rhaase/neubias_ts14)
      
 * Example code
   * [ImageJ macro](https://github.com/clij/clij2-docs/tree/master/src/main/macro)
