@@ -7,10 +7,12 @@ Frees memory of a specified image in GPU memory.
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
 * <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (6)
 * <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (3)
+* <a href="reference_threshold">threshold</a> (2)
 * <a href="reference_maximum3DBox">maximum3DBox</a> (2)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 * <a href="reference_maximum2DSphere">maximum2DSphere</a> (2)
 * <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 * <a href="reference_generateTouchCountMatrix">generateTouchCountMatrix</a> (2)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
@@ -19,9 +21,11 @@ Frees memory of a specified image in GPU memory.
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (5)
 * <a href="reference_greaterConstant">greaterConstant</a> (2)
 * <a href="reference_labelSpots">labelSpots</a> (4)
+* <a href="reference_erodeBox">erodeBox</a> (3)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (4)
 * <a href="reference_averageDistanceOfNClosestPoints">averageDistanceOfNClosestPoints</a> (3)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_mask">mask</a> (3)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 
 
 ### Usage in ImageJ macro

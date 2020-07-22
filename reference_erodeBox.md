@@ -10,14 +10,15 @@ This method is comparable to the 'Erode' menu in ImageJ in case it is applied to
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
 ### erodeBox often follows after
-* <a href="reference_erodeBox">erodeBox</a> (3)
+* <a href="reference_erodeBox">erodeBox</a> (2)
 
 
 ### erodeBox is often followed by
+* <a href="reference_release">release</a> (3)
 * <a href="reference_binaryXOr">binaryXOr</a> (2)
-* <a href="reference_mask">mask</a> (4)
+* <a href="reference_mask">mask</a> (3)
 * <a href="reference_dilateBox">dilateBox</a> (3)
-* <a href="reference_erodeBox">erodeBox</a> (3)
+* <a href="reference_erodeBox">erodeBox</a> (2)
 
 
 ### Usage in ImageJ macro

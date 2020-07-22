@@ -13,6 +13,7 @@ Transpose X and Y axes of an image.
 ### transposeXY is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
+* <a href="reference_rotate3D">rotate3D</a> (3)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
 

@@ -9,11 +9,13 @@ the center, it is rotated around the coordinate origin.
 It is recommended to apply the rotation to an isotropic image stack.
 
 ### rotate3D often follows after
+* <a href="reference_transposeXY">transposeXY</a> (3)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
 ### rotate3D is often followed by
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+* <a href="reference_topHatBox">topHatBox</a> (2)
 
 
 ### Usage in ImageJ macro

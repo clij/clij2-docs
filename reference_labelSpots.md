@@ -7,7 +7,7 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 
 ### labelSpots often follows after
 * <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (2)
-* <a href="reference_mask">mask</a> (6)
+* <a href="reference_mask">mask</a> (5)
 
 
 ### labelSpots is often followed by
