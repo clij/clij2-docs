@@ -5,6 +5,17 @@ Determines if two images A and B equal pixel wise.
 
 <pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
 
+### equal often follows after
+* <a href="reference_minimumYProjection">minimumYProjection</a> (2)
+* <a href="reference_replaceIntensity">replaceIntensity</a> (2)
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
+
+
+### equal is often followed by
+* <a href="reference_binaryAnd">binaryAnd</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_equal(Image source1, Image source2, Image destination);

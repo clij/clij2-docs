@@ -6,6 +6,10 @@ By Robert Haase based on work by G. Landini and W. Rasband
 The automatic thresholder utilizes the Default threshold method implemented in ImageJ using a histogram determined on 
 the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
 
+### thresholdDefault often follows after
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+
+
 ### thresholdDefault is often followed by
 * <a href="reference_binaryNot">binaryNot</a> (2)
 

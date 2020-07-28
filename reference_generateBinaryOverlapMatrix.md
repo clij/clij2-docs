@@ -5,6 +5,14 @@ Takes two labelmaps with n and m labels and generates a (n+1)*(m+1) matrix where
 
 For example, if labels 3 in labelmap1 and 4 in labelmap2 are touching then the pixel (3,4) in the matrix will be set to 1.
 
+### generateBinaryOverlapMatrix often follows after
+* <a href="reference_pushString">pushString</a> (3)
+
+
+### generateBinaryOverlapMatrix is often followed by
+* <a href="reference_print">print</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateBinaryOverlapMatrix(Image label_map1, Image label_map2, Image touch_matrix_destination);

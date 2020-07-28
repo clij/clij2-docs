@@ -94,6 +94,9 @@ Computes a binary image with pixel values 0 and 1 containing the binary dilation
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_distanceMap">distanceMap</a>  
 Generates a distance map from a binary image. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_driftCorrectionByCentroidFixation">driftCorrectionByCentroidFixation (Experimental)</a>  
+Threshold the image stack, determines the centroid of the resulting binary image and  translates the image stack so that its centroid sits in a defined position.
+
 <a name="E"></a>
 
 ## E
@@ -175,6 +178,9 @@ Apply a binary opening to the input image by calling n erosions and n dilations 
 <a name="P"></a>
 
 ## P
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_parametricWatershed">parametricWatershed (Experimental)</a>  
+Apply a binary watershed to a binary image and introduce black pixels between objects.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pullAsROI">pullAsROI</a>  
 Pulls a binary image from the GPU memory and puts it on the currently active ImageJ window as region of interest.
 
@@ -184,6 +190,9 @@ Copies a binary image specified by its name from GPU memory back to ImageJ and s
 <a name="S"></a>
 
 ## S
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_seededWatershed">seededWatershed (Experimental)</a>  
+Takes a label map (seeds) and an input image with gray values to apply the watershed algorithm and split the image above a given threshold in labels.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_skeletonize">skeletonize (Experimental)</a>  
 Erodes a binary image until just its skeleton is left. 
 

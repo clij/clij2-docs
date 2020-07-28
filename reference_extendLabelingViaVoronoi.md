@@ -5,7 +5,12 @@ Takes a label map image and dilates the regions using a octagon shape until they
 
 The resulting label map is written to the output.
 
+### extendLabelingViaVoronoi often follows after
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+
+
 ### extendLabelingViaVoronoi is often followed by
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_detectLabelEdges">detectLabelEdges</a> (2)
 
 

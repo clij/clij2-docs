@@ -11,7 +11,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), [Matrices](https://clij.github.io/clij2-docs/reference__matrix), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Neighbors](https://clij.github.io/clij2-docs/reference__neighbor), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
-<a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H,<a href="#I">\[I\]</a>, J, K,<a href="#L">\[L\]</a>, M, N, O,<a href="#P">\[P\]</a>, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U, V, W, X, Y, Z
+<a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H,<a href="#I">\[I\]</a>, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>, N, O,<a href="#P">\[P\]</a>, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U, V, W, X, Y, Z
 
 <a name="A"></a>
 
@@ -64,6 +64,12 @@ Scales an image using given scaling factors for X and Y dimensions.
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_downsampleSliceBySliceHalfMedian">downsampleSliceBySliceHalfMedian</a>  
 Scales an image using scaling factors 0.5 for X and Y dimensions. The Z dimension stays untouched. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_driftCorrectionByCenterOfMassFixation">driftCorrectionByCenterOfMassFixation (Experimental)</a>  
+Determines the centerOfMass of the image stack and translates it so that it stays in a defined position.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_driftCorrectionByCentroidFixation">driftCorrectionByCentroidFixation (Experimental)</a>  
+Threshold the image stack, determines the centroid of the resulting binary image and  translates the image stack so that its centroid sits in a defined position.
+
 <a name="F"></a>
 
 ## F
@@ -88,6 +94,9 @@ Transforms a binary image with single pixles set to 1 to a labelled spots image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelledSpotsToPointList">labelledSpotsToPointList</a>  
 Generates a coordinate list of points in a labelled spot image. 
 
+<a name="M"></a>
+
+## M
 <a name="P"></a>
 
 ## P

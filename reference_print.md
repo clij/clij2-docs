@@ -5,9 +5,11 @@ Visualises an image on standard out (console).
 
 ### print often follows after
 * <a href="reference_histogram">histogram</a> (3)
+* <a href="reference_generateBinaryOverlapMatrix">generateBinaryOverlapMatrix</a> (2)
 * <a href="reference_nClosestDistances">nClosestDistances</a> (2)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (3)
 * <a href="reference_multiplyImages">multiplyImages</a> (4)
+* <a href="reference_paste2D">paste2D</a> (3)
 
 
 ### Usage in ImageJ macro

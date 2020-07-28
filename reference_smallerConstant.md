@@ -5,6 +5,10 @@ Determines if two images A and B smaller pixel wise.
 
 f(a, b) = 1 if a < b; 0 otherwise. 
 
+### smallerConstant often follows after
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+
+
 ### smallerConstant is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 

@@ -18,6 +18,7 @@ Convention: image width represents number of points, height represents dimension
 * <a href="reference_crop2D">crop2D</a> (2)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
 * <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (5)
+* <a href="reference_smallerConstant">smallerConstant</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)
 
 

@@ -7,6 +7,11 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 <pre>f(x, y) = x & y</pre>
 
+### binaryAnd often follows after
+* <a href="reference_notEqualConstant">notEqualConstant</a> (2)
+* <a href="reference_equal">equal</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryAnd(Image operand1, Image operand2, Image destination);

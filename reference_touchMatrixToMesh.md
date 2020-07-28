@@ -5,10 +5,13 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
 ### touchMatrixToMesh often follows after
+* <a href="reference_equal">equal</a> (3)
 * <a href="reference_smallerOrEqual">smallerOrEqual</a> (2)
-* <a href="reference_transposeXY">transposeXY</a> (3)
+* <a href="reference_binaryOr">binaryOr</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (4)
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (6)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (8)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (3)
 * <a href="reference_multiplyImages">multiplyImages</a> (3)
 * <a href="reference_paste2D">paste2D</a> (2)
 * <a href="reference_create2D">create2D</a> (4)
@@ -16,6 +19,7 @@ size n*n to draw lines from all points to points if the corresponding pixel in t
 
 ### touchMatrixToMesh is often followed by
 * <a href="reference_rotate3D">rotate3D</a> (2)
+* <a href="reference_release">release</a> (2)
 * <a href="reference_flip2D">flip2D</a> (2)
 
 

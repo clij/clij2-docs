@@ -3,10 +3,14 @@
 
 Reads out the size of an image [stack] and writes it to the variables 'width', 'height' and 'depth'.
 
+### getDimensions often follows after
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
+
+
 ### getDimensions is often followed by
 * <a href="reference_crop2D">crop2D</a> (3)
 * <a href="reference_create3D">create3D</a> (15)
-* <a href="reference_create2D">create2D</a> (10)
+* <a href="reference_create2D">create2D</a> (12)
 
 
 ### Usage in ImageJ macro

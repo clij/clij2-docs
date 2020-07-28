@@ -6,6 +6,10 @@ Takes two labelmaps with n and m labels_2 and generates a (n+1)*(m+1) matrix whe
 For the remaining labels_1, the value will be between 0 and 1 indicating the overlap as measured by the Jaccard Index.
 Major parts of this operation run on the CPU.
 
+### generateJaccardIndexMatrix often follows after
+* <a href="reference_pushString">pushString</a> (3)
+
+
 ### generateJaccardIndexMatrix is often followed by
 * <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 

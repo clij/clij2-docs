@@ -1,16 +1,13 @@
-## minimumYProjection
+## centroidsOfBackgroundAndLabels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Determines the minimum intensity projection of an image along Y.
+Determines the centroids of the background and all labels in a label image or image stack. 
 
-### minimumYProjection is often followed by
-* <a href="reference_equal">equal</a> (2)
-* <a href="reference_subtractImages">subtractImages</a> (3)
-
+It writes the resulting  coordinates in a pointlist image. Depending on the dimensionality d of the labelmap and the number  of labels n, the pointlist image will have n*d pixels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimumYProjection(Image source, Image destination_sum);
+Ext.CLIJ2_centroidsOfBackgroundAndLabels(Image source, Image pointlist_destination);
 ```
 
 
@@ -22,7 +19,7 @@ Ext.CLIJ2_minimumYProjection(Image source, Image destination_sum);
 <details>
 
 <summary>
-clij2.minimumYProjection(source, destination_sum);
+clij2.centroidsOfBackgroundAndLabels(source, pointlist_destination);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -31,22 +28,22 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination_sum = clij2.create(source);
+pointlist_destination = clij2.create(source);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.minimumYProjection(source, destination_sum);
+clij2.centroidsOfBackgroundAndLabels(source, pointlist_destination);
 </pre>
 
 <pre class="highlight">
 //show result
-destination_sumImagePlus = clij2.pull(destination_sum);
-destination_sumImagePlus.show();
+pointlist_destinationImagePlus = clij2.pull(pointlist_destination);
+pointlist_destinationImagePlus.show();
 
 // cleanup memory on GPU
 clij2.release(source);
-clij2.release(destination_sum);
+clij2.release(pointlist_destination);
 </pre>
 
 </details>
@@ -61,28 +58,28 @@ clij2.release(destination_sum);
 <details>
 
 <summary>
-clij2.minimumYProjection(source, destination_sum);
+clij2.centroidsOfBackgroundAndLabels(source, pointlist_destination);
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
-destination_sum = clij2.create(source);
+pointlist_destination = clij2.create(source);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.minimumYProjection(source, destination_sum);
+clij2.centroidsOfBackgroundAndLabels(source, pointlist_destination);
 </pre>
 
 <pre class="highlight">
 % show result
-destination_sum = clij2.pullMat(destination_sum)
+pointlist_destination = clij2.pullMat(pointlist_destination)
 
 % cleanup memory on GPU
 clij2.release(source);
-clij2.release(destination_sum);
+clij2.release(pointlist_destination);
 </pre>
 
 </details>
@@ -97,7 +94,7 @@ clij2.release(destination_sum);
 <details>
 
 <summary>
-clij2.minimumYProjection(source, destination_sum);
+clij2.centroidsOfBackgroundAndLabels(source, pointlist_destination);
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
@@ -108,21 +105,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
-destination_sum = clij2.create(source);
+pointlist_destination = clij2.create(source);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.minimumYProjection(source, destination_sum);
+clij2.centroidsOfBackgroundAndLabels(source, pointlist_destination);
 </pre>
 
 <pre class="highlight">
 // show result
-destination_sum_sequence = clij2.pullSequence(destination_sum)
-Icy.addSequence(destination_sum_sequence);
+pointlist_destination_sequence = clij2.pullSequence(pointlist_destination)
+Icy.addSequence(pointlist_destination_sequence);
 // cleanup memory on GPU
 clij2.release(source);
-clij2.release(destination_sum);
+clij2.release(pointlist_destination);
 </pre>
 
 </details>

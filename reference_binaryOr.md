@@ -6,6 +6,10 @@ pixels x and y with the binary OR operator |.
 
 All pixel values except 0 in the input images are interpreted as 1.<pre>f(x, y) = x | y</pre>
 
+### binaryOr is often followed by
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryOr(Image operand1, Image operand2, Image destination);

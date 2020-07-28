@@ -19,6 +19,7 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 * <a href="reference_transposeXY">transposeXY</a> (2)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
 * <a href="reference_convertUInt16">convertUInt16</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
 
 ### Usage in ImageJ macro

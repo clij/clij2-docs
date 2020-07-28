@@ -5,6 +5,14 @@ Determines if two images A and B equal pixel wise.
 
 f(a, b) = 1 if a != b; 0 otherwise. 
 
+### notEqualConstant often follows after
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
+
+
+### notEqualConstant is often followed by
+* <a href="reference_binaryAnd">binaryAnd</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_notEqualConstant(Image source, Image destination, Number constant);

@@ -5,6 +5,14 @@ Determines if an image A and a constant b are equal.
 
 <pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
 
+### equalConstant often follows after
+* <a href="reference_sumYProjection">sumYProjection</a> (2)
+
+
+### equalConstant is often followed by
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_equalConstant(Image source, Image destination, Number constant);

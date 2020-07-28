@@ -4,6 +4,7 @@
 Transpose X and Y axes of an image.
 
 ### transposeXY often follows after
+* <a href="reference_subtractImages">subtractImages</a> (3)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
@@ -14,7 +15,8 @@ Transpose X and Y axes of an image.
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
 * <a href="reference_rotate3D">rotate3D</a> (3)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### Usage in ImageJ macro

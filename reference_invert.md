@@ -17,6 +17,7 @@ For binary images, use binaryNot.
 ### invert is often followed by
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
 * <a href="reference_maximumYProjection">maximumYProjection</a> (2)
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
 
 
 ### Usage in ImageJ macro

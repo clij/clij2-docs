@@ -8,14 +8,18 @@ Subtracts one image X from another image Y pixel wise.
 ### subtractImages often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+* <a href="reference_minimumYProjection">minimumYProjection</a> (3)
 * <a href="reference_medianSliceBySliceSphere">medianSliceBySliceSphere</a> (2)
 * <a href="reference_maximum3DBox">maximum3DBox</a> (2)
+* <a href="reference_resultsTableToImage2D">resultsTableToImage2D</a> (3)
 * <a href="reference_dilateBox">dilateBox</a> (2)
 
 
 ### subtractImages is often followed by
 * <a href="reference_downsample2D">downsample2D</a> (2)
 * <a href="reference_absolute">absolute</a> (3)
+* <a href="reference_transposeXY">transposeXY</a> (3)
+* <a href="reference_replaceIntensity">replaceIntensity</a> (2)
 
 
 ### Usage in ImageJ macro

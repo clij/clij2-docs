@@ -12,6 +12,7 @@ Performs connected components analysis inspecting the box neighborhood of every 
 
 ### connectedComponentsLabelingBox is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (2)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)

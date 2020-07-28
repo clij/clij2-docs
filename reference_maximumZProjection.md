@@ -4,6 +4,7 @@
 Determines the maximum intensity projection of an image along Z.
 
 ### maximumZProjection often follows after
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 * <a href="reference_rotate3D">rotate3D</a> (2)
 * <a href="reference_resliceLeft">resliceLeft</a> (2)

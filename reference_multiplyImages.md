@@ -7,13 +7,18 @@ Multiplies all pairs of pixel values x and y from two image X and Y.
 
 ### multiplyImages often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
+* <a href="reference_invert">invert</a> (2)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_equalConstant">equalConstant</a> (2)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 * <a href="reference_create2D">create2D</a> (2)
 
 
 ### multiplyImages is often followed by
+* <a href="reference_equal">equal</a> (2)
+* <a href="reference_notEqualConstant">notEqualConstant</a> (2)
 * <a href="reference_print">print</a> (4)
+* <a href="reference_replaceIntensity">replaceIntensity</a> (2)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 

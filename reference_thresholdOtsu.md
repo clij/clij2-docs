@@ -8,6 +8,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 ### thresholdOtsu often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (2)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 * <a href="reference_mean2DBox">mean2DBox</a> (2)
 * <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (2)

@@ -3,6 +3,15 @@
 
 Replaces a specific intensity in an image with a given new value.
 
+### replaceIntensity often follows after
+* <a href="reference_subtractImages">subtractImages</a> (2)
+* <a href="reference_multiplyImages">multiplyImages</a> (2)
+
+
+### replaceIntensity is often followed by
+* <a href="reference_equal">equal</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_replaceIntensity(Image input, Image destination, Number oldValue, Number newValue);

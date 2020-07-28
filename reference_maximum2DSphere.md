@@ -6,8 +6,13 @@ Computes the local maximum of a pixels ellipsoidal neighborhood.
 The ellipses size is specified by 
 its half-width and half-height (radius).
 
+### maximum2DSphere often follows after
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+
+
 ### maximum2DSphere is often followed by
 * <a href="reference_release">release</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 
 
 ### Usage in ImageJ macro

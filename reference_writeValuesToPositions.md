@@ -5,6 +5,15 @@ Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z]
 
 The value v will be written at position x/y[/z] in the target image.
 
+### writeValuesToPositions often follows after
+* <a href="reference_paste2D">paste2D</a> (2)
+
+
+### writeValuesToPositions is often followed by
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
+* <a href="reference_maximum2DSphere">maximum2DSphere</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, Image destination);

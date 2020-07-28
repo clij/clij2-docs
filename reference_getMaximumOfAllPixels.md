@@ -12,6 +12,7 @@ It will be stored in the variable maximum_of_all_pixels.
 
 ### getMaximumOfAllPixels is often followed by
 * <a href="reference_histogram">histogram</a> (3)
+* <a href="reference_create2D">create2D</a> (2)
 
 
 ### Usage in ImageJ macro
