@@ -13,6 +13,7 @@ Determines the maximum intensity projection of an image along Z.
 
 
 ### maximumZProjection is often followed by
+* <a href="reference_saveAsTIF">saveAsTIF</a> (2)
 * <a href="reference_release">release</a> (4)
 * <a href="reference_copySlice">copySlice</a> (3)
 

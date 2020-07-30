@@ -858,6 +858,9 @@ Meshes all points in a given point list which are indiced in a corresponding ind
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a>  
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of  size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_popMetaData">popMetaData (Experimental)</a>  
+Takes meta data from a stack and assigns it to the current image. The stack implements the Last-In-First-Out (LIFO) principle.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_power">power</a>  
 Computes all pixels value x to the power of a given exponent a.
 
@@ -915,6 +918,9 @@ Copies an image specified by its name to GPU memory in order to process it there
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushCurrentZStack">pushCurrentZStack</a>  
 Copies an image specified by its name to GPU memory in order to process it there later.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushMetaData">pushMetaData (Experimental)</a>  
+Stores meta data in a stack. The stack implements the Last-In-First-Out (LIFO) principle.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pushResultsTable">pushResultsTable</a>  
 Converts a table to an image. 
 
@@ -956,6 +962,9 @@ Prints a list of all images cached in the GPU to ImageJs log window together wit
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resample">resample</a>  
 Resamples an image with given size factors using an affine transform.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resetMetaData">resetMetaData (Experimental)</a>  
+Resets the meta data stack.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_resliceBottom">resliceBottom</a>  
 Flippes Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility such as interpolation.

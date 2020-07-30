@@ -4,6 +4,7 @@
 Pulls an image from the GPU memory and saves it as TIF to disc.
 
 ### saveAsTIF often follows after
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 
 
