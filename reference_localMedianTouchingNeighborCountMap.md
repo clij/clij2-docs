@@ -1,13 +1,14 @@
-## labelMeanIntensityMap
+## localMedianTouchingNeighborCountMap
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
+Takes a label map, determines which labels touch, determines for every label with the number of touching 
+neighboring labels and replaces the label index with the local median of this count.
 
-This results in a parametric image expressing mean object intensity.
+
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelMeanIntensityMap(Image input, Input label_map, Image destination);
+Ext.CLIJx_localMedianTouchingNeighborCountMap(Image input, Image destination);
 ```
 
 

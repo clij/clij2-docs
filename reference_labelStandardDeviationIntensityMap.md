@@ -1,13 +1,13 @@
 ## labelStandardDeviationIntensityMap
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes a label map, determines the standard deviation of the intensity per label and replaces every label with the that number.
+Takes an image and a corresponding label map, determines the standard deviation of the intensity per label and replaces every label with the that number.
 
 This results in a parametric image expressing standard deviation of object intensity.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelStandardDeviationIntensityMap(Image input, Image destination);
+Ext.CLIJx_labelStandardDeviationIntensityMap(Image input, Image label_map, Image destination);
 ```
 
 

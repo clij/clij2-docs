@@ -70,6 +70,9 @@ The automatic thresholder utilizes the threshold methods from ImageJ on a histog
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_automaticThresholdInplace">automaticThresholdInplace (Experimental)</a>  
 The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on  the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method. Enter one  of these methods in the method text field: [Default, Huang, Intermodes, IsoData, IJ_IsoData, Li, MaxEntropy, Mean, MinError, Minimum, Moments, Otsu, Percentile, RenyiEntropy, Shanbhag, Triangle, Yen]
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_averageDistanceOfNClosestNeighborsMap">averageDistanceOfNClosestNeighborsMap (Experimental)</a>  
+Takes a label map, determines distances between all centroids and replaces every label with the average distance to the n closest neighboring labels.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_averageDistanceOfNClosestPoints">averageDistanceOfNClosestPoints</a>  
 Determines the average of the n closest points for every point in a distance matrix.
 
@@ -337,6 +340,9 @@ Starting from a label map, draw lines between touching neighbors resulting in a 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_drawSphere">drawSphere</a>  
 Draws a sphere around a given point with given radii in x, y and z (if 3D). 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_drawTouchCountMeshBetweenTouchingLabels">drawTouchCountMeshBetweenTouchingLabels (Experimental)</a>  
+Starting from a label map, draw lines between touching neighbors resulting in a mesh.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_drawTwoValueLine">drawTwoValueLine (Experimental)</a>  
 Draws a line between two points with a given thickness. 
 
@@ -553,8 +559,14 @@ Determines the overlap of two binary images using the Jaccard index.
 <a name="L"></a>
 
 ## L
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMaximumExtensionMap">labelMaximumExtensionMap (Experimental)</a>  
+Takes a label map, determines for every label the maximum distance of any pixel to the centroid and replaces every label with the that number.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMaximumExtensionRatioMap">labelMaximumExtensionRatioMap (Experimental)</a>  
+Takes a label map, determines for every label the maximum distance of any pixel to the centroid and replaces every label with the that number.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanIntensityMap">labelMeanIntensityMap (Experimental)</a>  
-Takes a label map, determines the mean intensity per label and replaces every label with the that number.
+Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelPixelCountMap">labelPixelCountMap (Experimental)</a>  
 Takes a label map, determines the number of pixels per label and replaces every label with the that number.
@@ -563,7 +575,7 @@ Takes a label map, determines the number of pixels per label and replaces every 
 Transforms a binary image with single pixles set to 1 to a labelled spots image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelStandardDeviationIntensityMap">labelStandardDeviationIntensityMap (Experimental)</a>  
-Takes a label map, determines the standard deviation of the intensity per label and replaces every label with the that number.
+Takes an image and a corresponding label map, determines the standard deviation of the intensity per label and replaces every label with the that number.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelToMask">labelToMask</a>  
 Masks a single label in a label map. 
@@ -585,6 +597,54 @@ Applies a local minimum and maximum filter.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localID">localID (Experimental)</a>  
 local id
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMaximumAverageDistanceOfNClosestNeighborsMap">localMaximumAverageDistanceOfNClosestNeighborsMap (Experimental)</a>  
+Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point  and replaces every label with the maximum distance of touching labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMaximumAverageNeighborDistanceMap">localMaximumAverageNeighborDistanceMap (Experimental)</a>  
+Takes a label map, determines which labels touch, the distance between their centroids and the maximum distancebetween touching neighbors. It then replaces every label with the that value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMaximumTouchingNeighborCountMap">localMaximumTouchingNeighborCountMap (Experimental)</a>  
+Takes a label map, determines which labels touch, determines for every label with the number of touching  neighboring labels and replaces the label index with the local maximum of this count.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMeanAverageDistanceOfNClosestNeighborsMap">localMeanAverageDistanceOfNClosestNeighborsMap (Experimental)</a>  
+Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point  and replaces every label with the mean distance of touching labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMeanAverageNeighborDistanceMap">localMeanAverageNeighborDistanceMap (Experimental)</a>  
+Takes a label map, determines which labels touch, the distance between their centroids and the mean distancebetween touching neighbors. It then replaces every label with the that value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMeanTouchPortionMap">localMeanTouchPortionMap (Experimental)</a>  
+Takes a label map, determines which labels touch and how much, relatively taking the whole outline of  each label into account, and determines for every label with the mean of this value and replaces the  label index with that value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMeanTouchingNeighborCountMap">localMeanTouchingNeighborCountMap (Experimental)</a>  
+Takes a label map, determines which labels touch, determines for every label with the number of touching  neighboring labels and replaces the label index with the local mean of this count.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMedianAverageDistanceOfNClosestNeighborsMap">localMedianAverageDistanceOfNClosestNeighborsMap (Experimental)</a>  
+Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point  and replaces every label with the median distance of touching labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMedianAverageNeighborDistanceMap">localMedianAverageNeighborDistanceMap (Experimental)</a>  
+Takes a label map, determines which labels touch, the distance between their centroids and the median distancebetween touching neighbors. It then replaces every label with the that value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMedianTouchingNeighborCountMap">localMedianTouchingNeighborCountMap (Experimental)</a>  
+Takes a label map, determines which labels touch, determines for every label with the number of touching  neighboring labels and replaces the label index with the local median of this count.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMinimumAverageDistanceOfNClosestNeighborsMap">localMinimumAverageDistanceOfNClosestNeighborsMap (Experimental)</a>  
+Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point  and replaces every label with the minimum distance of touching labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMinimumAverageNeighborDistanceMap">localMinimumAverageNeighborDistanceMap (Experimental)</a>  
+Takes a label map, determines which labels touch, the distance between their centroids and the minimum distancebetween touching neighbors. It then replaces every label with the that value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localMinimumTouchingNeighborCountMap">localMinimumTouchingNeighborCountMap (Experimental)</a>  
+Takes a label map, determines which labels touch, determines for every label with the number of touching  neighboring labels and replaces the label index with the local minimum of this count.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localStandardDeviationAverageDistanceOfNClosestNeighborsMap">localStandardDeviationAverageDistanceOfNClosestNeighborsMap (Experimental)</a>  
+Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point  and replaces every label with the standard deviation distance of touching labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localStandardDeviationAverageNeighborDistanceMap">localStandardDeviationAverageNeighborDistanceMap (Experimental)</a>  
+Takes a label map, determines which labels touch, the distance between their centroids and the standard deviation distancebetween touching neighbors. It then replaces every label with the that value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localStandardDeviationTouchingNeighborCountMap">localStandardDeviationTouchingNeighborCountMap (Experimental)</a>  
+Takes a label map, determines which labels touch, determines for every label with the number of touching  neighboring labels and replaces the label index with the local standard deviation of this count.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localThreshold">localThreshold</a>  
 Computes a binary image with pixel values 0 and 1 depending on if a pixel value x in image X  was above of equal to the pixel value m in mask image M.

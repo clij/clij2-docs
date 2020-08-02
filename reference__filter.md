@@ -217,6 +217,9 @@ Takes a label map (seeds) and an input image with gray values to apply the water
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sobel">sobel</a>  
 Convolve the image with the Sobel kernel.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_subtractGaussianBackground">subtractGaussianBackground (Experimental)</a>  
+Applies Gaussian blur to the input image and subtracts the result from the original image.
+
 <a name="T"></a>
 
 ## T

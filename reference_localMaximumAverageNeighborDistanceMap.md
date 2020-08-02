@@ -1,13 +1,11 @@
-## labelMeanIntensityMap
+## localMaximumAverageNeighborDistanceMap
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
-
-This results in a parametric image expressing mean object intensity.
+Takes a label map, determines which labels touch, the distance between their centroids and the maximum distancebetween touching neighbors. It then replaces every label with the that value.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelMeanIntensityMap(Image input, Input label_map, Image destination);
+Ext.CLIJx_localMaximumAverageNeighborDistanceMap(Image input, Image destination);
 ```
 
 

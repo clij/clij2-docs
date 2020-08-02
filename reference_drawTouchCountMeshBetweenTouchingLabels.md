@@ -1,14 +1,14 @@
-## drawDistanceMeshBetweenTouchingLabels
+## drawTouchCountMeshBetweenTouchingLabels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
 Starting from a label map, draw lines between touching neighbors resulting in a mesh.
 
 The end points of the lines correspond to the centroids of the labels. The intensity of the lines 
-corresponds to the distance between these labels (in pixels or voxels).
+corresponds to the touch count between these labels.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_drawDistanceMeshBetweenTouchingLabels(Image input, Image destination);
+Ext.CLIJx_drawTouchCountMeshBetweenTouchingLabels(Image input, Image destination);
 ```
 
 
