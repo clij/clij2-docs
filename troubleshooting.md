@@ -18,21 +18,19 @@ The key should be called `TdrDelay` and have a value of 8.
 Sources: 
 https://community.amd.com/thread/180166
 https://support.microsoft.com/en-us/help/2665946/display-driver-stopped-responding-and-has-recovered-error-in-windows-7
-
-## Initialisation fails
-Fiji crashes when calling the first CLIJ filter: Check if the initialisation contains a proper name for a GPU.
-
 ## Repeated initialisation fails on AMD Vega 10
 When creating CLIJ instances and closing them repeatedly, it crashes after about 40 attempts. [This test](https://github.com/clij/clij-core/blob/master/src/test/java/net/haesleinhuepf/clij/test/InitialisationTest.java#L17) allows reproducing the issue on specified hardward. Workaround:
 Don't close the CLIJ instance and keep working with the singleton instance.
+<a name="macos_login"></a>
+## MacOS shows login screen after running CLIJ for a while
+On some MacOS systems with modern AMD Graphics Cards, CLIJ causes a crash which leads to the operating system restarting the session and logging out the user. 
+Reason is an energy saving mode. To solve this problem, turn off "Automatic graphics switching" under "System Preference" > "Energy Saver". 
+Thanks to Tanner Fadero for reporting this bug and its [solution](https://forum.image.sc/t/ijm-macro-crashes-after-a-few-loops/40130/16).
 ## Result image is black or shows random textures
 This might happend with older GPUs which have not been tested. A helpful workaround is converting all images to 32 bit using `run("32-bit");` before sending them to the GPU.
-## filename.cl not found
-"java.io.IOException: Cannot find source: [Object] <path/filename.cl>" exception: Navigate to the jars subdirectory of your Fiji installation and locate `clearcl.jar` files, e.g. by typing `dir clearcl*` or `ls clearcl*`. If there are several versions installed, remove the older one. In order to fix this exception, you need at least `clearcl-0.5.5-RH.jar`.
-## Problem while setting argument
-"clearcl.exceptions.ClearCLException: problem while setting argument 'parameter_of_type_float'": To hand over parameters of type float, you need to explicitly type it. Use `from java.lang import Float` and `Float(1.5)` to handover a value of 1.5 to an OpenCL parameter of type float.
 ## Class not found on Linux
 CLIJ doesn't start on Ubuntu linux with an error message that a class called ClearCLBackendJOCL cannot be initialized. Installing 'ocl-icd-opencl-dev' helped here.
+<a name="exceptions_linux"></a>
 ## Exceptions on Linux
 CLIJ throws various exceptions, like CL_OUT_OF_HOST_MEMORY on Linux. Try installing an OpenCL-driver such as beignet. On Fedora 27 Linux, this command list helped:
 
