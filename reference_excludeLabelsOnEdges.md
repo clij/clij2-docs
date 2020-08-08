@@ -7,6 +7,7 @@ Remaining label elements are renumbered afterwards.
 
 ### excludeLabelsOnEdges often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
 
 
 ### Usage in ImageJ macro

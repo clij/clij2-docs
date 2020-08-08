@@ -6,6 +6,7 @@ Takes a label map image and dilates the regions using a octagon shape until they
 The resulting label map is written to the output.
 
 ### extendLabelingViaVoronoi often follows after
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
 
 

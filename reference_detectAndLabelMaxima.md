@@ -1,7 +1,7 @@
 ## detectAndLabelMaxima
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Determines maximum regions in a Gaussian blurred version of the oriignal image.
+Determines maximum regions in a Gaussian blurred version of the original image.
 
 The regions do not not necessarily have to be single pixels. 
 It is also possible to invert the image before determining the maxima.

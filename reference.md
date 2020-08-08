@@ -255,7 +255,7 @@ Applies particle image velocimetry to two images and registers them afterwards b
 Determines a maximum projection of an image stack and does a color coding of the determined arg Z (position of the found maximum). 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectAndLabelMaxima">detectAndLabelMaxima (Experimental)</a>  
-Determines maximum regions in a Gaussian blurred version of the oriignal image.
+Determines maximum regions in a Gaussian blurred version of the original image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectLabelEdges">detectLabelEdges</a>  
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
@@ -312,6 +312,9 @@ Generates a distance map from a binary image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_distanceMatrixToMesh">distanceMatrixToMesh</a>  
 Generates a mesh from a distance matric and a list of point coordinates.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideByGaussianBackground">divideByGaussianBackground (Experimental)</a>  
+Applies Gaussian blur to the input image and divides the original by the result.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideImages">divideImages</a>  
 Divides two images X and Y by each other pixel wise. 
@@ -452,10 +455,10 @@ Takes two images containing coordinates and builds up a matrix containing distan
 Generates a feature stack for Trainable Weka Segmentation. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateIntegerGreyValueCooccurrenceCountMatrixHalfBox">generateIntegerGreyValueCooccurrenceCountMatrixHalfBox (Experimental)</a>  
-Takes an image and assumes its grey values are integers. It builds up a grey-level co-occurence matrix of neigboring (left, bottom, back, left-bottom, left-back, bottom-back, left-bottom-back) pixel intensities. 
+Takes an image and assumes its grey values are integers. It builds up a grey-level co-occurrence matrix of neighboring (west, south-west, south, south-east, in 3D 9 pixels on the next plane) pixel intensities. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateIntegerGreyValueCooccurrenceCountMatrixHalfDiamond">generateIntegerGreyValueCooccurrenceCountMatrixHalfDiamond (Experimental)</a>  
-Takes an image and assumes its grey values are integers. It builds up a grey-level co-occurence matrix of neigboring (left, bottom, back) pixel intensities. 
+Takes an image and assumes its grey values are integers. It builds up a grey-level co-occurrence matrix of neighboring (left, bottom, back) pixel intensities. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a>  
 Takes two labelmaps with n and m labels_2 and generates a (n+1)*(m+1) matrix where all labels_1 are set to 0 exept those where labels_2 overlap between the label maps. 
@@ -495,6 +498,9 @@ Determines the maximum of all pixels in a given image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getMeanOfAllPixels">getMeanOfAllPixels</a>  
 Determines the mean of all pixels in a given image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getMeanOfMaskedPixels">getMeanOfMaskedPixels</a>  
+Determines the mean of all pixels in a given image which have non-zero value in a corresponding mask image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getMinimumOfAllPixels">getMinimumOfAllPixels</a>  
 Determines the minimum of all pixels in a given image. 

@@ -1,7 +1,7 @@
 ## generateIntegerGreyValueCooccurrenceCountMatrixHalfBox
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes an image and assumes its grey values are integers. It builds up a grey-level co-occurence matrix of neigboring (left, bottom, back, left-bottom, left-back, bottom-back, left-bottom-back) pixel intensities. 
+Takes an image and assumes its grey values are integers. It builds up a grey-level co-occurrence matrix of neighboring (west, south-west, south, south-east, in 3D 9 pixels on the next plane) pixel intensities. 
 
 Major parts of this operation run on the CPU.
 

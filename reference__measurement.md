@@ -100,6 +100,9 @@ Determines the maximum of all pixels in a given image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getMeanOfAllPixels">getMeanOfAllPixels</a>  
 Determines the mean of all pixels in a given image. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getMeanOfMaskedPixels">getMeanOfMaskedPixels</a>  
+Determines the mean of all pixels in a given image which have non-zero value in a corresponding mask image. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getMinimumOfAllPixels">getMinimumOfAllPixels</a>  
 Determines the minimum of all pixels in a given image. 
 

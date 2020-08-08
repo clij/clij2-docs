@@ -58,6 +58,9 @@ Computes a binary image with pixel values 0 and 1 containing the binary dilation
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateSphereSliceBySlice">dilateSphereSliceBySlice</a>  
 Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideByGaussianBackground">divideByGaussianBackground (Experimental)</a>  
+Applies Gaussian blur to the input image and divides the original by the result.
+
 <a name="E"></a>
 
 ## E

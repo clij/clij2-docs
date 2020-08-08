@@ -15,11 +15,12 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 
 ### thresholdOtsu is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (4)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (4)
 * <a href="reference_binaryNot">binaryNot</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_binaryXOr">binaryXOr</a> (2)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
 * <a href="reference_mask">mask</a> (2)
 * <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
 

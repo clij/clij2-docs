@@ -5,7 +5,12 @@ Takes a binary image, labels connected components and dilates the regions using 
 
 The resulting label map is written to the output.
 
+### voronoiLabeling often follows after
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+
+
 ### voronoiLabeling is often followed by
+* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
 * <a href="reference_release">release</a> (2)
 
 

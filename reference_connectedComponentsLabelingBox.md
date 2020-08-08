@@ -7,10 +7,11 @@ Performs connected components analysis inspecting the box neighborhood of every 
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 * <a href="reference_minimum2DBox">minimum2DBox</a> (2)
 * <a href="reference_binaryNot">binaryNot</a> (3)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (3)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (4)
 
 
 ### connectedComponentsLabelingBox is often followed by
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)

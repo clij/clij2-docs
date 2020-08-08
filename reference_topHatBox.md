@@ -4,6 +4,7 @@
 Applies a top-hat filter for background subtraction to the input image.
 
 ### topHatBox often follows after
+* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (2)
 * <a href="reference_rotate3D">rotate3D</a> (2)
 
 
