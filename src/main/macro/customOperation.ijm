@@ -1,6 +1,6 @@
-// CLIJ example macro: addImages.ijm
+// CLIJ example macro: customOperation.ijm
 //
-// This macro shows how add images of different bit-type
+// This macro shows how add images using costom OpenCL code.
 //
 // Author: Robert Haase
 // January 2019
