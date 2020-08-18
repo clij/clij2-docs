@@ -1,13 +1,11 @@
-## greyLevelAtttributeFiltering
+## binaryFillHolesSliceBySlice
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-By Pradeep Rajasekhar and Robert Haase
-
-Todo.
+Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image stack slice by slice.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_greyLevelAtttributeFiltering(Image source, Image destination, Number number_of_bins, Number minimum_pixel_count);
+Ext.CLIJx_binaryFillHolesSliceBySlice(Image source, Image destination);
 ```
 
 

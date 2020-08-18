@@ -34,6 +34,9 @@ Determines pixels/voxels which are on the surface of binary objects and sets onl
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryFillHoles">binaryFillHoles</a>  
 Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryFillHolesSliceBySlice">binaryFillHolesSliceBySlice (Experimental)</a>  
+Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image stack slice by slice.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryIntersection">binaryIntersection</a>  
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary intersection operator &. All pixel values except 0 in the input images are interpreted as 1.
 
