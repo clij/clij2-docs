@@ -1,5 +1,5 @@
-# binaryProcessing.py
-# ===================
+# blur.py
+# =======
 #
 # Blur an image on the GPU
 #
