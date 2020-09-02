@@ -1,7 +1,7 @@
 # binaryProcessing.py
 # ===================
 #
-# Apply an automatic threshold method to an image on the GPU
+# Blur an image on the GPU
 #
 # Author: Robert Haase, rhaase@mpi-cbg.de
 #         October 2019
