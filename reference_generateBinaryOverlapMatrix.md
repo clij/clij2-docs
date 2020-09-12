@@ -21,15 +21,14 @@ Ext.CLIJ2_generateBinaryOverlapMatrix(Image label_map1, Image label_map2, Image 
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.generateBinaryOverlapMatrix(label_map1, label_map2, touch_matrix_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -48,7 +47,7 @@ clij2.generateBinaryOverlapMatrix(label_map1, label_map2, touch_matrix_destinati
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 touch_matrix_destinationImagePlus = clij2.pull(touch_matrix_destination);
 touch_matrix_destinationImagePlus.show();
 
@@ -62,15 +61,10 @@ clij2.release(touch_matrix_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.generateBinaryOverlapMatrix(label_map1, label_map2, touch_matrix_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -100,15 +94,10 @@ clij2.release(touch_matrix_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.generateBinaryOverlapMatrix(label_map1, label_map2, touch_matrix_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

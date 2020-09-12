@@ -15,15 +15,14 @@ Ext.CLIJ2_detectLabelEdges(Image label_map, Image edge_image_destination);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.detectLabelEdges(label_map, edge_image_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -41,7 +40,7 @@ clij2.detectLabelEdges(label_map, edge_image_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 edge_image_destinationImagePlus = clij2.pull(edge_image_destination);
 edge_image_destinationImagePlus.show();
 
@@ -54,15 +53,10 @@ clij2.release(edge_image_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.detectLabelEdges(label_map, edge_image_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -90,15 +84,10 @@ clij2.release(edge_image_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.detectLabelEdges(label_map, edge_image_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

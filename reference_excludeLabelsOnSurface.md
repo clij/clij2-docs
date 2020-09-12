@@ -13,15 +13,14 @@ Ext.CLIJ2_excludeLabelsOnSurface(Image pointlist, Image label_map_input, Image l
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -43,7 +42,7 @@ clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, 
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 label_map_destinationImagePlus = clij2.pull(label_map_destination);
 label_map_destinationImagePlus.show();
 
@@ -57,15 +56,10 @@ clij2.release(label_map_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -98,15 +92,10 @@ clij2.release(label_map_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.excludeLabelsOnSurface(pointlist, label_map_input, label_map_destination, centerX, centerY, centerZ);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

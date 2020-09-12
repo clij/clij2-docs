@@ -23,15 +23,14 @@ Ext.CLIJ2_standardDeviationOfTouchingNeighbors(Image values, Image touch_matrix,
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.standardDeviationOfTouchingNeighbors(values, touch_matrix, standard_deviation_values_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -50,7 +49,7 @@ clij2.standardDeviationOfTouchingNeighbors(values, touch_matrix, standard_deviat
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 standard_deviation_values_destinationImagePlus = clij2.pull(standard_deviation_values_destination);
 standard_deviation_values_destinationImagePlus.show();
 
@@ -64,15 +63,10 @@ clij2.release(standard_deviation_values_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.standardDeviationOfTouchingNeighbors(values, touch_matrix, standard_deviation_values_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -102,15 +96,10 @@ clij2.release(standard_deviation_values_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.standardDeviationOfTouchingNeighbors(values, touch_matrix, standard_deviation_values_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

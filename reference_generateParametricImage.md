@@ -14,15 +14,14 @@ Ext.CLIJ2_generateParametricImage(Image label_map, Image parameter_value_vector,
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.generateParametricImage(label_map, parameter_value_vector, parametric_image_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -41,7 +40,7 @@ clij2.generateParametricImage(label_map, parameter_value_vector, parametric_imag
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 parametric_image_destinationImagePlus = clij2.pull(parametric_image_destination);
 parametric_image_destinationImagePlus.show();
 
@@ -55,15 +54,10 @@ clij2.release(parametric_image_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.generateParametricImage(label_map, parameter_value_vector, parametric_image_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -93,15 +87,10 @@ clij2.release(parametric_image_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.generateParametricImage(label_map, parameter_value_vector, parametric_image_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

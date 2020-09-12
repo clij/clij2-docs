@@ -31,15 +31,14 @@ Ext.CLIJ2_connectedComponentsLabelingBox(Image binary_input, Image labeling_dest
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.connectedComponentsLabelingBox(binary_input, labeling_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -57,7 +56,7 @@ clij2.connectedComponentsLabelingBox(binary_input, labeling_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 labeling_destinationImagePlus = clij2.pull(labeling_destination);
 labeling_destinationImagePlus.show();
 
@@ -70,15 +69,10 @@ clij2.release(labeling_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.connectedComponentsLabelingBox(binary_input, labeling_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -106,15 +100,10 @@ clij2.release(labeling_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.connectedComponentsLabelingBox(binary_input, labeling_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

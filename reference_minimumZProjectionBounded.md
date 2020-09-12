@@ -11,15 +11,14 @@ Ext.CLIJ2_minimumZProjectionBounded(Image source, Image destination_min, Number 
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -39,7 +38,7 @@ clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destination_minImagePlus = clij2.pull(destination_min);
 destination_minImagePlus.show();
 
@@ -52,15 +51,10 @@ clij2.release(destination_min);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -90,15 +84,10 @@ clij2.release(destination_min);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.minimumZProjectionBounded(source, destination_min, min_z, max_z);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

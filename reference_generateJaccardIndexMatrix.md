@@ -22,15 +22,14 @@ Ext.CLIJ2_generateJaccardIndexMatrix(Image label_map1, Image label_map2, Image j
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.generateJaccardIndexMatrix(label_map1, label_map2, jaccard_index_matrix_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -49,7 +48,7 @@ clij2.generateJaccardIndexMatrix(label_map1, label_map2, jaccard_index_matrix_de
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 jaccard_index_matrix_destinationImagePlus = clij2.pull(jaccard_index_matrix_destination);
 jaccard_index_matrix_destinationImagePlus.show();
 
@@ -63,15 +62,10 @@ clij2.release(jaccard_index_matrix_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.generateJaccardIndexMatrix(label_map1, label_map2, jaccard_index_matrix_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -101,15 +95,10 @@ clij2.release(jaccard_index_matrix_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.generateJaccardIndexMatrix(label_map1, label_map2, jaccard_index_matrix_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

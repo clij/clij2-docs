@@ -19,15 +19,14 @@ Ext.CLIJ2_neighborsOfNeighbors(Image touch_matrix, Image neighbor_matrix_destina
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.neighborsOfNeighbors(touch_matrix, neighbor_matrix_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -45,7 +44,7 @@ clij2.neighborsOfNeighbors(touch_matrix, neighbor_matrix_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 neighbor_matrix_destinationImagePlus = clij2.pull(neighbor_matrix_destination);
 neighbor_matrix_destinationImagePlus.show();
 
@@ -58,15 +57,10 @@ clij2.release(neighbor_matrix_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.neighborsOfNeighbors(touch_matrix, neighbor_matrix_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -94,15 +88,10 @@ clij2.release(neighbor_matrix_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.neighborsOfNeighbors(touch_matrix, neighbor_matrix_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

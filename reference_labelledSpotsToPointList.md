@@ -27,15 +27,14 @@ Ext.CLIJ2_labelledSpotsToPointList(Image input_labelled_spots, Image destination
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.labelledSpotsToPointList(input_labelled_spots, destination_pointlist);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -53,7 +52,7 @@ clij2.labelledSpotsToPointList(input_labelled_spots, destination_pointlist);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destination_pointlistImagePlus = clij2.pull(destination_pointlist);
 destination_pointlistImagePlus.show();
 
@@ -66,15 +65,10 @@ clij2.release(destination_pointlist);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.labelledSpotsToPointList(input_labelled_spots, destination_pointlist);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -102,15 +96,10 @@ clij2.release(destination_pointlist);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.labelledSpotsToPointList(input_labelled_spots, destination_pointlist);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -13,15 +13,14 @@ Ext.CLIJ2_drawSphere(Image destination, Number x, Number y, Number z, Number rad
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -45,7 +44,7 @@ clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
@@ -57,15 +56,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -98,15 +92,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.drawSphere(destination, x, y, z, radius_x, radius_y, radius_z, value);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

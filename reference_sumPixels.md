@@ -14,15 +14,14 @@ Ext.CLIJ2_sumPixels(Image source);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.sumPixels(source);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -39,7 +38,7 @@ double resultSumPixels = clij2.sumPixels(source);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultSumPixels);
 
 // cleanup memory on GPU
@@ -50,15 +49,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.sumPixels(source);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -84,15 +78,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.sumPixels(source);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

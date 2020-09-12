@@ -21,15 +21,14 @@ Ext.CLIJ2_differenceOfGaussian2D(Image input, Image destination, Number sigma1x,
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +50,7 @@ clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigm
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
@@ -64,15 +63,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -104,15 +98,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.differenceOfGaussian2D(input, destination, sigma1x, sigma1y, sigma2x, sigma2y);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

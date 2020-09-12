@@ -13,15 +13,14 @@ Ext.CLIJ2_boundingBox(Image source);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.boundingBox(source);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -38,7 +37,7 @@ double[] resultBoundingBox = clij2.boundingBox(source);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultBoundingBox);
 
 // cleanup memory on GPU
@@ -49,15 +48,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.boundingBox(source);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -83,15 +77,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.boundingBox(source);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

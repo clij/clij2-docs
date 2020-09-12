@@ -14,15 +14,14 @@ Ext.CLIJ2_standardDeviationOfMaskedPixels(Image source, Image mask);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.standardDeviationOfMaskedPixels(source, mask);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -40,7 +39,7 @@ double resultStandardDeviationOfMaskedPixels = clij2.standardDeviationOfMaskedPi
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultStandardDeviationOfMaskedPixels);
 
 // cleanup memory on GPU
@@ -52,15 +51,10 @@ clij2.release(mask);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.standardDeviationOfMaskedPixels(source, mask);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -88,15 +82,10 @@ clij2.release(mask);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.standardDeviationOfMaskedPixels(source, mask);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

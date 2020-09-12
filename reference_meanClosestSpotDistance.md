@@ -13,15 +13,14 @@ Ext.CLIJ2_meanClosestSpotDistance(Image spotsA, Image spotsB, Boolean bidirectio
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.meanClosestSpotDistance(spotsA, spotsB, bidirectional);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -40,7 +39,7 @@ double[] resultMeanClosestSpotDistance = clij2.meanClosestSpotDistance(spotsA, s
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultMeanClosestSpotDistance);
 
 // cleanup memory on GPU
@@ -52,15 +51,10 @@ clij2.release(spotsB);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.meanClosestSpotDistance(spotsA, spotsB, bidirectional);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -89,15 +83,10 @@ clij2.release(spotsB);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.meanClosestSpotDistance(spotsA, spotsB, bidirectional);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -14,15 +14,14 @@ Ext.CLIJ2_setWhereXequalsY(Image source, Number value);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.setWhereXequalsY(source, value);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -40,7 +39,7 @@ clij2.setWhereXequalsY(source, value);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 
 // cleanup memory on GPU
 clij2.release(source);
@@ -50,15 +49,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.setWhereXequalsY(source, value);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -84,15 +78,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.setWhereXequalsY(source, value);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

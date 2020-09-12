@@ -13,15 +13,14 @@ Ext.CLIJ2_averageDistanceOfNFarOffPoints(Image distance_matrix, Image distance+_
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.averageDistanceOfNFarOffPoints(distance_matrix, distance+_list_destination, nFarOffPointsTofind);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -40,7 +39,7 @@ clij2.averageDistanceOfNFarOffPoints(distance_matrix, distance+_list_destination
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 distance+_list_destinationImagePlus = clij2.pull(distance+_list_destination);
 distance+_list_destinationImagePlus.show();
 
@@ -53,15 +52,10 @@ clij2.release(distance+_list_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.averageDistanceOfNFarOffPoints(distance_matrix, distance+_list_destination, nFarOffPointsTofind);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -90,15 +84,10 @@ clij2.release(distance+_list_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.averageDistanceOfNFarOffPoints(distance_matrix, distance+_list_destination, nFarOffPointsTofind);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

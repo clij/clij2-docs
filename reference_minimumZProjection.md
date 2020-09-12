@@ -11,15 +11,14 @@ Ext.CLIJ2_minimumZProjection(Image source, Image destination_sum);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.minimumZProjection(source, destination_sum);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -37,7 +36,7 @@ clij2.minimumZProjection(source, destination_sum);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destination_sumImagePlus = clij2.pull(destination_sum);
 destination_sumImagePlus.show();
 
@@ -50,15 +49,10 @@ clij2.release(destination_sum);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.minimumZProjection(source, destination_sum);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -86,15 +80,10 @@ clij2.release(destination_sum);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.minimumZProjection(source, destination_sum);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

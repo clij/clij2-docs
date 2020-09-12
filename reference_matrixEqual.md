@@ -13,15 +13,14 @@ Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.matrixEqual(input1, input2, tolerance);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -40,7 +39,7 @@ clij2.matrixEqual(input1, input2, tolerance);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 
 // cleanup memory on GPU
 clij2.release(input1);
@@ -51,15 +50,10 @@ clij2.release(input2);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.matrixEqual(input1, input2, tolerance);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -87,15 +81,10 @@ clij2.release(input2);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.matrixEqual(input1, input2, tolerance);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -20,15 +20,14 @@ Ext.CLIJ2_countTouchingNeighbors(Image touch_matrix, Image touching_neighbors_co
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -46,7 +45,7 @@ clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination)
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 touching_neighbors_count_destinationImagePlus = clij2.pull(touching_neighbors_count_destination);
 touching_neighbors_count_destinationImagePlus.show();
 
@@ -59,15 +58,10 @@ clij2.release(touching_neighbors_count_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -95,15 +89,10 @@ clij2.release(touching_neighbors_count_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.countTouchingNeighbors(touch_matrix, touching_neighbors_count_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

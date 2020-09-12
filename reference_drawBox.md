@@ -16,15 +16,14 @@ Ext.CLIJ2_drawBox(Image destination, Number x, Number y, Number z, Number width,
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.drawBox(destination, x, y, z, width, height, depth, value);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -48,7 +47,7 @@ clij2.drawBox(destination, x, y, z, width, height, depth, value);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
@@ -60,15 +59,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.drawBox(destination, x, y, z, width, height, depth, value);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -101,15 +95,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.drawBox(destination, x, y, z, width, height, depth, value);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

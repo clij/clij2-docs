@@ -13,15 +13,14 @@ Ext.CLIJ2_meanOfPixelsAboveThreshold(Image source, Number threshold);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.meanOfPixelsAboveThreshold(source, threshold);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -39,7 +38,7 @@ double resultMeanOfPixelsAboveThreshold = clij2.meanOfPixelsAboveThreshold(sourc
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultMeanOfPixelsAboveThreshold);
 
 // cleanup memory on GPU
@@ -50,15 +49,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.meanOfPixelsAboveThreshold(source, threshold);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -85,15 +79,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.meanOfPixelsAboveThreshold(source, threshold);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -18,15 +18,14 @@ Ext.CLIJ2_print(Image input);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.print(input);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -43,7 +42,7 @@ clij2.print(input);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 
 // cleanup memory on GPU
 clij2.release(input);
@@ -53,15 +52,10 @@ clij2.release(input);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.print(input);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -86,15 +80,10 @@ clij2.release(input);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.print(input);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

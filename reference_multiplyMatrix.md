@@ -20,15 +20,14 @@ Ext.CLIJ2_multiplyMatrix(Image matrix1, Image matrix2, Image matrix_destination)
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -47,7 +46,7 @@ clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 matrix_destinationImagePlus = clij2.pull(matrix_destination);
 matrix_destinationImagePlus.show();
 
@@ -61,15 +60,10 @@ clij2.release(matrix_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -99,15 +93,10 @@ clij2.release(matrix_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.multiplyMatrix(matrix1, matrix2, matrix_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -13,15 +13,14 @@ Ext.CLIJ2_drawLine(Image destination, Number x1, Number y1, Number z1, Number x2
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -46,7 +45,7 @@ clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
@@ -58,15 +57,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -100,15 +94,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.drawLine(destination, x1, y1, z1, x2, y2, z2, thickness, value);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

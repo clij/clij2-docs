@@ -24,15 +24,14 @@ Ext.CLIJ2_averageDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +50,7 @@ clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 average_distancelist_destinationImagePlus = clij2.pull(average_distancelist_destination);
 average_distancelist_destinationImagePlus.show();
 
@@ -65,15 +64,10 @@ clij2.release(average_distancelist_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -103,15 +97,10 @@ clij2.release(average_distancelist_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, average_distancelist_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

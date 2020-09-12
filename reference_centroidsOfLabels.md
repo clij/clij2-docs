@@ -17,15 +17,14 @@ Ext.CLIJ2_centroidsOfLabels(Image source, Image pointlist_destination);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.centroidsOfLabels(source, pointlist_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -43,7 +42,7 @@ clij2.centroidsOfLabels(source, pointlist_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 pointlist_destinationImagePlus = clij2.pull(pointlist_destination);
 pointlist_destinationImagePlus.show();
 
@@ -56,15 +55,10 @@ clij2.release(pointlist_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.centroidsOfLabels(source, pointlist_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -92,15 +86,10 @@ clij2.release(pointlist_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.centroidsOfLabels(source, pointlist_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

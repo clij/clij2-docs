@@ -11,15 +11,14 @@ Ext.CLIJ2_adjacencyMatrixToTouchMatrix(Image adjacency_matrix, Image touch_matri
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.adjacencyMatrixToTouchMatrix(adjacency_matrix, touch_matrix);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -37,7 +36,7 @@ clij2.adjacencyMatrixToTouchMatrix(adjacency_matrix, touch_matrix);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 
 // cleanup memory on GPU
 clij2.release(adjacency_matrix);
@@ -48,15 +47,10 @@ clij2.release(touch_matrix);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.adjacencyMatrixToTouchMatrix(adjacency_matrix, touch_matrix);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -83,15 +77,10 @@ clij2.release(touch_matrix);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.adjacencyMatrixToTouchMatrix(adjacency_matrix, touch_matrix);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

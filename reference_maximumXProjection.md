@@ -24,15 +24,14 @@ Ext.CLIJ2_maximumXProjection(Image source, Image destination_max);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.maximumXProjection(source, destination_max);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -50,7 +49,7 @@ clij2.maximumXProjection(source, destination_max);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destination_maxImagePlus = clij2.pull(destination_max);
 destination_maxImagePlus.show();
 
@@ -63,15 +62,10 @@ clij2.release(destination_max);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.maximumXProjection(source, destination_max);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -99,15 +93,10 @@ clij2.release(destination_max);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.maximumXProjection(source, destination_max);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

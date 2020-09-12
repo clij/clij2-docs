@@ -17,15 +17,14 @@ Ext.CLIJ2_excludeLabelsWithValuesOutOfRange(Image values_vector, Image label_map
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.excludeLabelsWithValuesOutOfRange(values_vector, label_map_input, label_map_destination, minimum_value_range, maximum_value_range);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -46,7 +45,7 @@ clij2.excludeLabelsWithValuesOutOfRange(values_vector, label_map_input, label_ma
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 label_map_destinationImagePlus = clij2.pull(label_map_destination);
 label_map_destinationImagePlus.show();
 
@@ -60,15 +59,10 @@ clij2.release(label_map_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.excludeLabelsWithValuesOutOfRange(values_vector, label_map_input, label_map_destination, minimum_value_range, maximum_value_range);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -100,15 +94,10 @@ clij2.release(label_map_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.excludeLabelsWithValuesOutOfRange(values_vector, label_map_input, label_map_destination, minimum_value_range, maximum_value_range);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

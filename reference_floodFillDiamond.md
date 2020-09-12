@@ -11,15 +11,14 @@ Ext.CLIJ2_floodFillDiamond(Image source, Image destination, Number value_to_repl
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.floodFillDiamond(source, destination, value_to_replace, value_replacement);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -39,7 +38,7 @@ clij2.floodFillDiamond(source, destination, value_to_replace, value_replacement)
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
@@ -52,15 +51,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.floodFillDiamond(source, destination, value_to_replace, value_replacement);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -90,15 +84,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.floodFillDiamond(source, destination, value_to_replace, value_replacement);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

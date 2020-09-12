@@ -12,15 +12,14 @@ Ext.CLIJ2_depthColorProjection(Image source, Image lookup_table, Image destinati
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.depthColorProjection(source, lookup_table, destination_max, min_display_intensity, max_display_intensity);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -41,7 +40,7 @@ clij2.depthColorProjection(source, lookup_table, destination_max, min_display_in
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destination_maxImagePlus = clij2.pull(destination_max);
 destination_maxImagePlus.show();
 
@@ -55,15 +54,10 @@ clij2.release(destination_max);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.depthColorProjection(source, lookup_table, destination_max, min_display_intensity, max_display_intensity);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -95,15 +89,10 @@ clij2.release(destination_max);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.depthColorProjection(source, lookup_table, destination_max, min_display_intensity, max_display_intensity);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

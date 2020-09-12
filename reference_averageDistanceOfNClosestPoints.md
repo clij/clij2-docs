@@ -17,15 +17,14 @@ Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, Image distance_
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, nClosestPointsTofind);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -44,7 +43,7 @@ clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 distance_list_destinationImagePlus = clij2.pull(distance_list_destination);
 distance_list_destinationImagePlus.show();
 
@@ -57,15 +56,10 @@ clij2.release(distance_list_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, nClosestPointsTofind);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -94,15 +88,10 @@ clij2.release(distance_list_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, nClosestPointsTofind);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

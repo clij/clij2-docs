@@ -11,15 +11,14 @@ Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.pullLabelsToROIManager(labelmap_input);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -36,7 +35,7 @@ clij2.pullLabelsToROIManager(labelmap_input);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 
 // cleanup memory on GPU
 clij2.release(labelmap_input);
@@ -46,15 +45,10 @@ clij2.release(labelmap_input);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.pullLabelsToROIManager(labelmap_input);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -79,15 +73,10 @@ clij2.release(labelmap_input);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.pullLabelsToROIManager(labelmap_input);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

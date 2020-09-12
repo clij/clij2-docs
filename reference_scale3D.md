@@ -11,15 +11,14 @@ Ext.CLIJ2_scale3D(Image source, Image destination, Number scaling_factor_x, Numb
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.scale3D(source, destination, scaling_factor_x, scaling_factor_y, scaling_factor_z, scale_to_center);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -41,7 +40,7 @@ clij2.scale3D(source, destination, scaling_factor_x, scaling_factor_y, scaling_f
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
@@ -54,15 +53,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.scale3D(source, destination, scaling_factor_x, scaling_factor_y, scaling_factor_z, scale_to_center);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -94,15 +88,10 @@ clij2.release(destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.scale3D(source, destination, scaling_factor_x, scaling_factor_y, scaling_factor_z, scale_to_center);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

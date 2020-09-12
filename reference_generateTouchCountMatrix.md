@@ -17,15 +17,14 @@ Ext.CLIJ2_generateTouchCountMatrix(Image label_map, Image touch_count_matrix_des
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.generateTouchCountMatrix(label_map, touch_count_matrix_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -43,7 +42,7 @@ clij2.generateTouchCountMatrix(label_map, touch_count_matrix_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 touch_count_matrix_destinationImagePlus = clij2.pull(touch_count_matrix_destination);
 touch_count_matrix_destinationImagePlus.show();
 
@@ -56,15 +55,10 @@ clij2.release(touch_count_matrix_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.generateTouchCountMatrix(label_map, touch_count_matrix_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -92,15 +86,10 @@ clij2.release(touch_count_matrix_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.generateTouchCountMatrix(label_map, touch_count_matrix_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

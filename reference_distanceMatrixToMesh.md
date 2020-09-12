@@ -18,15 +18,14 @@ Ext.CLIJ2_distanceMatrixToMesh(Image pointlist, Image distance_matrix, Image mes
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -46,7 +45,7 @@ clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 mesh_destinationImagePlus = clij2.pull(mesh_destination);
 mesh_destinationImagePlus.show();
 
@@ -60,15 +59,10 @@ clij2.release(mesh_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -99,15 +93,10 @@ clij2.release(mesh_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.distanceMatrixToMesh(pointlist, distance_matrix, mesh_destination, maximum_distance);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

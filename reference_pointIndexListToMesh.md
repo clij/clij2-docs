@@ -11,15 +11,14 @@ Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, Image mesh_dest
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -38,7 +37,7 @@ clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 mesh_destinationImagePlus = clij2.pull(mesh_destination);
 mesh_destinationImagePlus.show();
 
@@ -52,15 +51,10 @@ clij2.release(mesh_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -90,15 +84,10 @@ clij2.release(mesh_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

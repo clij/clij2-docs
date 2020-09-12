@@ -21,15 +21,14 @@ Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(Image input, Image labelmap);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.statisticsOfBackgroundAndLabelledPixels(input, labelmap);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -47,7 +46,7 @@ double[][] resultStatisticsOfBackgroundAndLabelledPixels = clij2.statisticsOfBac
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultStatisticsOfBackgroundAndLabelledPixels);
 
 // cleanup memory on GPU
@@ -59,15 +58,10 @@ clij2.release(labelmap);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.statisticsOfBackgroundAndLabelledPixels(input, labelmap);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -95,15 +89,10 @@ clij2.release(labelmap);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.statisticsOfBackgroundAndLabelledPixels(input, labelmap);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

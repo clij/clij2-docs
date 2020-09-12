@@ -14,15 +14,14 @@ Ext.CLIJ2_saveAsTIF(Image input, String filename);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.saveAsTIF(input, filename);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -39,7 +38,7 @@ clij2.saveAsTIF(input, filename);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 
 // cleanup memory on GPU
 clij2.release(input);
@@ -49,15 +48,10 @@ clij2.release(input);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.saveAsTIF(input, filename);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -82,15 +76,10 @@ clij2.release(input);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.saveAsTIF(input, filename);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

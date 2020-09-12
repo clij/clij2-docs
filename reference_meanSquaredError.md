@@ -12,15 +12,14 @@ Ext.CLIJ2_meanSquaredError(Image source1, Image source2);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.meanSquaredError(source1, source2);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -38,7 +37,7 @@ double resultMeanSquaredError = clij2.meanSquaredError(source1, source2);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultMeanSquaredError);
 
 // cleanup memory on GPU
@@ -50,15 +49,10 @@ clij2.release(source2);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.meanSquaredError(source1, source2);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -86,15 +80,10 @@ clij2.release(source2);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.meanSquaredError(source1, source2);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

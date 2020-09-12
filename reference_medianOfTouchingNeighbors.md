@@ -24,15 +24,14 @@ Ext.CLIJ2_medianOfTouchingNeighbors(Image values, Image touch_matrix, Image mean
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -51,7 +50,7 @@ clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 mean_values_destinationImagePlus = clij2.pull(mean_values_destination);
 mean_values_destinationImagePlus.show();
 
@@ -65,15 +64,10 @@ clij2.release(mean_values_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -103,15 +97,10 @@ clij2.release(mean_values_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.medianOfTouchingNeighbors(values, touch_matrix, mean_values_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

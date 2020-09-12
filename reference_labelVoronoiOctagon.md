@@ -24,15 +24,14 @@ Ext.CLIJ2_labelVoronoiOctagon(Image label_map, Image label_voronoi_destination);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -50,7 +49,7 @@ clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 label_voronoi_destinationImagePlus = clij2.pull(label_voronoi_destination);
 label_voronoi_destinationImagePlus.show();
 
@@ -63,15 +62,10 @@ clij2.release(label_voronoi_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -99,15 +93,10 @@ clij2.release(label_voronoi_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.labelVoronoiOctagon(label_map, label_voronoi_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -30,15 +30,14 @@ Ext.CLIJ2_generateDistanceMatrix(Image coordinate_list1, Image coordinate_list2,
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -57,7 +56,7 @@ clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 distance_matrix_destinationImagePlus = clij2.pull(distance_matrix_destination);
 distance_matrix_destinationImagePlus.show();
 
@@ -71,15 +70,10 @@ clij2.release(distance_matrix_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -109,15 +103,10 @@ clij2.release(distance_matrix_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.generateDistanceMatrix(coordinate_list1, coordinate_list2, distance_matrix_destination);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

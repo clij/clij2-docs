@@ -18,15 +18,14 @@ Ext.CLIJ2_centerOfMass(Image source);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.centerOfMass(source);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -43,7 +42,7 @@ double[] resultCenterOfMass = clij2.centerOfMass(source);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultCenterOfMass);
 
 // cleanup memory on GPU
@@ -54,15 +53,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.centerOfMass(source);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -88,15 +82,10 @@ clij2.release(source);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.centerOfMass(source);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -9,15 +9,14 @@ Ext.CLIJ2_pullAsROI(Image binary_input);
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.pullAsROI(binary_input);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -34,7 +33,7 @@ Roi resultPullAsROI = clij2.pullAsROI(binary_input);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 System.out.println(resultPullAsROI);
 
 // cleanup memory on GPU
@@ -45,15 +44,10 @@ clij2.release(binary_input);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.pullAsROI(binary_input);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -79,15 +73,10 @@ clij2.release(binary_input);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.pullAsROI(binary_input);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

@@ -13,15 +13,14 @@ Ext.CLIJ2_labelToMask(Image label_map_source, Image mask_destination, Number lab
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.labelToMask(label_map_source, mask_destination, label_index);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -40,7 +39,7 @@ clij2.labelToMask(label_map_source, mask_destination, label_index);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 mask_destinationImagePlus = clij2.pull(mask_destination);
 mask_destinationImagePlus.show();
 
@@ -53,15 +52,10 @@ clij2.release(mask_destination);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.labelToMask(label_map_source, mask_destination, label_index);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -90,15 +84,10 @@ clij2.release(mask_destination);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.labelToMask(label_map_source, mask_destination, label_index);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);

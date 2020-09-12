@@ -17,15 +17,14 @@ Ext.CLIJ2_shortestDistances(Image distance_matrix, Image destination_minimum_dis
 ```
 
 
+### Usage in object oriented programming languages
 
-
-### Usage in Java
 
 
 <details>
 
 <summary>
-clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -43,7 +42,7 @@ clij2.shortestDistances(distance_matrix, destination_minimum_distances);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 destination_minimum_distancesImagePlus = clij2.pull(destination_minimum_distances);
 destination_minimum_distancesImagePlus.show();
 
@@ -56,15 +55,10 @@ clij2.release(destination_minimum_distances);
 
 
 
-
-
-### Usage in Matlab
-
-
 <details>
 
 <summary>
-clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -92,15 +86,10 @@ clij2.release(destination_minimum_distances);
 
 
 
-
-
-### Usage in Icy
-
-
 <details>
 
 <summary>
-clij2.shortestDistances(distance_matrix, destination_minimum_distances);
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
