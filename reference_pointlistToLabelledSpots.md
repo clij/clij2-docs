@@ -21,6 +21,8 @@ Ext.CLIJ2_pointlistToLabelledSpots(Image pointlist, Image spots_destination);
 
 ### Usage in object oriented programming languages
 
+
+
 <details>
 
 <summary>
@@ -118,6 +120,8 @@ clij2.release(spots_destination);
 </pre>
 
 </details>
+
+
 
 
 
