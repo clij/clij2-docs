@@ -44,7 +44,7 @@ clij2.pointlistToLabelledSpots(pointlist, spots_destination);
 </pre>
 
 <pre class="highlight">
-//show result
+// show result
 spots_destinationImagePlus = clij2.pull(spots_destination);
 spots_destinationImagePlus.show();
 
