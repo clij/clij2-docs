@@ -3,12 +3,14 @@
 
 Transpose X and Y axes of an image.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### transposeXY often follows after
 * <a href="reference_subtractImages">subtractImages</a> (3)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_paste2D">paste2D</a> (3)
 
 
 ### transposeXY is often followed by

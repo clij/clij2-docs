@@ -5,6 +5,8 @@ Determines the average of the n far off (most distant) points for every point in
 
 This corresponds to the average of the n maximum values (rows) for each column of the distance matrix.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_averageDistanceOfNFarOffPoints(Image distance_matrix, Image distance+_list_destination, Number nFarOffPointsTofind);

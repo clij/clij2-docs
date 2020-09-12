@@ -6,6 +6,8 @@ Computes the local mean average of a pixels ellipsoidal neighborhood.
 The ellipses size is specified by 
 its half-width and half-height (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_mean2DSphere(Image source, Image destination, Number radiusX, Number radiusY);

@@ -3,6 +3,8 @@
 
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_watershed(Image binary_source, Image destination);

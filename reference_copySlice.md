@@ -9,6 +9,8 @@ The first case is only available via ImageJ macro. If you are using it, it is re
 target 3D image already pre-exists in GPU memory before calling this method. Otherwise, CLIJ create 
 the image stack with z planes.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### copySlice often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 * <a href="reference_affineTransform2D">affineTransform2D</a> (3)

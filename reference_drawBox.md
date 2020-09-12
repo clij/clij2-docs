@@ -4,6 +4,8 @@
 Draws a box at a given start point with given size. 
 All pixels other than in the box are untouched. Consider using `set(buffer, 0);` in advance.
 
+Category: Visualisation
+
 ### drawBox is often followed by
 * <a href="reference_copy">copy</a> (2)
 

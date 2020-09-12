@@ -5,6 +5,8 @@ Takes a touch matrix and a vector of values to determine the minimum value among
 
 
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### minimumOfTouchingNeighbors often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)

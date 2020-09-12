@@ -3,6 +3,8 @@
 
 Takes a label map, determines which labels touch, the distance between their centroids and the minimum distancebetween touching neighbors. It then replaces every label with the that value.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_localMinimumAverageNeighborDistanceMap(Image input, Image destination);

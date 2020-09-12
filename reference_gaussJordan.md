@@ -19,6 +19,8 @@ L.G. Szafaryn, K. Skadron and J. Saucerman. "Experiences Accelerating MATLAB Sys
 //Biology Applications." in Workshop on Biomedicine in Computing (BiC) at the International
 //Symposium on Computer Architecture (ISCA), June 2009.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, Image solution_destination);

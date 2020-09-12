@@ -6,6 +6,8 @@ Computes the local mean average of a pixels spherical neighborhood.
 The spheres size is specified by 
 its half-width, half-height and half-depth (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_mean3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);

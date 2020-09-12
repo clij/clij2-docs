@@ -5,6 +5,8 @@ Adds a scalar value s to all pixels x of a given image X.
 
 <pre>f(x, s) = x + s</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### addImageAndScalar is often followed by
 * <a href="reference_absolute">absolute</a> (2)
 

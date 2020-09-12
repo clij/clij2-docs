@@ -5,6 +5,12 @@ Determines the centroids of all labels in a label image or image stack.
 
 It writes the resulting  coordinates in a pointlist image. Depending on the dimensionality d of the labelmap and the number  of labels n, the pointlist image will have n*d pixels.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
+### centroidsOfLabels is often followed by
+* <a href="reference_paste2D">paste2D</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_centroidsOfLabels(Image source, Image pointlist_destination);
@@ -124,6 +130,12 @@ clij2.release(pointlist_destination);
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

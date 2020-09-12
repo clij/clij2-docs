@@ -5,6 +5,8 @@ Determines correction factors for each z-slice so that the average intensity in 
 
 This functionality is similar to the 'Simple Ratio Bleaching Correction' in Fiji.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_equalizeMeanIntensitiesOfSlices(Image input, Image destination, Number referenceSlice);

@@ -5,6 +5,8 @@ Determines the variance in an image, but only in pixels which have non-zero valu
 
 The result is put in the results table as new column named 'Masked_variance'.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_varianceOfMaskedPixels(Image source, Image mask);

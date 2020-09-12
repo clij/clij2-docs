@@ -5,6 +5,8 @@ Deforms an image stack according to distances provided in the given vector image
 
 It is recommended to use 32-bit image stacks for input, output and vector image stacks. 
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_applyVectorField3D(Image source, Image vectorX, Image vectorY, Image vectorZ, Image destination);

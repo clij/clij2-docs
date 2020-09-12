@@ -8,6 +8,8 @@ the same spatial position within a plane.
 
 <pre>f(x, y) = x * y</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_multiplyStackWithPlane(Image sourceStack, Image sourcePlane, Image destination);

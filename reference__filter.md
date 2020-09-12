@@ -9,15 +9,45 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 
 
-__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), [Matrices](https://clij.github.io/clij2-docs/reference__matrix), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Neighbors](https://clij.github.io/clij2-docs/reference__neighbor), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
- A,<a href="#B">\[B\]</a>,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>, F,<a href="#G">\[G\]</a>, H,<a href="#I">\[I\]</a>, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>,<a href="#O">\[O\]</a>,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U, V,<a href="#W">\[W\]</a>, X, Y, Z
+ A,<a href="#B">\[B\]</a>,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>,<a href="#F">\[F\]</a>,<a href="#G">\[G\]</a>, H,<a href="#I">\[I\]</a>, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>,<a href="#O">\[O\]</a>,<a href="#P">\[P\]</a>, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
 
 <a name="B"></a>
 
 ## B
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_bilateral">bilateral (Experimental)</a>  
 Applies a bilateral filter using a box neighborhood with sigma weights for space and intensity to the input image.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryAnd">binaryAnd</a>  
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary AND operator &. All pixel values except 0 in the input images are interpreted as 1.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryEdgeDetection">binaryEdgeDetection</a>  
+Determines pixels/voxels which are on the surface of binary objects and sets only them to 1 in the  destination image. All other pixels are set to 0.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryFillHoles">binaryFillHoles</a>  
+Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryFillHolesSliceBySlice">binaryFillHolesSliceBySlice (Experimental)</a>  
+Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image stack slice by slice.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryIntersection">binaryIntersection</a>  
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary intersection operator &. All pixel values except 0 in the input images are interpreted as 1.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryNot">binaryNot</a>  
+Computes a binary image (containing pixel values 0 and 1) from an image X by negating its pixel values x using the binary NOT operator !
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryOr">binaryOr</a>  
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary OR operator |.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binarySubtract">binarySubtract</a>  
+Subtracts one binary image from another.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryUnion">binaryUnion</a>  
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary union operator |.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryXOr">binaryXOr</a>  
+Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary operators AND &, OR | and NOT ! implementing the XOR operator.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_blur2D">blur2D</a>  
 Computes the Gaussian blurred image of an image given two sigma values in X and Y. 
@@ -37,8 +67,23 @@ Applies a bottom-hat filter for background subtraction to the input image.
 <a name="C"></a>
 
 ## C
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_closingBox">closingBox</a>  
+Apply a binary closing to the input image by calling n dilations and n erosions subsequenntly.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_closingDiamond">closingDiamond</a>  
+Apply a binary closing to the input image by calling n dilations and n erosions subsequently.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convolve">convolve</a>  
 Convolve the image with a given kernel image.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countNonZeroPixels2DSphere">countNonZeroPixels2DSphere</a>  
+Counts non-zero pixels in a sphere around every pixel. 
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countNonZeroPixelsSliceBySliceSphere">countNonZeroPixelsSliceBySliceSphere</a>  
+Counts non-zero pixels in a sphere around every pixel slice by slice in a stack. 
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_countNonZeroVoxels3DSphere">countNonZeroVoxels3DSphere</a>  
+Counts non-zero voxels in a sphere around every voxel. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crossCorrelation">crossCorrelation (Experimental)</a>  
 Performs cross correlation analysis between two images. 
@@ -46,17 +91,29 @@ Performs cross correlation analysis between two images.
 <a name="D"></a>
 
 ## D
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectLabelEdges">detectLabelEdges</a>  
+Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_differenceOfGaussian2D">differenceOfGaussian2D</a>  
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_differenceOfGaussian3D">differenceOfGaussian3D</a>  
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateBox">dilateBox</a>  
+Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateBoxSliceBySlice">dilateBoxSliceBySlice</a>  
+Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateSphere">dilateSphere</a>  
 Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateSphereSliceBySlice">dilateSphereSliceBySlice</a>  
 Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_distanceMap">distanceMap</a>  
+Generates a distance map from a binary image. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideByGaussianBackground">divideByGaussianBackground (Experimental)</a>  
 Applies Gaussian blur to the input image and divides the original by the result.
@@ -67,14 +124,56 @@ Applies Gaussian blur to the input image and divides the original by the result.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_entropyBox">entropyBox</a>  
 Determines the local entropy in a box with a given radius around every pixel.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_equalizeMeanIntensitiesOfSlices">equalizeMeanIntensitiesOfSlices</a>  
+Determines correction factors for each z-slice so that the average intensity in all slices can be made the same and multiplies these factors with the slices. 
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeBox">erodeBox</a>  
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeBoxSliceBySlice">erodeBoxSliceBySlice</a>  
+Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeSphere">erodeSphere</a>  
 Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_erodeSphereSliceBySlice">erodeSphereSliceBySlice</a>  
 Computes a binary image with pixel values 0 and 1 containing the binary erosion of a given input image. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabels">excludeLabels</a>  
+This operation removes labels from a labelmap and renumbers the remaining labels. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a>  
+Removes all labels from a label map which touch the edges of the image (in X, Y and Z if the image is 3D). 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsOnSurface">excludeLabelsOnSurface</a>  
+This operation follows a ray from a given position towards a label (or opposite direction) and checks if  there is another label between the label an the image border. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsOutsideSizeRange">excludeLabelsOutsideSizeRange (Experimental)</a>  
+Removes labels from a label map which are not within a certain size range.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsSubSurface">excludeLabelsSubSurface</a>  
+This operation follows a ray from a given position towards a label (or opposite direction) and checks if  there is another label between the label an the image border. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a>  
+This operation removes labels from a labelmap and renumbers the remaining labels. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_excludeLabelsWithValuesWithinRange">excludeLabelsWithValuesWithinRange</a>  
+This operation removes labels from a labelmap and renumbers the remaining labels. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_exponential">exponential</a>  
+Computes base exponential of all pixels values.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a>  
+Takes a label map image and dilates the regions using a octagon shape until they touch. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_extendLabelsWithMaximumRadius">extendLabelsWithMaximumRadius (Experimental)</a>  
 Extend labels with a given radius.
+
+<a name="F"></a>
+
+## F
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_floodFillDiamond">floodFillDiamond</a>  
+Replaces recursively all pixels of value a with value b if the pixels have a neighbor with value b.
 
 <a name="G"></a>
 
@@ -97,6 +196,9 @@ Computes the gradient of gray values along Y.
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gradientZ">gradientZ</a>  
 Computes the gradient of gray values along Z. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greyLevelAtttributeFiltering">greyLevelAtttributeFiltering (Experimental)</a>  
+Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras. This plugin will remove components in a grayscale image based on user-specified area (for 2D: pixels) or volume (3D: voxels). For each gray level specified in the number of bins, binary images will be generated, followed by exclusion of objects (labels) below a minimum pixel count. All the binary images for each gray level are combined to form the final image. The output is a grayscale image, where bright objects below pixel count are removed. It is recommended that low values be used for number of bins, especially for large 3D images, or it may take long time.
+
 <a name="I"></a>
 
 ## I
@@ -109,6 +211,12 @@ Determines the mean intensity of all pixel the image stack which are above a det
 <a name="L"></a>
 
 ## L
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelSpots">labelSpots</a>  
+Transforms a binary image with single pixles set to 1 to a labelled spots image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelVoronoiOctagon">labelVoronoiOctagon</a>  
+Takes a labelled image and dilates the labels using a octagon shape until they touch. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_laplaceBox">laplaceBox</a>  
 Applies the Laplace operator (Box neighborhood) to an image.
 
@@ -118,9 +226,21 @@ Applies the Laplace operator (Diamond neighborhood) to an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localExtremaBox">localExtremaBox (Experimental)</a>  
 Applies a local minimum and maximum filter. 
 
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localThreshold">localThreshold</a>  
+Computes a binary image with pixel values 0 and 1 depending on if a pixel value x in image X  was above of equal to the pixel value m in mask image M.
+
 <a name="M"></a>
 
 ## M
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mask">mask</a>  
+Computes a masked image by applying a binary mask to an image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maskLabel">maskLabel</a>  
+Computes a masked image by applying a label mask to an image. 
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maskStackWithPlane">maskStackWithPlane</a>  
+Computes a masked image by applying a binary 2D mask to an image stack. 
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximum2DBox">maximum2DBox</a>  
 Computes the local maximum of a pixels rectangular neighborhood. 
 
@@ -163,6 +283,9 @@ Computes the local median of a pixels cuboid neighborhood.
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_median3DSphere">median3DSphere</a>  
 Computes the local median of a pixels spherical neighborhood. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mergeTouchingLabels">mergeTouchingLabels (Experimental)</a>  
+
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimum2DBox">minimum2DBox</a>  
 Computes the local minimum of a pixels rectangular neighborhood. 
 
@@ -181,6 +304,9 @@ Applies a minimum filter with kernel size 3x3 n times to an image iteratively.
 <a name="N"></a>
 
 ## N
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborsOfNeighbors">neighborsOfNeighbors</a>  
+Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nonLocalMeans">nonLocalMeans (Experimental)</a>  
 Applies a non-local means filter using a box neighborhood with a Gaussian weight specified with sigma to the input image.
 
@@ -205,11 +331,29 @@ Apply a local maximum filter to an image which only overwrites pixels with value
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a>  
 Apply a local maximum filter to an image which only overwrites pixels with value 0.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_openingBox">openingBox</a>  
+Apply a binary opening to the input image by calling n erosions and n dilations subsequenntly.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_openingDiamond">openingDiamond</a>  
+Apply a binary opening to the input image by calling n erosions and n dilations subsequenntly.
+
 <a name="P"></a>
 
 ## P
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_parametricWatershed">parametricWatershed (Experimental)</a>  
 Apply a binary watershed to a binary image and introduce black pixels between objects.
+
+<a name="R"></a>
+
+## R
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">replaceIntensities</a>  
+Replaces integer intensities specified in a vector image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replaceIntensity">replaceIntensity</a>  
+Replaces a specific intensity in an image with a given new value.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_replacePixelsIfZero">replacePixelsIfZero</a>  
+Replaces pixel values x with y in case x is zero.
 
 <a name="S"></a>
 
@@ -217,8 +361,14 @@ Apply a binary watershed to a binary image and introduce black pixels between ob
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_seededWatershed">seededWatershed (Experimental)</a>  
 Takes a label map (seeds) and an input image with gray values to apply the watershed algorithm and split the image above a given threshold in labels.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_skeletonize">skeletonize (Experimental)</a>  
+Erodes a binary image until just its skeleton is left. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sobel">sobel</a>  
 Convolve the image with the Sobel kernel.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_squaredDifference">squaredDifference</a>  
+Determines the squared difference pixel by pixel between two images.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_subtractGaussianBackground">subtractGaussianBackground (Experimental)</a>  
 Applies Gaussian blur to the input image and subtracts the result from the original image.
@@ -237,6 +387,15 @@ Applies a minimum filter with kernel size 3x3 n times to an image iteratively.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_topHatSphere">topHatSphere</a>  
 Applies a top-hat filter for background subtraction to the input image.
+
+<a name="V"></a>
+
+## V
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_voronoiLabeling">voronoiLabeling</a>  
+Takes a binary image, labels connected components and dilates the regions using a octagon shape until they touch. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_voronoiOctagon">voronoiOctagon</a>  
+Takes a binary image and dilates the regions using a octagon shape until they touch. 
 
 <a name="W"></a>
 

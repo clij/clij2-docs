@@ -3,6 +3,8 @@
 
 Sets all pixel values to their Z coordinate
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setRampZ(Image source);

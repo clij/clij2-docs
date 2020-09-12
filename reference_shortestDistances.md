@@ -5,6 +5,8 @@ Determine the shortest distance from a distance matrix.
 
 This corresponds to the minimum for each individial column.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### shortestDistances often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 

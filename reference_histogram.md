@@ -12,6 +12,8 @@ If the flag determine_min_max is set, minimum and maximum intensity will be dete
 When calling this operation many times, it is recommended to determine minimum and maximum intensity 
 once at the beginning and handing over these values.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### histogram often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_copySlice">copySlice</a> (3)

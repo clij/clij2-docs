@@ -3,6 +3,8 @@
 
 Converts an image into a table.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pullToResultsTable(Image source);

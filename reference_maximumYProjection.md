@@ -3,6 +3,8 @@
 
 Determines the maximum intensity projection of an image along X.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### maximumYProjection often follows after
 * <a href="reference_invert">invert</a> (2)
 

@@ -9,6 +9,8 @@ The implementation is done separable. In case a sigma equals zero, the direction
 
 DEPRECATED: This method is <b>deprecated</b>. Use gaussianBlur2D instead.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### blur2D is often followed by
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 

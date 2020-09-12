@@ -6,6 +6,8 @@ Determines the standard deviation of all pixels in an image which have non-zero 
 The value will be stored in a new row of ImageJs
 Results table in the column 'Masked_standard_deviation'.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_standardDeviationOfMaskedPixels(Image source, Image mask);

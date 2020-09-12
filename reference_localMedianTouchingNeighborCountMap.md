@@ -6,6 +6,8 @@ neighboring labels and replaces the label index with the local median of this co
 
 
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_localMedianTouchingNeighborCountMap(Image input, Image destination);

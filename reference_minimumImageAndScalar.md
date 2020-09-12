@@ -5,6 +5,8 @@ Computes the minimum of a constant scalar s and each pixel value x in a given im
 
 <pre>f(x, s) = min(x, s)</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumImageAndScalar(Image source, Image destination, Number scalar);

@@ -5,6 +5,8 @@ Transforms a binary image with single pixles set to 1 to a labelled spots image.
 
 Transforms a spots image as resulting from maximum/minimum detection in an image of the same size where every spot has a number 1, 2, ... n.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### labelSpots often follows after
 * <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (2)
 * <a href="reference_mask">mask</a> (6)

@@ -9,7 +9,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 
 
-__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), [Matrices](https://clij.github.io/clij2-docs/reference__matrix), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Neighbors](https://clij.github.io/clij2-docs/reference__neighbor), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 <a href="#A">\[A\]</a>, B, C,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>, F,<a href="#G">\[G\]</a>, H,<a href="#I">\[I\]</a>, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>, O,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>, T,<a href="#U">\[U\]</a>, V, W, X, Y, Z
 
@@ -55,6 +55,9 @@ Computes base exponential of all pixels values.
 <a name="G"></a>
 
 ## G
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gaussJordan">gaussJordan (Experimental)</a>  
+Gauss Jordan elimination algorithm for solving linear equation systems. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greater">greater</a>  
 Determines if two images A and B greater pixel wise.
 
@@ -82,6 +85,9 @@ Computes base e logarithm of all pixels values.
 <a name="M"></a>
 
 ## M
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_matrixEqual">matrixEqual</a>  
+Checks if all elements of a matrix are different by less than or equal to a given tolerance. 
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumImageAndScalar">maximumImageAndScalar</a>  
 Computes the maximum of a constant scalar s and each pixel value x in a given image X. 
 
@@ -105,6 +111,9 @@ Multiplies all pixels value x in a given image X with a constant scalar s from a
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyImages">multiplyImages</a>  
 Multiplies all pairs of pixel values x and y from two image X and Y.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyMatrix">multiplyMatrix</a>  
+Multiplies two matrices with each other.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyStackWithPlane">multiplyStackWithPlane</a>  
 Multiplies all pairs of pixel values x and y from an image stack X and a 2D image Y. 
@@ -156,6 +165,15 @@ Fills an image or image stack with uniformly distributed random numbers between 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_setRow">setRow</a>  
 Sets all pixel values x of a given row in X to a constant value v.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_setWhereXequalsY">setWhereXequalsY</a>  
+Sets all pixel values a of a given image A to a constant value v in case its coordinates x == y. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_setWhereXgreaterThanY">setWhereXgreaterThanY</a>  
+Sets all pixel values a of a given image A to a constant value v in case its coordinates x > y. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_setWhereXsmallerThanY">setWhereXsmallerThanY</a>  
+Sets all pixel values a of a given image A to a constant value v in case its coordinates x < y. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_smaller">smaller</a>  
 Determines if two images A and B smaller pixel wise.

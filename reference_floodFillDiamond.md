@@ -1,9 +1,9 @@
 ## floodFillDiamond
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-By Robert Haase translated original work by Ignacio Arganda-Carreras
-
 Replaces recursively all pixels of value a with value b if the pixels have a neighbor with value b.
+
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### Usage in ImageJ macro
 ```
@@ -130,30 +130,6 @@ clij2.release(destination);
 
 </details>
 
-
-
-
-
-### License terms
-  
-Code was translated from    
-  
- Skeletonize3D plugin for ImageJ(C).  
- Copyright (C) 2008 Ignacio Arganda-Carreras   
-   
- This program is free software; you can redistribute it and/or  
- modify it under the terms of the GNU General Public License  
- as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt )  
-  
- This program is distributed in the hope that it will be useful,  
- but WITHOUT ANY WARRANTY; without even the implied warranty of  
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the  
- GNU General Public License for more details.  
-   
- You should have received a copy of the GNU General Public License  
- along with this program; if not, write to the Free Software  
- Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.  
-   
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

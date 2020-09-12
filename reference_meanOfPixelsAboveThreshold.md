@@ -5,6 +5,8 @@ Determines the mean intensity in a threshleded image.
 
 But only in pixels which are above a given threshold.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanOfPixelsAboveThreshold(Image source, Number threshold);

@@ -5,6 +5,8 @@ Divides two images X and Y by each other pixel wise.
 
 <pre>f(x, y) = x / y</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_divideImages(Image divident, Image divisor, Image destination);

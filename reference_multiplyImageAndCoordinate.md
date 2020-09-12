@@ -3,6 +3,8 @@
 
 Multiplies all pixel intensities with the x, y or z coordinate, depending on specified dimension.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_multiplyImageAndCoordinate(Image source, Image destination, Number dimension);

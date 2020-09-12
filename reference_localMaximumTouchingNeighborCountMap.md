@@ -6,6 +6,8 @@ neighboring labels and replaces the label index with the local maximum of this c
 
 
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_localMaximumTouchingNeighborCountMap(Image input, Image destination);

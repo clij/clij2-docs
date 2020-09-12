@@ -6,6 +6,8 @@ Computes the local minimum of a pixels rectangular neighborhood.
 The rectangles size is specified by 
 its half-width and half-height (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### minimum2DBox is often followed by
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 

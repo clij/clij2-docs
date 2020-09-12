@@ -5,6 +5,8 @@ Determine the n point indices with shortest distance for all points in a distanc
 
 This corresponds to the n row indices with minimum values for each column of the distance matrix.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### nClosestPoints often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 

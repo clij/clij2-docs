@@ -5,6 +5,8 @@ Determines the mean of all pixels in a given image.
 
 It will be stored in the variable mean_of_all_pixels.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_getMeanOfAllPixels(Image source, Number mean_of_all_pixels);

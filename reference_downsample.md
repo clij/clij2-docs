@@ -6,6 +6,8 @@ Scales an image using given scaling factors for X and Y dimensions.
 The nearest-neighbor method
 is applied. In ImageJ the method which is similar is called 'Interpolation method: none'.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_downsample(Image source, Image destination, Number factorX, Number factorY);

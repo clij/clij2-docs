@@ -9,6 +9,8 @@ zero.
 
 <pre>f(x,m) = (x if (m != 0); (0 otherwise))</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maskStackWithPlane(Image source, Image mask, Image destination);

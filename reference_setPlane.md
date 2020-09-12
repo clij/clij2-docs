@@ -3,6 +3,8 @@
 
 Sets all pixel values x of a given plane in X to a constant value v.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setPlane(Image source, Number plane_index, Number value);

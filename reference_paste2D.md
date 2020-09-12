@@ -3,9 +3,15 @@
 
 Pastes an image into another image at a given position.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### paste2D often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
 * <a href="reference_histogram">histogram</a> (3)
+* <a href="reference_getDimensions">getDimensions</a> (2)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (2)
+* <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (2)
+* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (2)
 * <a href="reference_transposeXY">transposeXY</a> (2)
 * <a href="reference_flip2D">flip2D</a> (2)
 
@@ -13,8 +19,8 @@ Pastes an image into another image at a given position.
 ### paste2D is often followed by
 * <a href="reference_print">print</a> (3)
 * <a href="reference_crop2D">crop2D</a> (2)
-* <a href="reference_transposeXY">transposeXY</a> (2)
-* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (3)
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (3)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
@@ -155,6 +161,7 @@ clij2.release(destination);
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm"><img src="images/language_macro.png" height="20"/></a> [allocateBig2DImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/make_super_blobs.ijm"><img src="images/language_macro.png" height="20"/></a> [make_super_blobs.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/make_super_blobs.ijm)  
 

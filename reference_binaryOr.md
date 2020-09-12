@@ -6,6 +6,8 @@ pixels x and y with the binary OR operator |.
 
 All pixel values except 0 in the input images are interpreted as 1.<pre>f(x, y) = x | y</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### binaryOr is often followed by
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 

@@ -5,6 +5,8 @@ Takes a label map, determines which labels touch and replaces every label with t
 
 
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label),  Visualisation, [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_touchingNeighborCountMap(Image input, Image destination);

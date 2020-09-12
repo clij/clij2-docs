@@ -7,6 +7,8 @@ Transforms a labelmap of spots (single pixels with values 1, 2, ..., n for n spo
 from connected components analysis in an image where every column contains d 
 pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### labelledSpotsToPointList often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_labelSpots">labelSpots</a> (7)

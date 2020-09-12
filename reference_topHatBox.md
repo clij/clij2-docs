@@ -3,6 +3,8 @@
 
 Applies a top-hat filter for background subtraction to the input image.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
+
 ### topHatBox often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (2)
 * <a href="reference_rotate3D">rotate3D</a> (2)

@@ -1,8 +1,9 @@
 ## pointlistToLabelledSpots
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of 
-size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
+Takes a pointlist with dimensions n times d with n point coordinates in d dimensions and labels corresponding pixels.
+
+Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### pointlistToLabelledSpots often follows after
 * <a href="reference_create2D">create2D</a> (2)

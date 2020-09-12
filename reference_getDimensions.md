@@ -3,6 +3,8 @@
 
 Reads out the size of an image [stack] and writes it to the variables 'width', 'height' and 'depth'.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### getDimensions often follows after
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
 
@@ -10,7 +12,8 @@ Reads out the size of an image [stack] and writes it to the variables 'width', '
 ### getDimensions is often followed by
 * <a href="reference_crop2D">crop2D</a> (3)
 * <a href="reference_create3D">create3D</a> (15)
-* <a href="reference_create2D">create2D</a> (12)
+* <a href="reference_create2D">create2D</a> (15)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -31,6 +34,7 @@ Ext.CLIJ2_getDimensions(Image source, Number width, Number height, Number depth)
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/customOperation.ijm"><img src="images/language_macro.png" height="20"/></a> [customOperation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/customOperation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [image_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm)  

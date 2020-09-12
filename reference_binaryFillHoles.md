@@ -3,8 +3,15 @@
 
 Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### binaryFillHoles often follows after
+* <a href="reference_closingBox">closingBox</a> (2)
 * <a href="reference_threshold">threshold</a> (2)
+
+
+### binaryFillHoles is often followed by
+* <a href="reference_openingBox">openingBox</a> (2)
 
 
 ### Usage in ImageJ macro

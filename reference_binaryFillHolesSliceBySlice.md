@@ -3,6 +3,8 @@
 
 Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image stack slice by slice.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_binaryFillHolesSliceBySlice(Image source, Image destination);

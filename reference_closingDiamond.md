@@ -3,6 +3,8 @@
 
 Apply a binary closing to the input image by calling n dilations and n erosions subsequently.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_closingDiamond(Image input, Image destination, Number number_of_dilations_and_erotions);

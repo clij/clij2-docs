@@ -3,6 +3,8 @@
 
 Determines the squared difference pixel by pixel between two images.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_squaredDifference(Image source1, Image source2, Image destination);

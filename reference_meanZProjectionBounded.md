@@ -3,6 +3,8 @@
 
 Determines the mean average intensity projection of an image along Z within a given z range.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanZProjectionBounded(Image source, Image destination_mean, Number min_z, Number max_z);

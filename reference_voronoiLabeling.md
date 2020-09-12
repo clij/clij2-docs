@@ -5,6 +5,8 @@ Takes a binary image, labels connected components and dilates the regions using 
 
 The resulting label map is written to the output.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### voronoiLabeling often follows after
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 

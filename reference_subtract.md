@@ -5,6 +5,8 @@ Subtracts one image X from another image Y pixel wise.
 
 <pre>f(x, y) = x - y</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_subtract(Image subtrahend, Image minuend, Image destination);

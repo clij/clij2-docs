@@ -5,6 +5,8 @@ Takes an image and assumes its grey values are integers. It builds up a grey-lev
 
 Major parts of this operation run on the CPU.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateIntegerGreyValueCooccurrenceCountMatrixHalfDiamond(Image integer_image, Image grey_value_cooccurrence_matrix_destination);

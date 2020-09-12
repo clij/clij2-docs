@@ -6,6 +6,8 @@ Computes the local maximum of a pixels ellipsoidal neighborhood.
 The ellipses size is specified by 
 its half-width and half-height (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### maximum2DSphere often follows after
 * <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
 

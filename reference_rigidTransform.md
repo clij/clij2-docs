@@ -3,6 +3,8 @@
 
 Applies a rigid transform using linear interpolation to an image stack.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_rigidTransform(Image input, Image destination, Number translation_x, Number translation_y, Number translation_z, Number rotation_angle_x, Number rotation_angle_y, Number rotation_angle_z);

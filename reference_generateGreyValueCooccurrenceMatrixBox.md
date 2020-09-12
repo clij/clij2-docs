@@ -8,6 +8,8 @@ Pixels with intensity below minimum of the given range are considered having the
 Pixels with intensity above the maximimum of the given range are treated analogously.
 The resulting co-occurrence matrix contains probability values between 0 and 1.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateGreyValueCooccurrenceMatrixBox(Image integer_image, Image grey_value_cooccurrence_matrix_destination, Number min_grey_value, Number max_grey_value);

@@ -3,6 +3,8 @@
 
 Apply a binary opening to the input image by calling n erosions and n dilations subsequenntly.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_openingDiamond(Image input, Image destination, Number number_of_erotions_and_dilations);

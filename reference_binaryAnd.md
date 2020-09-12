@@ -7,6 +7,8 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 <pre>f(x, y) = x & y</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### binaryAnd often follows after
 * <a href="reference_notEqualConstant">notEqualConstant</a> (2)
 * <a href="reference_equal">equal</a> (2)

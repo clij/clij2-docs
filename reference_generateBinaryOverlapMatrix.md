@@ -5,6 +5,8 @@ Takes two labelmaps with n and m labels and generates a (n+1)*(m+1) matrix where
 
 For example, if labels 3 in labelmap1 and 4 in labelmap2 are touching then the pixel (3,4) in the matrix will be set to 1.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### generateBinaryOverlapMatrix often follows after
 * <a href="reference_pushString">pushString</a> (3)
 

@@ -7,6 +7,8 @@ Thus, each slice is processed separately.
 The median method is applied. Thus, each pixel value in the destination image equals to the median of
 four corresponding pixels in the source image.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_downsampleSliceBySliceHalfMedian(Image source, Image destination);

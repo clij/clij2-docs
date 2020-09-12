@@ -8,6 +8,8 @@ The ellipses size is specified by its half-width and half-height (radius).
 
 This filter is applied slice by slice in 2D.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);

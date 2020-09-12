@@ -3,6 +3,8 @@
 
 Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### neighborsOfNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
 

@@ -19,6 +19,8 @@ Supported transforms:
 Example transform:
 transform = "center scale=2 rotate=45 -center";
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### affineTransform2D often follows after
 * <a href="reference_copySlice">copySlice</a> (3)
 

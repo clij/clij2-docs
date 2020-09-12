@@ -5,6 +5,8 @@ Determines if an image A and a constant b are equal.
 
 <pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### equalConstant often follows after
 * <a href="reference_sumYProjection">sumYProjection</a> (2)
 

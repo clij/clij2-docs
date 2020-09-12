@@ -8,6 +8,8 @@ All pixel values except 0 in the input image are interpreted as 1.
 
 <pre>f(x) = !x</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### binaryNot often follows after
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (2)
 * <a href="reference_thresholdDefault">thresholdDefault</a> (2)

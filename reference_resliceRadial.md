@@ -6,6 +6,8 @@ Computes a radial projection of an image stack.
 Starting point for the line is the given point in any 
 X/Y-plane of a given input image stack. Furthermore, radius of the resulting projection must be given and scaling factors in X and Y in case pixels are not isotropic.This operation is similar to ImageJs 'Radial Reslice' method but offers less flexibility.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### resliceRadial often follows after
 * <a href="reference_resliceRadial">resliceRadial</a> (2)
 * <a href="reference_topHatBox">topHatBox</a> (2)

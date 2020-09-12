@@ -7,6 +7,8 @@ For that, X and Y axis of an image stack
 are flipped. This operation is similar to ImageJs 'Reslice [/]' method but offers less flexibility 
 such as interpolation.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_rotateClockwise(Image source, Image destination);

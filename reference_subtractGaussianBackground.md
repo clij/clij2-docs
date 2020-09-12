@@ -3,6 +3,8 @@
 
 Applies Gaussian blur to the input image and subtracts the result from the original image.
 
+Categories: Background, [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_subtractGaussianBackground(Image input, Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);

@@ -5,6 +5,8 @@ Determines the sum of all pixels in a given image.
 
 It will be stored in the variable sum_of_all_pixels.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_getSumOfAllPixels(Image source, Number sum_of_all_pixels);

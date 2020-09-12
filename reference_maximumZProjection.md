@@ -3,6 +3,8 @@
 
 Determines the maximum intensity projection of an image along Z.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### maximumZProjection often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)

@@ -5,6 +5,8 @@ Multiplies all pixels value x in a given image X with a constant scalar s from a
 
 <pre>f(x, s) = x * s</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_multiplyImageStackWithScalars(Image source, Image destination, Array scalars);

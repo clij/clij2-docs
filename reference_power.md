@@ -5,6 +5,8 @@ Computes all pixels value x to the power of a given exponent a.
 
 <pre>f(x, a) = x ^ a</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_power(Image source, Image destination, Number exponent);

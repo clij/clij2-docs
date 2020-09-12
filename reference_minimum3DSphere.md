@@ -6,6 +6,8 @@ Computes the local minimum of a pixels spherical neighborhood.
 The spheres size is specified by 
 its half-width, half-height and half-depth (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### minimum3DSphere often follows after
 * <a href="reference_crop3D">crop3D</a> (2)
 

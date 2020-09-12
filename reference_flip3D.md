@@ -3,6 +3,8 @@
 
 Flips an image in X, Y and/or Z direction depending on boolean flags.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_flip3D(Image source, Image destination, Boolean flipX, Boolean flipY, Boolean flipZ);

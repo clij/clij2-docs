@@ -278,7 +278,7 @@ Applies a non-local means filter using a box neighborhood with a Gaussian weight
 
 ## P
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_particleImageVelocimetry">particleImageVelocimetry (Experimental)</a>  
-For every pixel in source image 1, determine the pixel with the most similar intensity in   the local neighborhood with a given radius in source image 2. Write the distance in  X and Y in the two corresponding destination images.
+For every pixel in source image 1, determine the pixel with the most similar intensity in   the local neighborhood with a given radius in source image 2. Write the distance in  X, Y and Z in the three corresponding destination images.
 
 <a name="S"></a>
 

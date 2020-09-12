@@ -3,8 +3,15 @@
 
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
+### countTouchingNeighbors often follows after
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+
+
 ### countTouchingNeighbors is often followed by
 * <a href="reference_release">release</a> (6)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### Usage in ImageJ macro

@@ -5,6 +5,8 @@ Copies an image.
 
 <pre>f(x) = x</pre>
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### copy often follows after
 * <a href="reference_drawBox">drawBox</a> (2)
 

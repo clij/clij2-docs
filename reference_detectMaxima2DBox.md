@@ -6,6 +6,8 @@ Detects local maxima in a given square/cubic neighborhood.
 Pixels in the resulting image are set to 1 if there is no other pixel in a given radius which has a 
 higher intensity, and to 0 otherwise.
 
+Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### detectMaxima2DBox often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (6)
 

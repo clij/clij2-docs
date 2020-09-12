@@ -5,6 +5,8 @@ Takes a labelled image and dilates the labels using a octagon shape until they t
 
 The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### labelVoronoiOctagon often follows after
 * <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (5)
 * <a href="reference_labelSpots">labelSpots</a> (2)

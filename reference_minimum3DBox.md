@@ -6,6 +6,8 @@ Computes the local minimum of a pixels cube neighborhood.
 The cubes size is specified by 
 its half-width, half-height and half-depth (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### minimum3DBox is often followed by
 * <a href="reference_maximum3DBox">maximum3DBox</a> (2)
 

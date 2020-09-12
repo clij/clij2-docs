@@ -3,11 +3,16 @@
 
 Performs connected components analysis inspecting the box neighborhood of every pixel to a binary image and generates a label map.
 
+Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### connectedComponentsLabelingBox often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 * <a href="reference_minimum2DBox">minimum2DBox</a> (2)
 * <a href="reference_binaryNot">binaryNot</a> (3)
+* <a href="reference_openingBox">openingBox</a> (2)
+* <a href="reference_closingBox">closingBox</a> (2)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (4)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
 
 
 ### connectedComponentsLabelingBox is often followed by
@@ -15,6 +20,7 @@ Performs connected components analysis inspecting the box neighborhood of every 
 * <a href="reference_replaceIntensities">replaceIntensities</a> (3)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
+* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (2)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (2)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
 

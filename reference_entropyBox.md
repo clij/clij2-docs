@@ -5,6 +5,8 @@ By Pit Kludig and Robert Haase
 
 Determines the local entropy in a box with a given radius around every pixel.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_entropyBox(Image input, Image destination, Number radiusX, number radiusY, Number radiusZ);

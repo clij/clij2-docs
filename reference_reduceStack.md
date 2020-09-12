@@ -5,6 +5,8 @@ Reduces the number of slices in a stack by a given factor.
 With the offset you have control which slices stay: 
 * With factor 3 and offset 0, slices 0, 3, 6,... are kept. * With factor 4 and offset 1, slices 1, 5, 9,... are kept.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### reduceStack is often followed by
 * <a href="reference_combineHorizontally">combineHorizontally</a> (5)
 

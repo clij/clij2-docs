@@ -7,6 +7,8 @@ Hand over a binary flag list vector starting with a flag for the background, con
 
 For example if you pass 0,1,0,0,1: Labels 1 and 4 will be removed (those with a 1 in the vector will be excluded). Labels 2 and 3 will be kept and renumbered to 1 and 2.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### excludeLabels often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (3)

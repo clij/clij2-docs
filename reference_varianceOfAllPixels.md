@@ -6,6 +6,8 @@ Determines the variance of all pixels in an image.
 The value will be stored in a new row of ImageJs
 Results table in the column 'Variance'.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_varianceOfAllPixels(Image source);

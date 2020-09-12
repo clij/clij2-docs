@@ -5,6 +5,8 @@ Generates a mesh from a distance matric and a list of point coordinates.
 
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a distance matrix of size n*n to draw lines from all points to points if the corresponding pixel in the distance matrix is smaller than a given distance threshold.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
+
 ### distanceMatrixToMesh often follows after
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)

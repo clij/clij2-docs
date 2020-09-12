@@ -6,6 +6,8 @@ Determines maximum regions in a Gaussian blurred version of the original image.
 The regions do not not necessarily have to be single pixels. 
 It is also possible to invert the image before determining the maxima.
 
+Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_detectAndLabelMaxima(Image input, Image destination, Number sigma_x, Numer sigma_y, Number sigma_z, Boolean invert);

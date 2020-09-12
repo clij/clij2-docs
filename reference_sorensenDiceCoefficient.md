@@ -8,6 +8,8 @@ The Sorensen-Dice coefficient is saved in the colum 'Sorensen_Dice_coefficient'.
 Note that the Sorensen-Dice coefficient s can be calculated from the Jaccard index j using this formula:
 <pre>s = f(j) = 2 j / (j + 1)</pre>
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_sorensenDiceCoefficient(Image source1, Image source2);

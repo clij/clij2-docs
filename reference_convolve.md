@@ -5,6 +5,8 @@ Convolve the image with a given kernel image.
 
 It is recommended that the kernel image has an odd size in X, Y and Z.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_convolve(Image source, Image convolution_kernel, Image destination);

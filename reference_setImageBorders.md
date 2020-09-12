@@ -3,6 +3,8 @@
 
 Sets all pixel values at the image border to a given value.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setImageBorders(Image destination, Number value);

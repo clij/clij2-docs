@@ -5,6 +5,8 @@ Deforms an image according to distances provided in the given vector images.
 
  It is recommended to use 32-bit images for input, output and vector images. 
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ_applyVectorfield(Image source, Image vectorX, Image vectorY, Image destination);

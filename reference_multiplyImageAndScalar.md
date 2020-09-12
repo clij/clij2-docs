@@ -5,6 +5,8 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 
 <pre>f(x, s) = x * s</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### multiplyImageAndScalar often follows after
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
 * <a href="reference_invert">invert</a> (2)

@@ -8,6 +8,8 @@ the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### rotate2D is often followed by
 * <a href="reference_copySlice">copySlice</a> (3)
 

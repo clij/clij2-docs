@@ -6,6 +6,8 @@ was above of equal to the pixel value m in mask image M.
 
 <pre>f(x) = (1 if (x >=  m)); (0 otherwise)</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_localThreshold(Image source, Image localThreshold, Image destination);

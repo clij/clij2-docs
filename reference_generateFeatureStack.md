@@ -19,6 +19,8 @@ Use sigma=0 to apply a filter to the original image. Feature definitions are not
 
 Example: "original gaussianBlur=1 gaussianBlur=5 laplacianOfGaussian=1 laplacianOfGaussian=7 entropy=3"
 
+Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), Machine Learning
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateFeatureStack(Image input, Image feature_stack_destination, String feature_definitions);

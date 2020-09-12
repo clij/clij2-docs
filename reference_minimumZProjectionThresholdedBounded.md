@@ -3,6 +3,8 @@
 
 Determines the minimum intensity projection of all pixels in an image above a given threshold along Z within a given z range.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumZProjectionThresholdedBounded(Image source, Image destination_min, Number min_z, Number max_z);

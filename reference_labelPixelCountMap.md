@@ -5,6 +5,8 @@ Takes a label map, determines the number of pixels per label and replaces every 
 
 This results in a parametric image expressing area or volume.
 
+Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelPixelCountMap(Image input, Image destination);

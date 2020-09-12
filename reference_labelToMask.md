@@ -5,6 +5,8 @@ Masks a single label in a label map.
 
 Sets all pixels in the target image to 1, where the given label index was present in the label map. Other pixels are set to 0.
 
+Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_labelToMask(Image label_map_source, Image mask_destination, Number label_index);

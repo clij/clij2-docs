@@ -4,6 +4,8 @@
 Flippes Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method but
 offers less flexibility such as interpolation.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### resliceTop often follows after
 * <a href="reference_topHatBox">topHatBox</a> (3)
 * <a href="reference_resample">resample</a> (2)

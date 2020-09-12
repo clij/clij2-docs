@@ -5,6 +5,8 @@ By Ruth Whelan-Jeans, Robert Haase
 
 Convolve the image with the Sobel kernel.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_sobel(Image source, Image destination);

@@ -3,6 +3,8 @@
 
 Pastes an image into another image at a given position.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_paste3D(Image source, Image destination, Number destinationX, Number destinationY, Number destinationZ);

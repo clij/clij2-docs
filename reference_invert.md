@@ -10,6 +10,8 @@ It is recommended to convert images to
 
 For binary images, use binaryNot.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### invert often follows after
 * <a href="reference_maximumImages">maximumImages</a> (2)
 

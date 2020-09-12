@@ -5,6 +5,8 @@ Fills an image or image stack with uniformly distributed random numbers between 
 
 Recommendation: For the seed, use getTime().
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setRandom(Image source, Number minimumValue, Number maximumValue, Number seed);

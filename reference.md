@@ -9,7 +9,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 
 
-__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), [Matrices](https://clij.github.io/clij2-docs/reference__matrix), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Neighbors](https://clij.github.io/clij2-docs/reference__neighbor), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 <a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>,<a href="#F">\[F\]</a>,<a href="#G">\[G\]</a>,<a href="#H">\[H\]</a>,<a href="#I">\[I\]</a>,<a href="#J">\[J\]</a>, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>,<a href="#O">\[O\]</a>,<a href="#P">\[P\]</a>, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>,<a href="#U">\[U\]</a>,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
 
@@ -425,7 +425,7 @@ Returns an image with pixel values most distant from 0:
 Determine maxima with a given tolerance to surrounding maxima and background and label them.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_findMaxima">findMaxima (Experimental)</a>  
-
+Finds and labels local maxima with neighboring maxima and background above a given tolerance threshold.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip2D">flip2D</a>  
 Flips an image in X and/or Y direction depending on boolean flags.
@@ -542,7 +542,7 @@ Determines if two images A and B greater or equal pixel wise.
 Determines if two images A and B greater or equal pixel wise. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greyLevelAtttributeFiltering">greyLevelAtttributeFiltering (Experimental)</a>  
-Todo.
+Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras. This plugin will remove components in a grayscale image based on user-specified area (for 2D: pixels) or volume (3D: voxels). For each gray level specified in the number of bins, binary images will be generated, followed by exclusion of objects (labels) below a minimum pixel count. All the binary images for each gray level are combined to form the final image. The output is a grayscale image, where bright objects below pixel count are removed. It is recommended that low values be used for number of bins, especially for large 3D images, or it may take long time.
 
 <a name="H"></a>
 
@@ -797,6 +797,9 @@ Takes a touch matrix and a vector of values to determine the median value among 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjection">medianZProjection</a>  
 Determines the median intensity projection of an image stack along Z.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mergeTouchingLabels">mergeTouchingLabels (Experimental)</a>  
+
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimum2DBox">minimum2DBox</a>  
 Computes the local minimum of a pixels rectangular neighborhood. 
 
@@ -922,7 +925,7 @@ Organises windows on screen.
 Apply a binary watershed to a binary image and introduce black pixels between objects.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_particleImageVelocimetry">particleImageVelocimetry (Experimental)</a>  
-For every pixel in source image 1, determine the pixel with the most similar intensity in   the local neighborhood with a given radius in source image 2. Write the distance in  X and Y in the two corresponding destination images.
+For every pixel in source image 1, determine the pixel with the most similar intensity in   the local neighborhood with a given radius in source image 2. Write the distance in  X, Y and Z in the three corresponding destination images.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_particleImageVelocimetryTimelapse">particleImageVelocimetryTimelapse (Experimental)</a>  
 Run particle image velocimetry on a 2D+t timelapse.
@@ -937,7 +940,7 @@ Pastes an image into another image at a given position.
 Meshes all points in a given point list which are indiced in a corresponding index list.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a>  
-Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of  size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
+Takes a pointlist with dimensions n times d with n point coordinates in d dimensions and labels corresponding pixels.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_popMetaData">popMetaData (Experimental)</a>  
 Takes meta data from a stack and assigns it to the current image. The stack implements the Last-In-First-Out (LIFO) principle.

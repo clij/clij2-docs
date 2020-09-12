@@ -8,6 +8,8 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 
 This filter is applied slice by slice in 2D.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_erodeSphereSliceBySlice(Image source, Image destination);

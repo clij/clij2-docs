@@ -3,6 +3,8 @@
 
 Determines the mean average intensity projection of an image along X.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanXProjection(Image source, Image destination);

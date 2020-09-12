@@ -5,6 +5,8 @@ Computes the minimum of a pair of pixel values x, y from two given images X and 
 
 <pre>f(x, y) = min(x, y)</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumImages(Image source1, Image source2, Image destination);

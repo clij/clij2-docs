@@ -5,6 +5,8 @@ Counts non-zero pixels in a sphere around every pixel slice by slice in a stack.
 
  It puts the resulting number in the destination image stack.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_countNonZeroPixelsSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);

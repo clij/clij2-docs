@@ -4,6 +4,8 @@
 Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point
  and replaces every label with the minimum distance of touching labels.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_localMinimumAverageDistanceOfNClosestNeighborsMap(Image input, Image destination, Number n);

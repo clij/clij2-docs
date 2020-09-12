@@ -7,6 +7,8 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 <pre>f(x, y) = x & y</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryIntersection(Image operand1, Image operand2, Image destination);

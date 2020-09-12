@@ -5,6 +5,8 @@ Computes the maximum of a constant scalar s and each pixel value x in a given im
 
 <pre>f(x, s) = max(x, s)</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### maximumImageAndScalar often follows after
 * <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (2)
 

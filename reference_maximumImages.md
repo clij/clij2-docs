@@ -5,6 +5,8 @@ Computes the maximum of a pair of pixel values x, y from two given images X and 
 
 <pre>f(x, y) = max(x, y)</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### maximumImages often follows after
 * <a href="reference_resample">resample</a> (3)
 

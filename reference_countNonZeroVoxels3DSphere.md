@@ -5,6 +5,8 @@ Counts non-zero voxels in a sphere around every voxel.
 
 Put the number in the result image.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_countNonZeroVoxels3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);

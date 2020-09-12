@@ -5,6 +5,8 @@ Determines if two images A and B greater pixel wise.
 
 f(a, b) = 1 if a > b; 0 otherwise. 
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### greaterConstant often follows after
 * <a href="reference_maximumXProjection">maximumXProjection</a> (2)
 

@@ -3,6 +3,8 @@
 
 Determines the maximum intensity in an image, but only in pixels which have non-zero values in another mask image.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maximumOfMaskedPixels(Image source, Image mask);

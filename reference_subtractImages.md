@@ -5,6 +5,8 @@ Subtracts one image X from another image Y pixel wise.
 
 <pre>f(x, y) = x - y</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### subtractImages often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)

@@ -3,6 +3,8 @@
 
 Determines the mean average intensity projection of an image along Z but only for pixels above a given threshold.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_meanZProjectionAboveThreshold(Image source, Image destination, Number threshold);

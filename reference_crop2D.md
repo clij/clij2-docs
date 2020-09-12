@@ -5,6 +5,8 @@ Crops a given rectangle out of a given image.
 
 Note: If the destination image pre-exists already, it will be overwritten and keep it's dimensions.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### crop2D often follows after
 * <a href="reference_getDimensions">getDimensions</a> (3)
 * <a href="reference_paste2D">paste2D</a> (2)

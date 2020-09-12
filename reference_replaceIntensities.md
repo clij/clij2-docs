@@ -10,6 +10,8 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
  * All pixels with value 3 get value 2
 
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### replaceIntensities often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (9)

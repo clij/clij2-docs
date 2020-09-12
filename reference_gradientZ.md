@@ -6,6 +6,8 @@ Computes the gradient of gray values along Z.
 Assuming a, b and c are three adjacent
  pixels in Z direction. In the target image will be saved as: <pre>b' = c - a;</pre>
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_gradientZ(Image source, Image destination);

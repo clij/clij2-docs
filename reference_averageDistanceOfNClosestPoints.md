@@ -5,6 +5,8 @@ Determines the average of the n closest points for every point in a distance mat
 
 This corresponds to the average of the n minimum values (rows) for each column of the distance matrix.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### averageDistanceOfNClosestPoints is often followed by
 * <a href="reference_release">release</a> (3)
 

@@ -9,6 +9,8 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 This method is comparable to the 'Dilate' menu in ImageJ in case it is applied to a 2D image. The only
 difference is that the output image contains values 0 and 1 instead of 0 and 255.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### dilateBox often follows after
 * <a href="reference_erodeBox">erodeBox</a> (3)
 * <a href="reference_dilateBox">dilateBox</a> (2)

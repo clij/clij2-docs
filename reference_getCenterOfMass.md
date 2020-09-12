@@ -6,6 +6,8 @@ Determines the center of mass of an image or image stack.
  It writes the result in the variables
  centerOfMassX, centerOfMassY and centerOfMassZ.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### getCenterOfMass often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 

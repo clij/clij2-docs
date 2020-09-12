@@ -7,6 +7,8 @@ subsequent labels will be relabelled.
 Thus, afterwards number of labels and maximum label index are equal.
 This operation is mostly performed on the CPU.
 
+Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_closeIndexGapsInLabelMap(Image labeling_input, Image labeling_destination);

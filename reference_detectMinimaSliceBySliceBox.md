@@ -6,6 +6,8 @@ Detects local minima in a given square neighborhood of an input image stack.
 The input image stack is processed slice by slice. Pixels in the resulting image are set to 1 if 
 there is no other pixel in a given radius which has a lower intensity, and to 0 otherwise.
 
+Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_detectMinimaSliceBySliceBox(Image source, Image destination, Number radiusX, Number RadiusY);

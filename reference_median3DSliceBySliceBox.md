@@ -8,6 +8,8 @@ image stack. The rectangle is specified by its half-width and half-height (radiu
 
 For technical reasons, the area of the rectangle must have less than 1000 pixels.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_median3DSliceBySliceBox(Image source, Image destination, Number radiusX, Number radiusY);

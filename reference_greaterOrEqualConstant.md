@@ -5,6 +5,8 @@ Determines if two images A and B greater or equal pixel wise.
 
 f(a, b) = 1 if a >= b; 0 otherwise. 
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### greaterOrEqualConstant often follows after
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)

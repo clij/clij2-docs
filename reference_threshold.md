@@ -10,6 +10,8 @@ f(x,t) = (1 if (x >= t); (0 otherwise))
 
 This plugin is comparable to setting a raw threshold in ImageJ and using the 'Convert to Mask' menu.
 
+Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### threshold often follows after
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (4)
 * <a href="reference_mean2DBox">mean2DBox</a> (2)

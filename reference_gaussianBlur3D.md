@@ -7,6 +7,8 @@ Thus, the filterkernel can have non-isotropic shape.
 
 The implementation is done separable. In case a sigma equals zero, the direction is not blurred.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### gaussianBlur3D is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (2)
 * <a href="reference_thresholdDefault">thresholdDefault</a> (2)

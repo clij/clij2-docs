@@ -6,6 +6,8 @@ Computes a binary image with pixel values 0 and 1 containing the binary dilation
 The dilation takes the von-Neumann-neighborhood (4 pixels in 2D and 6 pixels in 3d) into account.
 The pixels in the input image with pixel value not equal to 0 will be interpreted as 1.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_dilateSphere(Image source, Image destination);

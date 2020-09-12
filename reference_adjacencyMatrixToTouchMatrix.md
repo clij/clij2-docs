@@ -3,6 +3,8 @@
 
 Converts a adjacency matrix in a touch matrix
 
+Categories: [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_adjacencyMatrixToTouchMatrix(Image adjacency_matrix, Image touch_matrix);

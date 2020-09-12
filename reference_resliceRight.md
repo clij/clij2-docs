@@ -4,6 +4,8 @@
 Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 'Reslice [/]' method 
  but offers less flexibility such as interpolation.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_resliceRight(Image source, Image destination);

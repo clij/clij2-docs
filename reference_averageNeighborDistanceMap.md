@@ -5,6 +5,8 @@ Takes a label map, determines which labels touch and replaces every label with t
 
 To determine the distances, the centroid of the labels is determined internally.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_averageNeighborDistanceMap(Image input, Image destination);

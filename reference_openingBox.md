@@ -3,6 +3,16 @@
 
 Apply a binary opening to the input image by calling n erosions and n dilations subsequenntly.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
+### openingBox often follows after
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
+
+
+### openingBox is often followed by
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_openingBox(Image input, Image destination, Number number_of_erotions_and_dilations);

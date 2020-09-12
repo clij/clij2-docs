@@ -3,6 +3,8 @@
 
 Determines the sum intensity projection of an image along Z.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_sumXProjection(Image source, Image destination);

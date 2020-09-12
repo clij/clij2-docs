@@ -3,6 +3,8 @@
 
 Takes a label map (seeds) and an input image with gray values to apply the watershed algorithm and split the image above a given threshold in labels.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_seededWatershed(Image label_map_seeds, Image input, Image label_map_destination, Float threshold);

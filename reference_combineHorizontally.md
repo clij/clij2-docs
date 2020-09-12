@@ -3,6 +3,8 @@
 
 Combines two images or stacks in X.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### combineHorizontally often follows after
 * <a href="reference_reduceStack">reduceStack</a> (5)
 

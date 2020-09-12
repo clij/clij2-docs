@@ -3,6 +3,8 @@
 
 Replaces a specific intensity in an image with a given new value.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### replaceIntensity often follows after
 * <a href="reference_subtractImages">subtractImages</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)

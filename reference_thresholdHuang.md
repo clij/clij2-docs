@@ -6,6 +6,8 @@ By Robert Haase based on work by G. Landini and W. Rasband
 The automatic thresholder utilizes the Huang threshold method implemented in ImageJ using a histogram determined on 
 the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
 
+Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### thresholdHuang often follows after
 * <a href="reference_mean3DBox">mean3DBox</a> (2)
 

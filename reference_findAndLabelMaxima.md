@@ -3,6 +3,8 @@
 
 Determine maxima with a given tolerance to surrounding maxima and background and label them.
 
+Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_findAndLabelMaxima(Image input, Image destination, Number tolerance, Boolean invert);

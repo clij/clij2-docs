@@ -5,6 +5,8 @@ This operation removes labels from a labelmap and renumbers the remaining labels
 
 Hand over a vector of values and a range specifying which labels with which values are eliminated.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_excludeLabelsWithValuesWithinRange(Image values_vector, Image label_map_input, Image label_map_destination, Number minimum_value_range, Number maximum_value_range);

@@ -5,6 +5,8 @@ Checks if all elements of a matrix are different by less than or equal to a give
 
 The result will be put in the results table in column "MatrixEqual" as 1 if yes and 0 otherwise.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_matrixEqual(Image input1, Image input2, Number tolerance);

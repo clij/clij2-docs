@@ -5,6 +5,8 @@ Multiplies all pairs of pixel values x and y from two image X and Y.
 
 <pre>f(x, y) = x * y</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### multiplyImages often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
 * <a href="reference_invert">invert</a> (2)

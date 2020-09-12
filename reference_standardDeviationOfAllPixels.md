@@ -6,6 +6,8 @@ Determines the standard deviation of all pixels in an image.
 The value will be stored in a new row of ImageJs
 Results table in the column 'Standard_deviation'.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_standardDeviationOfAllPixels(Image source);

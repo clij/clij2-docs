@@ -3,6 +3,8 @@
 
 Scales an image with a given factor.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### scale2D is often followed by
 * <a href="reference_copySlice">copySlice</a> (2)
 

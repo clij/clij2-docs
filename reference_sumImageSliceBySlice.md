@@ -3,6 +3,8 @@
 
 Sums all pixels slice by slice and returns them in an array.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_sumImageSliceBySlice(Image source, Image destination);

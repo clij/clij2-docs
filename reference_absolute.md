@@ -5,6 +5,8 @@ Computes the absolute value of every individual pixel x in a given image.
 
 <pre>f(x) = |x| </pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### absolute often follows after
 * <a href="reference_subtractImages">subtractImages</a> (3)
 * <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)

@@ -9,6 +9,8 @@ The implementation is done separable. In case a sigma equals zero, the direction
 
 DEPRECATED: This method is <b>deprecated</b>. Use gaussianBlur2D instead.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_blur(Image source, Image destination, Number sigmaX, Number sigmaY);

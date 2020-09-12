@@ -7,6 +7,8 @@ Computes base e logarithm of all pixels values.
 
 f(x) = log(x)
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_logarithm(Image source, Image destination);

@@ -3,11 +3,11 @@
 
 For every pixel in source image 1, determine the pixel with the most similar intensity in 
  the local neighborhood with a given radius in source image 2. Write the distance in 
-X and Y in the two corresponding destination images.
+X, Y and Z in the three corresponding destination images.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_particleImageVelocimetry(Image source1, Image source2, Image destinationDeltaX, Image destinationDeltaY, Image destinationDeltaZ, Number maxDeltaX, Number maxDeltaY, Number maxDeltaZ, Boolean correctLocalShift);
+Ext.CLIJx_particleImageVelocimetry(Image source1, Image source2, Image destinationDeltaX, Image destinationDeltaY, Image destinationDeltaZ, Number maxDeltaX, Number maxDeltaY, Number maxDeltaZ);
 ```
 
 

@@ -6,6 +6,8 @@ Determines the number of all pixels in a given image which are not equal to 0.
 It will be stored in a new row of ImageJs
 Results table in the column 'CountNonZero'.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_countNonZeroPixels(Image source);

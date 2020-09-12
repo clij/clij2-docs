@@ -5,6 +5,8 @@ Replaces pixel values x with y in case x is zero.
 
 This functionality is comparable to ImageJs image calculator operator 'transparent zero'.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_replacePixelsIfZero(Image input1, Image input2, Image destination);

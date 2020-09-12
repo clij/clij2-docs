@@ -3,6 +3,8 @@
 
 Calculates x to the power of y pixel wise of two images X and Y.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_powerImages(Image input, Image exponent, Image destination);

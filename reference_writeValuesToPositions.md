@@ -5,8 +5,10 @@ Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z]
 
 The value v will be written at position x/y[/z] in the target image.
 
+Category: Visualisation
+
 ### writeValuesToPositions often follows after
-* <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_paste2D">paste2D</a> (3)
 
 
 ### writeValuesToPositions is often followed by
@@ -133,6 +135,12 @@ clij2.release(destination);
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

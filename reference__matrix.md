@@ -9,9 +9,9 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 
 
-__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), [Matrices](https://clij.github.io/clij2-docs/reference__matrix), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Neighbors](https://clij.github.io/clij2-docs/reference__neighbor), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
-<a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>, E, F,<a href="#G">\[G\]</a>, H, I, J, K, L,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>, O,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U, V,<a href="#W">\[W\]</a>, X, Y, Z
+<a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>, E, F,<a href="#G">\[G\]</a>, H, I, J, K, L,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>, O, P, Q, R,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U, V,<a href="#W">\[W\]</a>, X, Y, Z
 
 <a name="A"></a>
 
@@ -102,12 +102,6 @@ Determine the n point indices with shortest distance for all points in a distanc
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborsOfNeighbors">neighborsOfNeighbors</a>  
 Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
-
-<a name="P"></a>
-
-## P
-### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a>  
-Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of  size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
 <a name="S"></a>
 

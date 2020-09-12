@@ -6,6 +6,8 @@ Determines image size (bounding box), area (in pixels/voxels), min, max and mean
 
 This method is executed on the CPU and not on the GPU/OpenCL device.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_statisticsOfImage(Image input);

@@ -3,6 +3,8 @@
 
 Determines the absolute difference pixel by pixel between two images.
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_absoluteDifference(Image source1, Image source2, Image destination);

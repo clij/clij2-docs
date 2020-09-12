@@ -6,7 +6,7 @@ Allocated memory for a new 2D image in the GPU memory.
 BitDepth must be 8 (unsigned byte), 16 (unsigned short) or 32 (float).
 
 ### create2D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (12)
+* <a href="reference_getDimensions">getDimensions</a> (15)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
 
 
@@ -37,6 +37,7 @@ Ext.CLIJ2_create2D(Image destination, Number width, Number height, Number bitDep
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm"><img src="images/language_macro.png" height="20"/></a> [allocateBig2DImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/createImages.ijm"><img src="images/language_macro.png" height="20"/></a> [createImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/createImages.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/customOperation.ijm"><img src="images/language_macro.png" height="20"/></a> [customOperation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/customOperation.ijm)  

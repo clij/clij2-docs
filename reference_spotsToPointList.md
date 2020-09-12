@@ -4,6 +4,8 @@
 Transforms a spots image as resulting from maximum/minimum detection in an image where every column contains d 
 pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### spotsToPointList often follows after
 * <a href="reference_translate2D">translate2D</a> (2)
 * <a href="reference_greaterConstant">greaterConstant</a> (2)

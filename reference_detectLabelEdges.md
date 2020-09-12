@@ -3,6 +3,8 @@
 
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### detectLabelEdges often follows after
 * <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
 

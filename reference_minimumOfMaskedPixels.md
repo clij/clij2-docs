@@ -5,6 +5,8 @@ Determines the minimum intensity in a masked image.
 
 But only in pixels which have non-zero values in another mask image.
 
+Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumOfMaskedPixels(Image source, Image mask);

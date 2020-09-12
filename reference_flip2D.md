@@ -3,6 +3,8 @@
 
 Flips an image in X and/or Y direction depending on boolean flags.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### flip2D often follows after
 * <a href="reference_crop2D">crop2D</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)

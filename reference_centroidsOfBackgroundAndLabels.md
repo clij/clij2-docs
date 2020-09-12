@@ -5,6 +5,16 @@ Determines the centroids of the background and all labels in a label image or im
 
 It writes the resulting  coordinates in a pointlist image. Depending on the dimensionality d of the labelmap and the number  of labels n, the pointlist image will have n*d pixels.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
+### centroidsOfBackgroundAndLabels often follows after
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+
+
+### centroidsOfBackgroundAndLabels is often followed by
+* <a href="reference_paste2D">paste2D</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_centroidsOfBackgroundAndLabels(Image source, Image pointlist_destination);

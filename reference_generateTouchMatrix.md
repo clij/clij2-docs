@@ -5,6 +5,8 @@ Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixe
 
 Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 are touching then the pixel (3,4) in the matrix will be set to 1.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### generateTouchMatrix often follows after
 * <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
@@ -15,6 +17,7 @@ Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 a
 ### generateTouchMatrix is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (2)
 * <a href="reference_release">release</a> (5)
 * <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (3)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)

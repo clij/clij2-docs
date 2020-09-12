@@ -5,6 +5,8 @@ Takes a touch matrix and a vector of values to determine the maximum value among
 
 
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### maximumOfTouchingNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
 * <a href="reference_create3D">create3D</a> (2)

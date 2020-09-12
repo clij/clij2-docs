@@ -8,6 +8,8 @@ The resulting Jaccard index is saved to the results table in the 'Jaccard_Index'
 Note that the Sorensen-Dice coefficient can be calculated from the Jaccard index j using this formula:
 <pre>s = f(j) = 2 j / (j + 1)</pre>
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_jaccardIndex(Image source1, Image source2);

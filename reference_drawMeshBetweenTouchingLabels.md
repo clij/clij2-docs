@@ -5,6 +5,8 @@ Starting from a label map, draw lines between touching neighbors resulting in a 
 
 The end points of the lines correspond to the centroids of the labels. 
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_drawMeshBetweenTouchingLabels(Image input, Image destination);

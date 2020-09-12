@@ -6,6 +6,8 @@ Determines the mean average of all pixels in a given image.
 It will be stored in a new row of ImageJs
 Results table in the column 'Mean'.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanOfAllPixels(Image source);

@@ -5,6 +5,8 @@ Calculates the sum of pairs of pixels x and y of two images X and Y.
 
 <pre>f(x, y) = x + y</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### addImages often follows after
 * <a href="reference_thresholdHuang">thresholdHuang</a> (3)
 

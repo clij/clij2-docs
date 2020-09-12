@@ -5,6 +5,8 @@ Takes an image and a corresponding label map, determines the standard deviation 
 
 This results in a parametric image expressing standard deviation of object intensity.
 
+Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelStandardDeviationIntensityMap(Image input, Image label_map, Image destination);

@@ -8,6 +8,8 @@ image stack. The ellipses size is specified by its half-width and half-height (r
 
 For technical reasons, the area of the ellipse must have less than 1000 pixels.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_median3DSliceBySliceSphere(Image source, Image destination, Number radiusX, Number radiusY);

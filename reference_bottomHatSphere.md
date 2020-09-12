@@ -3,6 +3,8 @@
 
 Applies a bottom-hat filter for background subtraction to the input image.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_bottomHatSphere(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ);

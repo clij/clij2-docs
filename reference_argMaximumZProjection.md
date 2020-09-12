@@ -5,6 +5,8 @@ Determines the maximum projection of an image stack along Z.
 
 Furthermore, another 2D image is generated with pixels containing the z-index where the maximum was found (zero based).
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image destination_arg_max);

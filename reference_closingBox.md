@@ -3,6 +3,13 @@
 
 Apply a binary closing to the input image by calling n dilations and n erosions subsequenntly.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
+### closingBox is often followed by
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_closingBox(Image input, Image destination, Number number_of_dilations_and_erosions);

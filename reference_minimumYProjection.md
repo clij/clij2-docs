@@ -3,6 +3,8 @@
 
 Determines the minimum intensity projection of an image along Y.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### minimumYProjection is often followed by
 * <a href="reference_equal">equal</a> (2)
 * <a href="reference_subtractImages">subtractImages</a> (3)

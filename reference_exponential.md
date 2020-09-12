@@ -7,6 +7,8 @@ Computes base exponential of all pixels values.
 
 f(x) = exp(x)
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_exponential(Image source, Image destination);

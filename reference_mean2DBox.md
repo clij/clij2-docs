@@ -6,6 +6,8 @@ Computes the local mean average of a pixels rectangular neighborhood.
 The rectangles size is specified by 
 its half-width and half-height (radius).
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### mean2DBox often follows after
 * <a href="reference_absolute">absolute</a> (2)
 * <a href="reference_distanceMap">distanceMap</a> (2)

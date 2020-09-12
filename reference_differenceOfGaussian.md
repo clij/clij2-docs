@@ -5,6 +5,8 @@ Applies Gaussian blur to the input image twice with different sigma values resul
 
 It is recommended to apply this operation to images of type Float (32 bit) as results might be negative.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_differenceOfGaussian(Image input, Image destination, Number sigma1x, Number sigma1y, Number sigma2x, Number sigma2y);

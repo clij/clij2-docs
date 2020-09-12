@@ -5,6 +5,8 @@ Subtracts one image X from a scalar s pixel wise.
 
 <pre>f(x, s) = s - x</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### subtractImageFromScalar is often followed by
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 * <a href="reference_topHatBox">topHatBox</a> (2)

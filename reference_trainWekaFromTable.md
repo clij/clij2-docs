@@ -11,6 +11,8 @@ Default values for options are:
 * features = 2
 * maxDepth = 0
 
+Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), Machine Learning
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_trainWekaFromTable(String groundTruthColumnName, String saveModelFilename, Number trees, Number features, Number maxDepth);

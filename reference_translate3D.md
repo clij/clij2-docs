@@ -3,6 +3,8 @@
 
 Translate an image stack in X, Y and Z.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_translate3D(Image source, Image destination, Number translateX, Number translateY, Number translateZ);

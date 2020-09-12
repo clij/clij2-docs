@@ -5,6 +5,8 @@ Takes a label map with n labels and generates a (n+1)*(n+1) matrix where all pix
 
 Major parts of this operation run on the CPU.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### generateTouchCountMatrix is often followed by
 * <a href="reference_release">release</a> (2)
 

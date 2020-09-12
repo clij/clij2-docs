@@ -3,6 +3,8 @@
 
 Takes a touch matrix and a distance matrix to determine the shortest distance of touching neighbors for every object.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image minimum_distancelist_destination);

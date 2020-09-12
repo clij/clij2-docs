@@ -8,6 +8,8 @@ its half-width, half-height and half-depth (radius).
 
 For technical reasons, the volume of the cuboid must contain less than 1000 voxels.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_median3DBox(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);

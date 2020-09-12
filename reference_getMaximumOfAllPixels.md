@@ -5,6 +5,8 @@ Determines the maximum of all pixels in a given image.
 
 It will be stored in the variable maximum_of_all_pixels.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### getMaximumOfAllPixels often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (3)

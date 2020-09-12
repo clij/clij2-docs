@@ -3,6 +3,8 @@
 
 Copies a single slice into a stack a given number of times.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_imageToStack(Image source, Image destination, Number num_slices);

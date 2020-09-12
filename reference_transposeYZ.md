@@ -3,6 +3,8 @@
 
 Transpose Y and Z axes of an image.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_transposeYZ(Image input, Image destination);

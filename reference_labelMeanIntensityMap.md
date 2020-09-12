@@ -5,6 +5,8 @@ Takes an image and a corresponding label map, determines the mean intensity per 
 
 This results in a parametric image expressing mean object intensity.
 
+Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelMeanIntensityMap(Image input, Input label_map, Image destination);

@@ -5,6 +5,8 @@ Takes a touch matrix and a vector of values to determine the mean value among to
 
 
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### meanOfTouchingNeighbors often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)

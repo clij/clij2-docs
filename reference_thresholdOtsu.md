@@ -6,6 +6,8 @@ By Robert Haase based on work by G. Landini and W. Rasband
 The automatic thresholder utilizes the Otsu threshold method implemented in ImageJ using a histogram determined on 
 the GPU to create binary images as similar as possible to ImageJ 'Apply Threshold' method.
 
+Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### thresholdOtsu often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (2)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
@@ -22,7 +24,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 * <a href="reference_binaryXOr">binaryXOr</a> (2)
 * <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
 * <a href="reference_mask">mask</a> (2)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (3)
 
 
 ### Usage in ImageJ macro

@@ -3,6 +3,8 @@
 
 Scales an image with a given factor.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_scale3D(Image source, Image destination, Number scaling_factor_x, Number scaling_factor_y, Number scaling_factor_z,  Boolean scale_to_center);

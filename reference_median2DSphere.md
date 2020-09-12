@@ -8,6 +8,8 @@ its half-width and half-height (radius).
 
 For technical reasons, the area of the ellipse must have less than 1000 pixels.
 
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_median2DSphere(Image source, Image destination, Number radiusX, Number radiusY);

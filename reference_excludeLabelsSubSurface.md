@@ -5,6 +5,8 @@ This operation follows a ray from a given position towards a label (or opposite 
 
 If yes, this label is eliminated from the label map.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_excludeLabelsSubSurface(Image pointlist, Image label_map_input, Image label_map_destination, Number centerX, Number centerY, Number centerZ);

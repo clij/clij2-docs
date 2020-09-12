@@ -5,6 +5,8 @@ Takes a touch matrix and a vector of values to determine the median value among 
 
 
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### medianOfTouchingNeighbors often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)

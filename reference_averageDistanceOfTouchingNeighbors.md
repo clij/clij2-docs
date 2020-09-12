@@ -4,6 +4,8 @@
 Takes a touch matrix and a distance matrix to determine the average distance of touching neighbors 
  for every object.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### averageDistanceOfTouchingNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (5)

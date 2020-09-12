@@ -3,6 +3,8 @@
 
 Performs connected components analysis inspecting the diamond neighborhood of every pixel to a binary image and generates a label map.
 
+Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_connectedComponentsLabelingDiamond(Image binary_input, Image labeling_destination);

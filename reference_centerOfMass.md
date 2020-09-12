@@ -6,6 +6,8 @@ Determines the center of mass of an image or image stack.
 It writes the result in the results table
 in the columns MassX, MassY and MassZ.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### centerOfMass often follows after
 * <a href="reference_threshold">threshold</a> (3)
 

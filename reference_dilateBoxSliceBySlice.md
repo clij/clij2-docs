@@ -11,6 +11,8 @@ difference is that the output image contains values 0 and 1 instead of 0 and 255
 
 This filter is applied slice by slice in 2D.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_dilateBoxSliceBySlice(Image source, Image destination);

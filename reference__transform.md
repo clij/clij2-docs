@@ -9,13 +9,16 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 
 
-__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), [Matrices](https://clij.github.io/clij2-docs/reference__matrix), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Neighbors](https://clij.github.io/clij2-docs/reference__neighbor), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+__Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 <a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H,<a href="#I">\[I\]</a>, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>, N, O,<a href="#P">\[P\]</a>, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U, V, W, X, Y, Z
 
 <a name="A"></a>
 
 ## A
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_adjacencyMatrixToTouchMatrix">adjacencyMatrixToTouchMatrix</a>  
+Converts a adjacency matrix in a touch matrix
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform">affineTransform</a>  
 Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
 
@@ -24,6 +27,15 @@ Applies an affine transform to a 2D image. Individual transforms must be separat
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform3D">affineTransform3D</a>  
 Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorField2D">applyVectorField2D</a>  
+Deforms an image according to distances provided in the given vector images.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorField3D">applyVectorField3D</a>  
+Deforms an image stack according to distances provided in the given vector image stacks.
+
+### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorfield">applyVectorfield</a>  
+Deforms an image according to distances provided in the given vector images.
 
 <a name="C"></a>
 
@@ -175,6 +187,9 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 <a name="T"></a>
 
 ## T
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_touchMatrixToAdjacencyMatrix">touchMatrixToAdjacencyMatrix</a>  
+Converts a touch matrix in an adjacency matrix
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_translate2D">translate2D</a>  
 Translate an image stack in X and Y.
 

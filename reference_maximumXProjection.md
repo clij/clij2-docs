@@ -3,6 +3,8 @@
 
 Determines the maximum intensity projection of an image along X.
 
+Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
+
 ### maximumXProjection often follows after
 * <a href="reference_resliceRadial">resliceRadial</a> (4)
 * <a href="reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a> (2)

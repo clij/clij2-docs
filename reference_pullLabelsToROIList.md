@@ -6,6 +6,8 @@ Pulls all labels in a label map as ROIs to a list.
 From ImageJ macro this list is written to the log 
 window. From ImageJ macro conside using pullLabelsToROIManager.
 
+Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pullLabelsToROIList(Image labelmap_input);

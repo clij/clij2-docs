@@ -6,6 +6,8 @@ Take a labelmap and a column from the results table to replace label 1 with the 
 Note that indexing in the table column starts at zero. The results table should contain a line at the beginningrepresenting the background.
 
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement),  Visualisation, [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateParametricImageFromResultsTableColumn(Image label_map, Image parametric_image_destination, String column);

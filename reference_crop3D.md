@@ -5,6 +5,8 @@ Crops a given sub-stack out of a given image stack.
 
 Note: If the destination image pre-exists already, it will be overwritten and keep it's dimensions.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### crop3D often follows after
 * <a href="reference_copySlice">copySlice</a> (2)
 

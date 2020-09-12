@@ -5,6 +5,8 @@ Extend labels with a given radius.
 
 This is actually a local maximum filter applied to a label map which does not overwrite labels.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_extendLabelsWithMaximumRadius(Image input, Image destination, Number radius);

@@ -5,6 +5,8 @@ Calculates the sum of pairs of pixels x and y from images X and Y weighted with 
 
 <pre>f(x, y, a, b) = x * a + y * b</pre>
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_addImagesWeighted(Image summand1, Image summand2, Image destination, Number factor1, Number factor2);

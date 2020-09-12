@@ -4,6 +4,8 @@
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of 
 size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
+
 ### touchMatrixToMesh often follows after
 * <a href="reference_equal">equal</a> (3)
 * <a href="reference_smallerOrEqual">smallerOrEqual</a> (2)

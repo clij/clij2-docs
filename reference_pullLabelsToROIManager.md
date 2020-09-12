@@ -3,6 +3,8 @@
 
 Pulls all labels in a label map as ROIs to the ROI manager.
 
+Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pullLabelsToROIManager(Image labelmap_input);

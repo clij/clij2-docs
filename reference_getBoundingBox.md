@@ -5,6 +5,8 @@ Determines the bounding box of all non-zero pixels in a binary image.
 
 If called from macro, the positions will be stored in the variables 'boundingBoxX', 'boundingBoxY', 'boundingBoxZ', 'boundingBoxWidth', 'boundingBoxHeight' and 'boundingBoxDepth'.In case of 2D images Z and depth will be zero.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### getBoundingBox often follows after
 * <a href="reference_thresholdHuang">thresholdHuang</a> (2)
 

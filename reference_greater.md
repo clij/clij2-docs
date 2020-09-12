@@ -5,6 +5,8 @@ Determines if two images A and B greater pixel wise.
 
 f(a, b) = 1 if a > b; 0 otherwise. 
 
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_greater(Image source1, Image source2, Image destination);

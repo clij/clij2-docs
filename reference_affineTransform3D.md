@@ -29,6 +29,8 @@ Supported transforms:
 Example transform:
 transform = "center scale=2 rotate=45 -center";
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_affineTransform3D(Image source, Image destination, String transform);

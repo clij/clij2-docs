@@ -5,6 +5,8 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 
 The pixels where  the regions touched are afterwards returned as binary image which corresponds to the Voronoi diagram.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### voronoiOctagon often follows after
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (4)
 

@@ -8,6 +8,8 @@ the center, it is rotated around the coordinate origin.
 
 It is recommended to apply the rotation to an isotropic image stack.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### rotate3D often follows after
 * <a href="reference_transposeXY">transposeXY</a> (3)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)

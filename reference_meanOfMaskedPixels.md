@@ -5,6 +5,8 @@ Determines the mean intensity in a masked image.
 
 Only in pixels which have non-zero values in another binary mask image.
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanOfMaskedPixels(Image source, Image mask);

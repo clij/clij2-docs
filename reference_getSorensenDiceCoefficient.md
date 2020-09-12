@@ -8,6 +8,8 @@ The Sorensen-Dice coefficient is saved in the colum 'Sorensen_Dice_coefficient'.
 Note that the Sorensen-Dice coefficient s can be calculated from the Jaccard index j using this formula:
 <pre>s = f(j) = 2 j / (j + 1)</pre>
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### getSorensenDiceCoefficient often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (3)
 

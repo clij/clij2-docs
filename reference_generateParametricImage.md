@@ -6,6 +6,8 @@ Take a labelmap and a vector of values to replace label 1 with the 1st value in 
 Note that indexing in the vector starts at zero. The 0th entry corresponds to background in the label map.Internally this method just calls ReplaceIntensities.
 
 
+Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement),  Visualisation, [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateParametricImage(Image label_map, Image parameter_value_vector, Image parametric_image_destination);

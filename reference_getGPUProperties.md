@@ -4,6 +4,8 @@
 Reads out properties of the currently active GPU and write it in the variables 'GPU_name', 
 'global_memory_in_bytes' and 'OpenCL_Version'.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_getGPUProperties(String GPU_name, Number global_memory_in_bytes, Number OpenCL_version);

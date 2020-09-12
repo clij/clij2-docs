@@ -5,6 +5,8 @@ Apply a binary watershed to a binary image and introduce black pixels between ob
 
 To have control about where objects are cut, the sigma parameters allow to control a Gaussian blur filter applied to the internally used distance map.
 
+Category: [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_parametricWatershed(Image binary_source, Image destination, Number sigma_x, Number sigma_y, Number sigma_z);

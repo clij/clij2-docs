@@ -9,6 +9,8 @@ zero.
 
 <pre>f(x,m) = (x if (m != 0); (0 otherwise))</pre>
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
 ### mask often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_binaryNot">binaryNot</a> (3)

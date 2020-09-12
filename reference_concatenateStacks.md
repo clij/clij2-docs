@@ -3,6 +3,8 @@
 
 Concatenates two stacks in Z.
 
+Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_concatenateStacks(Image stack1, Image stack2, Image destination);

@@ -8,6 +8,8 @@ Instead of a label map, you can also use a binary image as a binary image is a l
 
 This method is executed on the CPU and not on the GPU/OpenCL device.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### statisticsOfBackgroundAndLabelledPixels often follows after
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_copySlice">copySlice</a> (3)

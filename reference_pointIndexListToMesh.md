@@ -3,6 +3,8 @@
 
 Meshes all points in a given point list which are indiced in a corresponding index list.
 
+Categories:  Visualisation, [Graphs](https://clij.github.io/clij2-docs/reference__graph)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, Image mesh_destination);

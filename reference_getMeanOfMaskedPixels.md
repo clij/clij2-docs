@@ -5,6 +5,8 @@ Determines the mean of all pixels in a given image which have non-zero value in 
 
 It will be stored in the variable mean_of_masked_pixels.
 
+Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_getMeanOfMaskedPixels(Image source, Number mean_of_masked_pixels);

@@ -5,6 +5,8 @@ Removes all labels from a label map which touch the edges of the image (in X, Y 
 
 Remaining label elements are renumbered afterwards.
 
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
 ### excludeLabelsOnEdges often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)

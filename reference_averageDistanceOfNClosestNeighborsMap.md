@@ -3,6 +3,8 @@
 
 Takes a label map, determines distances between all centroids and replaces every label with the average distance to the n closest neighboring labels.
 
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_averageDistanceOfNClosestNeighborsMap(Image input, Image destination, Number n);
