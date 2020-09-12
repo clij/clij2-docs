@@ -19,14 +19,12 @@ Ext.CLIJ2_pointlistToLabelledSpots(Image pointlist, Image spots_destination);
 ```
 
 
-
+### Usage in object oriented programming languages
 
 <details>
 
 <summary>
-
-
-### Usage in Java
+Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 import net.haesleinhuepf.clij2.CLIJ2;
@@ -60,9 +58,7 @@ clij2.release(spots_destination);
 <details>
 
 <summary>
-
-
-### Usage in Matlab
+Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
 clij2 = init_clatlab();
@@ -93,9 +89,7 @@ clij2.release(spots_destination);
 <details>
 
 <summary>
-
-
-### Usage in Icy JavaScript
+Icy JavaScript
 </summary>
 <pre class="highlight">// init CLIJ and GPU
 importClass(net.haesleinhuepf.clicy.CLICY);
