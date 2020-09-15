@@ -114,8 +114,6 @@ Starting from the label map of segmented cells, we generate a touch matrix:
 Ext.CLIJ2_generateTouchMatrix(labels, touch_matrix);
 
 // touch matrix:
-// set the first column to zero to ignore all spots touching the background (background label 0, first column)
-Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 show_spots(touch_matrix, "touch matrix");
 /*
 Using element by element multiplication of a distance matrix and a touch matrix, we calculate the length of 
@@ -137,6 +135,10 @@ node 1, label 2 by the average distance to node 2, et cetera.
 */
 
 Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
+// set the first column to zero to ignore all object touching the background
+Ext.CLIJ2_setColumn(distances_vector, 0, 0);
+Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
+
 Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
 run("Fire");

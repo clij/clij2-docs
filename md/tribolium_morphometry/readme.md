@@ -40,9 +40,9 @@ run("Close All");
 show(input, "input");
 </pre>
 <pre>
-> Loading took 226 msec
+> Loading took 262 msec
 </pre>
-<a href="image_1588707820713.png"><img src="image_1588707820713.png" width="224" alt="CLIJ2_maximumZProjection_result209"/></a>
+<a href="image_1600189019564.png"><img src="image_1600189019564.png" width="224" alt="CLIJ2_maximumZProjection_result142"/></a>
 
 ## Spot detection
 After some noise removal/smoothing, we perform a local maximum detection:
@@ -57,7 +57,7 @@ radius = 2.0;
 Ext.<a href="https://clij.github.io/clij2-docs/reference_detectMaximaBox">CLIJ2_detectMaximaBox</a>(blurred, detected_maxima, radius);
 show_spots(detected_maxima, "detected maxima");
 </pre>
-<a href="image_1588707821064.png"><img src="image_1588707821064.png" width="224" alt="CLIJ2_maximumZProjection_result213"/></a>
+<a href="image_1600189019914.png"><img src="image_1600189019914.png" width="224" alt="CLIJ2_maximumZProjection_result146"/></a>
 
 ## Spot curation
 Now, we remove spots with values below a certain intensity and label the remaining spots.
@@ -75,7 +75,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_labelSpots">CLIJ2_label
 show_spots(labelled_spots, "selected, labelled spots");
 run("glasbey_on_dark");
 </pre>
-<a href="image_1588707821371.png"><img src="image_1588707821371.png" width="224" alt="CLIJ2_maximumZProjection_result218"/></a>
+<a href="image_1600189020143.png"><img src="image_1600189020143.png" width="224" alt="CLIJ2_maximumZProjection_result151"/></a>
 
 Let's see how many spots are left:
 
@@ -84,7 +84,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_getMaximumOfAllPixels">
 print("Number of detected spots: " + number_of_spots);
 </pre>
 <pre>
-> Number of detected spots: 1501
+> Number of detected spots: 1131
 </pre>
 
 ## Expanding labelled spots
@@ -104,11 +104,11 @@ for (i = 0; i < number_of_dilations; i++) {
 	}
 }
 </pre>
-<a href="image_1588707821861.png"><img src="image_1588707821861.png" width="224" alt="CLIJ2_maximumZProjection_result221"/></a>
-<a href="image_1588707821932.png"><img src="image_1588707821932.png" width="224" alt="CLIJ2_maximumZProjection_result222"/></a>
-<a href="image_1588707821982.png"><img src="image_1588707821982.png" width="224" alt="CLIJ2_maximumZProjection_result223"/></a>
-<a href="image_1588707822013.png"><img src="image_1588707822013.png" width="224" alt="CLIJ2_maximumZProjection_result224"/></a>
-<a href="image_1588707822081.png"><img src="image_1588707822081.png" width="224" alt="CLIJ2_maximumZProjection_result225"/></a>
+<a href="image_1600189020625.png"><img src="image_1600189020625.png" width="224" alt="CLIJ2_maximumZProjection_result154"/></a>
+<a href="image_1600189020692.png"><img src="image_1600189020692.png" width="224" alt="CLIJ2_maximumZProjection_result155"/></a>
+<a href="image_1600189020749.png"><img src="image_1600189020749.png" width="224" alt="CLIJ2_maximumZProjection_result156"/></a>
+<a href="image_1600189020786.png"><img src="image_1600189020786.png" width="224" alt="CLIJ2_maximumZProjection_result157"/></a>
+<a href="image_1600189020816.png"><img src="image_1600189020816.png" width="224" alt="CLIJ2_maximumZProjection_result158"/></a>
 
 Afterwards, we erode all labels in the map and get a final result of cell segementation.
 
@@ -122,7 +122,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(fl
 show(labels, "cell segmentation");
 run("glasbey_on_dark");
 </pre>
-<a href="image_1588707822223.png"><img src="image_1588707822223.png" width="224" alt="CLIJ2_maximumZProjection_result228"/></a>
+<a href="image_1600189020963.png"><img src="image_1600189020963.png" width="224" alt="CLIJ2_maximumZProjection_result161"/></a>
 
 We also save all labels to disc to use them as starting point in other notebooks, later.
 
@@ -142,7 +142,7 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_labelledSpotsToPointLis
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateDistanceMatrix">CLIJ2_generateDistanceMatrix</a>(pointlist, pointlist, distance_matrix);
 show(distance_matrix, "distance matrix");
 </pre>
-<a href="image_1588707823166.png"><img src="image_1588707823166.png" width="224" alt="CLIJ2_maximumZProjection_result231"/></a>
+<a href="image_1600189021626.png"><img src="image_1600189021626.png" width="224" alt="CLIJ2_maximumZProjection_result164"/></a>
 
 Starting from the label map of segmented cells, we generate a touch matrix:
 
@@ -150,11 +150,9 @@ Starting from the label map of segmented cells, we generate a touch matrix:
 Ext.<a href="https://clij.github.io/clij2-docs/reference_generateTouchMatrix">CLIJ2_generateTouchMatrix</a>(labels, touch_matrix);
 
 // touch matrix:
-// set the first column to zero to ignore all spots touching the background (background label 0, first column)
-Ext.<a href="https://clij.github.io/clij2-docs/reference_setColumn">CLIJ2_setColumn</a>(touch_matrix, 0, 0);
 show_spots(touch_matrix, "touch matrix");
 </pre>
-<a href="image_1588707823913.png"><img src="image_1588707823913.png" width="224" alt="CLIJ2_maximumZProjection_result234"/></a>
+<a href="image_1600189022069.png"><img src="image_1600189022069.png" width="224" alt="CLIJ2_maximumZProjection_result167"/></a>
 
 Using element by element multiplication of a distance matrix and a touch matrix, we calculate the length of 
 each edge. We use this result to draw a mesh with a color gradient of distance (between 0 and 50 micron):
@@ -168,7 +166,7 @@ show(mesh, "distance mesh");
 run("Green Fire Blue");
 setMinAndMax(0, 50);
 </pre>
-<a href="image_1588707824184.png"><img src="image_1588707824184.png" width="224" alt="CLIJ2_maximumZProjection_result237"/></a>
+<a href="image_1600189022302.png"><img src="image_1600189022302.png" width="224" alt="CLIJ2_maximumZProjection_result170"/></a>
 
 ## Quantitative analysis of distance between neighbors
 Next, we determine the averge distance between a node and of all its neighbors. The resulting 
@@ -179,13 +177,17 @@ node 1, label 2 by the average distance to node 2, et cetera.
 <pre class="highlight">
 
 Ext.<a href="https://clij.github.io/clij2-docs/reference_averageDistanceOfTouchingNeighbors">CLIJ2_averageDistanceOfTouchingNeighbors</a>(distance_matrix, touch_matrix, distances_vector);
+// set the first column to zero to ignore all object touching the background
+Ext.<a href="https://clij.github.io/clij2-docs/reference_setColumn">CLIJ2_setColumn</a>(distances_vector, 0, 0);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_setColumn">CLIJ2_setColumn</a>(touch_matrix, 0, 0);
+
 Ext.<a href="https://clij.github.io/clij2-docs/reference_replaceIntensities">CLIJ2_replaceIntensities</a>(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
 run("Fire");
 setMinAndMax(0, 50);
 
 </pre>
-<a href="image_1588707824421.png"><img src="image_1588707824421.png" width="224" alt="CLIJ2_maximumZProjection_result240"/></a>
+<a href="image_1600189022540.png"><img src="image_1600189022540.png" width="224" alt="CLIJ2_maximumZProjection_result173"/></a>
 
 Now, we measure the mean between neighbors and visualize it as above.
 
@@ -196,7 +198,7 @@ show(local_mean_pixel_count_map, "neighbor mean distance map");
 run("Fire");
 setMinAndMax(0, 50);
 </pre>
-<a href="image_1588707824542.png"><img src="image_1588707824542.png" width="224" alt="CLIJ2_maximumZProjection_result243"/></a>
+<a href="image_1600189022647.png"><img src="image_1600189022647.png" width="224" alt="CLIJ2_maximumZProjection_result176"/></a>
 
 We can also use the minimum, median and maximum to measure distances:
 
@@ -226,10 +228,10 @@ run("Fire");
 setMinAndMax(0, 50);
 
 </pre>
-<a href="image_1588707824892.png"><img src="image_1588707824892.png" width="224" alt="CLIJ2_maximumZProjection_result246"/></a>
-<a href="image_1588707824937.png"><img src="image_1588707824937.png" width="224" alt="CLIJ2_maximumZProjection_result249"/></a>
-<a href="image_1588707824984.png"><img src="image_1588707824984.png" width="224" alt="CLIJ2_maximumZProjection_result252"/></a>
-<a href="image_1588707825025.png"><img src="image_1588707825025.png" width="224" alt="CLIJ2_maximumZProjection_result255"/></a>
+<a href="image_1600189023023.png"><img src="image_1600189023023.png" width="224" alt="CLIJ2_maximumZProjection_result179"/></a>
+<a href="image_1600189023060.png"><img src="image_1600189023060.png" width="224" alt="CLIJ2_maximumZProjection_result182"/></a>
+<a href="image_1600189023096.png"><img src="image_1600189023096.png" width="224" alt="CLIJ2_maximumZProjection_result185"/></a>
+<a href="image_1600189023132.png"><img src="image_1600189023132.png" width="224" alt="CLIJ2_maximumZProjection_result188"/></a>
 
 ## Performance evaluation
 Finally, a time measurement. Note that performing this workflow in ImageJ macro markdown is slower, 
@@ -240,7 +242,7 @@ print("The whole workflow took " + (getTime() - time) + " msec");
 
 </pre>
 <pre>
-> The whole workflow took 4885 msec
+> The whole workflow took 4212 msec
 </pre>
 
 ### Detailed time tracing for all operations
@@ -254,182 +256,186 @@ print(time_traces);
 <pre>
 > > timeTracing
 >  > MaximumZProjection
->  < MaximumZProjection           1.7032 ms
+>  < MaximumZProjection           3.0558 ms
 >  > Copy
->  < Copy                         8.6801 ms
+>  < Copy                         8.9253 ms
 >  > GaussianBlur3D
->  < GaussianBlur3D               51.8182 ms
+>  < GaussianBlur3D               43.3455 ms
 >  > DetectMaximaBox
->  < DetectMaximaBox              43.5185 ms
+>   > Mean3DBox
+>   < Mean3DBox                   38.1869 ms
+>  < DetectMaximaBox              55.5149 ms
 >  > Maximum3DBox
 >   > Copy
->   < Copy                        10.3 ms
->  < Maximum3DBox                 38.3688 ms
+>   < Copy                        8.2141 ms
+>  < Maximum3DBox                 37.1333 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.2814 ms
+>  < MaximumZProjection           1.693 ms
 >  > Threshold
 >   > GreaterOrEqualConstant
->   < GreaterOrEqualConstant      7.8369 ms
->  < Threshold                    7.8467 ms
+>   < GreaterOrEqualConstant      8.5761 ms
+>  < Threshold                    8.5929 ms
 >  > Mask
->  < Mask                         8.3492 ms
+>  < Mask                         8.7313 ms
 >  > LabelSpots
 >   > SumXProjection
->   < SumXProjection              3.4635 ms
+>   < SumXProjection              3.9176 ms
 >   > SumYProjection
->   < SumYProjection              0.5872 ms
->  < LabelSpots                   26.8457 ms
+>   < SumYProjection              0.7147 ms
+>  < LabelSpots                   26.6493 ms
 >  > Maximum3DBox
 >   > Copy
->   < Copy                        7.8119 ms
->  < Maximum3DBox                 33.3982 ms
+>   < Copy                        8.6593 ms
+>  < Maximum3DBox                 33.8808 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.5448 ms
+>  < MaximumZProjection           1.1092 ms
 >  > GetMaximumOfAllPixels
 >   > MaximumOfAllPixels
 >    > MaximumZProjection
->    < MaximumZProjection         1.4757 ms
+>    < MaximumZProjection         1.3519 ms
 >    > MaximumYProjection
->    < MaximumYProjection         0.3026 ms
+>    < MaximumYProjection         0.3098 ms
 >    > MaximumXProjection
->    < MaximumXProjection         0.2178 ms
->   < MaximumOfAllPixels          2.5449 ms
->  < GetMaximumOfAllPixels        2.55 ms
+>    < MaximumXProjection         0.2627 ms
+>   < MaximumOfAllPixels          2.6475 ms
+>  < GetMaximumOfAllPixels        2.6851 ms
 >  > Copy
->  < Copy                         7.5383 ms
+>  < Copy                         8.5598 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  15.7007 ms
+>  < OnlyzeroOverwriteMaximumBox  12.406 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.5853 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.8357 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.2408 ms
+>  < MaximumZProjection           2.3949 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.5987 ms
+>  < OnlyzeroOverwriteMaximumBox  7.3341 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.4022 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.766 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.6145 ms
+>  < OnlyzeroOverwriteMaximumBox  5.1185 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.452 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.7779 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.365 ms
+>  < MaximumZProjection           1.3575 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.5722 ms
+>  < OnlyzeroOverwriteMaximumBox  5.5389 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3676 ms
+>  < OnlyzeroOverwriteMaximumDiamond3.5037 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.5509 ms
+>  < OnlyzeroOverwriteMaximumBox  5.1248 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.432 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.6955 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.1657 ms
+>  < MaximumZProjection           1.1574 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.5698 ms
+>  < OnlyzeroOverwriteMaximumBox  7.4495 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3146 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.6414 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.3113 ms
+>  < OnlyzeroOverwriteMaximumBox  4.9034 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3089 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.6411 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.2267 ms
+>  < MaximumZProjection           1.5875 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.3422 ms
+>  < OnlyzeroOverwriteMaximumBox  5.1241 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.4418 ms
+>  < OnlyzeroOverwriteMaximumDiamond4.6976 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  16.6047 ms
+>  < OnlyzeroOverwriteMaximumBox  4.8146 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.2761 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.4198 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.232 ms
+>  < MaximumZProjection           1.1578 ms
 >  > OnlyzeroOverwriteMaximumBox
->  < OnlyzeroOverwriteMaximumBox  5.2219 ms
+>  < OnlyzeroOverwriteMaximumBox  4.9954 ms
 >  > OnlyzeroOverwriteMaximumDiamond
->  < OnlyzeroOverwriteMaximumDiamond3.3501 ms
+>  < OnlyzeroOverwriteMaximumDiamond2.6583 ms
 >  > Threshold
 >   > GreaterOrEqualConstant
->   < GreaterOrEqualConstant      8.0864 ms
->  < Threshold                    8.0961 ms
+>   < GreaterOrEqualConstant      8.351 ms
+>  < Threshold                    8.363 ms
 >  > ErodeBox
->  < ErodeBox                     4.4863 ms
+>  < ErodeBox                     3.4206 ms
 >  > ErodeBox
->  < ErodeBox                     4.41 ms
+>  < ErodeBox                     3.239 ms
 >  > ErodeBox
->  < ErodeBox                     4.2245 ms
+>  < ErodeBox                     3.1064 ms
 >  > ErodeBox
->  < ErodeBox                     4.1547 ms
+>  < ErodeBox                     3.0109 ms
 >  > ErodeBox
->  < ErodeBox                     4.0565 ms
+>  < ErodeBox                     2.9036 ms
 >  > ErodeBox
->  < ErodeBox                     3.9007 ms
+>  < ErodeBox                     3.4393 ms
 >  > ErodeBox
->  < ErodeBox                     3.7941 ms
+>  < ErodeBox                     2.7671 ms
 >  > ErodeBox
->  < ErodeBox                     3.6619 ms
+>  < ErodeBox                     2.6015 ms
 >  > Mask
->  < Mask                         8.0845 ms
+>  < Mask                         8.0967 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.5882 ms
+>  < MaximumZProjection           2.5803 ms
 >  > LabelledSpotsToPointList
->  < LabelledSpotsToPointList     3.3621 ms
+>  < LabelledSpotsToPointList     1.3268 ms
 >  > GenerateDistanceMatrix
->  < GenerateDistanceMatrix       2.1924 ms
+>  < GenerateDistanceMatrix       1.8559 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.5115 ms
+>  < MaximumZProjection           0.9692 ms
 >  > GenerateTouchMatrix
 >   > Set
->   < Set                         1.3066 ms
->  < GenerateTouchMatrix          4.2493 ms
->  > SetColumn
->  < SetColumn                    0.2206 ms
+>   < Set                         0.9494 ms
+>  < GenerateTouchMatrix          2.6988 ms
 >  > Maximum3DBox
->  < Maximum3DBox                 3.0699 ms
+>  < Maximum3DBox                 2.241 ms
 >  > MaximumZProjection
->  < MaximumZProjection           1.0672 ms
+>  < MaximumZProjection           0.761 ms
 >  > MultiplyImages
->  < MultiplyImages               1.1109 ms
+>  < MultiplyImages               0.996 ms
 >  > GetDimensions
->  < GetDimensions                0.003 ms
+>  < GetDimensions                0.0041 ms
 >  > TouchMatrixToMesh
->  < TouchMatrixToMesh            7.6061 ms
+>  < TouchMatrixToMesh            7.7129 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8022 ms
+>  < MaximumZProjection           0.6681 ms
 >  > AverageDistanceOfTouchingNeighbors
->  < AverageDistanceOfTouchingNeighbors1.5887 ms
+>  < AverageDistanceOfTouchingNeighbors1.1876 ms
+>  > SetColumn
+>  < SetColumn                    0.2574 ms
+>  > SetColumn
+>  < SetColumn                    0.2081 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.2983 ms
+>  < ReplaceIntensities           7.4843 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.8792 ms
+>  < MaximumZProjection           0.8063 ms
 >  > MeanOfTouchingNeighbors
->  < MeanOfTouchingNeighbors      1.1366 ms
+>  < MeanOfTouchingNeighbors      0.8213 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.3092 ms
+>  < ReplaceIntensities           7.4974 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9442 ms
+>  < MaximumZProjection           0.7669 ms
 >  > MinimumOfTouchingNeighbors
->  < MinimumOfTouchingNeighbors   1.4375 ms
+>  < MinimumOfTouchingNeighbors   1.218 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.0923 ms
+>  < ReplaceIntensities           8.851 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9013 ms
+>  < MaximumZProjection           0.6656 ms
 >  > MedianOfTouchingNeighbors
->  < MedianOfTouchingNeighbors    1.2121 ms
+>  < MedianOfTouchingNeighbors    0.8338 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.3356 ms
+>  < ReplaceIntensities           7.4886 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9228 ms
+>  < MaximumZProjection           0.698 ms
 >  > MaximumOfTouchingNeighbors
->  < MaximumOfTouchingNeighbors   1.215 ms
+>  < MaximumOfTouchingNeighbors   0.8146 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.5516 ms
+>  < ReplaceIntensities           7.6241 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9592 ms
+>  < MaximumZProjection           0.7418 ms
 >  > ReplaceIntensities
->  < ReplaceIntensities           10.103 ms
+>  < ReplaceIntensities           10.055 ms
 >  > MaximumZProjection
->  < MaximumZProjection           0.9724 ms
-> < timeTracing                   4888.6108 ms
+>  < MaximumZProjection           0.6769 ms
+> < timeTracing                   4217.3629 ms
 >  
 </pre>
 
@@ -444,33 +450,33 @@ Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>(
 </pre>
 <pre>
 > GPU contains 27 images.
-> - CLIJ2_gaussianBlur3D_result210[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@265861ea] 204.8 Mb
-> - CLIJ2_threshold_result226[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@14e7fe1d] 204.8 Mb
-> - CLIJ2_medianOfTouchingNeighbors_result247[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5ef609a9] 5.9 kb
-> - CLIJ2_create3D_result236[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@63c3f95e] 204.8 Mb
-> - CLIJ2_averageDistanceOfTouchingNeighbors_result238[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@67183fd] 5.9 kb
-> - CLIJ2_multiplyImages_result235[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2dcd8238] 8.6 Mb
-> - CLIJ2_replaceIntensities_result239[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@43186d69] 204.8 Mb
-> - CLIJ2_labelSpots_result216[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5d446226] 204.8 Mb
-> - CLIJ2_mask_result227[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3fed755d] 204.8 Mb
-> - CLIJ2_maximumOfTouchingNeighbors_result250[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@35097736] 5.9 kb
-> - CLIJ2_labelledSpotsToPointList_result229[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7414ffed] 17.6 kb
-> - CLIJ2_meanOfTouchingNeighbors_result241[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7467a723] 5.9 kb
-> - CLIJ2_replaceIntensities_result254[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@2074736f] 204.8 Mb
-> - CLIJ2_replaceIntensities_result251[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5e3a0090] 204.8 Mb
-> - CLIJ2_detectMaximaBox_result211[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@d02672d] 204.8 Mb
-> - CLIJ2_threshold_result214[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@44158711] 204.8 Mb
-> - CLIJ2_generateTouchMatrix_result232[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@47796bf7] 8.6 Mb
-> - CLIJ2_onlyzeroOverwriteMaximumBox_result220[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4949cd08] 204.8 Mb
-> - lund1051_resampled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@576ce003] 204.8 Mb
-> - CLIJ2_mask_result215[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3fa9d8f0] 204.8 Mb
-> - CLIJ2_minimumOfTouchingNeighbors_result244[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@33832a21] 5.9 kb
-> - CLIJ2_replaceIntensities_result248[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@342580d4] 204.8 Mb
-> - CLIJ2_standardDeviationOfTouchingNeighbors_result253[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4f902ab] 5.9 kb
-> - CLIJ2_copy_result219[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@75e6349c] 204.8 Mb
-> - CLIJ2_replaceIntensities_result245[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5f1eca23] 204.8 Mb
-> - CLIJ2_replaceIntensities_result242[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@47a5c234] 204.8 Mb
-> - CLIJ2_generateDistanceMatrix_result230[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@b856c31] 8.6 Mb
+> - CLIJ2_threshold_result147[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4aed9ac6] 204.8 Mb
+> - CLIJ2_copy_result152[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@647e2cd9] 204.8 Mb
+> - CLIJ2_mask_result160[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5e1e67e5] 204.8 Mb
+> - CLIJ2_medianOfTouchingNeighbors_result180[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@1bc7d684] 4.4 kb
+> - CLIJ2_onlyzeroOverwriteMaximumBox_result153[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@278423e9] 204.8 Mb
+> - CLIJ2_generateTouchMatrix_result165[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@24ba7420] 4.9 Mb
+> - CLIJ2_mask_result148[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3cdbad4f] 204.8 Mb
+> - CLIJ2_minimumOfTouchingNeighbors_result177[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@75664d18] 4.4 kb
+> - CLIJ2_standardDeviationOfTouchingNeighbors_result186[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5c0e5669] 4.4 kb
+> - CLIJ2_replaceIntensities_result178[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@714abdf4] 204.8 Mb
+> - CLIJ2_generateDistanceMatrix_result163[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@5079f7bb] 4.9 Mb
+> - CLIJ2_replaceIntensities_result175[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@11e8e0d2] 204.8 Mb
+> - CLIJ2_replaceIntensities_result172[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@611620cf] 204.8 Mb
+> - CLIJ2_labelledSpotsToPointList_result162[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@422d7f4] 13.3 kb
+> - CLIJ2_threshold_result159[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7fb9001e] 204.8 Mb
+> - CLIJ2_gaussianBlur3D_result143[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@32ac0328] 204.8 Mb
+> - lund1051_resampled.tif[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@31d3243a] 204.8 Mb
+> - CLIJ2_create3D_result169[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@75c28e4a] 204.8 Mb
+> - CLIJ2_labelSpots_result149[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@4520f753] 204.8 Mb
+> - CLIJ2_multiplyImages_result168[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7a4ff104] 4.9 Mb
+> - CLIJ2_meanOfTouchingNeighbors_result174[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@3ffb545a] 4.4 kb
+> - CLIJ2_averageDistanceOfTouchingNeighbors_result171[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@17583c7a] 4.4 kb
+> - CLIJ2_maximumOfTouchingNeighbors_result183[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@1aadc27d] 4.4 kb
+> - CLIJ2_replaceIntensities_result187[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@16483813] 204.8 Mb
+> - CLIJ2_replaceIntensities_result184[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@788ff501] 204.8 Mb
+> - CLIJ2_replaceIntensities_result181[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@60404005] 204.8 Mb
+> - CLIJ2_detectMaximaBox_result144[net.haesleinhuepf.clij.clearcl.ClearCLPeerPointer@7faff5ba] 204.8 Mb
 > = 3.4 Gb
 >  
 </pre>
