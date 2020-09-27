@@ -118,6 +118,9 @@ Subtracts one binary image from another.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryUnion">binaryUnion</a>  
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary union operator |.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryWekaPixelClassifier">binaryWekaPixelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to a 2D image. 
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryXOr">binaryXOr</a>  
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary operators AND &, OR | and NOT ! implementing the XOR operator.
 
@@ -469,6 +472,9 @@ Takes an image and assumes its grey values are integers. It builds up a grey-lev
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a>  
 Takes two labelmaps with n and m labels_2 and generates a (n+1)*(m+1) matrix where all labels_1 are set to 0 exept those where labels_2 overlap between the label maps. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateLabelFeatureImage">generateLabelFeatureImage (Experimental)</a>  
+Generates a feature image for Trainable Weka Segmentation. 
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_generateParametricImage">generateParametricImage</a>  
 Take a labelmap and a vector of values to replace label 1 with the 1st value in the vector. 
 
@@ -542,7 +548,7 @@ Determines if two images A and B greater or equal pixel wise.
 Determines if two images A and B greater or equal pixel wise. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greyLevelAtttributeFiltering">greyLevelAtttributeFiltering (Experimental)</a>  
-Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras. This plugin will remove components in a grayscale image based on user-specified area (for 2D: pixels) or volume (3D: voxels). For each gray level specified in the number of bins, binary images will be generated, followed by exclusion of objects (labels) below a minimum pixel count. All the binary images for each gray level are combined to form the final image. The output is a grayscale image, where bright objects below pixel count are removed. It is recommended that low values be used for number of bins, especially for large 3D images, or it may take long time.
+Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras.
 
 <a name="H"></a>
 
@@ -1395,6 +1401,9 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ## W
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_writeVTKLineListToDisc">writeVTKLineListToDisc (Experimental)</a>  
 Takes a point list image representing n points (n*2 for 2D points, n*3 for 3D points) and a corresponding touch matrix , sized (n+1)*(n+1), and exports them in VTK format.

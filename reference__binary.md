@@ -52,6 +52,9 @@ Subtracts one binary image from another.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryUnion">binaryUnion</a>  
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary union operator |.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryWekaPixelClassifier">binaryWekaPixelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to a 2D image. 
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryXOr">binaryXOr</a>  
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of pixels x and y with the binary operators AND &, OR | and NOT ! implementing the XOR operator.
 
@@ -161,7 +164,7 @@ Determines the overlap of two binary images using the Jaccard index.
 Determines the overlap of two binary images using the Sorensen-Dice coefficent. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greyLevelAtttributeFiltering">greyLevelAtttributeFiltering (Experimental)</a>  
-Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras. This plugin will remove components in a grayscale image based on user-specified area (for 2D: pixels) or volume (3D: voxels). For each gray level specified in the number of bins, binary images will be generated, followed by exclusion of objects (labels) below a minimum pixel count. All the binary images for each gray level are combined to form the final image. The output is a grayscale image, where bright objects below pixel count are removed. It is recommended that low values be used for number of bins, especially for large 3D images, or it may take long time.
+Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras.
 
 <a name="I"></a>
 

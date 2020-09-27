@@ -5,6 +5,10 @@ Copies all pixels instead those which are not a number (NaN) or infinity (inf), 
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+### undefinedToZero is often followed by
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_undefinedToZero(Image source, Image destination);
@@ -113,6 +117,12 @@ clij2.release(destination);
 
 </details>
 
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

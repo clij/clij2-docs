@@ -4,6 +4,7 @@
 By Pradeep Rajasekhar and Robert Haase
 
 Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras.
+
 This plugin will remove components in a grayscale image based on user-specified area (for 2D: pixels) or volume (3D: voxels).
 For each gray level specified in the number of bins, binary images will be generated, followed by exclusion of objects (labels)
 below a minimum pixel count.

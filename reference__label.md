@@ -11,7 +11,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
-<a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>,<a href="#F">\[F\]</a>,<a href="#G">\[G\]</a>, H, I, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>, N, O,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U,<a href="#V">\[V\]</a>, W, X, Y, Z
+<a href="#A">\[A\]</a>, B,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>,<a href="#F">\[F\]</a>,<a href="#G">\[G\]</a>, H, I, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>, N, O,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
 
 <a name="A"></a>
 
@@ -128,7 +128,7 @@ Takes a label map with n labels and generates a (n+1)*(n+1) matrix where all pix
 Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixels are set to 0 exept those where labels are touching. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_greyLevelAtttributeFiltering">greyLevelAtttributeFiltering (Experimental)</a>  
-Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras. This plugin will remove components in a grayscale image based on user-specified area (for 2D: pixels) or volume (3D: voxels). For each gray level specified in the number of bins, binary images will be generated, followed by exclusion of objects (labels) below a minimum pixel count. All the binary images for each gray level are combined to form the final image. The output is a grayscale image, where bright objects below pixel count are removed. It is recommended that low values be used for number of bins, especially for large 3D images, or it may take long time.
+Inspired by Grayscale attribute filtering from MorpholibJ library by David Legland & Ignacio Arganda-Carreras.
 
 <a name="L"></a>
 
@@ -258,4 +258,10 @@ Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plu
 ## V
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_voronoiLabeling">voronoiLabeling</a>  
 Takes a binary image, labels connected components and dilates the regions using a octagon shape until they touch. 
+
+<a name="W"></a>
+
+## W
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
 

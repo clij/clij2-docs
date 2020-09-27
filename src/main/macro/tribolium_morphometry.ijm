@@ -133,16 +133,21 @@ vector has as many entries as nodes in the graph. We use this vector to color-co
 label map of segmented cells. This means, label 1 gets replaced by the average distance to 
 node 1, label 2 by the average distance to node 2, et cetera.
 */
+Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
+
 
 Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
 // set the first column to zero to ignore all object touching the background
-Ext.CLIJ2_setColumn(distances_vector, 0, 0);
-Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
+//Ext.CLIJ2_setColumn(distances_vector, 0, 0);
+//Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 
-Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
+Ext.CLIJ2_undefinedToZero(distances_vector, distances_vector1);
+Ext.CLIJ2_replaceIntensities(labels, distances_vector1, distance_map);
 show(distance_map, "distance map");
 run("Fire");
 setMinAndMax(0, 50);
+
+exit();
 
 /*
 Now, we measure the mean between neighbors and visualize it as above.
