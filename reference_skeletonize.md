@@ -7,6 +7,8 @@ Erodes a binary image until just its skeleton is left.
 
 The result is similar to Skeletonize3D in Fiji.
 
+Deprecated: Use SimpleITK binaryThinning() instead.
+
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### Usage in ImageJ macro

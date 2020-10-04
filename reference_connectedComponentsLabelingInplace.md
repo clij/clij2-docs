@@ -3,6 +3,8 @@
 
 Performs connected components analysis to a binary image and generates a label map.
 
+Deprecated: Use connectedComponentsLabelingBox() instead.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_connectedComponentsLabelingInplace(Image binary_source_labeling_destination);

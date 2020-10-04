@@ -5,6 +5,8 @@ Applies Gaussian blur to the input image twice with different sigma values resul
 
 It is recommended to apply this operation to images of type Float (32 bit) as results might be negative.
 
+Deprecated: Use differenceOfGaussian3D instead.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_differenceOfGaussianInplace3D(Image input_and_destination, Number sigma1x, Number sigma1y, Number sigma1z, Number sigma2x, Number sigma2y, Number sigma2z);

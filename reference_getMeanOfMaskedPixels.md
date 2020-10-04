@@ -9,7 +9,7 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_getMeanOfMaskedPixels(Image source, Number mean_of_masked_pixels);
+Ext.CLIJ2_getMeanOfMaskedPixels(Image source, Image mask, Number mean_of_masked_pixels);
 ```
 
 

@@ -3,6 +3,8 @@
 
 Applies Gaussian blur to the input image and subtracts the result from the original image.
 
+Deprecated: Use differenceOfGaussian() instead.
+
 Categories: Background, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### Usage in ImageJ macro

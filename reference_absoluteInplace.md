@@ -5,6 +5,8 @@ Computes the absolute value of every individual pixel x in a given image.
 
 <pre>f(x) = |x| </pre>
 
+Deprecated: Use absolute() instead.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_absoluteInplace(Image source_destination);
