@@ -20,13 +20,13 @@ __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [
 Converts a adjacency matrix in a touch matrix
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform">affineTransform</a>  
-Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
+Applies an affine transform to a 3D image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform2D">affineTransform2D</a>  
-Applies an affine transform to a 2D image. Individual transforms must be separated by spaces.
+Applies an affine transform to a 2D image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_affineTransform3D">affineTransform3D</a>  
-Applies an affine transform to a 3D image. Individual transforms must be separated by spaces.
+Applies an affine transform to a 3D image.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_applyVectorField2D">applyVectorField2D</a>  
 Deforms an image according to distances provided in the given vector images.

@@ -5,7 +5,7 @@ Applies Gaussian blur to the input image twice with different sigma values resul
 
 It is recommended to apply this operation to images of type Float (32 bit) as results might be negative.
 
-Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter),  Noise, Background
 
 ### Usage in ImageJ macro
 ```

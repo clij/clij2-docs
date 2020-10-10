@@ -11,13 +11,22 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
- A, B, C,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H, I, J, K,<a href="#L">\[L\]</a>, M, N, O, P, Q, R,<a href="#S">\[S\]</a>, T, U, V, W, X, Y, Z
+ A,<a href="#B">\[B\]</a>, C,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H, I, J, K,<a href="#L">\[L\]</a>, M, N, O, P, Q, R,<a href="#S">\[S\]</a>, T, U, V, W, X, Y, Z
+
+<a name="B"></a>
+
+## B
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_binaryEdgeDetection">binaryEdgeDetection</a>  
+Determines pixels/voxels which are on the surface of binary objects and sets only them to 1 in the  destination image. All other pixels are set to 0.
 
 <a name="D"></a>
 
 ## D
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectAndLabelMaxima">detectAndLabelMaxima (Experimental)</a>  
 Determines maximum regions in a Gaussian blurred version of the original image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectLabelEdges">detectLabelEdges</a>  
+Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_detectMaxima2DBox">detectMaxima2DBox</a>  
 Detects local maxima in a given square/cubic neighborhood. 

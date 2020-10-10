@@ -5,7 +5,7 @@ This operation removes labels from a labelmap and renumbers the remaining labels
 
 Hand over a vector of values and a range specifying which labels with which values are eliminated.
 
-Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### excludeLabelsWithValuesOutOfRange often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)

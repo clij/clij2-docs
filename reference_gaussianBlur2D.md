@@ -7,7 +7,7 @@ Thus, the filterkernel can have non-isotropic shape.
 
 The implementation is done separable. In case a sigma equals zero, the direction is not blurred.
 
-Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### gaussianBlur2D often follows after
 * <a href="reference_copySlice">copySlice</a> (2)

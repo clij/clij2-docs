@@ -8,7 +8,7 @@ its half-width, half-height and half-depth (radius).
 
 For technical reasons, the volume of the sphere must contain less than 1000 voxels.
 
-Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### Usage in ImageJ macro
 ```

@@ -8,7 +8,7 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 <pre>f(x, y) = (x & !y) | (!x & y)</pre>
 
-Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### binaryXOr often follows after
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)

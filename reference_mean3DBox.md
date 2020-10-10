@@ -6,7 +6,7 @@ Computes the local mean average of a pixels cube neighborhood.
 The cubes size is specified by 
 its half-width, half-height and half-depth (radius).
 
-Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### mean3DBox is often followed by
 * <a href="reference_thresholdHuang">thresholdHuang</a> (2)

@@ -4,7 +4,7 @@
 Determines pixels/voxels which are on the surface of binary objects and sets only them to 1 in the 
 destination image. All other pixels are set to 0.
 
-Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### binaryEdgeDetection often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)

@@ -3,11 +3,16 @@
 
 By Robert Haase and Peter Haub based on work by Martin Weigert
 
-Applies an affine transform to a 2D image. Individual transforms must be separated by spaces.
+Applies an affine transform to a 2D image.
 
+The transform describes how coordinates in the target image are transformed to coordinates in the source image.
+This may appear unintuitive and will be changed in the next major release. The replacement 
+affineTransform (currently part of CLIJx) will apply inverted transforms compared to this operation.
+Individual transforms must be separated by spaces.
 Supported transforms:
-* center: translate the coordinate origin to the center of the image
-* -center: translate the coordinate origin back to the initial origin
+
+* -center: translate the coordinate origin to the center of the image
+* center: translate the coordinate origin back to the initial origin
 * rotate=[angle]: rotate in X/Y plane (around Z-axis) by the given angle in degrees
 * scale=[factor]: isotropic scaling according to given zoom factor
 * scaleX=[factor]: scaling along X-axis according to given zoom factor
@@ -17,7 +22,7 @@ Supported transforms:
 * translateY=[distance]: translate along X-axis by distance given in pixels
 
 Example transform:
-transform = "center scale=2 rotate=45 -center";
+transform = "-center scale=2 rotate=45 center";
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 

@@ -8,7 +8,7 @@ its half-width and half-height (radius).
 
 For technical reasons, the area of the rectangle must have less than 1000 pixels.
 
-Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
+Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### Usage in ImageJ macro
 ```
