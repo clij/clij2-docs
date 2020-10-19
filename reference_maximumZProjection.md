@@ -16,7 +16,7 @@ Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 ### maximumZProjection is often followed by
 * <a href="reference_saveAsTIF">saveAsTIF</a> (2)
-* <a href="reference_release">release</a> (4)
+* <a href="reference_release">release</a> (16)
 * <a href="reference_copySlice">copySlice</a> (3)
 
 

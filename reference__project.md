@@ -52,6 +52,9 @@ Determines the mean average intensity projection of an image along Z.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanZProjectionAboveThreshold">meanZProjectionAboveThreshold (Experimental)</a>  
 Determines the mean average intensity projection of an image along Z but only for pixels above a given threshold.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanZProjectionBelowThreshold">meanZProjectionBelowThreshold (Experimental)</a>  
+Determines the mean average intensity projection of an image along Z but only for pixels below a given threshold.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanZProjectionBounded">meanZProjectionBounded</a>  
 Determines the mean average intensity projection of an image along Z within a given z range.
 

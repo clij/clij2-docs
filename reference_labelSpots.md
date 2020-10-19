@@ -14,7 +14,7 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labe
 
 ### labelSpots is often followed by
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
-* <a href="reference_release">release</a> (4)
+* <a href="reference_release">release</a> (5)
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (7)
 
 

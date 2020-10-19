@@ -12,6 +12,7 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Backg
 
 ### topHatBox is often followed by
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+* <a href="reference_release">release</a> (2)
 * <a href="reference_resliceRadial">resliceRadial</a> (2)
 * <a href="reference_resliceTop">resliceTop</a> (3)
 

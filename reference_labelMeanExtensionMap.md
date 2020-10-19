@@ -1,15 +1,15 @@
-## labelMeanIntensityMap
+## labelMeanExtensionMap
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
 
-Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
+Takes a label map, determines for every label the mean distance of any pixel to the centroid and replaces every label with the that number.
 
-This results in a parametric image expressing mean object intensity.
+
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelMeanIntensityMap(Image input, Image label_map, Image destination);
+Ext.CLIJx_labelMeanExtensionMap(Image input, Image destination);
 ```
 
 

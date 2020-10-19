@@ -11,6 +11,7 @@ Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter
 
 ### gaussianBlur3D is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (2)
+* <a href="reference_release">release</a> (2)
 * <a href="reference_thresholdDefault">thresholdDefault</a> (2)
 * <a href="reference_threshold">threshold</a> (4)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)

@@ -12,7 +12,7 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 
 ### greaterConstant is often followed by
-* <a href="reference_release">release</a> (2)
+* <a href="reference_release">release</a> (3)
 * <a href="reference_mask">mask</a> (2)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 

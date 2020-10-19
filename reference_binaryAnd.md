@@ -14,6 +14,10 @@ Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](
 * <a href="reference_equal">equal</a> (2)
 
 
+### binaryAnd is often followed by
+* <a href="reference_release">release</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryAnd(Image operand1, Image operand2, Image destination);
