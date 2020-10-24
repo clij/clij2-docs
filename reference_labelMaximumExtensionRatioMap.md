@@ -1,5 +1,5 @@
 ## labelMaximumExtensionRatioMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map, determines for every label the maximum distance of any pixel to the centroid and replaces every label with the that number.
 

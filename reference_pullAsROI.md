@@ -1,5 +1,5 @@
 ## pullAsROI
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Pulls a binary image from the GPU memory and puts it on the currently active ImageJ window as region of interest.
 

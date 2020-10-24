@@ -1,5 +1,5 @@
 ## setRampY
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Sets all pixel values to their Y coordinate
 
@@ -100,6 +100,22 @@ clij2.setRampY(source);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.set_ramp_y(clij, source)
+</pre>
+
+
 
 </details>
 

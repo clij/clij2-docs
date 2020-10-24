@@ -1,5 +1,5 @@
 ## drawTouchCountMeshBetweenTouchingLabels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Starting from a label map, draw lines between touching neighbors resulting in a mesh.
 

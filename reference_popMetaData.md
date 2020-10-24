@@ -1,5 +1,5 @@
 ## popMetaData
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes meta data from a stack and assigns it to the current image. The stack implements the Last-In-First-Out (LIFO) principle.
 

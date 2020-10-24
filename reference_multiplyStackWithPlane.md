@@ -1,5 +1,5 @@
 ## multiplyStackWithPlane
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Multiplies all pairs of pixel values x and y from an image stack X and a 2D image Y. 
 

@@ -1,5 +1,5 @@
 ## applyVectorfield
-![Image](images/mini_clij1_logo.png)
+![Image](images/mini_clij1_logo.png)<img src="images/mini_empty_logo.png"/>
 
 Deforms an image according to distances provided in the given vector images.
 

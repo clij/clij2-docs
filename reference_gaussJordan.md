@@ -1,5 +1,5 @@
 ## gaussJordan
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 By Robert Haase with code from (Shuai Che: sc5nf@cs.virginia.edu
 and Kevin Skadron: skadron@cs.virginia.edu)

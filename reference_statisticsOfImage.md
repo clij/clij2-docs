@@ -1,5 +1,5 @@
 ## statisticsOfImage
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines image size (bounding box), area (in pixels/voxels), min, max and mean intensity 
  of all pixels in the original image.

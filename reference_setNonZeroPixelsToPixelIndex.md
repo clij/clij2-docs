@@ -1,5 +1,5 @@
 ## setNonZeroPixelsToPixelIndex
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Sets all pixels in an image which are not zero to the index of the pixel. 
 

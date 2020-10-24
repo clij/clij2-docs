@@ -1,5 +1,5 @@
 ## labelVoronoiOctagon
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a labelled image and dilates the labels using a octagon shape until they touch. 
 

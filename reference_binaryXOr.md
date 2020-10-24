@@ -1,5 +1,5 @@
 ## binaryXOr
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Computes a binary image (containing pixel values 0 and 1) from two images X and Y by connecting pairs of
 pixels x and y with the binary operators AND &, OR | and NOT ! implementing the XOR operator.
@@ -127,6 +127,22 @@ clij2.release(operand1);
 clij2.release(operand2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.binary_xor(clij, operand1, operand2, destination)
+</pre>
+
+
 
 </details>
 

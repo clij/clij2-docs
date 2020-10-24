@@ -1,5 +1,5 @@
 ## thresholdDoG
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Applies a Difference-of-Gaussian filter to an image and thresholds it with given sigma and threshold values.
 

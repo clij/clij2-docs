@@ -1,5 +1,5 @@
 ## onlyzeroOverwriteMaximumBox
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Apply a local maximum filter to an image which only overwrites pixels with value 0.
 

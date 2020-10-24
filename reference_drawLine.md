@@ -1,5 +1,5 @@
 ## drawLine
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Draws a line between two points with a given thickness. 
 
@@ -129,6 +129,22 @@ Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.draw_line(clij, destination, x1, y1, z1, x2, y2, z2, thickness, value)
+</pre>
+
+
 
 </details>
 

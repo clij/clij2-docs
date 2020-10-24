@@ -1,5 +1,5 @@
 ## getDimensions
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Reads out the size of an image [stack] and writes it to the variables 'width', 'height' and 'depth'.
 

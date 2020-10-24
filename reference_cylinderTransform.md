@@ -1,5 +1,5 @@
 ## cylinderTransform
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Applies a cylinder transform to an image stack assuming the center line goes in Y direction in the center of the stack.
 

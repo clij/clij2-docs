@@ -1,5 +1,5 @@
 ## makeIsoTropic
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Applies a scaling operation using linear interpolation to generate an image stack with a given isotropic voxel size.
 

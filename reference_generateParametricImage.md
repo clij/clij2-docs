@@ -1,5 +1,5 @@
 ## generateParametricImage
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Take a labelmap and a vector of values to replace label 1 with the 1st value in the vector. 
 

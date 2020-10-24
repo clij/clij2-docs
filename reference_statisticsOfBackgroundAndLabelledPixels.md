@@ -1,5 +1,5 @@
 ## statisticsOfBackgroundAndLabelledPixels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines bounding box, area (in pixels/voxels), min, max and mean intensity 
  of background and labelled objects in a label map and corresponding pixels in the original image.

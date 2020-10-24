@@ -1,5 +1,5 @@
 ## detectOptima
-![Image](images/mini_clij1_logo.png)
+![Image](images/mini_clij1_logo.png)<img src="images/mini_empty_logo.png"/>
 
 null
 

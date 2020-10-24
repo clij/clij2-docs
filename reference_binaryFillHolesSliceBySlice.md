@@ -1,5 +1,5 @@
 ## binaryFillHolesSliceBySlice
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image stack slice by slice.
 

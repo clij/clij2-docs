@@ -1,5 +1,5 @@
 ## translationRegistration
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Measures center of mass of thresholded objects in the two input images and translates the second image so that it better fits to the first image.
 

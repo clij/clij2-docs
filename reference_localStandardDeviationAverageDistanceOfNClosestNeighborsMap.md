@@ -1,5 +1,5 @@
 ## localStandardDeviationAverageDistanceOfNClosestNeighborsMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map, determines distances between all centroids, the mean distance of the n closest points for every point
  and replaces every label with the standard deviation distance of touching labels.

@@ -1,5 +1,5 @@
 ## intensityCorrection
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines the mean intensity of the image stack and multiplies it with a factor so that the mean intensity becomes equal to a given value.
 

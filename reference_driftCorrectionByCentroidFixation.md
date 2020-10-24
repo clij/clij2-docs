@@ -1,5 +1,5 @@
 ## driftCorrectionByCentroidFixation
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Threshold the image stack, determines the centroid of the resulting binary image and 
 translates the image stack so that its centroid sits in a defined position.

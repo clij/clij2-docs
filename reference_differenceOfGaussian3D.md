@@ -1,5 +1,5 @@
 ## differenceOfGaussian3D
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 

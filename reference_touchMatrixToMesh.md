@@ -1,5 +1,5 @@
 ## touchMatrixToMesh
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a pointlist with dimensions n*d with n point coordinates in d dimensions and a touch matrix of 
 size n*n to draw lines from all points to points if the corresponding pixel in the touch matrix is 1.
@@ -137,6 +137,22 @@ clij2.release(pointlist);
 clij2.release(touch_matrix);
 clij2.release(mesh_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.touch_matrix_to_mesh(clij, pointlist, touch_matrix, mesh_destination)
+</pre>
+
+
 
 </details>
 

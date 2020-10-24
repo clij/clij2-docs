@@ -1,5 +1,5 @@
 ## captureWebcamImage
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Acquires an image (in fact an RGB image stack with three slices) of given size using a webcam. 
 

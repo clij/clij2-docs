@@ -1,5 +1,5 @@
 ## maximum3DSliceBySliceSphere
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Computes the local maximum of a pixels ellipsoidal 2D neighborhood in an image stack slice by slice. 
 

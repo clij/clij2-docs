@@ -1,5 +1,5 @@
 ## sphereTransform
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Turns an image stack in XYZ cartesian coordinate system to an AID polar coordinate system.
 

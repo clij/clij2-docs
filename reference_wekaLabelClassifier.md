@@ -1,5 +1,5 @@
 ## wekaLabelClassifier
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
 

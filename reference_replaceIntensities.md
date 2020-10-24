@@ -1,5 +1,5 @@
 ## replaceIntensities
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Replaces integer intensities specified in a vector image. 
 
@@ -149,6 +149,22 @@ clij2.release(input);
 clij2.release(new_values_vector);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.replace_intensities(clij, input, new_values_vector, destination)
+</pre>
+
+
 
 </details>
 

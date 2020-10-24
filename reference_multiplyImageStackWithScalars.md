@@ -1,5 +1,5 @@
 ## multiplyImageStackWithScalars
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Multiplies all pixels value x in a given image X with a constant scalar s from a list of scalars.
 

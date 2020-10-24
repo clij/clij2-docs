@@ -1,5 +1,5 @@
 ## generateGreyValueCooccurrenceMatrixBox
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes an image and an intensity range to determine a grey value co-occurrence matrix.
 

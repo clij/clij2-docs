@@ -1,5 +1,5 @@
 ## setWhereXequalsY
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Sets all pixel values a of a given image A to a constant value v in case its coordinates x == y. 
 

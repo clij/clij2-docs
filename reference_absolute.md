@@ -1,5 +1,5 @@
 ## absolute
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Computes the absolute value of every individual pixel x in a given image.
 
@@ -121,6 +121,49 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.absolute(clij, source, destination)
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">// Initialise GPU information.
+    cle::GPU gpu;
+    cle::CLE cle(gpu);
+    
+    // Initialise device memory and push from host
+    cle::Buffer gpuInput = cle.Push<float>(input_img);
+    cle::Buffer gpuOutput = cle.Create<float>(input_img);
+
+    // Call kernel
+    cle.Absolute(gpuInput, gpuOutput);  
+
+    // pull device memory to host
+    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+
+    </pre>
+
+<pre class="highlight">
 
 </details>
 

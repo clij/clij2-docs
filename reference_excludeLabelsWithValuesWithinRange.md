@@ -1,5 +1,5 @@
 ## excludeLabelsWithValuesWithinRange
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 This operation removes labels from a labelmap and renumbers the remaining labels. 
 

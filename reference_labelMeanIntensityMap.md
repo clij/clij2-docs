@@ -1,5 +1,5 @@
 ## labelMeanIntensityMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 

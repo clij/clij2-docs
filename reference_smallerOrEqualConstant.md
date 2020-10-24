@@ -1,5 +1,5 @@
 ## smallerOrEqualConstant
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines if two images A and B smaller or equal pixel wise.
 
@@ -115,6 +115,49 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.smaller_or_equal_constant(clij, source, destination, constant)
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">// Initialise GPU information.
+    cle::GPU gpu;
+    cle::CLE cle(gpu);
+
+    // Initialise device memory and push from host to device
+    cle::Buffer gpuInput = cle.Push<float>(input_img);
+    cle::Buffer gpuOutput = cle.Create<float>(input_img, "float");
+
+    // Call kernel
+    cle.SmallerOrEqualConstant(gpuInput, gpuOutput, scalar);  
+
+    // pull device memory to host
+    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+
+    </pre>
+
+<pre class="highlight">
 
 </details>
 

@@ -1,5 +1,5 @@
 ## translationTimelapseRegistration
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Applies 2D translation registration to every pair of t, t+1 slices of a 2D+t image stack.
 

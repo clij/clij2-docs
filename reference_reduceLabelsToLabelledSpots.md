@@ -1,5 +1,5 @@
 ## reduceLabelsToLabelledSpots
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map and reduces all labels to their center spots. Label IDs stay and background will be zero.
 

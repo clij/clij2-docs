@@ -1,5 +1,5 @@
 ## set
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Sets all pixel values x of a given image X to a constant value v.
 
@@ -105,6 +105,22 @@ clij2.set(source, value);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.set(clij, source, value)
+</pre>
+
+
 
 </details>
 

@@ -1,5 +1,5 @@
 ## maskLabel
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Computes a masked image by applying a label mask to an image. 
 
@@ -130,6 +130,22 @@ clij2.release(source);
 clij2.release(label_map);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.mask_label(clij, source, label_map, destination, label_index)
+</pre>
+
+
 
 </details>
 

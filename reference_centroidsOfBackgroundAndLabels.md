@@ -1,5 +1,5 @@
 ## centroidsOfBackgroundAndLabels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines the centroids of the background and all labels in a label image or image stack. 
 

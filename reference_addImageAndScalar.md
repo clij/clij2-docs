@@ -1,5 +1,5 @@
 ## addImageAndScalar
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Adds a scalar value s to all pixels x of a given image X.
 
@@ -119,6 +119,49 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.add_image_and_scalar(clij, source, destination, scalar)
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">// Initialise GPU information.
+    cle::GPU gpu;
+    cle::CLE cle(gpu);
+    
+    // Initialise device memory and push from host
+    cle::Buffer gpuInput = cle.Push<float>(input_img);
+    cle::Buffer gpuOutput = cle.Create<float>(input_img);
+
+    // Call kernel
+    cle.AddImageAndScalar(gpuInput, gpuOutput, scalar);  
+
+    // pull device memory to host
+    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+
+    </pre>
+
+<pre class="highlight">
 
 </details>
 

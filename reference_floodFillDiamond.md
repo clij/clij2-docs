@@ -1,5 +1,5 @@
 ## floodFillDiamond
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Replaces recursively all pixels of value a with value b if the pixels have a neighbor with value b.
 

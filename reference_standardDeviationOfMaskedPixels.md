@@ -1,5 +1,5 @@
 ## standardDeviationOfMaskedPixels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines the standard deviation of all pixels in an image which have non-zero value in a corresponding mask image. 
 

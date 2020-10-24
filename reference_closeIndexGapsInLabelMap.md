@@ -1,5 +1,5 @@
 ## closeIndexGapsInLabelMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Analyses a label map and if there are gaps in the indexing (e.g. label 5 is not present) all 
 subsequent labels will be relabelled. 
@@ -114,6 +114,22 @@ Icy.addSequence(labeling_destination_sequence);
 clij2.release(labeling_input);
 clij2.release(labeling_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.close_index_gaps_in_label_map(clij, labeling_input, labeling_destination)
+</pre>
+
+
 
 </details>
 

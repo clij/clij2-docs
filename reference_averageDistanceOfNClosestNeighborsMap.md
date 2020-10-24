@@ -1,5 +1,5 @@
 ## averageDistanceOfNClosestNeighborsMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map, determines distances between all centroids and replaces every label with the average distance to the n closest neighboring labels.
 

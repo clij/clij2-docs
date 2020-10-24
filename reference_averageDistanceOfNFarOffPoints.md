@@ -1,5 +1,5 @@
 ## averageDistanceOfNFarOffPoints
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines the average of the n far off (most distant) points for every point in a distance matrix.
 

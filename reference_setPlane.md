@@ -1,5 +1,5 @@
 ## setPlane
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Sets all pixel values x of a given plane in X to a constant value v.
 
@@ -106,6 +106,22 @@ clij2.setPlane(source, plane_index, value);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.set_plane(clij, source, plane_index, value)
+</pre>
+
+
 
 </details>
 

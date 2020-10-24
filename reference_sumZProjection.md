@@ -1,5 +1,5 @@
 ## sumZProjection
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the sum intensity projection of an image along Z.
 
@@ -110,6 +110,22 @@ Icy.addSequence(destination_sum_sequence);
 clij2.release(source);
 clij2.release(destination_sum);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.sum_z_projection(clij, source, destination_sum)
+</pre>
+
+
 
 </details>
 

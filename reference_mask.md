@@ -1,5 +1,5 @@
 ## mask
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Computes a masked image by applying a binary mask to an image. 
 
@@ -142,6 +142,22 @@ clij2.release(source);
 clij2.release(mask);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.mask(clij, source, mask, destination)
+</pre>
+
+
 
 </details>
 

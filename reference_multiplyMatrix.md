@@ -1,5 +1,5 @@
 ## multiplyMatrix
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Multiplies two matrices with each other.
 
@@ -126,6 +126,22 @@ clij2.release(matrix1);
 clij2.release(matrix2);
 clij2.release(matrix_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.multiply_matrix(clij, matrix1, matrix2, matrix_destination)
+</pre>
+
+
 
 </details>
 

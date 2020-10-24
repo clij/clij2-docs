@@ -1,5 +1,5 @@
 ## maximumXProjection
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the maximum intensity projection of an image along X.
 
@@ -123,6 +123,51 @@ Icy.addSequence(destination_max_sequence);
 clij2.release(source);
 clij2.release(destination_max);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.maximum_x_projection(clij, source, destination_max)
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">// Initialise GPU information.
+    cle::GPU gpu;
+    cle::CLE cle(gpu);
+
+    // Initialise device memory and push from host
+    std::array<unsigned int, 3> dimensions = {width, height, depth};
+    dimensions.back() = 1;
+    cle::Buffer gpuInput = cle.Push<float>(input_img);
+    cle::Buffer gpuOutput = cle.Create<float>(dimensions.data(), "float");
+
+    // Call kernel
+    cle.MaximumXProjection(gpuInput, gpuOutput);   
+
+    // pull device memory to host
+    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+
+    </pre>
+
+<pre class="highlight">
 
 </details>
 

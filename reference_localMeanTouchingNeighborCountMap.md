@@ -1,5 +1,5 @@
 ## localMeanTouchingNeighborCountMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map, determines which labels touch, determines for every label with the number of touching 
 neighboring labels and replaces the label index with the local mean of this count.

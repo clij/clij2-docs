@@ -1,5 +1,5 @@
 ## localMeanTouchPortionMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map, determines which labels touch and how much, relatively taking the whole outline of 
 each label into account, and determines for every label with the mean of this value and replaces the 

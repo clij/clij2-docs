@@ -1,5 +1,5 @@
 ## undefinedToZero
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Copies all pixels instead those which are not a number (NaN) or infinity (inf), which are replaced by 0.
 

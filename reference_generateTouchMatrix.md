@@ -1,5 +1,5 @@
 ## generateTouchMatrix
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixels are set to 0 exept those where labels are touching. 
 
@@ -133,6 +133,22 @@ Icy.addSequence(touch_matrix_destination_sequence);
 clij2.release(label_map);
 clij2.release(touch_matrix_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.generate_touch_matrix(clij, label_map, touch_matrix_destination)
+</pre>
+
+
 
 </details>
 

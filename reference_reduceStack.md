@@ -1,5 +1,5 @@
 ## reduceStack
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Reduces the number of slices in a stack by a given factor.
 With the offset you have control which slices stay: 

@@ -1,5 +1,5 @@
 ## countNonZeroPixelsSliceBySliceSphere
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Counts non-zero pixels in a sphere around every pixel slice by slice in a stack. 
 

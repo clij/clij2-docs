@@ -1,5 +1,5 @@
 ## depthColorProjection
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines a maximum projection of an image stack and does a color coding of the determined arg Z (position of the found maximum). 
 

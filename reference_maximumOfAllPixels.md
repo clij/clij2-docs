@@ -1,5 +1,5 @@
 ## maximumOfAllPixels
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the maximum of all pixels in a given image. 
 
@@ -106,6 +106,22 @@ System.out.println(resultMaximumOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.maximum_of_all_pixels(clij, source)
+</pre>
+
+
 
 </details>
 

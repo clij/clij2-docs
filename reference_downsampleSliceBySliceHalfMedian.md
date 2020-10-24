@@ -1,5 +1,5 @@
 ## downsampleSliceBySliceHalfMedian
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Scales an image using scaling factors 0.5 for X and Y dimensions. The Z dimension stays untouched. 
 

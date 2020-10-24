@@ -1,5 +1,5 @@
 ## excludeLabelsOnEdges
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Removes all labels from a label map which touch the edges of the image (in X, Y and Z if the image is 3D). 
 

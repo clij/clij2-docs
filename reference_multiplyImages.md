@@ -1,5 +1,5 @@
 ## multiplyImages
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Multiplies all pairs of pixel values x and y from two image X and Y.
 
@@ -137,6 +137,22 @@ clij2.release(factor1);
 clij2.release(factor2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.multiply_images(clij, factor1, factor2, destination)
+</pre>
+
+
 
 </details>
 

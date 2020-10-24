@@ -1,5 +1,5 @@
 ## divideImages
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Divides two images X and Y by each other pixel wise. 
 
@@ -119,6 +119,22 @@ clij2.release(divident);
 clij2.release(divisor);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.divide_images(clij, divident, divisor, destination)
+</pre>
+
+
 
 </details>
 

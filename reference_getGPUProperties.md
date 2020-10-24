@@ -1,5 +1,5 @@
 ## getGPUProperties
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Reads out properties of the currently active GPU and write it in the variables 'GPU_name', 
 'global_memory_in_bytes' and 'OpenCL_Version'.

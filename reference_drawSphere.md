@@ -1,5 +1,5 @@
 ## drawSphere
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Draws a sphere around a given point with given radii in x, y and z (if 3D). 
 
@@ -126,6 +126,22 @@ Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.draw_sphere(clij, destination, x, y, z, radius_x, radius_y, radius_z, value)
+</pre>
+
+
 
 </details>
 

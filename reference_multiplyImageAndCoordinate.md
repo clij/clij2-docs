@@ -1,5 +1,5 @@
 ## multiplyImageAndCoordinate
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Multiplies all pixel intensities with the x, y or z coordinate, depending on specified dimension.
 
@@ -113,6 +113,22 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.multiply_image_and_coordinate(clij, source, destination, dimension)
+</pre>
+
+
 
 </details>
 

@@ -1,5 +1,5 @@
 ## minimumImages
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Computes the minimum of a pair of pixel values x, y from two given images X and Y.
 
@@ -119,6 +119,22 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.minimum_images(clij, source1, source2, destination)
+</pre>
+
+
 
 </details>
 

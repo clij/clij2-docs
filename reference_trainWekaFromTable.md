@@ -1,5 +1,5 @@
 ## trainWekaFromTable
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
 

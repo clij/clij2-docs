@@ -1,5 +1,5 @@
 ## addImagesWeighted
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Calculates the sum of pairs of pixels x and y from images X and Y weighted with factors a and b.
 
@@ -125,6 +125,22 @@ clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.add_images_weighted(clij, summand1, summand2, destination, factor1, factor2)
+</pre>
+
+
 
 </details>
 
