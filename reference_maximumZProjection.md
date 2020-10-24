@@ -152,23 +152,23 @@ cle.maximum_z_projection(clij, source, destination_max)
 clEsperanto CLIc C++ (experimental)
 </summary>
 <pre class="highlight">
-    // Initialise GPU information.
-    cle::GPU gpu;
-    cle::CLE cle(gpu);
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
 
-    // Initialise device memory and push from host
-    std::array<unsigned int, 3> dimensions = {width, height, depth};
-    dimensions.back() = 1;
-    cle::Buffer gpuInput = cle.Push<float>(input_img);
-    cle::Buffer gpuOutput = cle.Create<float>(dimensions.data(), "float");
+// Initialise device memory and push from host
+std::array<unsigned int, 3> dimensions = {width, height, depth};
+dimensions.back() = 1;
+cle::Buffer gpuInput = cle.Push<float>(input_img);
+cle::Buffer gpuOutput = cle.Create<float>(dimensions.data(), "float");
 
-    // Call kernel
-    cle.MaximumZProjection(gpuInput, gpuOutput);   
+// Call kernel
+cle.MaximumZProjection(gpuInput, gpuOutput);   
 
-    // pull device memory to host
-    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+// pull device memory to host
+Image<float> output_img = cle.Pull<float>(gpuOutput);    
 
-    </pre>
+</pre>
 
 
 

@@ -142,21 +142,21 @@ cle.smaller_or_equal_constant(clij, source, destination, constant)
 clEsperanto CLIc C++ (experimental)
 </summary>
 <pre class="highlight">
-    // Initialise GPU information.
-    cle::GPU gpu;
-    cle::CLE cle(gpu);
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
 
-    // Initialise device memory and push from host to device
-    cle::Buffer gpuInput = cle.Push<float>(input_img);
-    cle::Buffer gpuOutput = cle.Create<float>(input_img, "float");
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput = cle.Push<float>(input_img);
+cle::Buffer gpuOutput = cle.Create<float>(input_img, "float");
 
-    // Call kernel
-    cle.SmallerOrEqualConstant(gpuInput, gpuOutput, scalar);  
+// Call kernel
+cle.SmallerOrEqualConstant(gpuInput, gpuOutput, scalar);  
 
-    // pull device memory to host
-    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+// pull device memory to host
+Image<float> output_img = cle.Pull<float>(gpuOutput);    
 
-    </pre>
+</pre>
 
 
 

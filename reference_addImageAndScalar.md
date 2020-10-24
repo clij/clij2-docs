@@ -146,21 +146,21 @@ cle.add_image_and_scalar(clij, source, destination, scalar)
 clEsperanto CLIc C++ (experimental)
 </summary>
 <pre class="highlight">
-    // Initialise GPU information.
-    cle::GPU gpu;
-    cle::CLE cle(gpu);
-    
-    // Initialise device memory and push from host
-    cle::Buffer gpuInput = cle.Push<float>(input_img);
-    cle::Buffer gpuOutput = cle.Create<float>(input_img);
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
 
-    // Call kernel
-    cle.AddImageAndScalar(gpuInput, gpuOutput, scalar);  
+// Initialise device memory and push from host
+cle::Buffer gpuInput = cle.Push<float>(input_img);
+cle::Buffer gpuOutput = cle.Create<float>(input_img);
 
-    // pull device memory to host
-    Image<float> output_img = cle.Pull<float>(gpuOutput);    
+// Call kernel
+cle.AddImageAndScalar(gpuInput, gpuOutput, scalar);  
 
-    </pre>
+// pull device memory to host
+Image<float> output_img = cle.Pull<float>(gpuOutput);    
+
+</pre>
 
 
 
