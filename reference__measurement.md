@@ -359,3 +359,4 @@ Determines the variance of all pixels in an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_varianceOfMaskedPixels">varianceOfMaskedPixels</a>  
 Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. 
 
+101 methods listed.

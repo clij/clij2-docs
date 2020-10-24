@@ -68,3 +68,4 @@ Transforms a binary image with single pixles set to 1 to a labelled spots image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">spotsToPointList</a>  
 Transforms a spots image as resulting from maximum/minimum detection in an image where every column contains d  pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
+13 methods listed.

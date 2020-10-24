@@ -281,3 +281,4 @@ Takes a binary image, labels connected components and dilates the regions using 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
 Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
 
+75 methods listed.

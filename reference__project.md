@@ -101,3 +101,4 @@ Determines the sum intensity projection of an image along Z.
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sumZProjection">sumZProjection</a>  
 Determines the sum intensity projection of an image along Z.
 
+24 methods listed.

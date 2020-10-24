@@ -206,3 +206,4 @@ Transpose X and Z axes of an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_transposeYZ">transposeYZ</a>  
 Transpose Y and Z axes of an image.
 
+59 methods listed.

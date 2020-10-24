@@ -116,3 +116,4 @@ Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plu
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
 Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
 
+29 methods listed.

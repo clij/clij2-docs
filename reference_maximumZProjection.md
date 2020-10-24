@@ -151,7 +151,8 @@ cle.maximum_z_projection(clij, source, destination_max)
 <summary>
 clEsperanto CLIc C++ (experimental)
 </summary>
-<pre class="highlight">// Initialise GPU information.
+<pre class="highlight">
+    // Initialise GPU information.
     cle::GPU gpu;
     cle::CLE cle(gpu);
 
@@ -169,7 +170,7 @@ clEsperanto CLIc C++ (experimental)
 
     </pre>
 
-<pre class="highlight">
+
 
 </details>
 

@@ -173,3 +173,4 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_touchingNeighborCountMap">touchingNeighborCountMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the number of touching neighboring labels.
 
+44 methods listed.

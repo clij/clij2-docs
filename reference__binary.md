@@ -338,3 +338,4 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
+91 methods listed.

@@ -1433,3 +1433,4 @@ Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z]
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_writeXYZPointListToDisc">writeXYZPointListToDisc (Experimental)</a>  
 Takes a point list image representing n points (n*2 for 2D points, n*3 for 3D points) and exports them in XYZ format.
 
+495 methods listed.
