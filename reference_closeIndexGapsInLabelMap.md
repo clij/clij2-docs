@@ -126,7 +126,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.close_index_gaps_in_label_map(clij, labeling_input, labeling_destination)
+cle.close_index_gaps_in_label_map(labeling_input, labeling_destination)
+
 </pre>
 
 

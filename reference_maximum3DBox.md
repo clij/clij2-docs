@@ -143,7 +143,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.maximum_box(clij, source, destination, radiusX, radiusY, radiusZ)
+cle.maximum_box(source, destination, radiusX, radiusY, radiusZ)
+
 </pre>
 
 

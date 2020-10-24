@@ -118,7 +118,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.set_column(clij, source, column_index, value)
+cle.set_column(source, column_index, value)
+
 </pre>
 
 

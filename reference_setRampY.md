@@ -112,7 +112,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.set_ramp_y(clij, source)
+cle.set_ramp_y(source)
+
 </pre>
 
 

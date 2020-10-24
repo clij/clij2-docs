@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.top_hat_sphere(clij, input, destination, radiusX, radiusY, radiusZ)
+cle.top_hat_sphere(input, destination, radiusX, radiusY, radiusZ)
+
 </pre>
 
 

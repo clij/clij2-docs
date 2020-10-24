@@ -149,7 +149,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.multiply_images(clij, factor1, factor2, destination)
+cle.multiply_images(factor1, factor2, destination)
+
 </pre>
 
 

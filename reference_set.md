@@ -117,7 +117,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.set(clij, source, value)
+cle.set(source, value)
+
 </pre>
 
 

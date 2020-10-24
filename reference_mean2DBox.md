@@ -141,7 +141,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.mean_box(clij, source, destination, radiusX, radiusY)
+cle.mean_box(source, destination, radiusX, radiusY)
+
 </pre>
 
 

@@ -122,7 +122,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.laplace_box(clij, input, destination)
+cle.laplace_box(input, destination)
+
 </pre>
 
 

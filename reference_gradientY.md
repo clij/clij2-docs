@@ -125,7 +125,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.gradient_y(clij, source, destination)
+cle.gradient_y(source, destination)
+
 </pre>
 
 

@@ -141,7 +141,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.draw_box(clij, destination, x, y, z, width, height, depth, value)
+cle.draw_box(destination, x, y, z, width, height, depth, value)
+
 </pre>
 
 

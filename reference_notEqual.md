@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.not_equal(clij, source1, source2, destination)
+cle.not_equal(source1, source2, destination)
+
 </pre>
 
 

@@ -137,7 +137,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.greater_constant(clij, source, destination, constant)
+cle.greater_constant(source, destination, constant)
+
 </pre>
 
 

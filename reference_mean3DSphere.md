@@ -134,7 +134,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.mean_sphere(clij, source, destination, radiusX, radiusY, radiusZ)
+cle.mean_sphere(source, destination, radiusX, radiusY, radiusZ)
+
 </pre>
 
 

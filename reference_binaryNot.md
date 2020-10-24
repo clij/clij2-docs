@@ -139,7 +139,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.binary_not(clij, source, destination)
+cle.binary_not(source, destination)
+
 </pre>
 
 

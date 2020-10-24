@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.divide_images(clij, divident, divisor, destination)
+cle.divide_images(divident, divisor, destination)
+
 </pre>
 
 

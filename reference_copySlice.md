@@ -152,7 +152,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.copy_slice(clij, source, destination, sliceIndex)
+cle.copy_slice(source, destination, sliceIndex)
+
 </pre>
 
 

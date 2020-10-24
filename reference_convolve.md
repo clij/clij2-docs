@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.convolve(clij, source, convolution_kernel, destination)
+cle.convolve(source, convolution_kernel, destination)
+
 </pre>
 
 

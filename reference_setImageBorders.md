@@ -118,7 +118,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.set_image_borders(clij, destination, value)
+cle.set_image_borders(destination, value)
+
 </pre>
 
 

@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.minimum_sphere(clij, source, destination, radiusX, radiusY)
+cle.minimum_sphere(source, destination, radiusX, radiusY)
+
 </pre>
 
 

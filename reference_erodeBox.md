@@ -140,7 +140,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.erode_box(clij, source, destination)
+cle.erode_box(source, destination)
+
 </pre>
 
 

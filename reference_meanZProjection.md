@@ -122,7 +122,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.mean_z_projection(clij, source, destination)
+cle.mean_z_projection(source, destination)
+
 </pre>
 
 

@@ -135,7 +135,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.maximum_x_projection(clij, source, destination_max)
+cle.maximum_x_projection(source, destination_max)
+
 </pre>
 
 

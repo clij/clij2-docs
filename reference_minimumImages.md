@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.minimum_images(clij, source1, source2, destination)
+cle.minimum_images(source1, source2, destination)
+
 </pre>
 
 

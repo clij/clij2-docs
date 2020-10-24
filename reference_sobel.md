@@ -124,7 +124,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.sobel(clij, source, destination)
+cle.sobel(source, destination)
+
 </pre>
 
 

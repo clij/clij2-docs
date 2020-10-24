@@ -126,7 +126,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.logarithm(clij, source, destination)
+cle.logarithm(source, destination)
+
 </pre>
 
 

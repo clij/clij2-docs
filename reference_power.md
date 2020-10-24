@@ -127,7 +127,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.power(clij, source, destination, exponent)
+cle.power(source, destination, exponent)
+
 </pre>
 
 

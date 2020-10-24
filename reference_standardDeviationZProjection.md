@@ -122,7 +122,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.standard_deviation_z_projection(clij, source, destination)
+cle.standard_deviation_z_projection(source, destination)
+
 </pre>
 
 

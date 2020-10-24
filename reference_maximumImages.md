@@ -139,7 +139,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.maximum_images(clij, source1, source2, destination)
+cle.maximum_images(source1, source2, destination)
+
 </pre>
 
 

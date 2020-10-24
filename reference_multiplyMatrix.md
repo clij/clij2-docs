@@ -138,7 +138,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.multiply_matrix(clij, matrix1, matrix2, matrix_destination)
+cle.multiply_matrix(matrix1, matrix2, matrix_destination)
+
 </pre>
 
 

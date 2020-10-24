@@ -128,7 +128,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.copy(clij, source, destination)
+cle.copy(source, destination)
+
 </pre>
 
 

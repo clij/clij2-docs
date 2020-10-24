@@ -125,7 +125,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.multiply_image_and_coordinate(clij, source, destination, dimension)
+cle.multiply_image_and_coordinate(source, destination, dimension)
+
 </pre>
 
 

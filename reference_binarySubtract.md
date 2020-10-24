@@ -129,7 +129,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.binary_subtract(clij, minuend, subtrahend, destination)
+cle.binary_subtract(minuend, subtrahend, destination)
+
 </pre>
 
 

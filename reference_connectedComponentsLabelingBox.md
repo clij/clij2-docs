@@ -143,7 +143,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.connected_components_labeling_box(clij, binary_input, labeling_destination)
+cle.connected_components_labeling_box(binary_input, labeling_destination)
+
 </pre>
 
 

@@ -154,7 +154,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.mask(clij, source, mask, destination)
+cle.mask(source, mask, destination)
+
 </pre>
 
 

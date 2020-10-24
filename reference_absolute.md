@@ -133,7 +133,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.absolute(clij, source, destination)
+cle.absolute(source, destination)
+
 </pre>
 
 

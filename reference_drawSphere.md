@@ -138,7 +138,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.draw_sphere(clij, destination, x, y, z, radius_x, radius_y, radius_z, value)
+cle.draw_sphere(destination, x, y, z, radius_x, radius_y, radius_z, value)
+
 </pre>
 
 

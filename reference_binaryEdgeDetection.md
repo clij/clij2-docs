@@ -132,7 +132,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.binary_edge_detection(clij, source, destination)
+cle.binary_edge_detection(source, destination)
+
 </pre>
 
 

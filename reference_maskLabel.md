@@ -142,7 +142,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.mask_label(clij, source, label_map, destination, label_index)
+cle.mask_label(source, label_map, destination, label_index)
+
 </pre>
 
 

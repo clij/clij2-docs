@@ -130,7 +130,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.erode_box_slice_by_slice(clij, source, destination)
+cle.erode_box_slice_by_slice(source, destination)
+
 </pre>
 
 

@@ -136,7 +136,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.binary_or(clij, operand1, operand2, destination)
+cle.binary_or(operand1, operand2, destination)
+
 </pre>
 
 

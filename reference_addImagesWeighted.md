@@ -137,7 +137,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.add_images_weighted(clij, summand1, summand2, destination, factor1, factor2)
+cle.add_images_weighted(summand1, summand2, destination, factor1, factor2)
+
 </pre>
 
 

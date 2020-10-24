@@ -122,7 +122,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.minimum_z_projection(clij, source, destination_sum)
+cle.minimum_z_projection(source, destination_sum)
+
 </pre>
 
 

@@ -137,7 +137,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.replace_intensity(clij, input, destination, oldValue, newValue)
+cle.replace_intensity(input, destination, oldValue, newValue)
+
 </pre>
 
 

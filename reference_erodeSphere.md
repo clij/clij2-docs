@@ -125,7 +125,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.erode_sphere(clij, source, destination)
+cle.erode_sphere(source, destination)
+
 </pre>
 
 

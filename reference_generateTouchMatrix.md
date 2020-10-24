@@ -145,7 +145,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.generate_touch_matrix(clij, label_map, touch_matrix_destination)
+cle.generate_touch_matrix(label_map, touch_matrix_destination)
+
 </pre>
 
 

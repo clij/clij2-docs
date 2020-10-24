@@ -135,7 +135,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.greater_or_equal(clij, source1, source2, destination)
+cle.greater_or_equal(source1, source2, destination)
+
 </pre>
 
 

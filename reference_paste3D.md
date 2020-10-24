@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.paste(clij, source, destination, destinationX, destinationY, destinationZ)
+cle.paste(source, destination, destinationX, destinationY, destinationZ)
+
 </pre>
 
 

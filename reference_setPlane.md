@@ -118,7 +118,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.set_plane(clij, source, plane_index, value)
+cle.set_plane(source, plane_index, value)
+
 </pre>
 
 

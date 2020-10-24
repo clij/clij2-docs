@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.add_image_and_scalar(clij, source, destination, scalar)
+cle.add_image_and_scalar(source, destination, scalar)
+
 </pre>
 
 

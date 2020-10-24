@@ -142,7 +142,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.binary_and(clij, operand1, operand2, destination)
+cle.binary_and(operand1, operand2, destination)
+
 </pre>
 
 

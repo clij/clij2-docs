@@ -149,7 +149,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.touch_matrix_to_mesh(clij, pointlist, touch_matrix, mesh_destination)
+cle.touch_matrix_to_mesh(pointlist, touch_matrix, mesh_destination)
+
 </pre>
 
 

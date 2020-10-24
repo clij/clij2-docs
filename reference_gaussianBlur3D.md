@@ -144,7 +144,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.gaussian_blur(clij, source, destination, sigmaX, sigmaY, sigmaZ)
+cle.gaussian_blur(source, destination, sigmaX, sigmaY, sigmaZ)
+
 </pre>
 
 

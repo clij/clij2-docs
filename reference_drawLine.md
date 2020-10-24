@@ -141,7 +141,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.draw_line(clij, destination, x1, y1, z1, x2, y2, z2, thickness, value)
+cle.draw_line(destination, x1, y1, z1, x2, y2, z2, thickness, value)
+
 </pre>
 
 

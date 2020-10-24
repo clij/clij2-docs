@@ -138,7 +138,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.dilate_box(clij, source, destination)
+cle.dilate_box(source, destination)
+
 </pre>
 
 

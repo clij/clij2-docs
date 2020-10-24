@@ -127,7 +127,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.dilate_sphere_slice_by_slice(clij, source, destination)
+cle.dilate_sphere_slice_by_slice(source, destination)
+
 </pre>
 
 

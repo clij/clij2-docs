@@ -150,7 +150,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.generate_distance_matrix(clij, coordinate_list1, coordinate_list2, distance_matrix_destination)
+cle.generate_distance_matrix(coordinate_list1, coordinate_list2, distance_matrix_destination)
+
 </pre>
 
 

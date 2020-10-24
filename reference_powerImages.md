@@ -129,7 +129,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.power_images(clij, input, exponent, destination)
+cle.power_images(input, exponent, destination)
+
 </pre>
 
 

@@ -138,7 +138,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.transpose_xy(clij, input, destination)
+cle.transpose_xy(input, destination)
+
 </pre>
 
 

@@ -132,7 +132,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.subtract_image_from_scalar(clij, input, destination, scalar)
+cle.subtract_image_from_scalar(input, destination, scalar)
+
 </pre>
 
 

@@ -139,7 +139,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.binary_xor(clij, operand1, operand2, destination)
+cle.binary_xor(operand1, operand2, destination)
+
 </pre>
 
 

@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.minimum_box(clij, source, destination, radiusX, radiusY)
+cle.minimum_box(source, destination, radiusX, radiusY)
+
 </pre>
 
 

@@ -131,7 +131,8 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.flip(clij, source, destination, flipX, flipY, flipZ)
+cle.flip(source, destination, flipX, flipY, flipZ)
+
 </pre>
 
 
