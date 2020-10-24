@@ -154,14 +154,14 @@ cle::GPU gpu;
 cle::CLE cle(gpu);
 
 // Initialise device memory and push from host
-cle::Buffer gpuInput = cle.Push<float>(input_img);
-cle::Buffer gpuOutput = cle.Create<float>(input_img);
+cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img);
 
 // Call kernel
 cle.Absolute(gpuInput, gpuOutput);  
 
 // pull device memory to host
-Image<float> output_img = cle.Pull<float>(gpuOutput);    
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 
