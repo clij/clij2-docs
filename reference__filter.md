@@ -164,6 +164,9 @@ Replaces recursively all pixels of value a with value b if the pixels have a nei
 <a name="G"></a>
 
 ## G
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gammaCorrection">gammaCorrection (Experimental)</a>  
+Applies a gamma correction to an image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gaussianBlur2D">gaussianBlur2D</a>  
 Computes the Gaussian blurred image of an image given two sigma values in X and Y. 
 
@@ -392,4 +395,4 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
-119 methods listed.
+120 methods listed.

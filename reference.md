@@ -446,6 +446,9 @@ Replaces recursively all pixels of value a with value b if the pixels have a nei
 <a name="G"></a>
 
 ## G
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gammaCorrection">gammaCorrection (Experimental)</a>  
+Applies a gamma correction to an image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_gaussJordan">gaussJordan (Experimental)</a>  
 Gauss Jordan elimination algorithm for solving linear equation systems. 
 
@@ -1433,4 +1436,4 @@ Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z]
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_writeXYZPointListToDisc">writeXYZPointListToDisc (Experimental)</a>  
 Takes a point list image representing n points (n*2 for 2D points, n*3 for 3D points) and exports them in XYZ format.
 
-495 methods listed.
+496 methods listed.
