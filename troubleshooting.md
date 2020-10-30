@@ -28,6 +28,8 @@ Reason is an energy saving mode. To solve this problem, turn off "Automatic grap
 Thanks to Tanner Fadero for reporting this bug and its [solution](https://forum.image.sc/t/ijm-macro-crashes-after-a-few-loops/40130/16).
 ## Result image is black or shows random textures
 This might happend with older GPUs which have not been tested. A helpful workaround is converting all images to 32 bit using `run("32-bit");` before sending them to the GPU.
+## UnsatisfiedLinkError in deconvolution
+If `CLIJx_deconvolveRichardsonLucyFFT` outputs a java.lang.UnsatisfiedLinkError as shown [here](https://forum.image.sc/t/clij-deconvolution/35172/83), installation of the [Visual Studio Redist package](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) might help. 
 ## Class not found on Linux
 CLIJ doesn't start on Ubuntu linux with an error message that a class called ClearCLBackendJOCL cannot be initialized. Installing 'ocl-icd-opencl-dev' helped here.
 <a name="exceptions_linux"></a>
