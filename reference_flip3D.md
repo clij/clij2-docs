@@ -7,7 +7,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_flip3D(Image source, Image destination, Boolean flipX, Boolean flipY, Boolean flipZ);
+Ext.CLIJ2_flip3D(Image source, Image destination, Boolean flip_x, Boolean flip_y, Boolean flip_z);
 ```
 
 
@@ -28,14 +28,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-boolean flipX = true;
-boolean flipY = false;
-boolean flipZ = false;
+boolean flip_x = true;
+boolean flip_y = false;
+boolean flip_z = false;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.flip3D(source, destination, flipX, flipY, flipZ);
+clij2.flip3D(source, destination, flip_x, flip_y, flip_z);
 </pre>
 
 <pre class="highlight">
@@ -63,14 +63,14 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-flipX = true;
-flipY = false;
-flipZ = false;
+flip_x = true;
+flip_y = false;
+flip_z = false;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.flip3D(source, destination, flipX, flipY, flipZ);
+clij2.flip3D(source, destination, flip_x, flip_y, flip_z);
 </pre>
 
 <pre class="highlight">
@@ -101,14 +101,14 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-flipX = true;
-flipY = false;
-flipZ = false;
+flip_x = true;
+flip_y = false;
+flip_z = false;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.flip3D(source, destination, flipX, flipY, flipZ);
+clij2.flip3D(source, destination, flip_x, flip_y, flip_z);
 </pre>
 
 <pre class="highlight">
@@ -131,7 +131,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.flip(source, destination, flipX, flipY, flipZ)
+cle.flip(source, destination, flip_x, flip_y, flip_z)
 
 </pre>
 

@@ -3,14 +3,22 @@
 
 Takes a touch matrix and a vector of values to determine the maximum value among touching neighbors for every object. 
 
+### Parameters
+
+values : Image
+    A vector of values corresponding to the labels of which the maximum should be determined.
+touch_matrix : Image
+    A touch_matrix specifying which labels are taken into account for neighborhood relationships.
+maximum_values_destination : Image
+    A the resulting vector of maximum values in the neighborhood.
 
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### maximumOfTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
-* <a href="reference_create3D">create3D</a> (2)
-* <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_create3D">create3D</a> (1)
+* <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (1)
 
 
 ### maximumOfTouchingNeighbors is often followed by

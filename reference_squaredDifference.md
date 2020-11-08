@@ -1,5 +1,5 @@
 ## squaredDifference
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the squared difference pixel by pixel between two images.
 
@@ -117,6 +117,23 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.squared_difference(source1, source2, destination)
+
+</pre>
+
+
 
 </details>
 

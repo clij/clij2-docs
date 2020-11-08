@@ -8,7 +8,7 @@ Hand over a vector of values and a range specifying which labels with which valu
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### excludeLabelsWithValuesOutOfRange often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (1)
 
 
 ### Usage in ImageJ macro

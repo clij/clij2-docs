@@ -3,6 +3,20 @@
 
 Applies a top-hat filter for background subtraction to the input image.
 
+### Parameters
+
+input : Image
+    The input image where the background is subtracted from.
+destination : Image
+    The output image where results are written into.
+radius_x : Image
+    Radius of the background determination region in X.
+radius_y : Image
+    Radius of the background determination region in Y.
+radius_z : Image
+    Radius of the background determination region in Z.
+
+
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
 
 ### Usage in ImageJ macro

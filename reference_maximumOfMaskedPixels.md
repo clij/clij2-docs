@@ -3,6 +3,14 @@
 
 Determines the maximum intensity in an image, but only in pixels which have non-zero values in another mask image.
 
+### Parameters
+
+source : Image
+    The image of which the minimum of all pixels or voxels where mask=1 will be determined.
+mask : Image
+    A binary image marking all pixels with 1 which should be taken into accout.
+
+
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### Usage in ImageJ macro

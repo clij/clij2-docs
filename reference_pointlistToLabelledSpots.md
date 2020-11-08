@@ -6,11 +6,11 @@ Takes a pointlist with dimensions n times d with n point coordinates in d dimens
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### pointlistToLabelledSpots often follows after
-* <a href="reference_create2D">create2D</a> (2)
+* <a href="reference_create2D">create2D</a> (1)
 
 
 ### pointlistToLabelledSpots is often followed by
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (5)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (4)
 
 
 ### Usage in ImageJ macro

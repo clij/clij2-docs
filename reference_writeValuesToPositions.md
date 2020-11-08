@@ -8,12 +8,12 @@ The value v will be written at position x/y[/z] in the target image.
 Category: Visualisation
 
 ### writeValuesToPositions often follows after
-* <a href="reference_paste2D">paste2D</a> (3)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### writeValuesToPositions is often followed by
-* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
-* <a href="reference_maximum2DSphere">maximum2DSphere</a> (2)
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
+* <a href="reference_maximum2DSphere">maximum2DSphere</a> (1)
 
 
 ### Usage in ImageJ macro

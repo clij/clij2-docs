@@ -1,21 +1,31 @@
 ## equal
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
-Determines if two images A and B equal pixel wise. 
+Determines if two images A and B equal pixel wise.
 
-<pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
+<pre>f(a, b) = 1 if a == b; 0 otherwise.</pre>
+
+### Parameters
+
+source1 : Image
+    The first image to be compared with.
+source2 : Image
+    The second image to be compared with the first.
+destination : Image
+    The resulting binary image where pixels will be 1 only if source1 and source2 equal in the given pixel.
+
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### equal often follows after
-* <a href="reference_minimumYProjection">minimumYProjection</a> (2)
-* <a href="reference_replaceIntensity">replaceIntensity</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_minimumYProjection">minimumYProjection</a> (1)
+* <a href="reference_replaceIntensity">replaceIntensity</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### equal is often followed by
-* <a href="reference_binaryAnd">binaryAnd</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_binaryAnd">binaryAnd</a> (1)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
 ### Usage in ImageJ macro

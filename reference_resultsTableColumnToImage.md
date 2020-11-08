@@ -6,8 +6,8 @@ Converts a table column to an image.
 The values are stored in x dimension.
 
 ### resultsTableColumnToImage is often followed by
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (1)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro

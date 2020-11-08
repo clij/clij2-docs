@@ -3,7 +3,17 @@
 
 Determines if two images A and B equal pixel wise.
 
-f(a, b) = 1 if a != b; 0 otherwise. 
+f(a, b) = 1 if a != b; 0 otherwise.
+
+### Parameters
+
+source1 : Image
+    The first image to be compared with.
+source2 : Image
+    The second image to be compared with the first.
+destination : Image
+    The resulting binary image where pixels will be 1 only if source1 and source2 are not equal in the given pixel.
+
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 

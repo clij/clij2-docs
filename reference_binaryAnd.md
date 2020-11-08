@@ -7,15 +7,25 @@ All pixel values except 0 in the input images are interpreted as 1.
 
 <pre>f(x, y) = x & y</pre>
 
+### Parameters
+
+operand1 : Image
+    The first binary input image to be processed.
+operand2 : Image
+    The second binary input image to be processed.
+destination : Image
+    The output image where results are written into.
+
+
 Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### binaryAnd often follows after
-* <a href="reference_notEqualConstant">notEqualConstant</a> (2)
-* <a href="reference_equal">equal</a> (2)
+* <a href="reference_notEqualConstant">notEqualConstant</a> (1)
+* <a href="reference_equal">equal</a> (1)
 
 
 ### binaryAnd is often followed by
-* <a href="reference_release">release</a> (2)
+* <a href="reference_release">release</a> (6)
 
 
 ### Usage in ImageJ macro

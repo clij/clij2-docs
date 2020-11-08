@@ -9,7 +9,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_crop(Image source, Image destination, Number startX, Number startY, Number width, Number height);
+Ext.CLIJ2_crop(Image source, Image destination, Number start_x, Number start_z, Number width, Number height);
 ```
 
 

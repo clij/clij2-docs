@@ -16,10 +16,10 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Bina
 
 
 ### erodeBox is often followed by
-* <a href="reference_release">release</a> (2)
-* <a href="reference_binaryXOr">binaryXOr</a> (2)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_binaryXOr">binaryXOr</a> (1)
 * <a href="reference_mask">mask</a> (4)
-* <a href="reference_dilateBox">dilateBox</a> (3)
+* <a href="reference_dilateBox">dilateBox</a> (2)
 * <a href="reference_erodeBox">erodeBox</a> (3)
 
 

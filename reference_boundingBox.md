@@ -1,5 +1,5 @@
 ## boundingBox
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the bounding box of all non-zero pixels in a binary image. 
 
@@ -105,6 +105,23 @@ System.out.println(resultBoundingBox);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.bounding_box(source)
+
+</pre>
+
+
 
 </details>
 

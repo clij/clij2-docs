@@ -6,6 +6,12 @@ Determines the maximum of all pixels in a given image.
 It will be stored in a new row of ImageJs
 Results table in the column 'Max'.
 
+### Parameters
+
+source : Image
+    The image of which the maximum of all pixels or voxels will be determined.
+
+
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### Usage in ImageJ macro

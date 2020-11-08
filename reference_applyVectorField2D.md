@@ -8,11 +8,11 @@ Deforms an image according to distances provided in the given vector images.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### applyVectorField2D often follows after
-* <a href="reference_affineTransform2D">affineTransform2D</a> (3)
+* <a href="reference_affineTransform2D">affineTransform2D</a> (2)
 
 
 ### applyVectorField2D is often followed by
-* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_copySlice">copySlice</a> (1)
 
 
 ### Usage in ImageJ macro

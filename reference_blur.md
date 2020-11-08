@@ -13,7 +13,7 @@ Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_blur(Image source, Image destination, Number sigmaX, Number sigmaY);
+Ext.CLIJ2_blur(Image source, Image destination, Number sigma_x, Number sigma_y);
 ```
 
 
@@ -34,13 +34,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-float sigmaX = 1.0;
-float sigmaY = 2.0;
+float sigma_x = 1.0;
+float sigma_y = 2.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.blur(source, destination, sigmaX, sigmaY);
+clij2.blur(source, destination, sigma_x, sigma_y);
 </pre>
 
 <pre class="highlight">
@@ -68,13 +68,13 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-sigmaX = 1.0;
-sigmaY = 2.0;
+sigma_x = 1.0;
+sigma_y = 2.0;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.blur(source, destination, sigmaX, sigmaY);
+clij2.blur(source, destination, sigma_x, sigma_y);
 </pre>
 
 <pre class="highlight">
@@ -105,13 +105,13 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-sigmaX = 1.0;
-sigmaY = 2.0;
+sigma_x = 1.0;
+sigma_y = 2.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.blur(source, destination, sigmaX, sigmaY);
+clij2.blur(source, destination, sigma_x, sigma_y);
 </pre>
 
 <pre class="highlight">

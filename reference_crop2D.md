@@ -8,19 +8,19 @@ Note: If the destination image pre-exists already, it will be overwritten and ke
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### crop2D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (3)
-* <a href="reference_paste2D">paste2D</a> (2)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_getDimensions">getDimensions</a> (2)
+* <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### crop2D is often followed by
-* <a href="reference_nClosestDistances">nClosestDistances</a> (2)
-* <a href="reference_flip2D">flip2D</a> (2)
+* <a href="reference_nClosestDistances">nClosestDistances</a> (1)
+* <a href="reference_flip2D">flip2D</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_crop2D(Image source, Image destination, Number startX, Number startY, Number width, Number height);
+Ext.CLIJ2_crop2D(Image source, Image destination, Number start_x, Number start_z, Number width, Number height);
 ```
 
 

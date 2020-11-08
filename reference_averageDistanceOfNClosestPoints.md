@@ -8,7 +8,7 @@ This corresponds to the average of the n minimum values (rows) for each column o
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### averageDistanceOfNClosestPoints is often followed by
-* <a href="reference_release">release</a> (3)
+* <a href="reference_release">release</a> (2)
 
 
 ### Usage in ImageJ macro

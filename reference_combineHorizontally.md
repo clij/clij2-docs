@@ -6,11 +6,11 @@ Combines two images or stacks in X.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### combineHorizontally often follows after
-* <a href="reference_reduceStack">reduceStack</a> (5)
+* <a href="reference_reduceStack">reduceStack</a> (4)
 
 
 ### combineHorizontally is often followed by
-* <a href="reference_combineVertically">combineVertically</a> (3)
+* <a href="reference_combineVertically">combineVertically</a> (2)
 
 
 ### Usage in ImageJ macro

@@ -8,8 +8,8 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
 
 ### distanceMatrixToMesh often follows after
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### Usage in ImageJ macro

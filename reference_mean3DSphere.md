@@ -10,7 +10,7 @@ Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_mean3DSphere(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);
+Ext.CLIJ2_mean3DSphere(Image source, Image destination, Number radius_x, Number radius_y, Number radius_z);
 ```
 
 
@@ -31,14 +31,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-int radiusX = 10;
-int radiusY = 20;
-int radiusZ = 30;
+int radius_x = 10;
+int radius_y = 20;
+int radius_z = 30;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.mean3DSphere(source, destination, radiusX, radiusY, radiusZ);
+clij2.mean3DSphere(source, destination, radius_x, radius_y, radius_z);
 </pre>
 
 <pre class="highlight">
@@ -66,14 +66,14 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-radiusX = 10;
-radiusY = 20;
-radiusZ = 30;
+radius_x = 10;
+radius_y = 20;
+radius_z = 30;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.mean3DSphere(source, destination, radiusX, radiusY, radiusZ);
+clij2.mean3DSphere(source, destination, radius_x, radius_y, radius_z);
 </pre>
 
 <pre class="highlight">
@@ -104,14 +104,14 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-radiusX = 10;
-radiusY = 20;
-radiusZ = 30;
+radius_x = 10;
+radius_y = 20;
+radius_z = 30;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.mean3DSphere(source, destination, radiusX, radiusY, radiusZ);
+clij2.mean3DSphere(source, destination, radius_x, radius_y, radius_z);
 </pre>
 
 <pre class="highlight">
@@ -134,7 +134,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.mean_sphere(source, destination, radiusX, radiusY, radiusZ)
+cle.mean_sphere(source, destination, radius_x, radius_y, radius_z)
 
 </pre>
 

@@ -9,7 +9,7 @@ Determines the center of mass of an image or image stack.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### getCenterOfMass often follows after
-* <a href="reference_automaticThreshold">automaticThreshold</a> (2)
+* <a href="reference_automaticThreshold">automaticThreshold</a> (1)
 
 
 ### Usage in ImageJ macro

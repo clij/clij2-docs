@@ -7,8 +7,8 @@ The target image should not exist with a different type before this
 method is called.
 
 ### convertFloat is often followed by
-* <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (2)
-* <a href="reference_convertUInt8">convertUInt8</a> (2)
+* <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (1)
+* <a href="reference_convertUInt8">convertUInt8</a> (1)
 
 
 ### Usage in ImageJ macro

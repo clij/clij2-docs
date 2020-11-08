@@ -1,12 +1,12 @@
 ## detectLabelEdges
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
 
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### detectLabelEdges often follows after
-* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -114,6 +114,23 @@ Icy.addSequence(edge_image_destination_sequence);
 clij2.release(label_map);
 clij2.release(edge_image_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.detect_label_edges(label_map, edge_image_destination)
+
+</pre>
+
+
 
 </details>
 

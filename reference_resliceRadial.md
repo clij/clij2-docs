@@ -9,15 +9,15 @@ X/Y-plane of a given input image stack. Furthermore, radius of the resulting pro
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### resliceRadial often follows after
-* <a href="reference_resliceRadial">resliceRadial</a> (2)
-* <a href="reference_topHatBox">topHatBox</a> (2)
-* <a href="reference_resliceTop">resliceTop</a> (4)
+* <a href="reference_resliceRadial">resliceRadial</a> (1)
+* <a href="reference_topHatBox">topHatBox</a> (1)
+* <a href="reference_resliceTop">resliceTop</a> (3)
 
 
 ### resliceRadial is often followed by
-* <a href="reference_maximumXProjection">maximumXProjection</a> (4)
-* <a href="reference_resliceLeft">resliceLeft</a> (2)
-* <a href="reference_resliceRadial">resliceRadial</a> (2)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (3)
+* <a href="reference_resliceLeft">resliceLeft</a> (1)
+* <a href="reference_resliceRadial">resliceRadial</a> (1)
 
 
 ### Usage in ImageJ macro

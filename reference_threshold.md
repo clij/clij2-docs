@@ -14,12 +14,12 @@ Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmenta
 
 ### threshold often follows after
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (4)
-* <a href="reference_mean2DBox">mean2DBox</a> (2)
+* <a href="reference_mean2DBox">mean2DBox</a> (1)
 
 
 ### threshold is often followed by
-* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
-* <a href="reference_centerOfMass">centerOfMass</a> (3)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
+* <a href="reference_centerOfMass">centerOfMass</a> (2)
 * <a href="reference_mask">mask</a> (4)
 
 

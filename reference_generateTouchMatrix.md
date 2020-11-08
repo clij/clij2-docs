@@ -4,28 +4,30 @@
 Takes a labelmap with n labels and generates a (n+1)*(n+1) matrix where all pixels are set to 0 exept those where labels are touching. 
 
 Only half of the matrix is filled (with x < y). For example, if labels 3 and 4 are touching then the pixel (3,4) in the matrix will be set to 1.
+The touch matrix is a representation of a region adjacency graph
+
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### generateTouchMatrix often follows after
-* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (2)
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
-* <a href="reference_maximum2DSphere">maximum2DSphere</a> (2)
-* <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (2)
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (1)
+* <a href="reference_maximum2DSphere">maximum2DSphere</a> (1)
+* <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (1)
 
 
 ### generateTouchMatrix is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (3)
-* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (2)
-* <a href="reference_release">release</a> (5)
-* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (3)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (3)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (8)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (3)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (1)
+* <a href="reference_release">release</a> (4)
+* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (1)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (7)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro

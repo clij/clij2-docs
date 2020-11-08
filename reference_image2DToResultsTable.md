@@ -4,8 +4,8 @@
 Converts an image into a table.
 
 ### image2DToResultsTable often follows after
-* <a href="reference_nClosestPoints">nClosestPoints</a> (2)
-* <a href="reference_spotsToPointList">spotsToPointList</a> (3)
+* <a href="reference_nClosestPoints">nClosestPoints</a> (1)
+* <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
 
 ### Usage in ImageJ macro

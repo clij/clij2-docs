@@ -11,8 +11,8 @@ This method is executed on the CPU and not on the GPU/OpenCL device.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### statisticsOfBackgroundAndLabelledPixels often follows after
-* <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_copySlice">copySlice</a> (3)
+* <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_copySlice">copySlice</a> (2)
 
 
 ### Usage in ImageJ macro

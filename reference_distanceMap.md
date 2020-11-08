@@ -10,11 +10,11 @@ Note: This is not a distance matrix. See generateDistanceMatrix for details.
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### distanceMap often follows after
-* <a href="reference_binaryNot">binaryNot</a> (2)
+* <a href="reference_binaryNot">binaryNot</a> (1)
 
 
 ### distanceMap is often followed by
-* <a href="reference_mean2DBox">mean2DBox</a> (2)
+* <a href="reference_mean2DBox">mean2DBox</a> (1)
 
 
 ### Usage in ImageJ macro

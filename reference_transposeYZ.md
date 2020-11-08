@@ -3,6 +3,14 @@
 
 Transpose Y and Z axes of an image.
 
+### Parameters
+
+input : Image
+    The input image.
+destination : Image
+    The output image where results are written into.
+
+
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### Usage in ImageJ macro

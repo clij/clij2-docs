@@ -6,7 +6,7 @@ Combines two images or stacks in Y.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### combineVertically often follows after
-* <a href="reference_combineHorizontally">combineHorizontally</a> (3)
+* <a href="reference_combineHorizontally">combineHorizontally</a> (2)
 
 
 ### Usage in ImageJ macro

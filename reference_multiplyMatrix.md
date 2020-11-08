@@ -6,12 +6,12 @@ Multiplies two matrices with each other.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### multiplyMatrix often follows after
-* <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (1)
 
 
 ### multiplyMatrix is often followed by
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
 
 
 ### Usage in ImageJ macro

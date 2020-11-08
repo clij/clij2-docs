@@ -27,12 +27,12 @@ transform = "-center scale=2 rotate=45 center";
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### affineTransform2D often follows after
-* <a href="reference_copySlice">copySlice</a> (3)
+* <a href="reference_copySlice">copySlice</a> (2)
 
 
 ### affineTransform2D is often followed by
-* <a href="reference_copySlice">copySlice</a> (3)
-* <a href="reference_applyVectorField2D">applyVectorField2D</a> (3)
+* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_applyVectorField2D">applyVectorField2D</a> (2)
 
 
 ### Usage in ImageJ macro

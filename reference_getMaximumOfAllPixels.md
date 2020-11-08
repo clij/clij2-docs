@@ -8,13 +8,14 @@ It will be stored in the variable maximum_of_all_pixels.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### getMaximumOfAllPixels often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
-* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (3)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 
 
 ### getMaximumOfAllPixels is often followed by
-* <a href="reference_histogram">histogram</a> (3)
-* <a href="reference_create2D">create2D</a> (2)
+* <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_equalConstant">equalConstant</a> (1)
+* <a href="reference_create2D">create2D</a> (1)
 
 
 ### Usage in ImageJ macro

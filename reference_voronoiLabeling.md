@@ -1,5 +1,5 @@
 ## voronoiLabeling
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a binary image, labels connected components and dilates the regions using a octagon shape until they touch. 
 
@@ -8,12 +8,12 @@ The resulting label map is written to the output.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### voronoiLabeling often follows after
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 
 
 ### voronoiLabeling is often followed by
-* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
-* <a href="reference_release">release</a> (2)
+* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (1)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -121,6 +121,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.voronoi_labeling(input, destination)
+
+</pre>
+
+
 
 </details>
 

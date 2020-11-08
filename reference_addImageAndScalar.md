@@ -5,10 +5,25 @@ Adds a scalar value s to all pixels x of a given image X.
 
 <pre>f(x, s) = x + s</pre>
 
+### Parameters
+
+source : Image
+    The input image where scalare should be added.
+destination : Image
+    The output image where results are written into.
+scalar : float
+    The constant number which will be added to all pixels.
+
+
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+### addImageAndScalar often follows after
+* <a href="reference_create3D">create3D</a> (1)
+
+
 ### addImageAndScalar is often followed by
-* <a href="reference_absolute">absolute</a> (2)
+* <a href="reference_absolute">absolute</a> (1)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
 
 
 ### Usage in ImageJ macro

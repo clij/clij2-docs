@@ -8,12 +8,12 @@ f(a, b) = 1 if a <= b; 0 otherwise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### smallerOrEqual often follows after
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### smallerOrEqual is often followed by
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### Usage in ImageJ macro

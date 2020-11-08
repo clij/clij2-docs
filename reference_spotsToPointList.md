@@ -7,16 +7,16 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### spotsToPointList often follows after
-* <a href="reference_translate2D">translate2D</a> (2)
-* <a href="reference_greaterConstant">greaterConstant</a> (2)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (3)
+* <a href="reference_translate2D">translate2D</a> (1)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
 
 
 ### spotsToPointList is often followed by
-* <a href="reference_release">release</a> (2)
-* <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (3)
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (3)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
 
 
 ### Usage in ImageJ macro

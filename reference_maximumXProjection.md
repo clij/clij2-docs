@@ -6,16 +6,16 @@ Determines the maximum intensity projection of an image along X.
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 ### maximumXProjection often follows after
-* <a href="reference_resliceRadial">resliceRadial</a> (4)
-* <a href="reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a> (2)
+* <a href="reference_resliceRadial">resliceRadial</a> (3)
+* <a href="reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a> (1)
 
 
 ### maximumXProjection is often followed by
-* <a href="reference_saveAsTIF">saveAsTIF</a> (2)
-* <a href="reference_transposeXY">transposeXY</a> (2)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
-* <a href="reference_greaterConstant">greaterConstant</a> (2)
-* <a href="reference_resample">resample</a> (2)
+* <a href="reference_saveAsTIF">saveAsTIF</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+* <a href="reference_resample">resample</a> (1)
 
 
 ### Usage in ImageJ macro

@@ -10,17 +10,18 @@ The implementation is done separable. In case a sigma equals zero, the direction
 Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### gaussianBlur3D is often followed by
-* <a href="reference_subtractImages">subtractImages</a> (2)
+* <a href="reference_subtractImages">subtractImages</a> (1)
 * <a href="reference_release">release</a> (2)
-* <a href="reference_thresholdDefault">thresholdDefault</a> (2)
+* <a href="reference_thresholdDefault">thresholdDefault</a> (1)
 * <a href="reference_threshold">threshold</a> (4)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
+* <a href="reference_thresholdTriangle">thresholdTriangle</a> (2)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_gaussianBlur3D(Image source, Image destination, Number sigmaX, Number sigmaY, Number sigmaZ);
+Ext.CLIJ2_gaussianBlur3D(Image source, Image destination, Number sigma_x, Number sigma_y, Number sigma_z);
 ```
 
 
@@ -41,14 +42,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-float sigmaX = 1.0;
-float sigmaY = 2.0;
-float sigmaZ = 3.0;
+float sigma_x = 1.0;
+float sigma_y = 2.0;
+float sigma_z = 3.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.gaussianBlur3D(source, destination, sigmaX, sigmaY, sigmaZ);
+clij2.gaussianBlur3D(source, destination, sigma_x, sigma_y, sigma_z);
 </pre>
 
 <pre class="highlight">
@@ -76,14 +77,14 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-sigmaX = 1.0;
-sigmaY = 2.0;
-sigmaZ = 3.0;
+sigma_x = 1.0;
+sigma_y = 2.0;
+sigma_z = 3.0;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.gaussianBlur3D(source, destination, sigmaX, sigmaY, sigmaZ);
+clij2.gaussianBlur3D(source, destination, sigma_x, sigma_y, sigma_z);
 </pre>
 
 <pre class="highlight">
@@ -114,14 +115,14 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-sigmaX = 1.0;
-sigmaY = 2.0;
-sigmaZ = 3.0;
+sigma_x = 1.0;
+sigma_y = 2.0;
+sigma_z = 3.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.gaussianBlur3D(source, destination, sigmaX, sigmaY, sigmaZ);
+clij2.gaussianBlur3D(source, destination, sigma_x, sigma_y, sigma_z);
 </pre>
 
 <pre class="highlight">
@@ -144,7 +145,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.gaussian_blur(source, destination, sigmaX, sigmaY, sigmaZ)
+cle.gaussian_blur(source, destination, sigma_x, sigma_y, sigma_z)
 
 </pre>
 

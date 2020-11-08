@@ -1,5 +1,5 @@
 ## minimumOfMaskedPixels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the minimum intensity in a masked image. 
 
@@ -112,6 +112,23 @@ System.out.println(resultMinimumOfMaskedPixels);
 clij2.release(source);
 clij2.release(mask);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.minimum_of_masked_pixels(source, mask)
+
+</pre>
+
+
 
 </details>
 

@@ -1,5 +1,5 @@
 ## differenceOfGaussian
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 
@@ -124,6 +124,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.difference_of_gaussian(input, destination, sigma1x, sigma1y, sigma2x, sigma2y)
+
+</pre>
+
+
 
 </details>
 

@@ -1,7 +1,17 @@
 ## adjacencyMatrixToTouchMatrix
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Converts a adjacency matrix in a touch matrix
+Converts a adjacency matrix in a touch matrix.
+
+An adjacency matrix is symmetric while a touch matrix is typically not.
+
+### Parameters
+
+adjacency_matrix : Image
+    The input adjacency matrix to be read from.
+touch_matrix : Image
+    The output touch matrix to be written into.
+
 
 Categories: [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 

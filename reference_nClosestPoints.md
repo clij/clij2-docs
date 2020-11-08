@@ -8,11 +8,11 @@ This corresponds to the n row indices with minimum values for each column of the
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### nClosestPoints often follows after
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### nClosestPoints is often followed by
-* <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (2)
+* <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (1)
 
 
 ### Usage in ImageJ macro

@@ -10,7 +10,7 @@ such as interpolation.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### rotateRight often follows after
-* <a href="reference_resliceLeft">resliceLeft</a> (2)
+* <a href="reference_resliceLeft">resliceLeft</a> (1)
 
 
 ### Usage in ImageJ macro

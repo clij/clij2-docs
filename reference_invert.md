@@ -1,5 +1,5 @@
 ## invert
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Computes the negative value of all pixels in a given image. 
 
@@ -13,13 +13,13 @@ For binary images, use binaryNot.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### invert often follows after
-* <a href="reference_maximumImages">maximumImages</a> (2)
+* <a href="reference_maximumImages">maximumImages</a> (1)
 
 
 ### invert is often followed by
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_maximumYProjection">maximumYProjection</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -127,6 +127,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.invert(source, destination)
+
+</pre>
+
+
 
 </details>
 

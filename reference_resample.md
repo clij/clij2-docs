@@ -6,15 +6,15 @@ Resamples an image with given size factors using an affine transform.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### resample often follows after
-* <a href="reference_maximumImageAndScalar">maximumImageAndScalar</a> (2)
-* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
-* <a href="reference_maximumYProjection">maximumYProjection</a> (2)
+* <a href="reference_maximumImageAndScalar">maximumImageAndScalar</a> (1)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (1)
 
 
 ### resample is often followed by
-* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
-* <a href="reference_maximumImages">maximumImages</a> (3)
-* <a href="reference_resliceTop">resliceTop</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_maximumImages">maximumImages</a> (2)
+* <a href="reference_resliceTop">resliceTop</a> (1)
 
 
 ### Usage in ImageJ macro

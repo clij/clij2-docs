@@ -6,8 +6,8 @@ Translate an image stack in X and Y.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### translate2D is often followed by
-* <a href="reference_copySlice">copySlice</a> (2)
-* <a href="reference_spotsToPointList">spotsToPointList</a> (2)
+* <a href="reference_copySlice">copySlice</a> (1)
+* <a href="reference_spotsToPointList">spotsToPointList</a> (1)
 
 
 ### Usage in ImageJ macro

@@ -3,19 +3,27 @@
 
 Takes a touch matrix and a vector of values to determine the minimum value among touching neighbors for every object. 
 
+### Parameters
+
+values : Image
+    A vector of values corresponding to the labels of which the minimum should be determined.
+touch_matrix : Image
+    A touch_matrix specifying which labels are taken into account for neighborhood relationships.
+minimum_values_destination : Image
+    A the resulting vector of minimum values in the neighborhood.
 
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### minimumOfTouchingNeighbors often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
-* <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (2)
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (1)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (1)
 
 
 ### minimumOfTouchingNeighbors is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (4)
-* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
+* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (1)
 
 
 ### Usage in ImageJ macro

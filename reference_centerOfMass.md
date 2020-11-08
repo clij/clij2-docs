@@ -1,5 +1,5 @@
 ## centerOfMass
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the center of mass of an image or image stack. 
 
@@ -9,7 +9,7 @@ in the columns MassX, MassY and MassZ.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### centerOfMass often follows after
-* <a href="reference_threshold">threshold</a> (3)
+* <a href="reference_threshold">threshold</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -110,6 +110,23 @@ System.out.println(resultCenterOfMass);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.center_of_mass(source)
+
+</pre>
+
+
 
 </details>
 

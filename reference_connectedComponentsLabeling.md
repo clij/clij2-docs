@@ -6,16 +6,16 @@ Performs connected components analysis to a binary image and generates a label m
 DEPRECATED: This method is <b>deprecated</b>. Use ConnectedComponentsLabellingBox (or Diamond) instead.
 
 ### connectedComponentsLabeling often follows after
-* <a href="reference_automaticThreshold">automaticThreshold</a> (6)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
+* <a href="reference_automaticThreshold">automaticThreshold</a> (5)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (1)
 
 
 ### connectedComponentsLabeling is often followed by
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
-* <a href="reference_maskLabel">maskLabel</a> (2)
-* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (3)
-* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (1)
+* <a href="reference_maskLabel">maskLabel</a> (1)
+* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 
 
 ### Usage in ImageJ macro

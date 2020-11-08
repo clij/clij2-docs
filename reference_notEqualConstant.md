@@ -3,16 +3,24 @@
 
 Determines if two images A and B equal pixel wise.
 
-f(a, b) = 1 if a != b; 0 otherwise. 
+f(a, b) = 1 if a != b; 0 otherwise.### Parameters
+
+source : Image
+    The image where every pixel is compared to the constant.
+destination : Image
+    The resulting binary image where pixels will be 1 only if source1 and source2 equal in the given pixel.
+constant : float
+    The constant where every pixel is compared to.
+
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### notEqualConstant often follows after
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### notEqualConstant is often followed by
-* <a href="reference_binaryAnd">binaryAnd</a> (2)
+* <a href="reference_binaryAnd">binaryAnd</a> (1)
 
 
 ### Usage in ImageJ macro

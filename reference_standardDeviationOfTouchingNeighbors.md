@@ -9,7 +9,7 @@ Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurem
 
 ### standardDeviationOfTouchingNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
 * <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
 
 

@@ -8,11 +8,11 @@ It writes the resulting  coordinates in a pointlist image. Depending on the dime
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### centroidsOfBackgroundAndLabels often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
 
 
 ### centroidsOfBackgroundAndLabels is often followed by
-* <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_paste2D">paste2D</a> (1)
 
 
 ### Usage in ImageJ macro

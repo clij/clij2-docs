@@ -11,13 +11,13 @@ It is recommended to apply the rotation to an isotropic image stack.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### rotate3D often follows after
-* <a href="reference_transposeXY">transposeXY</a> (3)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### rotate3D is often followed by
-* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
-* <a href="reference_topHatBox">topHatBox</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_topHatBox">topHatBox</a> (1)
 
 
 ### Usage in ImageJ macro

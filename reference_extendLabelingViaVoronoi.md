@@ -1,5 +1,5 @@
 ## extendLabelingViaVoronoi
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a label map image and dilates the regions using a octagon shape until they touch. 
 
@@ -8,13 +8,13 @@ The resulting label map is written to the output.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### extendLabelingViaVoronoi often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
-* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (1)
 
 
 ### extendLabelingViaVoronoi is often followed by
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
-* <a href="reference_detectLabelEdges">detectLabelEdges</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
+* <a href="reference_detectLabelEdges">detectLabelEdges</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -122,6 +122,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.extend_labeling_via_voronoi(input, destination)
+
+</pre>
+
+
 
 </details>
 

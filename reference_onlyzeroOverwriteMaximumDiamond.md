@@ -4,12 +4,12 @@
 Apply a local maximum filter to an image which only overwrites pixels with value 0.
 
 ### onlyzeroOverwriteMaximumDiamond often follows after
-* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (1)
 
 
 ### onlyzeroOverwriteMaximumDiamond is often followed by
-* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
-* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (1)
 * <a href="reference_mask">mask</a> (3)
 
 

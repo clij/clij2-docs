@@ -10,20 +10,20 @@ Convention: Given two point lists with dimensionality n * d and m * d, the dista
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### generateDistanceMatrix often follows after
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (6)
-* <a href="reference_spotsToPointList">spotsToPointList</a> (3)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (5)
+* <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
 
 ### generateDistanceMatrix is often followed by
-* <a href="reference_smallerOrEqual">smallerOrEqual</a> (2)
-* <a href="reference_nClosestPoints">nClosestPoints</a> (2)
-* <a href="reference_release">release</a> (4)
-* <a href="reference_shortestDistances">shortestDistances</a> (2)
-* <a href="reference_crop2D">crop2D</a> (2)
-* <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (2)
+* <a href="reference_smallerOrEqual">smallerOrEqual</a> (1)
+* <a href="reference_nClosestPoints">nClosestPoints</a> (1)
+* <a href="reference_release">release</a> (3)
+* <a href="reference_shortestDistances">shortestDistances</a> (1)
+* <a href="reference_crop2D">crop2D</a> (1)
+* <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (1)
 * <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (5)
-* <a href="reference_smallerConstant">smallerConstant</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_smallerConstant">smallerConstant</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### Usage in ImageJ macro
