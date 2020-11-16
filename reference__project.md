@@ -12,7 +12,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Detection](https://clij.github.io/clij2-docs/reference__pyclesperanto)
 
-<a href="#A">\[A\]</a>, B, C,<a href="#D">\[D\]</a>, E, F, G, H, I, J, K, L,<a href="#M">\[M\]</a>, N, O, P, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>, T, U, V, W, X, Y,<a href="#Z">\[Z\]</a>
+<a href="#A">\[A\]</a>, B, C,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>, F, G, H, I, J, K, L,<a href="#M">\[M\]</a>, N, O, P, Q,<a href="#R">\[R\]</a>,<a href="#S">\[S\]</a>, T, U, V, W, X, Y,<a href="#Z">\[Z\]</a>
 
 <a name="A"></a>
 
@@ -25,6 +25,15 @@ Determines the maximum projection of an image stack along Z.
 ## D
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_depthColorProjection">depthColorProjection</a>  
 Determines a maximum projection of an image stack and does a color coding of the determined arg Z (position of the found maximum). 
+
+<a name="E"></a>
+
+## E
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_extendedDepthOfFocusTenengradProjection">extendedDepthOfFocusTenengradProjection (Experimental)</a>  
+Extended depth of focus projection maximizing intensity in the local sobel image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_extendedDepthOfFocusVarianceProjection">extendedDepthOfFocusVarianceProjection (Experimental)</a>  
+Extended depth of focus projection maximizing local pixel intensity variance.
 
 <a name="M"></a>
 
@@ -113,4 +122,4 @@ Project a defined Z-slice of a 3D stack into a 2D image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionRangeProjection">zPositionRangeProjection (Experimental)</a>  
 Project multiple Z-slices of a 3D stack into a new 3D stack.
 
-27 methods listed.
+29 methods listed.
