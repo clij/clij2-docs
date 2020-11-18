@@ -169,7 +169,7 @@ setMinAndMax(0, 50);
 <a href="image_1605712148493.png"><img src="image_1605712148493.png" width="224" alt="CLIJ2_maximumZProjection_result125"/></a>
 
 ## Quantitative analysis of distance between neighbors
-Next, we determine the averge distance between a node and of all its neighbors. The resulting 
+Next, we determine the average distance between a node and of all its neighbors. The resulting 
 vector has as many entries as nodes in the graph. We use this vector to color-code the 
 label map of segmented cells. This means, label 1 gets replaced by the average distance to 
 node 1, label 2 by the average distance to node 2, et cetera.
