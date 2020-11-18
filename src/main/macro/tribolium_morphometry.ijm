@@ -141,13 +141,12 @@ Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, dist
 //Ext.CLIJ2_setColumn(distances_vector, 0, 0);
 //Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 
-Ext.CLIJ2_undefinedToZero(distances_vector, distances_vector1);
-Ext.CLIJ2_replaceIntensities(labels, distances_vector1, distance_map);
+Ext.CLIJ2_copy(distances_vector, distances_vector1);
+Ext.CLIJ2_undefinedToZero(distances_vector1, distances_vector);
+Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
 run("Fire");
 setMinAndMax(0, 50);
-
-exit();
 
 /*
 Now, we measure the mean between neighbors and visualize it as above.
