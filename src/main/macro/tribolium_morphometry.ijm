@@ -137,12 +137,10 @@ Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 
 
 Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
-// set the first column to zero to ignore all object touching the background
-//Ext.CLIJ2_setColumn(distances_vector, 0, 0);
-//Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
-
+// we replace NaN values with zeros so that later maximum-projections work.
 Ext.CLIJ2_copy(distances_vector, distances_vector1);
 Ext.CLIJ2_undefinedToZero(distances_vector1, distances_vector);
+
 Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
 run("Fire");
