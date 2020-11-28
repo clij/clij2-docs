@@ -1,15 +1,15 @@
-## excludeLabelsOutsideSizeRange
+## drawMeshBetweenNClosestLabels
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Removes labels from a label map which are not within a certain size range.
+Starting from a label map, draw lines between n closest labels for each label resulting in a mesh.
 
-Size of the labels is given as the number of pixel or voxels per label.
+The end points of the lines correspond to the centroids of the labels. 
 
-Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_excludeLabelsOutsideSizeRange(Image input, Image destination, Number minimum_size, Number maximum_size);
+Ext.CLIJx_drawMeshBetweenNClosestLabels(Image input, Image destination, Number number_of_closest_labels);
 ```
 
 
@@ -30,13 +30,12 @@ CLIJx clijx = CLIJx.getInstance();
 // get input parameters
 ClearCLBuffer input = clijx.push(inputImagePlus);
 destination = clijx.create(input);
-float minimum_size = 1.0;
-float maximum_size = 2.0;
+int number_of_closest_labels = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.excludeLabelsOutsideSizeRange(input, destination, minimum_size, maximum_size);
+clijx.drawMeshBetweenNClosestLabels(input, destination, number_of_closest_labels);
 </pre>
 
 <pre class="highlight">
@@ -64,13 +63,12 @@ clijx = init_clatlabx();
 % get input parameters
 input = clijx.pushMat(input_matrix);
 destination = clijx.create(input);
-minimum_size = 1.0;
-maximum_size = 2.0;
+number_of_closest_labels = 10;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.excludeLabelsOutsideSizeRange(input, destination, minimum_size, maximum_size);
+clijx.drawMeshBetweenNClosestLabels(input, destination, number_of_closest_labels);
 </pre>
 
 <pre class="highlight">

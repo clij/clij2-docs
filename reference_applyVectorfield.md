@@ -13,6 +13,83 @@ Ext.CLIJ_applyVectorfield(Image source, Image vectorX, Image vectorY, Image dest
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer source = clijx.push(sourceImagePlus);
+ClearCLBuffer vectorX = clijx.push(vectorXImagePlus);
+ClearCLBuffer vectorY = clijx.push(vectorYImagePlus);
+destination = clijx.create(source);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.applyVectorfield(source, vectorX, vectorY, destination);
+</pre>
+
+<pre class="highlight">
+// show result
+destinationImagePlus = clijx.pull(destination);
+destinationImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(source);
+clijx.release(vectorX);
+clijx.release(vectorY);
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+source = clijx.pushMat(source_matrix);
+vectorX = clijx.pushMat(vectorX_matrix);
+vectorY = clijx.pushMat(vectorY_matrix);
+destination = clijx.create(source);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.applyVectorfield(source, vectorX, vectorY, destination);
+</pre>
+
+<pre class="highlight">
+% show result
+destination = clijx.pullMat(destination)
+
+% cleanup memory on GPU
+clijx.release(source);
+clijx.release(vectorX);
+clijx.release(vectorY);
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
 
 
 ### Example scripts

@@ -24,6 +24,7 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 ### subtractImages is often followed by
 * <a href="reference_downsample2D">downsample2D</a> (1)
 * <a href="reference_absolute">absolute</a> (2)
+* <a href="reference_release">release</a> (1)
 * <a href="reference_transposeXY">transposeXY</a> (2)
 * <a href="reference_replaceIntensity">replaceIntensity</a> (1)
 

@@ -13,6 +13,7 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labe
 
 
 ### extendLabelingViaVoronoi is often followed by
+* <a href="reference_release">release</a> (1)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
 * <a href="reference_detectLabelEdges">detectLabelEdges</a> (1)
 

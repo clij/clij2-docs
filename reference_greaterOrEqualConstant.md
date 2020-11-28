@@ -147,6 +147,34 @@ cle.greater_or_equal_constant(source, destination, constant)
 
 
 
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img, "float");
+
+// Call kernel
+cle.GreaterOrEqualConstant(gpuInput, gpuOutput, scalar);  
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
+
+</pre>
+
+
+
+</details>
+
+
+
 
 
 ### Example notebooks

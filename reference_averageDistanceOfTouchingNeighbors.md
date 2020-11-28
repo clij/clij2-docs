@@ -12,7 +12,7 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measu
 
 
 ### averageDistanceOfTouchingNeighbors is often followed by
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (1)

@@ -134,6 +134,39 @@ cle.nonzero_minimum_box(input, destination)
 
 
 
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput1 = cle.Push&lt;float&gt;(input_img1);
+
+
+std::array&lt;unsigned int, 3&gt; dimensions = {1, 1, 2}; //TODO: This should also work width flag depth=1, but it doesn't
+cle::Buffer gpuFlag = cle.Create&lt;float&gt;(dimensions.data(), "float");
+
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(gpuInput1, "float");
+
+// Call kernel
+cle.NonzeroMinimumBox(gpuInput1, gpuFlag, gpuOutput);
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
+
+</pre>
+
+
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

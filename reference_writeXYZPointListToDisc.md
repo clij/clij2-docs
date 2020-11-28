@@ -9,6 +9,68 @@ Ext.CLIJx_writeXYZPointListToDisc(Image pointlist, String filename);
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer pointlist = clijx.push(pointlistImagePlus);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.writeXYZPointListToDisc(pointlist, filename);
+</pre>
+
+<pre class="highlight">
+// show result
+
+// cleanup memory on GPU
+clijx.release(pointlist);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+pointlist = clijx.pushMat(pointlist_matrix);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.writeXYZPointListToDisc(pointlist, filename);
+</pre>
+
+<pre class="highlight">
+% show result
+
+% cleanup memory on GPU
+clijx.release(pointlist);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

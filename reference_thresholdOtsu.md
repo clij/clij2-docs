@@ -21,6 +21,7 @@ Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmenta
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (4)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (3)
 * <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_release">release</a> (1)
 * <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
 * <a href="reference_binaryXOr">binaryXOr</a> (1)

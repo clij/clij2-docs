@@ -8,9 +8,10 @@ Takes a touch matrix and a vector of values to determine the standard deviation 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### standardDeviationOfTouchingNeighbors often follows after
+* <a href="reference_undefinedToZero">undefinedToZero</a> (1)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### standardDeviationOfTouchingNeighbors is often followed by

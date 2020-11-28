@@ -14,6 +14,7 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labe
 
 ### excludeLabelsOnEdges is often followed by
 * <a href="reference_excludeLabels">excludeLabels</a> (2)
+* <a href="reference_release">release</a> (3)
 
 
 ### Usage in ImageJ macro

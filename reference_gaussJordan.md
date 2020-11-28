@@ -27,6 +27,79 @@ Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, Image solution_dest
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer A_matrix = clijx.push(A_matrixImagePlus);
+ClearCLBuffer B_result_vector = clijx.push(B_result_vectorImagePlus);
+solution_destination = clijx.create(A_matrix);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.gaussJordan(A_matrix, B_result_vector, solution_destination);
+</pre>
+
+<pre class="highlight">
+// show result
+solution_destinationImagePlus = clijx.pull(solution_destination);
+solution_destinationImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(A_matrix);
+clijx.release(B_result_vector);
+clijx.release(solution_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+A_matrix = clijx.pushMat(A_matrix_matrix);
+B_result_vector = clijx.pushMat(B_result_vector_matrix);
+solution_destination = clijx.create(A_matrix);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.gaussJordan(A_matrix, B_result_vector, solution_destination);
+</pre>
+
+<pre class="highlight">
+% show result
+solution_destination = clijx.pullMat(solution_destination)
+
+% cleanup memory on GPU
+clijx.release(A_matrix);
+clijx.release(B_result_vector);
+clijx.release(solution_destination);
+</pre>
+
+</details>
+
+
+
 
 
 ### License terms

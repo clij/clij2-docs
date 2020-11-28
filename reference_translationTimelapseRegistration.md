@@ -9,6 +9,75 @@ Ext.CLIJx_translationTimelapseRegistration(Image input, Image output);
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer input = clijx.push(inputImagePlus);
+output = clijx.create(input);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.translationTimelapseRegistration(input, output);
+</pre>
+
+<pre class="highlight">
+// show result
+outputImagePlus = clijx.pull(output);
+outputImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(input);
+clijx.release(output);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+input = clijx.pushMat(input_matrix);
+output = clijx.create(input);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.translationTimelapseRegistration(input, output);
+</pre>
+
+<pre class="highlight">
+% show result
+output = clijx.pullMat(output)
+
+% cleanup memory on GPU
+clijx.release(input);
+clijx.release(output);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

@@ -27,6 +27,75 @@ Ext.CLIJx_generateFeatureStack(Image input, Image feature_stack_destination, Str
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer input = clijx.push(inputImagePlus);
+feature_stack_destination = clijx.create(input);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.generateFeatureStack(input, feature_stack_destination, feature_definitions);
+</pre>
+
+<pre class="highlight">
+// show result
+feature_stack_destinationImagePlus = clijx.pull(feature_stack_destination);
+feature_stack_destinationImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(input);
+clijx.release(feature_stack_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+input = clijx.pushMat(input_matrix);
+feature_stack_destination = clijx.create(input);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.generateFeatureStack(input, feature_stack_destination, feature_definitions);
+</pre>
+
+<pre class="highlight">
+% show result
+feature_stack_destination = clijx.pullMat(feature_stack_destination)
+
+% cleanup memory on GPU
+clijx.release(input);
+clijx.release(feature_stack_destination);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 
