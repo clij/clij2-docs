@@ -1,5 +1,5 @@
 ## pointIndexListToMesh
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Meshes all points in a given point list which are indiced in a corresponding index list.
 
@@ -7,7 +7,7 @@ Categories:  Visualisation, [Graphs](https://clij.github.io/clij2-docs/reference
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexList, Image mesh_destination);
+Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexlist, Image mesh_destination);
 ```
 
 
@@ -27,13 +27,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
-ClearCLBuffer indexList = clij2.push(indexListImagePlus);
+ClearCLBuffer indexlist = clij2.push(indexlistImagePlus);
 mesh_destination = clij2.create(pointlist);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
+clij2.pointIndexListToMesh(pointlist, indexlist, mesh_destination);
 </pre>
 
 <pre class="highlight">
@@ -43,7 +43,7 @@ mesh_destinationImagePlus.show();
 
 // cleanup memory on GPU
 clij2.release(pointlist);
-clij2.release(indexList);
+clij2.release(indexlist);
 clij2.release(mesh_destination);
 </pre>
 
@@ -61,13 +61,13 @@ clij2 = init_clatlab();
 
 % get input parameters
 pointlist = clij2.pushMat(pointlist_matrix);
-indexList = clij2.pushMat(indexList_matrix);
+indexlist = clij2.pushMat(indexlist_matrix);
 mesh_destination = clij2.create(pointlist);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
+clij2.pointIndexListToMesh(pointlist, indexlist, mesh_destination);
 </pre>
 
 <pre class="highlight">
@@ -76,7 +76,7 @@ mesh_destination = clij2.pullMat(mesh_destination)
 
 % cleanup memory on GPU
 clij2.release(pointlist);
-clij2.release(indexList);
+clij2.release(indexlist);
 clij2.release(mesh_destination);
 </pre>
 
@@ -98,14 +98,14 @@ clij2 = CLICY.getInstance();
 // get input parameters
 pointlist_sequence = getSequence();
 pointlist = clij2.pushSequence(pointlist_sequence);
-indexList_sequence = getSequence();
-indexList = clij2.pushSequence(indexList_sequence);
+indexlist_sequence = getSequence();
+indexlist = clij2.pushSequence(indexlist_sequence);
 mesh_destination = clij2.create(pointlist);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.pointIndexListToMesh(pointlist, indexList, mesh_destination);
+clij2.pointIndexListToMesh(pointlist, indexlist, mesh_destination);
 </pre>
 
 <pre class="highlight">
@@ -114,9 +114,26 @@ mesh_destination_sequence = clij2.pullSequence(mesh_destination)
 Icy.addSequence(mesh_destination_sequence);
 // cleanup memory on GPU
 clij2.release(pointlist);
-clij2.release(indexList);
+clij2.release(indexlist);
 clij2.release(mesh_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.point_index_list_to_mesh(pointlist, indexlist, mesh_destination)
+
+</pre>
+
+
 
 </details>
 

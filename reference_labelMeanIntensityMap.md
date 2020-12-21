@@ -1,5 +1,5 @@
 ## labelMeanIntensityMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 
@@ -81,6 +81,23 @@ clijx.release(input);
 clijx.release(label_map);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.label_mean_intensity_map(input, label_map, destination)
+
+</pre>
+
+
 
 </details>
 

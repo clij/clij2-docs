@@ -1,5 +1,5 @@
 ## maximumOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a vector of values to determine the maximum value among touching neighbors for every object. 
 
@@ -137,6 +137,23 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(maximum_values_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.maximum_of_touching_neighbors(values, touch_matrix, maximum_values_destination)
+
+</pre>
+
+
 
 </details>
 

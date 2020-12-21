@@ -1,5 +1,5 @@
 ## countTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
@@ -119,6 +119,23 @@ Icy.addSequence(touching_neighbors_count_destination_sequence);
 clij2.release(touch_matrix);
 clij2.release(touching_neighbors_count_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.count_touching_neighbors(touch_matrix, touching_neighbors_count_destination)
+
+</pre>
+
+
 
 </details>
 

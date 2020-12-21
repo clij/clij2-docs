@@ -1,5 +1,5 @@
 ## writeValuesToPositions
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z] and v and target image. 
 
@@ -18,7 +18,7 @@ Category: Visualisation
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_writeValuesToPositions(Image positionsAndValues, Image destination);
+Ext.CLIJ2_writeValuesToPositions(Image positions_and_values, Image destination);
 ```
 
 
@@ -37,13 +37,13 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer positionsAndValues = clij2.push(positionsAndValuesImagePlus);
-destination = clij2.create(positionsAndValues);
+ClearCLBuffer positions_and_values = clij2.push(positions_and_valuesImagePlus);
+destination = clij2.create(positions_and_values);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.writeValuesToPositions(positionsAndValues, destination);
+clij2.writeValuesToPositions(positions_and_values, destination);
 </pre>
 
 <pre class="highlight">
@@ -52,7 +52,7 @@ destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clij2.release(positionsAndValues);
+clij2.release(positions_and_values);
 clij2.release(destination);
 </pre>
 
@@ -69,13 +69,13 @@ Matlab
 clij2 = init_clatlab();
 
 % get input parameters
-positionsAndValues = clij2.pushMat(positionsAndValues_matrix);
-destination = clij2.create(positionsAndValues);
+positions_and_values = clij2.pushMat(positions_and_values_matrix);
+destination = clij2.create(positions_and_values);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.writeValuesToPositions(positionsAndValues, destination);
+clij2.writeValuesToPositions(positions_and_values, destination);
 </pre>
 
 <pre class="highlight">
@@ -83,7 +83,7 @@ clij2.writeValuesToPositions(positionsAndValues, destination);
 destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
-clij2.release(positionsAndValues);
+clij2.release(positions_and_values);
 clij2.release(destination);
 </pre>
 
@@ -103,14 +103,14 @@ importClass(Packages.icy.main.Icy);
 clij2 = CLICY.getInstance();
 
 // get input parameters
-positionsAndValues_sequence = getSequence();
-positionsAndValues = clij2.pushSequence(positionsAndValues_sequence);
-destination = clij2.create(positionsAndValues);
+positions_and_values_sequence = getSequence();
+positions_and_values = clij2.pushSequence(positions_and_values_sequence);
+destination = clij2.create(positions_and_values);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.writeValuesToPositions(positionsAndValues, destination);
+clij2.writeValuesToPositions(positions_and_values, destination);
 </pre>
 
 <pre class="highlight">
@@ -118,9 +118,26 @@ clij2.writeValuesToPositions(positionsAndValues, destination);
 destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
-clij2.release(positionsAndValues);
+clij2.release(positions_and_values);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.write_values_to_positions(positions_and_values, destination)
+
+</pre>
+
+
 
 </details>
 

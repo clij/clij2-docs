@@ -1,5 +1,5 @@
 ## averageDistanceOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a distance matrix to determine the average distance of touching neighbors 
  for every object.
@@ -130,6 +130,23 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.average_distance_of_touching_neighbors(distance_matrix, touch_matrix, average_distancelist_destination)
+
+</pre>
+
+
 
 </details>
 

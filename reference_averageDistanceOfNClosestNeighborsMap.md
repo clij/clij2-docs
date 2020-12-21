@@ -1,5 +1,5 @@
 ## averageDistanceOfNClosestNeighborsMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a label map, determines distances between all centroids and replaces every label with the average distance to the n closest neighboring labels.
 
@@ -77,6 +77,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.average_distance_of_n_closest_neighbors_map(input, destination, n)
+
+</pre>
+
+
 
 </details>
 

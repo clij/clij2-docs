@@ -1,5 +1,5 @@
 ## gammaCorrection
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies a gamma correction to an image.
 
@@ -79,6 +79,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.gamma_correction(input, destination, gamma)
+
+</pre>
+
+
 
 </details>
 

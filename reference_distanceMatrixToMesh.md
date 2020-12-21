@@ -1,5 +1,5 @@
 ## distanceMatrixToMesh
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Generates a mesh from a distance matric and a list of point coordinates.
 
@@ -127,6 +127,23 @@ clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.distance_matrix_to_mesh(pointlist, distance_matrix, mesh_destination, maximum_distance)
+
+</pre>
+
+
 
 </details>
 

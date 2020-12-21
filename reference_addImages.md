@@ -1,5 +1,5 @@
 ## addImages
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Calculates the sum of pairs of pixels x and y of two images X and Y.
 
@@ -133,6 +133,23 @@ clij2.release(summand1);
 clij2.release(summand2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.add_images(summand1, summand2, destination)
+
+</pre>
+
+
 
 </details>
 

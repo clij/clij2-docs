@@ -1,5 +1,5 @@
 ## centroidsOfLabels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the centroids of all labels in a label image or image stack. 
 
@@ -116,6 +116,23 @@ Icy.addSequence(pointlist_destination_sequence);
 clij2.release(source);
 clij2.release(pointlist_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.centroids_of_labels(source, pointlist_destination)
+
+</pre>
+
+
 
 </details>
 

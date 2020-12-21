@@ -1,5 +1,5 @@
 ## pointlistToLabelledSpots
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a pointlist with dimensions n times d with n point coordinates in d dimensions and labels corresponding pixels.
 
@@ -118,6 +118,23 @@ Icy.addSequence(spots_destination_sequence);
 clij2.release(pointlist);
 clij2.release(spots_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.pointlist_to_labelled_spots(pointlist, spots_destination)
+
+</pre>
+
+
 
 </details>
 

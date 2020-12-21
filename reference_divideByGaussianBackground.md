@@ -1,5 +1,5 @@
 ## divideByGaussianBackground
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies Gaussian blur to the input image and divides the original by the result.
 
@@ -81,6 +81,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.divide_by_gaussian_background(input, destination, sigmaX, sigmaY, sigmaZ)
+
+</pre>
+
+
 
 </details>
 

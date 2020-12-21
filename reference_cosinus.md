@@ -1,15 +1,15 @@
-## labelPixelCountMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
+## cosinus
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Takes a label map, determines the number of pixels per label and replaces every label with the that number.
+Computes the cosinus of all pixels value x.
 
-This results in a parametric image expressing area or volume.
+<pre>f(x) = cos(x)</pre>
 
-Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelPixelCountMap(Image input, Image destination);
+Ext.CLIJx_cosinus(Image source, Image destination);
 ```
 
 
@@ -28,13 +28,13 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clijx.push(inputImagePlus);
-destination = clijx.create(input);
+ClearCLBuffer source = clijx.push(sourceImagePlus);
+destination = clijx.create(source);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.labelPixelCountMap(input, destination);
+clijx.cosinus(source, destination);
 </pre>
 
 <pre class="highlight">
@@ -43,7 +43,7 @@ destinationImagePlus = clijx.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(input);
+clijx.release(source);
 clijx.release(destination);
 </pre>
 
@@ -60,13 +60,13 @@ Matlab
 clijx = init_clatlabx();
 
 % get input parameters
-input = clijx.pushMat(input_matrix);
-destination = clijx.create(input);
+source = clijx.pushMat(source_matrix);
+destination = clijx.create(source);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.labelPixelCountMap(input, destination);
+clijx.cosinus(source, destination);
 </pre>
 
 <pre class="highlight">
@@ -74,26 +74,9 @@ clijx.labelPixelCountMap(input, destination);
 destination = clijx.pullMat(destination)
 
 % cleanup memory on GPU
-clijx.release(input);
+clijx.release(source);
 clijx.release(destination);
 </pre>
-
-</details>
-
-
-
-<details>
-
-<summary>
-clEsperanto Python (experimental)
-</summary>
-<pre class="highlight">import pyclesperanto_prototype as cle
-
-cle.label_pixel_count_map(input, destination)
-
-</pre>
-
-
 
 </details>
 

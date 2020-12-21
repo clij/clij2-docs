@@ -1,5 +1,5 @@
 ## reduceStack
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Reduces the number of slices in a stack by a given factor.
 With the offset you have control which slices stay: 
@@ -13,7 +13,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_reduceStack(Image input, Image destination, Number reductionFactor, Number offset);
+Ext.CLIJ2_reduceStack(Image input, Image destination, Number reduction_factor, Number offset);
 ```
 
 
@@ -34,13 +34,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
 destination = clij2.create(input);
-int reductionFactor = 10;
+int reduction_factor = 10;
 int offset = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.reduceStack(input, destination, reductionFactor, offset);
+clij2.reduceStack(input, destination, reduction_factor, offset);
 </pre>
 
 <pre class="highlight">
@@ -68,13 +68,13 @@ clij2 = init_clatlab();
 % get input parameters
 input = clij2.pushMat(input_matrix);
 destination = clij2.create(input);
-reductionFactor = 10;
+reduction_factor = 10;
 offset = 20;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.reduceStack(input, destination, reductionFactor, offset);
+clij2.reduceStack(input, destination, reduction_factor, offset);
 </pre>
 
 <pre class="highlight">
@@ -105,13 +105,13 @@ clij2 = CLICY.getInstance();
 input_sequence = getSequence();
 input = clij2.pushSequence(input_sequence);
 destination = clij2.create(input);
-reductionFactor = 10;
+reduction_factor = 10;
 offset = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.reduceStack(input, destination, reductionFactor, offset);
+clij2.reduceStack(input, destination, reduction_factor, offset);
 </pre>
 
 <pre class="highlight">
@@ -122,6 +122,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.reduce_stack(input, destination, reduction_factor, offset)
+
+</pre>
+
+
 
 </details>
 

@@ -1,5 +1,5 @@
 ## excludeLabelsOutsideSizeRange
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Removes labels from a label map which are not within a certain size range.
 
@@ -81,6 +81,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.exclude_labels_outside_size_range(input, destination, minimum_size, maximum_size)
+
+</pre>
+
+
 
 </details>
 

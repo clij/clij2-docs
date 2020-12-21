@@ -1,5 +1,5 @@
 ## minimumOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a vector of values to determine the minimum value among touching neighbors for every object. 
 
@@ -138,6 +138,23 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(minimum_values_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.minimum_of_touching_neighbors(values, touch_matrix, minimum_values_destination)
+
+</pre>
+
+
 
 </details>
 

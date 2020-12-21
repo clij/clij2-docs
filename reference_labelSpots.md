@@ -1,5 +1,5 @@
 ## labelSpots
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Transforms a binary image with single pixles set to 1 to a labelled spots image. 
 
@@ -123,6 +123,23 @@ Icy.addSequence(labelled_spots_destination_sequence);
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.label_spots(input_spots, labelled_spots_destination)
+
+</pre>
+
+
 
 </details>
 

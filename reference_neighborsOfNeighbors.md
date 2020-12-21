@@ -1,5 +1,5 @@
 ## neighborsOfNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
 
@@ -118,6 +118,23 @@ Icy.addSequence(neighbor_matrix_destination_sequence);
 clij2.release(touch_matrix);
 clij2.release(neighbor_matrix_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.neighbors_of_neighbors(touch_matrix, neighbor_matrix_destination)
+
+</pre>
+
+
 
 </details>
 

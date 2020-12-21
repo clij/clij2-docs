@@ -1,5 +1,5 @@
 ## excludeLabelsWithValuesWithinRange
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 This operation removes labels from a labelmap and renumbers the remaining labels. 
 
@@ -125,6 +125,23 @@ clij2.release(values_vector);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.exclude_labels_with_values_within_range(values_vector, label_map_input, label_map_destination, minimum_value_range, maximum_value_range)
+
+</pre>
+
+
 
 </details>
 

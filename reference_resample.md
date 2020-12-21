@@ -1,5 +1,5 @@
 ## resample
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Resamples an image with given size factors using an affine transform.
 
@@ -19,7 +19,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_resample(Image source, Image destination, Number factorX, Number factorY, Number factorZ, Boolean linearInterpolation);
+Ext.CLIJ2_resample(Image source, Image destination, Number factor_x, Number factor_y, Number factor_z, Boolean linear_interpolation);
 ```
 
 
@@ -40,15 +40,15 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-float factorX = 1.0;
-float factorY = 2.0;
-float factorZ = 3.0;
-boolean linearInterpolation = true;
+float factor_x = 1.0;
+float factor_y = 2.0;
+float factor_z = 3.0;
+boolean linear_interpolation = true;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.resample(source, destination, factorX, factorY, factorZ, linearInterpolation);
+clij2.resample(source, destination, factor_x, factor_y, factor_z, linear_interpolation);
 </pre>
 
 <pre class="highlight">
@@ -76,15 +76,15 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-factorX = 1.0;
-factorY = 2.0;
-factorZ = 3.0;
-linearInterpolation = true;
+factor_x = 1.0;
+factor_y = 2.0;
+factor_z = 3.0;
+linear_interpolation = true;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.resample(source, destination, factorX, factorY, factorZ, linearInterpolation);
+clij2.resample(source, destination, factor_x, factor_y, factor_z, linear_interpolation);
 </pre>
 
 <pre class="highlight">
@@ -115,15 +115,15 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-factorX = 1.0;
-factorY = 2.0;
-factorZ = 3.0;
-linearInterpolation = true;
+factor_x = 1.0;
+factor_y = 2.0;
+factor_z = 3.0;
+linear_interpolation = true;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.resample(source, destination, factorX, factorY, factorZ, linearInterpolation);
+clij2.resample(source, destination, factor_x, factor_y, factor_z, linear_interpolation);
 </pre>
 
 <pre class="highlight">
@@ -134,6 +134,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.resample(source, destination, factor_x, factor_y, factor_z, linear_interpolation)
+
+</pre>
+
+
 
 </details>
 

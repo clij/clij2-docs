@@ -1,5 +1,5 @@
 ## localMinimumTouchingNeighborCountMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a label map, determines which labels touch, determines for every label with the number of touching 
 neighboring labels and replaces the label index with the local minimum of this count.
@@ -78,6 +78,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.local_minimum_touching_neighbor_count_map(input, destination)
+
+</pre>
+
+
 
 </details>
 

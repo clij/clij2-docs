@@ -1,5 +1,5 @@
 ## statisticsOfLabelledPixels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines bounding box, area (in pixels/voxels), min, max and mean intensity 
  of labelled objects in a label map and corresponding pixels in the original image. 
@@ -124,6 +124,23 @@ System.out.println(resultStatisticsOfLabelledPixels);
 clij2.release(input);
 clij2.release(labelmap);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.statistics_of_labelled_pixels(input, labelmap)
+
+</pre>
+
+
 
 </details>
 
