@@ -9,7 +9,8 @@ and by CLIJ2 in the GPU.
 
 First, let's get test data: 
 */
-run("T1 Head (2.4M, 16-bits)");
+open("c:/structure/data/t1-head.tif")
+//run("T1 Head (2.4M, 16-bits)");
 input = getTitle();
 
 // visualize the center plane
@@ -77,6 +78,17 @@ for (i = 1; i <= 10; i++) {
 	time = getTime();
 	Ext.CLIJ2_mean3DBox(input, blurred, 3, 3, 3);
 	print("CLIJ2 GPU mean filter no " + i + " took " + (getTime() - time) + " msec");
+}
+
+/* 
+# Apply the mean filter using convolution using CLIJ2  
+*/
+Ext.CLIJ2_create3D(structuring_element, 7, 7, 7, 32);
+
+for (i = 1; i <= 10; i++) {
+	time = getTime();
+	Ext.CLIJ2_convolve(input, structuring_element, blurred);
+	print("CLIJ2 GPU mean filter using convolution no " + i + " took " + (getTime() - time) + " msec");
 }
 
 /*
