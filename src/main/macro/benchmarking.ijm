@@ -83,7 +83,10 @@ for (i = 1; i <= 10; i++) {
 /* 
 # Apply the mean filter using convolution using CLIJ2  
 */
+time = getTime();
 Ext.CLIJ2_create3D(structuring_element, 7, 7, 7, 32);
+Ext.CLIJ2_set(structuring_element, 1. / 7 / 7 / 7);
+print("CLIJ2 GPU mean filter using convolution no " + i + " took " + (getTime() - time) + " msec");
 
 for (i = 1; i <= 10; i++) {
 	time = getTime();
