@@ -18,8 +18,8 @@ input = getTitle();
 // visualize the center plane
 run("Duplicate...", "duplicate range=64-64");
 </pre>
-<a href="image_1609156128328.png"><img src="image_1609156128328.png" width="224" alt="t1-head.tif"/></a>
-<a href="image_1609156128399.png"><img src="image_1609156128399.png" width="224" alt="t1-head-1.tif"/></a>
+<a href="image_1609156728393.png"><img src="image_1609156728393.png" width="224" alt="t1-head.tif"/></a>
+<a href="image_1609156728445.png"><img src="image_1609156728445.png" width="224" alt="t1-head-1.tif"/></a>
 
 ## Measure processing time in the CPU
 
@@ -56,19 +56,19 @@ selectWindow(blurred_image);
 run("Duplicate...", "duplicate range=64-64");
 </pre>
 <pre>
-> CPU mean filter no 1 took 3070 msec
-> CPU mean filter no 2 took 2808 msec
-> CPU mean filter no 3 took 4124 msec
-> CPU mean filter no 4 took 4343 msec
-> CPU mean filter no 5 took 4101 msec
-> CPU mean filter no 6 took 4269 msec
-> CPU mean filter no 7 took 4082 msec
-> CPU mean filter no 8 took 4091 msec
-> CPU mean filter no 9 took 4057 msec
-> CPU mean filter no 10 took 4004 msec
+> CPU mean filter no 1 took 2381 msec
+> CPU mean filter no 2 took 2294 msec
+> CPU mean filter no 3 took 2407 msec
+> CPU mean filter no 4 took 2525 msec
+> CPU mean filter no 5 took 3851 msec
+> CPU mean filter no 6 took 3915 msec
+> CPU mean filter no 7 took 3744 msec
+> CPU mean filter no 8 took 3794 msec
+> CPU mean filter no 9 took 3800 msec
+> CPU mean filter no 10 took 3637 msec
 </pre>
-<a href="image_1609156168628.png"><img src="image_1609156168628.png" width="224" alt="t1-head-2.tif"/></a>
-<a href="image_1609156168649.png"><img src="image_1609156168649.png" width="224" alt="t1-head-3.tif"/></a>
+<a href="image_1609156762004.png"><img src="image_1609156762004.png" width="224" alt="t1-head-2.tif"/></a>
+<a href="image_1609156762026.png"><img src="image_1609156762026.png" width="224" alt="t1-head-3.tif"/></a>
 
 ## Measure of processing time in the GPU
 As done for the CPU, we repeat the same strategy to measure the processing time in the GPU. As the performance of
@@ -95,7 +95,7 @@ run("Close All");
 
 </pre>
 <pre>
-> Pushing one image to the GPU took 26 msec
+> Pushing one image to the GPU took 28 msec
 </pre>
 
 # Process images in the GPU using CLIJ2 
@@ -111,16 +111,16 @@ for (i = 1; i <= 10; i++) {
 
 </pre>
 <pre>
-> CLIJ2 GPU mean filter no 1 took 49 msec
-> CLIJ2 GPU mean filter no 2 took 13 msec
-> CLIJ2 GPU mean filter no 3 took 14 msec
-> CLIJ2 GPU mean filter no 4 took 14 msec
-> CLIJ2 GPU mean filter no 5 took 14 msec
-> CLIJ2 GPU mean filter no 6 took 13 msec
-> CLIJ2 GPU mean filter no 7 took 13 msec
+> CLIJ2 GPU mean filter no 1 took 62 msec
+> CLIJ2 GPU mean filter no 2 took 12 msec
+> CLIJ2 GPU mean filter no 3 took 13 msec
+> CLIJ2 GPU mean filter no 4 took 15 msec
+> CLIJ2 GPU mean filter no 5 took 16 msec
+> CLIJ2 GPU mean filter no 6 took 15 msec
+> CLIJ2 GPU mean filter no 7 took 14 msec
 > CLIJ2 GPU mean filter no 8 took 13 msec
-> CLIJ2 GPU mean filter no 9 took 12 msec
-> CLIJ2 GPU mean filter no 10 took 11 msec
+> CLIJ2 GPU mean filter no 9 took 10 msec
+> CLIJ2 GPU mean filter no 10 took 10 msec
 </pre>
 
 # Apply the mean filter using convolution using CLIJ2  
@@ -129,7 +129,7 @@ for (i = 1; i <= 10; i++) {
 time = getTime();
 Ext.<a href="https://clij.github.io/clij2-docs/reference_create3D">CLIJ2_create3D</a>(structuring_element, 7, 7, 7, 32);
 Ext.<a href="https://clij.github.io/clij2-docs/reference_set">CLIJ2_set</a>(structuring_element, 1. / 7 / 7 / 7);
-print("CLIJ2 GPU mean filter using convolution no " + i + " took " + (getTime() - time) + " msec");
+print("Preparing the convolution kernel in GPU memory took " + (getTime() - time) + " msec");
 
 for (i = 1; i <= 10; i++) {
 	time = getTime();
@@ -139,17 +139,17 @@ for (i = 1; i <= 10; i++) {
 
 </pre>
 <pre>
-> CLIJ2 GPU mean filter using convolution no 11 took 351 msec
-> CLIJ2 GPU mean filter using convolution no 1 took 32 msec
+> Preparing the convolution kernel in GPU memory took 5 msec
+> CLIJ2 GPU mean filter using convolution no 1 took 33 msec
 > CLIJ2 GPU mean filter using convolution no 2 took 30 msec
 > CLIJ2 GPU mean filter using convolution no 3 took 29 msec
-> CLIJ2 GPU mean filter using convolution no 4 took 28 msec
-> CLIJ2 GPU mean filter using convolution no 5 took 24 msec
-> CLIJ2 GPU mean filter using convolution no 6 took 23 msec
-> CLIJ2 GPU mean filter using convolution no 7 took 23 msec
+> CLIJ2 GPU mean filter using convolution no 4 took 30 msec
+> CLIJ2 GPU mean filter using convolution no 5 took 29 msec
+> CLIJ2 GPU mean filter using convolution no 6 took 30 msec
+> CLIJ2 GPU mean filter using convolution no 7 took 28 msec
 > CLIJ2 GPU mean filter using convolution no 8 took 23 msec
-> CLIJ2 GPU mean filter using convolution no 9 took 22 msec
-> CLIJ2 GPU mean filter using convolution no 10 took 24 msec
+> CLIJ2 GPU mean filter using convolution no 9 took 23 msec
+> CLIJ2 GPU mean filter using convolution no 10 took 23 msec
 </pre>
 
 # Compare CLIJ2 with its predecessor: [CLIJ](https://www.nature.com/articles/s41592-019-0650-1)
@@ -164,16 +164,16 @@ for (i = 1; i <= 10; i++) {
 }
 </pre>
 <pre>
-> CLIJ GPU mean filter no 1 took 42 msec
+> CLIJ GPU mean filter no 1 took 38 msec
 > CLIJ GPU mean filter no 2 took 9 msec
 > CLIJ GPU mean filter no 3 took 9 msec
-> CLIJ GPU mean filter no 4 took 10 msec
-> CLIJ GPU mean filter no 5 took 10 msec
-> CLIJ GPU mean filter no 6 took 10 msec
-> CLIJ GPU mean filter no 7 took 10 msec
-> CLIJ GPU mean filter no 8 took 10 msec
-> CLIJ GPU mean filter no 9 took 9 msec
-> CLIJ GPU mean filter no 10 took 9 msec
+> CLIJ GPU mean filter no 4 took 9 msec
+> CLIJ GPU mean filter no 5 took 8 msec
+> CLIJ GPU mean filter no 6 took 8 msec
+> CLIJ GPU mean filter no 7 took 7 msec
+> CLIJ GPU mean filter no 8 took 8 msec
+> CLIJ GPU mean filter no 9 took 8 msec
+> CLIJ GPU mean filter no 10 took 8 msec
 </pre>
 
 # Pull a result image from the GPU
@@ -190,10 +190,10 @@ run("Duplicate...", "duplicate range=64-64");
 
 </pre>
 <pre>
-> Pulling one image from the GPU took 68 msec
+> Pulling one image from the GPU took 62 msec
 </pre>
-<a href="image_1609156171174.png"><img src="image_1609156171174.png" width="224" alt="CLIJ2_mean3DBox_result1"/></a>
-<a href="image_1609156171194.png"><img src="image_1609156171194.png" width="224" alt="CLIJ2_mean3DBox_result1-1"/></a>
+<a href="image_1609156764200.png"><img src="image_1609156764200.png" width="224" alt="CLIJ2_mean3DBox_result1"/></a>
+<a href="image_1609156764215.png"><img src="image_1609156764215.png" width="224" alt="CLIJ2_mean3DBox_result1-1"/></a>
 
 For documentation purpose, we also should report about the used GPU:
 
