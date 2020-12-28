@@ -9,8 +9,8 @@ and by CLIJ2 in the GPU.
 
 First, let's get test data: 
 */
-open("c:/structure/data/t1-head.tif")
-//run("T1 Head (2.4M, 16-bits)");
+//open("c:/structure/data/t1-head.tif")
+run("T1 Head (2.4M, 16-bits)");
 input = getTitle();
 
 // visualize the center plane
