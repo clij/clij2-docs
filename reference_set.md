@@ -127,38 +127,10 @@ cle.set(source, value)
 
 
 
-<details>
-
-<summary>
-clEsperanto CLIc C++ (experimental)
-</summary>
-<pre class="highlight">
-// Initialise GPU information.
-cle::GPU gpu;
-cle::CLE cle(gpu);
-
-// Initialise device memory and push from host to device
-cle::Buffer gpuInput1 = cle.Push&lt;float&gt;(input_img1);
-
-
-// Call kernel
-cle.Set(gpuInput1, 2);
-cle::Buffer gpuOutput = gpuInput1;
-
-// pull device memory to host
-Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
-
-</pre>
-
-
-
-</details>
-
-
-
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/benchmarking"><img src="images/language_macro.png" height="20"/></a> [benchmarking](https://clij.github.io/clij2-docs/md/benchmarking)  
 <a href="https://clij.github.io/clij2-docs/md/crop_and_paste"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste](https://clij.github.io/clij2-docs/md/crop_and_paste)  
 <a href="https://clij.github.io/clij2-docs/md/filtering_in_graphs"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs)  
 <a href="https://clij.github.io/clij2-docs/md/matrix_multiply"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply](https://clij.github.io/clij2-docs/md/matrix_multiply)  
@@ -169,6 +141,7 @@ Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarking.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drawLine.ijm"><img src="images/language_macro.png" height="20"/></a> [drawLine.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drawLine.ijm)  

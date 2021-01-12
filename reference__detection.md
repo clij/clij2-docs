@@ -12,7 +12,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Detection](https://clij.github.io/clij2-docs/reference__pyclesperanto), CLIc
 
- A,<a href="#B">\[B\]</a>, C,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H, I, J, K,<a href="#L">\[L\]</a>, M, N, O, P, Q, R,<a href="#S">\[S\]</a>, T, U, V, W, X, Y, Z
+ A,<a href="#B">\[B\]</a>, C,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H, I, J, K,<a href="#L">\[L\]</a>, M, N, O, P, Q, R,<a href="#S">\[S\]</a>, T, U,<a href="#V">\[V\]</a>, W, X, Y, Z
 
 <a name="B"></a>
 
@@ -68,4 +68,10 @@ Transforms a binary image with single pixles set to 1 to a labelled spots image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">spotsToPointList</a>  
 Transforms a spots image as resulting from maximum/minimum detection in an image where every column contains d  pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
-13 methods listed.
+<a name="V"></a>
+
+## V
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_voronoiOtsuLabeling">voronoiOtsuLabeling (Experimental)</a>  
+Applies two Gaussian blurs, spot detection, Otsu-thresholding and Voronoi-labeling. The thresholded binary image is flooded using the Voronoi approach starting from the found local maxima. Noise-removal sigma for spot detection and thresholding can be configured separately.
+
+14 methods listed.

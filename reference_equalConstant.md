@@ -19,11 +19,9 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### equalConstant often follows after
 * <a href="reference_sumYProjection">sumYProjection</a> (1)
-* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
 
 
 ### equalConstant is often followed by
-* <a href="reference_maximum3DSphere">maximum3DSphere</a> (1)
 * <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
@@ -148,34 +146,6 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.equal_constant(source, destination, constant)
-
-</pre>
-
-
-
-</details>
-
-
-
-<details>
-
-<summary>
-clEsperanto CLIc C++ (experimental)
-</summary>
-<pre class="highlight">
-// Initialise GPU information.
-cle::GPU gpu;
-cle::CLE cle(gpu);
-
-// Initialise device memory and push from host to device
-cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
-cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img, "float");
-
-// Call kernel
-cle.EqualConstant(gpuInput, gpuOutput, scalar);
-
-// pull device memory to host
-Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

@@ -6,7 +6,7 @@ Allocated memory for a new 2D image in the GPU memory.
 BitDepth must be 8 (unsigned byte), 16 (unsigned short) or 32 (float).
 
 ### create2D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (14)
+* <a href="reference_getDimensions">getDimensions</a> (13)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
 
 

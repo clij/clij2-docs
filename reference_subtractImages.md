@@ -9,22 +9,17 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### subtractImages often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
-* <a href="reference_minimum2DBox">minimum2DBox</a> (1)
-* <a href="reference_erodeSphere">erodeSphere</a> (1)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (1)
 * <a href="reference_minimumYProjection">minimumYProjection</a> (2)
-* <a href="reference_maximum2DBox">maximum2DBox</a> (1)
 * <a href="reference_medianSliceBySliceSphere">medianSliceBySliceSphere</a> (1)
 * <a href="reference_maximum3DBox">maximum3DBox</a> (1)
 * <a href="reference_resultsTableToImage2D">resultsTableToImage2D</a> (2)
-* <a href="reference_dilateSphere">dilateSphere</a> (1)
 * <a href="reference_dilateBox">dilateBox</a> (1)
 
 
 ### subtractImages is often followed by
 * <a href="reference_downsample2D">downsample2D</a> (1)
 * <a href="reference_absolute">absolute</a> (2)
-* <a href="reference_release">release</a> (1)
 * <a href="reference_transposeXY">transposeXY</a> (2)
 * <a href="reference_replaceIntensity">replaceIntensity</a> (1)
 

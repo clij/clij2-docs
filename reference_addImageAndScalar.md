@@ -17,13 +17,8 @@ scalar : float
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
-### addImageAndScalar often follows after
-* <a href="reference_create3D">create3D</a> (1)
-
-
 ### addImageAndScalar is often followed by
 * <a href="reference_absolute">absolute</a> (1)
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -147,34 +142,6 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.add_image_and_scalar(source, destination, scalar)
-
-</pre>
-
-
-
-</details>
-
-
-
-<details>
-
-<summary>
-clEsperanto CLIc C++ (experimental)
-</summary>
-<pre class="highlight">
-// Initialise GPU information.
-cle::GPU gpu;
-cle::CLE cle(gpu);
-
-// Initialise device memory and push from host
-cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
-cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img);
-
-// Call kernel
-cle.AddImageAndScalar(gpuInput, gpuOutput, scalar);  
-
-// pull device memory to host
-Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

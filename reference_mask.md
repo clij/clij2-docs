@@ -15,19 +15,19 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Bina
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
 * <a href="reference_binaryNot">binaryNot</a> (2)
 * <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (2)
-* <a href="reference_threshold">threshold</a> (4)
+* <a href="reference_threshold">threshold</a> (3)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 * <a href="reference_greaterConstant">greaterConstant</a> (1)
-* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (3)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (4)
-* <a href="reference_erodeBox">erodeBox</a> (4)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (3)
+* <a href="reference_erodeBox">erodeBox</a> (3)
 
 
 ### mask is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
 * <a href="reference_release">release</a> (1)
 * <a href="reference_copySlice">copySlice</a> (2)
-* <a href="reference_labelSpots">labelSpots</a> (6)
+* <a href="reference_labelSpots">labelSpots</a> (5)
 
 
 ### Usage in ImageJ macro

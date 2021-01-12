@@ -151,34 +151,6 @@ cle.absolute(source, destination)
 
 
 
-<details>
-
-<summary>
-clEsperanto CLIc C++ (experimental)
-</summary>
-<pre class="highlight">
-// Initialise GPU information.
-cle::GPU gpu;
-cle::CLE cle(gpu);
-
-// Initialise device memory and push from host
-cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
-cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img);
-
-// Call kernel
-cle.Absolute(gpuInput, gpuOutput);  
-
-// pull device memory to host
-Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
-
-</pre>
-
-
-
-</details>
-
-
-
 
 
 ### Example scripts

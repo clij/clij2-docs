@@ -7,6 +7,10 @@ This corresponds to the average of the n minimum values (rows) for each column o
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+### averageDistanceOfNClosestPoints often follows after
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
+
+
 ### averageDistanceOfNClosestPoints is often followed by
 * <a href="reference_release">release</a> (2)
 
@@ -122,6 +126,18 @@ clij2.release(distance_list_destination);
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tables"><img src="images/language_macro.png" height="20"/></a> [tables](https://clij.github.io/clij2-docs/md/tables)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm"><img src="images/language_macro.png" height="20"/></a> [tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -11,9 +11,8 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 
 ### getDimensions is often followed by
 * <a href="reference_crop2D">crop2D</a> (2)
-* <a href="reference_create3D">create3D</a> (17)
-* <a href="reference_create2D">create2D</a> (14)
-* <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_create3D">create3D</a> (14)
+* <a href="reference_create2D">create2D</a> (13)
 
 
 ### Usage in ImageJ macro

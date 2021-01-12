@@ -12,7 +12,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Detection](https://clij.github.io/clij2-docs/reference__pyclesperanto), CLIc
 
-<a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>, C, D, E, F,<a href="#G">\[G\]</a>, H, I, J, K, L, M, N, O, P, Q, R, S,<a href="#T">\[T\]</a>, U, V,<a href="#W">\[W\]</a>, X, Y, Z
+<a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>, C, D, E, F,<a href="#G">\[G\]</a>, H, I, J, K, L, M, N, O, P, Q, R, S,<a href="#T">\[T\]</a>, U,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
 
 <a name="A"></a>
 
@@ -110,10 +110,16 @@ Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plu
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_trainWekaModelWithOptions">trainWekaModelWithOptions (Experimental)</a>  
 Trains a Weka model using functionality of Fijis Trainable Weka Segmentation plugin. 
 
+<a name="V"></a>
+
+## V
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_visualizeOutlinesOnOriginal">visualizeOutlinesOnOriginal (Experimental)</a>  
+Combines an intensity image and a label (or binary) image so that you can see segmentation outlines on the intensity image.
+
 <a name="W"></a>
 
 ## W
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
 Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
 
-29 methods listed.
+30 methods listed.

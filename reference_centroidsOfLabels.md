@@ -7,8 +7,13 @@ It writes the resulting  coordinates in a pointlist image. Depending on the dime
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+### centroidsOfLabels often follows after
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
+
+
 ### centroidsOfLabels is often followed by
 * <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -140,8 +145,15 @@ cle.centroids_of_labels(source, pointlist_destination)
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tables"><img src="images/language_macro.png" height="20"/></a> [tables](https://clij.github.io/clij2-docs/md/tables)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm"><img src="images/language_macro.png" height="20"/></a> [tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

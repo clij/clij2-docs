@@ -15,8 +15,7 @@ Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 
 ### maximumZProjection is often followed by
-* <a href="reference_saveAsTIF">saveAsTIF</a> (1)
-* <a href="reference_release">release</a> (44)
+* <a href="reference_release">release</a> (13)
 * <a href="reference_copySlice">copySlice</a> (2)
 
 
@@ -138,36 +137,6 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.maximum_z_projection(source, destination_max)
-
-</pre>
-
-
-
-</details>
-
-
-
-<details>
-
-<summary>
-clEsperanto CLIc C++ (experimental)
-</summary>
-<pre class="highlight">
-// Initialise GPU information.
-cle::GPU gpu;
-cle::CLE cle(gpu);
-
-// Initialise device memory and push from host
-std::array&lt;unsigned int, 3&gt; dimensions = {width, height, depth};
-dimensions.back() = 1;
-cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
-cle::Buffer gpuOutput = cle.Create&lt;float&gt;(dimensions.data(), "float");
-
-// Call kernel
-cle.MaximumZProjection(gpuInput, gpuOutput);   
-
-// pull device memory to host
-Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

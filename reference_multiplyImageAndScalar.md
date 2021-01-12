@@ -22,7 +22,6 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 * <a href="reference_invert">invert</a> (1)
 * <a href="reference_pushArray">pushArray</a> (1)
 * <a href="reference_resultsTableToImage2D">resultsTableToImage2D</a> (1)
-* <a href="reference_addImageAndScalar">addImageAndScalar</a> (1)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (1)
 
 

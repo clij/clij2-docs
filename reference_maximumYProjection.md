@@ -141,36 +141,6 @@ cle.maximum_y_projection(source, destination_max)
 
 
 
-<details>
-
-<summary>
-clEsperanto CLIc C++ (experimental)
-</summary>
-<pre class="highlight">
-// Initialise GPU information.
-cle::GPU gpu;
-cle::CLE cle(gpu);
-
-// Initialise device memory and push from host
-std::array&lt;unsigned int, 3&gt; dimensions = {width, height, depth};
-dimensions.back() = 1;
-cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
-cle::Buffer gpuOutput = cle.Create&lt;float&gt;(dimensions.data(), "float");
-
-// Call kernel
-cle.MaximumYProjection(gpuInput, gpuOutput);   
-
-// pull device memory to host
-Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
-
-</pre>
-
-
-
-</details>
-
-
-
 
 
 ### Example notebooks

@@ -7,6 +7,10 @@ It is recommended that the kernel image has an odd size in X, Y and Z.
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+### convolve often follows after
+* <a href="reference_create3D">create3D</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_convolve(Image source, Image convolution_kernel, Image destination);
@@ -139,6 +143,18 @@ cle.convolve(source, convolution_kernel, destination)
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/benchmarking"><img src="images/language_macro.png" height="20"/></a> [benchmarking](https://clij.github.io/clij2-docs/md/benchmarking)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarking.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

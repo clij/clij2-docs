@@ -27,7 +27,7 @@ Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Math
 
 ### binaryNot is often followed by
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (4)
-* <a href="reference_release">release</a> (5)
+* <a href="reference_release">release</a> (2)
 * <a href="reference_distanceMap">distanceMap</a> (1)
 * <a href="reference_mask">mask</a> (2)
 

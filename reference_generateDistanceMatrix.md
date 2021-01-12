@@ -10,6 +10,7 @@ Convention: Given two point lists with dimensionality n * d and m * d, the dista
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### generateDistanceMatrix often follows after
+* <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (1)
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (5)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
@@ -21,7 +22,8 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measu
 * <a href="reference_shortestDistances">shortestDistances</a> (1)
 * <a href="reference_crop2D">crop2D</a> (1)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (1)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (5)
+* <a href="reference_averageDistanceOfNClosestPoints">averageDistanceOfNClosestPoints</a> (1)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (4)
 * <a href="reference_smallerConstant">smallerConstant</a> (1)
 * <a href="reference_multiplyImages">multiplyImages</a> (1)
 
@@ -164,6 +166,7 @@ cle.generate_distance_matrix(coordinate_list1, coordinate_list2, distance_matrix
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables)  
+<a href="https://clij.github.io/clij2-docs/md/tables"><img src="images/language_macro.png" height="20"/></a> [tables](https://clij.github.io/clij2-docs/md/tables)  
 <a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
 
 
@@ -173,6 +176,7 @@ cle.generate_distance_matrix(coordinate_list1, coordinate_list2, distance_matrix
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm"><img src="images/language_macro.png" height="20"/></a> [tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py"><img src="images/language_jython.png" height="20"/></a> [mesh_closest_points.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/mesh_closest_points.py)  
 
