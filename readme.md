@@ -29,14 +29,22 @@ CLIJ is based on
 
 **CLIJ2 is build on CLIJ. If you use it, please cite it:**
 
-Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt, 
+* Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt, 
 Alexandr Dibrov, Uwe Schmidt, Martin Weigert, Nicola Maghelli, Pavel Tomancak, 
 Florian Jug, Eugene W Myers. 
 *CLIJ: GPU-accelerated image processing for everyone*. [Nat Methods 17, 5-6 (2020) doi:10.1038/s41592-019-0650-1](https://doi.org/10.1038/s41592-019-0650-1)
 
+* Daniela Vorkel, Robert Haase. 
+*GPU-accelerating ImageJ Macro image processing workflows using CLIJ*.
+[arXiv preprint](https://arxiv.org/abs/2008.11799)
+
+* Robert Haase, Akanksha Jain, Stéphane Rigaud, Daniela Vorkel, Pradeep Rajasekhar, Theresa Suckert, Talley J. Lambert, Juan Nunez-Iglesias, Daniel P. Poole, Pavel Tomancak, Eugene W. Myers.
+*Interactive design of GPU-accelerated Image Data Flow Graphs and cross-platform deployment using multi-lingual code generation*.
+[bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.11.19.386565v1)
+
 If you search for support, please open a thread on the [image.sc](https://image.sc) forum.
 
-[![Image.sc forum](https://img.shields.io/badge/dynamic/json.svg?label=forum&url=https%3A%2F%2Fforum.image.sc%2Ftags%2Fclij.json&query=%24.topic_list.tags.0.topic_count&colorB=brightgreen&suffix=%20topics&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABPklEQVR42m3SyyqFURTA8Y2BER0TDyExZ+aSPIKUlPIITFzKeQWXwhBlQrmFgUzMMFLKZeguBu5y+//17dP3nc5vuPdee6299gohUYYaDGOyyACq4JmQVoFujOMR77hNfOAGM+hBOQqB9TjHD36xhAa04RCuuXeKOvwHVWIKL9jCK2bRiV284QgL8MwEjAneeo9VNOEaBhzALGtoRy02cIcWhE34jj5YxgW+E5Z4iTPkMYpPLCNY3hdOYEfNbKYdmNngZ1jyEzw7h7AIb3fRTQ95OAZ6yQpGYHMMtOTgouktYwxuXsHgWLLl+4x++Kx1FJrjLTagA77bTPvYgw1rRqY56e+w7GNYsqX6JfPwi7aR+Y5SA+BXtKIRfkfJAYgj14tpOF6+I46c4/cAM3UhM3JxyKsxiOIhH0IO6SH/A1Kb1WBeUjbkAAAAAElFTkSuQmCC)](https://forum.image.sc/tags/clij)
+[![Image.sc forum](https://img.shields.io/badge/dynamic/json.svg?label=forum&url=https%3A%2F%2Fforum.image.sc%2Ftag%2Fclij.json&query=%24.topic_list.tags.0.topic_count&colorB=brightgreen&suffix=%20topics&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABPklEQVR42m3SyyqFURTA8Y2BER0TDyExZ+aSPIKUlPIITFzKeQWXwhBlQrmFgUzMMFLKZeguBu5y+//17dP3nc5vuPdee6299gohUYYaDGOyyACq4JmQVoFujOMR77hNfOAGM+hBOQqB9TjHD36xhAa04RCuuXeKOvwHVWIKL9jCK2bRiV284QgL8MwEjAneeo9VNOEaBhzALGtoRy02cIcWhE34jj5YxgW+E5Z4iTPkMYpPLCNY3hdOYEfNbKYdmNngZ1jyEzw7h7AIb3fRTQ95OAZ6yQpGYHMMtOTgouktYwxuXsHgWLLl+4x++Kx1FJrjLTagA77bTPvYgw1rRqY56e+w7GNYsqX6JfPwi7aR+Y5SA+BXtKIRfkfJAYgj14tpOF6+I46c4/cAM3UhM3JxyKsxiOIhH0IO6SH/A1Kb1WBeUjbkAAAAAElFTkSuQmCC)](https://forum.image.sc/tag/clij)
 
 * Overview
   * [Quick tour](https://clij.github.io/clij2-docs/quick_tour)
@@ -53,7 +61,9 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [Release notes](https://github.com/clij/clij2/releases)
   * [Community guidelines](https://clij.github.io/clij2-docs/community_guidelines)
   * [Release cycle](https://clij.github.io/clij2-docs/release_cycle)    
-  * [Future perspective: clEsperanto](http://clesperanto.net)
+  * Future perspectives
+    * [CLIJx-Assistant](https://clij.github.io/assistant)
+    * [clEsperanto](http://clesperanto.net)
   
 * Tutorials
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
