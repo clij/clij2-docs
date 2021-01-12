@@ -1,18 +1,33 @@
 ## differenceOfGaussian2D
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 
 It is recommended to apply this operation to images of type Float (32 bit) as results might be negative.
 
+### Parameters
+
+input : Image
+    The input image to be processed.
+destination : Image
+    The output image where results are written into.
+sigma1_x : float
+    Sigma of the first Gaussian filter in x
+sigma1_y : float
+    Sigma of the first Gaussian filter in y
+sigma2_x : float
+    Sigma of the second Gaussian filter in x
+sigma2_y : float
+    Sigma of the second Gaussian filter in y
+
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter),  Noise, Background
 
 ### differenceOfGaussian2D often follows after
-* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_copySlice">copySlice</a> (1)
 
 
 ### differenceOfGaussian2D is often followed by
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -132,6 +147,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.difference_of_gaussian(input, destination, sigma1x, sigma1y, sigma2x, sigma2y)
+
+</pre>
+
+
 
 </details>
 

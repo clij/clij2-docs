@@ -9,7 +9,7 @@ higher intensity, and to 0 otherwise.
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### detectMaxima3DBox is often followed by
-* <a href="reference_release">release</a> (2)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro

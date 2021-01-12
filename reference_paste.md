@@ -7,7 +7,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_paste(Image source, Image destination, Number destinationX, Number destinationY);
+Ext.CLIJ2_paste(Image source, Image destination, Number destination_x, Number destination_y);
 ```
 
 
@@ -28,13 +28,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-int destinationX = 10;
-int destinationY = 20;
+int destination_x = 10;
+int destination_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.paste(source, destination, destinationX, destinationY);
+clij2.paste(source, destination, destination_x, destination_y);
 </pre>
 
 <pre class="highlight">
@@ -62,13 +62,13 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-destinationX = 10;
-destinationY = 20;
+destination_x = 10;
+destination_y = 20;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.paste(source, destination, destinationX, destinationY);
+clij2.paste(source, destination, destination_x, destination_y);
 </pre>
 
 <pre class="highlight">
@@ -99,13 +99,13 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-destinationX = 10;
-destinationY = 20;
+destination_x = 10;
+destination_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.paste(source, destination, destinationX, destinationY);
+clij2.paste(source, destination, destination_x, destination_y);
 </pre>
 
 <pre class="highlight">
@@ -128,7 +128,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.paste(source, destination, destinationX, destinationY)
+cle.paste(source, destination, destination_x, destination_y)
 
 </pre>
 

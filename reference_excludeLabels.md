@@ -1,5 +1,5 @@
 ## excludeLabels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 This operation removes labels from a labelmap and renumbers the remaining labels. 
 
@@ -10,8 +10,14 @@ For example if you pass 0,1,0,0,1: Labels 1 and 4 will be removed (those with a 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### excludeLabels often follows after
-* <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (3)
+* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
+* <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_smallerOrEqualConstant">smallerOrEqualConstant</a> (2)
+* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
+
+
+### excludeLabels is often followed by
+* <a href="reference_saveAsTIF">saveAsTIF</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -126,6 +132,23 @@ clij2.release(binary_flaglist);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.exclude_labels(binary_flaglist, label_map_input, label_map_destination)
+
+</pre>
+
+
 
 </details>
 

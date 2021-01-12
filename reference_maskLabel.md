@@ -11,8 +11,8 @@ f(x,m,i) = (x if (m == i); (0 otherwise))
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### maskLabel often follows after
-* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
-* <a href="reference_create2D">create2D</a> (2)
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
+* <a href="reference_create2D">create2D</a> (1)
 
 
 ### Usage in ImageJ macro

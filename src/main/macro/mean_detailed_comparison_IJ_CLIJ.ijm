@@ -73,7 +73,7 @@ setMinAndMax(0, 1);
 makeOverlay();
 
 // init GPU
-run("CLIJ Macro Extensions", "cl_device=");
+run("CLIJ2 Macro Extensions", "cl_device=");
 
 // do operation on GPU
 outputGPU = "mean3d_GPU";

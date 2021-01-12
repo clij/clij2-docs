@@ -1,5 +1,5 @@
 ## excludeLabelsOnEdges
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Removes all labels from a label map which touch the edges of the image (in X, Y and Z if the image is 3D). 
 
@@ -8,8 +8,13 @@ Remaining label elements are renumbered afterwards.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### excludeLabelsOnEdges often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
-* <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (5)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
+
+
+### excludeLabelsOnEdges is often followed by
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
+* <a href="reference_release">release</a> (3)
 
 
 ### Usage in ImageJ macro
@@ -117,6 +122,23 @@ Icy.addSequence(label_map_destination_sequence);
 clij2.release(label_map_input);
 clij2.release(label_map_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.exclude_labels_on_edges(label_map_input, label_map_destination)
+
+</pre>
+
+
 
 </details>
 

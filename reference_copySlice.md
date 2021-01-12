@@ -12,29 +12,32 @@ the image stack with z planes.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### copySlice often follows after
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
-* <a href="reference_affineTransform2D">affineTransform2D</a> (3)
-* <a href="reference_maximumZProjection">maximumZProjection</a> (3)
-* <a href="reference_rotate2D">rotate2D</a> (3)
-* <a href="reference_scale2D">scale2D</a> (2)
-* <a href="reference_translate2D">translate2D</a> (2)
-* <a href="reference_applyVectorField2D">applyVectorField2D</a> (2)
-* <a href="reference_flip2D">flip2D</a> (2)
-* <a href="reference_mask">mask</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_affineTransform2D">affineTransform2D</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+* <a href="reference_rotate2D">rotate2D</a> (2)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
+* <a href="reference_scale2D">scale2D</a> (1)
+* <a href="reference_translate2D">translate2D</a> (1)
+* <a href="reference_applyVectorField2D">applyVectorField2D</a> (1)
+* <a href="reference_flip2D">flip2D</a> (1)
+* <a href="reference_mask">mask</a> (2)
 
 
 ### copySlice is often followed by
-* <a href="reference_histogram">histogram</a> (3)
-* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
-* <a href="reference_affineTransform2D">affineTransform2D</a> (3)
-* <a href="reference_statisticsOfBackgroundAndLabelledPixels">statisticsOfBackgroundAndLabelledPixels</a> (3)
-* <a href="reference_crop3D">crop3D</a> (2)
-* <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (2)
+* <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)
+* <a href="reference_affineTransform2D">affineTransform2D</a> (2)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
+* <a href="reference_statisticsOfBackgroundAndLabelledPixels">statisticsOfBackgroundAndLabelledPixels</a> (2)
+* <a href="reference_crop3D">crop3D</a> (1)
+* <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_copySlice(Image source, Image destination, Number sliceIndex);
+Ext.CLIJ2_copySlice(Image source, Image destination, Number slice_index);
 ```
 
 
@@ -55,12 +58,12 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
-int sliceIndex = 10;
+int slice_index = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.copySlice(source, destination, sliceIndex);
+clij2.copySlice(source, destination, slice_index);
 </pre>
 
 <pre class="highlight">
@@ -88,12 +91,12 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
-sliceIndex = 10;
+slice_index = 10;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.copySlice(source, destination, sliceIndex);
+clij2.copySlice(source, destination, slice_index);
 </pre>
 
 <pre class="highlight">
@@ -124,12 +127,12 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
-sliceIndex = 10;
+slice_index = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.copySlice(source, destination, sliceIndex);
+clij2.copySlice(source, destination, slice_index);
 </pre>
 
 <pre class="highlight">
@@ -152,7 +155,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.copy_slice(source, destination, sliceIndex)
+cle.copy_slice(source, destination, slice_index)
 
 </pre>
 

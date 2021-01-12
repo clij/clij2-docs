@@ -6,27 +6,27 @@ Pastes an image into another image at a given position.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### paste2D often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
-* <a href="reference_histogram">histogram</a> (3)
-* <a href="reference_getDimensions">getDimensions</a> (2)
-* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (2)
-* <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (2)
-* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (2)
-* <a href="reference_transposeXY">transposeXY</a> (2)
-* <a href="reference_flip2D">flip2D</a> (2)
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+* <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_getDimensions">getDimensions</a> (1)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (1)
+* <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (1)
+* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (1)
+* <a href="reference_flip2D">flip2D</a> (1)
 
 
 ### paste2D is often followed by
-* <a href="reference_print">print</a> (3)
-* <a href="reference_crop2D">crop2D</a> (2)
-* <a href="reference_transposeXY">transposeXY</a> (3)
-* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (3)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_print">print</a> (2)
+* <a href="reference_crop2D">crop2D</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_paste2D(Image source, Image destination, Number destinationX, Number destinationY);
+Ext.CLIJ2_paste2D(Image source, Image destination, Number destination_x, Number destination_y);
 ```
 
 
@@ -47,13 +47,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-int destinationX = 10;
-int destinationY = 20;
+int destination_x = 10;
+int destination_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.paste2D(source, destination, destinationX, destinationY);
+clij2.paste2D(source, destination, destination_x, destination_y);
 </pre>
 
 <pre class="highlight">
@@ -81,13 +81,13 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-destinationX = 10;
-destinationY = 20;
+destination_x = 10;
+destination_y = 20;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.paste2D(source, destination, destinationX, destinationY);
+clij2.paste2D(source, destination, destination_x, destination_y);
 </pre>
 
 <pre class="highlight">
@@ -118,13 +118,13 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-destinationX = 10;
-destinationY = 20;
+destination_x = 10;
+destination_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.paste2D(source, destination, destinationX, destinationY);
+clij2.paste2D(source, destination, destination_x, destination_y);
 </pre>
 
 <pre class="highlight">
@@ -147,7 +147,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.paste(source, destination, destinationX, destinationY)
+cle.paste(source, destination, destination_x, destination_y)
 
 </pre>
 

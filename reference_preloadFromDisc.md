@@ -11,6 +11,73 @@ Ext.CLIJx_preloadFromDisc(Image destination, String filename, String nextFilenam
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+destination = clijx.create();
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+ClearCLBuffer resultPreloadFromDisc = clijx.preloadFromDisc(destination, filename, nextFilename, loaderId);
+</pre>
+
+<pre class="highlight">
+// show result
+System.out.println(resultPreloadFromDisc);
+destinationImagePlus = clijx.pull(destination);
+destinationImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+destination = clijx.create();
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+ClearCLBuffer resultPreloadFromDisc = clijx.preloadFromDisc(destination, filename, nextFilename, loaderId);
+</pre>
+
+<pre class="highlight">
+% show result
+System.out.println(resultPreloadFromDisc);
+destination = clijx.pullMat(destination)
+
+% cleanup memory on GPU
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

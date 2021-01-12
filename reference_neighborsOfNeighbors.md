@@ -1,16 +1,16 @@
 ## neighborsOfNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines neighbors of neigbors from touch matrix and saves the result as a new touch matrix.
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### neighborsOfNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
 
 
 ### neighborsOfNeighbors is often followed by
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (3)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -118,6 +118,23 @@ Icy.addSequence(neighbor_matrix_destination_sequence);
 clij2.release(touch_matrix);
 clij2.release(neighbor_matrix_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.neighbors_of_neighbors(touch_matrix, neighbor_matrix_destination)
+
+</pre>
+
+
 
 </details>
 

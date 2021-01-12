@@ -12,6 +12,77 @@ Ext.CLIJx_localMeanAverageDistanceOfNClosestNeighborsMap(Image input, Image dest
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer input = clijx.push(inputImagePlus);
+destination = clijx.create(input);
+int n = 10;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.localMeanAverageDistanceOfNClosestNeighborsMap(input, destination, n);
+</pre>
+
+<pre class="highlight">
+// show result
+destinationImagePlus = clijx.pull(destination);
+destinationImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(input);
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+input = clijx.pushMat(input_matrix);
+destination = clijx.create(input);
+n = 10;
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.localMeanAverageDistanceOfNClosestNeighborsMap(input, destination, n);
+</pre>
+
+<pre class="highlight">
+% show result
+destination = clijx.pullMat(destination)
+
+% cleanup memory on GPU
+clijx.release(input);
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

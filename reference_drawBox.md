@@ -7,7 +7,7 @@ All pixels other than in the box are untouched. Consider using `set(buffer, 0);`
 Category: Visualisation
 
 ### drawBox is often followed by
-* <a href="reference_copy">copy</a> (2)
+* <a href="reference_copy">copy</a> (1)
 
 
 ### Usage in ImageJ macro

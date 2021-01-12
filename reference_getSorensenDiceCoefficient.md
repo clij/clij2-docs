@@ -11,7 +11,7 @@ Note that the Sorensen-Dice coefficient s can be calculated from the Jaccard ind
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### getSorensenDiceCoefficient often follows after
-* <a href="reference_automaticThreshold">automaticThreshold</a> (3)
+* <a href="reference_automaticThreshold">automaticThreshold</a> (2)
 
 
 ### Usage in ImageJ macro

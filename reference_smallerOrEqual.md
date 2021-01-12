@@ -8,12 +8,12 @@ f(a, b) = 1 if a <= b; 0 otherwise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### smallerOrEqual often follows after
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### smallerOrEqual is often followed by
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -141,6 +141,37 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.smaller_or_equal(source1, source2, destination)
+
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput1 = cle.Push&lt;float&gt;(input_img1);
+cle::Buffer gpuInput2 = cle.Push&lt;float&gt;(input_img2);
+cle.Set(gpuInput2, 5);
+
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(gpuInput1, "float");
+
+// Call kernel
+cle.SmallerOrEqual(gpuInput1, gpuInput2, gpuOutput);
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

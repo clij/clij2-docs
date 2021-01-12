@@ -11,6 +11,72 @@ Ext.CLIJx_showGlasbeyOnGrey(Image red, Image labelling, String title);
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer red = clijx.push(redImagePlus);
+ClearCLBuffer labelling = clijx.push(labellingImagePlus);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.showGlasbeyOnGrey(red, labelling, title);
+</pre>
+
+<pre class="highlight">
+// show result
+
+// cleanup memory on GPU
+clijx.release(red);
+clijx.release(labelling);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+red = clijx.pushMat(red_matrix);
+labelling = clijx.pushMat(labelling_matrix);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.showGlasbeyOnGrey(red, labelling, title);
+</pre>
+
+<pre class="highlight">
+% show result
+
+% cleanup memory on GPU
+clijx.release(red);
+clijx.release(labelling);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

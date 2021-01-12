@@ -1,22 +1,30 @@
 ## meanOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a vector of values to determine the mean value among touching neighbors for every object. 
 
+### Parameters
+
+values : Image
+    A vector of values corresponding to the labels of which the mean average should be determined.
+touch_matrix : Image
+    A touch_matrix specifying which labels are taken into account for neighborhood relationships.
+mean_values_destination : Image
+    A the resulting vector of mean average values in the neighborhood.
 
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### meanOfTouchingNeighbors often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (3)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
-* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (3)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
+* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### meanOfTouchingNeighbors is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (4)
-* <a href="reference_release">release</a> (2)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -131,6 +139,23 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(mean_values_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.mean_of_touching_neighbors(values, touch_matrix, mean_values_destination)
+
+</pre>
+
+
 
 </details>
 

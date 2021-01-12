@@ -1,16 +1,16 @@
 ## pointlistToLabelledSpots
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a pointlist with dimensions n times d with n point coordinates in d dimensions and labels corresponding pixels.
 
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### pointlistToLabelledSpots often follows after
-* <a href="reference_create2D">create2D</a> (2)
+* <a href="reference_create2D">create2D</a> (1)
 
 
 ### pointlistToLabelledSpots is often followed by
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (5)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (4)
 
 
 ### Usage in ImageJ macro
@@ -118,6 +118,23 @@ Icy.addSequence(spots_destination_sequence);
 clij2.release(pointlist);
 clij2.release(spots_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.pointlist_to_labelled_spots(pointlist, spots_destination)
+
+</pre>
+
+
 
 </details>
 

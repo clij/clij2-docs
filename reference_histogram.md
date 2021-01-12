@@ -1,5 +1,5 @@
 ## histogram
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 By Robert Haase adapted work from Aaftab Munshi, Benedict Gaster, Timothy Mattson, James Fung, Dan Ginsburg
 
@@ -15,19 +15,19 @@ once at the beginning and handing over these values.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### histogram often follows after
-* <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_copySlice">copySlice</a> (3)
-* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (3)
+* <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
 
 
 ### histogram is often followed by
-* <a href="reference_print">print</a> (3)
-* <a href="reference_paste2D">paste2D</a> (3)
+* <a href="reference_print">print</a> (2)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_histogram(Image source, Image destination, Number numberOfBins, Number minimumGreyValue, Number maximumGreyValue, Boolean determineMinAndMax);
+Ext.CLIJ2_histogram(Image source, Image destination, Number number_of_bins, Number minimum_intensity, Number maximum_intensity, Boolean determine_min_max);
 ```
 
 
@@ -48,15 +48,15 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-int numberOfBins = 10;
-float minimumGreyValue = 1.0;
-float maximumGreyValue = 2.0;
-boolean determineMinAndMax = true;
+int number_of_bins = 10;
+float minimum_intensity = 1.0;
+float maximum_intensity = 2.0;
+boolean determine_min_max = true;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.histogram(source, destination, numberOfBins, minimumGreyValue, maximumGreyValue, determineMinAndMax);
+clij2.histogram(source, destination, number_of_bins, minimum_intensity, maximum_intensity, determine_min_max);
 </pre>
 
 <pre class="highlight">
@@ -84,15 +84,15 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-numberOfBins = 10;
-minimumGreyValue = 1.0;
-maximumGreyValue = 2.0;
-determineMinAndMax = true;
+number_of_bins = 10;
+minimum_intensity = 1.0;
+maximum_intensity = 2.0;
+determine_min_max = true;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.histogram(source, destination, numberOfBins, minimumGreyValue, maximumGreyValue, determineMinAndMax);
+clij2.histogram(source, destination, number_of_bins, minimum_intensity, maximum_intensity, determine_min_max);
 </pre>
 
 <pre class="highlight">
@@ -123,15 +123,15 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-numberOfBins = 10;
-minimumGreyValue = 1.0;
-maximumGreyValue = 2.0;
-determineMinAndMax = true;
+number_of_bins = 10;
+minimum_intensity = 1.0;
+maximum_intensity = 2.0;
+determine_min_max = true;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.histogram(source, destination, numberOfBins, minimumGreyValue, maximumGreyValue, determineMinAndMax);
+clij2.histogram(source, destination, number_of_bins, minimum_intensity, maximum_intensity, determine_min_max);
 </pre>
 
 <pre class="highlight">
@@ -142,6 +142,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.histogram(source, destination, number_of_bins, minimum_intensity, maximum_intensity, determine_min_max)
+
+</pre>
+
+
 
 </details>
 

@@ -13,16 +13,16 @@ of these methods in the method text field:
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### automaticThreshold often follows after
-* <a href="reference_topHatBox">topHatBox</a> (2)
+* <a href="reference_topHatBox">topHatBox</a> (1)
 
 
 ### automaticThreshold is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
-* <a href="reference_subtractImages">subtractImages</a> (2)
-* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (6)
-* <a href="reference_getCenterOfMass">getCenterOfMass</a> (2)
-* <a href="reference_getSorensenDiceCoefficient">getSorensenDiceCoefficient</a> (3)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_subtractImages">subtractImages</a> (1)
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (5)
+* <a href="reference_getCenterOfMass">getCenterOfMass</a> (1)
+* <a href="reference_getSorensenDiceCoefficient">getSorensenDiceCoefficient</a> (2)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (1)
 
 
 ### Usage in ImageJ macro

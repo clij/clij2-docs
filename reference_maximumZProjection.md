@@ -6,18 +6,18 @@ Determines the maximum intensity projection of an image along Z.
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 ### maximumZProjection often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
-* <a href="reference_rotate3D">rotate3D</a> (2)
-* <a href="reference_resliceLeft">resliceLeft</a> (2)
-* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (2)
-* <a href="reference_resample">resample</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_rotate3D">rotate3D</a> (1)
+* <a href="reference_resliceLeft">resliceLeft</a> (1)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (1)
+* <a href="reference_resample">resample</a> (1)
 
 
 ### maximumZProjection is often followed by
-* <a href="reference_saveAsTIF">saveAsTIF</a> (2)
-* <a href="reference_release">release</a> (16)
-* <a href="reference_copySlice">copySlice</a> (3)
+* <a href="reference_saveAsTIF">saveAsTIF</a> (1)
+* <a href="reference_release">release</a> (44)
+* <a href="reference_copySlice">copySlice</a> (2)
 
 
 ### Usage in ImageJ macro

@@ -18,6 +18,18 @@ The key should be called `TdrDelay` and have a value of 8.
 Sources: 
 https://community.amd.com/thread/180166
 https://support.microsoft.com/en-us/help/2665946/display-driver-stopped-responding-and-has-recovered-error-in-windows-7
+
+<a name="intel_icd"></a>
+## Black images on Intel GPUs / Linux
+On an "Intel(R) HD Graphics Kabylake Desktop GT1.5" used from Ubuntu Linux 20.04 it was observed that some operations lead to empty images.
+Furthermore, a warning is shown on std err `Beignet: "unable to find good values for local_work_size[i], please provide\n" " local_work_size[] explicitly, you can find good values with\n" " trial-and-error method."`.
+
+This issue can be solved by installing a recent Intel OpenCL ICD, e.g. with this command:
+```
+sudo apt-get install intel-opencl-icd
+```
+Furthermore, use the device "Intel HD Graphics Gen 9 NEO".
+
 ## Repeated initialisation fails on AMD Vega 10
 When creating CLIJ instances and closing them repeatedly, it crashes after about 40 attempts. [This test](https://github.com/clij/clij-core/blob/master/src/test/java/net/haesleinhuepf/clij/test/InitialisationTest.java#L17) allows reproducing the issue on specified hardward. Workaround:
 Don't close the CLIJ instance and keep working with the singleton instance.

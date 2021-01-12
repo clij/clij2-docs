@@ -8,13 +8,18 @@ its half-width and half-height (radius).
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+### minimum2DBox often follows after
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+
+
 ### minimum2DBox is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_subtractImages">subtractImages</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimum2DBox(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_minimum2DBox(Image source, Image destination, Number radius_x, Number radius_y);
 ```
 
 
@@ -35,13 +40,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-int radiusX = 10;
-int radiusY = 20;
+int radius_x = 10;
+int radius_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.minimum2DBox(source, destination, radiusX, radiusY);
+clij2.minimum2DBox(source, destination, radius_x, radius_y);
 </pre>
 
 <pre class="highlight">
@@ -69,13 +74,13 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-radiusX = 10;
-radiusY = 20;
+radius_x = 10;
+radius_y = 20;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.minimum2DBox(source, destination, radiusX, radiusY);
+clij2.minimum2DBox(source, destination, radius_x, radius_y);
 </pre>
 
 <pre class="highlight">
@@ -106,13 +111,13 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-radiusX = 10;
-radiusY = 20;
+radius_x = 10;
+radius_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.minimum2DBox(source, destination, radiusX, radiusY);
+clij2.minimum2DBox(source, destination, radius_x, radius_y);
 </pre>
 
 <pre class="highlight">
@@ -135,7 +140,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.minimum_box(source, destination, radiusX, radiusY)
+cle.minimum_box(source, destination, radius_x, radius_y)
 
 </pre>
 

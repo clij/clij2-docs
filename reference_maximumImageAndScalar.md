@@ -8,11 +8,11 @@ Computes the maximum of a constant scalar s and each pixel value x in a given im
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### maximumImageAndScalar often follows after
-* <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (2)
+* <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (1)
 
 
 ### maximumImageAndScalar is often followed by
-* <a href="reference_resample">resample</a> (2)
+* <a href="reference_resample">resample</a> (1)
 
 
 ### Usage in ImageJ macro

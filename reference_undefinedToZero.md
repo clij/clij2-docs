@@ -1,12 +1,12 @@
 ## undefinedToZero
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Copies all pixels instead those which are not a number (NaN) or infinity (inf), which are replaced by 0.
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### undefinedToZero is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -117,6 +117,29 @@ clij2.release(destination);
 
 </details>
 
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.undefined_to_zero(source, destination)
+
+</pre>
+
+
+
+</details>
+
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
 
 
 

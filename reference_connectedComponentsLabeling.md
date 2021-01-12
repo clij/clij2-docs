@@ -6,126 +6,22 @@ Performs connected components analysis to a binary image and generates a label m
 DEPRECATED: This method is <b>deprecated</b>. Use ConnectedComponentsLabellingBox (or Diamond) instead.
 
 ### connectedComponentsLabeling often follows after
-* <a href="reference_automaticThreshold">automaticThreshold</a> (6)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)
+* <a href="reference_automaticThreshold">automaticThreshold</a> (5)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (1)
 
 
 ### connectedComponentsLabeling is often followed by
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
-* <a href="reference_maskLabel">maskLabel</a> (2)
-* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (3)
-* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (2)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (1)
+* <a href="reference_maskLabel">maskLabel</a> (1)
+* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_connectedComponentsLabeling(Image binary_input, Image labeling_destination);
 ```
-
-
-### Usage in object oriented programming languages
-
-
-
-<details>
-
-<summary>
-Java
-</summary>
-<pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clij2.CLIJ2;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJ2 clij2 = CLIJ2.getInstance();
-
-// get input parameters
-ClearCLBuffer binary_input = clij2.push(binary_inputImagePlus);
-labeling_destination = clij2.create(binary_input);
-</pre>
-
-<pre class="highlight">
-// Execute operation on GPU
-clij2.connectedComponentsLabeling(binary_input, labeling_destination);
-</pre>
-
-<pre class="highlight">
-// show result
-labeling_destinationImagePlus = clij2.pull(labeling_destination);
-labeling_destinationImagePlus.show();
-
-// cleanup memory on GPU
-clij2.release(binary_input);
-clij2.release(labeling_destination);
-</pre>
-
-</details>
-
-
-
-<details>
-
-<summary>
-Matlab
-</summary>
-<pre class="highlight">% init CLIJ and GPU
-clij2 = init_clatlab();
-
-% get input parameters
-binary_input = clij2.pushMat(binary_input_matrix);
-labeling_destination = clij2.create(binary_input);
-</pre>
-
-<pre class="highlight">
-% Execute operation on GPU
-clij2.connectedComponentsLabeling(binary_input, labeling_destination);
-</pre>
-
-<pre class="highlight">
-% show result
-labeling_destination = clij2.pullMat(labeling_destination)
-
-% cleanup memory on GPU
-clij2.release(binary_input);
-clij2.release(labeling_destination);
-</pre>
-
-</details>
-
-
-
-<details>
-
-<summary>
-Icy JavaScript
-</summary>
-<pre class="highlight">// init CLIJ and GPU
-importClass(net.haesleinhuepf.clicy.CLICY);
-importClass(Packages.icy.main.Icy);
-
-clij2 = CLICY.getInstance();
-
-// get input parameters
-binary_input_sequence = getSequence();
-binary_input = clij2.pushSequence(binary_input_sequence);
-labeling_destination = clij2.create(binary_input);
-</pre>
-
-<pre class="highlight">
-// Execute operation on GPU
-clij2.connectedComponentsLabeling(binary_input, labeling_destination);
-</pre>
-
-<pre class="highlight">
-// show result
-labeling_destination_sequence = clij2.pullSequence(labeling_destination)
-Icy.addSequence(labeling_destination_sequence);
-// cleanup memory on GPU
-clij2.release(binary_input);
-clij2.release(labeling_destination);
-</pre>
-
-</details>
-
 
 
 

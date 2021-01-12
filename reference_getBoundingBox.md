@@ -8,7 +8,7 @@ If called from macro, the positions will be stored in the variables 'boundingBox
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### getBoundingBox often follows after
-* <a href="reference_thresholdHuang">thresholdHuang</a> (2)
+* <a href="reference_thresholdHuang">thresholdHuang</a> (1)
 
 
 ### Usage in ImageJ macro

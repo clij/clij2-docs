@@ -1,5 +1,5 @@
 ## labelSpots
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Transforms a binary image with single pixles set to 1 to a labelled spots image. 
 
@@ -8,13 +8,13 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### labelSpots often follows after
-* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (2)
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (1)
 * <a href="reference_mask">mask</a> (6)
 
 
 ### labelSpots is often followed by
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
-* <a href="reference_release">release</a> (5)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (1)
+* <a href="reference_release">release</a> (4)
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (7)
 
 
@@ -123,6 +123,23 @@ Icy.addSequence(labelled_spots_destination_sequence);
 clij2.release(input_spots);
 clij2.release(labelled_spots_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.label_spots(input_spots, labelled_spots_destination)
+
+</pre>
+
+
 
 </details>
 

@@ -3,22 +3,30 @@
 
 Transpose X and Y axes of an image.
 
+### Parameters
+
+input : Image
+    The input image.
+destination : Image
+    The output image where results are written into.
+
+
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### transposeXY often follows after
-* <a href="reference_subtractImages">subtractImages</a> (3)
-* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
-* <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_paste2D">paste2D</a> (3)
+* <a href="reference_subtractImages">subtractImages</a> (2)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
+* <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### transposeXY is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_multiplyMatrix">multiplyMatrix</a> (2)
-* <a href="reference_rotate3D">rotate3D</a> (3)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
-* <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
+* <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
+* <a href="reference_rotate3D">rotate3D</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_paste2D">paste2D</a> (1)
 
 
 ### Usage in ImageJ macro

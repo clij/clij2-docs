@@ -1,7 +1,19 @@
 ## absoluteDifference
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the absolute difference pixel by pixel between two images.
+
+<pre>f(x, y) = |x - y| </pre>
+
+### Parameters
+
+source1 : Image
+    The input image to be subtracted from.
+source2 : Image
+    The input image which is subtracted.
+destination : Image
+    The output image  where results are written into.
+
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
@@ -117,6 +129,23 @@ clij2.release(source1);
 clij2.release(source2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.absolute_difference(source1, source2, destination)
+
+</pre>
+
+
 
 </details>
 

@@ -10,15 +10,15 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### labelledSpotsToPointList often follows after
-* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
 * <a href="reference_labelSpots">labelSpots</a> (7)
 
 
 ### labelledSpotsToPointList is often followed by
-* <a href="reference_getDimensions">getDimensions</a> (2)
-* <a href="reference_release">release</a> (3)
+* <a href="reference_getDimensions">getDimensions</a> (1)
+* <a href="reference_release">release</a> (2)
 * <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (6)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (5)
 
 
 ### Usage in ImageJ macro

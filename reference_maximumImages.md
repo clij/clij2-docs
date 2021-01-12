@@ -8,11 +8,11 @@ Computes the maximum of a pair of pixel values x, y from two given images X and 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### maximumImages often follows after
-* <a href="reference_resample">resample</a> (3)
+* <a href="reference_resample">resample</a> (2)
 
 
 ### maximumImages is often followed by
-* <a href="reference_invert">invert</a> (2)
+* <a href="reference_invert">invert</a> (1)
 
 
 ### Usage in ImageJ macro

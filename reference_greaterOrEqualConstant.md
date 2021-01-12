@@ -8,13 +8,13 @@ f(a, b) = 1 if a >= b; 0 otherwise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### greaterOrEqualConstant often follows after
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### greaterOrEqualConstant is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_excludeLabels">excludeLabels</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -138,6 +138,34 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.greater_or_equal_constant(source, destination, constant)
+
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img, "float");
+
+// Call kernel
+cle.GreaterOrEqualConstant(gpuInput, gpuOutput, scalar);  
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

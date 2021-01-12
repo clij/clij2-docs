@@ -1,10 +1,16 @@
 ## minimumOfAllPixels
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the minimum of all pixels in a given image. 
 
 It will be stored in a new row of ImageJs
 Results table in the column 'Min'.
+
+### Parameters
+
+source : Image
+    The image of which the minimum of all pixels or voxels will be determined.
+
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
@@ -106,6 +112,23 @@ System.out.println(resultMinimumOfAllPixels);
 // cleanup memory on GPU
 clij2.release(source);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.minimum_of_all_pixels(source)
+
+</pre>
+
+
 
 </details>
 

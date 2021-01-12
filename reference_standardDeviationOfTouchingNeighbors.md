@@ -1,5 +1,5 @@
 ## standardDeviationOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a vector of values to determine the standard deviation value among touching neighbors for every object. 
 
@@ -8,9 +8,10 @@ Takes a touch matrix and a vector of values to determine the standard deviation 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### standardDeviationOfTouchingNeighbors often follows after
+* <a href="reference_undefinedToZero">undefinedToZero</a> (1)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### standardDeviationOfTouchingNeighbors is often followed by
@@ -129,6 +130,23 @@ clij2.release(values);
 clij2.release(touch_matrix);
 clij2.release(standard_deviation_values_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.standard_deviation_of_touching_neighbors(values, touch_matrix, standard_deviation_values_destination)
+
+</pre>
+
+
 
 </details>
 

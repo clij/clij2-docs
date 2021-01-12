@@ -10,7 +10,7 @@ Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_meanBox(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_meanBox(Image source, Image destination, Number radius_x, Number radius_y);
 ```
 
 

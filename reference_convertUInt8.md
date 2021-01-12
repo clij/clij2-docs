@@ -8,7 +8,7 @@ The target image should not exist with a different type before this
 method is called.
 
 ### convertUInt8 often follows after
-* <a href="reference_convertFloat">convertFloat</a> (2)
+* <a href="reference_convertFloat">convertFloat</a> (1)
 
 
 ### Usage in ImageJ macro

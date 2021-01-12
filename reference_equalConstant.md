@@ -3,16 +3,28 @@
 
 Determines if an image A and a constant b are equal.
 
-<pre>f(a, b) = 1 if a == b; 0 otherwise.</pre> 
+<pre>f(a, b) = 1 if a == b; 0 otherwise.</pre>
+
+### Parameters
+
+source : Image
+    The image where every pixel is compared to the constant.
+destination : Image
+    The resulting binary image where pixels will be 1 only if source1 and source2 equal in the given pixel.
+constant : float
+    The constant where every pixel is compared to.
+
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### equalConstant often follows after
-* <a href="reference_sumYProjection">sumYProjection</a> (2)
+* <a href="reference_sumYProjection">sumYProjection</a> (1)
+* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
 
 
 ### equalConstant is often followed by
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_maximum3DSphere">maximum3DSphere</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -136,6 +148,34 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.equal_constant(source, destination, constant)
+
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput = cle.Push&lt;float&gt;(input_img);
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(input_img, "float");
+
+// Call kernel
+cle.EqualConstant(gpuInput, gpuOutput, scalar);
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

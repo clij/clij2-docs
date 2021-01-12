@@ -141,6 +141,38 @@ cle.greater(source1, source2, destination)
 
 
 
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput1 = cle.Push&lt;float&gt;(input_img1);
+cle::Buffer gpuInput2 = cle.Push&lt;float&gt;(input_img2);
+
+cle.Set(gpuInput2, 5);
+
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(gpuInput1, "float");
+
+// Call kernel
+cle.Greater(gpuInput1, gpuInput2, gpuOutput);
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
+
+</pre>
+
+
+
+</details>
+
+
+
 
 
 ### Example notebooks

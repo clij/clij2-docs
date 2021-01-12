@@ -9,11 +9,12 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### thresholdDefault often follows after
-* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (1)
 
 
 ### thresholdDefault is often followed by
-* <a href="reference_binaryNot">binaryNot</a> (2)
+* <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_release">release</a> (3)
 
 
 ### Usage in ImageJ macro

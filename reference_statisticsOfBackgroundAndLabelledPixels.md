@@ -1,5 +1,5 @@
 ## statisticsOfBackgroundAndLabelledPixels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines bounding box, area (in pixels/voxels), min, max and mean intensity 
  of background and labelled objects in a label map and corresponding pixels in the original image.
@@ -11,8 +11,8 @@ This method is executed on the CPU and not on the GPU/OpenCL device.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### statisticsOfBackgroundAndLabelledPixels often follows after
-* <a href="reference_pushArray">pushArray</a> (2)
-* <a href="reference_copySlice">copySlice</a> (3)
+* <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_copySlice">copySlice</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -120,6 +120,23 @@ System.out.println(resultStatisticsOfBackgroundAndLabelledPixels);
 clij2.release(input);
 clij2.release(labelmap);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.statistics_of_background_and_labelled_pixels(input, labelmap)
+
+</pre>
+
+
 
 </details>
 

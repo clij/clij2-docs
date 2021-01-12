@@ -8,7 +8,7 @@ Copies an image.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### copy often follows after
-* <a href="reference_drawBox">drawBox</a> (2)
+* <a href="reference_drawBox">drawBox</a> (1)
 
 
 ### Usage in ImageJ macro

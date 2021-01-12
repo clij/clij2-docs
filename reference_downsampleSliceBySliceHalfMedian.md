@@ -1,5 +1,5 @@
 ## downsampleSliceBySliceHalfMedian
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Scales an image using scaling factors 0.5 for X and Y dimensions. The Z dimension stays untouched. 
 
@@ -114,6 +114,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.downsample_slice_by_slice_half_median(source, destination)
+
+</pre>
+
+
 
 </details>
 

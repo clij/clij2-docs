@@ -1,5 +1,5 @@
 ## distanceMatrixToMesh
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Generates a mesh from a distance matric and a list of point coordinates.
 
@@ -8,8 +8,8 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
 
 ### distanceMatrixToMesh often follows after
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -127,6 +127,23 @@ clij2.release(pointlist);
 clij2.release(distance_matrix);
 clij2.release(mesh_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.distance_matrix_to_mesh(pointlist, distance_matrix, mesh_destination, maximum_distance)
+
+</pre>
+
+
 
 </details>
 

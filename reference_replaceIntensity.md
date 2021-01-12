@@ -6,17 +6,17 @@ Replaces a specific intensity in an image with a given new value.
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### replaceIntensity often follows after
-* <a href="reference_subtractImages">subtractImages</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_subtractImages">subtractImages</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### replaceIntensity is often followed by
-* <a href="reference_equal">equal</a> (2)
+* <a href="reference_equal">equal</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_replaceIntensity(Image input, Image destination, Number oldValue, Number newValue);
+Ext.CLIJ2_replaceIntensity(Image input, Image destination, Number value_to_replace, Number value_replacement);
 ```
 
 
@@ -37,13 +37,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer input = clij2.push(inputImagePlus);
 destination = clij2.create(input);
-float oldValue = 1.0;
-float newValue = 2.0;
+float value_to_replace = 1.0;
+float value_replacement = 2.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.replaceIntensity(input, destination, oldValue, newValue);
+clij2.replaceIntensity(input, destination, value_to_replace, value_replacement);
 </pre>
 
 <pre class="highlight">
@@ -71,13 +71,13 @@ clij2 = init_clatlab();
 % get input parameters
 input = clij2.pushMat(input_matrix);
 destination = clij2.create(input);
-oldValue = 1.0;
-newValue = 2.0;
+value_to_replace = 1.0;
+value_replacement = 2.0;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.replaceIntensity(input, destination, oldValue, newValue);
+clij2.replaceIntensity(input, destination, value_to_replace, value_replacement);
 </pre>
 
 <pre class="highlight">
@@ -108,13 +108,13 @@ clij2 = CLICY.getInstance();
 input_sequence = getSequence();
 input = clij2.pushSequence(input_sequence);
 destination = clij2.create(input);
-oldValue = 1.0;
-newValue = 2.0;
+value_to_replace = 1.0;
+value_replacement = 2.0;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.replaceIntensity(input, destination, oldValue, newValue);
+clij2.replaceIntensity(input, destination, value_to_replace, value_replacement);
 </pre>
 
 <pre class="highlight">
@@ -137,7 +137,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.replace_intensity(input, destination, oldValue, newValue)
+cle.replace_intensity(input, destination, value_to_replace, value_replacement)
 
 </pre>
 

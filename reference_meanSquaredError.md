@@ -1,5 +1,5 @@
 ## meanSquaredError
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the mean squared error (MSE) between two images. 
 
@@ -111,6 +111,23 @@ System.out.println(resultMeanSquaredError);
 clij2.release(source1);
 clij2.release(source2);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.mean_squared_error(source1, source2)
+
+</pre>
+
+
 
 </details>
 

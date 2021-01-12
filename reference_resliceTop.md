@@ -7,12 +7,12 @@ offers less flexibility such as interpolation.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### resliceTop often follows after
-* <a href="reference_topHatBox">topHatBox</a> (3)
-* <a href="reference_resample">resample</a> (2)
+* <a href="reference_topHatBox">topHatBox</a> (2)
+* <a href="reference_resample">resample</a> (1)
 
 
 ### resliceTop is often followed by
-* <a href="reference_resliceRadial">resliceRadial</a> (4)
+* <a href="reference_resliceRadial">resliceRadial</a> (3)
 
 
 ### Usage in ImageJ macro

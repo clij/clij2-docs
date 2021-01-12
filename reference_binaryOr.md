@@ -6,10 +6,20 @@ pixels x and y with the binary OR operator |.
 
 All pixel values except 0 in the input images are interpreted as 1.<pre>f(x, y) = x | y</pre>
 
+### Parameters
+
+operand1 : Image
+    The first binary input image to be processed.
+operand2 : Image
+    The second binary input image to be processed.
+destination : Image
+    The output image where results are written into.
+
+
 Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### binaryOr is often followed by
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### Usage in ImageJ macro

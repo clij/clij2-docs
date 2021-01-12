@@ -9,17 +9,17 @@ its half-width and half-height (radius).
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### maximum2DSphere often follows after
-* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (1)
 
 
 ### maximum2DSphere is often followed by
-* <a href="reference_release">release</a> (2)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_maximum2DSphere(Image source, Image destination, Number radiusX, Number radiusY);
+Ext.CLIJ2_maximum2DSphere(Image source, Image destination, Number radius_x, Number radius_y);
 ```
 
 
@@ -40,13 +40,13 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
 destination = clij2.create(source);
-int radiusX = 10;
-int radiusY = 20;
+int radius_x = 10;
+int radius_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.maximum2DSphere(source, destination, radiusX, radiusY);
+clij2.maximum2DSphere(source, destination, radius_x, radius_y);
 </pre>
 
 <pre class="highlight">
@@ -74,13 +74,13 @@ clij2 = init_clatlab();
 % get input parameters
 source = clij2.pushMat(source_matrix);
 destination = clij2.create(source);
-radiusX = 10;
-radiusY = 20;
+radius_x = 10;
+radius_y = 20;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.maximum2DSphere(source, destination, radiusX, radiusY);
+clij2.maximum2DSphere(source, destination, radius_x, radius_y);
 </pre>
 
 <pre class="highlight">
@@ -111,13 +111,13 @@ clij2 = CLICY.getInstance();
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
 destination = clij2.create(source);
-radiusX = 10;
-radiusY = 20;
+radius_x = 10;
+radius_y = 20;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.maximum2DSphere(source, destination, radiusX, radiusY);
+clij2.maximum2DSphere(source, destination, radius_x, radius_y);
 </pre>
 
 <pre class="highlight">
@@ -140,7 +140,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.maximum_sphere(source, destination, radiusX, radiusY)
+cle.maximum_sphere(source, destination, radius_x, radius_y)
 
 </pre>
 

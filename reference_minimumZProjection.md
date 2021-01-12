@@ -7,7 +7,7 @@ Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_minimumZProjection(Image source, Image destination_sum);
+Ext.CLIJ2_minimumZProjection(Image source, Image destination_min);
 ```
 
 
@@ -27,22 +27,22 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-destination_sum = clij2.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
+destination_min = clij2.create(new long[]{source.getWidth(), source.getHeight()}, source.getNativeType());
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.minimumZProjection(source, destination_sum);
+clij2.minimumZProjection(source, destination_min);
 </pre>
 
 <pre class="highlight">
 // show result
-destination_sumImagePlus = clij2.pull(destination_sum);
-destination_sumImagePlus.show();
+destination_minImagePlus = clij2.pull(destination_min);
+destination_minImagePlus.show();
 
 // cleanup memory on GPU
 clij2.release(source);
-clij2.release(destination_sum);
+clij2.release(destination_min);
 </pre>
 
 </details>
@@ -59,21 +59,21 @@ clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
-destination_sum = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
+destination_min = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.minimumZProjection(source, destination_sum);
+clij2.minimumZProjection(source, destination_min);
 </pre>
 
 <pre class="highlight">
 % show result
-destination_sum = clij2.pullMat(destination_sum)
+destination_min = clij2.pullMat(destination_min)
 
 % cleanup memory on GPU
 clij2.release(source);
-clij2.release(destination_sum);
+clij2.release(destination_min);
 </pre>
 
 </details>
@@ -94,21 +94,21 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
-destination_sum = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
+destination_min = clij2.create([source.getWidth(), source.getHeight()], source.getNativeType());
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.minimumZProjection(source, destination_sum);
+clij2.minimumZProjection(source, destination_min);
 </pre>
 
 <pre class="highlight">
 // show result
-destination_sum_sequence = clij2.pullSequence(destination_sum)
-Icy.addSequence(destination_sum_sequence);
+destination_min_sequence = clij2.pullSequence(destination_min)
+Icy.addSequence(destination_min_sequence);
 // cleanup memory on GPU
 clij2.release(source);
-clij2.release(destination_sum);
+clij2.release(destination_min);
 </pre>
 
 </details>
@@ -122,7 +122,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.minimum_z_projection(source, destination_sum)
+cle.minimum_z_projection(source, destination_min)
 
 </pre>
 

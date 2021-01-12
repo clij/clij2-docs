@@ -13,28 +13,28 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### replaceIntensities often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (9)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (8)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (4)
-* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (2)
+* <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (1)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (4)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
-* <a href="reference_undefinedToZero">undefinedToZero</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (4)
-* <a href="reference_transposeXY">transposeXY</a> (2)
-* <a href="reference_maximum2DBox">maximum2DBox</a> (3)
-* <a href="reference_maximumYProjection">maximumYProjection</a> (2)
+* <a href="reference_transposeXY">transposeXY</a> (1)
+* <a href="reference_maximum2DBox">maximum2DBox</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (1)
 * <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (4)
-* <a href="reference_smallerConstant">smallerConstant</a> (2)
+* <a href="reference_smallerConstant">smallerConstant</a> (1)
 * <a href="reference_mask">mask</a> (2)
 
 
 ### replaceIntensities is often followed by
-* <a href="reference_maximumZProjection">maximumZProjection</a> (3)
-* <a href="reference_release">release</a> (3)
-* <a href="reference_copySlice">copySlice</a> (3)
-* <a href="reference_mask">mask</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+* <a href="reference_release">release</a> (2)
+* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_mask">mask</a> (1)
 
 
 ### Usage in ImageJ macro

@@ -1,5 +1,5 @@
 ## centroidsOfLabels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the centroids of all labels in a label image or image stack. 
 
@@ -8,7 +8,7 @@ It writes the resulting  coordinates in a pointlist image. Depending on the dime
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### centroidsOfLabels is often followed by
-* <a href="reference_paste2D">paste2D</a> (2)
+* <a href="reference_paste2D">paste2D</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -116,6 +116,23 @@ Icy.addSequence(pointlist_destination_sequence);
 clij2.release(source);
 clij2.release(pointlist_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.centroids_of_labels(source, pointlist_destination)
+
+</pre>
+
+
 
 </details>
 

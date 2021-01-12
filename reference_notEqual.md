@@ -3,7 +3,17 @@
 
 Determines if two images A and B equal pixel wise.
 
-f(a, b) = 1 if a != b; 0 otherwise. 
+f(a, b) = 1 if a != b; 0 otherwise.
+
+### Parameters
+
+source1 : Image
+    The first image to be compared with.
+source2 : Image
+    The second image to be compared with the first.
+destination : Image
+    The resulting binary image where pixels will be 1 only if source1 and source2 are not equal in the given pixel.
+
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
@@ -132,6 +142,38 @@ clEsperanto Python (experimental)
 <pre class="highlight">import pyclesperanto_prototype as cle
 
 cle.not_equal(source1, source2, destination)
+
+</pre>
+
+
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput1 = cle.Push&lt;float&gt;(input_img1);
+cle::Buffer gpuInput2 = cle.Push&lt;float&gt;(input_img2);
+
+cle.Set(gpuInput2, 5);
+
+cle::Buffer gpuOutput = cle.Create&lt;float&gt;(gpuInput1, "float");
+
+// Call kernel
+cle.NotEqual(gpuInput1, gpuInput2, gpuOutput);
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
 
 </pre>
 

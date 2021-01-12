@@ -5,15 +5,23 @@ Computes the absolute value of every individual pixel x in a given image.
 
 <pre>f(x) = |x| </pre>
 
+### Parameters
+
+source : Image
+    The input image to be processed.
+destination : Image
+    The output image where results are written into.
+
+
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### absolute often follows after
-* <a href="reference_subtractImages">subtractImages</a> (3)
-* <a href="reference_addImageAndScalar">addImageAndScalar</a> (2)
+* <a href="reference_subtractImages">subtractImages</a> (2)
+* <a href="reference_addImageAndScalar">addImageAndScalar</a> (1)
 
 
 ### absolute is often followed by
-* <a href="reference_mean2DBox">mean2DBox</a> (2)
+* <a href="reference_mean2DBox">mean2DBox</a> (1)
 
 
 ### Usage in ImageJ macro

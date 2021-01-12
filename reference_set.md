@@ -127,6 +127,35 @@ cle.set(source, value)
 
 
 
+<details>
+
+<summary>
+clEsperanto CLIc C++ (experimental)
+</summary>
+<pre class="highlight">
+// Initialise GPU information.
+cle::GPU gpu;
+cle::CLE cle(gpu);
+
+// Initialise device memory and push from host to device
+cle::Buffer gpuInput1 = cle.Push&lt;float&gt;(input_img1);
+
+
+// Call kernel
+cle.Set(gpuInput1, 2);
+cle::Buffer gpuOutput = gpuInput1;
+
+// pull device memory to host
+Image&lt;float&gt; output_img = cle.Pull&lt;float&gt;(gpuOutput);    
+
+</pre>
+
+
+
+</details>
+
+
+
 
 
 ### Example notebooks

@@ -1,5 +1,5 @@
 ## connectedComponentsLabelingDiamond
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Performs connected components analysis inspecting the diamond neighborhood of every pixel to a binary image and generates a label map.
 
@@ -110,6 +110,23 @@ Icy.addSequence(labeling_destination_sequence);
 clij2.release(binary_input);
 clij2.release(labeling_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.connected_components_labeling_diamond(binary_input, labeling_destination)
+
+</pre>
+
+
 
 </details>
 

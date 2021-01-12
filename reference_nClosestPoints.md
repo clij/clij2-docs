@@ -1,5 +1,5 @@
 ## nClosestPoints
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determine the n point indices with shortest distance for all points in a distance matrix. 
 
@@ -8,16 +8,16 @@ This corresponds to the n row indices with minimum values for each column of the
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### nClosestPoints often follows after
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (2)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### nClosestPoints is often followed by
-* <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (2)
+* <a href="reference_image2DToResultsTable">image2DToResultsTable</a> (1)
 
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_nClosestPoints(Image distance_matrix, Image indexlist_destination, Number nClosestPointsTofind);
+Ext.CLIJ2_nClosestPoints(Image distance_matrix, Image indexlist_destination, Number n);
 ```
 
 

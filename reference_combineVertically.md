@@ -1,12 +1,12 @@
 ## combineVertically
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Combines two images or stacks in Y.
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### combineVertically often follows after
-* <a href="reference_combineHorizontally">combineHorizontally</a> (3)
+* <a href="reference_combineHorizontally">combineHorizontally</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -121,6 +121,23 @@ clij2.release(stack1);
 clij2.release(stack2);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.combine_vertically(stack1, stack2, destination)
+
+</pre>
+
+
 
 </details>
 

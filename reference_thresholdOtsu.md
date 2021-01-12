@@ -1,5 +1,5 @@
 ## thresholdOtsu
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 By Robert Haase based on work by G. Landini and W. Rasband
 
@@ -9,22 +9,25 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### thresholdOtsu often follows after
-* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (2)
+* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
-* <a href="reference_maximumXProjection">maximumXProjection</a> (2)
-* <a href="reference_mean2DBox">mean2DBox</a> (2)
-* <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (2)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
+* <a href="reference_mean2DBox">mean2DBox</a> (1)
+* <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
 
 
 ### thresholdOtsu is often followed by
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (4)
-* <a href="reference_voronoiOctagon">voronoiOctagon</a> (4)
-* <a href="reference_binaryNot">binaryNot</a> (2)
-* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
-* <a href="reference_binaryXOr">binaryXOr</a> (2)
-* <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
-* <a href="reference_mask">mask</a> (2)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (3)
+* <a href="reference_voronoiOctagon">voronoiOctagon</a> (3)
+* <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
+* <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
+* <a href="reference_binaryXOr">binaryXOr</a> (1)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
+* <a href="reference_mask">mask</a> (1)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -132,6 +135,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.threshold_otsu(input, destination)
+
+</pre>
+
+
 
 </details>
 

@@ -7,12 +7,12 @@ Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### resliceLeft often follows after
-* <a href="reference_resliceRadial">resliceRadial</a> (2)
+* <a href="reference_resliceRadial">resliceRadial</a> (1)
 
 
 ### resliceLeft is often followed by
-* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
-* <a href="reference_rotateRight">rotateRight</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_rotateRight">rotateRight</a> (1)
 
 
 ### Usage in ImageJ macro

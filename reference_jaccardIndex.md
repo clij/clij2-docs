@@ -1,5 +1,5 @@
 ## jaccardIndex
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Determines the overlap of two binary images using the Jaccard index. 
 
@@ -115,6 +115,23 @@ System.out.println(resultJaccardIndex);
 clij2.release(source1);
 clij2.release(source2);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.jaccard_index(source1, source2)
+
+</pre>
+
+
 
 </details>
 

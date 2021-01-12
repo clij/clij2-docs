@@ -1,5 +1,5 @@
 ## averageDistanceOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a distance matrix to determine the average distance of touching neighbors 
  for every object.
@@ -7,15 +7,15 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### averageDistanceOfTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (5)
 
 
 ### averageDistanceOfTouchingNeighbors is often followed by
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -130,6 +130,23 @@ clij2.release(distance_matrix);
 clij2.release(touch_matrix);
 clij2.release(average_distancelist_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.average_distance_of_touching_neighbors(distance_matrix, touch_matrix, average_distancelist_destination)
+
+</pre>
+
+
 
 </details>
 

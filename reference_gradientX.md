@@ -8,6 +8,10 @@ Assuming a, b and c are three adjacent
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+### gradientX is often followed by
+* <a href="reference_print">print</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_gradientX(Image source, Image destination);

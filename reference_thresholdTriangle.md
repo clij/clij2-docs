@@ -8,6 +8,14 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+### thresholdTriangle often follows after
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+
+
+### thresholdTriangle is often followed by
+* <a href="reference_binaryNot">binaryNot</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_thresholdTriangle(Image input, Image destination);

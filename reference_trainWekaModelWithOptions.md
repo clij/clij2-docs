@@ -19,6 +19,80 @@ Ext.CLIJx_trainWekaModelWithOptions(Image featureStack3D, Image groundTruth2D, S
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer featureStack3D = clijx.push(featureStack3DImagePlus);
+ClearCLBuffer groundTruth2D = clijx.push(groundTruth2DImagePlus);
+int trees = 10;
+int features = 20;
+int maxDepth = 30;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+CLIJxWeka2 resultTrainWekaModelWithOptions = clijx.trainWekaModelWithOptions(featureStack3D, groundTruth2D, saveModelFilename, trees, features, maxDepth);
+</pre>
+
+<pre class="highlight">
+// show result
+System.out.println(resultTrainWekaModelWithOptions);
+
+// cleanup memory on GPU
+clijx.release(featureStack3D);
+clijx.release(groundTruth2D);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+featureStack3D = clijx.pushMat(featureStack3D_matrix);
+groundTruth2D = clijx.pushMat(groundTruth2D_matrix);
+trees = 10;
+features = 20;
+maxDepth = 30;
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+CLIJxWeka2 resultTrainWekaModelWithOptions = clijx.trainWekaModelWithOptions(featureStack3D, groundTruth2D, saveModelFilename, trees, features, maxDepth);
+</pre>
+
+<pre class="highlight">
+% show result
+System.out.println(resultTrainWekaModelWithOptions);
+
+% cleanup memory on GPU
+clijx.release(featureStack3D);
+clijx.release(groundTruth2D);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

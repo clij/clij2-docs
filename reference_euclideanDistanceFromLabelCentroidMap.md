@@ -12,6 +12,75 @@ Ext.CLIJx_euclideanDistanceFromLabelCentroidMap(Image labelmap_input, Image dest
 ```
 
 
+### Usage in object oriented programming languages
+
+
+
+<details>
+
+<summary>
+Java
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
+CLIJx clijx = CLIJx.getInstance();
+
+// get input parameters
+ClearCLBuffer labelmap_input = clijx.push(labelmap_inputImagePlus);
+destination = clijx.create(labelmap_input);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clijx.euclideanDistanceFromLabelCentroidMap(labelmap_input, destination);
+</pre>
+
+<pre class="highlight">
+// show result
+destinationImagePlus = clijx.pull(destination);
+destinationImagePlus.show();
+
+// cleanup memory on GPU
+clijx.release(labelmap_input);
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Matlab
+</summary>
+<pre class="highlight">% init CLIJ and GPU
+clijx = init_clatlabx();
+
+% get input parameters
+labelmap_input = clijx.pushMat(labelmap_input_matrix);
+destination = clijx.create(labelmap_input);
+</pre>
+
+<pre class="highlight">
+% Execute operation on GPU
+clijx.euclideanDistanceFromLabelCentroidMap(labelmap_input, destination);
+</pre>
+
+<pre class="highlight">
+% show result
+destination = clijx.pullMat(destination)
+
+% cleanup memory on GPU
+clijx.release(labelmap_input);
+clijx.release(destination);
+</pre>
+
+</details>
+
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

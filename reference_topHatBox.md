@@ -1,20 +1,34 @@
 ## topHatBox
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies a top-hat filter for background subtraction to the input image.
+
+### Parameters
+
+input : Image
+    The input image where the background is subtracted from.
+destination : Image
+    The output image where results are written into.
+radius_x : Image
+    Radius of the background determination region in X.
+radius_y : Image
+    Radius of the background determination region in Y.
+radius_z : Image
+    Radius of the background determination region in Z.
+
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
 
 ### topHatBox often follows after
-* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (2)
-* <a href="reference_rotate3D">rotate3D</a> (2)
+* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
+* <a href="reference_rotate3D">rotate3D</a> (1)
 
 
 ### topHatBox is often followed by
-* <a href="reference_automaticThreshold">automaticThreshold</a> (2)
-* <a href="reference_release">release</a> (2)
-* <a href="reference_resliceRadial">resliceRadial</a> (2)
-* <a href="reference_resliceTop">resliceTop</a> (3)
+* <a href="reference_automaticThreshold">automaticThreshold</a> (1)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_resliceRadial">resliceRadial</a> (1)
+* <a href="reference_resliceTop">resliceTop</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -131,6 +145,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(input);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.top_hat_box(input, destination, radiusX, radiusY, radiusZ)
+
+</pre>
+
+
 
 </details>
 

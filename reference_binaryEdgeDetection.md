@@ -4,15 +4,23 @@
 Determines pixels/voxels which are on the surface of binary objects and sets only them to 1 in the 
 destination image. All other pixels are set to 0.
 
+### Parameters
+
+source : Image
+    The binary input image where edges will be searched.
+destination : Image
+    The output image where edge pixels will be 1.
+
+
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### binaryEdgeDetection often follows after
-* <a href="reference_automaticThreshold">automaticThreshold</a> (2)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (3)
+* <a href="reference_automaticThreshold">automaticThreshold</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 
 
 ### binaryEdgeDetection is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
 
 
 ### Usage in ImageJ macro

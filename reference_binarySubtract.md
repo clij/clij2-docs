@@ -3,6 +3,16 @@
 
 Subtracts one binary image from another.
 
+### Parameters
+
+minuend : Image
+    The first binary input image to be processed.
+suubtrahend : Image
+    The second binary input image to be subtracted from the first.
+destination : Image
+    The output image where results are written into.
+
+
 Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### Usage in ImageJ macro

@@ -12,13 +12,13 @@ difference is that the output image contains values 0 and 1 instead of 0 and 255
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### dilateBox often follows after
-* <a href="reference_erodeBox">erodeBox</a> (3)
-* <a href="reference_dilateBox">dilateBox</a> (2)
+* <a href="reference_erodeBox">erodeBox</a> (2)
+* <a href="reference_dilateBox">dilateBox</a> (1)
 
 
 ### dilateBox is often followed by
-* <a href="reference_subtractImages">subtractImages</a> (2)
-* <a href="reference_dilateBox">dilateBox</a> (2)
+* <a href="reference_subtractImages">subtractImages</a> (1)
+* <a href="reference_dilateBox">dilateBox</a> (1)
 
 
 ### Usage in ImageJ macro

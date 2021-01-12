@@ -128,7 +128,7 @@ run("Green Fire Blue");
 setMinAndMax(0, 50);
 /*
 ## Quantitative analysis of distance between neighbors
-Next, we determine the averge distance between a node and of all its neighbors. The resulting 
+Next, we determine the average distance between a node and of all its neighbors. The resulting 
 vector has as many entries as nodes in the graph. We use this vector to color-code the 
 label map of segmented cells. This means, label 1 gets replaced by the average distance to 
 node 1, label 2 by the average distance to node 2, et cetera.
@@ -137,17 +137,14 @@ Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
 
 
 Ext.CLIJ2_averageDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distances_vector);
-// set the first column to zero to ignore all object touching the background
-//Ext.CLIJ2_setColumn(distances_vector, 0, 0);
-//Ext.CLIJ2_setColumn(touch_matrix, 0, 0);
+// we replace NaN values with zeros so that later maximum-projections work.
+Ext.CLIJ2_copy(distances_vector, distances_vector1);
+Ext.CLIJ2_undefinedToZero(distances_vector1, distances_vector);
 
-Ext.CLIJ2_undefinedToZero(distances_vector, distances_vector1);
-Ext.CLIJ2_replaceIntensities(labels, distances_vector1, distance_map);
+Ext.CLIJ2_replaceIntensities(labels, distances_vector, distance_map);
 show(distance_map, "distance map");
 run("Fire");
 setMinAndMax(0, 50);
-
-exit();
 
 /*
 Now, we measure the mean between neighbors and visualize it as above.
