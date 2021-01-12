@@ -85,6 +85,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * Statistics and measurements
     * [Images statistics](https://clij.github.io/clij2-docs/md/image_statistics/)
     * [Pixel statistics on labelled images](https://clij.github.io/clij2-docs/md/measure_statistics/)
+    * [Working with tables](https://clij.github.io/clij2-docs/md/tables/)
     * [Colocalisation measurements using Jaccard index and Sorensen/Dice coefficient](https://clij.github.io/clij2-docs/md/measure_overlap/)
 
   * Benchmarking
