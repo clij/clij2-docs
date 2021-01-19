@@ -1,5 +1,5 @@
 ## maximumDistanceOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a distance matrix to determine the maximum distance of touching neighbors for every object.
 
@@ -79,6 +79,23 @@ clijx.release(distance_matrix);
 clijx.release(touch_matrix);
 clijx.release(distancelist_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.maximum_distance_of_touching_neighbors(distance_matrix, touch_matrix, distancelist_destination)
+
+</pre>
+
+
 
 </details>
 

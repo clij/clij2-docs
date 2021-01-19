@@ -6,7 +6,17 @@ Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### binaryFillHoles often follows after
+* <a href="reference_closingBox">closingBox</a> (1)
 * <a href="reference_threshold">threshold</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_copySlice">copySlice</a> (1)
+
+
+### binaryFillHoles is often followed by
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_print">print</a> (1)
+* <a href="reference_openingBox">openingBox</a> (1)
+* <a href="reference_copySlice">copySlice</a> (1)
 
 
 ### Usage in ImageJ macro

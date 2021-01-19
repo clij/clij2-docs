@@ -10,6 +10,7 @@ The values are stored in x dimension.
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (1)
 * <a href="reference_release">release</a> (2)
 * <a href="reference_smallerOrEqualConstant">smallerOrEqualConstant</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
 * <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)
 * <a href="reference_paste2D">paste2D</a> (2)

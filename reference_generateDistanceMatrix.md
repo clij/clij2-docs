@@ -23,7 +23,7 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measu
 * <a href="reference_crop2D">crop2D</a> (1)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (1)
 * <a href="reference_averageDistanceOfNClosestPoints">averageDistanceOfNClosestPoints</a> (1)
-* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (4)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (5)
 * <a href="reference_smallerConstant">smallerConstant</a> (1)
 * <a href="reference_multiplyImages">multiplyImages</a> (1)
 

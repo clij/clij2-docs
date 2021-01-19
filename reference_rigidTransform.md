@@ -1,5 +1,5 @@
 ## rigidTransform
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies a rigid transform using linear interpolation to an image stack.
 
@@ -87,6 +87,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.rigid_transform(input, destination, translation_x, translation_y, translation_z, rotation_angle_x, rotation_angle_y, rotation_angle_z)
+
+</pre>
+
+
 
 </details>
 

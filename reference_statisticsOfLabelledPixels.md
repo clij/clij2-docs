@@ -14,6 +14,8 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (1)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
 * <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_copySlice">copySlice</a> (1)
+* <a href="reference_maximum3DSphere">maximum3DSphere</a> (1)
 * <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (1)
 
 

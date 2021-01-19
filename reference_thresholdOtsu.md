@@ -10,21 +10,24 @@ Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmenta
 
 ### thresholdOtsu often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
-* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (1)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 * <a href="reference_mean2DBox">mean2DBox</a> (1)
 * <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
 
 
 ### thresholdOtsu is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (3)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (4)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (3)
 * <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_binaryXOr">binaryXOr</a> (1)
 * <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
 * <a href="reference_mask">mask</a> (1)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (1)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
 
 
 ### Usage in ImageJ macro

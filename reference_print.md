@@ -6,6 +6,7 @@ Visualises an image on standard out (console).
 ### print often follows after
 * <a href="reference_histogram">histogram</a> (2)
 * <a href="reference_generateBinaryOverlapMatrix">generateBinaryOverlapMatrix</a> (1)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
 * <a href="reference_pushArray">pushArray</a> (2)
 * <a href="reference_nClosestDistances">nClosestDistances</a> (1)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)

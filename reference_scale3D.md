@@ -1,5 +1,5 @@
 ## scale3D
-<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Scales an image with a given factor.
 
@@ -122,6 +122,23 @@ Icy.addSequence(destination_sequence);
 clij2.release(source);
 clij2.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.scale(source, destination, scaling_factor_x, scaling_factor_y, scaling_factor_z, scale_to_center)
+
+</pre>
+
+
 
 </details>
 

@@ -14,6 +14,7 @@ Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmenta
 
 ### thresholdDefault is often followed by
 * <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_release">release</a> (3)
 
 
 ### Usage in ImageJ macro

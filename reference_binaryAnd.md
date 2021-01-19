@@ -25,7 +25,7 @@ Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](
 
 
 ### binaryAnd is often followed by
-* <a href="reference_release">release</a> (2)
+* <a href="reference_release">release</a> (6)
 
 
 ### Usage in ImageJ macro

@@ -1,5 +1,5 @@
 ## touchMatrixToAdjacencyMatrix
-<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Converts a touch matrix in an adjacency matrix
 
@@ -107,6 +107,23 @@ clij2.touchMatrixToAdjacencyMatrix(touch_matrix, adjacency_matrix);
 clij2.release(touch_matrix);
 clij2.release(adjacency_matrix);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.touch_matrix_to_adjacency_matrix(touch_matrix, adjacency_matrix)
+
+</pre>
+
+
 
 </details>
 

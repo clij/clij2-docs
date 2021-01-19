@@ -8,6 +8,14 @@ its half-width, half-height and half-depth (radius).
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+### maximum3DSphere often follows after
+* <a href="reference_equalConstant">equalConstant</a> (1)
+
+
+### maximum3DSphere is often followed by
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maximum3DSphere(Image source, Image destination, Number radius_x, Number radius_y, Number radius_z);

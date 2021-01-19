@@ -1,5 +1,5 @@
 ## euclideanDistanceFromLabelCentroidMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a label map, determines the centroids of all labels and writes the distance of all labelled pixels to their centroid in the result image.
 Background pixels stay zero.
@@ -76,6 +76,23 @@ destination = clijx.pullMat(destination)
 clijx.release(labelmap_input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.euclidean_distance_from_label_centroid_map(labelmap_input, destination)
+
+</pre>
+
+
 
 </details>
 

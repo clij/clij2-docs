@@ -15,6 +15,8 @@ Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter
 
 ### gaussianBlur2D is often followed by
 * <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (5)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
 * <a href="reference_getMeanSquaredError">getMeanSquaredError</a> (1)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (1)
 

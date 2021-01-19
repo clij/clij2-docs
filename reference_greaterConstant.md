@@ -8,11 +8,15 @@ f(a, b) = 1 if a > b; 0 otherwise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### greaterConstant often follows after
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (1)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 
 
 ### greaterConstant is often followed by
-* <a href="reference_release">release</a> (1)
+* <a href="reference_minimum2DBox">minimum2DBox</a> (1)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
+* <a href="reference_erodeSphere">erodeSphere</a> (1)
+* <a href="reference_release">release</a> (3)
 * <a href="reference_mask">mask</a> (1)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (1)
 

@@ -17,8 +17,9 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measu
 
 
 ### generateTouchMatrix is often followed by
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (1)
 * <a href="reference_release">release</a> (4)
 * <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
 * <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)

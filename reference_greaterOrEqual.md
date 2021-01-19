@@ -7,6 +7,10 @@ f(a, b) = 1 if a >= b; 0 otherwise.
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+### greaterOrEqual is often followed by
+* <a href="reference_release">release</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_greaterOrEqual(Image source1, Image source2, Image destination);

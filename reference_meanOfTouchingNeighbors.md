@@ -23,7 +23,7 @@ Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurem
 
 
 ### meanOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (3)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
 * <a href="reference_release">release</a> (1)
 
 

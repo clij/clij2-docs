@@ -14,6 +14,7 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 
 ### getMaximumOfAllPixels is often followed by
 * <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_equalConstant">equalConstant</a> (1)
 * <a href="reference_create2D">create2D</a> (1)
 
 

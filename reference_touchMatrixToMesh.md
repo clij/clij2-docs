@@ -21,10 +21,10 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visual
 * <a href="reference_smallerOrEqual">smallerOrEqual</a> (1)
 * <a href="reference_binaryOr">binaryOr</a> (1)
 * <a href="reference_transposeXY">transposeXY</a> (3)
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (3)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (7)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_multiplyImages">multiplyImages</a> (3)
 * <a href="reference_paste2D">paste2D</a> (1)
 * <a href="reference_create2D">create2D</a> (3)
 

@@ -1,15 +1,12 @@
-## labelMeanExtensionMap
+## modeOfTouchingNeighbors
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
-Takes a label map, determines for every label the mean distance of any pixel to the centroid and replaces every label with the that number.
-
-
-
-Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
+Takes a touch matrix and a vector of values to determine the most popular integer value among touching neighbors for every object.
+TODO: This only works for values between 0 and 255 for now.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelMeanExtensionMap(Image input, Image destination);
+Ext.CLIJx_modeOfTouchingNeighbors(Image values, Image touch_matrix, Image mode_values_destination);
 ```
 
 
@@ -28,23 +25,25 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clijx.push(inputImagePlus);
-destination = clijx.create(input);
+ClearCLBuffer values = clijx.push(valuesImagePlus);
+ClearCLBuffer touch_matrix = clijx.push(touch_matrixImagePlus);
+mode_values_destination = clijx.create(values);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.labelMeanExtensionMap(input, destination);
+clijx.modeOfTouchingNeighbors(values, touch_matrix, mode_values_destination);
 </pre>
 
 <pre class="highlight">
 // show result
-destinationImagePlus = clijx.pull(destination);
-destinationImagePlus.show();
+mode_values_destinationImagePlus = clijx.pull(mode_values_destination);
+mode_values_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(input);
-clijx.release(destination);
+clijx.release(values);
+clijx.release(touch_matrix);
+clijx.release(mode_values_destination);
 </pre>
 
 </details>
@@ -60,22 +59,24 @@ Matlab
 clijx = init_clatlabx();
 
 % get input parameters
-input = clijx.pushMat(input_matrix);
-destination = clijx.create(input);
+values = clijx.pushMat(values_matrix);
+touch_matrix = clijx.pushMat(touch_matrix_matrix);
+mode_values_destination = clijx.create(values);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.labelMeanExtensionMap(input, destination);
+clijx.modeOfTouchingNeighbors(values, touch_matrix, mode_values_destination);
 </pre>
 
 <pre class="highlight">
 % show result
-destination = clijx.pullMat(destination)
+mode_values_destination = clijx.pullMat(mode_values_destination)
 
 % cleanup memory on GPU
-clijx.release(input);
-clijx.release(destination);
+clijx.release(values);
+clijx.release(touch_matrix);
+clijx.release(mode_values_destination);
 </pre>
 
 </details>
@@ -89,7 +90,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.label_mean_extension_map(input, destination)
+cle.mode_of_touching_neighbors(values, touch_matrix, mode_values_destination)
 
 </pre>
 

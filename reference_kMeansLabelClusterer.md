@@ -1,13 +1,18 @@
-## makeIsotropic
+## kMeansLabelClusterer
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Applies a scaling operation using linear interpolation to generate an image stack with a given isotropic voxel size.
+Applies K-Means clustering to an image and a corresponding label map. 
 
-Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+See also: https://commons.apache.org/proper/commons-math/javadocs/api-3.6/org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.html
+Make sure that the handed over feature list is the same used while training the model.
+The neighbor_radius specifies a correction step which allows to use a region where the mode of 
+classification results (the most popular class) will be determined after clustering.
+
+Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation)
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_makeIsotropic(Image input, Image destination, Number original_voxel_size_x, Number original_voxel_size_y, Number original_voxel_size_z, Number new_voxel_size);
+Ext.CLIJx_kMeansLabelClusterer(Image input, Image label_map, Image destination, String features, String modelfilename, Number number_of_classes, Number neighbor_radius, Boolean train);
 ```
 
 
@@ -27,16 +32,16 @@ CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
 ClearCLBuffer input = clijx.push(inputImagePlus);
+ClearCLBuffer label_map = clijx.push(label_mapImagePlus);
 destination = clijx.create(input);
-float original_voxel_size_x = 1.0;
-float original_voxel_size_y = 2.0;
-float original_voxel_size_z = 3.0;
-float new_voxel_size = 4.0;
+int number_of_classes = 10;
+int neighbor_radius = 20;
+boolean train = true;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.makeIsotropic(input, destination, original_voxel_size_x, original_voxel_size_y, original_voxel_size_z, new_voxel_size);
+clijx.kMeansLabelClusterer(input, label_map, destination, features, modelfilename, number_of_classes, neighbor_radius, train);
 </pre>
 
 <pre class="highlight">
@@ -46,6 +51,7 @@ destinationImagePlus.show();
 
 // cleanup memory on GPU
 clijx.release(input);
+clijx.release(label_map);
 clijx.release(destination);
 </pre>
 
@@ -63,16 +69,16 @@ clijx = init_clatlabx();
 
 % get input parameters
 input = clijx.pushMat(input_matrix);
+label_map = clijx.pushMat(label_map_matrix);
 destination = clijx.create(input);
-original_voxel_size_x = 1.0;
-original_voxel_size_y = 2.0;
-original_voxel_size_z = 3.0;
-new_voxel_size = 4.0;
+number_of_classes = 10;
+neighbor_radius = 20;
+train = true;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.makeIsotropic(input, destination, original_voxel_size_x, original_voxel_size_y, original_voxel_size_z, new_voxel_size);
+clijx.kMeansLabelClusterer(input, label_map, destination, features, modelfilename, number_of_classes, neighbor_radius, train);
 </pre>
 
 <pre class="highlight">
@@ -81,6 +87,7 @@ destination = clijx.pullMat(destination)
 
 % cleanup memory on GPU
 clijx.release(input);
+clijx.release(label_map);
 clijx.release(destination);
 </pre>
 

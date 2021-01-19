@@ -1,5 +1,5 @@
 ## mergeTouchingLabels
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 
 
@@ -75,6 +75,23 @@ destination = clijx.pullMat(destination)
 clijx.release(source);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.merge_touching_labels(source, destination)
+
+</pre>
+
+
 
 </details>
 

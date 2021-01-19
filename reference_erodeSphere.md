@@ -8,6 +8,16 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+### erodeSphere often follows after
+* <a href="reference_erodeSphere">erodeSphere</a> (1)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+
+
+### erodeSphere is often followed by
+* <a href="reference_subtractImages">subtractImages</a> (1)
+* <a href="reference_erodeSphere">erodeSphere</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_erodeSphere(Image source, Image destination);
