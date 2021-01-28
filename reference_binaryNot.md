@@ -160,6 +160,8 @@ cle.binary_not(source, destination)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/quantitative_neighbor_maps.ipynb"><img src="images/language_python.png" height="20"/></a> [quantitative_neighbor_maps.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/quantitative_neighbor_maps.ipynb)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/segmentation_2d_membranes.ipynb"><img src="images/language_python.png" height="20"/></a> [segmentation_2d_membranes.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/segmentation_2d_membranes.ipynb)  
 
 
 
