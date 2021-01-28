@@ -146,6 +146,7 @@ cle.greater_or_equal(source1, source2, destination)
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/superpixel_segmentation"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/mesh_between_centroids.ipynb"><img src="images/language_python.png" height="20"/></a> [mesh_between_centroids.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/mesh_between_centroids.ipynb)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/pixelwise_comparison.ipynb"><img src="images/language_python.png" height="20"/></a> [pixelwise_comparison.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/pixelwise_comparison.ipynb)  
 
 
 

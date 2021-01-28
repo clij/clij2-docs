@@ -144,6 +144,7 @@ cle.transpose_xz(input, destination)
 
 ### Example notebooks
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/inspecting_3d_images.ipynb"><img src="images/language_python.png" height="20"/></a> [inspecting_3d_images.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/inspecting_3d_images.ipynb)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/transpose.ipynb"><img src="images/language_python.png" height="20"/></a> [transpose.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/transpose.ipynb)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

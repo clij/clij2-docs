@@ -153,6 +153,12 @@ cle.draw_box(destination, x, y, z, width, height, depth, value)
 
 
 
+### Example notebooks
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/convolution.ipynb"><img src="images/language_python.png" height="20"/></a> [convolution.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/convolution.ipynb)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 

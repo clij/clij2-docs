@@ -149,6 +149,8 @@ cle.convolve(source, convolution_kernel, destination)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/benchmarking"><img src="images/language_macro.png" height="20"/></a> [benchmarking](https://clij.github.io/clij2-docs/md/benchmarking)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/benchmarking.ipynb"><img src="images/language_python.png" height="20"/></a> [benchmarking.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/benchmarking.ipynb)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/convolution.ipynb"><img src="images/language_python.png" height="20"/></a> [convolution.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/convolution.ipynb)  
 
 
 

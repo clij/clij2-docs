@@ -101,6 +101,12 @@ cle.extend_labels_with_maximum_radius(input, destination, radius)
 
 
 
+
+
+### Example notebooks
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/extend_labels.ipynb"><img src="images/language_python.png" height="20"/></a> [extend_labels.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/extend_labels.ipynb)  
+
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

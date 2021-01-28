@@ -165,6 +165,7 @@ cle.threshold_otsu(input, destination)
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/segmentation_2d_membranes.ipynb"><img src="images/language_python.png" height="20"/></a> [segmentation_2d_membranes.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/segmentation_2d_membranes.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb"><img src="images/language_python.png" height="20"/></a> [voronoi_otsu_labeling.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tissues/parametric_maps.ipynb"><img src="images/language_python.png" height="20"/></a> [parametric_maps.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tissues/parametric_maps.ipynb)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/threshold_otsu.ipynb"><img src="images/language_python.png" height="20"/></a> [threshold_otsu.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/threshold_otsu.ipynb)  
 
 
 

@@ -143,6 +143,12 @@ cle.mean_sphere(source, destination, radius_x, radius_y)
 
 
 
+### Example notebooks
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/convolution.ipynb"><img src="images/language_python.png" height="20"/></a> [convolution.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/convolution.ipynb)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_detailed_comparison_IJ_CLIJ.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ_radius.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_detailed_comparison_IJ_CLIJ_radius.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_detailed_comparison_IJ_CLIJ_radius.ijm)  
