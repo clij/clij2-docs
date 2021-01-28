@@ -8,15 +8,6 @@ its half-width and half-height (radius).
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
-### maximum2DSphere often follows after
-* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (1)
-
-
-### maximum2DSphere is often followed by
-* <a href="reference_release">release</a> (1)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maximum2DSphere(Image source, Image destination, Number radius_x, Number radius_y);

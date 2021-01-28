@@ -17,10 +17,6 @@ destination : Image
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
-### addImages often follows after
-* <a href="reference_thresholdHuang">thresholdHuang</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);

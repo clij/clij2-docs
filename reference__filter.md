@@ -251,6 +251,15 @@ Computes the local maximum of a pixels spherical neighborhood.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOctagon">maximumOctagon</a>  
 Applies a maximum filter with kernel size 3x3 n times to an image iteratively. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOfNNearestNeighborsMap">maximumOfNNearestNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the maximum value of neighboring labels. The distance number of nearest neighbors can be configured. Note: Values of all pixels in a label each must be identical.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOfProximalNeighborsMap">maximumOfProximalNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the maximum value of neighboring labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_maximumOfTouchingNeighborsMap">maximumOfTouchingNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the maximum value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mean2DBox">mean2DBox</a>  
 Computes the local mean average of a pixels rectangular neighborhood. 
 
@@ -262,6 +271,15 @@ Computes the local mean average of a pixels cube neighborhood.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mean3DSphere">mean3DSphere</a>  
 Computes the local mean average of a pixels spherical neighborhood. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanOfNNearestNeighborsMap">meanOfNNearestNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the minimum value of neighboring labels. The distance number of nearest neighbors can be configured. Note: Values of all pixels in a label each must be identical.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanOfProximalNeighborsMap">meanOfProximalNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the mean average value of neighboring labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighborsMap">meanOfTouchingNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the mean average value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanSliceBySliceSphere">meanSliceBySliceSphere</a>  
 Computes the local mean average of a pixels ellipsoidal 2D neighborhood in an image stack  slice by slice. 
@@ -295,6 +313,24 @@ Computes the local minimum of a pixels spherical neighborhood.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOctagon">minimumOctagon</a>  
 Applies a minimum filter with kernel size 3x3 n times to an image iteratively. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOfNNearestNeighborsMap">minimumOfNNearestNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the minimum value of neighboring labels. The distance number of nearest neighbors can be configured. Note: Values of all pixels in a label each must be identical.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOfProximalNeighborsMap">minimumOfProximalNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the minimum value of neighboring labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumOfTouchingNeighborsMap">minimumOfTouchingNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the minimum value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_modeOfNNearestNeighborsMap">modeOfNNearestNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the mode value of neighboring labels. The distance number of nearest neighbors can be configured. Note: Values of all pixels in a label each must be identical.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_modeOfProximalNeighborsMap">modeOfProximalNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the most popular value of neighboring labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_modeOfTouchingNeighborsMap">modeOfTouchingNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the most popular value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
 
 <a name="N"></a>
 
@@ -371,6 +407,15 @@ Determines the squared difference pixel by pixel between two images.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationBox">standardDeviationBox (Experimental)</a>  
 Computes the local standard deviation of a pixels box neighborhood. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationOfNNearestNeighborsMap">standardDeviationOfNNearestNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the standard deviation value of neighboring labels. The distance number of nearest neighbors can be configured. Note: Values of all pixels in a label each must be identical.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationOfProximalNeighborsMap">standardDeviationOfProximalNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the standard deviation value of neighboring labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationOfTouchingNeighborsMap">standardDeviationOfTouchingNeighborsMap (Experimental)</a>  
+Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the standard deviation value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationSphere">standardDeviationSphere (Experimental)</a>  
 Computes the local standard deviation of a pixels spherical neighborhood. 
 
@@ -422,4 +467,4 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
-129 methods listed.
+144 methods listed.

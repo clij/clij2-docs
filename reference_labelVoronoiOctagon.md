@@ -8,12 +8,12 @@ The pixels where  the regions touched are afterwards returned as binary image wh
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### labelVoronoiOctagon often follows after
-* <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (4)
+* <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (3)
 * <a href="reference_labelSpots">labelSpots</a> (1)
 
 
 ### labelVoronoiOctagon is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (8)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
 * <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 

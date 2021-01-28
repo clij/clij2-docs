@@ -9,7 +9,6 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### subtractImageFromScalar is often followed by
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
-* <a href="reference_topHatBox">topHatBox</a> (1)
 
 
 ### Usage in ImageJ macro

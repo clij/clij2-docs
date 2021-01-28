@@ -7,10 +7,6 @@ f(a, b) = 1 if a < b; 0 otherwise.
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
-### smallerConstant often follows after
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
-
-
 ### smallerConstant is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
 

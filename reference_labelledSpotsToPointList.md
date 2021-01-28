@@ -11,14 +11,11 @@ Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurem
 
 ### labelledSpotsToPointList often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
-* <a href="reference_labelSpots">labelSpots</a> (7)
+* <a href="reference_labelSpots">labelSpots</a> (1)
 
 
 ### labelledSpotsToPointList is often followed by
-* <a href="reference_getDimensions">getDimensions</a> (1)
-* <a href="reference_release">release</a> (2)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (4)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (5)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
 ### Usage in ImageJ macro

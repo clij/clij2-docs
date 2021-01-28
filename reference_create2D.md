@@ -6,14 +6,13 @@ Allocated memory for a new 2D image in the GPU memory.
 BitDepth must be 8 (unsigned byte), 16 (unsigned short) or 32 (float).
 
 ### create2D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (14)
-* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
+* <a href="reference_getDimensions">getDimensions</a> (6)
 
 
 ### create2D is often followed by
 * <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (1)
 * <a href="reference_maskLabel">maskLabel</a> (1)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 

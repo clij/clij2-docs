@@ -5,15 +5,9 @@ Reads out the size of an image [stack] and writes it to the variables 'width', '
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
-### getDimensions often follows after
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (1)
-
-
 ### getDimensions is often followed by
-* <a href="reference_crop2D">crop2D</a> (2)
-* <a href="reference_create3D">create3D</a> (17)
-* <a href="reference_create2D">create2D</a> (14)
-* <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_create3D">create3D</a> (3)
+* <a href="reference_create2D">create2D</a> (6)
 
 
 ### Usage in ImageJ macro

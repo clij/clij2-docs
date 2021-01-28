@@ -5,13 +5,8 @@ Takes a touch matrix as input and delivers a vector with number of touching neig
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
-### countTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
-
-
 ### countTouchingNeighbors is often followed by
-* <a href="reference_release">release</a> (5)
-* <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro

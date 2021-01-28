@@ -8,10 +8,6 @@ Major parts of this operation run on the CPU.
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
-### generateJaccardIndexMatrix often follows after
-* <a href="reference_pushString">pushString</a> (2)
-
-
 ### generateJaccardIndexMatrix is often followed by
 * <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 

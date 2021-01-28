@@ -12,8 +12,8 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 
 
 ### centroidsOfLabels is often followed by
-* <a href="reference_paste2D">paste2D</a> (1)
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
+* <a href="reference_paste2D">paste2D</a> (1)
 
 
 ### Usage in ImageJ macro

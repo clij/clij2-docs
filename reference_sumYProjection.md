@@ -5,10 +5,6 @@ Determines the sum intensity projection of an image along Z.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
-### sumYProjection is often followed by
-* <a href="reference_equalConstant">equalConstant</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_sumYProjection(Image source, Image destination);

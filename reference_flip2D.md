@@ -7,11 +7,9 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### flip2D often follows after
 * <a href="reference_crop2D">crop2D</a> (1)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### flip2D is often followed by
-* <a href="reference_copySlice">copySlice</a> (1)
 * <a href="reference_paste2D">paste2D</a> (1)
 
 

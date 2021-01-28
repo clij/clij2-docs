@@ -14,17 +14,6 @@ once at the beginning and handing over these values.
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
-### histogram often follows after
-* <a href="reference_pushArray">pushArray</a> (1)
-* <a href="reference_copySlice">copySlice</a> (2)
-* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (2)
-
-
-### histogram is often followed by
-* <a href="reference_print">print</a> (2)
-* <a href="reference_paste2D">paste2D</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_histogram(Image source, Image destination, Number number_of_bins, Number minimum_intensity, Number maximum_intensity, Boolean determine_min_max);

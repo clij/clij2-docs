@@ -7,15 +7,6 @@ The resulting label map is written to the output.
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
-### voronoiLabeling often follows after
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
-
-
-### voronoiLabeling is often followed by
-* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (1)
-* <a href="reference_release">release</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_voronoiLabeling(Image input, Image destination);

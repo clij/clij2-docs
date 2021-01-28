@@ -14,7 +14,7 @@ higher intensity, and to 0 otherwise.
 
 ### detectMaximaBox is often followed by
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
-* <a href="reference_mask">mask</a> (4)
+* <a href="reference_mask">mask</a> (1)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
 

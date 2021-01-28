@@ -19,15 +19,6 @@ destination : Image
 
 Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
-### binaryAnd often follows after
-* <a href="reference_notEqualConstant">notEqualConstant</a> (1)
-* <a href="reference_equal">equal</a> (1)
-
-
-### binaryAnd is often followed by
-* <a href="reference_release">release</a> (6)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryAnd(Image operand1, Image operand2, Image destination);

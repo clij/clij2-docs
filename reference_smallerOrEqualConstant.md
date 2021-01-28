@@ -7,14 +7,6 @@ f(a, b) = 1 if a <= b; 0 otherwise.
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
-### smallerOrEqualConstant often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
-
-
-### smallerOrEqualConstant is often followed by
-* <a href="reference_excludeLabels">excludeLabels</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_smallerOrEqualConstant(Image source, Image destination, Number constant);

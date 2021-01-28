@@ -5,15 +5,6 @@ Replaces a specific intensity in an image with a given new value.
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
-### replaceIntensity often follows after
-* <a href="reference_subtractImages">subtractImages</a> (1)
-* <a href="reference_multiplyImages">multiplyImages</a> (1)
-
-
-### replaceIntensity is often followed by
-* <a href="reference_equal">equal</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_replaceIntensity(Image input, Image destination, Number value_to_replace, Number value_replacement);

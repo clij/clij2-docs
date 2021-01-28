@@ -8,13 +8,8 @@ its half-width and half-height (radius).
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
-### minimum2DBox often follows after
-* <a href="reference_greaterConstant">greaterConstant</a> (1)
-
-
 ### minimum2DBox is often followed by
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
-* <a href="reference_subtractImages">subtractImages</a> (1)
 
 
 ### Usage in ImageJ macro

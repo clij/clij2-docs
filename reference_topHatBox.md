@@ -19,16 +19,8 @@ radius_z : Image
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
 
-### topHatBox often follows after
-* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
-* <a href="reference_rotate3D">rotate3D</a> (1)
-
-
 ### topHatBox is often followed by
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
-* <a href="reference_release">release</a> (2)
-* <a href="reference_resliceRadial">resliceRadial</a> (1)
-* <a href="reference_resliceTop">resliceTop</a> (2)
 
 
 ### Usage in ImageJ macro

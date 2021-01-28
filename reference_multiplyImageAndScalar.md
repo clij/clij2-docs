@@ -19,20 +19,14 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### multiplyImageAndScalar often follows after
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
-* <a href="reference_invert">invert</a> (1)
 * <a href="reference_pushArray">pushArray</a> (1)
-* <a href="reference_resultsTableToImage2D">resultsTableToImage2D</a> (1)
-* <a href="reference_addImageAndScalar">addImageAndScalar</a> (1)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (1)
 
 
 ### multiplyImageAndScalar is often followed by
 * <a href="reference_print">print</a> (2)
-* <a href="reference_smallerOrEqual">smallerOrEqual</a> (1)
-* <a href="reference_transposeXY">transposeXY</a> (1)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (1)
 * <a href="reference_convertUInt16">convertUInt16</a> (1)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
 
 
 ### Usage in ImageJ macro
