@@ -16,12 +16,13 @@ maximum_values_destination : Image
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 ### maximumOfTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_create3D">create3D</a> (1)
 * <a href="reference_resultsTableColumnToImage">resultsTableColumnToImage</a> (1)
 
 
 ### maximumOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
 
 
 ### Usage in ImageJ macro

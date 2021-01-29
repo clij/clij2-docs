@@ -10,18 +10,24 @@ The touch matrix is a representation of a region adjacency graph
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### generateTouchMatrix often follows after
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (1)
+* <a href="reference_maximum2DSphere">maximum2DSphere</a> (1)
 * <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (1)
 
 
 ### generateTouchMatrix is often followed by
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (1)
-* <a href="reference_release">release</a> (1)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
-* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (1)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (1)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (1)
+* <a href="reference_release">release</a> (4)
+* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (1)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (7)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro

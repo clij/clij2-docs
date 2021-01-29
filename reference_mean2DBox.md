@@ -8,7 +8,13 @@ its half-width and half-height (radius).
 
 Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+### mean2DBox often follows after
+* <a href="reference_absolute">absolute</a> (1)
+* <a href="reference_distanceMap">distanceMap</a> (1)
+
+
 ### mean2DBox is often followed by
+* <a href="reference_threshold">threshold</a> (1)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 
 

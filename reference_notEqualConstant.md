@@ -15,6 +15,14 @@ constant : float
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+### notEqualConstant often follows after
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
+
+
+### notEqualConstant is often followed by
+* <a href="reference_binaryAnd">binaryAnd</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_notEqualConstant(Image source, Image destination, Number constant);

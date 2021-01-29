@@ -18,6 +18,10 @@ destination : Image
 
 Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+### binaryOr is often followed by
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_binaryOr(Image operand1, Image operand2, Image destination);

@@ -7,6 +7,10 @@ Major parts of this operation run on the CPU.
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+### generateTouchCountMatrix is often followed by
+* <a href="reference_release">release</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateTouchCountMatrix(Image label_map, Image touch_count_matrix_destination);

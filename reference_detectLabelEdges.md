@@ -9,6 +9,10 @@ Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection),
 * <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
 
 
+### detectLabelEdges is often followed by
+* <a href="reference_release">release</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_detectLabelEdges(Image label_map, Image edge_image_destination);

@@ -8,7 +8,13 @@ Remaining label elements are renumbered afterwards.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 ### excludeLabelsOnEdges often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (5)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
+
+
+### excludeLabelsOnEdges is often followed by
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
+* <a href="reference_release">release</a> (3)
 
 
 ### Usage in ImageJ macro

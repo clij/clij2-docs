@@ -8,6 +8,10 @@ higher intensity, and to 0 otherwise.
 
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+### detectMaxima3DBox is often followed by
+* <a href="reference_release">release</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_detectMaxima3DBox(Image source, Image destination, Number radiusX, Number radiusY, Number radiusZ);

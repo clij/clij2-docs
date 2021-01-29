@@ -5,8 +5,13 @@ Determines the maximum intensity projection of an image along X.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+### maximumYProjection often follows after
+* <a href="reference_invert">invert</a> (1)
+
+
 ### maximumYProjection is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
+* <a href="reference_resample">resample</a> (1)
 
 
 ### Usage in ImageJ macro

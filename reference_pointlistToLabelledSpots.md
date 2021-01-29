@@ -10,7 +10,7 @@ Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 
 ### pointlistToLabelledSpots is often followed by
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (3)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (4)
 
 
 ### Usage in ImageJ macro

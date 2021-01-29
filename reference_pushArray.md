@@ -4,6 +4,8 @@
 Converts an array to an image.
 
 ### pushArray is often followed by
+* <a href="reference_histogram">histogram</a> (1)
+* <a href="reference_print">print</a> (2)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
 * <a href="reference_excludeLabels">excludeLabels</a> (1)
 * <a href="reference_transposeXY">transposeXY</a> (1)

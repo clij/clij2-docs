@@ -6,13 +6,22 @@ Pastes an image into another image at a given position.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### paste2D often follows after
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+* <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_getDimensions">getDimensions</a> (1)
+* <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (1)
 * <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (1)
+* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (1)
 * <a href="reference_flip2D">flip2D</a> (1)
 
 
 ### paste2D is often followed by
+* <a href="reference_print">print</a> (2)
 * <a href="reference_crop2D">crop2D</a> (1)
-* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (2)
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
 
 
 ### Usage in ImageJ macro

@@ -209,8 +209,14 @@ Takes a label map, determines for every label the mean distance of any pixel to 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanIntensityMap">labelMeanIntensityMap (Experimental)</a>  
 Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelOverlapCountMap">labelOverlapCountMap (Experimental)</a>  
+Takes two label maps, and counts for every label in label map 1 how many labels overlap with it in label map 2.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelPixelCountMap">labelPixelCountMap (Experimental)</a>  
 Takes a label map, determines the number of pixels per label and replaces every label with the that number.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelProximalNeighborCountMap">labelProximalNeighborCountMap (Experimental)</a>  
+Takes two label maps, and counts for every label in label map 1 how many labels are in a given distance range to it in label map 2.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelStandardDeviationIntensityMap">labelStandardDeviationIntensityMap (Experimental)</a>  
 Takes an image and a corresponding label map, determines the standard deviation of the intensity per label and replaces every label with the that number.
@@ -440,4 +446,4 @@ Determines the variance of all pixels in an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_varianceOfMaskedPixels">varianceOfMaskedPixels</a>  
 Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. 
 
-127 methods listed.
+129 methods listed.

@@ -17,7 +17,7 @@ Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measu
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_readIntensitiesFromMap(Image input, Image new_values_vector, Image destination);
+Ext.CLIJx_readIntensitiesFromMap(Image labels, Image map_image, Image values_destination);
 ```
 
 
@@ -36,25 +36,25 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clijx.push(inputImagePlus);
-ClearCLBuffer new_values_vector = clijx.push(new_values_vectorImagePlus);
-destination = clijx.create(input);
+ClearCLBuffer labels = clijx.push(labelsImagePlus);
+ClearCLBuffer map_image = clijx.push(map_imageImagePlus);
+values_destination = clijx.create(labels);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.readIntensitiesFromMap(input, new_values_vector, destination);
+clijx.readIntensitiesFromMap(labels, map_image, values_destination);
 </pre>
 
 <pre class="highlight">
 // show result
-destinationImagePlus = clijx.pull(destination);
-destinationImagePlus.show();
+values_destinationImagePlus = clijx.pull(values_destination);
+values_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(input);
-clijx.release(new_values_vector);
-clijx.release(destination);
+clijx.release(labels);
+clijx.release(map_image);
+clijx.release(values_destination);
 </pre>
 
 </details>
@@ -70,24 +70,24 @@ Matlab
 clijx = init_clatlabx();
 
 % get input parameters
-input = clijx.pushMat(input_matrix);
-new_values_vector = clijx.pushMat(new_values_vector_matrix);
-destination = clijx.create(input);
+labels = clijx.pushMat(labels_matrix);
+map_image = clijx.pushMat(map_image_matrix);
+values_destination = clijx.create(labels);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.readIntensitiesFromMap(input, new_values_vector, destination);
+clijx.readIntensitiesFromMap(labels, map_image, values_destination);
 </pre>
 
 <pre class="highlight">
 % show result
-destination = clijx.pullMat(destination)
+values_destination = clijx.pullMat(values_destination)
 
 % cleanup memory on GPU
-clijx.release(input);
-clijx.release(new_values_vector);
-clijx.release(destination);
+clijx.release(labels);
+clijx.release(map_image);
+clijx.release(values_destination);
 </pre>
 
 </details>
@@ -101,7 +101,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.read_intensities_from_map(input, new_values_vector, destination)
+cle.read_intensities_from_map(labels, map_image, values_destination)
 
 </pre>
 

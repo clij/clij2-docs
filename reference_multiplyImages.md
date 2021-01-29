@@ -19,13 +19,22 @@ Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### multiplyImages often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+* <a href="reference_invert">invert</a> (1)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
+* <a href="reference_equalConstant">equalConstant</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 * <a href="reference_create2D">create2D</a> (1)
 
 
 ### multiplyImages is often followed by
+* <a href="reference_saveAsTIF">saveAsTIF</a> (1)
+* <a href="reference_equal">equal</a> (1)
+* <a href="reference_notEqualConstant">notEqualConstant</a> (1)
 * <a href="reference_print">print</a> (3)
+* <a href="reference_release">release</a> (5)
+* <a href="reference_replaceIntensity">replaceIntensity</a> (1)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (1)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (1)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 
 
 ### Usage in ImageJ macro

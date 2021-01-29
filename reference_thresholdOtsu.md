@@ -10,17 +10,24 @@ Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmenta
 
 ### thresholdOtsu often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (2)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 * <a href="reference_mean2DBox">mean2DBox</a> (1)
 * <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
 
 
 ### thresholdOtsu is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (6)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (3)
 * <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_binaryXOr">binaryXOr</a> (1)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (1)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
+* <a href="reference_mask">mask</a> (1)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -154,6 +161,7 @@ cle.threshold_otsu(input, destination)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+<a href="https://clij.github.io/clij2-docs/md/count_overlap_between_channels"><img src="images/language_macro.png" height="20"/></a> [count_overlap_between_channels](https://clij.github.io/clij2-docs/md/count_overlap_between_channels)  
 <a href="https://clij.github.io/clij2-docs/md/labelmap_voronoi"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi](https://clij.github.io/clij2-docs/md/labelmap_voronoi)  
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
 <a href="https://clij.github.io/clij2-docs/md/measure_statistics"><img src="images/language_macro.png" height="20"/></a> [measure_statistics](https://clij.github.io/clij2-docs/md/measure_statistics)  
@@ -174,6 +182,7 @@ cle.threshold_otsu(input, destination)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/autoThreshold.ijm"><img src="images/language_macro.png" height="20"/></a> [autoThreshold.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/autoThreshold.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkVoronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkVoronoi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_overlap_between_channels.ijm"><img src="images/language_macro.png" height="20"/></a> [count_overlap_between_channels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_overlap_between_channels.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm"><img src="images/language_macro.png" height="20"/></a> [create_object_outlines.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/create_object_outlines.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm"><img src="images/language_macro.png" height="20"/></a> [distanceMap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distanceMap.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/distance_map.ijm"><img src="images/language_macro.png" height="20"/></a> [distance_map.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/distance_map.ijm)  

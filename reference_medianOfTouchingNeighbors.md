@@ -9,12 +9,13 @@ Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurem
 
 ### medianOfTouchingNeighbors often follows after
 * <a href="reference_pushArray">pushArray</a> (1)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### medianOfTouchingNeighbors is often followed by
 * <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
 
 
 ### Usage in ImageJ macro

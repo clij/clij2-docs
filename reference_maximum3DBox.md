@@ -14,7 +14,7 @@ Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### maximum3DBox is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (1)
-* <a href="reference_release">release</a> (1)
+* <a href="reference_release">release</a> (2)
 
 
 ### Usage in ImageJ macro

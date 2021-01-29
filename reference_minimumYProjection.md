@@ -5,6 +5,11 @@ Determines the minimum intensity projection of an image along Y.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+### minimumYProjection is often followed by
+* <a href="reference_equal">equal</a> (1)
+* <a href="reference_subtractImages">subtractImages</a> (2)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumYProjection(Image source, Image destination_min);

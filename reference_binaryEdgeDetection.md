@@ -16,7 +16,11 @@ Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection),
 
 ### binaryEdgeDetection often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+
+
+### binaryEdgeDetection is often followed by
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
 
 
 ### Usage in ImageJ macro

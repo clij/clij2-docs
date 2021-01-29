@@ -8,12 +8,14 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 ### labelSpots often follows after
-* <a href="reference_mask">mask</a> (1)
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (1)
+* <a href="reference_mask">mask</a> (6)
 
 
 ### labelSpots is often followed by
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (1)
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (1)
+* <a href="reference_release">release</a> (4)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (7)
 
 
 ### Usage in ImageJ macro
