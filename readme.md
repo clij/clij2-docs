@@ -64,6 +64,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * Future perspectives
     * [CLIJx-Assistant](https://clij.github.io/assistant)
     * [clEsperanto](http://clesperanto.net)
+    * [The big dictionary](https://clij.github.io/clij2-docs/dictionary_clesperanto)
   
 * Tutorials
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
