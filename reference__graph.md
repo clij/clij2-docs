@@ -173,6 +173,9 @@ Takes a label image and a parametric intensity image and will replace each label
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a>  
 Takes a touch matrix and a vector of values to determine the median value among touching neighbors for every object. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianTouchPortionMap">medianTouchPortionMap (Experimental)</a>  
+Starts from a label map, determines median touch portion to neighbors (between 0 and 1) and draws a map.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumDistanceOfTouchingNeighbors">minimumDistanceOfTouchingNeighbors</a>  
 Takes a touch matrix and a distance matrix to determine the shortest distance of touching neighbors for every object.
 
@@ -205,6 +208,9 @@ Determine the n point indices with shortest distance for all points in a distanc
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nClosestPoints">nClosestPoints</a>  
 Determine the n point indices with shortest distance for all points in a distance matrix. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborCountWithTouchPortionAboveThresholdMap">neighborCountWithTouchPortionAboveThresholdMap (Experimental)</a>  
+Starts from a label map, determines touch portion to neighbors, counts those above a given value (between 0 and 1) and draws a map.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborDistanceRangeRatioMap">neighborDistanceRangeRatioMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the minimum distance to their neighboring labels.
@@ -257,4 +263,4 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_touchingNeighborCountMap">touchingNeighborCountMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the number of touching neighboring labels.
 
-71 methods listed.
+73 methods listed.

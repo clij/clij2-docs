@@ -3,6 +3,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Methods marked as <span style="color:red">(missing)</span> still need to be translated.
 * Methods marked as <span style="color:orange">(deprecated)</span> should not be translated.
 * Methods marked as <span style="color:green">(experimental)</span> are not decided yet if they become part of a stable release.
+
 ## absolute
 **CLIJ2**
 * boolean absolute(ClearCLImageInterface source, ClearCLImageInterface destination)
@@ -35,8 +36,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * absolute_difference(source1 : Image, source2 : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## absolute_inplace
 <span style="color:orange">(deprecated)</span>
 
@@ -45,8 +44,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_absoluteInplace(Image source_destination)
-
-</span>
 
 ## add_image_and_scalar
 **CLIJ2**
@@ -112,15 +109,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## affine_transform
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * affine_transform(source : Image, destination : Image = None, transform : Union[np.ndarray, AffineTransform3D, AffineTransform] = None, linear_interpolation : bool = False):
-
-</span>
 
 ## affine_transform
 **CLIJ2**
@@ -170,8 +163,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * affine_transform(source : Image, destination : Image = None, transform : Union[np.ndarray, AffineTransform3D, AffineTransform] = None, linear_interpolation : bool = False):
 
-<span style="color:grey">
-
 ## apply_auto_context_weka_model_with_options
 <span style="color:green">(experimental)</span>
 
@@ -180,8 +171,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **clEsperantoJ**
 * ClearCLBuffer apply_auto_context_weka_model_with_options(ClearCLBuffer arg1, ClearCLBuffer arg2, String arg3, String arg4, double arg5)
-
-</span>
 
 ## apply_vector_field
 **CLIJ2**
@@ -262,8 +251,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## apply_weka_model
 <span style="color:green">(experimental)</span>
 
@@ -278,10 +265,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_applyWekaModel(Image featureStack3D, Image prediction2D_destination, String loadModelFilename)
 
-</span>
-
-<span style="color:grey">
-
 ## apply_weka_to_table
 <span style="color:green">(experimental)</span>
 
@@ -295,8 +278,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_applyWekaToTable(String predictionColumnName, String loadModelFilename)
-
-</span>
 
 ## arg_maximum_z_projection
 **CLIJ2**
@@ -314,15 +295,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## artificial_tissue_2d
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * artificial_tissue_2d(width: int = 256, height: int = 256, delta_x=24, delta_y=16, random_sigma_x=3, random_sigma_y=3):
-
-</span>
 
 ## automatic_threshold
 **CLIJ2**
@@ -342,8 +319,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## automatic_threshold_inplace
 <span style="color:orange">(deprecated)</span>
 
@@ -353,17 +328,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_automaticThresholdInplace(Image input_and_destination, String method)
 
-</span>
-
-<span style="color:grey">
-
 ## available_device_names
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * available_device_names(dev_type: str = None, score_key = None) -> List[str]:
-
-</span>
 
 ## average_distance_of_closest_points
 **CLIJ2**
@@ -381,8 +350,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## average_distance_of_n_closest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -397,8 +364,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * average_distance_of_n_closest_neighbors_map(labels : Image, distance_map : Image = None, n : int = 1):
-
-</span>
 
 ## average_distance_of_n_closest_points
 **CLIJ2**
@@ -448,8 +413,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * average_distance_of_touching_neighbors(distance_matrix : Image, touch_matrix: Image, average_distancelist_destination: Image = None):
 
-<span style="color:grey">
-
 ## average_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -465,29 +428,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * average_neighbor_distance_map(labels : Image, distance_map : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## average_distance_of_n_far_off_distances
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * average_distance_of_n_far_off_distances(distance_matrix : Image, distance_vector_destination: Image = None, n : int = 1):
 
-</span>
-
-<span style="color:grey">
-
 ## average_distance_of_n_shortest_distances
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * average_distance_of_n_shortest_distances(distance_matrix : Image, distance_vector_destination: Image = None, n : int = 1):
-
-</span>
-
-<span style="color:grey">
 
 ## bilateral
 <span style="color:orange">(deprecated)</span>
@@ -497,8 +448,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_bilateral(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ, Number sigma_intensity, Number sigma_space)
-
-</span>
 
 ## binary_and
 **CLIJ2**
@@ -548,8 +497,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## binary_fill_holes_slice_by_slice
 <span style="color:green">(experimental)</span>
 
@@ -561,8 +508,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_binaryFillHolesSliceBySlice(Image source, ByRef Image destination)
-
-</span>
 
 ## binary_intersection
 **CLIJ2**
@@ -644,8 +589,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## binary_weka_pixel_classifier
 <span style="color:green">(experimental)</span>
 
@@ -657,8 +600,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_binaryWekaPixelClassifier(Image input, ByRef Image destination, String features, String modelfilename)
-
-</span>
 
 ## binary_xor
 **CLIJ2**
@@ -676,17 +617,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * binary_xor(operand1 : Image, operand2 : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## block_enumerate
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * block_enumerate(src : Image, src_sums : Image, dst : Image = sum, blocksize : int = 256):
-
-</span>
-
-<span style="color:grey">
 
 ## blur
 <span style="color:orange">(deprecated)</span>
@@ -698,10 +633,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJ2_blur2D(Image source, ByRef Image destination, Number sigma_x, Number sigma_y)
 
-</span>
-
-<span style="color:grey">
-
 ## blur
 <span style="color:orange">(deprecated)</span>
 
@@ -710,10 +641,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJ2_blur2D(Image source, ByRef Image destination, Number sigma_x, Number sigma_y)
-
-</span>
-
-<span style="color:grey">
 
 ## blur
 <span style="color:orange">(deprecated)</span>
@@ -724,10 +651,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJ2_blur3D(Image source, ByRef Image destination, Number sigma_x, Number sigma_y, Number sigma_z)
 
-</span>
-
-<span style="color:grey">
-
 ## blur_slice_by_slice
 <span style="color:orange">(deprecated)</span>
 
@@ -737,8 +660,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJ2_blur3DSliceBySlice(Image source, ByRef Image destination, Number sigmaX, Number sigmaY)
-
-</span>
 
 ## bottom_hat_box
 **CLIJ2**
@@ -788,8 +709,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * bounding_box(source : Image):
 
-<span style="color:grey">
-
 ## capture_webcam_image
 <span style="color:green">(experimental)</span>
 
@@ -801,8 +720,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_captureWebcamImage(ByRef Image destination, Number cameraDeviceIndex, Number imageWidth, Number imageHeight)
-
-</span>
 
 ## center_of_mass
 **CLIJ2**
@@ -868,12 +785,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * cl_info():
 
-<span style="color:grey">
-
 ## cl_image
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## clear
 **CLIJ2**
@@ -993,8 +906,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * concatenate_stacks(stack1 : Image, stack2 : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## connected_components_labeling
 <span style="color:orange">(deprecated)</span>
 
@@ -1003,8 +914,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJ2_connectedComponentsLabeling(Image binary_input, ByRef Image labeling_destination)
-
-</span>
 
 ## connected_components_labeling_box
 **CLIJ2**
@@ -1042,8 +951,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * connected_components_labeling_diamond(binary_input: Image, labeling_destination: Image = None):
 
-<span style="color:grey">
-
 ## connected_components_labeling_inplace
 <span style="color:orange">(deprecated)</span>
 
@@ -1053,16 +960,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_connectedComponentsLabelingInplace(Image binary_source_labeling_destination)
 
-</span>
-
-<span style="color:grey">
-
 ## convert_float
 <span style="color:green">(experimental)</span>
-
-</span>
-
-<span style="color:grey">
 
 ## convert_r_g_b_stack_to_gray_slice
 <span style="color:green">(experimental)</span>
@@ -1076,10 +975,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_convertRGBStackToGraySlice(Image stack_source, ByRef Image slice_destination)
 
-</span>
-
-<span style="color:grey">
-
 ## convert_to_binary
 <span style="color:green">(experimental)</span>
 
@@ -1087,21 +982,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * boolean convertToImageJBinary(ClearCLBuffer arg1, ClearCLBuffer arg2)
 * boolean convertToImageJBinary(ClearCLImage arg1, ClearCLImage arg2)
 
-</span>
-
-<span style="color:grey">
-
 ## convert_u_int16
 <span style="color:green">(experimental)</span>
 
-</span>
-
-<span style="color:grey">
-
 ## convert_u_int8
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## convolve
 **CLIJ2**
@@ -1151,8 +1036,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * copy_slice(source : Image, destination : Image = None, slice_index : int = 0):
 
-<span style="color:grey">
-
 ## cosinus
 <span style="color:green">(experimental)</span>
 
@@ -1164,8 +1047,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_cosinus(Image source, ByRef Image destination)
-
-</span>
 
 ## count_non_zero_pixels
 **CLIJ2**
@@ -1295,25 +1176,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * count_touching_neighbors(touch_matrix: Image, touching_neighbors_count_destination: Image = None):
 
-<span style="color:grey">
-
 ## create
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * create(dimensions):
 
-</span>
-
-<span style="color:grey">
-
 ## create
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * create(dimensions):
-
-</span>
 
 ## crop
 **CLIJ2**
@@ -1365,8 +1238,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * crop(input : Image, output : Image = None, start_x : int = 0, start_y : int = 0, start_z : int = 0, width : int = 1, height : int = 1, depth : int = 1):
 
-<span style="color:grey">
-
 ## cross_correlation
 <span style="color:green">(experimental)</span>
 
@@ -1380,8 +1251,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_crossCorrelation(Image input1, Image meanInput1, Image input2, Image meanInput2, ByRef Image destination, Number radius, Number deltaPos, Number dimension)
-
-</span>
 
 ## custom_operation
 **CLIJ2**
@@ -1399,8 +1268,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## cylinder_transform
 <span style="color:green">(experimental)</span>
 
@@ -1412,10 +1279,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_cylinderTransform(Image input, ByRef Image destination, Number number_of_angles, Number delta_angle_in_degrees, Number relative_center_x, Number relative_center_z)
-
-</span>
-
-<span style="color:grey">
 
 ## deformable_registration
 <span style="color:green">(experimental)</span>
@@ -1429,17 +1292,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_deformableRegistration2D(Image input1, Image input2, ByRef Image destination, Number maxDeltaX, Number maxDeltaY)
 
-</span>
-
-<span style="color:grey">
-
 ## degrees_to_radians
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * degrees_to_radians(source : Image, destination : Image = None):
-
-</span>
 
 ## depth_color_projection
 **CLIJ2**
@@ -1457,8 +1314,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## detect_and_label_maxima
 <span style="color:green">(experimental)</span>
 
@@ -1470,8 +1325,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_detectAndLabelMaxima(Image input, ByRef Image destination, Number sigma_x, Numer sigma_y, Number sigma_z, Boolean invert)
-
-</span>
 
 ## detect_label_edges
 **CLIJ2**
@@ -1619,8 +1472,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## detect_optima
 <span style="color:green">(experimental)</span>
 
@@ -1628,18 +1479,12 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * boolean detectOptima(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, boolean arg4)
 * boolean detectOptima(ClearCLImage arg1, ClearCLImage arg2, double arg3, boolean arg4)
 
-</span>
-
-<span style="color:grey">
-
 ## detect_optima_slice_by_slice
 <span style="color:green">(experimental)</span>
 
 **CLIJx**
 * boolean detectOptimaSliceBySlice(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, boolean arg4)
 * boolean detectOptimaSliceBySlice(ClearCLImage arg1, ClearCLImage arg2, double arg3, boolean arg4)
-
-</span>
 
 ## difference_of_gaussian
 **CLIJ2**
@@ -1694,8 +1539,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * difference_of_gaussian(input : Image, destination : Image = None, sigma1_x : float = 2, sigma1_y : float = 2, sigma1_z : float = 2, sigma2_x : float = 2, sigma2_y : float = 2, sigma2_z : float = 2):
 
-<span style="color:grey">
-
 ## difference_of_gaussian_inplace
 <span style="color:orange">(deprecated)</span>
 
@@ -1705,7 +1548,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_differenceOfGaussianInplace3D(Image input_and_destination, Number sigma1x, Number sigma1y, Number sigma1z, Number sigma2x, Number sigma2y, Number sigma2z)
 
-</span>
+## different
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean different(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, double arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer different(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, double arg4)
+
+**Macro**
+* Ext.CLIJx_different(Image input_image1, Image input_image2, ByRef Image binary_destination, Number tolerance)
 
 ## dilate_box
 **CLIJ2**
@@ -1803,8 +1656,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * distance_matrix_to_mesh(pointlist : Image, distance_matrix : Image, mesh_destination : Image, maximum_distance : float = 1):
 
-<span style="color:grey">
-
 ## divide_by_gaussian_background
 <span style="color:green">(experimental)</span>
 
@@ -1819,8 +1670,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * divide_by_gaussian_background(input : Image, destination : Image = None, sigma_x : float = 2, sigma_y : float = 2, sigma_z : float = 2):
-
-</span>
 
 ## divide_images
 **CLIJ2**
@@ -1837,6 +1686,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * divide_images(divident : Image, divisor : Image, destination : Image = None):
+
+## divide_scalar_by_image
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean divideScalarByImage(ClearCLImageInterface arg1, ClearCLImageInterface arg2, double arg3)
+
+**clEsperantoJ**
+* ClearCLImageInterface divide_scalar_by_image(ClearCLImageInterface arg1, ClearCLImageInterface arg2, double arg3)
+
+**Macro**
+* Ext.CLIJx_divideScalarByImage(Image image, ByRef Image destination, Number scalar)
 
 ## downsample
 **CLIJ2**
@@ -1923,8 +1784,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * draw_box(destination: Image, x: int = 0, y: int = 0, z: int = 0, width: int = 1, height: int = 1, depth: int = 1, value : float = 1):
 
-<span style="color:grey">
-
 ## draw_distance_mesh_between_touching_labels
 <span style="color:green">(experimental)</span>
 
@@ -1939,8 +1798,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * draw_distance_mesh_between_touching_labels(labels : Image, distance_mesh_destination : Image = None):
-
-</span>
 
 ## draw_line
 **CLIJ2**
@@ -1960,8 +1817,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * draw_line(destination : Image, x1 : float = 0, y1 : float = 0, z1 : float = 0, x2 : float = 1, y2 : float = 1, z2 : float = 1, thickness : float = 1, value : float = 1):
 
-<span style="color:grey">
-
 ## draw_mesh_between_n_closest_labels
 <span style="color:green">(experimental)</span>
 
@@ -1976,10 +1831,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * draw_mesh_between_n_closest_labels(labels : Image, mesh_target : Image = None, n : int = 1):
-
-</span>
-
-<span style="color:grey">
 
 ## draw_mesh_between_proximal_labels
 <span style="color:green">(experimental)</span>
@@ -1996,10 +1847,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * draw_mesh_between_proximal_labels(labels : Image, mesh_target : Image = None, maximum_distance : int = 1):
 
-</span>
-
-<span style="color:grey">
-
 ## draw_mesh_between_touching_labels
 <span style="color:green">(experimental)</span>
 
@@ -2014,8 +1861,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * draw_mesh_between_touching_labels(labels : Image, distance_mesh_destination : Image = None):
-
-</span>
 
 ## draw_sphere
 **CLIJ2**
@@ -2039,8 +1884,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * draw_sphere(destination : Image, x : float = 0, y : float = 0, z : float = 0, radius_x : float = 1, radius_y : float = 1, radius_z : float = 1, value : float = 1):
 
-<span style="color:grey">
-
 ## draw_touch_count_mesh_between_touching_labels
 <span style="color:green">(experimental)</span>
 
@@ -2052,10 +1895,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_drawTouchCountMeshBetweenTouchingLabels(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## draw_two_value_line
 <span style="color:green">(experimental)</span>
@@ -2069,19 +1908,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_drawTwoValueLine(ByRef Image destination, Number x1, Number y1, Number z1, Number x2, Number y2, Number z2, Number thickness, Number value1, Number value2)
 
-</span>
-
-<span style="color:grey">
-
 ## draw_angle_mesh_between_touching_labels
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * draw_angle_mesh_between_touching_labels(labels : Image, angle_mesh_destination : Image = None):
-
-</span>
-
-<span style="color:grey">
 
 ## drift_correction_by_center_of_mass_fixation
 <span style="color:green">(experimental)</span>
@@ -2095,10 +1926,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_driftCorrectionByCenterOfMassFixation(Image input, ByRef Image destination, Number relative_center_x, Number relative_center_y, Number relative_center_z)
 
-</span>
-
-<span style="color:grey">
-
 ## drift_correction_by_centroid_fixation
 <span style="color:green">(experimental)</span>
 
@@ -2110,8 +1937,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_driftCorrectionByCentroidFixation(Image input, ByRef Image destination, Number relative_center_x, Number relative_center_y, Number relative_center_z, Number threshold)
-
-</span>
 
 ## entropy_box
 **CLIJ2**
@@ -2243,8 +2068,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * erode_sphere_slice_by_slice(source : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## euclidean_distance_from_label_centroid_map
 <span style="color:green">(experimental)</span>
 
@@ -2259,8 +2082,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * euclidean_distance_from_label_centroid_map(labels:Image, centroids_pointlist:Image = None, distance_map_destination:Image = None):
-
-</span>
 
 ## exclude_labels
 **CLIJ2**
@@ -2310,8 +2131,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## exclude_labels_outside_size_range
 <span style="color:green">(experimental)</span>
 
@@ -2326,8 +2145,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * exclude_labels_outside_size_range(input : Image, destination : Image = None, minimum_size : float = 0, maximum_size : float = 100):
-
-</span>
 
 ## exclude_labels_sub_surface
 **CLIJ2**
@@ -2397,15 +2214,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * execute(anchor, opencl_kernel_filename, kernel_name, global_size, parameters, prog : OCLProgram = None, constants = None, image_size_independent_kernel_compilation : bool = True):
 
-<span style="color:grey">
-
 ## execute_separable_kernel
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * execute_separable_kernel(src, dst, anchor, opencl_kernel_filename, kernel_name, kernel_size_x, kernel_size_y, kernel_size_z, sigma_x, sigma_y, sigma_z, dimensions) :
-
-</span>
 
 ## exponential
 **CLIJ2**
@@ -2439,8 +2252,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * extend_labeling_via_voronoi(labeling_source : Image, labeling_destination : Image = None):
 
-<span style="color:grey">
-
 ## extend_labels_with_maximum_radius
 <span style="color:green">(experimental)</span>
 
@@ -2456,10 +2267,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * extend_labels_with_maximum_radius(labeling_source : Image, labeling_destination : Image = None, radius: int = 2):
 
-</span>
-
-<span style="color:grey">
-
 ## extended_depth_of_focus_tenengrad_projection
 <span style="color:green">(experimental)</span>
 
@@ -2471,10 +2278,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_extendedDepthOfFocusTenengradProjection(Image source, ByRef Image destination, Number sigma)
-
-</span>
-
-<span style="color:grey">
 
 ## extended_depth_of_focus_variance_projection
 <span style="color:green">(experimental)</span>
@@ -2490,10 +2293,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_extendedDepthOfFocusVarianceProjection(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number sigma)
 
-</span>
-
-<span style="color:grey">
-
 ## extrema
 <span style="color:green">(experimental)</span>
 
@@ -2505,8 +2304,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_extrema(Image input1, Image input2, ByRef Image destination)
-
-</span>
 
 ## fill_histogram
 **CLIJ2**
@@ -2524,8 +2321,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## find_and_label_maxima
 <span style="color:green">(experimental)</span>
 
@@ -2537,10 +2332,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_findAndLabelMaxima(Image input, ByRef Image destination, Number tolerance, Boolean invert)
-
-</span>
-
-<span style="color:grey">
 
 ## find_maxima
 <span style="color:green">(experimental)</span>
@@ -2554,10 +2345,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_findMaxima(Image source, ByRef Image destination, Number noise_threshold)
 
-</span>
-
-<span style="color:grey">
-
 ## flag_labels_on_edges
 <span style="color:green">(experimental)</span>
 
@@ -2570,17 +2357,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_flagLabelsOnEdges(Image label_map_input, ByRef Image flag_vector_destination)
 
-</span>
-
-<span style="color:grey">
-
 ## flag_existing_labels
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * flag_existing_labels(label_src : Image, flag_vector_destination : Image = None):
-
-</span>
 
 ## flip
 **CLIJ2**
@@ -2648,8 +2429,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## gamma_correction
 <span style="color:green">(experimental)</span>
 
@@ -2665,10 +2444,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * gamma_correction(source : Image, target : Image = None, gamma : float = 1):
 
-</span>
-
-<span style="color:grey">
-
 ## gauss_jordan
 <span style="color:green">(experimental)</span>
 
@@ -2680,8 +2455,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_gaussJordan(Image A_matrix, Image B_result_vector, ByRef Image solution_destination)
-
-</span>
 
 ## gaussian_blur
 **CLIJ2**
@@ -2733,8 +2506,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * gaussian_blur(source : Image, destination : Image = None, sigma_x : float = 0, sigma_y : float = 0, sigma_z : float = 0):
 
-<span style="color:grey">
-
 ## generate_angle_matrix
 <span style="color:green">(experimental)</span>
 
@@ -2749,8 +2520,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * generate_angle_matrix(coordinate_list1 :Image, coordinate_list2 :Image, angle_matrix_destination :Image = None):
-
-</span>
 
 ## generate_binary_overlap_matrix
 **CLIJ2**
@@ -2784,8 +2553,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * generate_distance_matrix(coordindate_list1 :Image, coordinate_list2 :Image, distance_matrix_destination :Image = None):
 
-<span style="color:grey">
-
 ## generate_distance_matrix_along_axis
 <span style="color:green">(experimental)</span>
 
@@ -2797,10 +2564,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_generateDistanceMatrixAlongAxis(Image coordinate_list1, Image coordinate_list2, ByRef Image distance_matrix_destination)
-
-</span>
-
-<span style="color:grey">
 
 ## generate_feature_stack
 <span style="color:green">(experimental)</span>
@@ -2816,10 +2579,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_generateFeatureStack(Image input, Image feature_stack_destination, String feature_definitions)
 
-</span>
-
-<span style="color:grey">
-
 ## generate_grey_value_cooccurrence_matrix_box
 <span style="color:green">(experimental)</span>
 
@@ -2831,10 +2590,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_generateGreyValueCooccurrenceMatrixBox(Image integer_image, ByRef Image grey_value_cooccurrence_matrix_destination, Number min_grey_value, Number max_grey_value)
-
-</span>
-
-<span style="color:grey">
 
 ## generate_integer_grey_value_cooccurrence_count_matrix_half_box
 <span style="color:green">(experimental)</span>
@@ -2848,10 +2603,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_generateIntegerGreyValueCooccurrenceCountMatrixHalfBox(Image integer_image, ByRef Image grey_value_cooccurrence_matrix_destination)
 
-</span>
-
-<span style="color:grey">
-
 ## generate_integer_grey_value_cooccurrence_count_matrix_half_diamond
 <span style="color:green">(experimental)</span>
 
@@ -2863,8 +2614,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_generateIntegerGreyValueCooccurrenceCountMatrixHalfDiamond(Image integer_image, ByRef Image grey_value_cooccurrence_matrix_destination)
-
-</span>
 
 ## generate_jaccard_index_matrix
 **CLIJ2**
@@ -2882,8 +2631,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## generate_label_feature_image
 <span style="color:green">(experimental)</span>
 
@@ -2897,10 +2644,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_generateLabelFeatureImage(Image input, Image label_map, Image label_feature_image_destination, String feature_definitions)
-
-</span>
-
-<span style="color:grey">
 
 ## generate_n_nearest_neighbors_matrix
 <span style="color:green">(experimental)</span>
@@ -2916,8 +2659,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * generate_n_nearest_neighbors_matrix(distance_matrix :Image, touch_matrix_destination :Image = None, n : int = 1):
-
-</span>
 
 ## generate_parametric_image
 **CLIJ2**
@@ -2951,8 +2692,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## generate_proximal_neighbors_matrix
 <span style="color:green">(experimental)</span>
 
@@ -2968,7 +2707,14 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * generate_proximal_neighbors_matrix(distance_matrix :Image, touch_matrix_destination :Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
 
-</span>
+## generate_regional_label_feature_image
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* ClearCLBuffer generateRegionalLabelFeatureImage(ClearCLBuffer arg1, ClearCLBuffer arg2, String arg3, int arg4, int arg5, int arg6, int arg7)
+
+**clEsperantoJ**
+* ClearCLBuffer generate_regional_label_feature_image(ClearCLBuffer arg1, ClearCLBuffer arg2, String arg3, int arg4, int arg5, int arg6, int arg7)
 
 ## generate_touch_count_matrix
 **CLIJ2**
@@ -3068,12 +2814,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## get_g_p_u_properties
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## get_jaccard_index
 **CLIJ2**
@@ -3155,8 +2897,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## get_size
 <span style="color:orange">(deprecated)</span>
 
@@ -3165,8 +2905,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJ2_getSize(Image source)
-
-</span>
 
 ## get_sorensen_dice_coefficient
 **CLIJ2**
@@ -3312,8 +3050,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * greater_or_equal_constant(source : Image, destination : Image = None, constant : float = 0):
 
-<span style="color:grey">
-
 ## grey_level_atttribute_filtering
 <span style="color:green">(experimental)</span>
 
@@ -3325,8 +3061,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_greyLevelAtttributeFiltering(Image source, ByRef Image destination, Number number_of_bins, Number minimum_pixel_count)
-
-</span>
 
 ## histogram
 **CLIJ2**
@@ -3385,8 +3119,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## imread
 <span style="color:green">(experimental)</span>
 
@@ -3395,10 +3127,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * imread(filename : str) -> Image:
-
-</span>
-
-<span style="color:grey">
 
 ## imshow
 <span style="color:green">(experimental)</span>
@@ -3415,10 +3143,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * imshow(image : Image, title : str = None, labels : bool = False, min_display_intensity : float = None, max_display_intensity : float = None, color_map = None, plot = None):
 
-</span>
-
-<span style="color:grey">
-
 ## intensity_correction
 <span style="color:green">(experimental)</span>
 
@@ -3430,10 +3154,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_intensityCorrection(Image input, ByRef Image destination, Number reference_mean_intensity)
-
-</span>
-
-<span style="color:grey">
 
 ## intensity_correction_above_threshold_otsu
 <span style="color:green">(experimental)</span>
@@ -3447,14 +3167,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_intensityCorrectionAboveThresholdOtsu(Image input, ByRef Image destination, Number reference_mean_intensity)
 
-</span>
-
-<span style="color:grey">
-
 ## invalidate_kernel_cache
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## invert
 **CLIJ2**
@@ -3488,8 +3202,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * jaccard_index(source1 : Image, source2 : Image):
 
-<span style="color:grey">
-
 ## k_means_label_clusterer
 <span style="color:green">(experimental)</span>
 
@@ -3501,10 +3213,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_kMeansLabelClusterer(Image input, Image label_map, ByRef Image destination, String features, String modelfilename, Number number_of_classes, Number neighbor_radius, Boolean train)
-
-</span>
-
-<span style="color:grey">
 
 ## label_maximum_extension_map
 <span style="color:green">(experimental)</span>
@@ -3521,10 +3229,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_maximum_extension_map(labels : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## label_maximum_extension_ratio_map
 <span style="color:green">(experimental)</span>
 
@@ -3540,10 +3244,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_maximum_extension_ratio_map(labels : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## label_maximum_intensity_map
 <span style="color:green">(experimental)</span>
 
@@ -3555,10 +3255,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * label_maximum_intensity_map(intensity_image : Image, labels : Image, maximum_intensity_map : Image = None):
-
-</span>
-
-<span style="color:grey">
 
 ## label_mean_extension_map
 <span style="color:green">(experimental)</span>
@@ -3575,10 +3271,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_mean_extension_map(labels : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## label_mean_intensity_map
 <span style="color:green">(experimental)</span>
 
@@ -3594,9 +3286,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_mean_intensity_map(input : Image, label_map : Image, destination : Image = None):
 
-</span>
+## label_mean_of_laplacian_map
+<span style="color:green">(experimental)</span>
 
-<span style="color:grey">
+**CLIJx**
+* boolean labelMeanOfLaplacianMap(ClearCLBuffer input, ClearCLBuffer label_map, ClearCLBuffer destination)
+
+**clEsperantoJ**
+* ClearCLBuffer label_mean_of_laplacian_map(ClearCLBuffer input, ClearCLBuffer label_map, ClearCLBuffer destination)
+
+**Macro**
+* Ext.CLIJx_labelMeanOfLaplacianMap(Image input, Image label_map, ByRef Image destination)
 
 ## label_minimum_intensity_map
 <span style="color:green">(experimental)</span>
@@ -3610,22 +3310,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_minimum_intensity_map(intensity_image : Image, labels : Image, minimum_intensity_map : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## label_overlap_count_map
 <span style="color:green">(experimental)</span>
 
 **CLIJx**
 * boolean labelOverlapCountMap(ClearCLBuffer label_map1, ClearCLBuffer label_map2, ClearCLBuffer overlap_count_map_destination)
 
+**clEsperantoJ**
+* ClearCLBuffer label_overlap_count_map(ClearCLBuffer label_map1, ClearCLBuffer label_map2, ClearCLBuffer overlap_count_map_destination)
+
 **Macro**
 * Ext.CLIJx_labelOverlapCountMap(Image label_map1, Image label_map2, ByRef Image overlap_count_map_destination)
-
-</span>
-
-<span style="color:grey">
 
 ## label_pixel_count_map
 <span style="color:green">(experimental)</span>
@@ -3642,20 +3337,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_pixel_count_map(input : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## label_proximal_neighbor_count_map
 <span style="color:green">(experimental)</span>
 
 **CLIJx**
 * boolean labelProximalNeighborCountMap(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, double arg4, double arg5)
 
+**clEsperantoJ**
+* ClearCLBuffer label_proximal_neighbor_count_map(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, double arg4, double arg5)
+
 **Macro**
 * Ext.CLIJx_labelProximalNeighborCountMap(Image label_map1, Image label_map2, ByRef Image proximal_neighbor_count_map_destination, Number min_distance, Number max_distance)
-
-</span>
 
 ## label_spots
 **CLIJ2**
@@ -3673,8 +3365,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_spots(input_spots : Image, labelled_spots_destination : Image = None):
 
-<span style="color:grey">
-
 ## label_standard_deviation_intensity_map
 <span style="color:green">(experimental)</span>
 
@@ -3690,10 +3380,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * label_standard_deviation_intensity_map(intensity_image : Image, labels : Image, standard_deviation_intensity_map : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## label_surface
 <span style="color:green">(experimental)</span>
 
@@ -3705,8 +3391,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_labelSurface(Image input_labels, ByRef Image destination_labels, Number relative_center_x, Number relative_center_y, Number relative_center_z)
-
-</span>
 
 ## label_to_mask
 **CLIJ2**
@@ -3756,15 +3440,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## labelled_spots_to_pointlist
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * labelled_spots_to_pointlist(input_labelled_spots:Image, destination_pointlist :Image = None):
-
-</span>
 
 ## laplace_box
 **CLIJ2**
@@ -3798,27 +3478,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## laplace_diamond
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * laplace_diamond(source : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## local_dog_threshold
 <span style="color:green">(experimental)</span>
 
 **CLIJx**
 * boolean localDoGThreshold(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5, boolean arg6)
-
-</span>
-
-<span style="color:grey">
 
 ## local_extrema_box
 <span style="color:green">(experimental)</span>
@@ -3832,10 +3502,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_localExtremaBox(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ)
 
-</span>
-
-<span style="color:grey">
-
 ## local_i_d
 <span style="color:green">(experimental)</span>
 
@@ -3847,10 +3513,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localID(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## local_maximum_average_distance_of_n_closest_neighbors_map
 <span style="color:green">(experimental)</span>
@@ -3864,10 +3526,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_localMaximumAverageDistanceOfNClosestNeighborsMap(Image input, ByRef Image destination, Number n)
 
-</span>
-
-<span style="color:grey">
-
 ## local_maximum_average_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -3879,10 +3537,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localMaximumAverageNeighborDistanceMap(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## local_maximum_touching_neighbor_count_map
 <span style="color:green">(experimental)</span>
@@ -3899,10 +3553,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * local_maximum_touching_neighbor_count_map(input : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## local_mean_average_distance_of_n_closest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -3914,10 +3564,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localMeanAverageDistanceOfNClosestNeighborsMap(Image input, ByRef Image destination, Number n)
-
-</span>
-
-<span style="color:grey">
 
 ## local_mean_average_neighbor_distance_map
 <span style="color:green">(experimental)</span>
@@ -3931,10 +3577,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_localMeanAverageNeighborDistanceMap(Image input, ByRef Image destination)
 
-</span>
-
-<span style="color:grey">
-
 ## local_mean_touch_portion_map
 <span style="color:green">(experimental)</span>
 
@@ -3946,10 +3588,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localMeanTouchPortionMap(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## local_mean_touching_neighbor_count_map
 <span style="color:green">(experimental)</span>
@@ -3966,10 +3604,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * local_mean_touching_neighbor_count_map(input : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## local_median_average_distance_of_n_closest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -3982,10 +3616,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_localMedianAverageDistanceOfNClosestNeighborsMap(Image input, ByRef Image destination, Number n)
 
-</span>
-
-<span style="color:grey">
-
 ## local_median_average_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -3997,10 +3627,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localMedianAverageNeighborDistanceMap(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## local_median_touching_neighbor_count_map
 <span style="color:green">(experimental)</span>
@@ -4017,10 +3643,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * local_median_touching_neighbor_count_map(input : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## local_minimum_average_distance_of_n_closest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4033,10 +3655,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_localMinimumAverageDistanceOfNClosestNeighborsMap(Image input, ByRef Image destination, Number n)
 
-</span>
-
-<span style="color:grey">
-
 ## local_minimum_average_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -4048,10 +3666,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localMinimumAverageNeighborDistanceMap(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## local_minimum_touching_neighbor_count_map
 <span style="color:green">(experimental)</span>
@@ -4068,10 +3682,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * local_minimum_touching_neighbor_count_map(input : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## local_standard_deviation_average_distance_of_n_closest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4084,10 +3694,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_localStandardDeviationAverageDistanceOfNClosestNeighborsMap(Image input, ByRef Image destination, Number n)
 
-</span>
-
-<span style="color:grey">
-
 ## local_standard_deviation_average_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -4099,10 +3705,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localStandardDeviationAverageNeighborDistanceMap(Image input, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## local_standard_deviation_touching_neighbor_count_map
 <span style="color:green">(experimental)</span>
@@ -4118,8 +3720,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * local_standard_deviation_touching_neighbor_count_map(input : Image, destination : Image = None):
-
-</span>
 
 ## local_threshold
 **CLIJ2**
@@ -4153,8 +3753,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * logarithm(source : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## make_isotropic
 <span style="color:green">(experimental)</span>
 
@@ -4166,8 +3764,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_makeIsotropic(Image input, ByRef Image destination, Number original_voxel_size_x, Number original_voxel_size_y, Number original_voxel_size_z, Number new_voxel_size)
-
-</span>
 
 ## mask
 **CLIJ2**
@@ -4217,8 +3813,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## masked_voronoi_labeling
 <span style="color:green">(experimental)</span>
 
@@ -4233,8 +3827,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * masked_voronoi_labeling(binary_source : Image, mask_image : Image, labeling_destination : Image = None):
-
-</span>
 
 ## matrix_equal
 **CLIJ2**
@@ -4367,8 +3959,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## maximum_distance_of_touching_neighbors
 <span style="color:green">(experimental)</span>
 
@@ -4383,8 +3973,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * maximum_distance_of_touching_neighbors(distance_matrix : Image, touch_matrix: Image, distancelist_destination: Image = None):
-
-</span>
 
 ## maximum_image_and_scalar
 **CLIJ2**
@@ -4418,8 +4006,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * maximum_images(source1 : Image, source2 : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## maximum_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -4431,8 +4017,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_maximumNeighborDistanceMap(Image input, ByRef Image destination)
-
-</span>
 
 ## maximum_octagon
 **CLIJ2**
@@ -4482,8 +4066,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## maximum_of_n_nearest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4499,10 +4081,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * maximum_of_n_nearest_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, n : int = 1):
 
-</span>
-
-<span style="color:grey">
-
 ## maximum_of_proximal_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4517,8 +4095,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * maximum_of_proximal_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
-
-</span>
 
 ## maximum_of_touching_neighbors
 **CLIJ2**
@@ -4536,8 +4112,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * maximum_of_touching_neighbors(values : Image, touch_matrix : Image, maximum_values_destination : Image = None):
 
-<span style="color:grey">
-
 ## maximum_of_touching_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4552,8 +4126,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * maximum_of_touching_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, radius : int = 1, ignore_touching_background : bool = True):
-
-</span>
 
 ## maximum_x_projection
 **CLIJ2**
@@ -4571,16 +4143,12 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * maximum_x_projection(source : Image, destination_max : Image = None):
 
-<span style="color:grey">
-
 ## maximum_xyz_projection
 <span style="color:green">(experimental)</span>
 
 **CLIJx**
 * boolean maximumXYZProjection(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
 * boolean maximumXYZProjection(ClearCLImage arg1, ClearCLImage arg2, double arg3, double arg4, double arg5)
-
-</span>
 
 ## maximum_y_projection
 **CLIJ2**
@@ -4630,15 +4198,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## maximum_distance_of_n_shortest_distances
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * maximum_distance_of_n_shortest_distances(distance_matrix : Image, distance_vector_destination: Image = None, n : int = 1):
-
-</span>
 
 ## mean_box
 **CLIJ2**
@@ -4770,8 +4334,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## mean_of_n_nearest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4786,8 +4348,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * mean_of_n_nearest_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, n : int = 1):
-
-</span>
 
 ## mean_of_pixels_above_threshold
 **CLIJ2**
@@ -4805,8 +4365,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## mean_of_proximal_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4821,8 +4379,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * mean_of_proximal_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
-
-</span>
 
 ## mean_of_touching_neighbors
 **CLIJ2**
@@ -4840,8 +4396,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * mean_of_touching_neighbors(values : Image, touch_matrix : Image, mean_values_destination : Image = None):
 
-<span style="color:grey">
-
 ## mean_of_touching_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -4856,8 +4410,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * mean_of_touching_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, radius : int = 1, ignore_touching_background : bool = True):
-
-</span>
 
 ## mean_slice_by_slice_sphere
 **CLIJ2**
@@ -4939,8 +4491,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * mean_z_projection(source : Image, destination : Image):
 
-<span style="color:grey">
-
 ## mean_z_projection_above_threshold
 <span style="color:green">(experimental)</span>
 
@@ -4953,10 +4503,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_meanZProjectionAboveThreshold(Image source, ByRef Image destination, Number threshold)
 
-</span>
-
-<span style="color:grey">
-
 ## mean_z_projection_below_threshold
 <span style="color:green">(experimental)</span>
 
@@ -4968,8 +4514,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_meanZProjectionBelowThreshold(Image source, ByRef Image destination, Number threshold)
-
-</span>
 
 ## mean_z_projection_bounded
 **CLIJ2**
@@ -5099,6 +4643,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * median_of_touching_neighbors(values : Image, touch_matrix : Image, median_values_destination : Image = None):
 
+## median_touch_portion_map
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean medianTouchPortionMap(ClearCLBuffer labels, ClearCLBuffer map_destination)
+
+**clEsperantoJ**
+* ClearCLBuffer median_touch_portion_map(ClearCLBuffer labels, ClearCLBuffer map_destination)
+
+**Macro**
+* Ext.CLIJx_medianTouchPortionMap(Image labels, ByRef Image map_destination)
+
 ## median_z_projection
 **CLIJ2**
 * boolean medianZProjection(ClearCLImageInterface source, ClearCLImageInterface destination)
@@ -5115,7 +4671,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
+## median_z_projection_masked
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean medianZProjectionMasked(ClearCLImageInterface arg1, ClearCLImageInterface arg2, ClearCLImageInterface arg3)
+
+**clEsperantoJ**
+* ClearCLImageInterface median_z_projection_masked(ClearCLImageInterface arg1, ClearCLImageInterface arg2, ClearCLImageInterface arg3)
+
+**Macro**
+* Ext.CLIJx_medianZProjectionMasked(Image source, ByRef Image destination)
 
 ## merge_touching_labels
 <span style="color:green">(experimental)</span>
@@ -5132,10 +4698,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * merge_touching_labels(labels_input: Image, labels_destination: Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## merge_touching_labels_special
 <span style="color:green">(experimental)</span>
 
@@ -5144,8 +4706,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **clEsperantoJ**
 * ClearCLBuffer merge_touching_labels_special(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, ClearCLBuffer arg4)
-
-</span>
 
 ## minimum_box
 **CLIJ2**
@@ -5310,8 +4870,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * minimum_images(source1 : Image, source2 : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## minimum_neighbor_distance_map
 <span style="color:green">(experimental)</span>
 
@@ -5323,8 +4881,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_minimumNeighborDistanceMap(Image input, ByRef Image destination)
-
-</span>
 
 ## minimum_octagon
 **CLIJ2**
@@ -5374,8 +4930,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * minimum_of_masked_pixels(source : Image, mask : Image):
 
-<span style="color:grey">
-
 ## minimum_of_n_nearest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -5391,10 +4945,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * minimum_of_n_nearest_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, n : int = 1):
 
-</span>
-
-<span style="color:grey">
-
 ## minimum_of_proximal_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -5409,8 +4959,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * minimum_of_proximal_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
-
-</span>
 
 ## minimum_of_touching_neighbors
 **CLIJ2**
@@ -5428,8 +4976,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * minimum_of_touching_neighbors(values : Image, touch_matrix : Image, minimum_values_destination : Image = None):
 
-<span style="color:grey">
-
 ## minimum_of_touching_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -5444,8 +4990,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * minimum_of_touching_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, radius : int = 1, ignore_touching_background : bool = True):
-
-</span>
 
 ## minimum_x_projection
 **CLIJ2**
@@ -5527,8 +5071,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## mode_of_n_nearest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -5543,10 +5085,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * mode_of_n_nearest_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, n : int = 1):
-
-</span>
-
-<span style="color:grey">
 
 ## mode_of_proximal_neighbors_map
 <span style="color:green">(experimental)</span>
@@ -5563,10 +5101,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * mode_of_proximal_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
 
-</span>
-
-<span style="color:grey">
-
 ## mode_of_touching_neighbors
 <span style="color:green">(experimental)</span>
 
@@ -5582,10 +5116,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * mode_of_touching_neighbors(src_values : Image, touch_matrix : Image, dst_values : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## mode_of_touching_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -5600,8 +5130,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * mode_of_touching_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, radius : int = 1, ignore_touching_background : bool = True):
-
-</span>
 
 ## multiply_image_and_coordinate
 **CLIJ2**
@@ -5753,7 +5281,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * n_closest_points(distance_matrix : Image, indexlist_destination : Image = None, n : int = 1, ignore_background : bool = True, ignore_self : bool = True):
 
-<span style="color:grey">
+## neighbor_count_with_touch_portion_above_threshold_map
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean neighborCountWithTouchPortionAboveThresholdMap(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3)
+
+**clEsperantoJ**
+* ClearCLBuffer neighbor_count_with_touch_portion_above_threshold_map(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3)
+
+**Macro**
+* Ext.CLIJx_neighborCountWithTouchPortionAboveThresholdMap(Image labels, ByRef Image map_destination, Number minimum_touch_portion)
 
 ## neighbor_distance_range_ratio_map
 <span style="color:green">(experimental)</span>
@@ -5766,8 +5304,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_neighborDistanceRangeRatioMap(Image input, ByRef Image destination)
-
-</span>
 
 ## neighbors_of_neighbors
 **CLIJ2**
@@ -5785,8 +5321,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * neighbors_of_neighbors(touch_matrix : Image, neighbor_matrix_destination : Image = None):
 
-<span style="color:grey">
-
 ## non_local_means
 <span style="color:green">(experimental)</span>
 
@@ -5798,8 +5332,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_nonLocalMeans(Image input, ByRef Image destination, Number radiusX, Number radiusY, Number radiusZ, Number sigma)
-
-</span>
 
 ## nonzero_maximum_box
 **CLIJ2**
@@ -5985,17 +5517,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## operations
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * operations(must_have_categories : list = None, must_not_have_categories : list = None) -> dict:
-
-</span>
-
-<span style="color:grey">
 
 ## organise_windows
 <span style="color:green">(experimental)</span>
@@ -6009,9 +5535,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_organiseWindows(Number startX, Number startY, Number tilesX, Number tilesY, Number tileWidth, Number tileHeight)
 
-</span>
+## out_of_intensity_range
+<span style="color:green">(experimental)</span>
 
-<span style="color:grey">
+**CLIJx**
+* boolean outOfIntensityRange(ClearCLBuffer arg1, ClearCLImageInterface arg2, double arg3, double arg4)
+
+**clEsperantoJ**
+* ClearCLImageInterface out_of_intensity_range(ClearCLBuffer arg1, ClearCLImageInterface arg2, double arg3, double arg4)
+
+**Macro**
+* Ext.CLIJx_outOfIntensityRange(Image source, ByRef Image destination)
 
 ## parametric_watershed
 <span style="color:green">(experimental)</span>
@@ -6025,10 +5559,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_parametricWatershed(Image binary_source, ByRef Image destination, Number sigma_x, Number sigma_y, Number sigma_z)
 
-</span>
-
-<span style="color:grey">
-
 ## particle_image_velocimetry
 <span style="color:green">(experimental)</span>
 
@@ -6041,10 +5571,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_particleImageVelocimetry(Image source1, Image source2, Image destinationDeltaX, Image destinationDeltaY, Image destinationDeltaZ, Number maxDeltaX, Number maxDeltaY, Number maxDeltaZ)
 
-</span>
-
-<span style="color:grey">
-
 ## particle_image_velocimetry
 <span style="color:green">(experimental)</span>
 
@@ -6053,10 +5579,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **clEsperantoJ**
 * ClearCLBuffer particle_image_velocimetry2d(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, ClearCLBuffer arg4, double arg5)
-
-</span>
-
-<span style="color:grey">
 
 ## particle_image_velocimetry_timelapse
 <span style="color:green">(experimental)</span>
@@ -6069,8 +5591,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_particleImageVelocimetryTimelapse(Image source, Image destinationDeltaX, Image destinationDeltaY, Image destinationDeltaZ, Number maxDeltaX, Number maxDeltaY, Number maxDeltaZ, Boolean correctLocalShift)
-
-</span>
 
 ## paste
 **CLIJ2**
@@ -6122,15 +5642,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * paste (source : Image, destination : Image = None, destination_x : int = 0, destination_y : int = 0, destination_z : int = 0):
 
-<span style="color:grey">
-
 ## plugin_function
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * plugin_function(
-
-</span>
 
 ## point_index_list_to_mesh
 **CLIJ2**
@@ -6148,8 +5664,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * point_index_list_to_mesh(pointlist: Image, indexlist : Image, mesh_destination : Image = None):
 
-<span style="color:grey">
-
 ## point_index_list_to_touch_matrix
 <span style="color:green">(experimental)</span>
 
@@ -6164,8 +5678,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * point_index_list_to_touch_matrix(indexlist : Image, matrix_destination : Image = None):
-
-</span>
 
 ## pointlist_to_labelled_spots
 **CLIJ2**
@@ -6183,12 +5695,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * pointlist_to_labelled_spots(pointlist : Image, spots_destination : Image = None):
 
-<span style="color:grey">
-
 ## pop_meta_data
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## power
 **CLIJ2**
@@ -6222,8 +5730,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * power_images(input : Image, exponent : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## preload_from_disc
 <span style="color:green">(experimental)</span>
 
@@ -6236,10 +5742,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_preloadFromDisc(Image destination, String filename, String nextFilename, String loaderId)
 
-</span>
-
-<span style="color:grey">
-
 ## presign
 <span style="color:green">(experimental)</span>
 
@@ -6251,8 +5753,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_presign(Image input, ByRef Image destination)
-
-</span>
 
 ## print
 **CLIJ2**
@@ -6370,8 +5870,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## pull_tile
 <span style="color:green">(experimental)</span>
 
@@ -6387,8 +5885,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_pullTile(String image, Number tileIndexX, Number tileIndexY, Number tileIndexZ, Number width, Number height, Number depth, Number marginWidth, Number marginHeight, Number marginDepth)
-
-</span>
 
 ## pull_to_results_table
 **CLIJ2**
@@ -6408,8 +5904,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## pull_to_results_table_column
 <span style="color:green">(experimental)</span>
 
@@ -6421,8 +5915,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_pullToResultsTableColumn(Image source, String column_name, Boolean append_new_rows)
-
-</span>
 
 ## push
 **CLIJ2**
@@ -6490,12 +5982,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## push_current_slice_selection
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## push_current_z_stack
 **CLIJ2**
@@ -6513,12 +6001,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## push_meta_data
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## push_results_table
 **CLIJ2**
@@ -6570,8 +6054,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## push_tile
 <span style="color:green">(experimental)</span>
 
@@ -6588,19 +6070,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_pushTile(String image, Number tileIndexX, Number tileIndexY, Number tileIndexZ, Number width, Number height, Number depth, Number marginWidth, Number marginHeight, Number marginDepth)
 
-</span>
-
-<span style="color:grey">
-
 ## push_regionprops
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * push_regionprops(props : Union[dict, RegionProperties], first_row_index : int = 0):
-
-</span>
-
-<span style="color:grey">
 
 ## push_regionprops_column
 <span style="color:green">(experimental)</span>
@@ -6608,14 +6082,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * push_regionprops_column(regionprops : Union[list, dict], column : str):
 
-</span>
-
-<span style="color:grey">
-
 ## pycl
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## radial_projection
 **CLIJ2**
@@ -6633,27 +6101,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## radians_to_degrees
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * radians_to_degrees(source : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## radius_to_kernel_size
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * radius_to_kernel_size(radius):
-
-</span>
-
-<span style="color:grey">
 
 ## read_image_from_disc
 <span style="color:green">(experimental)</span>
@@ -6667,10 +6125,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_readImageFromDisc(Image destination, String filename)
 
-</span>
-
-<span style="color:grey">
-
 ## read_intensities_from_map
 <span style="color:green">(experimental)</span>
 
@@ -6678,17 +6132,13 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * boolean readIntensitiesFromMap(ClearCLImageInterface labels, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
 
 **clEsperantoJ**
-* ClearCLImageInterface read_intensities_from_map(ClearCLImageInterface input, ClearCLImageInterface new_values_vector, ClearCLImageInterface destination)
+* ClearCLImageInterface read_intensities_from_map(ClearCLImageInterface labels, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
 
 **Macro**
 * Ext.CLIJx_readIntensitiesFromMap(Image labels, Image map_image, ByRef Image values_destination)
 
 **pyclesperanto**
 * read_intensities_from_map(labels : Image, map_image : Image, values_destination : Image = None):
-
-</span>
-
-<span style="color:grey">
 
 ## read_raw_image_from_disc
 <span style="color:green">(experimental)</span>
@@ -6704,29 +6154,23 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_readRawImageFromDisc(Image destination, String filename, Number width, Number height, Number depth, Number bitsPerPixel)
 
-</span>
-
-<span style="color:grey">
-
 ## read_intensities_from_positions
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * read_intensities_from_positions(pointlist : Image, intensity_image : Image, values_destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## reduce_labels_to_label_edges
 <span style="color:green">(experimental)</span>
 
+**CLIJx**
+* boolean reduceLabelsToLabelEdges(ClearCLBuffer input_labels, ClearCLBuffer destination_labels)
+
+**clEsperantoJ**
+* ClearCLBuffer reduce_labels_to_label_edges(ClearCLBuffer input_labels, ClearCLBuffer destination_labels)
+
 **Macro**
 * Ext.CLIJx_reduceLabelsToLabelEdges(Image input_labels, ByRef Image destination_labels)
-
-</span>
-
-<span style="color:grey">
 
 ## reduce_labels_to_labelled_spots
 <span style="color:green">(experimental)</span>
@@ -6739,8 +6183,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_reduceLabelsToLabelledSpots(Image input_labels, ByRef Image destination_labels)
-
-</span>
 
 ## reduce_stack
 **CLIJ2**
@@ -6758,15 +6200,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * reduce_stack(input : Image, destination : Image = None, reduction_factor : int = 2, offset : int = 0):
 
-<span style="color:grey">
-
 ## regionprops
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * regionprops(labelmap : Image, intensity_image : Image = None, cache : bool = True, extra_properties = []):
-
-</span>
 
 ## release
 **CLIJ2**
@@ -6896,12 +6334,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * resample(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, linear_interpolation : bool = False):
 
-<span style="color:grey">
-
 ## reset_meta_data
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## reslice_bottom
 **CLIJ2**
@@ -6955,12 +6389,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## reslice_radial_top
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## reslice_right
 **CLIJ2**
@@ -7026,8 +6456,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## rigid_transform
 <span style="color:green">(experimental)</span>
 
@@ -7042,8 +6470,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * rigid_transform(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center=True):
-
-</span>
 
 ## rotate
 **CLIJ2**
@@ -7212,8 +6638,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered=True):
 
-<span style="color:grey">
-
 ## seeded_watershed
 <span style="color:green">(experimental)</span>
 
@@ -7225,8 +6649,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_seededWatershed(Image label_map_seeds, Image input, ByRef Image label_map_destination, Float threshold)
-
-</span>
 
 ## set
 **CLIJ2**
@@ -7438,17 +6860,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## set_wait_for_kernel_finish
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * set_wait_for_kernel_finish(wait_for_kernel_finish : bool = None):
-
-</span>
-
-<span style="color:grey">
 
 ## set_where_x_equals_y
 <span style="color:green">(experimental)</span>
@@ -7456,27 +6872,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * set_where_x_equals_y(source : Image, value : float = 0):
 
-</span>
-
-<span style="color:grey">
-
 ## set_where_x_greater_than_y
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * set_where_x_greater_than_y(source : Image, value : float = 0):
 
-</span>
-
-<span style="color:grey">
-
 ## set_where_x_smaller_than_y
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * set_where_x_smaller_than_y(source : Image, value : float = 0):
-
-</span>
 
 ## shift_intensities_to_close_gaps
 **CLIJ2**
@@ -7510,8 +6916,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## show_glasbey_on_grey
 <span style="color:green">(experimental)</span>
 
@@ -7523,10 +6927,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_showGlasbeyOnGrey(Image red, Image labelling, String title)
-
-</span>
-
-<span style="color:grey">
 
 ## show_grey
 <span style="color:green">(experimental)</span>
@@ -7540,10 +6940,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_showGrey(Image input, String title)
 
-</span>
-
-<span style="color:grey">
-
 ## show_r_g_b
 <span style="color:green">(experimental)</span>
 
@@ -7556,9 +6952,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_showRGB(Image red, Image green, Image blue, String title)
 
-</span>
+## shrink_labels
+<span style="color:green">(experimental)</span>
 
-<span style="color:grey">
+**CLIJx**
+* boolean shrinkLabels(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, boolean arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer shrink_labels(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, boolean arg4)
+
+**Macro**
+* Ext.CLIJx_shrinkLabels(Image labels_input, ByRef Image labels_destination, Number radius, Boolean relabel_islands)
 
 ## sigma_to_kernel_size
 <span style="color:green">(experimental)</span>
@@ -7566,9 +6970,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * sigma_to_kernel_size(sigma):
 
-</span>
+## similar
+<span style="color:green">(experimental)</span>
 
-<span style="color:grey">
+**CLIJx**
+* boolean similar(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, double arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer similar(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, double arg4)
+
+**Macro**
+* Ext.CLIJx_similar(Image input_image1, Image input_image2, ByRef Image binary_destination, Number tolerance)
 
 ## sinus
 <span style="color:green">(experimental)</span>
@@ -7582,10 +6994,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_sinus(Image source, ByRef Image destination)
 
-</span>
-
-<span style="color:grey">
-
 ## skeletonize
 <span style="color:orange">(deprecated)</span>
 
@@ -7594,8 +7002,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_skeletonize(Image source, ByRef Image destination)
-
-</span>
 
 ## smaller
 **CLIJ2**
@@ -7677,8 +7083,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * sobel(source : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## sobel_slice_by_slice
 <span style="color:green">(experimental)</span>
 
@@ -7690,8 +7094,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_sobelSliceBySlice(Image source, ByRef Image destination)
-
-</span>
 
 ## sorensen_dice_coefficient
 **CLIJ2**
@@ -7709,8 +7111,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * sorensen_dice_coefficient(source1 : Image, source2 : Image):
 
-<span style="color:grey">
-
 ## sphere_transform
 <span style="color:green">(experimental)</span>
 
@@ -7722,8 +7122,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_sphereTransform(Image input, ByRef Image destination, Number number_of_angles, Number delta_angle_in_degrees, Number relative_center_x, Number relative_center_y, Number relative_center_z)
-
-</span>
 
 ## spots_to_point_list
 **CLIJ2**
@@ -7741,15 +7139,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## spots_to_pointlist
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * spots_to_pointlist(input_spots:Image, destination_pointlist :Image = None):
-
-</span>
 
 ## squared_difference
 **CLIJ2**
@@ -7767,8 +7161,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * squared_difference(source1 : Image, source2 : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## stack_to_tiles
 <span style="color:green">(experimental)</span>
 
@@ -7781,10 +7173,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_stackToTiles(Image source, ByRef Image destination, Number tiles_x, Number tiles_y)
 
-</span>
-
-<span style="color:grey">
-
 ## standard_deviation_box
 <span style="color:green">(experimental)</span>
 
@@ -7796,8 +7184,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_standardDeviationBox(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
-
-</span>
 
 ## standard_deviation_of_all_pixels
 **CLIJ2**
@@ -7835,8 +7221,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## standard_deviation_of_n_nearest_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -7852,10 +7236,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * standard_deviation_of_n_nearest_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, n : int = 1):
 
-</span>
-
-<span style="color:grey">
-
 ## standard_deviation_of_proximal_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -7870,8 +7250,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * standard_deviation_of_proximal_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
-
-</span>
 
 ## standard_deviation_of_touching_neighbors
 **CLIJ2**
@@ -7889,8 +7267,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * standard_deviation_of_touching_neighbors(values : Image, touch_matrix : Image, standard_deviation_values_destination : Image = None):
 
-<span style="color:grey">
-
 ## standard_deviation_of_touching_neighbors_map
 <span style="color:green">(experimental)</span>
 
@@ -7906,10 +7282,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * standard_deviation_of_touching_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, radius : int = 1, ignore_touching_background : bool = True):
 
-</span>
-
-<span style="color:grey">
-
 ## standard_deviation_sphere
 <span style="color:green">(experimental)</span>
 
@@ -7921,8 +7293,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_standardDeviationSphere(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
-
-</span>
 
 ## standard_deviation_z_projection
 **CLIJ2**
@@ -7940,8 +7310,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * standard_deviation_z_projection(source : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## start_continuous_webcam_acquisition
 <span style="color:green">(experimental)</span>
 
@@ -7953,8 +7321,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_startContinuousWebcamAcquisition(Number cameraDeviceIndex, Number imageWidth, Number imageHeight)
-
-</span>
 
 ## statistics_of_background_and_labelled_pixels
 **CLIJ2**
@@ -8028,8 +7394,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## stop_continuous_webcam_acquisition
 <span style="color:green">(experimental)</span>
 
@@ -8042,10 +7406,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_stopContinuousWebcamAcquisition(Number cameraDeviceIndex)
 
-</span>
-
-<span style="color:grey">
-
 ## stop_watch
 <span style="color:green">(experimental)</span>
 
@@ -8057,8 +7417,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_stopWatch(String text)
-
-</span>
 
 ## subtract
 **CLIJ2**
@@ -8076,8 +7434,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## subtract_background
 <span style="color:orange">(deprecated)</span>
 
@@ -8092,10 +7448,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_subtractBackground2D(Image input, ByRef Image destination, Number sigmaX, Number sigmaY)
 
-</span>
-
-<span style="color:grey">
-
 ## subtract_background
 <span style="color:orange">(deprecated)</span>
 
@@ -8108,10 +7460,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_subtractBackground2D(Image input, ByRef Image destination, Number sigmaX, Number sigmaY)
 
-</span>
-
-<span style="color:grey">
-
 ## subtract_background
 <span style="color:orange">(deprecated)</span>
 
@@ -8123,10 +7471,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_subtractBackground3D(Image input, ByRef Image destination, Number sigmaX, Number sigmaY, Number sigmaZ)
-
-</span>
-
-<span style="color:grey">
 
 ## subtract_gaussian_background
 <span style="color:orange">(deprecated)</span>
@@ -8142,8 +7486,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * subtract_gaussian_background(input : Image, destination : Image = None, sigma_x : float = 2, sigma_y : float = 2, sigma_z : float = 2):
-
-</span>
 
 ## subtract_image_from_scalar
 **CLIJ2**
@@ -8315,17 +7657,11 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * sum_z_projection(source : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## sum_reduction_x
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
 * sum_reduction_x(src : Image, dst : Image = None, blocksize : int = 256):
-
-</span>
-
-<span style="color:grey">
 
 ## tenengrad
 <span style="color:green">(experimental)</span>
@@ -8338,10 +7674,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_tenengrad(Image source, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## tenengrad_fusion
 <span style="color:green">(experimental)</span>
@@ -8357,10 +7689,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_tenengradFusion(Image input, Image destination, Number number_of_substacks, Number sigmaX, Number sigmaY, Number sigmaZ, Number exponent)
 
-</span>
-
-<span style="color:grey">
-
 ## tenengrad_slice_by_slice
 <span style="color:green">(experimental)</span>
 
@@ -8372,8 +7700,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_tenengradSliceBySlice(Image source, ByRef Image destination)
-
-</span>
 
 ## threshold
 **CLIJ2**
@@ -8407,8 +7733,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## threshold_dog
 <span style="color:green">(experimental)</span>
 
@@ -8420,8 +7744,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_thresholdDoG(Image input, ByRef Image destination, Number sigma1, Number sigma2, Number threshold, Boolean above_threshold)
-
-</span>
 
 ## threshold_huang
 **CLIJ2**
@@ -8695,8 +8017,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * top_hat_box(input : Image, destination : Image = None, radius_x : float = 1, radius_y : float = 1, radius_z : float = 1):
 
-<span style="color:grey">
-
 ## top_hat_octagon
 <span style="color:green">(experimental)</span>
 
@@ -8709,10 +8029,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_topHatOctagon(Image input, ByRef Image destination, Number iterations)
 
-</span>
-
-<span style="color:grey">
-
 ## top_hat_octagon_slice_by_slice
 <span style="color:green">(experimental)</span>
 
@@ -8724,8 +8040,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_topHatOctagonSliceBySlice(Image input, ByRef Image destination, Number iterations)
-
-</span>
 
 ## top_hat_sphere
 **CLIJ2**
@@ -8775,8 +8089,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * touch_matrix_to_mesh(pointlist  : Image, touch_matrix : Image, mesh_destination : Image):
 
-<span style="color:grey">
-
 ## touching_neighbor_count_map
 <span style="color:green">(experimental)</span>
 
@@ -8792,10 +8104,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * touching_neighbor_count_map(input : Image, destination : Image = None):
 
-</span>
-
-<span style="color:grey">
-
 ## train_auto_context_weka_model_with_options
 <span style="color:green">(experimental)</span>
 
@@ -8804,10 +8112,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **clEsperantoJ**
 * ClearCLBuffer train_auto_context_weka_model_with_options(ClearCLBuffer arg1, ClearCLBuffer arg2, String arg3, String arg4, double arg5, double arg6, double arg7, double arg8)
-
-</span>
-
-<span style="color:grey">
 
 ## train_weka_from_table
 <span style="color:green">(experimental)</span>
@@ -8823,10 +8127,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_trainWekaFromTable(String groundTruthColumnName, String saveModelFilename, Number trees, Number features, Number maxDepth)
 
-</span>
-
-<span style="color:grey">
-
 ## train_weka_model
 <span style="color:green">(experimental)</span>
 
@@ -8839,10 +8139,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_trainWekaModel(Image featureStack3D, Image groundTruth2D, String saveModelFilename)
 
-</span>
-
-<span style="color:grey">
-
 ## train_weka_model_with_options
 <span style="color:green">(experimental)</span>
 
@@ -8854,8 +8150,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_trainWekaModelWithOptions(Image featureStack3D, Image groundTruth2D, String saveModelFilename, Number trees, Number features, Number maxDepth)
-
-</span>
 
 ## translate
 **CLIJ2**
@@ -8889,8 +8183,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * translate(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0):
 
-<span style="color:grey">
-
 ## translation_registration
 <span style="color:green">(experimental)</span>
 
@@ -8905,10 +8197,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_translationRegistration(Image input1, Image input2, ByRef Image destination)
 
-</span>
-
-<span style="color:grey">
-
 ## translation_timelapse_registration
 <span style="color:green">(experimental)</span>
 
@@ -8920,8 +8208,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_translationTimelapseRegistration(Image input, ByRef Image output)
-
-</span>
 
 ## transpose_xy
 **CLIJ2**
@@ -8974,12 +8260,8 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * transpose_yz(input : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## types
 <span style="color:green">(experimental)</span>
-
-</span>
 
 ## undefined_to_zero
 **CLIJ2**
@@ -8997,8 +8279,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * undefined_to_zero(source : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## variance_box
 <span style="color:green">(experimental)</span>
 
@@ -9010,8 +8290,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_varianceBox(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
-
-</span>
 
 ## variance_of_all_pixels
 **CLIJ2**
@@ -9049,8 +8327,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## variance_sphere
 <span style="color:green">(experimental)</span>
 
@@ -9063,10 +8339,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_varianceSphere(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
 
-</span>
-
-<span style="color:grey">
-
 ## visualize_outlines_on_original
 <span style="color:green">(experimental)</span>
 
@@ -9078,8 +8350,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_visualizeOutlinesOnOriginal(Image intensity, Image labels, ByRef Image destination)
-
-</span>
 
 ## voronoi_labeling
 **CLIJ2**
@@ -9113,8 +8383,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## voronoi_otsu_labeling
 <span style="color:green">(experimental)</span>
 
@@ -9129,8 +8397,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * voronoi_otsu_labeling(source : Image, label_image_destination : Image = None, spot_sigma : float = 2, outline_sigma : float = 2):
-
-</span>
 
 ## watershed
 **CLIJ2**
@@ -9148,8 +8414,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
-<span style="color:grey">
-
 ## weka_label_classifier
 <span style="color:green">(experimental)</span>
 
@@ -9162,9 +8426,17 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_wekaLabelClassifier(Image input, Image label_map, ByRef Image destination, String features, String modelfilename)
 
-</span>
+## weka_regional_label_classifier
+<span style="color:green">(experimental)</span>
 
-<span style="color:grey">
+**CLIJx**
+* boolean wekaRegionalLabelClassifier(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, String arg4, String arg5, double arg6, double arg7, double arg8, double arg9)
+
+**clEsperantoJ**
+* ClearCLBuffer weka_regional_label_classifier(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, String arg4, String arg5, double arg6, double arg7, double arg8, double arg9)
+
+**Macro**
+* Ext.CLIJx_wekaRegionalLabelClassifier(Image input, Image label_map, ByRef Image destination, String features, String modelfilename, Number radius_of_maximum, Number radius_of_minimum, Number radius_of_mean, Number radius_of_standard_deviation)
 
 ## write_v_t_k_line_list_to_disc
 <span style="color:green">(experimental)</span>
@@ -9177,8 +8449,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_writeVTKLineListToDisc(Image pointlist, Image touch_matrix, String filename)
-
-</span>
 
 ## write_values_to_positions
 **CLIJ2**
@@ -9196,8 +8466,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * write_values_to_positions(positions_and_values : Image, destination : Image = None):
 
-<span style="color:grey">
-
 ## write_xyz_point_list_to_disc
 <span style="color:green">(experimental)</span>
 
@@ -9209,10 +8477,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_writeXYZPointListToDisc(Image pointlist, String filename)
-
-</span>
-
-<span style="color:grey">
 
 ## z_position_of_maximum_z_projection
 <span style="color:green">(experimental)</span>
@@ -9226,10 +8490,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_zPositionOfMaximumZProjection(Image source, ByRef Image destination)
 
-</span>
-
-<span style="color:grey">
-
 ## z_position_projection
 <span style="color:green">(experimental)</span>
 
@@ -9241,10 +8501,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_zPositionProjection(Image source_stack, Image z_position, ByRef Image destination)
-
-</span>
-
-<span style="color:grey">
 
 ## z_position_range_projection
 <span style="color:green">(experimental)</span>
@@ -9258,8 +8514,6 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_zPositionRangeProjection(Image source_stack, Image z_position, ByRef Image destination, Number start_z, Number end_z)
 
-</span>
 
 
-
-580 methods listed.
+591 methods listed.

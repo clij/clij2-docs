@@ -6,7 +6,7 @@ Computes the local variance of a pixels spherical neighborhood.
 The spheres size is specified by 
 its half-width, half-height and half-depth (radius). If 2D images are given, radius_z will be ignored. 
 
-Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
+Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 ### Usage in ImageJ macro
 ```

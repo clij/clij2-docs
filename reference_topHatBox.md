@@ -19,16 +19,8 @@ radius_z : Image
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
 
-### topHatBox often follows after
-* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
-* <a href="reference_rotate3D">rotate3D</a> (1)
-
-
 ### topHatBox is often followed by
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
-* <a href="reference_release">release</a> (2)
-* <a href="reference_resliceRadial">resliceRadial</a> (1)
-* <a href="reference_resliceTop">resliceTop</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -180,6 +172,7 @@ cle.top_hat_box(input, destination, radiusX, radiusY, radiusZ)
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm"><img src="images/language_macro.png" height="20"/></a> [compare_workflows.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/time_tracing.ijm"><img src="images/language_macro.png" height="20"/></a> [time_tracing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/time_tracing.ijm)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_performance_demo.py"><img src="images/language_python.png" height="20"/></a> [napari_performance_demo.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_performance_demo.py)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

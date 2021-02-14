@@ -17,22 +17,14 @@ mesh_destination : Image
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
 
 ### touchMatrixToMesh often follows after
-* <a href="reference_equal">equal</a> (2)
-* <a href="reference_smallerOrEqual">smallerOrEqual</a> (1)
-* <a href="reference_binaryOr">binaryOr</a> (1)
-* <a href="reference_transposeXY">transposeXY</a> (3)
-* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (4)
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (7)
-* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
-* <a href="reference_multiplyImages">multiplyImages</a> (3)
-* <a href="reference_paste2D">paste2D</a> (1)
-* <a href="reference_create2D">create2D</a> (3)
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
+* <a href="reference_create2D">create2D</a> (2)
 
 
 ### touchMatrixToMesh is often followed by
 * <a href="reference_rotate3D">rotate3D</a> (1)
-* <a href="reference_release">release</a> (1)
-* <a href="reference_flip2D">flip2D</a> (1)
 
 
 ### Usage in ImageJ macro

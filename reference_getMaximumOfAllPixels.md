@@ -12,12 +12,6 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 
 
-### getMaximumOfAllPixels is often followed by
-* <a href="reference_histogram">histogram</a> (2)
-* <a href="reference_equalConstant">equalConstant</a> (1)
-* <a href="reference_create2D">create2D</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_getMaximumOfAllPixels(Image source, Number maximum_of_all_pixels);

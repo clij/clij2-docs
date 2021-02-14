@@ -1,7 +1,7 @@
 ## wekaLabelClassifier
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects. 
 
 Make sure that the handed over feature list is the same used while training the model.
 

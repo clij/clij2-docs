@@ -15,11 +15,6 @@ spaces for x. For example this string is converted to an image with width=4, hei
 1 2 3 4
 
 
-### pushString is often followed by
-* <a href="reference_generateBinaryOverlapMatrix">generateBinaryOverlapMatrix</a> (2)
-* <a href="reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pushString(Image destination, String input, Number width, Number height, Number depth);

@@ -3,7 +3,7 @@
 
 Combines an intensity image and a label (or binary) image so that you can see segmentation outlines on the intensity image.
 
-Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### Usage in ImageJ macro
 ```

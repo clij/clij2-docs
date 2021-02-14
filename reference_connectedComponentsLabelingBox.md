@@ -8,21 +8,13 @@ Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 ### connectedComponentsLabelingBox often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
 * <a href="reference_minimum2DBox">minimum2DBox</a> (1)
-* <a href="reference_binaryNot">binaryNot</a> (4)
-* <a href="reference_openingBox">openingBox</a> (1)
-* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
-* <a href="reference_closingBox">closingBox</a> (1)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (6)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (1)
+* <a href="reference_binaryNot">binaryNot</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (4)
 
 
 ### connectedComponentsLabelingBox is often followed by
-* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
-* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (5)
-* <a href="reference_release">release</a> (12)
-* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (1)
+* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (1)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (1)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
 

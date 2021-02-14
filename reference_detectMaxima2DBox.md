@@ -8,16 +8,6 @@ higher intensity, and to 0 otherwise.
 
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
-### detectMaxima2DBox often follows after
-* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (5)
-
-
-### detectMaxima2DBox is often followed by
-* <a href="reference_release">release</a> (2)
-* <a href="reference_labelSpots">labelSpots</a> (1)
-* <a href="reference_mask">mask</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_detectMaxima2DBox(Image source, Image destination, Number radiusX, Number radiusY);

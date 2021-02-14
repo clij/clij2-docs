@@ -12,7 +12,6 @@ Category: [Measurements](https://clij.github.io/clij2-docs/reference__measuremen
 
 ### statisticsOfBackgroundAndLabelledPixels often follows after
 * <a href="reference_pushArray">pushArray</a> (1)
-* <a href="reference_copySlice">copySlice</a> (2)
 
 
 ### Usage in ImageJ macro

@@ -31,16 +31,12 @@ Use this terminology to specify which features should be generated:
 * local_minimum_average_distance_of_touching_neighbors
 * average_touch_pixel_count
 * local_minimum_count_touching_neighbors
-* average_distance_n_closest_neighbors
 * average_distance_of_touching_neighbors
 * local_mean_count_touching_neighbors
-* local_mean_average_distance_n_closest_neighbors
-* local_maximum_average_distance_n_closest_neighbors
+* MEAN_OF_LAPLACIAN
 * local_standard_deviation_average_distance_of_touching_neighbors
 * local_maximum_count_touching_neighbors
 * local_standard_deviation_count_touching_neighbors
-* local_standard_deviation_average_distance_n_closest_neighbors
-* local_minimum_average_distance_n_closest_neighbors
 
 Example: "MEAN_INTENSITY count_touching_neighbors"
 

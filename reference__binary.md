@@ -245,6 +245,9 @@ Apply a binary opening to the input image by calling n erosions and n dilations 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_openingDiamond">openingDiamond</a>  
 Apply a binary opening to the input image by calling n erosions and n dilations subsequenntly.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_outOfIntensityRange">outOfIntensityRange (Experimental)</a>  
+Sets all pixels to 1 if their intensity lies out of a given range, and 0 otherwise.
+
 <a name="P"></a>
 
 ## P
@@ -365,4 +368,4 @@ Applies two Gaussian blurs, spot detection, Otsu-thresholding and Voronoi-labeli
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
-99 methods listed.
+100 methods listed.

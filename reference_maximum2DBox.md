@@ -13,7 +13,6 @@ Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 
 ### maximum2DBox is often followed by
-* <a href="reference_subtractImages">subtractImages</a> (1)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 
 

@@ -368,6 +368,9 @@ Apply a binary opening to the input image by calling n erosions and n dilations 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_openingDiamond">openingDiamond</a>  
 Apply a binary opening to the input image by calling n erosions and n dilations subsequenntly.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_outOfIntensityRange">outOfIntensityRange (Experimental)</a>  
+Sets all pixels to 1 if their intensity lies out of a given range, and 0 otherwise.
+
 <a name="P"></a>
 
 ## P
@@ -391,6 +394,9 @@ Replaces pixel values x with y in case x is zero.
 ## S
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_seededWatershed">seededWatershed (Experimental)</a>  
 Takes a label map (seeds) and an input image with gray values to apply the watershed algorithm and split the image above a given threshold in labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_shrinkLabels">shrinkLabels (Experimental)</a>  
+Extend labels with a given radius.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_skeletonize">skeletonize (Experimental)</a>  
 Erodes a binary image until just its skeleton is left. 
@@ -467,4 +473,4 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
-144 methods listed.
+146 methods listed.

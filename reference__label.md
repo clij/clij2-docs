@@ -164,6 +164,9 @@ Takes a label map, determines for every label the mean distance of any pixel to 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanIntensityMap">labelMeanIntensityMap (Experimental)</a>  
 Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanOfLaplacianMap">labelMeanOfLaplacianMap (Experimental)</a>  
+Takes an image and a corresponding label map, determines the mean intensity in the laplacian of the image per label and replaces every label with the that number.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelOverlapCountMap">labelOverlapCountMap (Experimental)</a>  
 Takes two label maps, and counts for every label in label map 1 how many labels overlap with it in label map 2.
 
@@ -275,6 +278,9 @@ Takes a touch matrix and a vector of values to determine the mean value among to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_meanOfTouchingNeighborsMap">meanOfTouchingNeighborsMap (Experimental)</a>  
 Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the mean average value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianTouchPortionMap">medianTouchPortionMap (Experimental)</a>  
+Starts from a label map, determines median touch portion to neighbors (between 0 and 1) and draws a map.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mergeTouchingLabels">mergeTouchingLabels (Experimental)</a>  
 
 
@@ -305,6 +311,9 @@ Takes a label image and a parametric intensity image and will replace each label
 <a name="N"></a>
 
 ## N
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborCountWithTouchPortionAboveThresholdMap">neighborCountWithTouchPortionAboveThresholdMap (Experimental)</a>  
+Starts from a label map, determines touch portion to neighbors, counts those above a given value (between 0 and 1) and draws a map.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborDistanceRangeRatioMap">neighborDistanceRangeRatioMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the minimum distance to their neighboring labels.
 
@@ -326,6 +335,9 @@ Pulls all labels in a label map as ROIs to the ROI manager.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_readIntensitiesFromMap">readIntensitiesFromMap (Experimental)</a>  
 Takes a label image and an parametric image and reads parametric values from the labels positions.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reduceLabelsToLabelEdges">reduceLabelsToLabelEdges (Experimental)</a>  
+Takes a label map and reduces all labels to their edges. Label IDs stay the same and background will be zero.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reduceLabelsToLabelledSpots">reduceLabelsToLabelledSpots (Experimental)</a>  
 Takes a label map and reduces all labels to their center spots. Label IDs stay and background will be zero.
 
@@ -334,6 +346,9 @@ Takes a label map and reduces all labels to their center spots. Label IDs stay a
 ## S
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_seededWatershed">seededWatershed (Experimental)</a>  
 Takes a label map (seeds) and an input image with gray values to apply the watershed algorithm and split the image above a given threshold in labels.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_shrinkLabels">shrinkLabels (Experimental)</a>  
+Extend labels with a given radius.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_standardDeviationOfNNearestNeighborsMap">standardDeviationOfNNearestNeighborsMap (Experimental)</a>  
 Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the standard deviation value of neighboring labels. The distance number of nearest neighbors can be configured. Note: Values of all pixels in a label each must be identical.
@@ -381,6 +396,9 @@ Applies two Gaussian blurs, spot detection, Otsu-thresholding and Voronoi-labeli
 
 ## W
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
-Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects. 
 
-107 methods listed.
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaRegionalLabelClassifier">wekaRegionalLabelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects.
+
+113 methods listed.

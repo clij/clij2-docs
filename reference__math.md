@@ -12,7 +12,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Detection](https://clij.github.io/clij2-docs/reference__pyclesperanto), CLIc
 
-<a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>, F,<a href="#G">\[G\]</a>, H,<a href="#I">\[I\]</a>, J,<a href="#K">\[K\]</a>,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>, O,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>, T,<a href="#U">\[U\]</a>, V, W, X, Y, Z
+<a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>,<a href="#C">\[C\]</a>,<a href="#D">\[D\]</a>,<a href="#E">\[E\]</a>, F,<a href="#G">\[G\]</a>, H,<a href="#I">\[I\]</a>, J,<a href="#K">\[K\]</a>,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>,<a href="#N">\[N\]</a>, O,<a href="#P">\[P\]</a>, Q, R,<a href="#S">\[S\]</a>, T,<a href="#U">\[U\]</a>,<a href="#V">\[V\]</a>, W, X, Y, Z
 
 <a name="A"></a>
 
@@ -65,8 +65,14 @@ Computes the cosinus of all pixels value x.
 <a name="D"></a>
 
 ## D
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_different">different (Experimental)</a>  
+Determines the absolute difference between two images and sets all pixels to 1 where it is above a given tolerance, and 0 otherwise.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideImages">divideImages</a>  
 Divides two images X and Y by each other pixel wise. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideScalarByImage">divideScalarByImage (Experimental)</a>  
+Divides a scalar s by image X pixel wise. 
 
 <a name="E"></a>
 
@@ -212,6 +218,9 @@ Sets all pixel values a of a given image A to a constant value v in case its coo
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_setWhereXsmallerThanY">setWhereXsmallerThanY</a>  
 Sets all pixel values a of a given image A to a constant value v in case its coordinates x < y. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_similar">similar (Experimental)</a>  
+Determines the absolute difference between two images and sets all pixels to 1 where it is below or equal a given tolerance, and 0 otherwise.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sinus">sinus (Experimental)</a>  
 Computes the sinus of all pixels value x.
 
@@ -242,4 +251,10 @@ Subtracts one image X from another image Y pixel wise.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_undefinedToZero">undefinedToZero</a>  
 Copies all pixels instead those which are not a number (NaN) or infinity (inf), which are replaced by 0.
 
-63 methods listed.
+<a name="V"></a>
+
+## V
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_visualizeOutlinesOnOriginal">visualizeOutlinesOnOriginal (Experimental)</a>  
+Combines an intensity image and a label (or binary) image so that you can see segmentation outlines on the intensity image.
+
+67 methods listed.

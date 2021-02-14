@@ -6,14 +6,11 @@ Allocated memory for a new 3D image in the GPU memory.
 BitDepth must be 8 (unsigned byte), 16 (unsigned short) or 32 (float).
 
 ### create3D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (17)
+* <a href="reference_getDimensions">getDimensions</a> (3)
 
 
 ### create3D is often followed by
 * <a href="reference_convolve">convolve</a> (1)
-* <a href="reference_release">release</a> (1)
-* <a href="reference_addImageAndScalar">addImageAndScalar</a> (1)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro

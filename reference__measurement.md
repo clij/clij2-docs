@@ -209,6 +209,9 @@ Takes a label map, determines for every label the mean distance of any pixel to 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanIntensityMap">labelMeanIntensityMap (Experimental)</a>  
 Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanOfLaplacianMap">labelMeanOfLaplacianMap (Experimental)</a>  
+Takes an image and a corresponding label map, determines the mean intensity in the laplacian of the image per label and replaces every label with the that number.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelOverlapCountMap">labelOverlapCountMap (Experimental)</a>  
 Takes two label maps, and counts for every label in label map 1 how many labels overlap with it in label map 2.
 
@@ -329,6 +332,9 @@ Takes a label image and a parametric intensity image and will replace each label
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a>  
 Takes a touch matrix and a vector of values to determine the median value among touching neighbors for every object. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianTouchPortionMap">medianTouchPortionMap (Experimental)</a>  
+Starts from a label map, determines median touch portion to neighbors (between 0 and 1) and draws a map.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumDistanceOfTouchingNeighbors">minimumDistanceOfTouchingNeighbors</a>  
 Takes a touch matrix and a distance matrix to determine the shortest distance of touching neighbors for every object.
 
@@ -370,6 +376,9 @@ Determine the n point indices with shortest distance for all points in a distanc
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nClosestPoints">nClosestPoints</a>  
 Determine the n point indices with shortest distance for all points in a distance matrix. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborCountWithTouchPortionAboveThresholdMap">neighborCountWithTouchPortionAboveThresholdMap (Experimental)</a>  
+Starts from a label map, determines touch portion to neighbors, counts those above a given value (between 0 and 1) and draws a map.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborDistanceRangeRatioMap">neighborDistanceRangeRatioMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the minimum distance to their neighboring labels.
@@ -446,4 +455,4 @@ Determines the variance of all pixels in an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_varianceOfMaskedPixels">varianceOfMaskedPixels</a>  
 Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. 
 
-129 methods listed.
+132 methods listed.

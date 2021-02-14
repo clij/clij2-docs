@@ -126,6 +126,9 @@ Combines an intensity image and a label (or binary) image so that you can see se
 
 ## W
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
-Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects. 
 
-31 methods listed.
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaRegionalLabelClassifier">wekaRegionalLabelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects.
+
+32 methods listed.

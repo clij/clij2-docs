@@ -11,10 +11,6 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measu
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
-### averageDistanceOfNClosestPoints is often followed by
-* <a href="reference_release">release</a> (2)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, Image distance_list_destination, Number nClosestPointsTofind);

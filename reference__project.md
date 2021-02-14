@@ -71,6 +71,9 @@ Determines the mean average intensity projection of an image along Z within a gi
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjection">medianZProjection</a>  
 Determines the median intensity projection of an image stack along Z.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjectionMasked">medianZProjectionMasked (Experimental)</a>  
+Determines the median intensity projection of an image stack along Z where pixels in a corresponding mask image are unequal to zero.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_minimumXProjection">minimumXProjection</a>  
 Determines the minimum intensity projection of an image along Y.
 
@@ -122,4 +125,4 @@ Project a defined Z-slice of a 3D stack into a 2D image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionRangeProjection">zPositionRangeProjection (Experimental)</a>  
 Project multiple Z-slices of a 3D stack into a new 3D stack.
 
-29 methods listed.
+30 methods listed.

@@ -7,15 +7,7 @@ Takes a touch matrix and a distance matrix to determine the average distance of 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 ### averageDistanceOfTouchingNeighbors often follows after
-* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (5)
-
-
-### averageDistanceOfTouchingNeighbors is often followed by
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
-* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (1)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### Usage in ImageJ macro

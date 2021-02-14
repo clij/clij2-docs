@@ -13,10 +13,6 @@ Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filt
 * <a href="reference_binaryNot">binaryNot</a> (1)
 
 
-### distanceMap is often followed by
-* <a href="reference_mean2DBox">mean2DBox</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_distanceMap(Image source, Image destination);

@@ -8,12 +8,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
-### thresholdHuang often follows after
-* <a href="reference_mean3DBox">mean3DBox</a> (1)
-
-
 ### thresholdHuang is often followed by
-* <a href="reference_addImages">addImages</a> (2)
 * <a href="reference_getBoundingBox">getBoundingBox</a> (1)
 
 

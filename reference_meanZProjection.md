@@ -5,10 +5,6 @@ Determines the mean average intensity projection of an image along Z.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
-### meanZProjection is often followed by
-* <a href="reference_release">release</a> (1)
-
-
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanZProjection(Image source, Image destination);

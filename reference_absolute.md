@@ -16,12 +16,7 @@ destination : Image
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 ### absolute often follows after
-* <a href="reference_subtractImages">subtractImages</a> (2)
 * <a href="reference_addImageAndScalar">addImageAndScalar</a> (1)
-
-
-### absolute is often followed by
-* <a href="reference_mean2DBox">mean2DBox</a> (1)
 
 
 ### Usage in ImageJ macro

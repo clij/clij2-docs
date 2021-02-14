@@ -305,6 +305,9 @@ Applies Gaussian blur to the input image twice with different sigma values resul
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_differenceOfGaussianInplace3D">differenceOfGaussianInplace3D (Experimental)</a>  
 Applies Gaussian blur to the input image twice with different sigma values resulting in two images which are then subtracted from each other.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_different">different (Experimental)</a>  
+Determines the absolute difference between two images and sets all pixels to 1 where it is above a given tolerance, and 0 otherwise.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_dilateBox">dilateBox</a>  
 Computes a binary image with pixel values 0 and 1 containing the binary dilation of a given input image.
 
@@ -328,6 +331,9 @@ Applies Gaussian blur to the input image and divides the original by the result.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideImages">divideImages</a>  
 Divides two images X and Y by each other pixel wise. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_divideScalarByImage">divideScalarByImage (Experimental)</a>  
+Divides a scalar s by image X pixel wise. 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_downsample2D">downsample2D</a>  
 Scales an image using given scaling factors for X and Y dimensions. 
@@ -641,6 +647,9 @@ Takes a label map, determines for every label the mean distance of any pixel to 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanIntensityMap">labelMeanIntensityMap (Experimental)</a>  
 Takes an image and a corresponding label map, determines the mean intensity per label and replaces every label with the that number.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanOfLaplacianMap">labelMeanOfLaplacianMap (Experimental)</a>  
+Takes an image and a corresponding label map, determines the mean intensity in the laplacian of the image per label and replaces every label with the that number.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelOverlapCountMap">labelOverlapCountMap (Experimental)</a>  
 Takes two label maps, and counts for every label in label map 1 how many labels overlap with it in label map 2.
 
@@ -888,8 +897,14 @@ Computes the local median of a pixels spherical neighborhood.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a>  
 Takes a touch matrix and a vector of values to determine the median value among touching neighbors for every object. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianTouchPortionMap">medianTouchPortionMap (Experimental)</a>  
+Starts from a label map, determines median touch portion to neighbors (between 0 and 1) and draws a map.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjection">medianZProjection</a>  
 Determines the median intensity projection of an image stack along Z.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_medianZProjectionMasked">medianZProjectionMasked (Experimental)</a>  
+Determines the median intensity projection of an image stack along Z where pixels in a corresponding mask image are unequal to zero.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_mergeTouchingLabels">mergeTouchingLabels (Experimental)</a>  
 
@@ -994,6 +1009,9 @@ Determine the n point indices with shortest distance for all points in a distanc
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_nClosestPoints">nClosestPoints</a>  
 Determine the n point indices with shortest distance for all points in a distance matrix. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborCountWithTouchPortionAboveThresholdMap">neighborCountWithTouchPortionAboveThresholdMap (Experimental)</a>  
+Starts from a label map, determines touch portion to neighbors, counts those above a given value (between 0 and 1) and draws a map.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_neighborDistanceRangeRatioMap">neighborDistanceRangeRatioMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the minimum distance to their neighboring labels.
 
@@ -1038,6 +1056,9 @@ Apply a binary opening to the input image by calling n erosions and n dilations 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_organiseWindows">organiseWindows (Experimental)</a>  
 Organises windows on screen.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_outOfIntensityRange">outOfIntensityRange (Experimental)</a>  
+Sets all pixels to 1 if their intensity lies out of a given range, and 0 otherwise.
 
 <a name="P"></a>
 
@@ -1155,6 +1176,9 @@ Takes a label image and an parametric image and reads parametric values from the
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_readRawImageFromDisc">readRawImageFromDisc (Experimental)</a>  
 Reads a raw file from disc and pushes it immediately to the GPU.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reduceLabelsToLabelEdges">reduceLabelsToLabelEdges (Experimental)</a>  
+Takes a label map and reduces all labels to their edges. Label IDs stay the same and background will be zero.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_reduceLabelsToLabelledSpots">reduceLabelsToLabelledSpots (Experimental)</a>  
 Takes a label map and reduces all labels to their center spots. Label IDs stay and background will be zero.
@@ -1296,6 +1320,12 @@ Visualises a single 2D image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_showRGB">showRGB (Experimental)</a>  
 Visualises three 2D images as one RGB image
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_shrinkLabels">shrinkLabels (Experimental)</a>  
+Extend labels with a given radius.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_similar">similar (Experimental)</a>  
+Determines the absolute difference between two images and sets all pixels to 1 where it is below or equal a given tolerance, and 0 otherwise.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sinus">sinus (Experimental)</a>  
 Computes the sinus of all pixels value x.
@@ -1572,7 +1602,10 @@ Applies two Gaussian blurs, spot detection, Otsu-thresholding and Voronoi-labeli
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaLabelClassifier">wekaLabelClassifier (Experimental)</a>  
-Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map. 
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaRegionalLabelClassifier">wekaRegionalLabelClassifier (Experimental)</a>  
+Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_writeVTKLineListToDisc">writeVTKLineListToDisc (Experimental)</a>  
 Takes a point list image representing n points (n*2 for 2D points, n*3 for 3D points) and a corresponding touch matrix , sized (n+1)*(n+1), and exports them in VTK format.
@@ -1595,4 +1628,4 @@ Project a defined Z-slice of a 3D stack into a 2D image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionRangeProjection">zPositionRangeProjection (Experimental)</a>  
 Project multiple Z-slices of a 3D stack into a new 3D stack.
 
-546 methods listed.
+558 methods listed.
