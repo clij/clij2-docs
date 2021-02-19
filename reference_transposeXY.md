@@ -21,6 +21,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 ### transposeXY is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -160,6 +161,7 @@ cle.transpose_xy(input, destination)
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/check_if_positions_are_in_roi.ijm"><img src="images/language_macro.png" height="20"/></a> [check_if_positions_are_in_roi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/check_if_positions_are_in_roi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm"><img src="images/language_macro.png" height="20"/></a> [jaccard_matrix.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 

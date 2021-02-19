@@ -1,7 +1,7 @@
 ## sumImageSliceBySlice
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Sums all pixels slice by slice and returns them in an array.
+Sums all pixels slice by slice and returns the sums in a vector.
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 

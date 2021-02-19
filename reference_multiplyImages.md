@@ -1,7 +1,7 @@
 ## multiplyImages
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
-Multiplies all pairs of pixel values x and y from two image X and Y.
+Multiplies all pairs of pixel values x and y from two images X and Y.
 
 <pre>f(x, y) = x * y</pre>
 

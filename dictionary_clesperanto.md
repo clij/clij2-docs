@@ -6126,7 +6126,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJx_readImageFromDisc(Image destination, String filename)
 
 ## read_intensities_from_map
-<span style="color:green">(experimental)</span>
+<span style="color:orange">(deprecated)</span>
 
 **CLIJx**
 * boolean readIntensitiesFromMap(ClearCLImageInterface labels, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
@@ -6153,6 +6153,30 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_readRawImageFromDisc(Image destination, String filename, Number width, Number height, Number depth, Number bitsPerPixel)
+
+## read_values_from_map
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean readValuesFromMap(ClearCLImageInterface labels, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
+
+**clEsperantoJ**
+* ClearCLImageInterface read_values_from_map(ClearCLImageInterface labels, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
+
+**Macro**
+* Ext.CLIJx_readValuesFromMap(Image labels, Image map_image, ByRef Image values_destination)
+
+## read_values_from_positions
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean readValuesFromPositions(ClearCLImageInterface pointlist, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
+
+**clEsperantoJ**
+* ClearCLImageInterface read_values_from_positions(ClearCLImageInterface pointlist, ClearCLImageInterface map_image, ClearCLImageInterface values_destination)
+
+**Macro**
+* Ext.CLIJx_readValuesFromPositions(Image pointlist, Image map_image, ByRef Image values_destination)
 
 ## read_intensities_from_positions
 <span style="color:green">(experimental)</span>
@@ -8516,4 +8540,4 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 
 
-591 methods listed.
+593 methods listed.

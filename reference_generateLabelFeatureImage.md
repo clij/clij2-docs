@@ -25,18 +25,10 @@ Use this terminology to specify which features should be generated:
 * SUM_INTENSITY
 * STANDARD_DEVIATION_INTENSITY
 * PIXEL_COUNT
-* local_mean_average_distance_of_touching_neighbors
-* local_maximum_average_distance_of_touching_neighbors
 * count_touching_neighbors
-* local_minimum_average_distance_of_touching_neighbors
 * average_touch_pixel_count
-* local_minimum_count_touching_neighbors
 * average_distance_of_touching_neighbors
-* local_mean_count_touching_neighbors
 * MEAN_OF_LAPLACIAN
-* local_standard_deviation_average_distance_of_touching_neighbors
-* local_maximum_count_touching_neighbors
-* local_standard_deviation_count_touching_neighbors
 
 Example: "MEAN_INTENSITY count_touching_neighbors"
 

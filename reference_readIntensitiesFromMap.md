@@ -7,11 +7,7 @@ The read intensity valus are stored in a new vector.
 
 Note: This will only work if all labels have number of voxels == 1 or if all pixels in each label have the same value.
 
-### Parameters
-
-labels
-map_image
-values_destination
+DEPRECATED: Use ReadValuesFromMap instead
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
@@ -19,96 +15,6 @@ Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measu
 ```
 Ext.CLIJx_readIntensitiesFromMap(Image labels, Image map_image, Image values_destination);
 ```
-
-
-### Usage in object oriented programming languages
-
-
-
-<details>
-
-<summary>
-Java
-</summary>
-<pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
-import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
-
-// get input parameters
-ClearCLBuffer labels = clijx.push(labelsImagePlus);
-ClearCLBuffer map_image = clijx.push(map_imageImagePlus);
-values_destination = clijx.create(labels);
-</pre>
-
-<pre class="highlight">
-// Execute operation on GPU
-clijx.readIntensitiesFromMap(labels, map_image, values_destination);
-</pre>
-
-<pre class="highlight">
-// show result
-values_destinationImagePlus = clijx.pull(values_destination);
-values_destinationImagePlus.show();
-
-// cleanup memory on GPU
-clijx.release(labels);
-clijx.release(map_image);
-clijx.release(values_destination);
-</pre>
-
-</details>
-
-
-
-<details>
-
-<summary>
-Matlab
-</summary>
-<pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
-
-% get input parameters
-labels = clijx.pushMat(labels_matrix);
-map_image = clijx.pushMat(map_image_matrix);
-values_destination = clijx.create(labels);
-</pre>
-
-<pre class="highlight">
-% Execute operation on GPU
-clijx.readIntensitiesFromMap(labels, map_image, values_destination);
-</pre>
-
-<pre class="highlight">
-% show result
-values_destination = clijx.pullMat(values_destination)
-
-% cleanup memory on GPU
-clijx.release(labels);
-clijx.release(map_image);
-clijx.release(values_destination);
-</pre>
-
-</details>
-
-
-
-<details>
-
-<summary>
-clEsperanto Python (experimental)
-</summary>
-<pre class="highlight">import pyclesperanto_prototype as cle
-
-cle.read_intensities_from_map(labels, map_image, values_destination)
-
-</pre>
-
-
-
-</details>
-
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

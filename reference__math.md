@@ -153,7 +153,7 @@ Multiplies all pixels value x in a given image X with a constant scalar s.
 Multiplies all pixels value x in a given image X with a constant scalar s from a list of scalars.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyImages">multiplyImages</a>  
-Multiplies all pairs of pixel values x and y from two image X and Y.
+Multiplies all pairs of pixel values x and y from two images X and Y.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyMatrix">multiplyMatrix</a>  
 Multiplies two matrices with each other.
