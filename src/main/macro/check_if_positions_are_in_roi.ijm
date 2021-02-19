@@ -1,12 +1,26 @@
+// check_if_positions_are_in_rois
+// --------------------------------
+//
+// This exaample script shows how to determine 
+// if a list of points lie within a given 
+// binary mask.
+//
+// Robert Haase, robert.haase@tu-dresden.de
+// February 2021
+//
+//---------------------------------------------
+
+// set up GPU, clean desktop
 run("CLIJ2 Macro Extensions", "cl_device=");
 Ext.CLIJ2_clear();
 run("Clear Results");
 close("*");
 
+// configure image size and points
 image_width = 2560;
 image_height = 2560;
 
-num_points = 2000000;
+num_points = 1000000;
 
 // -----------------------------------------------------------------------
 // make test data
@@ -34,7 +48,8 @@ Ext.CLIJ2_release(pointlist_t);
 // -----------------------------------------------------------------------
 // measure how long it takes to push such a table to GPU
 start_time = getTime();
-Ext.CLIJ2_pushResultsTable(pointlist);
+Ext.CLIJ2_pushResultsTable(pointlist_t);
+Ext.CLIJ2_transposeXY(pointlist_t, pointlist);
 print("Pushing such a table of coordinates to GPU memory takes " + (getTime() - start_time) + " ms");
 
 // -----------------------------------------------------------------------
