@@ -6,7 +6,6 @@ Frees memory of a specified image in GPU memory.
 ### release often follows after
 * <a href="reference_countTouchingNeighbors">countTouchingNeighbors</a> (1)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (3)
-* <a href="reference_pushResultsTable">pushResultsTable</a> (1)
 * <a href="reference_transposeXY">transposeXY</a> (1)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
 * <a href="reference_maximum3DBox">maximum3DBox</a> (1)

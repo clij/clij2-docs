@@ -6,7 +6,7 @@ Converts a table to an image.
 Rows stay rows, columns stay columns.
 
 ### pushResultsTable is often followed by
-* <a href="reference_release">release</a> (1)
+* <a href="reference_transposeXY">transposeXY</a> (1)
 
 
 ### Usage in ImageJ macro

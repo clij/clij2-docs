@@ -14,6 +14,7 @@ destination : Image
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 ### transposeXY often follows after
+* <a href="reference_pushResultsTable">pushResultsTable</a> (1)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 * <a href="reference_pushArray">pushArray</a> (1)
 
