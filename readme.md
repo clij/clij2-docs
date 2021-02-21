@@ -107,6 +107,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Comparing image rotation ImageJ vs. CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ/)
 
 * Media (external resources)
+  * [I2K2020: Designing GPU-accelerated Image Data Flow Graphs for CLIJ2 and clEsperanto](https://www.youtube.com/watch?v=EYsfJ9W6gHw)
   * [GPU-accelerated image processing for the life-sciences, guest lecture at Computer Science Faculty, TU Dresden](https://www.youtube.com/watch?v=_2yBn8MfP-I)
   * [How CLIJ2 can make your bio-image analysis workflows incredibly fast, FocalPlane](https://focalplane.biologists.com/2020/07/14/how-clij-can-make-your-image-analysis-incredibly-fast/)
   * [YouTube NEUBIAS Academy @home](https://youtu.be/uMj0OS1TiQE)
