@@ -71,6 +71,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [Basics](https://clij.github.io/clij2-docs/md/basics/)
   * [Basic image processing](https://clij.github.io/clij2-docs/md/basic_image_processing/)
   * [Binary images, label images and parametric images](https://clij.github.io/clij2-docs/md/image_types/)
+  * [Processing multi-channel time-lapse data](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse/)
   * Filtering and processing images
     * [Crop and paste images](https://clij.github.io/clij2-docs/md/crop_and_paste/)
     * [Gaussian blur](https://clij.github.io/clij2-docs/md/blur/)
@@ -97,7 +98,8 @@ If you search for support, please open a thread on the [image.sc](https://image.
     
   * Statistics and measurements
     * [Images statistics](https://clij.github.io/clij2-docs/md/image_statistics/)
-    * [Pixel statistics on labelled images](https://clij.github.io/clij2-docs/md/measure_statistics/)
+    * [Pixel statistics on labeled images](https://clij.github.io/clij2-docs/md/measure_statistics/)
+    * [Count neighbors](https://clij.github.io/clij2-docs/md/count_neighbors/)
     * [Working with tables](https://clij.github.io/clij2-docs/md/tables/)
     * [Colocalisation measurements using Jaccard index and Sorensen/Dice coefficient](https://clij.github.io/clij2-docs/md/measure_overlap/)
     * [Measuring presence of objects between channels](https://clij.github.io/clij2-docs/md/count_overlap_between_channels/)
