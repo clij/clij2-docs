@@ -81,6 +81,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
 
   * Segmentation and labelling
     * [Labeling](https://clij.github.io/clij2-docs/md/labeling/)
+    * [3D Image Segmentation](https://clij.github.io/clij2-docs/md/image_segmentation_3d/)
     * [Binary images](https://clij.github.io/clij2-docs/md/binary_processing/)
     * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
