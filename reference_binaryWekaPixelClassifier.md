@@ -7,6 +7,9 @@ You can train your own model using menu Plugins > Segmentation > CLIJx Binary We
 
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx-weka_-0.30.1.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_binaryWekaPixelClassifier(Image input, Image destination, String features, String modelfilename);

@@ -5,6 +5,9 @@ Determine maxima with a given tolerance to surrounding maxima and background and
 
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_findAndLabelMaxima(Image input, Image destination, Number tolerance, Boolean invert);

@@ -5,6 +5,9 @@ Determines the maximum intensity projection of an image along Z.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### maximumZProjection often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_rotate3D">rotate3D</a> (1)
@@ -13,6 +16,7 @@ Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 
 ### maximumZProjection is often followed by
+* <a href="reference_saveAsTIF">saveAsTIF</a> (1)
 * <a href="reference_release">release</a> (3)
 * <a href="reference_copySlice">copySlice</a> (2)
 
@@ -147,8 +151,11 @@ cle.maximum_z_projection(source, destination_max)
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/basic_image_processing"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing](https://clij.github.io/clij2-docs/md/basic_image_processing)  
 <a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
+<a href="https://clij.github.io/clij2-docs/md/image_segmentation_3d"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d](https://clij.github.io/clij2-docs/md/image_segmentation_3d)  
 <a href="https://clij.github.io/clij2-docs/md/maximumProjection"><img src="images/language_macro.png" height="20"/></a> [maximumProjection](https://clij.github.io/clij2-docs/md/maximumProjection)  
+<a href="https://clij.github.io/clij2-docs/md/process_multichannel_timelapse"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse)  
 <a href="https://clij.github.io/clij2-docs/md/superpixel_segmentation"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation)  
 <a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/inspecting_3d_images.ipynb"><img src="images/language_python.png" height="20"/></a> [inspecting_3d_images.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/inspecting_3d_images.ipynb)  
@@ -160,11 +167,14 @@ cle.maximum_z_projection(source, destination_max)
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/bigImageTransfer.ijm"><img src="images/language_macro.png" height="20"/></a> [bigImageTransfer.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/bigImageTransfer.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/maximumProjection.ijm"><img src="images/language_macro.png" height="20"/></a> [maximumProjection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/maximumProjection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_5D_stack.ijm"><img src="images/language_macro.png" height="20"/></a> [process_5D_stack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_5D_stack.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/superpixel_segmentation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  

@@ -5,6 +5,9 @@ By Robert Haase based on work by Uwe Schmidt
 
 Fuses #n# image stacks using Tenengrads algorithm.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_tenengradFusion(Image input, Image destination, Number number_of_substacks, Number sigmaX, Number sigmaY, Number sigmaZ, Number exponent);

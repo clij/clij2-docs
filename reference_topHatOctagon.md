@@ -7,6 +7,9 @@ Applies a minimum filter with kernel size 3x3 n times to an image iteratively.
 
 Categories:  Background, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_topHatOctagon(Image input, Image destination, Number iterations);

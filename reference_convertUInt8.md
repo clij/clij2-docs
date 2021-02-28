@@ -7,6 +7,9 @@ Pixel values are copied as they are. Use multiplyImageWithScalar in order to sca
 The target image should not exist with a different type before this 
 method is called.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### convertUInt8 often follows after
 * <a href="reference_convertFloat">convertFloat</a> (1)
 

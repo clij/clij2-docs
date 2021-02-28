@@ -5,6 +5,9 @@ Determines the mean average intensity projection of an image along X.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanXProjection(Image source, Image destination);
@@ -130,6 +133,18 @@ cle.mean_x_projection(source, destination)
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/basic_image_processing"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing](https://clij.github.io/clij2-docs/md/basic_image_processing)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

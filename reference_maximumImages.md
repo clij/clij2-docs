@@ -7,6 +7,9 @@ Computes the maximum of a pair of pixel values x, y from two given images X and 
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maximumImages(Image source1, Image source2, Image destination);

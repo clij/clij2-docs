@@ -194,6 +194,36 @@ Inspired by Grayscale attribute filtering from MorpholibJ library by David Legla
 <a name="I"></a>
 
 ## I
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2FrangiVesselness">imageJ2FrangiVesselness (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Frangi Vesselness filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2GaussianBlur">imageJ2GaussianBlur (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Gaussian Blur to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2MedianBox">imageJ2MedianBox (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Median filter with a Sphere shape to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2MedianSphere">imageJ2MedianSphere (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Median filter with a Sphere shape to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2RichardsonLucyDeconvolution">imageJ2RichardsonLucyDeconvolution (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Richardson Lucy Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2Tubeness">imageJ2Tubeness (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Tubeness filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJFillHoles">imageJFillHoles (Experimental)</a>  
+Apply ImageJs Watershed algorithm to a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJGaussianBlur">imageJGaussianBlur (Experimental)</a>  
+Apply ImageJs Gaussian Blur to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJVariance">imageJVariance (Experimental)</a>  
+Apply ImageJs Variance filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJWatershed">imageJWatershed (Experimental)</a>  
+Apply ImageJs Watershed algorithm to a binary image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_intensityCorrection">intensityCorrection (Experimental)</a>  
 Determines the mean intensity of the image stack and multiplies it with a factor so that the mean intensity becomes equal to a given value.
 
@@ -332,6 +362,18 @@ Takes a label image and a parametric intensity image and will replace each label
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_modeOfTouchingNeighborsMap">modeOfTouchingNeighborsMap (Experimental)</a>  
 Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the most popular value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJClassicWatershed">morphoLibJClassicWatershed (Experimental)</a>  
+Apply MorpholibJs Classic Watershed to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJFillHoles">morphoLibJFillHoles (Experimental)</a>  
+Apply MorpholibJ Fill Holes (Binary/Gray) to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJKeepLargestRegion">morphoLibJKeepLargestRegion (Experimental)</a>  
+Apply MorpholibJ Keep Largest Region to a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJMarkerControlledWatershed">morphoLibJMarkerControlledWatershed (Experimental)</a>  
+Apply MorpholibJs Marker-controlled Watershed to an image.
+
 <a name="N"></a>
 
 ## N
@@ -397,6 +439,75 @@ Takes a label map (seeds) and an input image with gray values to apply the water
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_shrinkLabels">shrinkLabels (Experimental)</a>  
 Extend labels with a given radius.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBilateral">simpleITKBilateral (Experimental)</a>  
+Apply SimpleITKs Bilateral filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinaryFillhole">simpleITKBinaryFillhole (Experimental)</a>  
+Apply SimpleITKs Binary Fill hole to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinaryPruning">simpleITKBinaryPruning (Experimental)</a>  
+Apply SimpleITKs Binary Pruning to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinaryThinning">simpleITKBinaryThinning (Experimental)</a>  
+Apply SimpleITKs Binary Thinning to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinomialBlur">simpleITKBinomialBlur (Experimental)</a>  
+Apply SimpleITKs Binomial Blur filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBoundedReciprocal">simpleITKBoundedReciprocal (Experimental)</a>  
+Apply SimpleITKs BoundedReciprocal to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKCannyEdgeDetection">simpleITKCannyEdgeDetection (Experimental)</a>  
+Apply SimpleITKs Canny edge detection filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKConnectedComponent">simpleITKConnectedComponent (Experimental)</a>  
+Apply SimpleITKs ConnectedComponent to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKDanielssonDistanceMap">simpleITKDanielssonDistanceMap (Experimental)</a>  
+Generate SimpleITKs Danielsson distance map from a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKDiscreteGaussian">simpleITKDiscreteGaussian (Experimental)</a>  
+Apply SimpleITKs Gaussian Blur to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKFFTConvolution">simpleITKFFTConvolution (Experimental)</a>  
+Convolve an image with a kernel image using SimpleITK and a fast Fourier transform (FFT).
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKHMaxima">simpleITKHMaxima (Experimental)</a>  
+Apply SimpleITKs H-Maxima filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKInverseDeconvolution">simpleITKInverseDeconvolution (Experimental)</a>  
+Apply SimpleITKs Inverse Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKLandweberDeconvolution">simpleITKLandweberDeconvolution (Experimental)</a>  
+Apply SimpleITKs Landweber Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKMedian">simpleITKMedian (Experimental)</a>  
+Apply SimpleITKs Median filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKMedianProjection">simpleITKMedianProjection (Experimental)</a>  
+Apply SimpleITKs Median projection to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKMorphologicalWatershed">simpleITKMorphologicalWatershed (Experimental)</a>  
+Apply SimpleITKs Morphological Watershed filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKOtsuMultipleThresholds">simpleITKOtsuMultipleThresholds (Experimental)</a>  
+Apply SimpleITKs Otsu Multiple Thresholds to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKOtsuThreshold">simpleITKOtsuThreshold (Experimental)</a>  
+Apply SimpleITKs Otsu Thresholding to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKTikhonovDeconvolution">simpleITKTikhonovDeconvolution (Experimental)</a>  
+Apply SimpleITKs Tikhonov Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKWienerDeconvolution">simpleITKWienerDeconvolution (Experimental)</a>  
+Apply SimpleITKs Wiener Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossing">simpleITKZeroCrossing (Experimental)</a>  
+Apply SimpleITKs ZeroCrossing to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossingBasedEdgeDetection">simpleITKZeroCrossingBasedEdgeDetection (Experimental)</a>  
+Apply SimpleITKs ZeroCrossingBasedEdgeDetection to an image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_skeletonize">skeletonize (Experimental)</a>  
 Erodes a binary image until just its skeleton is left. 
@@ -473,4 +584,4 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
-146 methods listed.
+184 methods listed.

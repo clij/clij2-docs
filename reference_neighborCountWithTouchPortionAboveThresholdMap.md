@@ -7,6 +7,9 @@ Starts from a label map, determines touch portion to neighbors, counts those abo
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_neighborCountWithTouchPortionAboveThresholdMap(Image labels, Image map_destination, Number minimum_touch_portion);

@@ -5,6 +5,9 @@ Determines the minimum intensity projection of all pixels in an image above a gi
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_minimumZProjectionThresholdedBounded(Image source, Image destination_min, Number min_z, Number max_z);

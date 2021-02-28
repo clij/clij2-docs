@@ -3,7 +3,22 @@
 
 Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary image.
 
+Note: This function is known to perform slowly on large images. Consider using the extension 
+CLIJx_morphoLibJFillHoles(input, destination) instead.
+Read more: http://clij.github.io/assistant/installation#extensions
+
+### Parameters
+
+source : Image
+    The binary input image where holes will be filled.
+destination : Image
+    The output image where true pixels will be 1.
+
+
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### Usage in ImageJ macro
 ```

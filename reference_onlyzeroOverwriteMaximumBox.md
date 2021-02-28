@@ -3,6 +3,9 @@
 
 Apply a local maximum filter to an image which only overwrites pixels with value 0.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### onlyzeroOverwriteMaximumBox often follows after
 * <a href="reference_onlyzeroOverwriteMaximumBox">onlyzeroOverwriteMaximumBox</a> (1)
 

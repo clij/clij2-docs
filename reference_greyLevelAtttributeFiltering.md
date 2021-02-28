@@ -14,6 +14,9 @@ It is recommended that low values be used for number of bins, especially for lar
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_greyLevelAtttributeFiltering(Image source, Image destination, Number number_of_bins, Number minimum_pixel_count);

@@ -7,6 +7,9 @@ All pixels other than on the line are untouched. Consider using `set(buffer, 0);
 
 Category: Visualisation
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_drawLine(Image destination, Number x1, Number y1, Number z1, Number x2, Number y2, Number z2, Number thickness, Number value);
@@ -158,6 +161,7 @@ cle.draw_line(destination, x1, y1, z1, x2, y2, z2, thickness, value)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/grid.ijm"><img src="images/language_macro.png" height="20"/></a> [grid.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/grid.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm"><img src="images/language_macro.png" height="20"/></a> [tubeness.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

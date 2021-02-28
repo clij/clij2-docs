@@ -7,6 +7,13 @@ The resulting label map is written to the output.
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
+### voronoiLabeling often follows after
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_voronoiLabeling(Image input, Image destination);
@@ -137,6 +144,8 @@ cle.voronoi_labeling(input, destination)
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/count_neighbors"><img src="images/language_macro.png" height="20"/></a> [count_neighbors](https://clij.github.io/clij2-docs/md/count_neighbors)  
+<a href="https://clij.github.io/clij2-docs/md/image_types"><img src="images/language_macro.png" height="20"/></a> [image_types](https://clij.github.io/clij2-docs/md/image_types)  
 <a href="https://clij.github.io/clij2-docs/md/labelmap_voronoi"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi](https://clij.github.io/clij2-docs/md/labelmap_voronoi)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/spots_pointlists_matrices_tables.ipynb"><img src="images/language_python.png" height="20"/></a> [spots_pointlists_matrices_tables.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/spots_pointlists_matrices_tables.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/voronoi_diagrams.ipynb"><img src="images/language_python.png" height="20"/></a> [voronoi_diagrams.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/voronoi_diagrams.ipynb)  
@@ -147,6 +156,8 @@ cle.voronoi_labeling(input, destination)
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [count_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_neighbors.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_types.ijm"><img src="images/language_macro.png" height="20"/></a> [image_types.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_types.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/labelmap_voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/labelmap_voronoi.ijm)  
 
 

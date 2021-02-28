@@ -7,6 +7,9 @@ It is recommended that the kernel image has an odd size in X, Y and Z.
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### convolve often follows after
 * <a href="reference_create3D">create3D</a> (1)
 

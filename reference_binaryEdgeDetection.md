@@ -14,6 +14,9 @@ destination : Image
 
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### binaryEdgeDetection often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)

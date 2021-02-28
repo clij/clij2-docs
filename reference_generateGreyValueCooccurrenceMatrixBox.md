@@ -10,6 +10,9 @@ The resulting co-occurrence matrix contains probability values between 0 and 1.
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateGreyValueCooccurrenceMatrixBox(Image integer_image, Image grey_value_cooccurrence_matrix_destination, Number min_grey_value, Number max_grey_value);

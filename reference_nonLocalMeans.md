@@ -7,6 +7,9 @@ Applies a non-local means filter using a box neighborhood with a Gaussian weight
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_nonLocalMeans(Image input, Image destination, Number radiusX, Number radiusY, Number radiusZ, Number sigma);

@@ -3,6 +3,9 @@
 
 null
 
+Availability: Available in Fiji by activating the update site clij.
+This function is part of clij-core-1.7.4.0.jar.
+
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

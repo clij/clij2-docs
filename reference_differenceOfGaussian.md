@@ -22,6 +22,9 @@ sigma2_y : float
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter),  Noise, Background
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_differenceOfGaussian(Image input, Image destination, Number sigma1x, Number sigma1y, Number sigma2x, Number sigma2y);

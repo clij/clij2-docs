@@ -5,7 +5,26 @@ Crops a given rectangle out of a given image.
 
 Note: If the destination image pre-exists already, it will be overwritten and keep it's dimensions.
 
+### Parameters
+
+source : Image
+    The image where a part will be cropped out.
+destination : Image
+    The cropped image will be stored in this variable.
+start_x : Number
+    The horizontal position of the region to crop in the source image.
+start_y : Number
+    The vertical position of the region to crop in the source image.
+width : Number
+    The width of the region to crop in the source image.
+height : Number
+    The height of the region to crop in the source image.
+
+
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### crop2D often follows after
 * <a href="reference_paste2D">paste2D</a> (1)

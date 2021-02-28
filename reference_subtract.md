@@ -7,6 +7,9 @@ Subtracts one image X from another image Y pixel wise.
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_subtract(Image subtrahend, Image minuend, Image destination);

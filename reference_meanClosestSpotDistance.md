@@ -7,6 +7,9 @@ Takes two binary images A and B with marked spots and determines for each spot i
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanClosestSpotDistance(Image spotsA, Image spotsB, Boolean bidirectional);

@@ -8,6 +8,9 @@ is applied. In ImageJ the method which is similar is called 'Interpolation metho
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### downsample2D often follows after
 * <a href="reference_subtractImages">subtractImages</a> (1)
 

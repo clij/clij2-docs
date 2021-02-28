@@ -12,7 +12,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Detection](https://clij.github.io/clij2-docs/reference__pyclesperanto), CLIc
 
-<a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>, C, D, E, F,<a href="#G">\[G\]</a>, H, I, J,<a href="#K">\[K\]</a>, L, M, N, O, P, Q, R, S,<a href="#T">\[T\]</a>, U,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
+<a href="#A">\[A\]</a>,<a href="#B">\[B\]</a>, C, D, E, F,<a href="#G">\[G\]</a>, H, I, J,<a href="#K">\[K\]</a>, L,<a href="#M">\[M\]</a>, N, O, P, Q, R,<a href="#S">\[S\]</a>,<a href="#T">\[T\]</a>, U,<a href="#V">\[V\]</a>,<a href="#W">\[W\]</a>, X, Y, Z
 
 <a name="A"></a>
 
@@ -46,6 +46,30 @@ Generates a feature image for Trainable Weka Segmentation.
 ## K
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_kMeansLabelClusterer">kMeansLabelClusterer (Experimental)</a>  
 Applies K-Means clustering to an image and a corresponding label map. 
+
+<a name="M"></a>
+
+## M
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJMorphologicalSegmentationLabelBorderImage">morphoLibJMorphologicalSegmentationLabelBorderImage (Experimental)</a>  
+Apply MorpholibJ Morphological Segmentation to an object image to produce a label image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJMorphologicalSegmentationLabelObjectImage">morphoLibJMorphologicalSegmentationLabelObjectImage (Experimental)</a>  
+Apply MorpholibJ Morphological Segmentation to an object image to produce a label image. 
+
+<a name="S"></a>
+
+## S
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKOtsuMultipleThresholds">simpleITKOtsuMultipleThresholds (Experimental)</a>  
+Apply SimpleITKs Otsu Multiple Thresholds to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKOtsuThreshold">simpleITKOtsuThreshold (Experimental)</a>  
+Apply SimpleITKs Otsu Thresholding to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossing">simpleITKZeroCrossing (Experimental)</a>  
+Apply SimpleITKs ZeroCrossing to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossingBasedEdgeDetection">simpleITKZeroCrossingBasedEdgeDetection (Experimental)</a>  
+Apply SimpleITKs ZeroCrossingBasedEdgeDetection to an image.
 
 <a name="T"></a>
 
@@ -131,4 +155,4 @@ Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_wekaRegionalLabelClassifier">wekaRegionalLabelClassifier (Experimental)</a>  
 Applies a pre-trained CLIJx-Weka model to an image and a corresponding label map to classify labeled objects.
 
-32 methods listed.
+38 methods listed.

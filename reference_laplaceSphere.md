@@ -5,6 +5,9 @@ Applies the Laplace operator (Diamond neighborhood) to an image.
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_laplaceSphere(Image input, Image destination);

@@ -7,6 +7,9 @@ For example, if labels 3 in labelmap1 and 4 in labelmap2 are touching then the p
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateBinaryOverlapMatrix(Image label_map1, Image label_map2, Image binary_overlap_matrix_destination);

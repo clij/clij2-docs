@@ -10,6 +10,9 @@ classification results (the most popular class) will be determined after cluster
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_kMeansLabelClusterer(Image input, Image label_map, Image destination, String features, String modelfilename, Number number_of_classes, Number neighbor_radius, Boolean train);

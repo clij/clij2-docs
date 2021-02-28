@@ -1,12 +1,25 @@
 ## create2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
-Allocated memory for a new 2D image in the GPU memory. 
+Allocated memory for a new 2D image in the GPU memory.
 
-BitDepth must be 8 (unsigned byte), 16 (unsigned short) or 32 (float).
+Parameters
+----------
+destination : Image
+    The new image will be stored in this variable.
+width : Number
+    The width of the new image.
+height : Number
+    The height of the new image.
+bit-depth : Number
+    The bit-depth of the new image. Can be either 8, 16 or 32, to create an image of unsigned-byte, unsigned-short or float type.
+
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### create2D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (6)
+* <a href="reference_getDimensions">getDimensions</a> (8)
 
 
 ### create2D is often followed by
@@ -25,6 +38,7 @@ Ext.CLIJ2_create2D(Image destination, Number width, Number height, Number bitDep
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/basic_image_processing"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing](https://clij.github.io/clij2-docs/md/basic_image_processing)  
 <a href="https://clij.github.io/clij2-docs/md/crop_and_paste"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste](https://clij.github.io/clij2-docs/md/crop_and_paste)  
 <a href="https://clij.github.io/clij2-docs/md/filtering_in_graphs"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs)  
 <a href="https://clij.github.io/clij2-docs/md/matrix_multiply"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply](https://clij.github.io/clij2-docs/md/matrix_multiply)  
@@ -52,6 +66,7 @@ Ext.CLIJ2_create2D(Image destination, Number width, Number height, Number bitDep
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm"><img src="images/language_macro.png" height="20"/></a> [allocateBig2DImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/allocateBig2DImages.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [centroid_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/centroid_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/check_if_positions_are_in_roi.ijm"><img src="images/language_macro.png" height="20"/></a> [check_if_positions_are_in_roi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/check_if_positions_are_in_roi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/createImages.ijm"><img src="images/language_macro.png" height="20"/></a> [createImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/createImages.ijm)  

@@ -5,6 +5,9 @@ Meshes all points in a given point list which are indiced in a corresponding ind
 
 Categories:  Visualisation, [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pointIndexListToMesh(Image pointlist, Image indexlist, Image mesh_destination);

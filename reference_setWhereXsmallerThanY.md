@@ -8,6 +8,9 @@ If you want to initialize an identity transfrom matrix, set all pixels to 0 firs
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setWhereXsmallerThanY(Image source, Number value);

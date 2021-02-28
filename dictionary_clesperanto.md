@@ -191,7 +191,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * ClearCLImageInterface apply_vector_field(ClearCLImageInterface arg1, ClearCLImageInterface arg2, ClearCLImageInterface arg3, ClearCLImageInterface arg4, ClearCLImageInterface arg5)
 
 **Macro**
-* Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, ByRef Image destination)
+* Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, ByRef Image destination)
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
@@ -207,7 +207,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * ClearCLImageInterface apply_vector_field2d(ClearCLImageInterface source, ClearCLImageInterface vectorX, ClearCLImageInterface vectorY, ClearCLImageInterface destination)
 
 **Macro**
-* Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, ByRef Image destination)
+* Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, ByRef Image destination)
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
@@ -246,7 +246,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * <span style="color:red">(Missing)</span>
 
 **Macro**
-* Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, ByRef Image destination)
+* Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, ByRef Image destination)
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
@@ -376,7 +376,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * ClearCLBuffer average_distance_of_n_closest_points(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3)
 
 **Macro**
-* Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image distance_list_destination, Number nClosestPointsTofind)
+* Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, ByRef Image distance_list_destination, Number n_closest_points_to_find)
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
@@ -392,7 +392,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * ClearCLBuffer average_distance_of_n_far_off_points(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3)
 
 **Macro**
-* Ext.CLIJ2_averageDistanceOfNFarOffPoints(Image distance_matrix, ByRef Image distance+_list_destination, Number nFarOffPointsTofind)
+* Ext.CLIJ2_averageDistanceOfNFarOffPoints(Image distance_matrix, ByRef Image distance+_list_destination, Number n_far_off_points_to_find)
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
@@ -660,6 +660,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJ2_blur3DSliceBySlice(Image source, ByRef Image destination, Number sigmaX, Number sigmaY)
+
+## bonej_connected_components_labeling
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_boneJConnectedComponentsLabeling(Image input, ByRef Image destination)
+
+## bonej_skeletonize
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_boneJSkeletonize3D(Image input, ByRef Image destination)
 
 ## bottom_hat_box
 **CLIJ2**
@@ -975,12 +987,30 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_convertRGBStackToGraySlice(Image stack_source, ByRef Image slice_destination)
 
+## convert_to_float
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_convertToFloat(Image input, ByRef Image destination)
+
 ## convert_to_binary
 <span style="color:green">(experimental)</span>
 
 **CLIJx**
 * boolean convertToImageJBinary(ClearCLBuffer arg1, ClearCLBuffer arg2)
 * boolean convertToImageJBinary(ClearCLImage arg1, ClearCLImage arg2)
+
+## convert_to_unsigned_byte
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_convertToUnsignedByte(Image input, ByRef Image destination)
+
+## convert_to_unsigned_short
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_convertToUnsignedShort(Image input, ByRef Image destination)
 
 ## convert_u_int16
 <span style="color:green">(experimental)</span>
@@ -3103,6 +3133,67 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
+## frangi_vesselness
+<span style="color:green">(experimental)</span>
+
+## gaussian_blur
+<span style="color:green">(experimental)</span>
+
+**clEsperantoJ**
+* ClearCLImageInterface gaussian_blur(ClearCLImageInterface arg1, ClearCLImageInterface arg2, double arg3, double arg4)
+* ClearCLImageInterface gaussian_blur(ClearCLImageInterface arg1, ClearCLImageInterface arg2, double arg3, double arg4, double arg5)
+
+**Macro**
+* Ext.CLIJx_imageJ2GaussianBlur(Image input, ByRef Image destination, Number sigma_x, Number sigma_y, Number sigma_z)
+
+**pyclesperanto**
+* gaussian_blur(source : Image, destination : Image = None, sigma_x : float = 0, sigma_y : float = 0, sigma_z : float = 0):
+
+## median_box
+<span style="color:green">(experimental)</span>
+
+## median_sphere
+<span style="color:green">(experimental)</span>
+
+## richardson_lucy_deconvolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imageJ2RichardsonLucyDeconvolution(Image input, Image kernel_input, ByRef Image destination, Number num_iterations)
+
+## tubeness
+<span style="color:green">(experimental)</span>
+
+## image_j_suite_connected_components_labeling
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imageJ3DSuiteConnectedComponentsLabeling(Image input, ByRef Image destination)
+
+## image_j_fill_holes
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imageJFillHoles(Image input, ByRef Image destination)
+
+## image_j_gaussian_blur
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imageJGaussianBlur(Image input, ByRef Image destination, Number sigma_x, Number sigma_y, Number sigma_z)
+
+## image_j_variance
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imageJVariance(Image input, ByRef Image destination, Number sigma_x, Number sigma_y, Number sigma_z)
+
+## image_j_watershed
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imageJWatershed(Image input, ByRef Image destination)
+
 ## image_to_stack
 **CLIJ2**
 * boolean imageToStack(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3)
@@ -3118,6 +3209,12 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
+
+## imglib2_connected_components_labeling
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_imglib2ConnectedComponentsLabeling(Image input, ByRef Image destination)
 
 ## imread
 <span style="color:green">(experimental)</span>
@@ -5131,6 +5228,72 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * mode_of_touching_neighbors_map(parametric_map : Image, label_map : Image, parametric_map_destination : Image = None, radius : int = 1, ignore_touching_background : bool = True):
 
+## chamfer_distance_map
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJChamferDistanceMap(Image input, ByRef Image destination)
+
+## classic_watershed
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJClassicWatershed(Image gradient_input, Image binary_restriction_input, ByRef Image destination, Number h_min, Number h_max)
+
+## extended_maxima
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJExtendedMaxima(Image input, ByRef Image binary_destination, Number tolerance_threshold)
+
+## extended_minima
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJExtendedMinima(Image input, ByRef Image binary_destination, Number tolerance_threshold)
+
+## fill_holes
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJFillHoles(Image input, ByRef Image destination)
+
+## flood_fill_components_labeling
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJFloodFillComponentsLabeling(Image input, ByRef Image destination)
+
+## keep_largest_region
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJKeepLargestRegion(Image binary_input, ByRef Image binary_destination)
+
+## marker_controlled_watershed
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJMarkerControlledWatershed(Image gradient_input, Image labelled_spots_image, Image binary_restriction_input, ByRef Image destination)
+
+## morphological_segmentation_label_border_image
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJMorphologicalSegmentationLabelBorderImage(Image input, ByRef Image labels_destination, Number tolerance_threshold)
+
+## morphological_segmentation_label_object_image
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJMorphologicalSegmentationLabelObjectImage(Image input, ByRef Image labels_destination, Number gradient_radius, Number tolerance_threshold)
+
+## remove_largest_region
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_morphoLibJRemoveLargestRegion(Image labels_input, ByRef Image labels_destination, Boolean left, Boolean right, Boolean top, Boolean bottom, Boolean front, Boolean back)
+
 ## multiply_image_and_coordinate
 **CLIJ2**
 * boolean multiplyImageAndCoordinate(ClearCLImageInterface arg1, ClearCLImageInterface arg2, double arg3)
@@ -7006,6 +7169,150 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_similar(Image input_image1, Image input_image2, ByRef Image binary_destination, Number tolerance)
 
+## bilateral
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKBilateral(Image input, ByRef Image destination, Number domainSigma, Number rangeSigma, Number numberOfRangeGaussianSamples)
+
+## binary_fillhole
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKBinaryFillhole(Image input, ByRef Image destination)
+
+## binary_pruning
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKBinaryPruning(Image input, ByRef Image destination)
+
+## binary_thinning
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKBinaryThinning(Image input, ByRef Image destination)
+
+## binomial_blur
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKBinomialBlur(Image input, ByRef Image destination, Number repetitions)
+
+## bounded_reciprocal
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKBoundedReciprocal(Image input, ByRef Image destination)
+
+## canny_edge_detection
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKCannyEdgeDetection(Image input, ByRef Image destination, Number lower_threshold, Numer upper_threshold, Number variance, Number maximum_error)
+
+## connected_component
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKConnectedComponent(Image input, ByRef Image destination)
+
+## danielsson_distance_map
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKDanielssonDistanceMap(Image input, ByRef Image destination)
+
+## discrete_gaussian
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKDiscreteGaussian(Image input, ByRef Image destination, Number sigma_x, Number sigma_y, Number sigma_z)
+
+## fft_convolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKFFTConvolution(Image input, Image input_kernel, ByRef Image destination)
+
+## h_maxima
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKHMaxima(Image input, ByRef Image destination, Number h)
+
+## inverse_deconvolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKInverseDeconvolution(Image input, Image input_psf, ByRef Image destination, Number kernelZeroMagnitudeThreshold, Boolean normalize)
+
+## landweber_deconvolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKLandweberDeconvolution(Image input, Image input_psf, ByRef Image destination, Number alpha)
+
+## median
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKMedian(Image input, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
+
+## median_projection
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKMedianProjection(Image input, ByRef Image destination)
+
+## morphological_watershed
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKMorphologicalWatershed(Image input, ByRef Image destination, Number level)
+
+## otsu_multiple_thresholds
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKOtsuMultipleThresholds(Image input, ByRef Image destination, Number number_of_thresholds)
+
+## otsu_threshold
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKOtsuThreshold(Image input, ByRef Image destination)
+
+## tikhonov_deconvolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKTikhonovDeconvolution(Image input, Image input_psf, ByRef Image destination, Number regularisation_constant, Boolean normalize)
+
+## wiener_deconvolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKWienerDeconvolution(Image input, Image input_psf, ByRef Image destination, Number noise_variance, Boolean normalize)
+
+## zero_crossing
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKZeroCrossing(Image input, ByRef Image destination)
+
+## zero_crossing_based_edge_detection
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKZeroCrossingBasedEdgeDetection(Image input, ByRef Image destination, Number variance, Number maximum_error)
+
+## simple_itk_richardson_lucy_deconvolution
+<span style="color:green">(experimental)</span>
+
+**Macro**
+* Ext.CLIJx_simpleITKRichardsonLucyDeconvolution(Image input, Image input_psf, ByRef Image destination, Number num_iterations, Boolean normalize)
+
 ## sinus
 <span style="color:green">(experimental)</span>
 
@@ -8540,4 +8847,4 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 
 
-593 methods listed.
+645 methods listed.

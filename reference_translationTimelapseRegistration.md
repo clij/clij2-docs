@@ -3,6 +3,9 @@
 
 Applies 2D translation registration to every pair of t, t+1 slices of a 2D+t image stack.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_translationTimelapseRegistration(Image input, Image output);

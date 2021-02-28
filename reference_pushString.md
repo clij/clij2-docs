@@ -15,6 +15,9 @@ spaces for x. For example this string is converted to an image with width=4, hei
 1 2 3 4
 
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pushString(Image destination, String input, Number width, Number height, Number depth);

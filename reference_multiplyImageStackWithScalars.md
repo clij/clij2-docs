@@ -7,6 +7,9 @@ Multiplies all pixels value x in a given image X with a constant scalar s from a
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_multiplyImageStackWithScalars(Image source, Image destination, Array scalars);

@@ -3,7 +3,18 @@
 
 Takes a labelmap and returns an image where all pixels on label edges are set to 1 and all other pixels to 0.
 
+### Parameters
+
+label_map : Image
+    The label image where edges between labels will be detected.
+edge_image_destination : Number
+    Binary image where edges were marked with value 1 and all other pixels will be set to 0.
+
+
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### detectLabelEdges often follows after
 * <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)

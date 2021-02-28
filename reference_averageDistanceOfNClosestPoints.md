@@ -5,7 +5,21 @@ Determines the average of the n closest points for every point in a distance mat
 
 This corresponds to the average of the n minimum values (rows) for each column of the distance matrix.
 
+### Parameters
+
+distance_matrix : Image
+    The a distance matrix to be processed.
+distance_list_destination : Image
+    A vector image with the same width as the distance matrix and height=1, depth=1.
+    Determined average distances will be written into this vector.
+n_closest_points_to_find : Number
+    Number of smallest distances which should be averaged.
+
+
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### averageDistanceOfNClosestPoints often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
@@ -13,7 +27,7 @@ Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measu
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, Image distance_list_destination, Number nClosestPointsTofind);
+Ext.CLIJ2_averageDistanceOfNClosestPoints(Image distance_matrix, Image distance_list_destination, Number n_closest_points_to_find);
 ```
 
 
@@ -34,12 +48,12 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 // get input parameters
 ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
 distance_list_destination = clij2.create(distance_matrix);
-int nClosestPointsTofind = 10;
+int n_closest_points_to_find = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, nClosestPointsTofind);
+clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, n_closest_points_to_find);
 </pre>
 
 <pre class="highlight">
@@ -67,12 +81,12 @@ clij2 = init_clatlab();
 % get input parameters
 distance_matrix = clij2.pushMat(distance_matrix_matrix);
 distance_list_destination = clij2.create(distance_matrix);
-nClosestPointsTofind = 10;
+n_closest_points_to_find = 10;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, nClosestPointsTofind);
+clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, n_closest_points_to_find);
 </pre>
 
 <pre class="highlight">
@@ -103,12 +117,12 @@ clij2 = CLICY.getInstance();
 distance_matrix_sequence = getSequence();
 distance_matrix = clij2.pushSequence(distance_matrix_sequence);
 distance_list_destination = clij2.create(distance_matrix);
-nClosestPointsTofind = 10;
+n_closest_points_to_find = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, nClosestPointsTofind);
+clij2.averageDistanceOfNClosestPoints(distance_matrix, distance_list_destination, n_closest_points_to_find);
 </pre>
 
 <pre class="highlight">

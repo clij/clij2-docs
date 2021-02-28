@@ -7,6 +7,9 @@ Odd iterations are done with box neighborhood, even iterations with a diamond. T
 
 Categories:  Background, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_topHatOctagonSliceBySlice(Image input, Image destination, Number iterations);

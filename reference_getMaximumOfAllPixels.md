@@ -7,6 +7,9 @@ It will be stored in the variable maximum_of_all_pixels.
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### getMaximumOfAllPixels often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)

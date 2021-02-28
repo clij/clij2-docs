@@ -5,6 +5,9 @@ Applies a scaling operation using linear interpolation to generate an image stac
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_makeIsotropic(Image input, Image destination, Number original_voxel_size_x, Number original_voxel_size_y, Number original_voxel_size_z, Number new_voxel_size);

@@ -9,6 +9,9 @@ Convention: Given two point lists with dimensionality n * d and m * d, the dista
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### generateDistanceMatrix often follows after
 * <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (1)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)

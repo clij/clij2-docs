@@ -6,6 +6,9 @@ Detects local minima in a given square/cubic neighborhood.
 Pixels in the resulting image are set to 1 if there is no other pixel in a given radius which has a 
 lower intensity, and to 0 otherwise.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_detectMinimaBox(Image source, Image destination, Number radius);

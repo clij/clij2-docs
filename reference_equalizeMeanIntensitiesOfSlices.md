@@ -7,6 +7,17 @@ This functionality is similar to the 'Simple Ratio Bleaching Correction' in Fiji
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
+### equalizeMeanIntensitiesOfSlices often follows after
+* <a href="reference_scale3D">scale3D</a> (1)
+
+
+### equalizeMeanIntensitiesOfSlices is often followed by
+* <a href="reference_topHatBox">topHatBox</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_equalizeMeanIntensitiesOfSlices(Image input, Image destination, Number referenceSlice);
@@ -118,6 +129,18 @@ clij2.release(destination);
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/image_segmentation_3d"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d](https://clij.github.io/clij2-docs/md/image_segmentation_3d)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

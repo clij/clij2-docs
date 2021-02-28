@@ -8,6 +8,9 @@ Note that indexing in the vector starts at zero. The 0th entry corresponds to ba
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement),  Visualisation, [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_generateParametricImage(Image label_map, Image parameter_value_vector, Image parametric_image_destination);

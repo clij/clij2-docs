@@ -34,6 +34,9 @@ angle_matrix_destination
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateAngleMatrix(Image coordinate_list1, Image coordinate_list2, Image angle_matrix_destination);

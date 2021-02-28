@@ -200,7 +200,16 @@ Convert the input image to a float image with 32 bits per pixel.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertRGBStackToGraySlice">convertRGBStackToGraySlice (Experimental)</a>  
 Converts a three channel image (stack with three slices) to a single channel image (2D image) by multiplying with factors 0.299, 0.587, 0.114.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertToFloat">convertToFloat (Experimental)</a>  
+Convert image to 32-bit float pixel type.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertToImageJBinary">convertToImageJBinary</a>  
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertToUnsignedByte">convertToUnsignedByte (Experimental)</a>  
+Convert image to 8-bit unsigned byte pixel type.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertToUnsignedShort">convertToUnsignedShort (Experimental)</a>  
+Convert image to 16-bit unsigned short pixel type.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_convertUInt16">convertUInt16</a>  
 Convert the input image to a unsigned integer image with 16 bits per pixel.
 
@@ -235,10 +244,10 @@ Counts non-zero voxels in a sphere around every voxel.
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_create2D">create2D</a>  
-Allocated memory for a new 2D image in the GPU memory. 
+Allocated memory for a new 2D image in the GPU memory.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_create3D">create3D</a>  
-Allocated memory for a new 3D image in the GPU memory. 
+Allocated memory for a new 3D image in the GPU memory.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crop2D">crop2D</a>  
 Crops a given rectangle out of a given image. 
@@ -459,10 +468,10 @@ Finds and labels local maxima with neighboring maxima and background above a giv
 Determines which labels in a label map touch the edges of the image (in X, Y and Z if the image is 3D). 
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip2D">flip2D</a>  
-Flips an image in X and/or Y direction depending on boolean flags.
+Flips an image in X and/or Y direction depending on if flip_x and/or flip_y are set to true or false.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip3D">flip3D</a>  
-Flips an image in X, Y and/or Z direction depending on boolean flags.
+Flips an image in X, Y and/or Z direction depending on if flip_x, flip_y and/or flip_z are set to true or false.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_floodFillDiamond">floodFillDiamond</a>  
 Replaces recursively all pixels of value a with value b if the pixels have a neighbor with value b.
@@ -605,8 +614,44 @@ Determines the histogram of a given image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_image2DToResultsTable">image2DToResultsTable</a>  
 Converts an image into a table.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2FrangiVesselness">imageJ2FrangiVesselness (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Frangi Vesselness filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2GaussianBlur">imageJ2GaussianBlur (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Gaussian Blur to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2MedianBox">imageJ2MedianBox (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Median filter with a Sphere shape to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2MedianSphere">imageJ2MedianSphere (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Median filter with a Sphere shape to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2RichardsonLucyDeconvolution">imageJ2RichardsonLucyDeconvolution (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Richardson Lucy Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2Tubeness">imageJ2Tubeness (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Tubeness filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ3DSuiteConnectedComponentsLabeling">imageJ3DSuiteConnectedComponentsLabeling (Experimental)</a>  
+Apply ImageJ 3D Suite Connected Components Labeling (Segment 3D) to an image in 3D.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJFillHoles">imageJFillHoles (Experimental)</a>  
+Apply ImageJs Watershed algorithm to a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJGaussianBlur">imageJGaussianBlur (Experimental)</a>  
+Apply ImageJs Gaussian Blur to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJVariance">imageJVariance (Experimental)</a>  
+Apply ImageJs Variance filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJWatershed">imageJWatershed (Experimental)</a>  
+Apply ImageJs Watershed algorithm to a binary image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageToStack">imageToStack</a>  
 Copies a single slice into a stack a given number of times.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imglib2ConnectedComponentsLabeling">imglib2ConnectedComponentsLabeling (Experimental)</a>  
+Apply imglib2 ConnectedComponents (8-connected) to an image to create a label map.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_intensityCorrection">intensityCorrection (Experimental)</a>  
 Determines the mean intensity of the image stack and multiplies it with a factor so that the mean intensity becomes equal to a given value.
@@ -981,6 +1026,39 @@ Takes a touch matrix and a vector of values to determine the most popular intege
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_modeOfTouchingNeighborsMap">modeOfTouchingNeighborsMap (Experimental)</a>  
 Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the most popular value of neighboring labels. The radius of the neighborhood can be configured: * radius 0: Nothing is replaced * radius 1: direct neighbors are taken into account * radius 2: neighbors and neighbors or neighbors are taken into account * radius n: ...
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJChamferDistanceMap">morphoLibJChamferDistanceMap (Experimental)</a>  
+Apply MorpholibJ ChamferDistanceMap to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJClassicWatershed">morphoLibJClassicWatershed (Experimental)</a>  
+Apply MorpholibJs Classic Watershed to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJExtendedMaxima">morphoLibJExtendedMaxima (Experimental)</a>  
+Apply MorpholibJ's Extended Maxima to an image to produce an image where maxima regions are set to 255 and background to 0. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJExtendedMinima">morphoLibJExtendedMinima (Experimental)</a>  
+Apply MorpholibJ's Extended Minima to an image to produce an image where minima regions are set to 255 and background to 0. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJFillHoles">morphoLibJFillHoles (Experimental)</a>  
+Apply MorpholibJ Fill Holes (Binary/Gray) to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJFloodFillComponentsLabeling">morphoLibJFloodFillComponentsLabeling (Experimental)</a>  
+Apply MorpholibJ FloodFillComponentsLabeling3D to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJKeepLargestRegion">morphoLibJKeepLargestRegion (Experimental)</a>  
+Apply MorpholibJ Keep Largest Region to a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJMarkerControlledWatershed">morphoLibJMarkerControlledWatershed (Experimental)</a>  
+Apply MorpholibJs Marker-controlled Watershed to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJMorphologicalSegmentationLabelBorderImage">morphoLibJMorphologicalSegmentationLabelBorderImage (Experimental)</a>  
+Apply MorpholibJ Morphological Segmentation to an object image to produce a label image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJMorphologicalSegmentationLabelObjectImage">morphoLibJMorphologicalSegmentationLabelObjectImage (Experimental)</a>  
+Apply MorpholibJ Morphological Segmentation to an object image to produce a label image. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJRemoveLargestRegion">morphoLibJRemoveLargestRegion (Experimental)</a>  
+Apply MorpholibJ Remove Border Labels to a label image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_multiplyImageAndCoordinate">multiplyImageAndCoordinate</a>  
 Multiplies all pixel intensities with the x, y or z coordinate, depending on specified dimension.
 
@@ -1333,6 +1411,75 @@ Extend labels with a given radius.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_similar">similar (Experimental)</a>  
 Determines the absolute difference between two images and sets all pixels to 1 where it is below or equal a given tolerance, and 0 otherwise.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBilateral">simpleITKBilateral (Experimental)</a>  
+Apply SimpleITKs Bilateral filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinaryFillhole">simpleITKBinaryFillhole (Experimental)</a>  
+Apply SimpleITKs Binary Fill hole to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinaryPruning">simpleITKBinaryPruning (Experimental)</a>  
+Apply SimpleITKs Binary Pruning to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinaryThinning">simpleITKBinaryThinning (Experimental)</a>  
+Apply SimpleITKs Binary Thinning to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBinomialBlur">simpleITKBinomialBlur (Experimental)</a>  
+Apply SimpleITKs Binomial Blur filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKBoundedReciprocal">simpleITKBoundedReciprocal (Experimental)</a>  
+Apply SimpleITKs BoundedReciprocal to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKCannyEdgeDetection">simpleITKCannyEdgeDetection (Experimental)</a>  
+Apply SimpleITKs Canny edge detection filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKConnectedComponent">simpleITKConnectedComponent (Experimental)</a>  
+Apply SimpleITKs ConnectedComponent to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKDanielssonDistanceMap">simpleITKDanielssonDistanceMap (Experimental)</a>  
+Generate SimpleITKs Danielsson distance map from a binary image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKDiscreteGaussian">simpleITKDiscreteGaussian (Experimental)</a>  
+Apply SimpleITKs Gaussian Blur to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKFFTConvolution">simpleITKFFTConvolution (Experimental)</a>  
+Convolve an image with a kernel image using SimpleITK and a fast Fourier transform (FFT).
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKHMaxima">simpleITKHMaxima (Experimental)</a>  
+Apply SimpleITKs H-Maxima filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKInverseDeconvolution">simpleITKInverseDeconvolution (Experimental)</a>  
+Apply SimpleITKs Inverse Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKLandweberDeconvolution">simpleITKLandweberDeconvolution (Experimental)</a>  
+Apply SimpleITKs Landweber Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKMedian">simpleITKMedian (Experimental)</a>  
+Apply SimpleITKs Median filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKMedianProjection">simpleITKMedianProjection (Experimental)</a>  
+Apply SimpleITKs Median projection to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKMorphologicalWatershed">simpleITKMorphologicalWatershed (Experimental)</a>  
+Apply SimpleITKs Morphological Watershed filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKOtsuMultipleThresholds">simpleITKOtsuMultipleThresholds (Experimental)</a>  
+Apply SimpleITKs Otsu Multiple Thresholds to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKOtsuThreshold">simpleITKOtsuThreshold (Experimental)</a>  
+Apply SimpleITKs Otsu Thresholding to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKTikhonovDeconvolution">simpleITKTikhonovDeconvolution (Experimental)</a>  
+Apply SimpleITKs Tikhonov Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKWienerDeconvolution">simpleITKWienerDeconvolution (Experimental)</a>  
+Apply SimpleITKs Wiener Deconvolution to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossing">simpleITKZeroCrossing (Experimental)</a>  
+Apply SimpleITKs ZeroCrossing to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossingBasedEdgeDetection">simpleITKZeroCrossingBasedEdgeDetection (Experimental)</a>  
+Apply SimpleITKs ZeroCrossingBasedEdgeDetection to an image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sinus">sinus (Experimental)</a>  
 Computes the sinus of all pixels value x.
 
@@ -1634,4 +1781,4 @@ Project a defined Z-slice of a 3D stack into a 2D image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionRangeProjection">zPositionRangeProjection (Experimental)</a>  
 Project multiple Z-slices of a 3D stack into a new 3D stack.
 
-560 methods listed.
+612 methods listed.

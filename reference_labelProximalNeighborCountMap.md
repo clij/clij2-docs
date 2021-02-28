@@ -9,6 +9,9 @@ Distances are computed from the centroids of the labels. The resulting map is ge
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelProximalNeighborCountMap(Image label_map1, Image label_map2, Image proximal_neighbor_count_map_destination, Number min_distance, Number max_distance);

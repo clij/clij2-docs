@@ -7,6 +7,9 @@ This results in a parametric image visualizing local contrast.
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelMeanOfLaplacianMap(Image input, Image label_map, Image destination);

@@ -3,6 +3,9 @@
 
 null
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 
 
 ### Example notebooks

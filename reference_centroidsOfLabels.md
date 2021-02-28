@@ -7,6 +7,9 @@ It writes the resulting  coordinates in a pointlist image. Depending on the dime
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### centroidsOfLabels often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
 

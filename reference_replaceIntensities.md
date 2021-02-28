@@ -12,6 +12,9 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### replaceIntensities often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)

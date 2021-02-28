@@ -7,6 +7,9 @@ It will be stored in the variable sum_of_all_pixels.
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_getSumOfAllPixels(Image source, Number sum_of_all_pixels);

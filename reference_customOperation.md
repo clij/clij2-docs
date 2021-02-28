@@ -22,6 +22,9 @@ inline float sum(float a, float b) {
 }
 
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_customOperation(String operation_code, String global_code, Array image_parameters);

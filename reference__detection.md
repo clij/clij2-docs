@@ -12,7 +12,7 @@ __Please note:__ CLIJ is deprecated. [Make the transition to CLIJ2](https://clij
 
 __Categories:__ [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Math](https://clij.github.io/clij2-docs/reference__math), Matrices, [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Projections](https://clij.github.io/clij2-docs/reference__project), [Transformations](https://clij.github.io/clij2-docs/reference__transform), [Detection](https://clij.github.io/clij2-docs/reference__pyclesperanto), CLIc
 
- A,<a href="#B">\[B\]</a>, C,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H, I, J, K,<a href="#L">\[L\]</a>, M, N, O, P, Q, R,<a href="#S">\[S\]</a>, T, U,<a href="#V">\[V\]</a>, W, X, Y, Z
+ A,<a href="#B">\[B\]</a>, C,<a href="#D">\[D\]</a>, E,<a href="#F">\[F\]</a>, G, H, I, J, K,<a href="#L">\[L\]</a>,<a href="#M">\[M\]</a>, N, O, P, Q, R,<a href="#S">\[S\]</a>, T, U,<a href="#V">\[V\]</a>, W, X, Y, Z
 
 <a name="B"></a>
 
@@ -62,9 +62,24 @@ Finds and labels local maxima with neighboring maxima and background above a giv
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelSpots">labelSpots</a>  
 Transforms a binary image with single pixles set to 1 to a labelled spots image. 
 
+<a name="M"></a>
+
+## M
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJExtendedMaxima">morphoLibJExtendedMaxima (Experimental)</a>  
+Apply MorpholibJ's Extended Maxima to an image to produce an image where maxima regions are set to 255 and background to 0. 
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_morphoLibJExtendedMinima">morphoLibJExtendedMinima (Experimental)</a>  
+Apply MorpholibJ's Extended Minima to an image to produce an image where minima regions are set to 255 and background to 0. 
+
 <a name="S"></a>
 
 ## S
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKCannyEdgeDetection">simpleITKCannyEdgeDetection (Experimental)</a>  
+Apply SimpleITKs Canny edge detection filter to an image.
+
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKZeroCrossingBasedEdgeDetection">simpleITKZeroCrossingBasedEdgeDetection (Experimental)</a>  
+Apply SimpleITKs ZeroCrossingBasedEdgeDetection to an image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_spotsToPointList">spotsToPointList</a>  
 Transforms a spots image as resulting from maximum/minimum detection in an image where every column contains d  pixels (with d = dimensionality of the original image) with the coordinates of the maxima/minima.
 
@@ -74,4 +89,4 @@ Transforms a spots image as resulting from maximum/minimum detection in an image
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_voronoiOtsuLabeling">voronoiOtsuLabeling (Experimental)</a>  
 Applies two Gaussian blurs, spot detection, Otsu-thresholding and Voronoi-labeling. The thresholded binary image is flooded using the Voronoi approach starting from the found local maxima. Noise-removal sigma for spot detection and thresholding can be configured separately.
 
-14 methods listed.
+18 methods listed.

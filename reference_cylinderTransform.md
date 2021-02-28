@@ -12,6 +12,9 @@ Thus, going in virtual Z direction (actually D) in the resulting stack, you go f
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_cylinderTransform(Image input, Image destination, Number number_of_angles, Number delta_angle_in_degrees, Number relative_center_x, Number relative_center_z);

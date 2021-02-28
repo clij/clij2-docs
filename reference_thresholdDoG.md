@@ -5,6 +5,9 @@ Applies a Difference-of-Gaussian filter to an image and thresholds it with given
 
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_thresholdDoG(Image input, Image destination, Number sigma1, Number sigma2, Number threshold, Boolean above_threshold);

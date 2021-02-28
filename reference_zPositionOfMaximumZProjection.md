@@ -5,6 +5,9 @@ Determines a Z-position of the maximum intensity along Z and writes it into the 
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_zPositionOfMaximumZProjection(Image source, Image destination);

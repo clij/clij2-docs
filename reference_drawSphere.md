@@ -7,6 +7,9 @@ Draws a sphere around a given point with given radii in x, y and z (if 3D).
 
 Category: Visualisation
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_drawSphere(Image destination, Number x, Number y, Number z, Number radius_x, Number radius_y, Number radius_z, Number value);
@@ -151,6 +154,7 @@ cle.draw_sphere(destination, x, y, z, radius_x, radius_y, radius_z, value)
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm"><img src="images/language_macro.png" height="20"/></a> [tubeness.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py"><img src="images/language_jython.png" height="20"/></a> [jaccardIndex.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/jaccardIndex.py)  
 
 

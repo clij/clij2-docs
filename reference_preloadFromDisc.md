@@ -5,6 +5,9 @@ This plugin takes two image filenames and loads them into RAM. The first image i
 
  It is assumed that all images have the same size. If this is not the case, call release(image) before  getting the second image.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_preloadFromDisc(Image destination, String filename, String nextFilename, String loaderId);

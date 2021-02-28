@@ -5,6 +5,9 @@ Determines the mean intensity of the image stack and multiplies it with a factor
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_intensityCorrection(Image input, Image destination, Number reference_mean_intensity);

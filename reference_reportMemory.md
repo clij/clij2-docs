@@ -4,6 +4,9 @@
 Prints a list of all images cached in the GPU to ImageJs log window together with a sum of memory 
 consumption.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_reportMemory();

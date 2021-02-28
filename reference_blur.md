@@ -11,6 +11,9 @@ DEPRECATED: This method is <b>deprecated</b>. Use gaussianBlur2D instead.
 
 Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_blur(Image source, Image destination, Number sigma_x, Number sigma_y);

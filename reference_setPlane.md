@@ -5,6 +5,9 @@ Sets all pixel values x of a given plane in X to a constant value v.
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_setPlane(Image source, Number plane_index, Number value);

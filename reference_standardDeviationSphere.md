@@ -8,6 +8,9 @@ its half-width, half-height and half-depth (radius). If 2D images are given, rad
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_standardDeviationSphere(Image source, Image destination, Number radius_x, Number radius_y, Number radius_z);

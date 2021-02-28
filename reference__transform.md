@@ -87,10 +87,10 @@ Threshold the image stack, determines the centroid of the resulting binary image
 
 ## F
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip2D">flip2D</a>  
-Flips an image in X and/or Y direction depending on boolean flags.
+Flips an image in X and/or Y direction depending on if flip_x and/or flip_y are set to true or false.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip3D">flip3D</a>  
-Flips an image in X, Y and/or Z direction depending on boolean flags.
+Flips an image in X, Y and/or Z direction depending on if flip_x, flip_y and/or flip_z are set to true or false.
 
 <a name="I"></a>
 
@@ -182,6 +182,9 @@ Scales an image with a given factor.
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_scale3D">scale3D</a>  
 Scales an image with a given factor.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_simpleITKFFTConvolution">simpleITKFFTConvolution (Experimental)</a>  
+Convolve an image with a kernel image using SimpleITK and a fast Fourier transform (FFT).
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_sphereTransform">sphereTransform (Experimental)</a>  
 Turns an image stack in XYZ cartesian coordinate system to an AID polar coordinate system.
 
@@ -209,4 +212,4 @@ Transpose X and Z axes of an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_transposeYZ">transposeYZ</a>  
 Transpose Y and Z axes of an image.
 
-59 methods listed.
+60 methods listed.

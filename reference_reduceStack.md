@@ -7,6 +7,9 @@ With the offset you have control which slices stay:
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### reduceStack is often followed by
 * <a href="reference_combineHorizontally">combineHorizontally</a> (4)
 

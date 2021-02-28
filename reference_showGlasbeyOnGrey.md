@@ -5,6 +5,9 @@ Visualises two 2D images as one RGB image.
 
 The first channel is shown in grey, the second with glasbey LUT.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_showGlasbeyOnGrey(Image red, Image labelling, String title);

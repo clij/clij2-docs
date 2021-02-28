@@ -1,9 +1,12 @@
 ## flip2D
 <img src="images/mini_clij1_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
-Flips an image in X and/or Y direction depending on boolean flags.
+Flips an image in X and/or Y direction depending on if flip_x and/or flip_y are set to true or false.
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### flip2D often follows after
 * <a href="reference_crop2D">crop2D</a> (1)

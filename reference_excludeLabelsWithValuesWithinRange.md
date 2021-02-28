@@ -7,6 +7,9 @@ Hand over a vector of values and a range specifying which labels with which valu
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_excludeLabelsWithValuesWithinRange(Image values_vector, Image label_map_input, Image label_map_destination, Number minimum_value_range, Number maximum_value_range);

@@ -21,6 +21,9 @@ Example: "original gaussianBlur=1 gaussianBlur=5 laplacianOfGaussian=1 laplacian
 
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), Machine Learning
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx-weka_-0.30.1.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateFeatureStack(Image input, Image feature_stack_destination, String feature_definitions);

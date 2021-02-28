@@ -1,9 +1,12 @@
 ## flip
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_cle_logo.png"/>
 
-Flips an image in X and/or Y direction depending on boolean flags.
+Flips an image in X and/or Y direction depending on if flip_x and/or flip_y are set to true or false.
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### Usage in ImageJ macro
 ```

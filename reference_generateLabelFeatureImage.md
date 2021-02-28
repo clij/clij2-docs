@@ -32,6 +32,9 @@ Use this terminology to specify which features should be generated:
 
 Example: "MEAN_INTENSITY count_touching_neighbors"
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx-weka_-0.30.1.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_generateLabelFeatureImage(Image input, Image label_map, Image label_feature_image_destination, String feature_definitions);

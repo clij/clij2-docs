@@ -7,6 +7,9 @@ The resulting label map is written to the output.
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### extendLabelingViaVoronoi is often followed by
 * <a href="reference_detectLabelEdges">detectLabelEdges</a> (1)
 

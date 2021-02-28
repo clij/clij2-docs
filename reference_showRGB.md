@@ -3,6 +3,9 @@
 
 Visualises three 2D images as one RGB image
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_showRGB(Image red, Image green, Image blue, String title);

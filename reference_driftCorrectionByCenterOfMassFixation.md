@@ -5,6 +5,9 @@ Determines the centerOfMass of the image stack and translates it so that it stay
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_driftCorrectionByCenterOfMassFixation(Image input, Image destination, Number relative_center_x, Number relative_center_y, Number relative_center_z);

@@ -10,6 +10,9 @@ Make sure that the handed over feature list and radii are the same used while tr
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_wekaRegionalLabelClassifier(Image input, Image label_map, Image destination, String features, String modelfilename, Number radius_of_maximum, Number radius_of_minimum, Number radius_of_mean, Number radius_of_standard_deviation);

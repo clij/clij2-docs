@@ -6,6 +6,9 @@ Apply a minimum filter (diamond shape) to the input image.
 The radius is fixed to 1 and pixels with value 0 are ignored.Note: Pixels with 0 value in the input image will not be overwritten in the output image.
 Thus, the result image should be initialized by copying the original image in advance.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_nonzeroMinimumDiamond(Image input, Image destination);

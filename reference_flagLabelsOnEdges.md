@@ -8,6 +8,9 @@ The entry in the vector (index 0) corresponds to background, following entries c
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_flagLabelsOnEdges(Image label_map_input, Image flag_vector_destination);

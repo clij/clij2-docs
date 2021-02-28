@@ -3,6 +3,9 @@
 
 Measures center of mass of thresholded objects in the two input images and translates the second image so that it better fits to the first image.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_translationRegistration(Image input1, Image input2, Image destination);

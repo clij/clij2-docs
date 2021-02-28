@@ -3,6 +3,9 @@
 
 Applies particle image velocimetry to two images and registers them afterwards by warping input image 2 with a smoothed vector field.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_deformableRegistration2D(Image input1, Image input2, Image destination, Number maxDeltaX, Number maxDeltaY);

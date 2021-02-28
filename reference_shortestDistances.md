@@ -7,6 +7,9 @@ This corresponds to the minimum for each individial column.
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### shortestDistances often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 

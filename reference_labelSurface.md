@@ -7,6 +7,9 @@ For each label, a ray from a given center towards the label. If the ray crosses 
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelSurface(Image input_labels, Image destination_labels, Number relative_center_x, Number relative_center_y, Number relative_center_z);

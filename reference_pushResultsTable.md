@@ -5,6 +5,9 @@ Converts a table to an image.
 
 Rows stay rows, columns stay columns.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### pushResultsTable is often followed by
 * <a href="reference_transposeXY">transposeXY</a> (1)
 

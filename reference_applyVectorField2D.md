@@ -3,9 +3,24 @@
 
 Deforms an image according to distances provided in the given vector images.
 
- It is recommended to use 32-bit images for input, output and vector images. 
+ It is recommended to use 32-bit images for input, output and vector images.
+
+### Parameters
+
+source : Image
+    The input image to be processed.
+vector_x : Image
+    Pixels in this image describe the distance in X direction pixels should be shifted during warping.
+vector_y : Image
+    Pixels in this image describe the distance in Y direction pixels should be shifted during warping.
+destination : Image
+    The output image where results are written into.
+
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### applyVectorField2D often follows after
 * <a href="reference_affineTransform2D">affineTransform2D</a> (2)
@@ -17,7 +32,7 @@ Category: [Transformations](https://clij.github.io/clij2-docs/reference__transfo
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJ2_applyVectorField2D(Image source, Image vectorX, Image vectorY, Image destination);
+Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, Image destination);
 ```
 
 
@@ -37,14 +52,14 @@ CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
 ClearCLBuffer source = clij2.push(sourceImagePlus);
-ClearCLBuffer vectorX = clij2.push(vectorXImagePlus);
-ClearCLBuffer vectorY = clij2.push(vectorYImagePlus);
+ClearCLBuffer vector_x = clij2.push(vector_xImagePlus);
+ClearCLBuffer vector_y = clij2.push(vector_yImagePlus);
 destination = clij2.create(source);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.applyVectorField2D(source, vectorX, vectorY, destination);
+clij2.applyVectorField2D(source, vector_x, vector_y, destination);
 </pre>
 
 <pre class="highlight">
@@ -54,8 +69,8 @@ destinationImagePlus.show();
 
 // cleanup memory on GPU
 clij2.release(source);
-clij2.release(vectorX);
-clij2.release(vectorY);
+clij2.release(vector_x);
+clij2.release(vector_y);
 clij2.release(destination);
 </pre>
 
@@ -73,14 +88,14 @@ clij2 = init_clatlab();
 
 % get input parameters
 source = clij2.pushMat(source_matrix);
-vectorX = clij2.pushMat(vectorX_matrix);
-vectorY = clij2.pushMat(vectorY_matrix);
+vector_x = clij2.pushMat(vector_x_matrix);
+vector_y = clij2.pushMat(vector_y_matrix);
 destination = clij2.create(source);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clij2.applyVectorField2D(source, vectorX, vectorY, destination);
+clij2.applyVectorField2D(source, vector_x, vector_y, destination);
 </pre>
 
 <pre class="highlight">
@@ -89,8 +104,8 @@ destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
 clij2.release(source);
-clij2.release(vectorX);
-clij2.release(vectorY);
+clij2.release(vector_x);
+clij2.release(vector_y);
 clij2.release(destination);
 </pre>
 
@@ -112,16 +127,16 @@ clij2 = CLICY.getInstance();
 // get input parameters
 source_sequence = getSequence();
 source = clij2.pushSequence(source_sequence);
-vectorX_sequence = getSequence();
-vectorX = clij2.pushSequence(vectorX_sequence);
-vectorY_sequence = getSequence();
-vectorY = clij2.pushSequence(vectorY_sequence);
+vector_x_sequence = getSequence();
+vector_x = clij2.pushSequence(vector_x_sequence);
+vector_y_sequence = getSequence();
+vector_y = clij2.pushSequence(vector_y_sequence);
 destination = clij2.create(source);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clij2.applyVectorField2D(source, vectorX, vectorY, destination);
+clij2.applyVectorField2D(source, vector_x, vector_y, destination);
 </pre>
 
 <pre class="highlight">
@@ -130,8 +145,8 @@ destination_sequence = clij2.pullSequence(destination)
 Icy.addSequence(destination_sequence);
 // cleanup memory on GPU
 clij2.release(source);
-clij2.release(vectorX);
-clij2.release(vectorY);
+clij2.release(vector_x);
+clij2.release(vector_y);
 clij2.release(destination);
 </pre>
 

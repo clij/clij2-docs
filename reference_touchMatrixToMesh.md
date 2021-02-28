@@ -16,6 +16,9 @@ mesh_destination : Image
 
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### touchMatrixToMesh often follows after
 * <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (2)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (3)

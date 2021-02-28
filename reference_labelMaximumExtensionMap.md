@@ -7,6 +7,9 @@ Takes a label map, determines for every label the maximum distance of any pixel 
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_labelMaximumExtensionMap(Image input, Image destination);

@@ -3,6 +3,9 @@
 
 Pulls a binary image from the GPU memory and puts it on the currently active ImageJ window as region of interest.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pullAsROI(Image binary_input);

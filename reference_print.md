@@ -3,6 +3,9 @@
 
 Visualises an image on standard out (console).
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### print often follows after
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (3)

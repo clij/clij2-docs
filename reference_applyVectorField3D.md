@@ -3,9 +3,26 @@
 
 Deforms an image stack according to distances provided in the given vector image stacks.
 
-It is recommended to use 32-bit image stacks for input, output and vector image stacks. 
+It is recommended to use 32-bit image stacks for input, output and vector image stacks.
+
+### Parameters
+
+source : Image
+    The input image to be processed.
+vector_x : Image
+    Pixels in this image describe the distance in X direction pixels should be shifted during warping.
+vector_y : Image
+    Pixels in this image describe the distance in Y direction pixels should be shifted during warping.
+vector_z : Image
+    Pixels in this image describe the distance in Z direction pixels should be shifted during warping.
+destination : Image
+    The output image where results are written into.
+
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### Usage in ImageJ macro
 ```

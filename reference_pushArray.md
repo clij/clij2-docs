@@ -3,6 +3,9 @@
 
 Converts an array to an image.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### pushArray is often followed by
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
 * <a href="reference_excludeLabels">excludeLabels</a> (1)

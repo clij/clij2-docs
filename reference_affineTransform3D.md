@@ -9,6 +9,15 @@ The transform describes how coordinates in the target image are transformed to c
 This may appear unintuitive and will be changed in the next major release. The replacement 
 affineTransform (currently part of CLIJx) will apply inverted transforms compared to this operation.
 Individual transforms must be separated by spaces.
+### Parameters
+
+source : Image
+    The input image to be processed.
+destination : Image
+    The output image where results are written into.
+transform : String
+    A space-separated list of individual transforms. Syntrax see below.
+
 Supported transforms:
 
 * -center: translate the coordinate origin to the center of the image
@@ -35,6 +44,9 @@ Example transform:
 transform = "-center scale=2 rotate=45 center";
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### Usage in ImageJ macro
 ```

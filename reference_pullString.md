@@ -3,6 +3,9 @@
 
 Writes an image into a string.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pullString(Image input, String output);

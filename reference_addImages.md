@@ -17,6 +17,13 @@ destination : Image
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
+### addImages is often followed by
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_addImages(Image summand1, Image summand2, Image destination);
@@ -164,6 +171,7 @@ cle.add_images(summand1, summand2, destination)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages.ijm"><img src="images/language_macro.png" height="20"/></a> [addImages.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages3D.ijm"><img src="images/language_macro.png" height="20"/></a> [addImages3D.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/addImages3D.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/clij1_clij2_combination.ijm"><img src="images/language_macro.png" height="20"/></a> [clij1_clij2_combination.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/clij1_clij2_combination.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm"><img src="images/language_macro.png" height="20"/></a> [tubeness.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py"><img src="images/language_jython.png" height="20"/></a> [addImages.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py)  
 
 

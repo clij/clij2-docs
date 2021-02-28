@@ -19,8 +19,16 @@ radius_z : Image
 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), Background
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
+### topHatBox often follows after
+* <a href="reference_equalizeMeanIntensitiesOfSlices">equalizeMeanIntensitiesOfSlices</a> (1)
+
+
 ### topHatBox is often followed by
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -163,6 +171,8 @@ cle.top_hat_box(input, destination, radiusX, radiusY, radiusZ)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/compare_workflows"><img src="images/language_macro.png" height="20"/></a> [compare_workflows](https://clij.github.io/clij2-docs/md/compare_workflows)  
+<a href="https://clij.github.io/clij2-docs/md/custom_clij_macro_functions"><img src="images/language_macro.png" height="20"/></a> [custom_clij_macro_functions](https://clij.github.io/clij2-docs/md/custom_clij_macro_functions)  
+<a href="https://clij.github.io/clij2-docs/md/image_segmentation_3d"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d](https://clij.github.io/clij2-docs/md/image_segmentation_3d)  
 <a href="https://clij.github.io/clij2-docs/md/time_tracing"><img src="images/language_macro.png" height="20"/></a> [time_tracing](https://clij.github.io/clij2-docs/md/time_tracing)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/Segmentation_3D.ipynb"><img src="images/language_python.png" height="20"/></a> [Segmentation_3D.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/Segmentation_3D.ipynb)  
 
@@ -171,6 +181,8 @@ cle.top_hat_box(input, destination, radiusX, radiusY, radiusZ)
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm"><img src="images/language_macro.png" height="20"/></a> [compare_workflows.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_clij_macro_functions.ijm"><img src="images/language_macro.png" height="20"/></a> [custom_clij_macro_functions.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_clij_macro_functions.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/time_tracing.ijm"><img src="images/language_macro.png" height="20"/></a> [time_tracing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/time_tracing.ijm)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_performance_demo.py"><img src="images/language_python.png" height="20"/></a> [napari_performance_demo.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_performance_demo.py)  
 

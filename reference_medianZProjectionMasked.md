@@ -5,6 +5,9 @@ Determines the median intensity projection of an image stack along Z where pixel
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_medianZProjectionMasked(Image source, Image destination);

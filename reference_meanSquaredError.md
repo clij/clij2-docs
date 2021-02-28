@@ -6,6 +6,9 @@ Determines the mean squared error (MSE) between two images.
 The MSE will be stored in a new row of ImageJs
 Results table in the column 'MSE'.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_meanSquaredError(Image source1, Image source2);

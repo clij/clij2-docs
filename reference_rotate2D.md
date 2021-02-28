@@ -10,6 +10,9 @@ It is recommended to apply the rotation to an isotropic image.
 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### rotate2D is often followed by
 * <a href="reference_copySlice">copySlice</a> (2)
 

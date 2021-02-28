@@ -5,6 +5,9 @@ Determines the maximum intensity projection of an image along Z within a given z
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_maximumZProjectionBounded(Image source, Image destination_max, Number min_z, Number max_z);

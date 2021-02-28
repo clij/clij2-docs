@@ -6,6 +6,9 @@ Detects local maxima in a given square/cubic neighborhood.
 Pixels in the resulting image are set to 1 if there is no other pixel in a given radius which has a 
 higher intensity, and to 0 otherwise.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### detectMaximaBox often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (1)

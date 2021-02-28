@@ -8,6 +8,9 @@ window. From ImageJ macro conside using pullLabelsToROIManager.
 
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_pullLabelsToROIList(Image labelmap_input);

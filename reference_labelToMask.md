@@ -7,6 +7,9 @@ Sets all pixels in the target image to 1, where the given label index was presen
 
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_labelToMask(Image label_map_source, Image mask_destination, Number label_index);

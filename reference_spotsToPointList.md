@@ -6,6 +6,9 @@ pixels (with d = dimensionality of the original image) with the coordinates of t
 
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### spotsToPointList often follows after
 * <a href="reference_translate2D">translate2D</a> (1)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (2)

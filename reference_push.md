@@ -3,6 +3,9 @@
 
 Copies an image specified by its name to GPU memory in order to process it there later.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_push(String image);
@@ -14,16 +17,21 @@ Ext.CLIJ2_push(String image);
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/applyVectorFieldMD"><img src="images/language_macro.png" height="20"/></a> [applyVectorFieldMD](https://clij.github.io/clij2-docs/md/applyVectorFieldMD)  
 <a href="https://clij.github.io/clij2-docs/md/basics"><img src="images/language_macro.png" height="20"/></a> [basics](https://clij.github.io/clij2-docs/md/basics)  
+<a href="https://clij.github.io/clij2-docs/md/basic_image_processing"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing](https://clij.github.io/clij2-docs/md/basic_image_processing)  
 <a href="https://clij.github.io/clij2-docs/md/benchmarking"><img src="images/language_macro.png" height="20"/></a> [benchmarking](https://clij.github.io/clij2-docs/md/benchmarking)  
 <a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
 <a href="https://clij.github.io/clij2-docs/md/blur"><img src="images/language_macro.png" height="20"/></a> [blur](https://clij.github.io/clij2-docs/md/blur)  
 <a href="https://clij.github.io/clij2-docs/md/clij1_clij2_combination"><img src="images/language_macro.png" height="20"/></a> [clij1_clij2_combination](https://clij.github.io/clij2-docs/md/clij1_clij2_combination)  
 <a href="https://clij.github.io/clij2-docs/md/compare_workflows"><img src="images/language_macro.png" height="20"/></a> [compare_workflows](https://clij.github.io/clij2-docs/md/compare_workflows)  
+<a href="https://clij.github.io/clij2-docs/md/count_neighbors"><img src="images/language_macro.png" height="20"/></a> [count_neighbors](https://clij.github.io/clij2-docs/md/count_neighbors)  
 <a href="https://clij.github.io/clij2-docs/md/count_overlap_between_channels"><img src="images/language_macro.png" height="20"/></a> [count_overlap_between_channels](https://clij.github.io/clij2-docs/md/count_overlap_between_channels)  
 <a href="https://clij.github.io/clij2-docs/md/crop_and_paste"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste](https://clij.github.io/clij2-docs/md/crop_and_paste)  
+<a href="https://clij.github.io/clij2-docs/md/custom_clij_macro_functions"><img src="images/language_macro.png" height="20"/></a> [custom_clij_macro_functions](https://clij.github.io/clij2-docs/md/custom_clij_macro_functions)  
 <a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
 <a href="https://clij.github.io/clij2-docs/md/filtering_in_graphs"><img src="images/language_macro.png" height="20"/></a> [filtering_in_graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs)  
+<a href="https://clij.github.io/clij2-docs/md/image_segmentation_3d"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d](https://clij.github.io/clij2-docs/md/image_segmentation_3d)  
 <a href="https://clij.github.io/clij2-docs/md/image_statistics"><img src="images/language_macro.png" height="20"/></a> [image_statistics](https://clij.github.io/clij2-docs/md/image_statistics)  
+<a href="https://clij.github.io/clij2-docs/md/image_types"><img src="images/language_macro.png" height="20"/></a> [image_types](https://clij.github.io/clij2-docs/md/image_types)  
 <a href="https://clij.github.io/clij2-docs/md/labeling"><img src="images/language_macro.png" height="20"/></a> [labeling](https://clij.github.io/clij2-docs/md/labeling)  
 <a href="https://clij.github.io/clij2-docs/md/labelmap_voronoi"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi](https://clij.github.io/clij2-docs/md/labelmap_voronoi)  
 <a href="https://clij.github.io/clij2-docs/md/matrix_multiply"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply](https://clij.github.io/clij2-docs/md/matrix_multiply)  
@@ -33,6 +41,7 @@ Ext.CLIJ2_push(String image);
 <a href="https://clij.github.io/clij2-docs/md/measure_statistics"><img src="images/language_macro.png" height="20"/></a> [measure_statistics](https://clij.github.io/clij2-docs/md/measure_statistics)  
 <a href="https://clij.github.io/clij2-docs/md/multiply_vectors_matrices"><img src="images/language_macro.png" height="20"/></a> [multiply_vectors_matrices](https://clij.github.io/clij2-docs/md/multiply_vectors_matrices)  
 <a href="https://clij.github.io/clij2-docs/md/neighbors_of_neighbors"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors](https://clij.github.io/clij2-docs/md/neighbors_of_neighbors)  
+<a href="https://clij.github.io/clij2-docs/md/process_multichannel_timelapse"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse)  
 <a href="https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison_IJ_CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ)  
 <a href="https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables)  
 <a href="https://clij.github.io/clij2-docs/md/superpixel_segmentation"><img src="images/language_macro.png" height="20"/></a> [superpixel_segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation)  
@@ -88,6 +97,7 @@ Ext.CLIJ2_push(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/autoThreshold.ijm"><img src="images/language_macro.png" height="20"/></a> [autoThreshold.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/autoThreshold.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm"><img src="images/language_macro.png" height="20"/></a> [backgroundSubtraction.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/basics.ijm"><img src="images/language_macro.png" height="20"/></a> [basics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basics.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkFillHoles.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkFillHoles.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarking.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkSkeletonize.ijm"><img src="images/language_macro.png" height="20"/></a> [benchmarkSkeletonize.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarkSkeletonize.ijm)  
@@ -103,10 +113,12 @@ Ext.CLIJ2_push(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/clij1_clij2_combination.ijm"><img src="images/language_macro.png" height="20"/></a> [clij1_clij2_combination.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/clij1_clij2_combination.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm"><img src="images/language_macro.png" height="20"/></a> [compare_workflows.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/compare_workflows.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/convert.ijm"><img src="images/language_macro.png" height="20"/></a> [convert.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/convert.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [count_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_overlap_between_channels.ijm"><img src="images/language_macro.png" height="20"/></a> [count_overlap_between_channels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/count_overlap_between_channels.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop.ijm"><img src="images/language_macro.png" height="20"/></a> [crop.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm"><img src="images/language_macro.png" height="20"/></a> [crop_and_paste.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/crop_and_paste.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/customOperation.ijm"><img src="images/language_macro.png" height="20"/></a> [customOperation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/customOperation.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_clij_macro_functions.ijm"><img src="images/language_macro.png" height="20"/></a> [custom_clij_macro_functions.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_clij_macro_functions.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_opencl.ijm"><img src="images/language_macro.png" height="20"/></a> [custom_opencl.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_opencl.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm"><img src="images/language_macro.png" height="20"/></a> [debugging_pixels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/depth_colour_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [depth_colour_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/depth_colour_projection.ijm)  
@@ -122,7 +134,9 @@ Ext.CLIJ2_push(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/flip.ijm"><img src="images/language_macro.png" height="20"/></a> [flip.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/flip.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/getBoundingBox.ijm"><img src="images/language_macro.png" height="20"/></a> [getBoundingBox.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/getBoundingBox.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/getsize.ijm"><img src="images/language_macro.png" height="20"/></a> [getsize.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/getsize.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm"><img src="images/language_macro.png" height="20"/></a> [image_segmentation_3d.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_segmentation_3d.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [image_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_statistics.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_types.ijm"><img src="images/language_macro.png" height="20"/></a> [image_types.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/image_types.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm"><img src="images/language_macro.png" height="20"/></a> [intensity_per_label.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/intensity_per_label.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm"><img src="images/language_macro.png" height="20"/></a> [jaccard_matrix.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/jaccard_matrix.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/labeling.ijm)  
@@ -155,6 +169,7 @@ Ext.CLIJ2_push(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm"><img src="images/language_macro.png" height="20"/></a> [outline.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/particle_analysis.ijm"><img src="images/language_macro.png" height="20"/></a> [particle_analysis.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/particle_analysis.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_5D_stack.ijm"><img src="images/language_macro.png" height="20"/></a> [process_5D_stack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_5D_stack.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm"><img src="images/language_macro.png" height="20"/></a> [projections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/projections.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/push.ijm"><img src="images/language_macro.png" height="20"/></a> [push.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/push.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/pushCurrentZStack.ijm"><img src="images/language_macro.png" height="20"/></a> [pushCurrentZStack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/pushCurrentZStack.ijm)  

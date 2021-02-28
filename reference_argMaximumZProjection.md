@@ -7,6 +7,9 @@ Furthermore, another 2D image is generated with pixels containing the z-index wh
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_argMaximumZProjection(Image source, Image destination_max, Image destination_arg_max);

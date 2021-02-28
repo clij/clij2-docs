@@ -7,6 +7,9 @@ Takes a touch matrix and a vector of values to determine the standard deviation 
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### standardDeviationOfTouchingNeighbors often follows after
 * <a href="reference_undefinedToZero">undefinedToZero</a> (1)
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)

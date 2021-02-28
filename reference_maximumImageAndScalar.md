@@ -7,6 +7,9 @@ Computes the maximum of a constant scalar s and each pixel value x in a given im
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### maximumImageAndScalar often follows after
 * <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (1)
 

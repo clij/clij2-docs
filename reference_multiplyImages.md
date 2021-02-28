@@ -17,6 +17,9 @@ destination : Image
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### multiplyImages often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
 * <a href="reference_create2D">create2D</a> (1)

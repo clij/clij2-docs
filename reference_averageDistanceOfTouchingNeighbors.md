@@ -4,7 +4,21 @@
 Takes a touch matrix and a distance matrix to determine the average distance of touching neighbors 
  for every object.
 
+### Parameters
+
+distance_matrix : Image
+    The a distance matrix to be processed.
+touch_matrix : Image
+    The binary touch matrix describing which distances should be taken into account.
+distance_list_destination : Image
+    A vector image with the same width as the distance matrix and height=1, depth=1.
+    Determined average distances will be written into this vector.
+
+
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
+
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
 
 ### averageDistanceOfTouchingNeighbors often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)

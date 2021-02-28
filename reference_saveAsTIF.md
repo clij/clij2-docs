@@ -3,6 +3,13 @@
 
 Pulls an image from the GPU memory and saves it as TIF to disc.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
+### saveAsTIF often follows after
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_saveAsTIF(Image input, String filename);
@@ -101,6 +108,18 @@ clij2.release(input);
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/process_multichannel_timelapse"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

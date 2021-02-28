@@ -7,6 +7,9 @@ This corresponds to the n row indices with minimum values for each column of the
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_nClosestDistances(Image distance_matrix, Image distances_destination, Image indexlist_destination, Number nClosestPointsTofind);

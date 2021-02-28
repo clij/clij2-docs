@@ -17,14 +17,19 @@ scalar : float
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### multiplyImageAndScalar often follows after
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
 * <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_addImages">addImages</a> (1)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (1)
 
 
 ### multiplyImageAndScalar is often followed by
 * <a href="reference_print">print</a> (2)
+* <a href="reference_release">release</a> (1)
 * <a href="reference_distanceMatrixToMesh">distanceMatrixToMesh</a> (1)
 * <a href="reference_convertUInt16">convertUInt16</a> (1)
 
@@ -175,6 +180,7 @@ cle.multiply_image_and_scalar(source, destination, scalar)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm"><img src="images/language_macro.png" height="20"/></a> [debugging_pixels.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/debugging_pixels.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm"><img src="images/language_macro.png" height="20"/></a> [matrix_multiply.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/matrix_multiply.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spots_pointlists_matrices_tables.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm"><img src="images/language_macro.png" height="20"/></a> [tubeness.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py"><img src="images/language_jython.png" height="20"/></a> [addImages.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/addImages.py)  
 
 

@@ -6,6 +6,9 @@ Convert the input image to a float image with 32 bits per pixel.
 The target image should not exist with a different type before this 
 method is called.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### convertFloat is often followed by
 * <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (1)
 * <a href="reference_convertUInt8">convertUInt8</a> (1)

@@ -4,6 +4,9 @@
 Copies the content of a vector image to a column in the results table.
 You can configure if new rows should be appended or if existing values should be overwritten.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_pullToResultsTableColumn(Image source, String column_name, Boolean append_new_rows);

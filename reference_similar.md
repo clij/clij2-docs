@@ -5,6 +5,9 @@ Determines the absolute difference between two images and sets all pixels to 1 w
 
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clijx_-0.30.1.21.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_similar(Image input_image1, Image input_image2, Image binary_destination, Number tolerance);

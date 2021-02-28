@@ -6,6 +6,9 @@ Determines a maximum projection of an image stack and does a color coding of the
 Second parameter is a Lookup-Table in the form of an 8-bit image stack 255 pixels wide, 1 pixel high with 3 planes representing red, green and blue intensities.
 Resulting image is a 3D image with three Z-planes representing red, green and blue channels.
 
+Availability: Available in Fiji by activating the update sites clij and clij2.
+This function is part of clij2_-2.2.0.19.jar.
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_depthColorProjection(Image source, Image lookup_table, Image destination_max, Number min_display_intensity, Number max_display_intensity);

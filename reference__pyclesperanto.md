@@ -126,10 +126,10 @@ This method has two purposes:  It copies a 2D image to a given slice z position 
 Takes a touch matrix as input and delivers a vector with number of touching neighbors per label as a vector.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_create2D">create2D</a>  
-Allocated memory for a new 2D image in the GPU memory. 
+Allocated memory for a new 2D image in the GPU memory.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_create3D">create3D</a>  
-Allocated memory for a new 3D image in the GPU memory. 
+Allocated memory for a new 3D image in the GPU memory.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_crop2D">crop2D</a>  
 Crops a given rectangle out of a given image. 
@@ -264,10 +264,10 @@ Extend labels with a given radius.
 
 ## F
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip2D">flip2D</a>  
-Flips an image in X and/or Y direction depending on boolean flags.
+Flips an image in X and/or Y direction depending on if flip_x and/or flip_y are set to true or false.
 
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_flip3D">flip3D</a>  
-Flips an image in X, Y and/or Z direction depending on boolean flags.
+Flips an image in X, Y and/or Z direction depending on if flip_x, flip_y and/or flip_z are set to true or false.
 
 <a name="G"></a>
 
@@ -329,6 +329,9 @@ Determines the histogram of a given image.
 <a name="I"></a>
 
 ## I
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_imageJ2GaussianBlur">imageJ2GaussianBlur (Experimental)</a>  
+Apply ImageJ2 / ImageJ Ops Gaussian Blur to an image.
+
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_invert">invert</a>  
 Computes the negative value of all pixels in a given image. 
 
@@ -800,4 +803,4 @@ Takes a binary image, labels connected components and dilates the regions using 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_writeValuesToPositions">writeValuesToPositions</a>  
 Takes an image with three/four rows (2D: height = 3; 3D: height = 4): x, y [, z] and v and target image. 
 
-253 methods listed.
+254 methods listed.
