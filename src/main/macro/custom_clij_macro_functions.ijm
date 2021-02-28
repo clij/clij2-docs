@@ -47,7 +47,6 @@ function my_image_segmentation(image, sigma, radius) {
 	// and labels objects in the given image. The sigma parameter controls the 
 	// Gaussian blur function used for denoising. The radius parameter controls 
 	// the background subtraction.
-	sigma = 2;
 	Ext.CLIJ2_gaussianBlur2D(image, blurred, sigma, sigma);
 	Ext.CLIJ2_topHatBox(blurred, background_subtracted, radius, radius, radius);
 	Ext.CLIJ2_release(blurred);
@@ -61,12 +60,12 @@ function my_image_segmentation(image, sigma, radius) {
 ## Call custom functions
 We can then call the custom function, e.g. with different sigma and radius parameters.
 */
-segmented = my_image_segmentation(input, 2, 15);
+segmented = my_image_segmentation(input, 2, 25);
 // show result
 Ext.CLIJ2_pull(segmented);
 run("glasbey_on_dark");
 
-segmented = my_image_segmentation(input, 15, 5);
+segmented = my_image_segmentation(input, 5, 25);
 // show result
 Ext.CLIJ2_pull(segmented);
 run("glasbey_on_dark");
