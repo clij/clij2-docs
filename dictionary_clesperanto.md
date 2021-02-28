@@ -174,20 +174,20 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 ## apply_vector_field
 **CLIJ2**
-* boolean applyVectorField(ClearCLImageInterface source, ClearCLImageInterface vectorX, ClearCLImageInterface vectorY, ClearCLImageInterface destination)
+* boolean applyVectorField(ClearCLImageInterface source, ClearCLImageInterface vector_x, ClearCLImageInterface vector_y, ClearCLImageInterface destination)
 * boolean applyVectorField(ClearCLImageInterface arg1, ClearCLImageInterface arg2, ClearCLImageInterface arg3, ClearCLImageInterface arg4, ClearCLImageInterface arg5)
 
 **CLIJx**
-* boolean applyVectorfield(ClearCLBuffer source, ClearCLBuffer vectorX, ClearCLBuffer vectorY, ClearCLBuffer destination)
+* boolean applyVectorfield(ClearCLBuffer source, ClearCLBuffer vector_x, ClearCLBuffer vector_y, ClearCLBuffer destination)
 * boolean applyVectorfield(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, ClearCLBuffer arg4, ClearCLBuffer arg5)
-* boolean applyVectorfield(ClearCLImage source, ClearCLImage vectorX, ClearCLImage vectorY, ClearCLImage destination)
+* boolean applyVectorfield(ClearCLImage source, ClearCLImage vector_x, ClearCLImage vector_y, ClearCLImage destination)
 * boolean applyVectorfield(ClearCLImage arg1, ClearCLImage arg2, ClearCLImage arg3, ClearCLImage arg4, ClearCLImage arg5)
 
 **CLIc**
 * <span style="color:red">(Missing)</span>
 
 **clEsperantoJ**
-* ClearCLImageInterface apply_vector_field(ClearCLImageInterface source, ClearCLImageInterface vectorX, ClearCLImageInterface vectorY, ClearCLImageInterface destination)
+* ClearCLImageInterface apply_vector_field(ClearCLImageInterface source, ClearCLImageInterface vector_x, ClearCLImageInterface vector_y, ClearCLImageInterface destination)
 * ClearCLImageInterface apply_vector_field(ClearCLImageInterface arg1, ClearCLImageInterface arg2, ClearCLImageInterface arg3, ClearCLImageInterface arg4, ClearCLImageInterface arg5)
 
 **Macro**
@@ -198,13 +198,13 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 ## apply_vector_field
 **CLIJ2**
-* boolean applyVectorField2D(ClearCLImageInterface source, ClearCLImageInterface vectorX, ClearCLImageInterface vectorY, ClearCLImageInterface destination)
+* boolean applyVectorField2D(ClearCLImageInterface source, ClearCLImageInterface vector_x, ClearCLImageInterface vector_y, ClearCLImageInterface destination)
 
 **CLIc**
 * <span style="color:red">(Missing)</span>
 
 **clEsperantoJ**
-* ClearCLImageInterface apply_vector_field2d(ClearCLImageInterface source, ClearCLImageInterface vectorX, ClearCLImageInterface vectorY, ClearCLImageInterface destination)
+* ClearCLImageInterface apply_vector_field2d(ClearCLImageInterface source, ClearCLImageInterface vector_x, ClearCLImageInterface vector_y, ClearCLImageInterface destination)
 
 **Macro**
 * Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, ByRef Image destination)
@@ -230,13 +230,13 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 ## apply_vectorfield
 **CLIJ2**
-* boolean applyVectorField(ClearCLImageInterface source, ClearCLImageInterface vectorX, ClearCLImageInterface vectorY, ClearCLImageInterface destination)
+* boolean applyVectorField(ClearCLImageInterface source, ClearCLImageInterface vector_x, ClearCLImageInterface vector_y, ClearCLImageInterface destination)
 * boolean applyVectorField(ClearCLImageInterface arg1, ClearCLImageInterface arg2, ClearCLImageInterface arg3, ClearCLImageInterface arg4, ClearCLImageInterface arg5)
 
 **CLIJx**
-* boolean applyVectorfield(ClearCLBuffer source, ClearCLBuffer vectorX, ClearCLBuffer vectorY, ClearCLBuffer destination)
+* boolean applyVectorfield(ClearCLBuffer source, ClearCLBuffer vector_x, ClearCLBuffer vector_y, ClearCLBuffer destination)
 * boolean applyVectorfield(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3, ClearCLBuffer arg4, ClearCLBuffer arg5)
-* boolean applyVectorfield(ClearCLImage source, ClearCLImage vectorX, ClearCLImage vectorY, ClearCLImage destination)
+* boolean applyVectorfield(ClearCLImage source, ClearCLImage vector_x, ClearCLImage vector_y, ClearCLImage destination)
 * boolean applyVectorfield(ClearCLImage arg1, ClearCLImage arg2, ClearCLImage arg3, ClearCLImage arg4, ClearCLImage arg5)
 
 **CLIc**
