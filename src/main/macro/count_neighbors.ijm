@@ -2,7 +2,7 @@
 # Counting neighbors in grids of cells
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/count_neighbors.ijm)
 
-This notebooks introduces two techniques for counting neighbors in grids of cells.
+This notebook introduces two techniques for counting neighbors in grids of cells.
 
 Let's start by cleaaning up and opening an example dataset. 
 The dataset was made by Craig S. Kaplan ([@cs_kaplan](https://twitter.com/cs_kaplan)) and [shared via Twitter](https://twitter.com/cs_kaplan/status/1359945996806029321?s=20)
