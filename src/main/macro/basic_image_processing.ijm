@@ -1,5 +1,6 @@
 /*
 # Basics of image processing with CLIJ
+[Source](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm)
 
 This notebooks introduces how images can be processed with CLIJ. 
 
