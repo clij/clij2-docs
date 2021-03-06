@@ -79,7 +79,8 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Warp images](https://clij.github.io/clij2-docs/md/applyVectorFieldMD/)
     * [Drosophila embryo cell counting](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection/)
 
-  * Segmentation and labelling
+  * Spot detection, segmentation and labelling
+    * [Spot detection](https://clij.github.io/clij2-docs/md/spot_detection/)
     * [Labeling](https://clij.github.io/clij2-docs/md/labeling/)
     * [3D Image Segmentation](https://clij.github.io/clij2-docs/md/image_segmentation_3d/)
     * [Binary images](https://clij.github.io/clij2-docs/md/binary_processing/)
