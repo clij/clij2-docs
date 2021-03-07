@@ -3834,6 +3834,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
+## local_threshold_phansalkar
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdPhansalkar(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4, float arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_phansalkar(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4, float arg5)
+
+**Macro**
+* Ext.CLIJx_localThresholdPhansalkar(Image source, ByRef Image destination, Number radius, Number k, Number r)
+
 ## logarithm
 **CLIJ2**
 * boolean logarithm(ClearCLImageInterface source, ClearCLImageInterface destination)
@@ -5938,7 +5950,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * ImagePlus pull(Object object)
 
 **CLIc**
-* Image<T> Pull(Buffer& gpu_obj);
+* std::vector<T> Pull(Buffer& gpu_obj);
 
 **clEsperantoJ**
 * ImagePlus pull(Object object)
@@ -6084,7 +6096,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * ClearCLBuffer push(Object object)
 
 **CLIc**
-* Buffer Push(Image<T>& image);
+* Buffer Push(std::vector<T>& arr, unsigned int[3]);
 
 **clEsperantoJ**
 * ClearCLBuffer push(Object object)
@@ -8821,6 +8833,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_zPositionOfMaximumZProjection(Image source, ByRef Image destination)
 
+## z_position_of_minimum_z_projection
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean zPositionOfMinimumZProjection(ClearCLImageInterface source, ClearCLImageInterface destination)
+
+**clEsperantoJ**
+* ClearCLImageInterface z_position_of_minimum_z_projection(ClearCLImageInterface source, ClearCLImageInterface destination)
+
+**Macro**
+* Ext.CLIJx_zPositionOfMinimumZProjection(Image source, ByRef Image destination)
+
 ## z_position_projection
 <span style="color:green">(experimental)</span>
 
@@ -8847,4 +8871,4 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 
 
-645 methods listed.
+647 methods listed.

@@ -785,6 +785,9 @@ Takes a label map, determines which labels touch, determines for every label wit
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localThreshold">localThreshold</a>  
 Computes a binary image with pixel values 0 and 1 depending on if a pixel value x in image X  was above of equal to the pixel value m in mask image M.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localThresholdPhansalkar">localThresholdPhansalkar (Experimental)</a>  
+Computes the local threshold (Fast version) based on   Auto Local Threshold (Phansalkar method) see: https://imagej.net/Auto_Local_Threshold   see code in:   https://github.com/fiji/Auto_Local_Threshold/blob/c955dc18cff58ac61df82f3f001799f7ffaec5cb/src/main/java/fiji/threshold/Auto_Local_Threshold.java#L636   The version here has been adapted to use normalization my multiplying the image with 1.0 / max_intensity instead of 1.0/255.   Formulary:  <pre>t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))</pre>
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_logarithm">logarithm</a>  
 Computes base e logarithm of all pixels values.
 
@@ -1775,10 +1778,13 @@ Takes a point list image representing n points (n*2 for 2D points, n*3 for 3D po
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionOfMaximumZProjection">zPositionOfMaximumZProjection (Experimental)</a>  
 Determines a Z-position of the maximum intensity along Z and writes it into the resulting image.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionOfMinimumZProjection">zPositionOfMinimumZProjection (Experimental)</a>  
+Determines a Z-position of the minimum intensity along Z and writes it into the resulting image.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionProjection">zPositionProjection (Experimental)</a>  
 Project a defined Z-slice of a 3D stack into a 2D image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_zPositionRangeProjection">zPositionRangeProjection (Experimental)</a>  
 Project multiple Z-slices of a 3D stack into a new 3D stack.
 
-612 methods listed.
+614 methods listed.

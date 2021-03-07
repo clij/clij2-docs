@@ -11,6 +11,10 @@ Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection),
 Availability: Available in Fiji by activating the update sites clij and clij2.
 This function is part of clij2_-2.2.0.19.jar.
 
+### detectMaxima2DBox often follows after
+* <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
+
+
 ### Usage in ImageJ macro
 ```
 Ext.CLIJ2_detectMaxima2DBox(Image source, Image destination, Number radiusX, Number radiusY);
@@ -147,6 +151,7 @@ cle.detect_maxima_box(source, destination, radiusX, radiusY)
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/spot_detection"><img src="images/language_macro.png" height="20"/></a> [spot_detection](https://clij.github.io/clij2-docs/md/spot_detection)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb"><img src="images/language_python.png" height="20"/></a> [napari_dask.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb"><img src="images/language_python.png" height="20"/></a> [voronoi_otsu_labeling.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tribolium_morphometry/tribolium_morphometry.ipynb"><img src="images/language_python.png" height="20"/></a> [tribolium_morphometry.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tribolium_morphometry/tribolium_morphometry.ipynb)  
@@ -155,6 +160,7 @@ cle.detect_maxima_box(source, destination, radiusX, radiusY)
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_detection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tribolium_morphometry/tribolium.py"><img src="images/language_python.png" height="20"/></a> [tribolium.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tribolium_morphometry/tribolium.py)  
 
 

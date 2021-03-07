@@ -251,6 +251,9 @@ Applies a local minimum and maximum filter.
 ### <img src="images/mini_clij1_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localThreshold">localThreshold</a>  
 Computes a binary image with pixel values 0 and 1 depending on if a pixel value x in image X  was above of equal to the pixel value m in mask image M.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_localThresholdPhansalkar">localThresholdPhansalkar (Experimental)</a>  
+Computes the local threshold (Fast version) based on   Auto Local Threshold (Phansalkar method) see: https://imagej.net/Auto_Local_Threshold   see code in:   https://github.com/fiji/Auto_Local_Threshold/blob/c955dc18cff58ac61df82f3f001799f7ffaec5cb/src/main/java/fiji/threshold/Auto_Local_Threshold.java#L636   The version here has been adapted to use normalization my multiplying the image with 1.0 / max_intensity instead of 1.0/255.   Formulary:  <pre>t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))</pre>
+
 <a name="M"></a>
 
 ## M
@@ -584,4 +587,4 @@ Takes a binary image and dilates the regions using a octagon shape until they to
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_watershed">watershed</a>  
 Apply a binary watershed to a binary image and introduces black pixels between objects.
 
-184 methods listed.
+185 methods listed.

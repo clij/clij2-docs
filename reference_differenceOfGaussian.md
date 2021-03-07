@@ -168,6 +168,7 @@ cle.difference_of_gaussian(input, destination, sigma1x, sigma1y, sigma2x, sigma2
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
+<a href="https://clij.github.io/clij2-docs/md/spot_detection"><img src="images/language_macro.png" height="20"/></a> [spot_detection](https://clij.github.io/clij2-docs/md/spot_detection)  
 
 
 
@@ -175,6 +176,7 @@ cle.difference_of_gaussian(input, destination, sigma1x, sigma1y, sigma2x, sigma2
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/drosophila_max_cylinder_projection.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_detection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

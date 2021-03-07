@@ -1,7 +1,7 @@
-## zPositionOfMaximumZProjection
+## zPositionOfMinimumZProjection
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Determines a Z-position of the maximum intensity along Z and writes it into the resulting image.
+Determines a Z-position of the minimum intensity along Z and writes it into the resulting image.
 
 If there are multiple z-slices with the same value, the smallest Z will be chosen.
 
@@ -12,7 +12,7 @@ This function is part of clijx_-0.30.1.21.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_zPositionOfMaximumZProjection(Image source, Image destination);
+Ext.CLIJx_zPositionOfMinimumZProjection(Image source, Image destination);
 ```
 
 
@@ -37,7 +37,7 @@ destination = clijx.create(source);
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.zPositionOfMaximumZProjection(source, destination);
+clijx.zPositionOfMinimumZProjection(source, destination);
 </pre>
 
 <pre class="highlight">
@@ -69,7 +69,7 @@ destination = clijx.create(source);
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.zPositionOfMaximumZProjection(source, destination);
+clijx.zPositionOfMinimumZProjection(source, destination);
 </pre>
 
 <pre class="highlight">

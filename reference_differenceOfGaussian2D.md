@@ -30,6 +30,7 @@ This function is part of clij2_-2.2.0.19.jar.
 
 
 ### differenceOfGaussian2D is often followed by
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (1)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 
 
@@ -174,8 +175,15 @@ cle.difference_of_gaussian(input, destination, sigma1x, sigma1y, sigma2x, sigma2
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/spot_detection"><img src="images/language_macro.png" height="20"/></a> [spot_detection](https://clij.github.io/clij2-docs/md/spot_detection)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm"><img src="images/language_macro.png" height="20"/></a> [division_visualisation.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/division_visualisation.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_detection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
