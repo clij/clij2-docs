@@ -107,7 +107,7 @@ public boolean executeCL() {
 }
 ```
 
-Furthermore, we recommend implementing a static funtion that takes a `CLIJ2` instance as parameter and custom parameters depending on a the given functionality.
+Furthermore, we recommend implementing a static funtion that takes a `CLIJ2` instance as parameter and custom parameters depending on the given functionality.
 This is not mandatory but is consistently done in CLIJ:
 ```java
 public static boolean addImageAndScalar(CLIJ2 clij2, ClearCLImageInterface src, ClearCLImageInterface dst, Float scalar) {
@@ -154,7 +154,7 @@ public String getCategories() {
 ```
 
 ### Interface HasClassifiedInputOutput
-This interface is uses to describe input and output [image types](https://clij.github.io/clij2-docs/md/image_types/).
+This interface is used to describe input and output [image types](https://clij.github.io/clij2-docs/md/image_types/).
 It is optional, but needs to be provided so that the plugin shows up in the user interface of the [clij-assistant](https://clij.github.io/assistant).
 Typical image types are `Image`, `Binary Image` and `Label Image`. 
 Furthermore, it can be `Matrix`, `Vector` and `Pointlist`.
@@ -171,7 +171,7 @@ public String getOutputType() {
 ```
 
 ### Interface HasAuthor
-If you want to let end-users know who wrote a spciefic plugin, use this interface and implement the function `hasAuthor()`:
+If you want to let end-users know who wrote a specific plugin, use this interface and implement the function `getAuthorName()`:
 
 ```java
 @Override
