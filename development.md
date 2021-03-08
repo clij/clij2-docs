@@ -1,9 +1,13 @@
-## Developing using maven
-CLIJ2 uses the maven build system. In order to develop CLIJ2, use git to get the recent version and maven to build it: 
+## Developing and extending CLIJ
+If you plan to make a contribution to the CLIJ project, consider sending a pull request to the [CLIJx](https://github.com/clij/clijx) repository.
+We collect new functions and plugins in the CLIJx repository, because the X stands for eXperimental and all new plugins should be tested there for a while before they become part of the core library.
 
-Clone the clij2 repository
+## Developing using maven
+CLIJ uses the maven build system. In order to develop CLIJx, use git to get the recent version and maven to build it: 
+
+Clone the clijx repository
 ```
-git clone https://github.com/clij/clij2
+git clone https://github.com/clij/clijx
 ```
 
 Open pom.xml and enter the path of your Fiji installation in the line containing
@@ -15,22 +19,19 @@ Open pom.xml and enter the path of your Fiji installation in the line containing
 Go to the source dir and install it to your Fiji.app
 
 ```
-cd clij2
+cd clijx
 mvn install
 ```
 
 It is recommended to use an integrated development environment such as IntelliJ or Eclipse.
 
 ## Plugin devolopment
-If you plan to make a contribution to the CLIJ project, consider sending a pull request to the [CLIJx](https://github.com/clij/clijx) repository.
-We collect new functions and plugins in the CLIJx repository, because the X stands for eXperimental and all new plugins should be tested there for a while before they become part of the core library.
-
 For developing a first CLIJ plugin, it is recommended to take a look at the [clij2 plugin template](https://github.com/clij/clij2-plugin-template).
 
 ## What plugins consist of
 All CLIJ plugins typically consist of one Java class holding mostly information about the plugin such as documentation and compatibility layers.
 As an example, we take a closer look at the [AddImageAndScalar](https://github.com/clij/clij2/blob/master/src/main/java/net/haesleinhuepf/clij2/plugins/AddImageAndScalar.java) 
-implementation in CLIJ2 which allows to add a constant value to all pixels of a given source image.
+implementation in CLIJ which allows to add a constant value to all pixels of a given source image.
 ```java
 @Plugin(type = CLIJMacroPlugin.class, name = "CLIJ2_addImageAndScalar")
 public class AddImageAndScalar extends AbstractCLIJ2Plugin implements CLIJMacroPlugin, CLIJOpenCLProcessor, OffersDocumentation, ...
