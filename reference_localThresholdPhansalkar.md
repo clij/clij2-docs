@@ -7,14 +7,13 @@ Computes the local threshold (Fast version) based on
  Auto Local Threshold (Phansalkar method) see: https://imagej.net/Auto_Local_Threshold 
  see code in: 
  https://github.com/fiji/Auto_Local_Threshold/blob/c955dc18cff58ac61df82f3f001799f7ffaec5cb/src/main/java/fiji/threshold/Auto_Local_Threshold.java#L636 
- The version here has been adapted to use normalization my multiplying the image with 1.0 / max_intensity instead of 1.0/255. 
  Formulary: 
 <pre>t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))</pre>
 
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```

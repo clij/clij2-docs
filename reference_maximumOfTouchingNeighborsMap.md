@@ -25,7 +25,7 @@ parametric_map_destination
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```

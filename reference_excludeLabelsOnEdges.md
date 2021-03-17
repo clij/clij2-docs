@@ -11,7 +11,11 @@ Availability: Available in Fiji by activating the update sites clij and clij2.
 This function is part of clij2_-2.2.0.19.jar.
 
 ### excludeLabelsOnEdges often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+
+
+### excludeLabelsOnEdges is often followed by
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -145,6 +149,7 @@ cle.exclude_labels_on_edges(label_map_input, label_map_destination)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/labeling"><img src="images/language_macro.png" height="20"/></a> [labeling](https://clij.github.io/clij2-docs/md/labeling)  
+<a href="https://clij.github.io/clij2-docs/md/outlines_numbers_overlay"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.ipynb"><img src="images/language_python.png" height="20"/></a> [count_blobs.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.ipynb)  
 
 
@@ -153,6 +158,7 @@ cle.exclude_labels_on_edges(label_map_input, label_map_destination)
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsOnEdges.ijm"><img src="images/language_macro.png" height="20"/></a> [excludeLabelsOnEdges.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsOnEdges.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/labeling.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/segmentation.py"><img src="images/language_jython.png" height="20"/></a> [segmentation.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/segmentation.py)  
 
 

@@ -1,5 +1,5 @@
 ## meanOfProximalNeighborsMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a label image and a parametric intensity image and will replace each labels value in the parametric image by the mean average value of neighboring labels.
 
@@ -19,7 +19,7 @@ max_distance : float, optional
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -99,6 +99,23 @@ clijx.release(parametric_map);
 clijx.release(label_map);
 clijx.release(parametric_map_destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.mean_of_proximal_neighbors_map(parametric_map, label_map, parametric_map_destination, min_distance, max_distance)
+
+</pre>
+
+
 
 </details>
 

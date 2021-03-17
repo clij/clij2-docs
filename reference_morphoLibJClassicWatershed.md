@@ -8,7 +8,7 @@ Connectedness: 4 (2D) / 6 (3D)
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij, clij2 and clijx-assistant-extensions.
-This function is part of clijx-assistant-morpholibj_-0.4.2.16.jar.
+This function is part of clijx-assistant-morpholibj_-0.4.2.22.jar.
 
 ### Usage in ImageJ macro
 ```

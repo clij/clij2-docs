@@ -1,5 +1,5 @@
 ## voronoiOtsuLabeling
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Applies two Gaussian blurs, spot detection, Otsu-thresholding and Voronoi-labeling.
 The thresholded binary image is flooded using the Voronoi approach starting from the found local maxima.
@@ -8,7 +8,7 @@ Noise-removal sigma for spot detection and thresholding can be configured separa
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -84,6 +84,23 @@ destination = clijx.pullMat(destination)
 clijx.release(input);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.voronoi_otsu_labeling(input, destination, spot_sigma, outline_sigma)
+
+</pre>
+
+
 
 </details>
 

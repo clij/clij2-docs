@@ -15,12 +15,14 @@ Availability: Available in Fiji by activating the update sites clij and clij2.
 This function is part of clij2_-2.2.0.19.jar.
 
 ### dilateBox often follows after
+* <a href="reference_detectLabelEdges">detectLabelEdges</a> (1)
 * <a href="reference_erodeBox">erodeBox</a> (2)
 * <a href="reference_dilateBox">dilateBox</a> (1)
 
 
 ### dilateBox is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (1)
+* <a href="reference_mask">mask</a> (1)
 * <a href="reference_dilateBox">dilateBox</a> (1)
 
 
@@ -155,12 +157,14 @@ cle.dilate_box(source, destination)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+<a href="https://clij.github.io/clij2-docs/md/outlines_numbers_overlay"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay)  
 
 
 
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/binaryProcessing.py"><img src="images/language_jython.png" height="20"/></a> [binaryProcessing.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/binaryProcessing.py)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py"><img src="images/language_jython.png" height="20"/></a> [interactiveCylinderProjection.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/interactiveCylinderProjection.py)  

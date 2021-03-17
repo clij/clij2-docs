@@ -6,7 +6,7 @@ Applies a local minimum and maximum filter.
 Afterwards, the value is returned which is more far from zero.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```

@@ -1,5 +1,5 @@
 ## maskedVoronoiLabeling
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a binary image, labels connected components and dilates the regions using a octagon shape until they touch and only inside another binary mask image.
 
@@ -10,7 +10,7 @@ Hint: Process isotropic images only.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -86,6 +86,23 @@ clijx.release(input);
 clijx.release(mask);
 clijx.release(destination);
 </pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+clEsperanto Python (experimental)
+</summary>
+<pre class="highlight">import pyclesperanto_prototype as cle
+
+cle.masked_voronoi_labeling(input, mask, destination)
+
+</pre>
+
+
 
 </details>
 

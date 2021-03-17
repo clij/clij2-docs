@@ -8,7 +8,7 @@ Computes the absolute value of every individual pixel x in a given image.
 Deprecated: Use absolute() instead.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.21.jar.
+This function is part of clijx_-0.30.1.22.jar.
 
 ### Usage in ImageJ macro
 ```

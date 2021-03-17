@@ -870,6 +870,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
+## color_deconvolution
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean colorDeconvolution(ClearCLBuffer source, ClearCLBuffer color_vectors, ClearCLBuffer destination)
+
+**clEsperantoJ**
+* ClearCLBuffer color_deconvolution(ClearCLBuffer source, ClearCLBuffer color_vectors, ClearCLBuffer destination)
+
+**Macro**
+* Ext.CLIJx_colorDeconvolution(Image source, Image color_vectors, ByRef Image destination)
+
 ## combine_horizontally
 **CLIJ2**
 * boolean combineHorizontally(ClearCLImageInterface stack1, ClearCLImageInterface stack2, ClearCLImageInterface destination)
@@ -3834,6 +3846,78 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
 
+## local_threshold_bernsen
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdBernsen(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_bernsen(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**Macro**
+* Ext.CLIJx_localThresholdBernsen(Image source, ByRef Image destination, Number radius, Number contrast_threshold)
+
+## local_threshold_contrast
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdContrast(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_contrast(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3)
+
+**Macro**
+* Ext.CLIJx_localThresholdContrast(Image source, ByRef Image destination, Number radius)
+
+## local_threshold_mean
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdMean(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_mean(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**Macro**
+* Ext.CLIJx_localThresholdMean(Image source, ByRef Image destination, Number radius, Number c_value)
+
+## local_threshold_median
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdMedian(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_median(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**Macro**
+* Ext.CLIJx_localThresholdMedian(Image source, ByRef Image destination, Number radius, Number c_value)
+
+## local_threshold_mid_grey
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdMidGrey(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_mid_grey(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4)
+
+**Macro**
+* Ext.CLIJx_localThresholdMidGrey(Image source, ByRef Image destination, Number radius, Number c_value)
+
+## local_threshold_niblack
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdNiblack(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4, float arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_niblack(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4, float arg5)
+
+**Macro**
+* Ext.CLIJx_localThresholdNiblack(Image source, ByRef Image destination, Number radius, Number k_value, Number c_value)
+
 ## local_threshold_phansalkar
 <span style="color:green">(experimental)</span>
 
@@ -3845,6 +3929,18 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_localThresholdPhansalkar(Image source, ByRef Image destination, Number radius, Number k, Number r)
+
+## local_threshold_sauvola
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean localThresholdSauvola(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4, float arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer local_threshold_sauvola(ClearCLBuffer arg1, ClearCLBuffer arg2, float arg3, float arg4, float arg5)
+
+**Macro**
+* Ext.CLIJx_localThresholdSauvola(Image source, ByRef Image destination, Number radius, Number par1, Number par2)
 
 ## logarithm
 **CLIJ2**
@@ -8871,4 +8967,4 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 
 
-647 methods listed.
+655 methods listed.
