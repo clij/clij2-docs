@@ -9,79 +9,79 @@ This macro shows how to label outlines of segmented objects
 and how to draw label numbers to the image as overlay.
 
 
-```java
+<pre class="highlight">
 // clean up first
 close("*");
-```
+</pre>
 get test data 
-```java
+<pre class="highlight">
 run("Blobs (25K)");
 input = getTitle();
-```
-<a href="image_1616004824754.png"><img src="image_1616004824754.png" width="250" alt="blobs.gif"/></a>
+</pre>
+<a href="image_1616004824754.png"><img src="image_1616004824754.png" width="224" alt="blobs.gif"/></a>
 
 ## Image segmentation using CLIJ
 First we initialize the GPU and push image data to the GPU memory:
 
-```java
+<pre class="highlight">
 run("CLIJ2 Macro Extensions", "cl_device=");
-Ext.CLIJ2_clear();
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
 
 // push data to GPU
-Ext.CLIJ2_push(input);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_push">CLIJ2_push</a>(input);
 
 // Blur the image and create a mask using a fixed threshold
-Ext.CLIJ2_gaussianBlur2D(input, input_blurred, 1, 1);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_gaussianBlur2D">CLIJ2_gaussianBlur2D</a>(input, input_blurred, 1, 1);
 // binarization
-Ext.CLIJ2_thresholdOtsu(input_blurred, mask);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_thresholdOtsu">CLIJ2_thresholdOtsu</a>(input_blurred, mask);
 // label connected components
-Ext.CLIJ2_connectedComponentsLabelingBox(mask, labelmap);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_connectedComponentsLabelingBox">CLIJ2_connectedComponentsLabelingBox</a>(mask, labelmap);
 // Remove labels touching image borders
-Ext.CLIJ2_excludeLabelsOnEdges(labelmap, labels_not_touching_image_borders);
-Ext.CLIJ2_pull(labels_not_touching_image_borders);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_excludeLabelsOnEdges">CLIJ2_excludeLabelsOnEdges</a>(labelmap, labels_not_touching_image_borders);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labels_not_touching_image_borders);
 run("glasbey on dark");
 resetMinAndMax;
-```
-<a href="image_1616004824948.png"><img src="image_1616004824948.png" width="250" alt="CLIJ2_excludeLabelsOnEdges_result18"/></a>
+</pre>
+<a href="image_1616004824948.png"><img src="image_1616004824948.png" width="224" alt="CLIJ2_excludeLabelsOnEdges_result18"/></a>
 
 ## Create thick label outlines
 We now take the label image an generate an image where only 
 the label outlines are highlighted.
 
-```java
+<pre class="highlight">
 // determine label borders
-Ext.CLIJ2_detectLabelEdges(labels_not_touching_image_borders, labelmap_edges);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_detectLabelEdges">CLIJ2_detectLabelEdges</a>(labels_not_touching_image_borders, labelmap_edges);
 // make borders a bit wider
-Ext.CLIJ2_dilateBox(labelmap_edges, labelmap_edges_dilated);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_dilateBox">CLIJ2_dilateBox</a>(labelmap_edges, labelmap_edges_dilated);
 // bring label numbers (colours) to the label edge image 
-Ext.CLIJ2_mask(labels_not_touching_image_borders, labelmap_edges_dilated, labelmap_outlines);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_mask">CLIJ2_mask</a>(labels_not_touching_image_borders, labelmap_edges_dilated, labelmap_outlines);
 // visualize labeled image
-Ext.CLIJ2_pull(labelmap_outlines);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_pull">CLIJ2_pull</a>(labelmap_outlines);
 run("glasbey_on_dark");
 resetMinAndMax;
 
-```
-<a href="image_1616004825032.png"><img src="image_1616004825032.png" width="250" alt="CLIJ2_mask_result21"/></a>
+</pre>
+<a href="image_1616004825032.png"><img src="image_1616004825032.png" width="224" alt="CLIJ2_mask_result21"/></a>
 
 ## Add the label outlines as overlay to the original image
 
-```java
+<pre class="highlight">
 selectWindow(input);
 run("Add Image...", "image=["+labelmap_outlines+"] x=0 y=0 opacity=100 zero");
 
-```
-<a href="image_1616004825084.png"><img src="image_1616004825084.png" width="250" alt="blobs.gif"/></a>
+</pre>
+<a href="image_1616004825084.png"><img src="image_1616004825084.png" width="224" alt="blobs.gif"/></a>
 
 ## Add label numbers as overlay to the input image
 Count labels and measure the label statistics
 
-```java
+<pre class="highlight">
 run("Clear Results");
 // measure maximum intensity in the label image which equals 
 // the number of labeled objects
-Ext.CLIJ2_getMaximumOfAllPixels(labels_not_touching_image_borders, number_of_labels);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_getMaximumOfAllPixels">CLIJ2_getMaximumOfAllPixels</a>(labels_not_touching_image_borders, number_of_labels);
 // determine mass center (and other statistics)
-Ext.CLIJ2_statisticsOfLabelledPixels(labels_not_touching_image_borders, labels_not_touching_image_borders);
+Ext.<a href="https://clij.github.io/clij2-docs/reference_statisticsOfLabelledPixels">CLIJ2_statisticsOfLabelledPixels</a>(labels_not_touching_image_borders, labels_not_touching_image_borders);
 
 // configure font for drawing text
 labelFontSize = 11;
@@ -102,16 +102,16 @@ for (i = 0; i < number_of_labels; i++) {
 run("Clear Results");
 Overlay.show();
 
-```
-<a href="image_1616004825185.png"><img src="image_1616004825185.png" width="250" alt="blobs.gif"/></a>
+</pre>
+<a href="image_1616004825185.png"><img src="image_1616004825185.png" width="224" alt="blobs.gif"/></a>
 
 At the end of the macro, clean up:
 
-```java
-Ext.CLIJ2_clear();
-```
+<pre class="highlight">
+Ext.<a href="https://clij.github.io/clij2-docs/reference_clear">CLIJ2_clear</a>();
+</pre>
 
 
 
-```
-```
+</pre>
+</pre>
