@@ -68,8 +68,8 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [The big dictionary](https://clij.github.io/clij2-docs/dictionary_clesperanto)
   
 * Tutorials
-  * [Basics](https://clij.github.io/clij2-docs/md/basics/)
-  * [Basic image processing](https://clij.github.io/clij2-docs/md/basic_image_processing/)
+  * [Basics of GPU-accelerated image processing and memory management](https://clij.github.io/clij2-docs/md/basics/)
+  * [Basic image processing workflows](https://clij.github.io/clij2-docs/md/basic_image_processing/)
   * [Binary images, label images and parametric images](https://clij.github.io/clij2-docs/md/image_types/)
   * [Processing multi-channel time-lapse data](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse/)
   * Filtering and processing images
