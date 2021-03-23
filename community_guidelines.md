@@ -46,7 +46,7 @@ cycle](https://clij.github.io/clij-docs/release_cycle) and aim for backwards-com
 ## Future releases
 After [clij](https://clij.github.io/clij-docs/) released in summer 2019 
 and [clij2](https://clij.github.io/clij2-docs/) released in summer 2020, 
-the next evolutionary step is [clEsperanto](http://clesperanto.net/), potentially released in summer 2021. Excited? [Get in touch](http://clesperanto.net/).
+the next evolutionary step is [clEsperanto](http://clesperanto.net/), potentially released in summer 2022. Excited? [Get in touch](http://clesperanto.net/).
 
 
 ![Image](images/clij1_logo.png)
