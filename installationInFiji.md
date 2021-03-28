@@ -36,7 +36,46 @@ Be really careful when doing this. Don't do it, if you're not aware what that me
 [https://support.microsoft.com/en-us/help/2665946/display-driver-stopped-responding-and-has-recovered-error-in-windows-7](https://support.microsoft.com/en-us/help/2665946/display-driver-stopped-responding-and-has-recovered-error-in-windows-7)
 
 ## Linux
-Linux users need to install drivers for OpenCL, even on Intel HD GPUs. It is recommended to install the packages [beignet](https://github.com/intel/beignet) and [ocl-icd-devel](https://github.com/OCL-dev/ocl-icd).
+Linux users need to install drivers for OpenCL, even on Intel HD GPUs. Depending on which linux being used, you need to install OpenCL Installable Client Driver (OCL-ICD):
+```
+sudo apt-get install intel-opencl-icd
+```
+
+Or
+```
+sudo apt-get install nvidia-opencl-dev
+```
+
+Or
+```
+sudo apt-get install ocl-icd-devel
+```
+
+Or
+```
+sudo apt-get install nvidia-legacy-340xx-opencl-icd
+```
+
+Or
+```
+sudo apt-get install ocl-icd-opencl-dev
+```
+
+Or
+```
+sudo apt-get install ocl-icd-libopencl1
+```
+
+
+For debugging if the GPU is identified correctly, also `clinfo` is recommended:
+```
+sudo apt-get install clinfo
+clinfo
+```
+See also [amdgpu-pro installation](https://math.dartmouth.edu/~sarunas/amdgpu.html)
+
+
+.
 
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)
 

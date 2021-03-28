@@ -66,6 +66,8 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [CLIJx-Assistant](https://clij.github.io/assistant)
     * [clEsperanto](http://clesperanto.net)
     * [The big dictionary](https://clij.github.io/clij2-docs/dictionary_clesperanto)
+  * [Support](https://image.sc)
+  * [Imprint](https://clij.github.io/imprint)
   
 * Tutorials
   * [Basics of GPU-accelerated image processing and memory management](https://clij.github.io/clij2-docs/md/basics/)
@@ -149,17 +151,13 @@ If you search for support, please open a thread on the [image.sc](https://image.
   * [OpenCL 1.2 Quick Reference, Khronos Group](https://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf)
   * [OpenCL 1.2 Specifications, Khronos Group](https://www.khronos.org/registry/OpenCL/specs/opencl-1.2.pdf)
 
-* FAQ / support
-  * CLIJ versus CLIJ2
-    * [Combining CLIJ and CLIJ2](https://clij.github.io/clij2-docs/md/clij1_clij2_combination/)
-    * [CLIJ documentation (archived)](https://clij.github.io/clij-docs)
-    * [CLIJ BioRxiv preprint (archived)](https://doi.org/10.1101/660704)
-    * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
-    * [CLIJ - CLIJ2 transition guide (under construction)](https://clij.github.io/clij2-docs/clij2_transition_notes)
-  * [Troubleshooting](https://clij.github.io/clij2-docs/troubleshooting)
-  * [Support](https://image.sc)
-  * [Imprint](https://clij.github.io/imprint)
-
+* CLIJ versus CLIJ2
+  * [Combining CLIJ and CLIJ2](https://clij.github.io/clij2-docs/md/clij1_clij2_combination/)
+  * [CLIJ documentation (archived)](https://clij.github.io/clij-docs)
+  * [CLIJ BioRxiv preprint (archived)](https://doi.org/10.1101/660704)
+  * [What's different between CLIJ1, CLIJ2 and CLIJx?](https://clij.github.io/clij2-docs/clij12xAPIcomparison)
+  * [CLIJ - CLIJ2 transition guide (under construction)](https://clij.github.io/clij2-docs/clij2_transition_notes)
+  
 ## Acknowledgements
 Development of CLIJ is a community effort. We would like to thank everybody who helped developing and testing. In particular thanks goes to
 Alex Herbert (University of Sussex),
