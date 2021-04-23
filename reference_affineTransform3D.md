@@ -46,7 +46,7 @@ transform = "-center scale=2 rotate=45 center";
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -179,6 +179,7 @@ cle.affine_transform(source, destination, transform)
 
 ### Example notebooks
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/transforms/affine_transforms.ipynb"><img src="images/language_python.png" height="20"/></a> [affine_transforms.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/transforms/affine_transforms.ipynb)  
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/affine_transforms.ipynb"><img src="images/language_python.png" height="20"/></a> [affine_transforms.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/affine_transforms.ipynb)  
 
 
 

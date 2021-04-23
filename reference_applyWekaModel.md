@@ -8,7 +8,7 @@ It takes a 3D feature stack (e.g. first plane original image, second plane blurr
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), Machine Learning
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx-weka_-0.30.1.19.jar.
+This function is part of clijx-weka_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```

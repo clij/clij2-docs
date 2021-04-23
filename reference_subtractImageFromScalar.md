@@ -8,7 +8,7 @@ Subtracts one image X from a scalar s pixel wise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### subtractImageFromScalar is often followed by
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)

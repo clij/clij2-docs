@@ -12,12 +12,18 @@ DEPRECATED: Use ReadValuesFromMap instead
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.22.jar.
+This function is part of clijx_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```
 Ext.CLIJx_readIntensitiesFromMap(Image labels, Image map_image, Image values_destination);
 ```
+
+
+
+
+### Example notebooks
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/bead_segmentation.ipynb"><img src="images/language_python.png" height="20"/></a> [bead_segmentation.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/bead_segmentation.ipynb)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

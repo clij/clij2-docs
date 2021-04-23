@@ -4,7 +4,7 @@
 Takes meta data from a stack and assigns it to the current image. The stack implements the Last-In-First-Out (LIFO) principle.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.22.jar.
+This function is part of clijx_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```

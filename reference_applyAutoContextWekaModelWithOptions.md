@@ -4,7 +4,7 @@
 null
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx-weka_-0.30.1.19.jar.
+This function is part of clijx-weka_-0.30.2.0.jar.
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)

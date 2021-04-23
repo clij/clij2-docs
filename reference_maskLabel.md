@@ -11,7 +11,7 @@ f(x,m,i) = (x if (m == i); (0 otherwise))
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### maskLabel often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)

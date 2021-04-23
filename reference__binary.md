@@ -165,7 +165,7 @@ Finds and labels local maxima with neighboring maxima and background above a giv
 Takes two labelmaps with n and m labels and generates a (n+1)*(m+1) matrix where all pixels are set to 0 exept those where labels overlap between the label maps. 
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getAutomaticThreshold">getAutomaticThreshold</a>  
-The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on  the GPU to determine a threshold value as similar as possible to ImageJ 'Apply Threshold' method. 
+Determines a threshold according to a given method and saves it to the threshold_value variable.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_getBoundingBox">getBoundingBox</a>  
 Determines the bounding box of all non-zero pixels in a binary image. 

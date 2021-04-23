@@ -10,7 +10,7 @@ The touch matrix is a representation of a region adjacency graph
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### generateTouchMatrix often follows after
 * <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (1)

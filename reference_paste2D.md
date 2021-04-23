@@ -6,7 +6,7 @@ Pastes an image into another image at a given position.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### paste2D often follows after
 * <a href="reference_centroidsOfLabels">centroidsOfLabels</a> (1)

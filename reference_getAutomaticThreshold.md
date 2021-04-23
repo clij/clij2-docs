@@ -3,6 +3,8 @@
 
 By Robert Haase based on work by G. Landini and W. Rasband
 
+Determines a threshold according to a given method and saves it to the threshold_value variable.
+
 The automatic thresholder utilizes the threshold methods from ImageJ on a histogram determined on 
 the GPU to determine a threshold value as similar as possible to ImageJ 'Apply Threshold' method. 
 
@@ -13,7 +15,7 @@ of these methods in the method text field:
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### Usage in ImageJ macro
 ```

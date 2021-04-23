@@ -8,7 +8,7 @@ Computes the minimum of a constant scalar s and each pixel value x in a given im
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### Usage in ImageJ macro
 ```

@@ -8,7 +8,7 @@ The value v will be written at position x/y[/z] in the target image.
 Category: Visualisation
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### writeValuesToPositions often follows after
 * <a href="reference_paste2D">paste2D</a> (1)

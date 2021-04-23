@@ -8,7 +8,7 @@ If there are multiple z-slices with the same value, the smallest Z will be chose
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.22.jar.
+This function is part of clijx_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```

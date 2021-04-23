@@ -13,7 +13,7 @@ of these methods in the method text field:
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### automaticThreshold often follows after
 * <a href="reference_topHatBox">topHatBox</a> (1)

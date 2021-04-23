@@ -8,7 +8,7 @@ Note: Pixels with 0 value in the input image will not be overwritten in the outp
 Thus, the result image should be initialized by copying the original image in advance.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### Usage in ImageJ macro
 ```

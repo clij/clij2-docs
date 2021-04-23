@@ -4,7 +4,7 @@
 Frees memory of a specified image in GPU memory.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### release often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)

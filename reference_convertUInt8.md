@@ -8,7 +8,7 @@ The target image should not exist with a different type before this
 method is called.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### convertUInt8 often follows after
 * <a href="reference_convertFloat">convertFloat</a> (1)

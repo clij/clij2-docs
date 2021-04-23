@@ -227,6 +227,9 @@ Meshes all points in a given point list which are indiced in a corresponding ind
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_pointIndexListToTouchMatrix">pointIndexListToTouchMatrix (Experimental)</a>  
 Takes a list of point indices to generate a touch matrix (a.k.a. adjacency graph matrix) out of it. 
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_proximalNeighborCountMap">proximalNeighborCountMap (Experimental)</a>  
+Takes a label map, determines which labels are within a given distance range and replaces every label with the number of neighboring labels.
+
 <a name="R"></a>
 
 ## R
@@ -266,4 +269,4 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_touchingNeighborCountMap">touchingNeighborCountMap (Experimental)</a>  
 Takes a label map, determines which labels touch and replaces every label with the number of touching neighboring labels.
 
-74 methods listed.
+75 methods listed.

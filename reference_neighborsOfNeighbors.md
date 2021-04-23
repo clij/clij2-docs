@@ -6,7 +6,7 @@ Determines neighbors of neigbors from touch matrix and saves the result as a new
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### neighborsOfNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)

@@ -8,7 +8,7 @@ The pixels where  the regions touched are afterwards returned as binary image wh
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### labelVoronoiOctagon often follows after
 * <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (3)

@@ -13,7 +13,7 @@ This plugin is comparable to setting a raw threshold in ImageJ and using the 'Co
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### threshold often follows after
 * <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (1)

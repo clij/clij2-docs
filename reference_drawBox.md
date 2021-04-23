@@ -7,7 +7,7 @@ All pixels other than in the box are untouched. Consider using `set(buffer, 0);`
 Category: Visualisation
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### drawBox is often followed by
 * <a href="reference_copy">copy</a> (1)

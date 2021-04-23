@@ -194,7 +194,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, ByRef Image destination)
 
 **pyclesperanto**
-* <span style="color:red">(Missing)</span>
+* apply_vector_field(source : Image, vector_x : Image, vector_y : Image, vector_z : Image = None, destination : Image = None, linear_interpolation : bool = False):
 
 ## apply_vector_field
 **CLIJ2**
@@ -210,7 +210,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_applyVectorField2D(Image source, Image vector_x, Image vector_y, ByRef Image destination)
 
 **pyclesperanto**
-* <span style="color:red">(Missing)</span>
+* apply_vector_field(source : Image, vector_x : Image, vector_y : Image, vector_z : Image = None, destination : Image = None, linear_interpolation : bool = False):
 
 ## apply_vector_field
 **CLIJ2**
@@ -226,7 +226,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_applyVectorField3D(Image source, Image vectorX, Image vectorY, Image vectorZ, ByRef Image destination)
 
 **pyclesperanto**
-* <span style="color:red">(Missing)</span>
+* apply_vector_field(source : Image, vector_x : Image, vector_y : Image, vector_z : Image = None, destination : Image = None, linear_interpolation : bool = False):
 
 ## apply_vectorfield
 **CLIJ2**
@@ -1222,13 +1222,13 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
-* create(dimensions):
+* create(dimensions, dtype=np.float32):
 
 ## create
 <span style="color:green">(experimental)</span>
 
 **pyclesperanto**
-* create(dimensions):
+* create(dimensions, dtype=np.float32):
 
 ## crop
 **CLIJ2**
@@ -3104,6 +3104,54 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 **Macro**
 * Ext.CLIJx_greyLevelAtttributeFiltering(Image source, ByRef Image destination, Number number_of_bins, Number minimum_pixel_count)
 
+## greyscale_closing_box
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean greyscaleClosingBox(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer greyscale_closing_box(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**Macro**
+* Ext.CLIJx_greyscaleClosingBox(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
+
+## greyscale_closing_sphere
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean greyscaleClosingSphere(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer greyscale_closing_sphere(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**Macro**
+* Ext.CLIJx_greyscaleClosingSphere(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
+
+## greyscale_opening_box
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean greyscaleOpeningBox(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer greyscale_opening_box(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**Macro**
+* Ext.CLIJx_greyscaleOpeningBox(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
+
+## greyscale_opening_sphere
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean greyscaleOpeningSphere(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**clEsperantoJ**
+* ClearCLBuffer greyscale_opening_sphere(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4, double arg5)
+
+**Macro**
+* Ext.CLIJx_greyscaleOpeningSphere(Image source, ByRef Image destination, Number radius_x, Number radius_y, Number radius_z)
+
 ## histogram
 **CLIJ2**
 * boolean histogram(ClearCLBuffer arg1, ClearCLBuffer arg2)
@@ -4662,7 +4710,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_meanXProjection(Image source, ByRef Image destination)
 
 **pyclesperanto**
-* mean_x_projection(source : Image, destination : Image):
+* mean_x_projection(source : Image, destination : Image = None):
 
 ## mean_y_projection
 **CLIJ2**
@@ -4678,7 +4726,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_meanYProjection(Image source, ByRef Image destination)
 
 **pyclesperanto**
-* mean_y_projection(source : Image, destination : Image):
+* mean_y_projection(source : Image, destination : Image = None):
 
 ## mean_z_projection
 **CLIJ2**
@@ -4694,7 +4742,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_meanZProjection(Image source, ByRef Image destination)
 
 **pyclesperanto**
-* mean_z_projection(source : Image, destination : Image):
+* mean_z_projection(source : Image, destination : Image = None):
 
 ## mean_z_projection_above_threshold
 <span style="color:green">(experimental)</span>
@@ -5432,7 +5480,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_multiplyImageAndScalar(Image source, ByRef Image destination, Number scalar)
 
 **pyclesperanto**
-* multiply_image_and_scalar(source : Image, destination : Image = None, scalar : None = 0):
+* multiply_image_and_scalar(source : Image, destination : Image = None, scalar : float = 0):
 
 ## multiply_image_stack_with_scalars
 **CLIJ2**
@@ -6040,6 +6088,21 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **pyclesperanto**
 * <span style="color:red">(Missing)</span>
+
+## proximal_neighbor_count_map
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean proximalNeighborCountMap(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4)
+
+**clEsperantoJ**
+* ClearCLBuffer proximal_neighbor_count_map(ClearCLBuffer arg1, ClearCLBuffer arg2, double arg3, double arg4)
+
+**Macro**
+* Ext.CLIJx_proximalNeighborCountMap(Image input, ByRef Image destination, Number min_distance, Number max_distance)
+
+**pyclesperanto**
+* proximal_neighbor_count_map(source : Image, destination : Image = None, min_distance : float = 0, max_distance : float = np.finfo(np.float32).max):
 
 ## pull
 **CLIJ2**
@@ -6764,7 +6827,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJx_rigidTransform(Image input, ByRef Image destination, Number translation_x, Number translation_y, Number translation_z, Number rotation_angle_x, Number rotation_angle_y, Number rotation_angle_z)
 
 **pyclesperanto**
-* rigid_transform(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center=True):
+* rigid_transform(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center : bool = True, linear_interpolation : bool = False):
 
 ## rotate
 **CLIJ2**
@@ -6780,7 +6843,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_rotate2D(Image source, ByRef Image destination, Number angle, Boolean rotateAroundCenter)
 
 **pyclesperanto**
-* rotate(source : Image, destination : Image = None, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center=True):
+* rotate(source : Image, destination : Image = None, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center : bool = True, linear_interpolation : bool = False):
 
 ## rotate
 **CLIJ2**
@@ -6796,7 +6859,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_rotate3D(Image source, ByRef Image destination, Number angleX, Number angleY, Number angleZ, Boolean rotateAroundCenter)
 
 **pyclesperanto**
-* rotate(source : Image, destination : Image = None, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center=True):
+* rotate(source : Image, destination : Image = None, angle_around_x_in_degrees : float = 0, angle_around_y_in_degrees : float = 0, angle_around_z_in_degrees : float = 0, rotate_around_center : bool = True, linear_interpolation : bool = False):
 
 ## rotate_clockwise
 **CLIJ2**
@@ -6895,7 +6958,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_scale(Image source, ByRef Image destination, Number scaling_factor_x, Number scaling_factor_y, Number scaling_factor_z,  Boolean scale_to_center)
 
 **pyclesperanto**
-* scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered=True):
+* scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered : bool = True, linear_interpolation : bool = False):
 
 ## scale
 **CLIJ2**
@@ -6913,7 +6976,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_scale2D(Image source, ByRef Image destination, Number scaling_factor_x, Number scaling_factor_y, Boolean scale_to_center)
 
 **pyclesperanto**
-* scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered=True):
+* scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered : bool = True, linear_interpolation : bool = False):
 
 ## scale
 **CLIJ2**
@@ -6931,7 +6994,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_scale3D(Image source, ByRef Image destination, Number scaling_factor_x, Number scaling_factor_y, Number scaling_factor_z,  Boolean scale_to_center)
 
 **pyclesperanto**
-* scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered=True):
+* scale(source : Image, destination : Image = None, factor_x : float = 1, factor_y : float = 1, factor_z : float = 1, centered : bool = True, linear_interpolation : bool = False):
 
 ## seeded_watershed
 <span style="color:green">(experimental)</span>
@@ -7472,7 +7535,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_smallerConstant(Image source, ByRef Image destination, Number constant)
 
 **pyclesperanto**
-* smaller_constant(source : Image, destination : Image = None, constant : float = 0):
+* smaller_constant(source : Image, destination : Image = None, constant : float = 0, output_creator=create_binary_like):
 
 ## smaller_or_equal
 **CLIJ2**
@@ -7488,7 +7551,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_smallerOrEqual(Image source1, Image source2, ByRef Image destination)
 
 **pyclesperanto**
-* smaller_or_equal(source1 : Image, source2 : Image, destination : Image = None):
+* smaller_or_equal(source1 : Image, source2 : Image, destination : Image = None, output_creator=create_binary_like):
 
 ## smaller_or_equal_constant
 **CLIJ2**
@@ -7504,7 +7567,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_smallerOrEqualConstant(Image source, ByRef Image destination, Number constant)
 
 **pyclesperanto**
-* smaller_or_equal_constant(source : Image, destination : Image = None, constant : float = 0):
+* smaller_or_equal_constant(source : Image, destination : Image = None, constant : float = 0, output_creator=create_binary_like):
 
 ## sobel
 **CLIJ2**
@@ -7856,6 +7919,21 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 **Macro**
 * Ext.CLIJx_stopWatch(String text)
+
+## sub_stack
+<span style="color:green">(experimental)</span>
+
+**CLIJx**
+* boolean subStack(ClearCLImageInterface arg1, ClearCLImageInterface arg2, int arg3, int arg4)
+
+**clEsperantoJ**
+* ClearCLImageInterface sub_stack(ClearCLImageInterface arg1, ClearCLImageInterface arg2, int arg3, int arg4)
+
+**Macro**
+* Ext.CLIJx_subStack(Image source_stack, ByRef Image destination, Number start_z, Number end_z)
+
+**pyclesperanto**
+* sub_stack(source : Image, destination : Image = None, start_z : int = 0, end_z : int = 0):
 
 ## subtract
 **CLIJ2**
@@ -8604,7 +8682,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_translate2D(Image source, ByRef Image destination, Number translateX, Number translateY)
 
 **pyclesperanto**
-* translate(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0):
+* translate(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0, linear_interpolation : bool = False):
 
 ## translate
 **CLIJ2**
@@ -8620,7 +8698,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * Ext.CLIJ2_translate3D(Image source, ByRef Image destination, Number translateX, Number translateY, Number translateZ)
 
 **pyclesperanto**
-* translate(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0):
+* translate(source : Image, destination : Image = None, translate_x : float = 0, translate_y : float = 0, translate_z : float = 0, linear_interpolation : bool = False):
 
 ## translation_registration
 <span style="color:green">(experimental)</span>
@@ -8967,4 +9045,4 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 
 
-655 methods listed.
+661 methods listed.

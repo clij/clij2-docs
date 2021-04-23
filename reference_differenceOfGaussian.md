@@ -23,7 +23,7 @@ sigma2_y : float
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter),  Noise, Background
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### Usage in ImageJ macro
 ```

@@ -7,7 +7,7 @@ The target image should not exist with a different type before this
 method is called.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.0.19.jar.
+This function is part of clij2_-2.2.1.0.jar.
 
 ### convertFloat is often followed by
 * <a href="reference_differenceOfGaussian3D">differenceOfGaussian3D</a> (1)

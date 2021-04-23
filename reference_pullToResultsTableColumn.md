@@ -5,7 +5,7 @@ Copies the content of a vector image to a column in the results table.
 You can configure if new rows should be appended or if existing values should be overwritten.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.22.jar.
+This function is part of clijx_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```

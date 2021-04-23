@@ -17,7 +17,7 @@ Computes the color deconvolution of an 8bit RGB stack color image
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.1.22.jar.
+This function is part of clijx_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```

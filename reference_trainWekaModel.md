@@ -9,7 +9,7 @@ The given groundTruth image is supposed to be a label map where pixels with valu
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), Machine Learning
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx-weka_-0.30.1.19.jar.
+This function is part of clijx-weka_-0.30.2.0.jar.
 
 ### Usage in ImageJ macro
 ```
