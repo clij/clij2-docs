@@ -27,12 +27,43 @@ However, we had reports that [serious crashes happened on Windows 7 systems with
 Yes, if the GPU-configuration allows shared usage.
 There have been [reports of failing CLIJ initialization on Windows Server 2019](https://forum.image.sc/t/clij-is-not-running-on-windows-server-2019-quadro-rtx-8000/50645/5) 
 when multiple people can access it remotely via the "Remote Desktop Session Host". 
-A potential solution is to replace the Java Runtime Environment that is delivered with Fiji. Therefore:
+A potential solution is to replace the Java Runtime Environment that is delivered with Fiji. 
+
+* Delete the "java" folder inside your Fiji.app directory (or move it out if this directory if you want to keep a copy).
+
+Then there are 2 options for the replacement of the Java Runtime Environment 
+
+### Option 1 : Use Oracle Java
 * Install a current [Java version](https://java.com/en/download/help/download_options.html)
 * Set the environment variable "JAVA_HOME" (see also [ImageJ FAQ](https://imagej.net/Frequently_Asked_Questions.html#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F) ) in the Control Panel › System and Security › System › Advanced Settings › Advanced › Environment Variables. System-administrator priviledges may be necessary if you want this to work for everyone using the Windows Server.
-* Delete the "java" folder inside your Fiji.app directory.
 
 Thanks to Thomas Zobel for [finding this out](https://forum.image.sc/t/clij-is-not-running-on-windows-server-2019-quadro-rtx-8000/50645/13)!
+
+### Option 2 : Use OpenJDK
+This second option is similar but use a combination of 2 Java JDK from [AdoptOpenJDK](https://adoptopenjdk.net/).  
+See the [original solution on the forum](https://forum.image.sc/t/clij-is-not-running-on-windows-server-2019-quadro-rtx-8000/50645/42).
+
+- first install the OpenJDK 16 (Hotspot) 
+
+- Then install the OpenJDK 8 and tick the option "set JAVA_HOME" in the installer
+
+- Check your system environment variables *Control Panel › System and Security › System › Advanced Settings › Advanced › Environment Variables*
+1) `JAVA_HOME` should be like *C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot\*
+2) Remove the entries related to the OpenJDK 16 from the `Path` variable
+
+- In the Fiji.app directory, if you don't have an ImageJ.cfg file then start Fiji and run the *Edit > Options > Memory and Threads* menu, which creates it.  
+You can cancel/close the window. The file should have been created. Close Fiji
+
+- Edit ImageJ.cfg with a text editor
+
+- Replace the second line which was something like *bin/jre/javaw.exe*  
+with the equivalent from the OpenJDK 16, which should be something like  
+*C:\Program Files\AdoptOpenJDK\jdk-16.0.0.36-hotspot\bin\javaw.exe*  
+Importantly dont put quotes " " around this file path.  
+Save the file and close it.  
+
+- You can now start Fiji and test CLIJ
+
 
 <a name="optimal_performance"></a>
 ## How can I achieve optimal performance using CLIJ?
