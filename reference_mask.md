@@ -12,22 +12,26 @@ zero.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### mask often follows after
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
-* <a href="reference_binaryNot">binaryNot</a> (1)
-* <a href="reference_threshold">threshold</a> (1)
-* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (1)
+* <a href="reference_binaryNot">binaryNot</a> (2)
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (2)
+* <a href="reference_threshold">threshold</a> (4)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+* <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (3)
 * <a href="reference_dilateBox">dilateBox</a> (1)
-* <a href="reference_detectMaximaBox">detectMaximaBox</a> (1)
-* <a href="reference_erodeBox">erodeBox</a> (1)
+* <a href="reference_detectMaximaBox">detectMaximaBox</a> (4)
+* <a href="reference_erodeBox">erodeBox</a> (4)
 
 
 ### mask is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (1)
-* <a href="reference_copySlice">copySlice</a> (1)
-* <a href="reference_labelSpots">labelSpots</a> (1)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_release">release</a> (1)
+* <a href="reference_copySlice">copySlice</a> (2)
+* <a href="reference_labelSpots">labelSpots</a> (6)
 
 
 ### Usage in ImageJ macro

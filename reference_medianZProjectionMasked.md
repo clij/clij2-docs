@@ -1,16 +1,16 @@
 ## medianZProjectionMasked
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Determines the median intensity projection of an image stack along Z where pixels in a corresponding mask image are unequal to zero.
 
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_medianZProjectionMasked(Image source, Image destination);
+Ext.CLIJ2_medianZProjectionMasked(Image source, Image destination);
 ```
 
 

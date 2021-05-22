@@ -12,24 +12,32 @@ the image stack with z planes.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### copySlice often follows after
+* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 * <a href="reference_affineTransform2D">affineTransform2D</a> (2)
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
 * <a href="reference_rotate2D">rotate2D</a> (2)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
 * <a href="reference_scale2D">scale2D</a> (1)
 * <a href="reference_translate2D">translate2D</a> (1)
 * <a href="reference_applyVectorField2D">applyVectorField2D</a> (1)
-* <a href="reference_mask">mask</a> (1)
+* <a href="reference_flip2D">flip2D</a> (1)
+* <a href="reference_mask">mask</a> (2)
 
 
 ### copySlice is often followed by
+* <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)
 * <a href="reference_affineTransform2D">affineTransform2D</a> (2)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
 * <a href="reference_release">release</a> (1)
+* <a href="reference_statisticsOfBackgroundAndLabelledPixels">statisticsOfBackgroundAndLabelledPixels</a> (2)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 * <a href="reference_crop3D">crop3D</a> (1)
 * <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 
 
 ### Usage in ImageJ macro

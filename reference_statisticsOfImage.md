@@ -9,7 +9,7 @@ This method is executed on the CPU and not on the GPU/OpenCL device.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

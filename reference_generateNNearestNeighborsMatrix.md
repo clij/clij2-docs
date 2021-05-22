@@ -1,5 +1,5 @@
 ## generateNNearestNeighborsMatrix
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Produces a touch-matrix where the n nearest neighbors are marked as touching neighbors. 
 
@@ -25,11 +25,11 @@ References
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_generateNNearestNeighborsMatrix(Image distance_matrix, Image touch_matrix_destination, Number n);
+Ext.CLIJ2_generateNNearestNeighborsMatrix(Image distance_matrix, Image touch_matrix_destination, Number n);
 ```
 
 
@@ -43,29 +43,29 @@ Ext.CLIJx_generateNNearestNeighborsMatrix(Image distance_matrix, Image touch_mat
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer distance_matrix = clijx.push(distance_matrixImagePlus);
-touch_matrix_destination = clijx.create(distance_matrix);
+ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
+touch_matrix_destination = clij2.create(distance_matrix);
 int n = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.generateNNearestNeighborsMatrix(distance_matrix, touch_matrix_destination, n);
+clij2.generateNNearestNeighborsMatrix(distance_matrix, touch_matrix_destination, n);
 </pre>
 
 <pre class="highlight">
 // show result
-touch_matrix_destinationImagePlus = clijx.pull(touch_matrix_destination);
+touch_matrix_destinationImagePlus = clij2.pull(touch_matrix_destination);
 touch_matrix_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(distance_matrix);
-clijx.release(touch_matrix_destination);
+clij2.release(distance_matrix);
+clij2.release(touch_matrix_destination);
 </pre>
 
 </details>
@@ -78,26 +78,62 @@ clijx.release(touch_matrix_destination);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-distance_matrix = clijx.pushMat(distance_matrix_matrix);
-touch_matrix_destination = clijx.create(distance_matrix);
+distance_matrix = clij2.pushMat(distance_matrix_matrix);
+touch_matrix_destination = clij2.create(distance_matrix);
 n = 10;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.generateNNearestNeighborsMatrix(distance_matrix, touch_matrix_destination, n);
+clij2.generateNNearestNeighborsMatrix(distance_matrix, touch_matrix_destination, n);
 </pre>
 
 <pre class="highlight">
 % show result
-touch_matrix_destination = clijx.pullMat(touch_matrix_destination)
+touch_matrix_destination = clij2.pullMat(touch_matrix_destination)
 
 % cleanup memory on GPU
-clijx.release(distance_matrix);
-clijx.release(touch_matrix_destination);
+clij2.release(distance_matrix);
+clij2.release(touch_matrix_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+distance_matrix_sequence = getSequence();
+distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+touch_matrix_destination = clij2.create(distance_matrix);
+n = 10;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.generateNNearestNeighborsMatrix(distance_matrix, touch_matrix_destination, n);
+</pre>
+
+<pre class="highlight">
+// show result
+touch_matrix_destination_sequence = clij2.pullSequence(touch_matrix_destination)
+Icy.addSequence(touch_matrix_destination_sequence);
+// cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(touch_matrix_destination);
 </pre>
 
 </details>

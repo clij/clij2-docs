@@ -11,11 +11,11 @@ Warning: If labels were too small, they may be missing in the resulting label im
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_shrinkLabels(Image labels_input, Image labels_destination, Number radius, Boolean relabel_islands);
+Ext.CLIJ2_shrinkLabels(Image labels_input, Image labels_destination, Number radius, Boolean relabel_islands);
 ```
 
 
@@ -29,30 +29,30 @@ Ext.CLIJx_shrinkLabels(Image labels_input, Image labels_destination, Number radi
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer labels_input = clijx.push(labels_inputImagePlus);
-labels_destination = clijx.create(labels_input);
+ClearCLBuffer labels_input = clij2.push(labels_inputImagePlus);
+labels_destination = clij2.create(labels_input);
 int radius = 10;
 boolean relabel_islands = true;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.shrinkLabels(labels_input, labels_destination, radius, relabel_islands);
+clij2.shrinkLabels(labels_input, labels_destination, radius, relabel_islands);
 </pre>
 
 <pre class="highlight">
 // show result
-labels_destinationImagePlus = clijx.pull(labels_destination);
+labels_destinationImagePlus = clij2.pull(labels_destination);
 labels_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(labels_input);
-clijx.release(labels_destination);
+clij2.release(labels_input);
+clij2.release(labels_destination);
 </pre>
 
 </details>
@@ -65,27 +65,64 @@ clijx.release(labels_destination);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-labels_input = clijx.pushMat(labels_input_matrix);
-labels_destination = clijx.create(labels_input);
+labels_input = clij2.pushMat(labels_input_matrix);
+labels_destination = clij2.create(labels_input);
 radius = 10;
 relabel_islands = true;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.shrinkLabels(labels_input, labels_destination, radius, relabel_islands);
+clij2.shrinkLabels(labels_input, labels_destination, radius, relabel_islands);
 </pre>
 
 <pre class="highlight">
 % show result
-labels_destination = clijx.pullMat(labels_destination)
+labels_destination = clij2.pullMat(labels_destination)
 
 % cleanup memory on GPU
-clijx.release(labels_input);
-clijx.release(labels_destination);
+clij2.release(labels_input);
+clij2.release(labels_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+labels_input_sequence = getSequence();
+labels_input = clij2.pushSequence(labels_input_sequence);
+labels_destination = clij2.create(labels_input);
+radius = 10;
+relabel_islands = true;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.shrinkLabels(labels_input, labels_destination, radius, relabel_islands);
+</pre>
+
+<pre class="highlight">
+// show result
+labels_destination_sequence = clij2.pullSequence(labels_destination)
+Icy.addSequence(labels_destination_sequence);
+// cleanup memory on GPU
+clij2.release(labels_input);
+clij2.release(labels_destination);
 </pre>
 
 </details>

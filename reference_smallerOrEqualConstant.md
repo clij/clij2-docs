@@ -8,7 +8,15 @@ f(a, b) = 1 if a <= b; 0 otherwise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### smallerOrEqualConstant often follows after
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+
+
+### smallerOrEqualConstant is often followed by
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

@@ -9,7 +9,15 @@ its half-width, half-height and half-depth (radius).
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### maximum3DSphere often follows after
+* <a href="reference_equalConstant">equalConstant</a> (1)
+
+
+### maximum3DSphere is often followed by
+* <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
+
 
 ### Usage in ImageJ macro
 ```

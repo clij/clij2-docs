@@ -8,7 +8,7 @@ You can train your own model using menu Plugins > Segmentation > CLIJx Binary We
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx-weka_-0.30.2.0.jar.
+This function is part of clijx-weka_-0.31.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

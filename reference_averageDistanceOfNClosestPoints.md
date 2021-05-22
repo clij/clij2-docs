@@ -19,10 +19,14 @@ n_closest_points_to_find : Number
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### averageDistanceOfNClosestPoints often follows after
 * <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
+
+
+### averageDistanceOfNClosestPoints is often followed by
+* <a href="reference_release">release</a> (2)
 
 
 ### Usage in ImageJ macro

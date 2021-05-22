@@ -18,7 +18,21 @@ destination : Image
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### binaryFillHoles often follows after
+* <a href="reference_closingBox">closingBox</a> (1)
+* <a href="reference_threshold">threshold</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_copySlice">copySlice</a> (1)
+
+
+### binaryFillHoles is often followed by
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_print">print</a> (1)
+* <a href="reference_openingBox">openingBox</a> (1)
+* <a href="reference_copySlice">copySlice</a> (1)
+
 
 ### Usage in ImageJ macro
 ```

@@ -13,26 +13,30 @@ The vector image must be 3D with size (m, 1, 1) where m corresponds to the maxim
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### replaceIntensities often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
-* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (2)
-* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (2)
+* <a href="reference_labelVoronoiOctagon">labelVoronoiOctagon</a> (8)
+* <a href="reference_medianOfTouchingNeighbors">medianOfTouchingNeighbors</a> (4)
 * <a href="reference_greaterOrEqualConstant">greaterOrEqualConstant</a> (1)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
-* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (1)
-* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (2)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (4)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
+* <a href="reference_standardDeviationOfTouchingNeighbors">standardDeviationOfTouchingNeighbors</a> (2)
+* <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (4)
 * <a href="reference_transposeXY">transposeXY</a> (1)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
 * <a href="reference_maximumYProjection">maximumYProjection</a> (1)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (4)
 * <a href="reference_smallerConstant">smallerConstant</a> (1)
-* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (2)
-* <a href="reference_mask">mask</a> (1)
+* <a href="reference_mask">mask</a> (2)
 
 
 ### replaceIntensities is often followed by
 * <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+* <a href="reference_release">release</a> (2)
+* <a href="reference_copySlice">copySlice</a> (2)
 * <a href="reference_mask">mask</a> (1)
 
 

@@ -16,15 +16,18 @@ mean_values_destination : Image
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### meanOfTouchingNeighbors often follows after
-* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (1)
-* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (1)
+* <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (2)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
+* <a href="reference_neighborsOfNeighbors">neighborsOfNeighbors</a> (2)
+* <a href="reference_averageDistanceOfTouchingNeighbors">averageDistanceOfTouchingNeighbors</a> (1)
 
 
 ### meanOfTouchingNeighbors is often followed by
-* <a href="reference_replaceIntensities">replaceIntensities</a> (2)
+* <a href="reference_replaceIntensities">replaceIntensities</a> (4)
+* <a href="reference_release">release</a> (1)
 
 
 ### Usage in ImageJ macro

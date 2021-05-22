@@ -8,11 +8,11 @@ This results in a parametric image expressing standard deviation of object inten
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelStandardDeviationIntensityMap(Image input, Image label_map, Image destination);
+Ext.CLIJ2_labelStandardDeviationIntensityMap(Image intensity_image, Image label_map, Image destination);
 ```
 
 
@@ -26,30 +26,30 @@ Ext.CLIJx_labelStandardDeviationIntensityMap(Image input, Image label_map, Image
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer input = clijx.push(inputImagePlus);
-ClearCLBuffer label_map = clijx.push(label_mapImagePlus);
-destination = clijx.create(input);
+ClearCLBuffer intensity_image = clij2.push(intensity_imageImagePlus);
+ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
+destination = clij2.create(intensity_image);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.labelStandardDeviationIntensityMap(input, label_map, destination);
+clij2.labelStandardDeviationIntensityMap(intensity_image, label_map, destination);
 </pre>
 
 <pre class="highlight">
 // show result
-destinationImagePlus = clijx.pull(destination);
+destinationImagePlus = clij2.pull(destination);
 destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(input);
-clijx.release(label_map);
-clijx.release(destination);
+clij2.release(intensity_image);
+clij2.release(label_map);
+clij2.release(destination);
 </pre>
 
 </details>
@@ -62,27 +62,65 @@ clijx.release(destination);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-input = clijx.pushMat(input_matrix);
-label_map = clijx.pushMat(label_map_matrix);
-destination = clijx.create(input);
+intensity_image = clij2.pushMat(intensity_image_matrix);
+label_map = clij2.pushMat(label_map_matrix);
+destination = clij2.create(intensity_image);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.labelStandardDeviationIntensityMap(input, label_map, destination);
+clij2.labelStandardDeviationIntensityMap(intensity_image, label_map, destination);
 </pre>
 
 <pre class="highlight">
 % show result
-destination = clijx.pullMat(destination)
+destination = clij2.pullMat(destination)
 
 % cleanup memory on GPU
-clijx.release(input);
-clijx.release(label_map);
-clijx.release(destination);
+clij2.release(intensity_image);
+clij2.release(label_map);
+clij2.release(destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+intensity_image_sequence = getSequence();
+intensity_image = clij2.pushSequence(intensity_image_sequence);
+label_map_sequence = getSequence();
+label_map = clij2.pushSequence(label_map_sequence);
+destination = clij2.create(intensity_image);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.labelStandardDeviationIntensityMap(intensity_image, label_map, destination);
+</pre>
+
+<pre class="highlight">
+// show result
+destination_sequence = clij2.pullSequence(destination)
+Icy.addSequence(destination_sequence);
+// cleanup memory on GPU
+clij2.release(intensity_image);
+clij2.release(label_map);
+clij2.release(destination);
 </pre>
 
 </details>
@@ -96,7 +134,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.label_standard_deviation_intensity_map(input, label_map, destination)
+cle.label_standard_deviation_intensity_map(intensity_image, label_map, destination)
 
 </pre>
 

@@ -16,7 +16,12 @@ spaces for x. For example this string is converted to an image with width=4, hei
 
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### pushString is often followed by
+* <a href="reference_generateBinaryOverlapMatrix">generateBinaryOverlapMatrix</a> (2)
+* <a href="reference_generateJaccardIndexMatrix">generateJaccardIndexMatrix</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

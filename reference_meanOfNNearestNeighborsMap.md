@@ -1,5 +1,5 @@
 ## meanOfNNearestNeighborsMap
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a label image and a parametric intensity image and will replace each labels value in the parametric image
 by the minimum value of neighboring labels. The distance number of nearest neighbors can be configured.
@@ -16,11 +16,11 @@ n : int
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_meanOfNNearestNeighborsMap(Image parametric_map, Image label_map, Image parametric_map_destination, Number n);
+Ext.CLIJ2_meanOfNNearestNeighborsMap(Image parametric_map, Image label_map, Image parametric_map_destination, Number n);
 ```
 
 
@@ -34,31 +34,31 @@ Ext.CLIJx_meanOfNNearestNeighborsMap(Image parametric_map, Image label_map, Imag
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer parametric_map = clijx.push(parametric_mapImagePlus);
-ClearCLBuffer label_map = clijx.push(label_mapImagePlus);
-parametric_map_destination = clijx.create(parametric_map);
+ClearCLBuffer parametric_map = clij2.push(parametric_mapImagePlus);
+ClearCLBuffer label_map = clij2.push(label_mapImagePlus);
+parametric_map_destination = clij2.create(parametric_map);
 int n = 10;
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.meanOfNNearestNeighborsMap(parametric_map, label_map, parametric_map_destination, n);
+clij2.meanOfNNearestNeighborsMap(parametric_map, label_map, parametric_map_destination, n);
 </pre>
 
 <pre class="highlight">
 // show result
-parametric_map_destinationImagePlus = clijx.pull(parametric_map_destination);
+parametric_map_destinationImagePlus = clij2.pull(parametric_map_destination);
 parametric_map_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(parametric_map);
-clijx.release(label_map);
-clijx.release(parametric_map_destination);
+clij2.release(parametric_map);
+clij2.release(label_map);
+clij2.release(parametric_map_destination);
 </pre>
 
 </details>
@@ -71,28 +71,67 @@ clijx.release(parametric_map_destination);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-parametric_map = clijx.pushMat(parametric_map_matrix);
-label_map = clijx.pushMat(label_map_matrix);
-parametric_map_destination = clijx.create(parametric_map);
+parametric_map = clij2.pushMat(parametric_map_matrix);
+label_map = clij2.pushMat(label_map_matrix);
+parametric_map_destination = clij2.create(parametric_map);
 n = 10;
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.meanOfNNearestNeighborsMap(parametric_map, label_map, parametric_map_destination, n);
+clij2.meanOfNNearestNeighborsMap(parametric_map, label_map, parametric_map_destination, n);
 </pre>
 
 <pre class="highlight">
 % show result
-parametric_map_destination = clijx.pullMat(parametric_map_destination)
+parametric_map_destination = clij2.pullMat(parametric_map_destination)
 
 % cleanup memory on GPU
-clijx.release(parametric_map);
-clijx.release(label_map);
-clijx.release(parametric_map_destination);
+clij2.release(parametric_map);
+clij2.release(label_map);
+clij2.release(parametric_map_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+parametric_map_sequence = getSequence();
+parametric_map = clij2.pushSequence(parametric_map_sequence);
+label_map_sequence = getSequence();
+label_map = clij2.pushSequence(label_map_sequence);
+parametric_map_destination = clij2.create(parametric_map);
+n = 10;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.meanOfNNearestNeighborsMap(parametric_map, label_map, parametric_map_destination, n);
+</pre>
+
+<pre class="highlight">
+// show result
+parametric_map_destination_sequence = clij2.pullSequence(parametric_map_destination)
+Icy.addSequence(parametric_map_destination_sequence);
+// cleanup memory on GPU
+clij2.release(parametric_map);
+clij2.release(label_map);
+clij2.release(parametric_map_destination);
 </pre>
 
 </details>

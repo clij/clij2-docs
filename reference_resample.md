@@ -6,14 +6,17 @@ Resamples an image with given size factors using an affine transform.
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### resample often follows after
 * <a href="reference_maximumImageAndScalar">maximumImageAndScalar</a> (1)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (1)
 
 
 ### resample is often followed by
 * <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_maximumImages">maximumImages</a> (2)
 * <a href="reference_resliceTop">resliceTop</a> (1)
 
 
@@ -160,7 +163,6 @@ cle.resample(source, destination, factor_x, factor_y, factor_z, linear_interpola
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection"><img src="images/language_macro.png" height="20"/></a> [drosophila_max_cylinder_projection](https://clij.github.io/clij2-docs/md/drosophila_max_cylinder_projection)  
-<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/transforms/Untitled.ipynb"><img src="images/language_python.png" height="20"/></a> [Untitled.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/transforms/Untitled.ipynb)  
 
 
 

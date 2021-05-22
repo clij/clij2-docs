@@ -4,11 +4,18 @@
 Visualises an image on standard out (console).
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### print often follows after
+* <a href="reference_histogram">histogram</a> (2)
+* <a href="reference_generateBinaryOverlapMatrix">generateBinaryOverlapMatrix</a> (1)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (1)
+* <a href="reference_pushArray">pushArray</a> (2)
+* <a href="reference_nClosestDistances">nClosestDistances</a> (1)
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (2)
+* <a href="reference_gradientX">gradientX</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (3)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### Usage in ImageJ macro

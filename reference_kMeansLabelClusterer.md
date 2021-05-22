@@ -11,7 +11,7 @@ classification results (the most popular class) will be determined after cluster
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clijx_-0.31.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

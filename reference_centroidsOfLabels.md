@@ -8,15 +8,15 @@ It writes the resulting  coordinates in a pointlist image. Depending on the dime
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### centroidsOfLabels often follows after
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
 
 
 ### centroidsOfLabels is often followed by
-* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 * <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### Usage in ImageJ macro

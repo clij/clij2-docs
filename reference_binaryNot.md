@@ -19,17 +19,20 @@ destination : Image
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### binaryNot often follows after
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (1)
+* <a href="reference_thresholdDefault">thresholdDefault</a> (1)
+* <a href="reference_thresholdTriangle">thresholdTriangle</a> (2)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 
 
 ### binaryNot is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (4)
+* <a href="reference_release">release</a> (5)
 * <a href="reference_distanceMap">distanceMap</a> (1)
-* <a href="reference_mask">mask</a> (1)
+* <a href="reference_mask">mask</a> (2)
 
 
 ### Usage in ImageJ macro

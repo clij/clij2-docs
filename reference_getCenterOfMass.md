@@ -9,7 +9,7 @@ Determines the center of mass of an image or image stack.
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### getCenterOfMass often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)

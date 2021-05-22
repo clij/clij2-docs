@@ -6,18 +6,27 @@ Performs connected components analysis inspecting the box neighborhood of every 
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### connectedComponentsLabelingBox often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)
 * <a href="reference_minimum2DBox">minimum2DBox</a> (1)
-* <a href="reference_binaryNot">binaryNot</a> (1)
-* <a href="reference_thresholdOtsu">thresholdOtsu</a> (5)
+* <a href="reference_binaryNot">binaryNot</a> (4)
+* <a href="reference_openingBox">openingBox</a> (1)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
+* <a href="reference_closingBox">closingBox</a> (1)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (8)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (1)
 
 
 ### connectedComponentsLabelingBox is often followed by
+* <a href="reference_proximalNeighborCountMap">proximalNeighborCountMap</a> (1)
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
-* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_excludeLabelsOnEdges">excludeLabelsOnEdges</a> (6)
+* <a href="reference_release">release</a> (12)
+* <a href="reference_centroidsOfBackgroundAndLabels">centroidsOfBackgroundAndLabels</a> (1)
 * <a href="reference_maximum2DBox">maximum2DBox</a> (1)
 * <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
 
@@ -181,6 +190,7 @@ cle.connected_components_labeling_box(binary_input, labeling_destination)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/labelmap_voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/labelmap_voronoi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm"><img src="images/language_macro.png" height="20"/></a> [working_with_rois.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.py"><img src="images/language_python.png" height="20"/></a> [count_blobs.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.py)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_.py"><img src="images/language_python.png" height="20"/></a> [napari_.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_.py)  

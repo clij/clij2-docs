@@ -18,10 +18,15 @@ scalar : float
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### addImageAndScalar often follows after
+* <a href="reference_create3D">create3D</a> (1)
+
 
 ### addImageAndScalar is often followed by
 * <a href="reference_absolute">absolute</a> (1)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
 
 
 ### Usage in ImageJ macro

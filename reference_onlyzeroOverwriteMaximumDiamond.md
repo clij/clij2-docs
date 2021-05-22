@@ -4,15 +4,16 @@
 Apply a local maximum filter to an image which only overwrites pixels with value 0.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### onlyzeroOverwriteMaximumDiamond often follows after
 * <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (1)
 
 
 ### onlyzeroOverwriteMaximumDiamond is often followed by
+* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
 * <a href="reference_onlyzeroOverwriteMaximumDiamond">onlyzeroOverwriteMaximumDiamond</a> (1)
-* <a href="reference_mask">mask</a> (1)
+* <a href="reference_mask">mask</a> (3)
 
 
 ### Usage in ImageJ macro

@@ -1,18 +1,16 @@
 ## morphoLibJRemoveLargestRegion
 <img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Apply MorpholibJ Remove Border Labels to a label image.
+Apply MorpholibJ Remove Largest Region to a binary image.
 
-
-
-Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
+Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij, clij2 and clijx-assistant-extensions.
-This function is part of clijx-assistant-morpholibj_-0.4.2.22.jar.
+This function is part of clijx-assistant-morpholibj_-0.5.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_morphoLibJRemoveLargestRegion(Image labels_input, Image labels_destination, Boolean left, Boolean right, Boolean top, Boolean bottom, Boolean front, Boolean back);
+Ext.CLIJx_morphoLibJRemoveLargestRegion(Image binary_input, Image binary_destination);
 ```
 
 
@@ -31,29 +29,23 @@ import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
 CLIJx clijx = CLIJx.getInstance();
 
 // get input parameters
-ClearCLBuffer labels_input = clijx.push(labels_inputImagePlus);
-labels_destination = clijx.create(labels_input);
-boolean left = true;
-boolean right = false;
-boolean top = false;
-boolean bottom = true;
-boolean front = true;
-boolean back = true;
+ClearCLBuffer binary_input = clijx.push(binary_inputImagePlus);
+binary_destination = clijx.create(binary_input);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.morphoLibJRemoveLargestRegion(labels_input, labels_destination, left, right, top, bottom, front, back);
+clijx.morphoLibJRemoveLargestRegion(binary_input, binary_destination);
 </pre>
 
 <pre class="highlight">
 // show result
-labels_destinationImagePlus = clijx.pull(labels_destination);
-labels_destinationImagePlus.show();
+binary_destinationImagePlus = clijx.pull(binary_destination);
+binary_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(labels_input);
-clijx.release(labels_destination);
+clijx.release(binary_input);
+clijx.release(binary_destination);
 </pre>
 
 </details>
@@ -69,28 +61,22 @@ Matlab
 clijx = init_clatlabx();
 
 % get input parameters
-labels_input = clijx.pushMat(labels_input_matrix);
-labels_destination = clijx.create(labels_input);
-left = true;
-right = false;
-top = false;
-bottom = true;
-front = true;
-back = true;
+binary_input = clijx.pushMat(binary_input_matrix);
+binary_destination = clijx.create(binary_input);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.morphoLibJRemoveLargestRegion(labels_input, labels_destination, left, right, top, bottom, front, back);
+clijx.morphoLibJRemoveLargestRegion(binary_input, binary_destination);
 </pre>
 
 <pre class="highlight">
 % show result
-labels_destination = clijx.pullMat(labels_destination)
+binary_destination = clijx.pullMat(binary_destination)
 
 % cleanup memory on GPU
-clijx.release(labels_input);
-clijx.release(labels_destination);
+clijx.release(binary_input);
+clijx.release(binary_destination);
 </pre>
 
 </details>

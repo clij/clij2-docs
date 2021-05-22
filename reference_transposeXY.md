@@ -14,18 +14,24 @@ destination : Image
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### transposeXY often follows after
+* <a href="reference_subtractImages">subtractImages</a> (2)
 * <a href="reference_pushResultsTable">pushResultsTable</a> (1)
 * <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 * <a href="reference_pushArray">pushArray</a> (1)
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### transposeXY is often followed by
 * <a href="reference_replaceIntensities">replaceIntensities</a> (1)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
+* <a href="reference_rotate3D">rotate3D</a> (2)
 * <a href="reference_release">release</a> (1)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
+* <a href="reference_paste2D">paste2D</a> (1)
 
 
 ### Usage in ImageJ macro

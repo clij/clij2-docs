@@ -20,7 +20,7 @@ destination : Image
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update site clij.
-This function is part of clij-core-1.7.4.0.jar.
+This function is part of clij-core-1.8.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

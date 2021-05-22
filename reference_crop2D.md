@@ -24,13 +24,16 @@ height : Number
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### crop2D often follows after
+* <a href="reference_getDimensions">getDimensions</a> (2)
 * <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_generateDistanceMatrix">generateDistanceMatrix</a> (1)
 
 
 ### crop2D is often followed by
+* <a href="reference_nClosestDistances">nClosestDistances</a> (1)
 * <a href="reference_flip2D">flip2D</a> (1)
 
 

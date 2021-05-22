@@ -6,7 +6,12 @@ Determines the minimum intensity projection of an image along Y.
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### minimumYProjection is often followed by
+* <a href="reference_equal">equal</a> (1)
+* <a href="reference_subtractImages">subtractImages</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

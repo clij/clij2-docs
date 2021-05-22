@@ -8,7 +8,7 @@ Apply ImageJs Watershed algorithm to a binary image.
 Categories: [Binary](https://clij.github.io/clij2-docs/reference__binary), [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij, clij2 and clijx-assistant-extensions.
-This function is part of clijx-assistant-imagej_-0.4.1.0.jar.
+This function is part of clijx-assistant-imagej_-0.5.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

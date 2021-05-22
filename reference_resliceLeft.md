@@ -7,7 +7,7 @@ Flippes X, Y and Z axis of an image stack. This operation is similar to ImageJs 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### resliceLeft often follows after
 * <a href="reference_resliceRadial">resliceRadial</a> (1)

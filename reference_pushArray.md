@@ -1,12 +1,14 @@
 ## pushArray
 <img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
-Converts an array to an image.
+Converts an array to a 3D image stack.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### pushArray is often followed by
+* <a href="reference_histogram">histogram</a> (1)
+* <a href="reference_print">print</a> (2)
 * <a href="reference_multiplyMatrix">multiplyMatrix</a> (1)
 * <a href="reference_excludeLabels">excludeLabels</a> (1)
 * <a href="reference_transposeXY">transposeXY</a> (1)

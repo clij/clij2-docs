@@ -6,7 +6,7 @@ Fills holes (pixels with value 0 surrounded by pixels with value 1) in a binary 
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clijx_-0.31.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

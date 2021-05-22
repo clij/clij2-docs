@@ -11,7 +11,7 @@ Note that the Sorensen-Dice coefficient s can be calculated from the Jaccard ind
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### getSorensenDiceCoefficient often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (2)

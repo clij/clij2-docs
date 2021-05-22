@@ -1,5 +1,5 @@
 ## labelSurface
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a label map and excludes all labels which are not on the surface.
 
@@ -8,11 +8,11 @@ For each label, a ray from a given center towards the label. If the ray crosses 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_labelSurface(Image input_labels, Image destination_labels, Number relative_center_x, Number relative_center_y, Number relative_center_z);
+Ext.CLIJ2_labelSurface(Image input_labels, Image destination_labels, Number relative_center_x, Number relative_center_y, Number relative_center_z);
 ```
 
 
@@ -26,13 +26,13 @@ Ext.CLIJx_labelSurface(Image input_labels, Image destination_labels, Number rela
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer input_labels = clijx.push(input_labelsImagePlus);
-destination_labels = clijx.create(input_labels);
+ClearCLBuffer input_labels = clij2.push(input_labelsImagePlus);
+destination_labels = clij2.create(input_labels);
 float relative_center_x = 1.0;
 float relative_center_y = 2.0;
 float relative_center_z = 3.0;
@@ -40,17 +40,17 @@ float relative_center_z = 3.0;
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.labelSurface(input_labels, destination_labels, relative_center_x, relative_center_y, relative_center_z);
+clij2.labelSurface(input_labels, destination_labels, relative_center_x, relative_center_y, relative_center_z);
 </pre>
 
 <pre class="highlight">
 // show result
-destination_labelsImagePlus = clijx.pull(destination_labels);
+destination_labelsImagePlus = clij2.pull(destination_labels);
 destination_labelsImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(input_labels);
-clijx.release(destination_labels);
+clij2.release(input_labels);
+clij2.release(destination_labels);
 </pre>
 
 </details>
@@ -63,11 +63,11 @@ clijx.release(destination_labels);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-input_labels = clijx.pushMat(input_labels_matrix);
-destination_labels = clijx.create(input_labels);
+input_labels = clij2.pushMat(input_labels_matrix);
+destination_labels = clij2.create(input_labels);
 relative_center_x = 1.0;
 relative_center_y = 2.0;
 relative_center_z = 3.0;
@@ -75,16 +75,54 @@ relative_center_z = 3.0;
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.labelSurface(input_labels, destination_labels, relative_center_x, relative_center_y, relative_center_z);
+clij2.labelSurface(input_labels, destination_labels, relative_center_x, relative_center_y, relative_center_z);
 </pre>
 
 <pre class="highlight">
 % show result
-destination_labels = clijx.pullMat(destination_labels)
+destination_labels = clij2.pullMat(destination_labels)
 
 % cleanup memory on GPU
-clijx.release(input_labels);
-clijx.release(destination_labels);
+clij2.release(input_labels);
+clij2.release(destination_labels);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+input_labels_sequence = getSequence();
+input_labels = clij2.pushSequence(input_labels_sequence);
+destination_labels = clij2.create(input_labels);
+relative_center_x = 1.0;
+relative_center_y = 2.0;
+relative_center_z = 3.0;
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.labelSurface(input_labels, destination_labels, relative_center_x, relative_center_y, relative_center_z);
+</pre>
+
+<pre class="highlight">
+// show result
+destination_labels_sequence = clij2.pullSequence(destination_labels)
+Icy.addSequence(destination_labels_sequence);
+// cleanup memory on GPU
+clij2.release(input_labels);
+clij2.release(destination_labels);
 </pre>
 
 </details>

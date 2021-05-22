@@ -1,5 +1,5 @@
 ## readValuesFromPositions
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_empty_logo.png"/>
 
 Takes a pointlist and a parametric image and reads parametric values from the positions.
 
@@ -14,11 +14,11 @@ values_destination
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_readValuesFromPositions(Image pointlist, Image map_image, Image values_destination);
+Ext.CLIJ2_readValuesFromPositions(Image pointlist, Image map_image, Image values_destination);
 ```
 
 
@@ -32,30 +32,30 @@ Ext.CLIJx_readValuesFromPositions(Image pointlist, Image map_image, Image values
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer pointlist = clijx.push(pointlistImagePlus);
-ClearCLBuffer map_image = clijx.push(map_imageImagePlus);
-values_destination = clijx.create(pointlist);
+ClearCLBuffer pointlist = clij2.push(pointlistImagePlus);
+ClearCLBuffer map_image = clij2.push(map_imageImagePlus);
+values_destination = clij2.create(pointlist);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.readValuesFromPositions(pointlist, map_image, values_destination);
+clij2.readValuesFromPositions(pointlist, map_image, values_destination);
 </pre>
 
 <pre class="highlight">
 // show result
-values_destinationImagePlus = clijx.pull(values_destination);
+values_destinationImagePlus = clij2.pull(values_destination);
 values_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(pointlist);
-clijx.release(map_image);
-clijx.release(values_destination);
+clij2.release(pointlist);
+clij2.release(map_image);
+clij2.release(values_destination);
 </pre>
 
 </details>
@@ -68,27 +68,65 @@ clijx.release(values_destination);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-pointlist = clijx.pushMat(pointlist_matrix);
-map_image = clijx.pushMat(map_image_matrix);
-values_destination = clijx.create(pointlist);
+pointlist = clij2.pushMat(pointlist_matrix);
+map_image = clij2.pushMat(map_image_matrix);
+values_destination = clij2.create(pointlist);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.readValuesFromPositions(pointlist, map_image, values_destination);
+clij2.readValuesFromPositions(pointlist, map_image, values_destination);
 </pre>
 
 <pre class="highlight">
 % show result
-values_destination = clijx.pullMat(values_destination)
+values_destination = clij2.pullMat(values_destination)
 
 % cleanup memory on GPU
-clijx.release(pointlist);
-clijx.release(map_image);
-clijx.release(values_destination);
+clij2.release(pointlist);
+clij2.release(map_image);
+clij2.release(values_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+pointlist_sequence = getSequence();
+pointlist = clij2.pushSequence(pointlist_sequence);
+map_image_sequence = getSequence();
+map_image = clij2.pushSequence(map_image_sequence);
+values_destination = clij2.create(pointlist);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.readValuesFromPositions(pointlist, map_image, values_destination);
+</pre>
+
+<pre class="highlight">
+// show result
+values_destination_sequence = clij2.pullSequence(values_destination)
+Icy.addSequence(values_destination_sequence);
+// cleanup memory on GPU
+clij2.release(pointlist);
+clij2.release(map_image);
+clij2.release(values_destination);
 </pre>
 
 </details>

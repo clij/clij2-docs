@@ -6,7 +6,7 @@ Apply MorpholibJ FloodFillComponentsLabeling3D to an image.
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij, clij2 and clijx-assistant-extensions.
-This function is part of clijx-assistant-morpholibj_-0.4.2.22.jar.
+This function is part of clijx-assistant-morpholibj_-0.5.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

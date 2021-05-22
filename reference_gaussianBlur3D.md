@@ -10,12 +10,15 @@ The implementation is done separable. In case a sigma equals zero, the direction
 Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### gaussianBlur3D is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (1)
-* <a href="reference_release">release</a> (1)
-* <a href="reference_threshold">threshold</a> (1)
+* <a href="reference_release">release</a> (3)
+* <a href="reference_thresholdDefault">thresholdDefault</a> (1)
+* <a href="reference_threshold">threshold</a> (4)
+* <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)
+* <a href="reference_thresholdTriangle">thresholdTriangle</a> (2)
 * <a href="reference_detectMaximaBox">detectMaximaBox</a> (1)
 
 

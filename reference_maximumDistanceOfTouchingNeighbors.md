@@ -1,16 +1,16 @@
 ## maximumDistanceOfTouchingNeighbors
-<img src="images/mini_empty_logo.png"/><img src="images/mini_empty_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
+<img src="images/mini_empty_logo.png"/><img src="images/mini_clij2_logo.png"/><img src="images/mini_clijx_logo.png"/><img src="images/mini_cle_logo.png"/>
 
 Takes a touch matrix and a distance matrix to determine the maximum distance of touching neighbors for every object.
 
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### Usage in ImageJ macro
 ```
-Ext.CLIJx_maximumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image distancelist_destination);
+Ext.CLIJ2_maximumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_matrix, Image distancelist_destination);
 ```
 
 
@@ -24,30 +24,30 @@ Ext.CLIJx_maximumDistanceOfTouchingNeighbors(Image distance_matrix, Image touch_
 Java
 </summary>
 <pre class="highlight">// init CLIJ and GPU
-import net.haesleinhuepf.clijx.CLIJx;
+import net.haesleinhuepf.clij2.CLIJ2;
 import net.haesleinhuepf.clij.clearcl.ClearCLBuffer;
-CLIJx clijx = CLIJx.getInstance();
+CLIJ2 clij2 = CLIJ2.getInstance();
 
 // get input parameters
-ClearCLBuffer distance_matrix = clijx.push(distance_matrixImagePlus);
-ClearCLBuffer touch_matrix = clijx.push(touch_matrixImagePlus);
-distancelist_destination = clijx.create(distance_matrix);
+ClearCLBuffer distance_matrix = clij2.push(distance_matrixImagePlus);
+ClearCLBuffer touch_matrix = clij2.push(touch_matrixImagePlus);
+distancelist_destination = clij2.create(distance_matrix);
 </pre>
 
 <pre class="highlight">
 // Execute operation on GPU
-clijx.maximumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distancelist_destination);
+clij2.maximumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distancelist_destination);
 </pre>
 
 <pre class="highlight">
 // show result
-distancelist_destinationImagePlus = clijx.pull(distancelist_destination);
+distancelist_destinationImagePlus = clij2.pull(distancelist_destination);
 distancelist_destinationImagePlus.show();
 
 // cleanup memory on GPU
-clijx.release(distance_matrix);
-clijx.release(touch_matrix);
-clijx.release(distancelist_destination);
+clij2.release(distance_matrix);
+clij2.release(touch_matrix);
+clij2.release(distancelist_destination);
 </pre>
 
 </details>
@@ -60,27 +60,65 @@ clijx.release(distancelist_destination);
 Matlab
 </summary>
 <pre class="highlight">% init CLIJ and GPU
-clijx = init_clatlabx();
+clij2 = init_clatlab();
 
 % get input parameters
-distance_matrix = clijx.pushMat(distance_matrix_matrix);
-touch_matrix = clijx.pushMat(touch_matrix_matrix);
-distancelist_destination = clijx.create(distance_matrix);
+distance_matrix = clij2.pushMat(distance_matrix_matrix);
+touch_matrix = clij2.pushMat(touch_matrix_matrix);
+distancelist_destination = clij2.create(distance_matrix);
 </pre>
 
 <pre class="highlight">
 % Execute operation on GPU
-clijx.maximumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distancelist_destination);
+clij2.maximumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distancelist_destination);
 </pre>
 
 <pre class="highlight">
 % show result
-distancelist_destination = clijx.pullMat(distancelist_destination)
+distancelist_destination = clij2.pullMat(distancelist_destination)
 
 % cleanup memory on GPU
-clijx.release(distance_matrix);
-clijx.release(touch_matrix);
-clijx.release(distancelist_destination);
+clij2.release(distance_matrix);
+clij2.release(touch_matrix);
+clij2.release(distancelist_destination);
+</pre>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Icy JavaScript
+</summary>
+<pre class="highlight">// init CLIJ and GPU
+importClass(net.haesleinhuepf.clicy.CLICY);
+importClass(Packages.icy.main.Icy);
+
+clij2 = CLICY.getInstance();
+
+// get input parameters
+distance_matrix_sequence = getSequence();
+distance_matrix = clij2.pushSequence(distance_matrix_sequence);
+touch_matrix_sequence = getSequence();
+touch_matrix = clij2.pushSequence(touch_matrix_sequence);
+distancelist_destination = clij2.create(distance_matrix);
+</pre>
+
+<pre class="highlight">
+// Execute operation on GPU
+clij2.maximumDistanceOfTouchingNeighbors(distance_matrix, touch_matrix, distancelist_destination);
+</pre>
+
+<pre class="highlight">
+// show result
+distancelist_destination_sequence = clij2.pullSequence(distancelist_destination)
+Icy.addSequence(distancelist_destination_sequence);
+// cleanup memory on GPU
+clij2.release(distance_matrix);
+clij2.release(touch_matrix);
+clij2.release(distancelist_destination);
 </pre>
 
 </details>

@@ -18,7 +18,18 @@ destination : Image
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### equal often follows after
+* <a href="reference_minimumYProjection">minimumYProjection</a> (1)
+* <a href="reference_replaceIntensity">replaceIntensity</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
+
+
+### equal is often followed by
+* <a href="reference_binaryAnd">binaryAnd</a> (1)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+
 
 ### Usage in ImageJ macro
 ```

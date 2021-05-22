@@ -8,7 +8,7 @@ Hand over a vector of values and a range specifying which labels with which valu
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### excludeLabelsWithValuesOutOfRange often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (1)

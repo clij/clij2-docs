@@ -4,13 +4,7 @@
 null
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
-
-
-
-### Example notebooks
-<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/transforms/Untitled.ipynb"><img src="images/language_python.png" height="20"/></a> [Untitled.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/transforms/Untitled.ipynb)  
-
+This function is part of clij2_-2.3.0.6.jar.
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)

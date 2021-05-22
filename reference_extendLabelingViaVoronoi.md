@@ -8,9 +8,16 @@ The resulting label map is written to the output.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### extendLabelingViaVoronoi often follows after
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
+* <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (1)
+
 
 ### extendLabelingViaVoronoi is often followed by
+* <a href="reference_release">release</a> (1)
+* <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (1)
 * <a href="reference_detectLabelEdges">detectLabelEdges</a> (1)
 
 

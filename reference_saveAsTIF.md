@@ -4,10 +4,13 @@
 Pulls an image from the GPU memory and saves it as TIF to disc.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### saveAsTIF often follows after
-* <a href="reference_maximumZProjection">maximumZProjection</a> (1)
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
+* <a href="reference_maximumZProjection">maximumZProjection</a> (2)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 
 ### Usage in ImageJ macro

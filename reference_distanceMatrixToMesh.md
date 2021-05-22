@@ -8,7 +8,7 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), Visualisation
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### distanceMatrixToMesh often follows after
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)

@@ -13,7 +13,17 @@ For binary images, use binaryNot.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### invert often follows after
+* <a href="reference_maximumImages">maximumImages</a> (1)
+
+
+### invert is often followed by
+* <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)
+* <a href="reference_maximumYProjection">maximumYProjection</a> (1)
+* <a href="reference_multiplyImages">multiplyImages</a> (1)
+
 
 ### Usage in ImageJ macro
 ```

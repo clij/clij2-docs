@@ -7,7 +7,7 @@ Pixels in the resulting image are set to 1 if there is no other pixel in a given
 higher intensity, and to 0 otherwise.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### detectMaximaBox often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)
@@ -17,7 +17,7 @@ This function is part of clij2_-2.2.1.0.jar.
 
 ### detectMaximaBox is often followed by
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (1)
-* <a href="reference_mask">mask</a> (1)
+* <a href="reference_mask">mask</a> (4)
 * <a href="reference_spotsToPointList">spotsToPointList</a> (2)
 
 

@@ -6,11 +6,17 @@ Reads out the size of an image [stack] and writes it to the variables 'width', '
 Category: [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
+
+### getDimensions often follows after
+* <a href="reference_labelledSpotsToPointList">labelledSpotsToPointList</a> (1)
+
 
 ### getDimensions is often followed by
-* <a href="reference_create3D">create3D</a> (3)
-* <a href="reference_create2D">create2D</a> (8)
+* <a href="reference_crop2D">crop2D</a> (2)
+* <a href="reference_create3D">create3D</a> (17)
+* <a href="reference_create2D">create2D</a> (16)
+* <a href="reference_paste2D">paste2D</a> (1)
 
 
 ### Usage in ImageJ macro

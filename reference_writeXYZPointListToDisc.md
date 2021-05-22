@@ -4,7 +4,7 @@
 Takes a point list image representing n points (n*2 for 2D points, n*3 for 3D points) and exports them in XYZ format.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clijx_-0.31.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

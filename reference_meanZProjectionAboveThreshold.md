@@ -6,7 +6,7 @@ Determines the mean average intensity projection of an image along Z but only fo
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clijx_-0.31.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

@@ -18,15 +18,17 @@ bit-depth : Number
 
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### create3D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (3)
+* <a href="reference_getDimensions">getDimensions</a> (17)
 
 
 ### create3D is often followed by
 * <a href="reference_convolve">convolve</a> (1)
-* <a href="reference_release">release</a> (1)
+* <a href="reference_release">release</a> (2)
+* <a href="reference_addImageAndScalar">addImageAndScalar</a> (1)
+* <a href="reference_maximumOfTouchingNeighbors">maximumOfTouchingNeighbors</a> (1)
 
 
 ### Usage in ImageJ macro

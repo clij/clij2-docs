@@ -8,10 +8,15 @@ The value v will be written at position x/y[/z] in the target image.
 Category: Visualisation
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### writeValuesToPositions often follows after
-* <a href="reference_paste2D">paste2D</a> (1)
+* <a href="reference_paste2D">paste2D</a> (2)
+
+
+### writeValuesToPositions is often followed by
+* <a href="reference_extendLabelingViaVoronoi">extendLabelingViaVoronoi</a> (1)
+* <a href="reference_maximum2DSphere">maximum2DSphere</a> (1)
 
 
 ### Usage in ImageJ macro

@@ -6,13 +6,17 @@ Converts a table column to an image.
 The values are stored in x dimension.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### pushResultsTableColumn is often followed by
 * <a href="reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a> (1)
 * <a href="reference_minimumOfTouchingNeighbors">minimumOfTouchingNeighbors</a> (1)
-* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (1)
+* <a href="reference_release">release</a> (2)
+* <a href="reference_smallerOrEqualConstant">smallerOrEqualConstant</a> (2)
+* <a href="reference_greaterConstant">greaterConstant</a> (1)
+* <a href="reference_meanOfTouchingNeighbors">meanOfTouchingNeighbors</a> (2)
 * <a href="reference_multiplyImages">multiplyImages</a> (2)
+* <a href="reference_paste2D">paste2D</a> (2)
 
 
 ### Usage in ImageJ macro

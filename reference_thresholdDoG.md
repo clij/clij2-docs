@@ -6,7 +6,7 @@ Applies a Difference-of-Gaussian filter to an image and thresholds it with given
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.30.2.0.jar.
+This function is part of clijx_-0.31.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

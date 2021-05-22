@@ -9,25 +9,29 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### thresholdOtsu often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
-* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (3)
+* <a href="reference_gaussianBlur3D">gaussianBlur3D</a> (2)
+* <a href="reference_maximumXProjection">maximumXProjection</a> (1)
 * <a href="reference_mean2DBox">mean2DBox</a> (1)
 * <a href="reference_copySlice">copySlice</a> (1)
 * <a href="reference_differenceOfGaussian2D">differenceOfGaussian2D</a> (1)
 
 
 ### thresholdOtsu is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (5)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (8)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (3)
 * <a href="reference_binaryNot">binaryNot</a> (1)
-* <a href="reference_release">release</a> (1)
+* <a href="reference_release">release</a> (2)
+* <a href="reference_binaryFillHoles">binaryFillHoles</a> (2)
 * <a href="reference_connectedComponentsLabeling">connectedComponentsLabeling</a> (2)
 * <a href="reference_binaryXOr">binaryXOr</a> (1)
-* <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
-* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (1)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (2)
+* <a href="reference_mask">mask</a> (1)
+* <a href="reference_binaryEdgeDetection">binaryEdgeDetection</a> (2)
 
 
 ### Usage in ImageJ macro
@@ -199,6 +203,7 @@ cle.threshold_otsu(input, destination)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm"><img src="images/language_macro.png" height="20"/></a> [tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm"><img src="images/language_macro.png" height="20"/></a> [working_with_rois.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm)  

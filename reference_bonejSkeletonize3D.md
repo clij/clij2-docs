@@ -6,7 +6,7 @@ Apply BoneJ Skeletonize a binary image in 3D.
 Category: [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij, clij2 and clijx-assistant-extensions.
-This function is part of clijx-assistant-bonej_-0.4.2.16.jar.
+This function is part of clijx-assistant-bonej_-0.5.0.6.jar.
 
 ### Usage in ImageJ macro
 ```

@@ -16,16 +16,17 @@ bit-depth : Number
 
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### create2D often follows after
-* <a href="reference_getDimensions">getDimensions</a> (8)
+* <a href="reference_getDimensions">getDimensions</a> (16)
+* <a href="reference_getMaximumOfAllPixels">getMaximumOfAllPixels</a> (1)
 
 
 ### create2D is often followed by
 * <a href="reference_pointlistToLabelledSpots">pointlistToLabelledSpots</a> (1)
 * <a href="reference_maskLabel">maskLabel</a> (1)
-* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (2)
+* <a href="reference_touchMatrixToMesh">touchMatrixToMesh</a> (3)
 * <a href="reference_multiplyImages">multiplyImages</a> (1)
 
 

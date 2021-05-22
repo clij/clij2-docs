@@ -9,13 +9,14 @@ its half-width and half-height (radius).
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### maximum2DBox often follows after
 * <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
 
 
 ### maximum2DBox is often followed by
+* <a href="reference_subtractImages">subtractImages</a> (1)
 * <a href="reference_replaceIntensities">replaceIntensities</a> (2)
 
 

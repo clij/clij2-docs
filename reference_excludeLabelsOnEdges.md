@@ -8,13 +8,16 @@ Remaining label elements are renumbered afterwards.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.2.1.0.jar.
+This function is part of clij2_-2.3.0.6.jar.
 
 ### excludeLabelsOnEdges often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (2)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (6)
+* <a href="reference_voronoiLabeling">voronoiLabeling</a> (1)
 
 
 ### excludeLabelsOnEdges is often followed by
+* <a href="reference_excludeLabels">excludeLabels</a> (2)
+* <a href="reference_release">release</a> (3)
 * <a href="reference_statisticsOfLabelledPixels">statisticsOfLabelledPixels</a> (1)
 
 
