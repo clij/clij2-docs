@@ -1,6 +1,4 @@
 # CLIJ - CLIJ2 transition guide
-This document is under construction. Stay tuned.
-
 CLIJ and CLIJ2 are fully compatible. You can run CLIJ and CLIJ2 command side by side. 
 Thus, there is no immediate need to make the transtion and to change code.
 However, CLIJ may no longer be offically supported in June 2021. 
