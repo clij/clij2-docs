@@ -1,4 +1,4 @@
-# CLIJ - CLIJ2 transition guide
+# CLIJ2 - CLIJ2.5 transition guide
 CLIJ2.5 is fully backwards compatible to CLIJ2 and [CLIJx](https://github.com/clij/clijx). No code changes are necessary. 
 However, it is recommended to update scripts which were using CLIJx-functions to use CLIJ2 instead if possible 
 as functions from CLIJx were moved to CLIJ2. 
@@ -12,7 +12,7 @@ with this:
 Ext.CLIJ2_dilateLabels(input, output, radius);
 ```
 
-The followingin functions were renamed when transitioning from CLIJx to CLIJ2. 
+The following functions were renamed when transitioning from CLIJx to CLIJ2. 
 Again, no changes to CLIJx-based scripts are necessary. The old CLIJx functions still exist and are marked as deprecated. 
 In order update your CLIJx-based scripts, consider the following replacements:
 * DilateLabels (formerly known as ExtendLabelsWithMaximumRadius)
