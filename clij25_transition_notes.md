@@ -36,8 +36,15 @@ In order update your CLIJx-based scripts, consider the following replacements:
 Furthermore, these functions in CLIJ2 were deprecated:
 * DrawMeshBetweenNClosestLabels, use DrawMeshBetweenNNearestLabels instead
 
-These functions were moved from CLIJx to CLIJ2 without renaming:
-New features (transitioned from clijx)
+The following functions were moved from CLIJx to CLIJ2 without renaming. Thus, you can replace code like this
+```
+Ext.CLIJx_gammaCorrection(input, output, gamma);
+```
+with this:
+```
+Ext.CLIJ2_gammaCorrection(input, output, gamma);
+```
+
 * AverageDistanceOfNClosestNeighborsMap
 * AverageNeighborDistanceMap
 * Cosinus
