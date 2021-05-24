@@ -69,7 +69,7 @@ run("Clear Results");
 Ext.CLIJ2_statisticsOfBackgroundAndLabelledPixels(input, labelled_extended);
 
 Ext.CLIJ2_resultsTableColumnToImage(intensity_values, "MEAN_INTENSITY");
-
+run("Clear Results");
 /*
 Show Mean intensity per label as parametric image
 */
@@ -81,13 +81,11 @@ setMinAndMax(0, 255);
 /*
 Determine mean (mean) intensity of local neighbors and draw another parametric image
  */
-
 Ext.CLIJ2_meanOfTouchingNeighbors(intensity_values, touch_matrix, local_mean_intensity_values);
 Ext.CLIJ2_replaceIntensities(labelled_extended, local_mean_intensity_values, local_mean_intensity_map);
 Ext.CLIJ2_pull(local_mean_intensity_map);
 rename("mean neighbor intensity");
 setMinAndMax(0, 255);
-
 /*
 Determine min and max (mean) intensity of local neighbors and draw two more parametric image
 */

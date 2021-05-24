@@ -1,0 +1,4 @@
+Shared by David Legland under CC-BY 4.0
+https://github.com/dlegland/mathematical_morphology_with_MorphoLibJ/blob/master/LICENSE
+
+https://github.com/dlegland/mathematical_morphology_with_MorphoLibJ/tree/master/sampleImages

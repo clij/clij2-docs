@@ -1,0 +1,6 @@
+Anne Carpenter
+https://bbbc.broadinstitute.org/BBBC022
+
+"We used image set BBBC022v1 [Gustafsdottir et al., PLOS ONE, 2013], available from the Broad Bioimage Benchmark Collection [Ljosa et al., Nature Methods, 2012]."
+
+CC0To the extent possible under law, Anne Carpenter has waived all copyright and related or neighboring rights to BBBC022v1. This work is published from: United States.

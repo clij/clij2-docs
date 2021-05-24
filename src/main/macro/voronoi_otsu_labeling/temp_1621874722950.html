@@ -1,0 +1,138 @@
+<html><head>
+<style>
+@font-face{font-family:Helvetica, Arial;font-weight:400;}
+body{font-family:Helvetica, Arial;}
+pre{font-family:Courier New, monospace;color:#000000;padding:5px 5px;background:#eeeeee;border:1px solid #dddddd;overflow-x:auto;margin:0}
+code{font-family:Courier New, monospace;}
+p,ul,ol,table,pre,dl{margin:0 0 20px}
+h1,h2,h3,h4,h5,h6{font-family:Helvetica, Arial;color:#222;margin:0 0 20px}
+h1,h2,h3{line-height:1.1}
+h1{font-size:28px}
+h2{color:#393939}
+h3,h4,h5,h6{color:#494949}
+table{padding:5px 5px;}
+th, td{font-family:Helvetica, Arial;margin:10px 10px 10px 10px; border: 1px solid #dddddd; padding: 15px;}}
+</style>
+</head>
+<body>
+<h1>Voronoi Otsu Labeling</h1>
+<p>Author: Robert Haase, May 2021</p>
+<p><a href="https://github.com/clij/clij2-docs/tree/master/src/main/macro/voronoi_otsu_labeling.ijm">Source</a></p>
+<p>This workflow for image segmentation is a rather simple and yet powerful approach, e.g. for detecting and segmenting nuclei in fluorescence micropscopy images. A nuclei marker such as nuclei-GFP, DAPI or histone-RFP in combination with various microscopy techniques can be used to generate images of suitable kind.</p>
+<p>To demonstrate the workflow, we used image set <a href="https://bbbc.broadinstitute.org/bbbc/BBBC022">BBBC022v1</a> <a href="http://dx.doi.org/10.1371/journal.pone.0080999">Gustafsdottir et al., PLOS ONE, 2013</a>, available from the Broad Bioimage Benchmark Collection <a href="http://dx.doi.org/10.1038/nmeth.2083">Ljosa et al., Nature Methods, 2012</a>.</p>
+<p>We start by opening an example image and cropping out an interesting sub-region.</p>
+<pre><code class="language-java">run(&quot;Close All&quot;);
+// Init GPU
+run(&quot;CLIJ2 Macro Extensions&quot;, &quot;cl_device=&quot;);
+Ext.CLIJ2_clear();
+
+open(&quot;C:/structure/code/clij2-docs/src/main/resources/BBBC022/IXMtest_A01_s1_w164FBEEF7-F77C-4892-86F5-72D0160D4FB2.tif&quot;);
+input_image = getTitle();
+run(&quot;32-bit&quot;); // that's necessary to retrieve a reasonable spot detection result
+
+Ext.CLIJ2_push(input_image);
+
+// crop and visualize
+Ext.CLIJ2_crop2D(input_image, crop_image, 400, 00, 256, 256);
+Ext.CLIJ2_pull(crop_image);
+</code></pre>
+<p><a href="image_1621874721153.png"><img src="image_1621874721153.png" width="250" alt="IXMtest_A01_s1_w164FBEEF7-F77C-4892-86F5-72D0160D4FB2.tif"/></a>
+<a href="image_1621874722023.png"><img src="image_1621874722023.png" width="250" alt="CLIJ2_crop2D_result206"/></a></p>
+<h2>Applying the algorithm</h2>
+<p>Voronoi-Otsu-labeling is a command, which asks for two sigma parameters.
+The first sigma controls how close detected cells can be (<code>spot_sigma</code>)
+and second controls how precise segmented objects are outlined (<code>outline_sigma</code>).</p>
+<pre><code class="language-java">sigma_spot_detection = 5;
+sigma_outline = 1;
+Ext.CLIJ2_voronoiOtsuLabeling(input_image, label_image, sigma_spot_detection, sigma_outline);
+Ext.CLIJ2_voronoiOtsuLabeling(crop_image, crop_label_image, sigma_spot_detection, sigma_outline);
+
+Ext.CLIJ2_pull(label_image);
+run(&quot;glasbey_on_dark&quot;);
+Ext.CLIJ2_pull(crop_label_image);
+run(&quot;glasbey_on_dark&quot;);
+</code></pre>
+<p><a href="image_1621874722333.png"><img src="image_1621874722333.png" width="250" alt="CLIJ2_voronoiOtsuLabeling_result207"/></a>
+<a href="image_1621874722395.png"><img src="image_1621874722395.png" width="250" alt="CLIJ2_voronoiOtsuLabeling_result208"/></a></p>
+<h2>How does it work?</h2>
+<p>The Voronoi-Otsu-Labeling workflow is a combination of Gaussian blur, spot detection,
+thresholding and binary watershed. The interested reader might want to see the
+<a href="https://github.com/clij/clij2/blob/master/src/main/java/net/haesleinhuepf/clij2/plugins/VoronoiOtsuLabeling.java">open source code</a>.</p>
+<p>Note: If this algorithm is applied to 3D data, it is recommended to make it isotropic first.</p>
+<p>As a first step, we blur the image with a given sigma and detect maxima in the resulting image.</p>
+<pre><code class="language-java">Ext.CLIJ2_gaussianBlur2D(crop_image, blurred_image, sigma_spot_detection, sigma_spot_detection);
+
+// detect maxima (spots)
+Ext.CLIJ2_detectMaxima2DBox(blurred_image, detected_spots_image, 0, 0);
+
+// count spots
+Ext.CLIJ2_getSumOfAllPixels(detected_spots_image, number_of_spots);
+print(&quot;number of detected spots&quot;, number_of_spots);
+// show blurred image
+Ext.CLIJ2_pull(blurred_image);
+// show image with local maxima
+Ext.CLIJ2_pull(detected_spots_image);
+setMinAndMax(0, 1);
+</code></pre>
+<pre>
+> number of detected spots 22
+</pre>
+<p><a href="image_1621874722498.png"><img src="image_1621874722498.png" width="250" alt="CLIJ2_gaussianBlur2D_result209"/></a>
+<a href="image_1621874722514.png"><img src="image_1621874722514.png" width="250" alt="CLIJ2_detectMaxima2DBox_result210"/></a></p>
+<p>Furthermore, we start again from the cropped image and blur it again, with a
+different sigma. Afterwards, we threshold the image using
+<a href="https://doi.org/10.1109%2FTSMC.1979.4310076">Otsu's thresholding method (Otsu et al 1979)</a>.</p>
+<pre><code class="language-java">Ext.CLIJ2_gaussianBlur2D(crop_image, blurred_image, sigma_outline, sigma_outline);
+Ext.CLIJ2_thresholdOtsu(blurred_image, binary_image);
+
+// show blurred image
+Ext.CLIJ2_pull(blurred_image);
+// show binary image
+Ext.CLIJ2_pull(binary_image);
+setMinAndMax(0, 1);
+</code></pre>
+<p><a href="image_1621874722610.png"><img src="image_1621874722610.png" width="250" alt="CLIJ2_gaussianBlur2D_result209"/></a>
+<a href="image_1621874722673.png"><img src="image_1621874722673.png" width="250" alt="CLIJ2_thresholdOtsu_result211"/></a></p>
+<p>Afterwards, we take the binary spots image and the binary segmentation image
+and apply a binary_and operation to exclude spots which were detected in the
+background area. Those likely corresponded to noise.</p>
+<pre><code class="language-java">Ext.CLIJ2_binaryAnd(detected_spots_image, binary_image, selected_spots_image);
+// count selected spots
+Ext.CLIJ2_getSumOfAllPixels(selected_spots_image, number_of_spots);
+print(&quot;number of selected spots&quot;, number_of_spots);
+
+// show selected spots image
+Ext.CLIJ2_pull(selected_spots_image);
+setMinAndMax(0, 1);
+</code></pre>
+<pre>
+> number of selected spots 13
+</pre>
+<p><a href="image_1621874722723.png"><img src="image_1621874722723.png" width="250" alt="CLIJ2_binaryAnd_result212"/></a></p>
+<p>Next, we separate the image space between the selected spots using a
+<a href="https://en.wikipedia.org/wiki/Voronoi_diagram#References">Voronoi diagram</a>
+which is limited to the positive pixels in the binary image.</p>
+<pre><code class="language-java">Ext.CLIJ2_maskedVoronoiLabeling(selected_spots_image, binary_image, voronoi_diagram );
+
+// show binary image
+Ext.CLIJ2_pull(binary_image);
+setMinAndMax(0, 1);
+
+// show selected spots image
+Ext.CLIJ2_pull(selected_spots_image);
+setMinAndMax(0, 1);
+
+// show result
+Ext.CLIJ2_pull(voronoi_diagram );
+run(&quot;glasbey_on_dark&quot;);
+</code></pre>
+<p><a href="image_1621874722903.png"><img src="image_1621874722903.png" width="250" alt="CLIJ2_thresholdOtsu_result211"/></a>
+<a href="image_1621874722919.png"><img src="image_1621874722919.png" width="250" alt="CLIJ2_binaryAnd_result212"/></a>
+<a href="image_1621874722934.png"><img src="image_1621874722934.png" width="250" alt="CLIJ2_maskedVoronoiLabeling_result213"/></a></p>
+<p>Finally, we clean up GPU memory.</p>
+<pre><code class="language-java">Ext.CLIJ2_clear();
+</code></pre>
+
+
+
+</body></html>

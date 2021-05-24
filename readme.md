@@ -89,6 +89,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
     * [Adding label outlines and numbers as overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay/)  
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
+    * [Voronoi Otsu labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
     * [Label maps and voronoi diagrams](https://clij.github.io/clij2-docs/md/labelmap_voronoi)
     * [Custom clij functions for image segmentation](https://clij.github.io/clij2-docs/md/custom_clij_macro_functions/)
 
@@ -98,14 +99,17 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Spots, pointlists, matrices and tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables/)
     * [Filtering in graphs](https://clij.github.io/clij2-docs/md/filtering_in_graphs/)
     * [Filtering between touching neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)
-    * [Neighbors of neighbors](https://clij.github.io/clij2-docs/md/neighbors_of_neighbors)
+    * [Neighbors of neighbors](https://clij.github.io/clij2-docs/md/neighbors_of_neighbors/)
+    * [Neighborhood definitions](https://clij.github.io/clij2-docs/md/neighborhood_definitions/)  
     * [Tribolium embryo morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry/)
     * [Superpixel segmentation](https://clij.github.io/clij2-docs/md/superpixel_segmentation/)
     
   * Statistics and measurements
     * [Images statistics](https://clij.github.io/clij2-docs/md/image_statistics/)
     * [Pixel statistics on labeled images](https://clij.github.io/clij2-docs/md/measure_statistics/)
+    * [Parametric images](https://clij.github.io/clij2-docs/md/parametric_images/)
     * [Count neighbors](https://clij.github.io/clij2-docs/md/count_neighbors/)
+    * [Mean of touching neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors/)  
     * [Working with tables](https://clij.github.io/clij2-docs/md/tables/)
     * [Colocalisation measurements using Jaccard index and Sorensen/Dice coefficient](https://clij.github.io/clij2-docs/md/measure_overlap/)
     * [Measuring presence of objects between channels](https://clij.github.io/clij2-docs/md/count_overlap_between_channels/)
