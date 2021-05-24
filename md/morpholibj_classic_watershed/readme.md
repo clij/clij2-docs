@@ -5,7 +5,7 @@ Author: Robert Haase, May 2021
 
 [Source](https://github.com/clij/clij2-docs/tree/master/src/main/macro/morpholibj_classic_watershed.ijm)
 
-This tutorial demonstrates the use of the Classic Waterhsed plugin as CLIJx extension.
+This tutorial demonstrates the use of the Classic Watershed plugin as CLIJx extension.
 
 See also
 * [Classic watershed in the ImageJ Wiki](https://imagej.net/Classic_Watershed)
