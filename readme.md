@@ -89,7 +89,8 @@ If you search for support, please open a thread on the [image.sc](https://image.
     * [Working with regions of interest (ROIs)](https://clij.github.io/clij2-docs/md/working_with_rois/)
     * [Adding label outlines and numbers as overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay/)  
     * [Voronoi diagrams](https://clij.github.io/clij2-docs/md/voronoi/)
-    * [Voronoi Otsu labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
+    * [Voronoi Otsu labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling/)  
+    * [Classic watershed (MorpholibJ extension)](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed/)  
     * [Label maps and voronoi diagrams](https://clij.github.io/clij2-docs/md/labelmap_voronoi)
     * [Custom clij functions for image segmentation](https://clij.github.io/clij2-docs/md/custom_clij_macro_functions/)
 
