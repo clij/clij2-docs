@@ -149,7 +149,8 @@ If you search for support, please open a thread on the [image.sc](https://image.
 
 ## Media (external resources)
 <img src="./images/euro_bioimaging_virtual_pub_youtube.png" width="245">
-* [Euro-BioImaging The Virtual Pub: Robert Haase, TU Dresden, on "GPU-accelerated image analysis in Fiji and Napari"](https://www.youtube.com/watch?v=MERVnf5_QkI)
+* [Euro-BioImaging Virtual Pub: Robert Haase, TU Dresden, on "GPU-accelerated image analysis in Fiji and Napari"](https://www.youtube.com/watch?v=MERVnf5_QkI)
+* [Imaging ONE World: GPU-accelerated 3D image processing for everyone](https://www.youtube.com/watch?v=meQvA4jlJSU)
 * [I2K2020: Designing GPU-accelerated Image Data Flow Graphs for CLIJ2 and clEsperanto](https://www.youtube.com/watch?v=EYsfJ9W6gHw)
 * [GPU-accelerated image processing for the life-sciences, guest lecture at Computer Science Faculty, TU Dresden](https://www.youtube.com/watch?v=_2yBn8MfP-I)
 * [How CLIJ2 can make your bio-image analysis workflows incredibly fast, FocalPlane](https://focalplane.biologists.com/2020/07/14/how-clij-can-make-your-image-analysis-incredibly-fast/)
