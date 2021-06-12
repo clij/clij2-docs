@@ -12,6 +12,21 @@ with this:
 Ext.CLIJ2_dilateLabels(input, output, radius);
 ```
 
+## Image Data Flow Graph updates
+If you generated Image Data Flow Graphs as groovy scripts using the CLIJx-assistant, it might be necessary to update 
+those by replacing the '.clijx.' package to '.clij2.' in lines where plugins where used which were moved from clijx to 
+clij2. For example this line
+```
+node = new net.haesleinhuepf.clijx.assistant.interactive.generic.GenericAssistantGUIPlugin(new net.haesleinhuepf.clijx.plugins.VoronoiOtsuLabeling());
+```
+needs to be changed to this line:
+```
+node = new net.haesleinhuepf.clij2.assistant.interactive.generic.GenericAssistantGUIPlugin(new net.haesleinhuepf.clij2.plugins.VoronoiOtsuLabeling());
+                                 ^                                                                                   ^
+```
+
+## API Changes
+
 The following functions were renamed when transitioning from CLIJx to CLIJ2. 
 Again, no changes to CLIJx-based scripts are necessary. The old CLIJx functions still exist and are marked as deprecated. 
 In order update your CLIJx-based scripts, consider the following replacements:
