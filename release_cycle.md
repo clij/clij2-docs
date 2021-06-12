@@ -12,13 +12,18 @@ However, to be safe on our side, these rules are not legally binding and may be 
 ## Releases
 CLIJ is released and distributed via two online resources:
 * ImageJ update site: http://sites.imagej.net/clij/
-* Bintray maven repository: http://bintray.com/haesleinhuepf/clij/
+* Sonatype maven central repository: https://search.maven.org/search?q=clij
 
 Workflow developers are recommended to base their tools on the current [major release as stated here](https://clij.github.io/clij2-docs/dependingViaMaven).
 
 ## CLIJ core library
-The release cycle includes CLIJs main library:
+The release cycle includes CLIJs main libraries:
+* https://github.com/clij/clij-coremem
+* https://github.com/clij/clij-clearcl
+* https://github.com/clij/clij-core
+* https://github.com/clij/clij
 * https://github.com/clij/clij2
+* https://github.com/clij/clij2-assistant
 
 ## Major releases
 * Major releases aim to be published annually on June 13th, starting in 2019.
@@ -29,7 +34,7 @@ The release cycle includes CLIJs main library:
 ## Hot fixes
 * Bugfixes and corrections may appear at any point in time. 
 * Code changes releated to hot fixes will be available on the master branch of CLIJs repositories.
-* Hot fixes appear in the list of [release notes](https://github.com/clij/clij/releases).
+* Hot fixes appear in the list of [release notes](https://github.com/clij/clij2/releases).
 
 ## Nightly builds and BETA releases
 * Development of CLIJ will be done on the development branch. 
