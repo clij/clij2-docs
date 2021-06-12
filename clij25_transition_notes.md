@@ -12,7 +12,7 @@ with this:
 Ext.CLIJ2_dilateLabels(input, output, radius);
 ```
 
-## Image Data Flow Graph updates
+## Image Data Flow Graph updates (CLIJx assistant)
 If you generated Image Data Flow Graphs as groovy scripts using the CLIJx-assistant, it might be necessary to update 
 those by replacing the '.clijx.' package to '.clij2.' in lines where plugins where used which were moved from clijx to 
 clij2. For example this line
