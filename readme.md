@@ -148,7 +148,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
 * [Export as Icy Protocol](https://clij.github.io/assistant/icy_protocol_export)
 
 ## Media (external resources)
-<img src="./images/euro_bioimaging_virtual_pub_youtube.png" width="245">
+* [CLIJx-Assistant: My favourite image analysis tool, by Neubias members, by Elnaz Fazeli](https://analyticalscience.wiley.com/do/10.1002/was.0004000132)
 * [Euro-BioImaging Virtual Pub: Robert Haase, TU Dresden, on "GPU-accelerated image analysis in Fiji and Napari"](https://www.youtube.com/watch?v=MERVnf5_QkI)
 * [Imaging ONE World: GPU-accelerated 3D image processing for everyone](https://www.youtube.com/watch?v=meQvA4jlJSU)
 * [I2K2020: Designing GPU-accelerated Image Data Flow Graphs for CLIJ2 and clEsperanto](https://www.youtube.com/watch?v=EYsfJ9W6gHw)
@@ -208,6 +208,7 @@ Damir Krunic (DKFZ),
 Daniela Vorkel (MPI CBG),
 Daniel J. White (GE),
 Eduardo Conde-Sousa (University of Porto),
+Elnaz Fazeli (BIU, University of Helsinki),
 Erick Ratamero (The Jackson Laboratory),
 Eugene W. Myers (MPI CBG Dresden)
 Florian Jug (MPI CBG Dresden),
