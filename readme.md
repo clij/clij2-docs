@@ -47,7 +47,7 @@ If you search for support, please open a thread on the [image.sc](https://image.
 [![Image.sc forum](https://img.shields.io/badge/dynamic/json.svg?label=forum&url=https%3A%2F%2Fforum.image.sc%2Ftag%2Fclij.json&query=%24.topic_list.tags.0.topic_count&colorB=brightgreen&suffix=%20topics&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABPklEQVR42m3SyyqFURTA8Y2BER0TDyExZ+aSPIKUlPIITFzKeQWXwhBlQrmFgUzMMFLKZeguBu5y+//17dP3nc5vuPdee6299gohUYYaDGOyyACq4JmQVoFujOMR77hNfOAGM+hBOQqB9TjHD36xhAa04RCuuXeKOvwHVWIKL9jCK2bRiV284QgL8MwEjAneeo9VNOEaBhzALGtoRy02cIcWhE34jj5YxgW+E5Z4iTPkMYpPLCNY3hdOYEfNbKYdmNngZ1jyEzw7h7AIb3fRTQ95OAZ6yQpGYHMMtOTgouktYwxuXsHgWLLl+4x++Kx1FJrjLTagA77bTPvYgw1rRqY56e+w7GNYsqX6JfPwi7aR+Y5SA+BXtKIRfkfJAYgj14tpOF6+I46c4/cAM3UhM3JxyKsxiOIhH0IO6SH/A1Kb1WBeUjbkAAAAAElFTkSuQmCC)](https://forum.image.sc/tag/clij)
 
 ## Overview
-![Image](assistant/images/installation_ok.png)
+![Image](images/installation_ok.png)
 
 * [Introduction to the graphical user interface clij2-assistant](https://clij.github.io/assistant/getting_started)
 * Installation
@@ -78,10 +78,12 @@ If you search for support, please open a thread on the [image.sc](https://image.
 * [Basics of GPU-accelerated image processing and memory management](https://clij.github.io/clij2-docs/md/basics/)
 * [Basic image processing workflows](https://clij.github.io/clij2-docs/md/basic_image_processing/)
 * [Binary images, label images and parametric images](https://clij.github.io/clij2-docs/md/image_types/)
-* [Processing multi-channel time-lapse data](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse/)
 * [Introduction for ImageJ Macro users](https://clij.github.io/clij2-docs/macro_intro)
-* [Introduction for Java developers](https://clij.github.io/clij2-docs/api_intro)
 * [Processing multi-channel time-lapse data](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse/)
+* Advanced clij programming
+  * [Introduction for Java developers](https://clij.github.io/clij2-docs/api_intro)
+  * [CLIJ2 development](https://clij.github.io/clij2-docs/development)
+  * [CLIJ2 plugin template](https://github.com/clij/clij2-plugin-template)
 
 ### Filtering images
 * [Image filtering using the assitant](https://clij.github.io/assistant/filtering)
@@ -170,10 +172,6 @@ If you search for support, please open a thread on the [image.sc](https://image.
 * [ImageJ Groovy](https://github.com/clij/clij2-docs/tree/master/src/main/groovy)
 * [ImageJ Javascript](https://github.com/clij/clij2-docs/tree/master/src/main/javascript)
 * [ImageJ Jython](https://github.com/clij/clij2-docs/tree/master/src/main/jython)
-
-##  Development
-* [CLIJ2 development](https://clij.github.io/clij2-docs/development)
-* [CLIJ2 plugin template](https://github.com/clij/clij2-plugin-template)
 
 ## Further reading (external resources)
 * [GPU Image Processing using OpenCL, Harald Scheidl, TowardsDataScience](https://towardsdatascience.com/get-started-with-gpu-image-processing-15e34b787480)
@@ -264,7 +262,10 @@ supercomputing center-path to exascale project,
 project number CZ.02.1.01/0.0/0.0/16_013/0001791
 within the Operational Programme Research, Development
 and Education.
-We also acknowledge the support by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germanys Excellence Strategy EXC2068 - Cluster of Excellence Physics of Life of TU Dresden.
+We also acknowledge the support by the Deutsche 
+Forschungsgemeinschaft (DFG, German Research Foundation) 
+under Germanys Excellence Strategy EXC2068 - Cluster of 
+Excellence Physics of Life of TU Dresden.
 
 [Imprint](https://clij.github.io/imprint)
   
