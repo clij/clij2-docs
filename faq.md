@@ -310,7 +310,9 @@ sudo make install
 ```
 More info can be found on the website of the [beignet project](https://www.freedesktop.org/wiki/Software/Beignet/).
 
-
+<a name="remove_clij_buttons"></a>
+# Can I remove the CLIJ buttons from the Fiji toolbar?
+Yes, just delete the file `clij2_assistant_autostart.ijm` from the folder `Fiji.app/plugins/Scripts/Plugins/AutoRun/`.
 
 [Back to CLIJ documentation](https://clij.github.io/)
 
