@@ -12,7 +12,17 @@ and activate the CLIJ and CLIJ2 update sites.
 
 ![Image](images/updatesite.png)
 
-After restarting Fiji, CLIJ is successfully installed, if you find a menu entry _Plugins > ImageJ on GPU (CLIJ2)_.
+After restarting Fiji, CLIJ is successfully installed, if you find a menu entry _Plugins > ImageJ on GPU (CLIJ2)_ and in the toolbar:
+
+* Click on "Close"
+* Click on "Apply Changes"
+* Restart Fiji
+
+Installation was successful if you find the CLIJx-Assistant starting point button in Fijis tool bar:
+
+![Image](assistant/images/installation_ok.png)
+
+If you want to use the experimental CLIJx-assistant offering CLIJx functions, please refer to [the installation instructions](https://clij.github.io/assistant/installation).
 
 ## Testing the installation
 You can execute [this macro](https://github.com/clij/clij2-docs/blob/master/src/main/macro/benchmarking.ijm) to see if CLIJ and graphics card drivers are installed correctly. In case of issues, consult the [troubleshooting section](https://clij.github.io/clij-docs/troubleshooting) or contact us via [image.sc](https://image.sc).
