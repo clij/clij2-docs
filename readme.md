@@ -245,9 +245,9 @@ Romain Guiet (EPFL Lausanne),
 Ruth Whelan-Jeans,
 Sebastian Munck (VIB Leuven),
 Si&acirc;n Culley (LMCB MRC),
-Stein R�rvik,
-St�phane Dallongeville (Institut Pasteur)
-St�phane~Rigaud (Institut Pasteur Paris),
+Stein R&oslash;rvik,
+St&eacute;phane Dallongeville (Institut Pasteur)
+St&eacute;phane~Rigaud (Institut Pasteur Paris),
 Tanner Fadero (UNC-Chapel Hill),
 Theresa Suckert (OncoRay, TU Dresden),
 Thomas Irmer (Zeiss),
