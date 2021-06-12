@@ -242,9 +242,9 @@ Romain Guiet (EPFL Lausanne),
 Ruth Whelan-Jeans,
 Sebastian Munck (VIB Leuven),
 Si&acirc;n Culley (LMCB MRC),
-Stein Rørvik,
-Stéphane Dallongeville (Institut Pasteur)
-Stéphane~Rigaud (Institut Pasteur Paris),
+Stein RÃ¸rvik,
+StÃ©phane Dallongeville (Institut Pasteur)
+StÃ©phane~Rigaud (Institut Pasteur Paris),
 Tanner Fadero (UNC-Chapel Hill),
 Theresa Suckert (OncoRay, TU Dresden),
 Thomas Irmer (Zeiss),
@@ -261,7 +261,10 @@ supercomputing center-path to exascale project,
 project number CZ.02.1.01/0.0/0.0/16_013/0001791
 within the Operational Programme Research, Development
 and Education.
-We also acknowledge the support by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy – EXC2068 - Cluster of Excellence Physics of Life of TU Dresden.
+We also acknowledge the support by the Deutsche 
+Forschungsgemeinschaft (DFG, German Research Foundation) 
+under Germanys Excellence Strategy EXC2068 - Cluster of 
+Excellence Physics of Life of TU Dresden.
 
 [Imprint](https://clij.github.io/imprint)
   
