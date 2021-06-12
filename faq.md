@@ -314,6 +314,12 @@ More info can be found on the website of the [beignet project](https://www.freed
 # Can I remove the CLIJ buttons from the Fiji toolbar?
 Yes, just delete the file `clij2_assistant_autostart.ijm` from the folder `Fiji.app/plugins/Scripts/Plugins/AutoRun/`.
 
+<a name="difference_clij2_clijx_assistant"></a>
+# What is the difference between the CLIJ2 and the CLIJx assistants?
+The [CLIJ2 assistant](https://github.com/clij/clij2-assistant) exposes CLIJ2 functions only and allows code-export to scripting languages supported by CLIJ2 (Macro, Javascript, Groovy, Jython, Matlab).
+The [CLIJx assistant](https://github.com/clij/clijx-assistant) additionally offers experimental [CLIJx](https://github.com/clij/clijx) functions and export to scripting languages such as QuPath-Groovy for [cluPath](https://github.com/clij/clupath) and [clesperanto-Python](https://github.com/clesperanto/pyclesperanto_prototype).
+While the CLIJ2-assistant gets delivered via the clij and clij2 update sites in Fiji, the installation of the CLIJx-assistant needs [multiple update sites installed](https://clij.github.io/assistant/installation#extensions).
+
 [Back to CLIJ documentation](https://clij.github.io/)
 
 [Imprint](https://clij.github.io/imprint)
