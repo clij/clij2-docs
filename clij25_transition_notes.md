@@ -1,7 +1,8 @@
 # CLIJ2 - CLIJ2.5 transition guide
-CLIJ2.5 is fully backwards compatible to CLIJ2 and [CLIJx](https://github.com/clij/clijx). No code changes are necessary. 
+CLIJ2.5 is fully backwards compatible to CLIJ2 and [CLIJx](https://github.com/clij/clijx). 
+No code changes are necessary for ImageJ macros. 
 However, it is recommended to update scripts which were using CLIJx-functions to use CLIJ2 instead if possible 
-as functions from CLIJx were moved to CLIJ2. 
+as functions from CLIJx were moved to CLIJ2. Furhtermore, CLIJx Image Data Flow Graphs need to be updated (see below)
 
 For example, you can replace this line using CLIJ2:
 ```
@@ -12,7 +13,7 @@ with this:
 Ext.CLIJ2_dilateLabels(input, output, radius);
 ```
 
-## Image Data Flow Graph updates (CLIJx assistant)
+## CLIJx Image Data Flow Graph updates (CLIJx assistant)
 If you generated Image Data Flow Graphs as groovy scripts using the CLIJx-assistant, it might be necessary to update 
 those by replacing the '.clijx.' package to '.clij2.' in lines where plugins where used which were moved from clijx to 
 clij2. For example this line
@@ -25,7 +26,7 @@ node = new net.haesleinhuepf.clij2.assistant.interactive.generic.GenericAssistan
                                  ^                                                                                   ^
 ```
 
-## API Changes
+## API Updates
 
 The following functions were renamed when transitioning from CLIJx to CLIJ2. 
 Again, no changes to CLIJx-based scripts are necessary. The old CLIJx functions still exist and are marked as deprecated. 
