@@ -9,7 +9,7 @@ The pixels in the input image with pixel value not equal to 0 will be interprete
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### erodeSphere often follows after
 * <a href="reference_erodeSphere">erodeSphere</a> (1)

@@ -4,7 +4,7 @@
 Copies an image specified by its name to GPU memory in order to process it there later.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

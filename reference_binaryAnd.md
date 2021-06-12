@@ -20,11 +20,12 @@ destination : Image
 Categories: [Math](https://clij.github.io/clij2-docs/reference__math), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### binaryAnd often follows after
 * <a href="reference_notEqualConstant">notEqualConstant</a> (1)
 * <a href="reference_equal">equal</a> (1)
+* <a href="reference_detectMaxima2DBox">detectMaxima2DBox</a> (1)
 
 
 ### binaryAnd is often followed by
@@ -168,7 +169,14 @@ cle.binary_and(operand1, operand2, destination)
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb"><img src="images/language_python.png" height="20"/></a> [voronoi_otsu_labeling.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

@@ -6,7 +6,7 @@ Flips an image in X, Y and/or Z direction depending on if flip_x, flip_y and/or 
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

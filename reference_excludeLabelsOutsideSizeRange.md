@@ -8,7 +8,11 @@ Size of the labels is given as the number of pixel or voxels per label.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
+
+### excludeLabelsOutsideSizeRange is often followed by
+* <a href="reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a> (1)
+
 
 ### Usage in ImageJ macro
 ```
@@ -141,6 +145,18 @@ cle.exclude_labels_outside_size_range(input, destination, minimum_size, maximum_
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

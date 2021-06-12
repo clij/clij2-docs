@@ -8,10 +8,12 @@ Hand over a vector of values and a range specifying which labels with which valu
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### excludeLabelsWithValuesOutOfRange often follows after
 * <a href="reference_pushResultsTableColumn">pushResultsTableColumn</a> (1)
+* <a href="reference_excludeLabelsOutsideSizeRange">excludeLabelsOutsideSizeRange</a> (1)
+* <a href="reference_touchingNeighborCountMap">touchingNeighborCountMap</a> (1)
 
 
 ### Usage in ImageJ macro
@@ -156,8 +158,15 @@ cle.exclude_labels_with_values_out_of_range(values_vector, label_map_input, labe
 
 
 
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
+
+
+
+
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsWithinRange.ijm"><img src="images/language_macro.png" height="20"/></a> [excludeLabelsWithinRange.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/excludeLabelsWithinRange.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

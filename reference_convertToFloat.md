@@ -4,7 +4,7 @@
 Convert image to 32-bit float pixel type.
 
 Availability: Available in Fiji by activating the update sites clij, clij2 and clijx-assistant-extensions.
-This function is part of clijx-assistant-simpleitk_-0.5.0.6.jar.
+This function is part of clijx-assistant-simpleitk_-0.6.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

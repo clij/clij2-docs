@@ -6,7 +6,7 @@ Copies a binary image specified by its name from GPU memory back to ImageJ and s
 Category: [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -22,6 +22,7 @@ Ext.CLIJ2_pullBinary(String image);
 <a href="https://clij.github.io/clij2-docs/md/labelmap_voronoi"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi](https://clij.github.io/clij2-docs/md/labelmap_voronoi)  
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
 <a href="https://clij.github.io/clij2-docs/md/measure_overlap"><img src="images/language_macro.png" height="20"/></a> [measure_overlap](https://clij.github.io/clij2-docs/md/measure_overlap)  
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
 <a href="https://clij.github.io/clij2-docs/md/voronoi"><img src="images/language_macro.png" height="20"/></a> [voronoi](https://clij.github.io/clij2-docs/md/voronoi)  
 
 
@@ -41,6 +42,7 @@ Ext.CLIJ2_pullBinary(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_overlap.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_overlap.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_overlap.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm"><img src="images/language_macro.png" height="20"/></a> [outline.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm"><img src="images/language_macro.png" height="20"/></a> [rotating_sphere.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/rotating_sphere.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/thresholding.ijm"><img src="images/language_macro.png" height="20"/></a> [thresholding.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/thresholding.ijm)  

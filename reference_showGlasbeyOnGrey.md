@@ -6,7 +6,7 @@ Visualises two 2D images as one RGB image.
 The first channel is shown in grey, the second with glasbey LUT.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

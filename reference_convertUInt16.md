@@ -8,7 +8,7 @@ The target image should not exist with a different type before this
 method is called.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### convertUInt16 often follows after
 * <a href="reference_multiplyImageAndScalar">multiplyImageAndScalar</a> (1)

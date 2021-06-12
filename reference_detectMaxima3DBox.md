@@ -9,7 +9,7 @@ higher intensity, and to 0 otherwise.
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### detectMaxima3DBox is often followed by
 * <a href="reference_release">release</a> (1)

@@ -3588,7 +3588,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 
 ## label_minimum_intensity_map
 **CLIJ2**
-* boolean labelMinimumIntensityMap(ClearCLBuffer arg1, ClearCLBuffer arg2, ClearCLBuffer arg3)
+* boolean labelMinimumIntensityMap(ClearCLBuffer intensity_image, ClearCLBuffer label_map, ClearCLBuffer destination)
 
 **CLIc**
 * <span style="color:red">(Missing)</span>
@@ -3597,7 +3597,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * <span style="color:red">(Missing)</span>
 
 **Macro**
-* <span style="color:red">(Missing)</span>
+* Ext.CLIJx_labelMinimumIntensityMap(Image intensity_image, Image label_map, ByRef Image destination)
 
 **pyclesperanto**
 * label_minimum_intensity_map(intensity_image : Image, labels : Image, minimum_intensity_map : Image = None):
@@ -8958,6 +8958,7 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 ## touch_matrix_to_adjacency_matrix
 **CLIJ2**
 * boolean touchMatrixToAdjacencyMatrix(ClearCLBuffer touch_matrix, ClearCLBuffer adjacency_matrix)
+* boolean touchMatrixToAdjacencyMatrix(ClearCLBuffer arg1, ClearCLBuffer arg2, boolean arg3)
 
 **CLIc**
 * <span style="color:red">(Missing)</span>
@@ -9263,16 +9264,20 @@ This list contains the dictionary to translate between clij2, clijx, clEsperanto
 * <span style="color:red">(Missing)</span>
 
 ## visualize_outlines_on_original
-<span style="color:green">(experimental)</span>
-
-**CLIJx**
+**CLIJ2**
 * boolean visualizeOutlinesOnOriginal(ClearCLBuffer intensity, ClearCLBuffer labels, ClearCLBuffer destination)
+
+**CLIc**
+* <span style="color:red">(Missing)</span>
 
 **clEsperantoJ**
 * ClearCLBuffer visualize_outlines_on_original(ClearCLBuffer intensity, ClearCLBuffer labels, ClearCLBuffer destination)
 
 **Macro**
-* Ext.CLIJx_visualizeOutlinesOnOriginal(Image intensity, Image labels, ByRef Image destination)
+* Ext.CLIJ2_visualizeOutlinesOnOriginal(Image intensity, Image labels, ByRef Image destination)
+
+**pyclesperanto**
+* <span style="color:red">(Missing)</span>
 
 ## voronoi_labeling
 **CLIJ2**

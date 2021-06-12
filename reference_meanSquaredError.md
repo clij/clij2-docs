@@ -7,7 +7,7 @@ The MSE will be stored in a new row of ImageJs
 Results table in the column 'MSE'.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

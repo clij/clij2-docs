@@ -404,7 +404,7 @@ Takes a pointlist with dimensions n*d with n point coordinates in d dimensions a
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_varianceOfMaskedPixels">varianceOfMaskedPixels</a>  
 Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. 
 
-### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_visualizeOutlinesOnOriginal">visualizeOutlinesOnOriginal (Experimental)</a>  
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_visualizeOutlinesOnOriginal">visualizeOutlinesOnOriginal</a>  
 Combines an intensity image and a label (or binary) image so that you can see segmentation outlines on the intensity image.
 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_voronoiLabeling">voronoiLabeling</a>  

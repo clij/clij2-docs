@@ -8,7 +8,11 @@ Takes a label map, determines which labels touch and replaces every label with t
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label),  Visualisation, [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
+
+### touchingNeighborCountMap is often followed by
+* <a href="reference_excludeLabelsWithValuesOutOfRange">excludeLabelsWithValuesOutOfRange</a> (1)
+
 
 ### Usage in ImageJ macro
 ```
@@ -140,7 +144,14 @@ cle.touching_neighbor_count_map(input, destination)
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/mesh_between_touching_neighbors.ipynb"><img src="images/language_python.png" height="20"/></a> [mesh_between_touching_neighbors.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/mesh_between_touching_neighbors.ipynb)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

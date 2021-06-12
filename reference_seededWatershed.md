@@ -6,7 +6,7 @@ Takes a label map (seeds) and an input image with gray values to apply the water
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

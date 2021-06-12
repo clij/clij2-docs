@@ -9,7 +9,7 @@ X/Y-plane of a given input image stack. Furthermore, radius of the resulting pro
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### resliceRadial often follows after
 * <a href="reference_resliceRadial">resliceRadial</a> (1)

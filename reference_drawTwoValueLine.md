@@ -6,7 +6,7 @@ Draws a line between two points with a given thickness.
 Pixels close to point 1 are set to value1. Pixels closer to point 2 are set to value2 All pixels other than on the line are untouched. Consider using clij.set(buffer, 0); in advance.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

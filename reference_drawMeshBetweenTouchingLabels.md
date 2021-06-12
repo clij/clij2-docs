@@ -8,7 +8,7 @@ The end points of the lines correspond to the centroids of the labels.
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -135,6 +135,12 @@ cle.draw_mesh_between_touching_labels(input, destination)
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb"><img src="images/language_python.png" height="20"/></a> [neighborhood_definitions.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

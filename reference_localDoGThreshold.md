@@ -4,7 +4,7 @@
 null
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)
 [Back to CLIJ2 documentation](https://clij.github.io/clij2-docs)

@@ -8,7 +8,7 @@ Subtracts one image X from another image Y pixel wise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -131,6 +131,7 @@ clij2.release(destination);
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
 
 
 
@@ -138,6 +139,7 @@ clij2.release(destination);
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm"><img src="images/language_macro.png" height="20"/></a> [backgroundSubtraction.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/backgroundSubtraction.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm"><img src="images/language_macro.png" height="20"/></a> [topHat.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/topHat.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/jython/backgroundSubtraction.py"><img src="images/language_jython.png" height="20"/></a> [backgroundSubtraction.py](https://github.com/clij/clij2-docs/blob/master/src/main/jython/backgroundSubtraction.py)  

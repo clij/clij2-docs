@@ -6,7 +6,7 @@ Takes a pointlist with dimensions n times d with n point coordinates in d dimens
 Category: [Labels](https://clij.github.io/clij2-docs/reference__label)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### pointlistToLabelledSpots often follows after
 * <a href="reference_create2D">create2D</a> (1)

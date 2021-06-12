@@ -4,7 +4,7 @@
 Copies an image specified by its name from GPU memory back to ImageJ and shows it.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -37,8 +37,11 @@ Ext.CLIJ2_pull(String image);
 <a href="https://clij.github.io/clij2-docs/md/maximumProjection"><img src="images/language_macro.png" height="20"/></a> [maximumProjection](https://clij.github.io/clij2-docs/md/maximumProjection)  
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
 <a href="https://clij.github.io/clij2-docs/md/measure_overlap"><img src="images/language_macro.png" height="20"/></a> [measure_overlap](https://clij.github.io/clij2-docs/md/measure_overlap)  
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
+<a href="https://clij.github.io/clij2-docs/md/neighborhood_definitions"><img src="images/language_macro.png" height="20"/></a> [neighborhood_definitions](https://clij.github.io/clij2-docs/md/neighborhood_definitions)  
 <a href="https://clij.github.io/clij2-docs/md/neighbors_of_neighbors"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors](https://clij.github.io/clij2-docs/md/neighbors_of_neighbors)  
 <a href="https://clij.github.io/clij2-docs/md/outlines_numbers_overlay"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay)  
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
 <a href="https://clij.github.io/clij2-docs/md/process_multichannel_timelapse"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse)  
 <a href="https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ"><img src="images/language_macro.png" height="20"/></a> [rotate_comparison_IJ_CLIJ](https://clij.github.io/clij2-docs/md/rotate_comparison_IJ_CLIJ)  
 <a href="https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables"><img src="images/language_macro.png" height="20"/></a> [spots_pointlists_matrices_tables](https://clij.github.io/clij2-docs/md/spots_pointlists_matrices_tables)  
@@ -48,6 +51,7 @@ Ext.CLIJ2_pull(String image);
 <a href="https://clij.github.io/clij2-docs/md/time_tracing"><img src="images/language_macro.png" height="20"/></a> [time_tracing](https://clij.github.io/clij2-docs/md/time_tracing)  
 <a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
 <a href="https://clij.github.io/clij2-docs/md/voronoi"><img src="images/language_macro.png" height="20"/></a> [voronoi](https://clij.github.io/clij2-docs/md/voronoi)  
+<a href="https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
 <a href="https://clij.github.io/clij2-docs/md/working_with_rois"><img src="images/language_macro.png" height="20"/></a> [working_with_rois](https://clij.github.io/clij2-docs/md/working_with_rois)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb"><img src="images/language_python.png" height="20"/></a> [napari_dask.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighbors_of_neighbors.ipynb"><img src="images/language_python.png" height="20"/></a> [neighbors_of_neighbors.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighbors_of_neighbors.ipynb)  
@@ -133,8 +137,10 @@ Ext.CLIJ2_pull(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [meshTouchingNeighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/meshTouchingNeighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm"><img src="images/language_macro.png" height="20"/></a> [mesh_closest_points.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mesh_closest_points.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimum.ijm"><img src="images/language_macro.png" height="20"/></a> [minimum.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/minimum.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection.ijm"><img src="images/language_macro.png" height="20"/></a> [motionCorrection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection_compare_stackreg.ijm"><img src="images/language_macro.png" height="20"/></a> [motionCorrection_compare_stackreg.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/motionCorrection_compare_stackreg.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighborhood_definitions.ijm"><img src="images/language_macro.png" height="20"/></a> [neighborhood_definitions.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighborhood_definitions.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [neighbors_of_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighbors_of_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm"><img src="images/language_macro.png" height="20"/></a> [orthogonalMaximumProjections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/orthogonalMaximumProjections.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm"><img src="images/language_macro.png" height="20"/></a> [outline.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outline.ijm)  
@@ -169,6 +175,7 @@ Ext.CLIJ2_pull(String image);
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm"><img src="images/language_macro.png" height="20"/></a> [tubeness.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tubeness.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/turn_stack.ijm"><img src="images/language_macro.png" height="20"/></a> [turn_stack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/turn_stack.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm"><img src="images/language_macro.png" height="20"/></a> [workflow.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/workflow.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm"><img src="images/language_macro.png" height="20"/></a> [working_with_rois.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm)  
 <a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/blurImage.m"><img src="images/language_matlab.png" height="20"/></a> [blurImage.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/blurImage.m)  

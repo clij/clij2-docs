@@ -6,7 +6,7 @@ Converts a table to an image.
 Rows stay rows, columns stay columns.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### resultsTableToImage2D is often followed by
 * <a href="reference_subtractImages">subtractImages</a> (2)

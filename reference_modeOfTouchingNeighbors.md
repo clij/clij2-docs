@@ -5,7 +5,7 @@ Takes a touch matrix and a vector of values to determine the most popular intege
 TODO: This only works for values between 0 and 255 for now.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

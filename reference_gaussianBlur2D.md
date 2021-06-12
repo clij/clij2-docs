@@ -10,9 +10,11 @@ The implementation is done separable. In case a sigma equals zero, the direction
 Categories:  Noise, [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### gaussianBlur2D often follows after
+* <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
+* <a href="reference_crop2D">crop2D</a> (1)
 * <a href="reference_copySlice">copySlice</a> (1)
 
 
@@ -163,7 +165,10 @@ cle.gaussian_blur(source, destination, sigma_x, sigma_y)
 <a href="https://clij.github.io/clij2-docs/md/basics"><img src="images/language_macro.png" height="20"/></a> [basics](https://clij.github.io/clij2-docs/md/basics)  
 <a href="https://clij.github.io/clij2-docs/md/basic_image_processing"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing](https://clij.github.io/clij2-docs/md/basic_image_processing)  
 <a href="https://clij.github.io/clij2-docs/md/custom_clij_macro_functions"><img src="images/language_macro.png" height="20"/></a> [custom_clij_macro_functions](https://clij.github.io/clij2-docs/md/custom_clij_macro_functions)  
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
 <a href="https://clij.github.io/clij2-docs/md/outlines_numbers_overlay"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay)  
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
+<a href="https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.ipynb"><img src="images/language_python.png" height="20"/></a> [count_blobs.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb"><img src="images/language_python.png" height="20"/></a> [napari_dask.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/bead_segmentation.ipynb"><img src="images/language_python.png" height="20"/></a> [bead_segmentation.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/bead_segmentation.ipynb)  
@@ -180,10 +185,13 @@ cle.gaussian_blur(source, destination, sigma_x, sigma_y)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [basic_image_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/basic_image_processing.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_clij_macro_functions.ijm"><img src="images/language_macro.png" height="20"/></a> [custom_clij_macro_functions.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/custom_clij_macro_functions.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_squared_error.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_squared_error.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_squared_error.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_selections.ijm"><img src="images/language_macro.png" height="20"/></a> [push_pull_selections.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_selections.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_slices.ijm"><img src="images/language_macro.png" height="20"/></a> [push_pull_slices.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/push_pull_slices.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_distance_measurement.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_distance_measurement.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm)  
 <a href="https://github.com/clij/clicy/blob/master/src/main/javascript/simplePipeline.js"><img src="images/language_javascript.png" height="20"/></a> [simplePipeline.js](https://github.com/clij/clicy/blob/master/src/main/javascript/simplePipeline.js)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.py"><img src="images/language_python.png" height="20"/></a> [count_blobs.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.py)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_.py"><img src="images/language_python.png" height="20"/></a> [napari_.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_.py)  

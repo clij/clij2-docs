@@ -9,7 +9,7 @@ its half-width and half-height (radius).
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### maximum2DSphere often follows after
 * <a href="reference_writeValuesToPositions">writeValuesToPositions</a> (1)
@@ -156,6 +156,7 @@ cle.maximum_sphere(source, destination, radius_x, radius_y)
 
 
 ### Example notebooks
+<a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb"><img src="images/language_python.png" height="20"/></a> [neighborhood_definitions.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/segmentation_2d_membranes.ipynb"><img src="images/language_python.png" height="20"/></a> [segmentation_2d_membranes.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/segmentation_2d_membranes.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/connected_component_labeling.ipynb"><img src="images/language_python.png" height="20"/></a> [connected_component_labeling.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/benchmarks/connected_component_labeling.ipynb)  
 

@@ -8,9 +8,10 @@ Subtracts one image X from a scalar s pixel wise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### subtractImageFromScalar is often followed by
+* <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (1)
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (1)
 * <a href="reference_topHatBox">topHatBox</a> (1)
 
@@ -149,12 +150,14 @@ cle.subtract_image_from_scalar(input, destination, scalar)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/binary_processing"><img src="images/language_macro.png" height="20"/></a> [binary_processing](https://clij.github.io/clij2-docs/md/binary_processing)  
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
 
 
 
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm"><img src="images/language_macro.png" height="20"/></a> [binary_processing.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/binary_processing.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.py"><img src="images/language_python.png" height="20"/></a> [count_blobs.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.py)  
 
 

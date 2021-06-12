@@ -6,7 +6,7 @@ Determines the maximum intensity projection of an image along X.
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### maximumYProjection often follows after
 * <a href="reference_invert">invert</a> (1)

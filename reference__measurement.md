@@ -230,6 +230,9 @@ Takes an image and a corresponding label map, determines the mean intensity per 
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMeanOfLaplacianMap">labelMeanOfLaplacianMap (Experimental)</a>  
 Takes an image and a corresponding label map, determines the mean intensity in the laplacian of the image per label and replaces every label with the that number.
 
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_cle_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelMinimumIntensityMap">labelMinimumIntensityMap (Experimental)</a>  
+Takes an image and a corresponding label map, determines the minimum intensity per label and replaces every label with the that number.
+
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_labelOverlapCountMap">labelOverlapCountMap</a>  
 Takes two label maps, and counts for every label in label map 1 how many labels overlap with it in label map 2.
 
@@ -512,4 +515,4 @@ Determines the variance of all pixels in an image.
 ### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_varianceOfMaskedPixels">varianceOfMaskedPixels</a>  
 Determines the variance in an image, but only in pixels which have non-zero values in another binary mask image. 
 
-150 methods listed.
+151 methods listed.

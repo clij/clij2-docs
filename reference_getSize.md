@@ -6,7 +6,7 @@ Reads out the size of an image [stack] and writes it to the results table in the
 DEPRECATED: Thie method is <b>deprecated</b>. Use getDimensions instead.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

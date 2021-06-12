@@ -8,7 +8,7 @@ Subtracts one image X from another image Y pixel wise.
 Category: [Math](https://clij.github.io/clij2-docs/reference__math)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### subtractImages often follows after
 * <a href="reference_automaticThreshold">automaticThreshold</a> (1)

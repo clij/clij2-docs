@@ -25,7 +25,7 @@ parametric_map_destination
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Filter](https://clij.github.io/clij2-docs/reference__filter), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -170,7 +170,14 @@ cle.maximum_of_touching_neighbors_map(parametric_map, label_map, parametric_map_
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/neighborhood_definitions"><img src="images/language_macro.png" height="20"/></a> [neighborhood_definitions](https://clij.github.io/clij2-docs/md/neighborhood_definitions)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb"><img src="images/language_python.png" height="20"/></a> [neighborhood_definitions.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb)  
+
+
+
+
+### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighborhood_definitions.ijm"><img src="images/language_macro.png" height="20"/></a> [neighborhood_definitions.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighborhood_definitions.ijm)  
 
 
 [Back to CLIJ2 reference](https://clij.github.io/clij2-docs/reference)

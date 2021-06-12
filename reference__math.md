@@ -254,7 +254,7 @@ Copies all pixels instead those which are not a number (NaN) or infinity (inf), 
 <a name="V"></a>
 
 ## V
-### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_visualizeOutlinesOnOriginal">visualizeOutlinesOnOriginal (Experimental)</a>  
+### <img src="images/mini_empty_logo.png" width="18" height="18"/><img src="images/mini_clij2_logo.png" width="18" height="18"/><img src="images/mini_clijx_logo.png" width="18" height="18"/><img src="images/mini_empty_logo.png" width="18" height="18"/><a href="https://clij.github.io/clij2-docs/reference_visualizeOutlinesOnOriginal">visualizeOutlinesOnOriginal</a>  
 Combines an intensity image and a label (or binary) image so that you can see segmentation outlines on the intensity image.
 
 67 methods listed.

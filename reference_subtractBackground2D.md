@@ -6,7 +6,7 @@ Applies Gaussian blur to the input image and subtracts the result from the origi
 Deprecated: Use topHat() or differenceOfGaussian() instead.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

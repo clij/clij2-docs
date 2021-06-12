@@ -6,7 +6,7 @@ Determines the extrema of pixel values:
 f(x) = x / abs(x).
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

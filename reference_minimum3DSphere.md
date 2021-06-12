@@ -9,7 +9,7 @@ its half-width, half-height and half-depth (radius).
 Category: [Filter](https://clij.github.io/clij2-docs/reference__filter)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### minimum3DSphere often follows after
 * <a href="reference_crop3D">crop3D</a> (1)

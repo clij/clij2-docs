@@ -7,7 +7,7 @@ Second parameter is a Lookup-Table in the form of an 8-bit image stack 255 pixel
 Resulting image is a 3D image with three Z-planes representing red, green and blue channels.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

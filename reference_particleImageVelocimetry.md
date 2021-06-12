@@ -6,7 +6,7 @@ For every pixel in source image 1, determine the pixel with the most similar int
 X, Y and Z in the three corresponding destination images.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clijx_-0.31.0.6.jar.
+This function is part of clijx_-0.32.0.1.jar.
 
 ### Usage in ImageJ macro
 ```

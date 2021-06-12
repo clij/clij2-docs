@@ -4,7 +4,7 @@
 Copies an image specified by its name to GPU memory in order to process it there later.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -15,12 +15,15 @@ Ext.CLIJ2_pushCurrentZStack(String image);
 
 
 ### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
 <a href="https://clij.github.io/clij2-docs/md/process_multichannel_timelapse"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse](https://clij.github.io/clij2-docs/md/process_multichannel_timelapse)  
 
 
 
 
 ### Example scripts
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_5D_stack.ijm"><img src="images/language_macro.png" height="20"/></a> [process_5D_stack.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_5D_stack.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm"><img src="images/language_macro.png" height="20"/></a> [process_multichannel_timelapse.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/process_multichannel_timelapse.ijm)  

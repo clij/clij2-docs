@@ -28,7 +28,7 @@ depth : Number
 Category: [Transformations](https://clij.github.io/clij2-docs/reference__transform)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### crop3D often follows after
 * <a href="reference_copySlice">copySlice</a> (1)

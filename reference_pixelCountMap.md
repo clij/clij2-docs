@@ -8,7 +8,11 @@ This results in a parametric image expressing area or volume.
 Categories: [Labels](https://clij.github.io/clij2-docs/reference__label), [Measurements](https://clij.github.io/clij2-docs/reference__measurement), Visualisation
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
+
+### pixelCountMap is often followed by
+* <a href="reference_logarithm">logarithm</a> (1)
+
 
 ### Usage in ImageJ macro
 ```
@@ -118,6 +122,12 @@ clij2.release(destination);
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
 
 
 

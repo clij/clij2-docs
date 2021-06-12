@@ -4,7 +4,7 @@
 Converts an array to a 3D image stack.
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### pushArray is often followed by
 * <a href="reference_histogram">histogram</a> (1)

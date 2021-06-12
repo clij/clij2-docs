@@ -9,7 +9,7 @@ the GPU to create binary images as similar as possible to ImageJ 'Apply Threshol
 Categories: [Segmentation](https://clij.github.io/clij2-docs/reference__segmentation), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### thresholdOtsu often follows after
 * <a href="reference_subtractImageFromScalar">subtractImageFromScalar</a> (1)
@@ -22,7 +22,7 @@ This function is part of clij2_-2.3.0.6.jar.
 
 
 ### thresholdOtsu is often followed by
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (8)
+* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (7)
 * <a href="reference_voronoiOctagon">voronoiOctagon</a> (3)
 * <a href="reference_binaryNot">binaryNot</a> (1)
 * <a href="reference_release">release</a> (2)
@@ -172,9 +172,11 @@ cle.threshold_otsu(input, destination)
 <a href="https://clij.github.io/clij2-docs/md/labelmap_voronoi"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi](https://clij.github.io/clij2-docs/md/labelmap_voronoi)  
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
 <a href="https://clij.github.io/clij2-docs/md/measure_statistics"><img src="images/language_macro.png" height="20"/></a> [measure_statistics](https://clij.github.io/clij2-docs/md/measure_statistics)  
+<a href="https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed](https://clij.github.io/clij2-docs/md/morpholibj_classic_watershed)  
 <a href="https://clij.github.io/clij2-docs/md/outlines_numbers_overlay"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay](https://clij.github.io/clij2-docs/md/outlines_numbers_overlay)  
 <a href="https://clij.github.io/clij2-docs/md/tables"><img src="images/language_macro.png" height="20"/></a> [tables](https://clij.github.io/clij2-docs/md/tables)  
 <a href="https://clij.github.io/clij2-docs/md/voronoi"><img src="images/language_macro.png" height="20"/></a> [voronoi](https://clij.github.io/clij2-docs/md/voronoi)  
+<a href="https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
 <a href="https://clij.github.io/clij2-docs/md/working_with_rois"><img src="images/language_macro.png" height="20"/></a> [working_with_rois](https://clij.github.io/clij2-docs/md/working_with_rois)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.ipynb"><img src="images/language_python.png" height="20"/></a> [count_blobs.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/basics/count_blobs.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/quantitative_neighbor_maps.ipynb"><img src="images/language_python.png" height="20"/></a> [quantitative_neighbor_maps.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/quantitative_neighbor_maps.ipynb)  
@@ -202,10 +204,11 @@ cle.threshold_otsu(input, destination)
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/labelmap_voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [labelmap_voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/labelmap_voronoi.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm"><img src="images/language_macro.png" height="20"/></a> [measure_statistics.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/measure_statistics.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm"><img src="images/language_macro.png" height="20"/></a> [morpholibj_classic_watershed.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/morpholibj_classic_watershed.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm"><img src="images/language_macro.png" height="20"/></a> [outlines_numbers_overlay.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/outlines_numbers_overlay.ijm)  
-<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm"><img src="images/language_macro.png" height="20"/></a> [parametric_images.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/parametric_images.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm"><img src="images/language_macro.png" height="20"/></a> [tables.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tables.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm"><img src="images/language_macro.png" height="20"/></a> [working_with_rois.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/working_with_rois.ijm)  
 <a href="https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m"><img src="images/language_matlab.png" height="20"/></a> [simplePipeline.m](https://github.com/clij/clatlab/blob/master/src/main/matlab/simplePipeline.m)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/javascript/automaticThreshold.js"><img src="images/language_javascript.png" height="20"/></a> [automaticThreshold.js](https://github.com/clij/clij2-docs/blob/master/src/main/javascript/automaticThreshold.js)  

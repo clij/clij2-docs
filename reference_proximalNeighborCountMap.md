@@ -8,11 +8,7 @@ Takes a label map, determines which labels are within a given distance range and
 Categories: [Graphs](https://clij.github.io/clij2-docs/reference__graph), [Labels](https://clij.github.io/clij2-docs/reference__label),  Visualisation, [Measurements](https://clij.github.io/clij2-docs/reference__measurement)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
-
-### proximalNeighborCountMap often follows after
-* <a href="reference_connectedComponentsLabelingBox">connectedComponentsLabelingBox</a> (1)
-
+This function is part of clij2_-2.5.0.1.jar.
 
 ### Usage in ImageJ macro
 ```
@@ -128,6 +124,12 @@ clij2.release(destination);
 
 </details>
 
+
+
+
+
+### Example notebooks
+<a href="https://clij.github.io/clij2-docs/md/parametric_images"><img src="images/language_macro.png" height="20"/></a> [parametric_images](https://clij.github.io/clij2-docs/md/parametric_images)  
 
 
 

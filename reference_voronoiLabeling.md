@@ -8,7 +8,7 @@ The resulting label map is written to the output.
 Categories: [Filter](https://clij.github.io/clij2-docs/reference__filter), [Labels](https://clij.github.io/clij2-docs/reference__label), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### voronoiLabeling often follows after
 * <a href="reference_thresholdOtsu">thresholdOtsu</a> (2)

@@ -9,7 +9,7 @@ higher intensity, and to 0 otherwise.
 Categories: [Detection](https://clij.github.io/clij2-docs/reference__detection), [Binary](https://clij.github.io/clij2-docs/reference__binary)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### detectMaxima2DBox often follows after
 * <a href="reference_gaussianBlur2D">gaussianBlur2D</a> (5)
@@ -18,6 +18,7 @@ This function is part of clij2_-2.3.0.6.jar.
 
 ### detectMaxima2DBox is often followed by
 * <a href="reference_release">release</a> (2)
+* <a href="reference_binaryAnd">binaryAnd</a> (1)
 * <a href="reference_labelSpots">labelSpots</a> (1)
 * <a href="reference_mask">mask</a> (2)
 
@@ -159,6 +160,7 @@ cle.detect_maxima_box(source, destination, radiusX, radiusY)
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/spot_detection"><img src="images/language_macro.png" height="20"/></a> [spot_detection](https://clij.github.io/clij2-docs/md/spot_detection)  
+<a href="https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling](https://clij.github.io/clij2-docs/md/voronoi_otsu_labeling)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb"><img src="images/language_python.png" height="20"/></a> [napari_dask.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/napari_gui/napari_dask.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/bead_segmentation.ipynb"><img src="images/language_python.png" height="20"/></a> [bead_segmentation.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/bead_segmentation.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb"><img src="images/language_python.png" height="20"/></a> [voronoi_otsu_labeling.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/segmentation/voronoi_otsu_labeling.ipynb)  
@@ -169,6 +171,7 @@ cle.detect_maxima_box(source, destination, radiusX, radiusY)
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm"><img src="images/language_macro.png" height="20"/></a> [spot_detection.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/spot_detection.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm"><img src="images/language_macro.png" height="20"/></a> [voronoi_otsu_labeling.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/voronoi_otsu_labeling.ijm)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tribolium_morphometry/tribolium.py"><img src="images/language_python.png" height="20"/></a> [tribolium.py](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tribolium_morphometry/tribolium.py)  
 
 

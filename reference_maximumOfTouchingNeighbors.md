@@ -16,7 +16,7 @@ maximum_values_destination : Image
 Categories: [Measurements](https://clij.github.io/clij2-docs/reference__measurement), [Graphs](https://clij.github.io/clij2-docs/reference__graph)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### maximumOfTouchingNeighbors often follows after
 * <a href="reference_generateTouchMatrix">generateTouchMatrix</a> (2)
@@ -166,6 +166,7 @@ cle.maximum_of_touching_neighbors(values, touch_matrix, maximum_values_destinati
 
 ### Example notebooks
 <a href="https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors](https://clij.github.io/clij2-docs/md/mean_of_touching_neighbors)  
+<a href="https://clij.github.io/clij2-docs/md/neighborhood_definitions"><img src="images/language_macro.png" height="20"/></a> [neighborhood_definitions](https://clij.github.io/clij2-docs/md/neighborhood_definitions)  
 <a href="https://clij.github.io/clij2-docs/md/tribolium_morphometry"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry](https://clij.github.io/clij2-docs/md/tribolium_morphometry)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb"><img src="images/language_python.png" height="20"/></a> [neighborhood_definitions.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/neighbors/neighborhood_definitions.ipynb)  
 <a href="https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tissues/tissue_neighborhood_quantification.ipynb"><img src="images/language_python.png" height="20"/></a> [tissue_neighborhood_quantification.ipynb](https://github.com/clEsperanto/pyclesperanto_prototype/tree/master/demo/tissues/tissue_neighborhood_quantification.ipynb)  
@@ -175,6 +176,7 @@ cle.maximum_of_touching_neighbors(values, touch_matrix, maximum_values_destinati
 
 ### Example scripts
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm"><img src="images/language_macro.png" height="20"/></a> [mean_of_touching_neighbors.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/mean_of_touching_neighbors.ijm)  
+<a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighborhood_definitions.ijm"><img src="images/language_macro.png" height="20"/></a> [neighborhood_definitions.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/neighborhood_definitions.ijm)  
 <a href="https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm"><img src="images/language_macro.png" height="20"/></a> [tribolium_morphometry.ijm](https://github.com/clij/clij2-docs/blob/master/src/main/macro/tribolium_morphometry.ijm)  
 
 

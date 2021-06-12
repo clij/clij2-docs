@@ -6,7 +6,7 @@ Determines the sum intensity projection of an image along Z.
 Category: [Projections](https://clij.github.io/clij2-docs/reference__project)
 
 Availability: Available in Fiji by activating the update sites clij and clij2.
-This function is part of clij2_-2.3.0.6.jar.
+This function is part of clij2_-2.5.0.1.jar.
 
 ### sumYProjection is often followed by
 * <a href="reference_equalConstant">equalConstant</a> (1)
