@@ -15,7 +15,7 @@ While most of these are classical image processing operations, CLIJ2 also allows
 [matrices](https://clij.github.io/clij2-docs/reference__matrix) potentially representing
 [neighborhood relationships](https://clij.github.io/clij2-docs/reference__neighbor) between [cells](https://clij.github.io/clij2-docs/md/neighbors_of_neighbors) and pixels.
 
-<img src="./images/workflow_flowers.gif" width="245">
+<img src="./images/clij25.gif" width="500">
 
 Under the hood it uses [OpenCL](https://www.khronos.org/opencl/) but users don't have to learn a new programming language such as OpenCL, they can just use it transparently. 
 Entry-evel coding skills are sufficient! 
