@@ -161,7 +161,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.top_hat_box(input, destination, radiusX, radiusY, radiusZ)
+cle.top_hat_box(input, destination, radius_x, radius_y, radius_z)
 
 </pre>
 
