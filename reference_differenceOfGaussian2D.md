@@ -163,7 +163,7 @@ clEsperanto Python (experimental)
 </summary>
 <pre class="highlight">import pyclesperanto_prototype as cle
 
-cle.difference_of_gaussian(input, destination, sigma1x, sigma1y, sigma2x, sigma2y)
+cle.difference_of_gaussian(input, destination, sigma1_x, sigma1_y, sigma2_x, sigma2_y)
 
 </pre>
 
