@@ -20,7 +20,7 @@ After restarting Fiji, CLIJ is successfully installed, if you find a menu entry 
 
 Installation was successful if you find the CLIJx-Assistant starting point button in Fijis tool bar:
 
-![Image](assistant/images/installation_ok.png)
+![Image](images/installation_ok.png)
 
 If you want to use the experimental CLIJx-assistant offering CLIJx functions, please refer to [the installation instructions](https://clij.github.io/assistant/installation).
 
@@ -45,6 +45,7 @@ Be really careful when doing this. Don't do it, if you're not aware what that me
 
 [https://support.microsoft.com/en-us/help/2665946/display-driver-stopped-responding-and-has-recovered-error-in-windows-7](https://support.microsoft.com/en-us/help/2665946/display-driver-stopped-responding-and-has-recovered-error-in-windows-7)
 
+<a name="Linux"></a>
 ## Linux
 Linux users need to install drivers for OpenCL, even on Intel HD GPUs. Depending on which linux being used, you need to install OpenCL Installable Client Driver (OCL-ICD):
 ```
