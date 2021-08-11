@@ -320,6 +320,20 @@ The [CLIJ2 assistant](https://github.com/clij/clij2-assistant) exposes CLIJ2 fun
 The [CLIJx assistant](https://github.com/clij/clijx-assistant) additionally offers experimental [CLIJx](https://github.com/clij/clijx) functions and export to scripting languages such as QuPath-Groovy for [cluPath](https://github.com/clij/clupath) and [clesperanto-Python](https://github.com/clesperanto/pyclesperanto_prototype).
 While the CLIJ2-assistant gets delivered via the clij and clij2 update sites in Fiji, the installation of the CLIJx-assistant needs [multiple update sites installed](https://clij.github.io/assistant/installation#extensions).
 
+<a name="noSimpleITK"></a>
+# UnsatisfiedLinkError: no SimpleITKJava 
+If you experience an error like the following on, you may be using the 32-bit version of ImageJ/Fiji. Only the 64-bit version is supported. 
+```
+Exception in thread "Run$_AWT-EventQueue-0" java.lang.UnsatisfiedLinkError: no SimpleITKJava in java.library.path
+    at java.lang.ClassLoader.loadLibrary(Unknown Source)
+    at java.lang.Runtime.loadLibrary0(Unknown Source)
+    at java.lang.System.loadLibrary(Unknown Source)
+    at org.itk.simple.SimpleITKJNI.<clinit>(SimpleITKJNI.java:257)
+    at org.itk.simple.PixelIDValueEnum.<clinit>(PixelIDValueEnum.java:12)
+...
+```
+
+
 [Back to CLIJ documentation](https://clij.github.io/)
 
 [Imprint](https://clij.github.io/imprint)
