@@ -10,7 +10,8 @@
 
 from ij import IJ;
 from net.haesleinhuepf.clij2 import CLIJ2;
-from net.imglib2.realtransform import AffineTransform2D;
+
+from net.imglib2.realtransform import AffineTransform2D;
 
 from ij.gui import NewImage;
 from ij.gui import OvalRoi;
@@ -33,7 +34,8 @@ shiftX.setRoi(OvalRoi(20, 98, 72, 68));
 IJ.run(shiftX, "Add...", "value=25");
 IJ.run(shiftX, "Select None", "");
 IJ.run(shiftX, "Gaussian Blur...", "sigma=15");
-
+
+
 # init GPU
 clij2 = CLIJ2.getInstance();
 
@@ -60,7 +62,7 @@ for i in range(0, 36):
 	clij2.affineTransform2D(shiftXgpu, rotatedShiftXgpu, at);
 	
 	# apply transform
-	clij2.applyVectorfield(input, rotatedShiftXgpu, shiftYgpu, temp);
+	clij2.applyVectorField(input, rotatedShiftXgpu, shiftYgpu, temp);
 
 	# put resulting 2D image in the right plane
 	clij2.copySlice(temp, output, i);
