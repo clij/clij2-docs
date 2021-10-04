@@ -310,6 +310,11 @@ sudo make install
 ```
 More info can be found on the website of the [beignet project](https://www.freedesktop.org/wiki/Software/Beignet/).
 
+In case you are trying to create a conda environment and you receive this Warning message: `WARNING: No ICDs were found.` or you wish to have several ICDs detected, you can also install via conda the `ocl-icd-system`. It will make sure your system-wide ICDs are also visible in your conda environment (tested on Linux-Mint 20.1). [See here for more informations](https://documen.tician.de/pyopencl/misc.html#using-vendor-supplied-opencl-drivers-mainly-on-linux)
+```
+conda install -c conda-forge ocl-icd-system
+```
+
 <a name="remove_clij_buttons"></a>
 # Can I remove the CLIJ buttons from the Fiji toolbar?
 Yes, just delete the file `clij2_assistant_autostart.ijm` from the folder `Fiji.app/plugins/Scripts/Plugins/AutoRun/`.
