@@ -200,8 +200,22 @@ Yes. As operations executed on the GPU anyway don't make use of user interface e
  and in 
 [cloud systems using docker](https://github.com/clij/clij-apeer-template).
 
+<a name="clij_repos"></a>
+## What is the difference between CLIJ, CLIJ2 and CLIJx?
+[CLIJ](https://clij.github.io/clij-docs/) was the first official release of the project in 2019. In 2020 [CLIJ2](https://clij.github.io/clij2-docs/) released and in 2021 CLIJ2.5.
+With the 2021 release, CLIJ became obsolete. If your project still uses CLIJ commands, you should upgrad to CLIJ2. [CLIJ2 and CLIJ2.5 are backwards-compatible](https://clij.github.io/clij2-docs/clij25_transition_notes).
+Read more about the [release cycle](https://clij.github.io/clij-docs/release_cycle.html).
+[CLIJx](https://github.com/clij/clijx) is the experimental sibling to CLIJ2 with functions that are yet under development. 
+It is in general recommended to avoid using these experimental methods. 
+However, we're developing it in public and thus, you're welcome to try and feedback is very welcome.
 
-
+<a name="clij_assistants"></a>
+## What is the difference between CLIJ2-assistant and CLIJx-assistant?
+The CLIJ2-assistant (a) is an officially supported user interface in Fiji, that is installed when activating the `clij` and `clij2` update sites. 
+The CLIJx-assistant (b) is its experimental sibling with additional functionality that is under development. 
+It can be installed with the `clijx-assistant` update site in Fiji.
+Visually, both can be differentiated by the headline in the right-click menu and through the additional menu entries (arrows):
+![](images/clij2_clijx2_assistant_difference.png)
 
 <a name="uberjar"></a>
 ## Is it possible to compile a CLIJ dependent project with all dependencies in a single JAR file?
