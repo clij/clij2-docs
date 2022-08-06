@@ -20,7 +20,7 @@ Go to the source dir and install it to your Fiji.app
 
 ```
 cd clijx
-mvn install
+mvn clean -DskipTests=true install -Dgpg.skip
 ```
 
 It is recommended to use an integrated development environment such as IntelliJ or Eclipse.
