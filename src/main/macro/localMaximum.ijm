@@ -26,14 +26,15 @@ for (radius = 1; radius < 4; radius++) {
 	Ext.CLIJ2_push("orignal1slice");
 	
 	
+	output = "maximum3DSphereCLIJ_" + radius;
+	Ext.CLIJ2_maximum3DSphere("original", output, radius, radius, radius);
+	Ext.CLIJ2_pull(output);
+	zoom(output);
 	
-	Ext.CLIJ2_maximum3DSphere("original", "maximum3DSphereCLIJ_" + radius, radius, radius, radius);
-	Ext.CLIJ2_pull("maximum3DSphereCLIJ_" + radius);
-	zoom("maximum3DSphereCLIJ_" + radius);
-	
-	Ext.CLIJ2_maximum2DSphere("orignal1slice", "maximum2DSphereCLIJ_" + radius, radius, radius);
-	Ext.CLIJ2_pull("maximum2DSphereCLIJ_" + radius);
-	zoom("maximum2DSphereCLIJ_" + radius);
+	output = "maximum2DSphereCLIJ_" + radius;
+	Ext.CLIJ2_maximum2DSphere("orignal1slice", output, radius, radius);
+	Ext.CLIJ2_pull(output);
+	zoom(output);
 	
 	selectWindow("original");
 	run("Duplicate...", "title=maximum3DIJ_" + radius + " duplicate");
